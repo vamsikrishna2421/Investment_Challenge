@@ -117,7 +117,7 @@ def main() -> int:
 
     jpath = ROOT / "ledger" / "journal.json"
     journal = json.loads(jpath.read_text())["entries"] if jpath.exists() else []
-    journal = sorted(journal, key=lambda e: e["ts"], reverse=True)[:40]
+    journal = sorted(journal, key=lambda e: (e["ts"], e["id"]), reverse=True)[:40]
 
     wl_path = ROOT / "config" / "watchlist.json"
     watch = json.loads(wl_path.read_text()) if wl_path.exists() else {}

@@ -1,16 +1,16 @@
 {
-  "strategy": "Catalyst and news-driven book, trading 4 AM-8 PM ET. Tuesday: ~30% IONX (2x IonQ), ~30% MUU (2x Micron into Wednesday's report), ~20-25% KOD or NVTS, the rest in cash for news trades: after-hours earnings reactions (Micron Wed, Nike Thu) and the Friday jobs report. Stops -15% on 2x ETFs, -12% on stocks; trim a third at +25%.",
+  "strategy": "Tuesday: at the 9:40 AM check, buy ~25% SMMT (news trade on AstraZeneca's $2B stake) if it holds $18, ~30% IONX (2x IonQ) if IonQ holds Monday's close, and ~30% MUU (2x Micron into Wednesday's report) if chips hold their bounce; keep ~15% cash for news trades. Stops -12% on stocks, -15% on 2x ETFs; sell a third at +25%.",
   "focus": [
+    "SMMT",
     "IONX",
     "IONQ",
     "MUU",
     "MU",
-    "KOD",
+    "SOXL",
     "NVTS",
-    "SMMT",
+    "KOD",
     "AMDL",
     "MSTU",
-    "SOXL",
     "NVDA",
     "NKE"
   ],

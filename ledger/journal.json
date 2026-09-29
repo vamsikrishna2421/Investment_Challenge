@@ -70,6 +70,20 @@
         "IONX",
         "MUU"
       ]
+    },
+    {
+      "id": "J0006",
+      "ts": "2026-09-29T12:42:52Z",
+      "kind": "plan",
+      "title": "Tuesday plan: SMMT news trade, IONX, MUU at the open",
+      "body": "Pre-market at 8:42: SPY +0.1%, QQQ +0.3%. Chips are extending Monday's bounce (SOXL +3.0%, MUU +2.5%) and IonQ is holding +1.5% after BofA's Buy call. SMMT has sat between $18.30 and $18.40 for 90 minutes after the AstraZeneca news, so the buying is holding.\n\nOrders at the 9:40 check, after the opening auction settles:\n- SMMT, about 25% ($250), if it holds above $18.00. News trade: AstraZeneca's $2B equity stake funds Summit and validates ivonescimab. Stop $16.20 (-12%); sell a third at +25% (~$23).\n- IONX (2x IonQ), about 30% ($300), if IONQ stays above Monday's $44.58 close. Quantum momentum plus a fresh Buy rating. Stop -15%.\n- MUU (2x Micron), about 30% ($300), if SOXL stays above Monday's $142.29 close. This is the run-up into Wednesday's report. Whether to hold it through the print gets decided Wednesday at 3:55 PM.\n- Keep about 15% in cash for news trades.\n\nPassing on:\n- KOD: -4% on day two, fading.\n- NVTS: faded from its $13.50 pre-market high. It comes back into play only above $13.50.\n\nMacro today: JOLTS and consumer confidence at 10:00, then Fed Governor Barr at 12:40. A spike in yields is the main risk to the chip trades.",
+      "tickers": [
+        "SMMT",
+        "IONX",
+        "MUU",
+        "NVTS",
+        "KOD"
+      ]
     }
   ]
 }

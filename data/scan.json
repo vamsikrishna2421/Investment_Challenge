@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T00:45:55Z",
+ "generated_at": "2026-09-29T00:54:26Z",
  "screeners": {
   "day_gainers": [
    {
@@ -306,7 +306,7 @@
     "regularMarketChangePercent": 4.4287,
     "regularMarketVolume": 2056722,
     "averageDailyVolume3Month": 1283119,
-    "marketCap": 2756595712,
+    "marketCap": 2818686464,
     "postMarketChangePercent": 0.0,
     "fiftyTwoWeekHigh": 42.205
    },
@@ -361,7 +361,7 @@
     "regularMarketChangePercent": 4.26151,
     "regularMarketVolume": 1100798,
     "averageDailyVolume3Month": 825112,
-    "marketCap": 6817931776,
+    "marketCap": 6815208960,
     "postMarketChangePercent": -1.9972146,
     "fiftyTwoWeekHigh": 49.49
    },
@@ -483,7 +483,7 @@
     "regularMarketChangePercent": -2.15899,
     "regularMarketVolume": 81663371,
     "averageDailyVolume3Month": 92714806,
-    "marketCap": 1917553606656,
+    "marketCap": 1916449062912,
     "postMarketChangePercent": 0.42613843,
     "fiftyTwoWeekHigh": 225.64
    },
@@ -587,6 +587,17 @@
     "fiftyTwoWeekHigh": 12.19
    },
    {
+    "symbol": "AUR",
+    "shortName": "Aurora Innovation, Inc.",
+    "regularMarketPrice": 5.29,
+    "regularMarketChangePercent": -12.4172,
+    "regularMarketVolume": 46377556,
+    "averageDailyVolume3Month": 28490896,
+    "marketCap": 10601980928,
+    "postMarketChangePercent": 1.7013261,
+    "fiftyTwoWeekHigh": 8.565
+   },
+   {
     "symbol": "RKT",
     "shortName": "Rocket Companies, Inc.",
     "regularMarketPrice": 11.64,
@@ -620,17 +631,6 @@
     "fiftyTwoWeekHigh": 30.92
    },
    {
-    "symbol": "AUR",
-    "shortName": "Aurora Innovation, Inc.",
-    "regularMarketPrice": 5.29,
-    "regularMarketChangePercent": -12.4172,
-    "regularMarketVolume": 46377556,
-    "averageDailyVolume3Month": 28490896,
-    "marketCap": 10601980928,
-    "postMarketChangePercent": 1.7013261,
-    "fiftyTwoWeekHigh": 8.565
-   },
-   {
     "symbol": "NFLX",
     "shortName": "Netflix, Inc.",
     "regularMarketPrice": 69.23,
@@ -648,7 +648,7 @@
     "regularMarketChangePercent": -6.48708,
     "regularMarketVolume": 39725684,
     "averageDailyVolume3Month": 37284130,
-    "marketCap": 11426781184,
+    "marketCap": 11408818176,
     "postMarketChangePercent": 0.032327373,
     "fiftyTwoWeekHigh": 34.17
    },
@@ -675,6 +675,17 @@
     "fiftyTwoWeekHigh": 95.77
    },
    {
+    "symbol": "TSLA",
+    "shortName": "Tesla, Inc.",
+    "regularMarketPrice": 357.45,
+    "regularMarketChangePercent": -3.93969,
+    "regularMarketVolume": 38349282,
+    "averageDailyVolume3Month": 39040411,
+    "marketCap": 1411765764096,
+    "postMarketChangePercent": 0.20660087,
+    "fiftyTwoWeekHigh": 498.83
+   },
+   {
     "symbol": "CDE",
     "shortName": "Coeur Mining, Inc.",
     "regularMarketPrice": 17.87,
@@ -697,24 +708,13 @@
     "fiftyTwoWeekHigh": 84.64
    },
    {
-    "symbol": "TSLA",
-    "shortName": "Tesla, Inc.",
-    "regularMarketPrice": 357.45,
-    "regularMarketChangePercent": -3.93969,
-    "regularMarketVolume": 38349282,
-    "averageDailyVolume3Month": 39040411,
-    "marketCap": 1411765764096,
-    "postMarketChangePercent": 0.20660087,
-    "fiftyTwoWeekHigh": 498.83
-   },
-   {
     "symbol": "NKE",
     "shortName": "Nike, Inc.",
     "regularMarketPrice": 36.39,
     "regularMarketChangePercent": 1.79021,
     "regularMarketVolume": 33792976,
     "averageDailyVolume3Month": 27698885,
-    "marketCap": 53984518144,
+    "marketCap": 53889478656,
     "postMarketChangePercent": -0.09975449,
     "fiftyTwoWeekHigh": 76.97
    },
@@ -802,7 +802,7 @@
     "regularMarketChangePercent": -5.44747,
     "regularMarketVolume": 30184108,
     "averageDailyVolume3Month": 52655457,
-    "marketCap": 2359751424,
+    "marketCap": 2344310016,
     "postMarketChangePercent": 0.41152224,
     "fiftyTwoWeekHigh": 9.69
    },
@@ -835,7 +835,7 @@
     "regularMarketChangePercent": 0.434782,
     "regularMarketVolume": 28678846,
     "averageDailyVolume3Month": 21246501,
-    "marketCap": 17405036544,
+    "marketCap": 13402348544,
     "postMarketChangePercent": 0.21428773,
     "fiftyTwoWeekHigh": 12.22
    },
@@ -873,15 +873,15 @@
     "fiftyTwoWeekHigh": 32.86
    },
    {
-    "symbol": "SNAP",
-    "shortName": "Snap Inc.",
-    "regularMarketPrice": 5.22,
-    "regularMarketChangePercent": -3.69004,
-    "regularMarketVolume": 27355912,
-    "averageDailyVolume3Month": 37114898,
-    "marketCap": 8828051456,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 9.13
+    "symbol": "META",
+    "shortName": "Meta Platforms, Inc.",
+    "regularMarketPrice": 715.62,
+    "regularMarketChangePercent": -4.79472,
+    "regularMarketVolume": 27629348,
+    "averageDailyVolume3Month": 19739836,
+    "marketCap": 1823046369280,
+    "postMarketChangePercent": 0.34665227,
+    "fiftyTwoWeekHigh": 779.82
    }
   ],
   "small_cap_gainers": [
@@ -919,6 +919,28 @@
     "fiftyTwoWeekHigh": 2.73
    },
    {
+    "symbol": "ALXO",
+    "shortName": "ALX Oncology Holdings Inc.",
+    "regularMarketPrice": 1.39,
+    "regularMarketChangePercent": 6.10687,
+    "regularMarketVolume": 1958387,
+    "averageDailyVolume3Month": 1010630,
+    "marketCap": 192205024,
+    "postMarketChangePercent": -1.4388475,
+    "fiftyTwoWeekHigh": 2.66
+   },
+   {
+    "symbol": "ANNX",
+    "shortName": "Annexon, Inc.",
+    "regularMarketPrice": 4.01,
+    "regularMarketChangePercent": 10.1648,
+    "regularMarketVolume": 5071706,
+    "averageDailyVolume3Month": 3317360,
+    "marketCap": 760212352,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 7.18
+   },
+   {
     "symbol": "TSHA",
     "shortName": "Taysha Gene Therapies, Inc.",
     "regularMarketPrice": 4.99,
@@ -939,17 +961,6 @@
     "marketCap": 138373328,
     "postMarketChangePercent": 5.8047566,
     "fiftyTwoWeekHigh": 9.86
-   },
-   {
-    "symbol": "ANNX",
-    "shortName": "Annexon, Inc.",
-    "regularMarketPrice": 4.01,
-    "regularMarketChangePercent": 10.1648,
-    "regularMarketVolume": 5071706,
-    "averageDailyVolume3Month": 3317360,
-    "marketCap": 760212352,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 7.18
    },
    {
     "symbol": "ACRS",
@@ -985,17 +996,6 @@
     "fiftyTwoWeekHigh": 10.08
    },
    {
-    "symbol": "ALXO",
-    "shortName": "ALX Oncology Holdings Inc.",
-    "regularMarketPrice": 1.39,
-    "regularMarketChangePercent": 6.10687,
-    "regularMarketVolume": 1958387,
-    "averageDailyVolume3Month": 1010630,
-    "marketCap": 192205024,
-    "postMarketChangePercent": -1.4388475,
-    "fiftyTwoWeekHigh": 2.66
-   },
-   {
     "symbol": "SLQT",
     "shortName": "SelectQuote, Inc.",
     "regularMarketPrice": 0.4306,
@@ -1005,17 +1005,6 @@
     "marketCap": 76032392,
     "postMarketChangePercent": -0.1393359,
     "fiftyTwoWeekHigh": 2.22
-   },
-   {
-    "symbol": "TRAX",
-    "shortName": "First Tracks Biotherapeutics, I",
-    "regularMarketPrice": 36.645,
-    "regularMarketChangePercent": 6.46427,
-    "regularMarketVolume": 674495,
-    "averageDailyVolume3Month": 776900,
-    "marketCap": 1309356800,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 49.91
    },
    {
     "symbol": "STTK",
@@ -1029,15 +1018,24 @@
     "fiftyTwoWeekHigh": 8.33
    },
    {
-    "symbol": "MGNX",
-    "shortName": "MacroGenics, Inc.",
-    "regularMarketPrice": 4.06,
-    "regularMarketChangePercent": 8.55615,
-    "regularMarketVolume": 1912786,
-    "averageDailyVolume3Month": 627598,
-    "marketCap": 258622752,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 5.08
+    "symbol": "OPENZ",
+    "regularMarketPrice": 0.087,
+    "regularMarketChangePercent": 8.0745325,
+    "regularMarketVolume": 1322004,
+    "averageDailyVolume3Month": 764514,
+    "postMarketChangePercent": 1.0344832,
+    "fiftyTwoWeekHigh": 0.85
+   },
+   {
+    "symbol": "ENHA",
+    "shortName": "Enhanced Group Inc.",
+    "regularMarketPrice": 1.53,
+    "regularMarketChangePercent": 6.24999,
+    "regularMarketVolume": 2173826,
+    "averageDailyVolume3Month": 842939,
+    "marketCap": 593349440,
+    "postMarketChangePercent": -3.2679708,
+    "fiftyTwoWeekHigh": 10.17
    },
    {
     "symbol": "ANVS",
@@ -1051,6 +1049,27 @@
     "fiftyTwoWeekHigh": 5.5
    },
    {
+    "symbol": "SJT",
+    "shortName": "San Juan Basin Royalty Trust",
+    "regularMarketPrice": 3.72,
+    "regularMarketChangePercent": 8.77193,
+    "regularMarketVolume": 1199497,
+    "averageDailyVolume3Month": 245009,
+    "marketCap": 173384720,
+    "fiftyTwoWeekHigh": 6.61
+   },
+   {
+    "symbol": "MGNX",
+    "shortName": "MacroGenics, Inc.",
+    "regularMarketPrice": 4.06,
+    "regularMarketChangePercent": 8.55615,
+    "regularMarketVolume": 1912786,
+    "averageDailyVolume3Month": 627598,
+    "marketCap": 258622752,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 5.08
+   },
+   {
     "symbol": "PRTA",
     "shortName": "Prothena Corporation plc",
     "regularMarketPrice": 8.72,
@@ -1062,35 +1081,26 @@
     "fiftyTwoWeekHigh": 11.8
    },
    {
-    "symbol": "ENHA",
-    "shortName": "Enhanced Group Inc.",
-    "regularMarketPrice": 1.53,
-    "regularMarketChangePercent": 6.24999,
-    "regularMarketVolume": 2173826,
-    "averageDailyVolume3Month": 842939,
-    "marketCap": 208903328,
-    "postMarketChangePercent": -3.2679708,
-    "fiftyTwoWeekHigh": 10.17
-   },
-   {
-    "symbol": "OPENZ",
-    "regularMarketPrice": 0.087,
-    "regularMarketChangePercent": 8.0745325,
-    "regularMarketVolume": 1322004,
-    "averageDailyVolume3Month": 764514,
-    "postMarketChangePercent": 1.0344832,
-    "fiftyTwoWeekHigh": 0.85
-   },
-   {
-    "symbol": "BLSM",
-    "shortName": "BlossomHill Therapeutics, Inc.",
-    "regularMarketPrice": 21.34,
-    "regularMarketChangePercent": 8.05063,
-    "regularMarketVolume": 146397,
-    "averageDailyVolume3Month": 273345,
-    "marketCap": 678289920,
+    "symbol": "TRAX",
+    "shortName": "First Tracks Biotherapeutics, I",
+    "regularMarketPrice": 36.645,
+    "regularMarketChangePercent": 6.46427,
+    "regularMarketVolume": 674495,
+    "averageDailyVolume3Month": 776900,
+    "marketCap": 1309356800,
     "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 27.99
+    "fiftyTwoWeekHigh": 49.91
+   },
+   {
+    "symbol": "VIOT",
+    "shortName": "Viomi Technology Co., Ltd",
+    "regularMarketPrice": 1.59,
+    "regularMarketChangePercent": 17.7778,
+    "regularMarketVolume": 768328,
+    "averageDailyVolume3Month": 1324576,
+    "marketCap": 104858216,
+    "postMarketChangePercent": -2.289313,
+    "fiftyTwoWeekHigh": 3.61
    },
    {
     "symbol": "GOSS",
@@ -1102,6 +1112,39 @@
     "marketCap": 70460824,
     "postMarketChangePercent": -0.5633715,
     "fiftyTwoWeekHigh": 309.6
+   },
+   {
+    "symbol": "FLX",
+    "shortName": "BINGEX LIMITED",
+    "regularMarketPrice": 1.39,
+    "regularMarketChangePercent": 18.8034,
+    "regularMarketVolume": 208089,
+    "averageDailyVolume3Month": 165480,
+    "marketCap": 101650576,
+    "postMarketChangePercent": -3.5179863,
+    "fiftyTwoWeekHigh": 4.45
+   },
+   {
+    "symbol": "ENTA",
+    "shortName": "Enanta Pharmaceuticals, Inc.",
+    "regularMarketPrice": 12.615,
+    "regularMarketChangePercent": 6.18687,
+    "regularMarketVolume": 349325,
+    "averageDailyVolume3Month": 214095,
+    "marketCap": 367416928,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 17.15
+   },
+   {
+    "symbol": "BLSM",
+    "shortName": "BlossomHill Therapeutics, Inc.",
+    "regularMarketPrice": 21.34,
+    "regularMarketChangePercent": 8.05063,
+    "regularMarketVolume": 146397,
+    "averageDailyVolume3Month": 273345,
+    "marketCap": 678289920,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 27.99
    },
    {
     "symbol": "CANG",
@@ -1126,17 +1169,6 @@
     "fiftyTwoWeekHigh": 1.35
    },
    {
-    "symbol": "BZUN",
-    "shortName": "Baozun Inc.",
-    "regularMarketPrice": 3.09,
-    "regularMarketChangePercent": 5.10204,
-    "regularMarketVolume": 326357,
-    "averageDailyVolume3Month": 210092,
-    "marketCap": 179663984,
-    "postMarketChangePercent": 0.32362428,
-    "fiftyTwoWeekHigh": 4.27
-   },
-   {
     "symbol": "ZUMZ",
     "shortName": "Zumiez Inc.",
     "regularMarketPrice": 14.14,
@@ -1148,15 +1180,15 @@
     "fiftyTwoWeekHigh": 31.7
    },
    {
-    "symbol": "ENTA",
-    "shortName": "Enanta Pharmaceuticals, Inc.",
-    "regularMarketPrice": 12.615,
-    "regularMarketChangePercent": 6.18687,
-    "regularMarketVolume": 349325,
-    "averageDailyVolume3Month": 214095,
-    "marketCap": 367416928,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 17.15
+    "symbol": "BZUN",
+    "shortName": "Baozun Inc.",
+    "regularMarketPrice": 3.09,
+    "regularMarketChangePercent": 5.10204,
+    "regularMarketVolume": 326357,
+    "averageDailyVolume3Month": 210092,
+    "marketCap": 179663984,
+    "postMarketChangePercent": 0.32362428,
+    "fiftyTwoWeekHigh": 4.27
    },
    {
     "symbol": "SEER",
@@ -1168,37 +1200,6 @@
     "marketCap": 112405192,
     "postMarketChangePercent": 0.0,
     "fiftyTwoWeekHigh": 2.41
-   },
-   {
-    "symbol": "SJT",
-    "shortName": "San Juan Basin Royalty Trust",
-    "regularMarketPrice": 3.72,
-    "regularMarketChangePercent": 8.77193,
-    "regularMarketVolume": 1199497,
-    "averageDailyVolume3Month": 245009,
-    "fiftyTwoWeekHigh": 6.61
-   },
-   {
-    "symbol": "VIOT",
-    "shortName": "Viomi Technology Co., Ltd",
-    "regularMarketPrice": 1.59,
-    "regularMarketChangePercent": 17.7778,
-    "regularMarketVolume": 768328,
-    "averageDailyVolume3Month": 1324576,
-    "marketCap": 104858216,
-    "postMarketChangePercent": -2.289313,
-    "fiftyTwoWeekHigh": 3.61
-   },
-   {
-    "symbol": "FLX",
-    "shortName": "BINGEX LIMITED",
-    "regularMarketPrice": 1.39,
-    "regularMarketChangePercent": 18.8034,
-    "regularMarketVolume": 208089,
-    "averageDailyVolume3Month": 165480,
-    "marketCap": 101650576,
-    "postMarketChangePercent": -3.5179863,
-    "fiftyTwoWeekHigh": 4.45
    },
    {
     "symbol": "SI",
@@ -1229,7 +1230,7 @@
     "regularMarketChangePercent": 5.85516,
     "regularMarketVolume": 324221,
     "averageDailyVolume3Month": 195901,
-    "marketCap": 1265996416,
+    "marketCap": 1257514240,
     "fiftyTwoWeekHigh": 9.83
    },
    {
@@ -1243,15 +1244,15 @@
     "fiftyTwoWeekHigh": 1.21
    },
    {
-    "symbol": "NDLS",
-    "shortName": "Noodles & Company",
-    "regularMarketPrice": 13.45,
-    "regularMarketChangePercent": 6.66138,
-    "regularMarketVolume": 56371,
-    "averageDailyVolume3Month": 48209,
-    "marketCap": 80251576,
+    "symbol": "VALN",
+    "shortName": "Valneva SE",
+    "regularMarketPrice": 6.47,
+    "regularMarketChangePercent": 5.37459,
+    "regularMarketVolume": 21569,
+    "averageDailyVolume3Month": 78498,
+    "marketCap": 613507712,
     "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 19.0
+    "fiftyTwoWeekHigh": 12.23
    },
    {
     "symbol": "LFT",
@@ -1264,15 +1265,15 @@
     "fiftyTwoWeekHigh": 21.1
    },
    {
-    "symbol": "VALN",
-    "shortName": "Valneva SE",
-    "regularMarketPrice": 6.47,
-    "regularMarketChangePercent": 5.37459,
-    "regularMarketVolume": 21569,
-    "averageDailyVolume3Month": 78498,
-    "marketCap": 613507712,
+    "symbol": "NDLS",
+    "shortName": "Noodles & Company",
+    "regularMarketPrice": 13.45,
+    "regularMarketChangePercent": 6.66138,
+    "regularMarketVolume": 56371,
+    "averageDailyVolume3Month": 48209,
+    "marketCap": 80251576,
     "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 12.23
+    "fiftyTwoWeekHigh": 19.0
    },
    {
     "symbol": "ASPSW",
@@ -1301,17 +1302,6 @@
   ],
   "aggressive_small_caps": [
    {
-    "symbol": "SOS",
-    "shortName": "SOS Limited",
-    "regularMarketPrice": 0.3374,
-    "regularMarketChangePercent": -5.99053,
-    "regularMarketVolume": 411072,
-    "averageDailyVolume3Month": 1032449,
-    "marketCap": 6530563,
-    "postMarketChangePercent": -4.8606935,
-    "fiftyTwoWeekHigh": 2.35
-   },
-   {
     "symbol": "JBLU",
     "shortName": "JetBlue Airways Corporation",
     "regularMarketPrice": 4.22,
@@ -1321,6 +1311,17 @@
     "marketCap": 1592257408,
     "postMarketChangePercent": 0.47393322,
     "fiftyTwoWeekHigh": 6.62
+   },
+   {
+    "symbol": "GENI",
+    "shortName": "Genius Sports Limited",
+    "regularMarketPrice": 6.15,
+    "regularMarketChangePercent": -4.5031,
+    "regularMarketVolume": 6672001,
+    "averageDailyVolume3Month": 6113320,
+    "marketCap": 1645905792,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 13.525
    },
    {
     "symbol": "KOS",
@@ -1340,7 +1341,7 @@
     "regularMarketChangePercent": -40.9544,
     "regularMarketVolume": 27985411,
     "averageDailyVolume3Month": 4458507,
-    "marketCap": 34387856,
+    "marketCap": 34902432,
     "fiftyTwoWeekHigh": 3.21
    },
    {
@@ -1355,17 +1356,6 @@
     "fiftyTwoWeekHigh": 2.73
    },
    {
-    "symbol": "GENI",
-    "shortName": "Genius Sports Limited",
-    "regularMarketPrice": 6.15,
-    "regularMarketChangePercent": -4.5031,
-    "regularMarketVolume": 6672001,
-    "averageDailyVolume3Month": 6113320,
-    "marketCap": 1645905792,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 13.525
-   },
-   {
     "symbol": "LGO",
     "shortName": "Largo Inc.",
     "regularMarketPrice": 0.5031,
@@ -1375,17 +1365,6 @@
     "marketCap": 51886712,
     "postMarketChangePercent": 1.3714993,
     "fiftyTwoWeekHigh": 2.7
-   },
-   {
-    "symbol": "LAC",
-    "shortName": "Lithium Americas Corp.",
-    "regularMarketPrice": 2.68,
-    "regularMarketChangePercent": -2.54545,
-    "regularMarketVolume": 8432381,
-    "averageDailyVolume3Month": 9666004,
-    "marketCap": 972955136,
-    "postMarketChangePercent": 1.1194019,
-    "fiftyTwoWeekHigh": 10.52
    },
    {
     "symbol": "FLNC",
@@ -1399,70 +1378,26 @@
     "fiftyTwoWeekHigh": 33.51
    },
    {
+    "symbol": "LAC",
+    "shortName": "Lithium Americas Corp.",
+    "regularMarketPrice": 2.68,
+    "regularMarketChangePercent": -2.54545,
+    "regularMarketVolume": 8432381,
+    "averageDailyVolume3Month": 9666004,
+    "marketCap": 972955136,
+    "postMarketChangePercent": 1.1194019,
+    "fiftyTwoWeekHigh": 10.52
+   },
+   {
     "symbol": "COUR",
     "shortName": "Coursera, Inc.",
     "regularMarketPrice": 4.64,
     "regularMarketChangePercent": -8.11882,
     "regularMarketVolume": 10036628,
     "averageDailyVolume3Month": 5785168,
-    "marketCap": 1328704000,
+    "marketCap": 1226816000,
     "postMarketChangePercent": 0.53017306,
     "fiftyTwoWeekHigh": 12.32
-   },
-   {
-    "symbol": "ORC",
-    "shortName": "Orchid Island Capital, Inc.",
-    "regularMarketPrice": 5.68,
-    "regularMarketChangePercent": -0.525398,
-    "regularMarketVolume": 5337237,
-    "averageDailyVolume3Month": 4843617,
-    "marketCap": 1121273472,
-    "postMarketChangePercent": 0.35211235,
-    "fiftyTwoWeekHigh": 8.4
-   },
-   {
-    "symbol": "NAT",
-    "shortName": "Nordic American Tankers Limited",
-    "regularMarketPrice": 7.79,
-    "regularMarketChangePercent": 0.906738,
-    "regularMarketVolume": 4280563,
-    "averageDailyVolume3Month": 3807993,
-    "marketCap": 1649537664,
-    "postMarketChangePercent": -0.72785306,
-    "fiftyTwoWeekHigh": 8.33
-   },
-   {
-    "symbol": "BRSL",
-    "shortName": "Brightstar Lottery PLC Trading ",
-    "regularMarketPrice": 9.87,
-    "regularMarketChangePercent": -0.903616,
-    "regularMarketVolume": 2264361,
-    "averageDailyVolume3Month": 1935220,
-    "marketCap": 1803666944,
-    "postMarketChangePercent": -0.15174854,
-    "fiftyTwoWeekHigh": 18.57
-   },
-   {
-    "symbol": "VNET",
-    "shortName": "VNET Group, Inc.",
-    "regularMarketPrice": 5.98,
-    "regularMarketChangePercent": -9.93976,
-    "regularMarketVolume": 4933569,
-    "averageDailyVolume3Month": 4422171,
-    "marketCap": 1702456064,
-    "postMarketChangePercent": 1.1705714,
-    "fiftyTwoWeekHigh": 14.48
-   },
-   {
-    "symbol": "LESL",
-    "shortName": "Leslie's, Inc.",
-    "regularMarketPrice": 0.2392,
-    "regularMarketChangePercent": -18.1663,
-    "regularMarketVolume": 1809680,
-    "averageDailyVolume3Month": 1759798,
-    "marketCap": 2240221,
-    "postMarketChangePercent": 0.6270947,
-    "fiftyTwoWeekHigh": 12.53
    },
    {
     "symbol": "VISN",
@@ -1476,15 +1411,37 @@
     "fiftyTwoWeekHigh": 20.55
    },
    {
-    "symbol": "CTKB",
-    "shortName": "Cytek Biosciences, Inc.",
-    "regularMarketPrice": 5.74,
-    "regularMarketChangePercent": 1.59291,
-    "regularMarketVolume": 1085774,
-    "averageDailyVolume3Month": 989074,
-    "marketCap": 746103872,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 6.18
+    "symbol": "ORC",
+    "shortName": "Orchid Island Capital, Inc.",
+    "regularMarketPrice": 5.68,
+    "regularMarketChangePercent": -0.525398,
+    "regularMarketVolume": 5337237,
+    "averageDailyVolume3Month": 4843617,
+    "marketCap": 1121273472,
+    "postMarketChangePercent": 0.35211235,
+    "fiftyTwoWeekHigh": 8.4
+   },
+   {
+    "symbol": "VNET",
+    "shortName": "VNET Group, Inc.",
+    "regularMarketPrice": 5.98,
+    "regularMarketChangePercent": -9.93976,
+    "regularMarketVolume": 4933569,
+    "averageDailyVolume3Month": 4422171,
+    "marketCap": 1702456064,
+    "postMarketChangePercent": 1.1705714,
+    "fiftyTwoWeekHigh": 14.48
+   },
+   {
+    "symbol": "NAT",
+    "shortName": "Nordic American Tankers Limited",
+    "regularMarketPrice": 7.79,
+    "regularMarketChangePercent": 0.906738,
+    "regularMarketVolume": 4280563,
+    "averageDailyVolume3Month": 3807993,
+    "marketCap": 1649537664,
+    "postMarketChangePercent": -0.72785306,
+    "fiftyTwoWeekHigh": 8.33
    },
    {
     "symbol": "TMC",
@@ -1507,17 +1464,6 @@
     "marketCap": 1399711872,
     "postMarketChangePercent": 3.2894785,
     "fiftyTwoWeekHigh": 8.405
-   },
-   {
-    "symbol": "ANGX",
-    "shortName": "Angel Studios, Inc.",
-    "regularMarketPrice": 4.57,
-    "regularMarketChangePercent": -4.79167,
-    "regularMarketVolume": 1427980,
-    "averageDailyVolume3Month": 1643406,
-    "marketCap": 853476416,
-    "postMarketChangePercent": 0.65644926,
-    "fiftyTwoWeekHigh": 9.85
    },
    {
     "symbol": "QNST",
@@ -1564,6 +1510,39 @@
     "fiftyTwoWeekHigh": 19.71
    },
    {
+    "symbol": "LESL",
+    "shortName": "Leslie's, Inc.",
+    "regularMarketPrice": 0.2392,
+    "regularMarketChangePercent": -18.1663,
+    "regularMarketVolume": 1809680,
+    "averageDailyVolume3Month": 1759798,
+    "marketCap": 2240221,
+    "postMarketChangePercent": 0.6270947,
+    "fiftyTwoWeekHigh": 12.53
+   },
+   {
+    "symbol": "CWH",
+    "shortName": "Camping World Holdings, Inc.",
+    "regularMarketPrice": 5.17,
+    "regularMarketChangePercent": -4.08163,
+    "regularMarketVolume": 1343476,
+    "averageDailyVolume3Month": 2051717,
+    "marketCap": 329990528,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 17.15
+   },
+   {
+    "symbol": "BRSL",
+    "shortName": "Brightstar Lottery PLC Trading ",
+    "regularMarketPrice": 9.87,
+    "regularMarketChangePercent": -0.903616,
+    "regularMarketVolume": 2264361,
+    "averageDailyVolume3Month": 1935220,
+    "marketCap": 1803666944,
+    "postMarketChangePercent": -0.15174854,
+    "fiftyTwoWeekHigh": 18.57
+   },
+   {
     "symbol": "CLBK",
     "shortName": "Columbia Financial, Inc.",
     "regularMarketPrice": 10.9,
@@ -1575,26 +1554,15 @@
     "fiftyTwoWeekHigh": 12.0
    },
    {
-    "symbol": "METC",
-    "shortName": "Ramaco Resources, Inc.",
-    "regularMarketPrice": 8.98,
-    "regularMarketChangePercent": -0.443469,
-    "regularMarketVolume": 1214231,
-    "averageDailyVolume3Month": 2027533,
-    "marketCap": 571875776,
-    "postMarketChangePercent": 0.11136113,
-    "fiftyTwoWeekHigh": 57.8
-   },
-   {
-    "symbol": "KURA",
-    "shortName": "Kura Oncology, Inc.",
-    "regularMarketPrice": 10.61,
-    "regularMarketChangePercent": -1.39406,
-    "regularMarketVolume": 1577065,
-    "averageDailyVolume3Month": 1801369,
-    "marketCap": 943872128,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 13.9
+    "symbol": "SOS",
+    "shortName": "SOS Limited",
+    "regularMarketPrice": 0.3374,
+    "regularMarketChangePercent": -5.99053,
+    "regularMarketVolume": 411072,
+    "averageDailyVolume3Month": 1032449,
+    "marketCap": 6530563,
+    "postMarketChangePercent": -4.8606935,
+    "fiftyTwoWeekHigh": 2.35
    },
    {
     "symbol": "TBLA",
@@ -1630,15 +1598,26 @@
     "fiftyTwoWeekHigh": 25.32
    },
    {
-    "symbol": "OPTU",
-    "shortName": "Optimum Communications, Inc.",
-    "regularMarketPrice": 1.01,
-    "regularMarketChangePercent": 0.0,
-    "regularMarketVolume": 1678082,
-    "averageDailyVolume3Month": 4705509,
-    "marketCap": 385245856,
-    "postMarketChangePercent": -2.0000014,
-    "fiftyTwoWeekHigh": 2.74
+    "symbol": "CTKB",
+    "shortName": "Cytek Biosciences, Inc.",
+    "regularMarketPrice": 5.74,
+    "regularMarketChangePercent": 1.59291,
+    "regularMarketVolume": 1085774,
+    "averageDailyVolume3Month": 989074,
+    "marketCap": 746103872,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 6.18
+   },
+   {
+    "symbol": "KREF",
+    "shortName": "KKR Real Estate Finance Trust I",
+    "regularMarketPrice": 6.26,
+    "regularMarketChangePercent": -1.41732,
+    "regularMarketVolume": 827852,
+    "averageDailyVolume3Month": 945150,
+    "marketCap": 366697952,
+    "postMarketChangePercent": -0.07980268,
+    "fiftyTwoWeekHigh": 9.35
    },
    {
     "symbol": "CSIQ",
@@ -1652,28 +1631,6 @@
     "fiftyTwoWeekHigh": 34.59
    },
    {
-    "symbol": "RC",
-    "shortName": "Ready Capital Corporation",
-    "regularMarketPrice": 1.3,
-    "regularMarketChangePercent": -2.25565,
-    "regularMarketVolume": 1702297,
-    "averageDailyVolume3Month": 1220833,
-    "marketCap": 215164288,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 4.18
-   },
-   {
-    "symbol": "CWH",
-    "shortName": "Camping World Holdings, Inc.",
-    "regularMarketPrice": 5.17,
-    "regularMarketChangePercent": -4.08163,
-    "regularMarketVolume": 1343476,
-    "averageDailyVolume3Month": 2051717,
-    "marketCap": 329990528,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 17.15
-   },
-   {
     "symbol": "CAPR",
     "shortName": "Capricor Therapeutics, Inc.",
     "regularMarketPrice": 8.71,
@@ -1685,6 +1642,72 @@
     "fiftyTwoWeekHigh": 40.37
    },
    {
+    "symbol": "PMT",
+    "shortName": "PennyMac Mortgage Investment Tr",
+    "regularMarketPrice": 8.07,
+    "regularMarketChangePercent": -3.12125,
+    "regularMarketVolume": 2241015,
+    "averageDailyVolume3Month": 1536725,
+    "marketCap": 703723008,
+    "postMarketChangePercent": 1.3630807,
+    "fiftyTwoWeekHigh": 13.81
+   },
+   {
+    "symbol": "RC",
+    "shortName": "Ready Capital Corporation",
+    "regularMarketPrice": 1.3,
+    "regularMarketChangePercent": -2.25565,
+    "regularMarketVolume": 1702297,
+    "averageDailyVolume3Month": 1220833,
+    "marketCap": 215164288,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 4.18
+   },
+   {
+    "symbol": "GLAS",
+    "shortName": "Glass House Brands Inc. Subordi",
+    "regularMarketPrice": 6.85,
+    "regularMarketChangePercent": 0.73529,
+    "regularMarketVolume": 1582942,
+    "averageDailyVolume3Month": 550952,
+    "marketCap": 645561152,
+    "postMarketChangePercent": 0.9051135,
+    "fiftyTwoWeekHigh": 13.93
+   },
+   {
+    "symbol": "ENOV",
+    "shortName": "Enovis Corporation",
+    "regularMarketPrice": 18.16,
+    "regularMarketChangePercent": -1.62513,
+    "regularMarketVolume": 1188529,
+    "averageDailyVolume3Month": 1460917,
+    "marketCap": 1047278016,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 34.28
+   },
+   {
+    "symbol": "EVH",
+    "shortName": "Evolent Health, Inc",
+    "regularMarketPrice": 3.65,
+    "regularMarketChangePercent": 1.10804,
+    "regularMarketVolume": 2143822,
+    "averageDailyVolume3Month": 3012150,
+    "marketCap": 412666592,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 8.975
+   },
+   {
+    "symbol": "KURA",
+    "shortName": "Kura Oncology, Inc.",
+    "regularMarketPrice": 10.61,
+    "regularMarketChangePercent": -1.39406,
+    "regularMarketVolume": 1577065,
+    "averageDailyVolume3Month": 1801369,
+    "marketCap": 943872128,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 13.9
+   },
+   {
     "symbol": "TROX",
     "shortName": "Tronox Holdings plc",
     "regularMarketPrice": 3.97,
@@ -1694,17 +1717,6 @@
     "marketCap": 634009152,
     "postMarketChangePercent": 1.7632225,
     "fiftyTwoWeekHigh": 10.59
-   },
-   {
-    "symbol": "SFL",
-    "shortName": "SFL Corporation Ltd",
-    "regularMarketPrice": 12.83,
-    "regularMarketChangePercent": 0.391238,
-    "regularMarketVolume": 1020380,
-    "averageDailyVolume3Month": 1398434,
-    "marketCap": 1779139840,
-    "postMarketChangePercent": -0.623538,
-    "fiftyTwoWeekHigh": 13.98
    },
    {
     "symbol": "OLN",
@@ -1727,16 +1739,6 @@
     "marketCap": 1719571200,
     "postMarketChangePercent": 0.0,
     "fiftyTwoWeekHigh": 21.67
-   },
-   {
-    "symbol": "PMT",
-    "shortName": "PennyMac Mortgage Investment Tr",
-    "regularMarketPrice": 8.07,
-    "regularMarketChangePercent": -3.12125,
-    "regularMarketVolume": 2241015,
-    "averageDailyVolume3Month": 1536725,
-    "postMarketChangePercent": 1.3630807,
-    "fiftyTwoWeekHigh": 13.81
    }
   ],
   "day_losers": [
@@ -1747,7 +1749,7 @@
     "regularMarketChangePercent": -18.4582,
     "regularMarketVolume": 17806336,
     "averageDailyVolume3Month": 1621074,
-    "marketCap": 26918957056,
+    "marketCap": 26960596992,
     "postMarketChangePercent": 0.81060153,
     "fiftyTwoWeekHigh": 473.1
    },
@@ -1950,6 +1952,17 @@
     "fiftyTwoWeekHigh": 36.94
    },
    {
+    "symbol": "TEO",
+    "shortName": "Telecom Argentina SA",
+    "regularMarketPrice": 12.08,
+    "regularMarketChangePercent": -7.21967,
+    "regularMarketVolume": 259649,
+    "averageDailyVolume3Month": 264355,
+    "marketCap": 5203310080,
+    "postMarketChangePercent": 0.9105932,
+    "fiftyTwoWeekHigh": 16.34
+   },
+   {
     "symbol": "QCOM",
     "shortName": "QUALCOMM Incorporated",
     "regularMarketPrice": 187.48,
@@ -2033,7 +2046,7 @@
     "regularMarketChangePercent": -6.90665,
     "regularMarketVolume": 17850435,
     "averageDailyVolume3Month": 5873246,
-    "marketCap": 145736335360,
+    "marketCap": 145629839360,
     "postMarketChangePercent": 0.56401825,
     "fiftyTwoWeekHigh": 254.35
    },
@@ -2088,7 +2101,7 @@
     "regularMarketChangePercent": -6.48708,
     "regularMarketVolume": 39725684,
     "averageDailyVolume3Month": 37284130,
-    "marketCap": 11426781184,
+    "marketCap": 11408818176,
     "postMarketChangePercent": 0.032327373,
     "fiftyTwoWeekHigh": 34.17
    },
@@ -2110,7 +2123,7 @@
     "regularMarketChangePercent": -6.48033,
     "regularMarketVolume": 1182067,
     "averageDailyVolume3Month": 769484,
-    "marketCap": 4178643968,
+    "marketCap": 4180785152,
     "postMarketChangePercent": -0.14699405,
     "fiftyTwoWeekHigh": 137.42
    },
@@ -2132,7 +2145,7 @@
     "regularMarketChangePercent": -6.41767,
     "regularMarketVolume": 1622907,
     "averageDailyVolume3Month": 1181760,
-    "marketCap": 6257455616,
+    "marketCap": 6283396096,
     "postMarketChangePercent": -0.0074532875,
     "fiftyTwoWeekHigh": 353.0
    },
@@ -2168,17 +2181,6 @@
     "marketCap": 3246181120,
     "postMarketChangePercent": 0.63084775,
     "fiftyTwoWeekHigh": 57.42
-   },
-   {
-    "symbol": "PSLV",
-    "shortName": "\"Sprott Physical Silver Trust\"",
-    "regularMarketPrice": 19.74,
-    "regularMarketChangePercent": -6.04474,
-    "regularMarketVolume": 9731545,
-    "averageDailyVolume3Month": 6998369,
-    "marketCap": 12472642560,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 38.13
    }
   ],
   "most_shorted_stocks": [
@@ -2222,7 +2224,7 @@
     "regularMarketChangePercent": -7.14286,
     "regularMarketVolume": 167806,
     "averageDailyVolume3Month": 4378421,
-    "marketCap": 8896625,
+    "marketCap": 177932480,
     "postMarketChangePercent": 0.6993084,
     "fiftyTwoWeekHigh": 18.68
    },
@@ -2332,7 +2334,7 @@
     "regularMarketChangePercent": -3.00158,
     "regularMarketVolume": 25758916,
     "averageDailyVolume3Month": 27191528,
-    "marketCap": 1110380032,
+    "marketCap": 1117995008,
     "postMarketChangePercent": 1.3029304,
     "fiftyTwoWeekHigh": 19.86
    },
@@ -2464,7 +2466,7 @@
     "regularMarketChangePercent": 0.0,
     "regularMarketVolume": 3765125,
     "averageDailyVolume3Month": 3649746,
-    "marketCap": 978597376,
+    "marketCap": 985646464,
     "postMarketChangePercent": -0.9750271,
     "fiftyTwoWeekHigh": 17.82
    },
@@ -2497,7 +2499,7 @@
     "regularMarketChangePercent": -5.4254,
     "regularMarketVolume": 6403389,
     "averageDailyVolume3Month": 8907306,
-    "marketCap": 1829672960,
+    "marketCap": 1847296384,
     "postMarketChangePercent": 0.1955654,
     "fiftyTwoWeekHigh": 22.44
    },
@@ -2552,7 +2554,7 @@
     "regularMarketChangePercent": -3.27593,
     "regularMarketVolume": 4999502,
     "averageDailyVolume3Month": 4266993,
-    "marketCap": 2241119488,
+    "marketCap": 2204237568,
     "postMarketChangePercent": 0.52105486,
     "fiftyTwoWeekHigh": 57.95
    },
@@ -2642,7 +2644,7 @@
     "regularMarketChangePercent": -3.42117,
     "regularMarketVolume": 29340799,
     "averageDailyVolume3Month": 46673274,
-    "marketCap": 27448012800,
+    "marketCap": 27026354176,
     "postMarketChangePercent": 0.0691722,
     "fiftyTwoWeekHigh": 58.78
    },
@@ -2656,28 +2658,6 @@
     "marketCap": 18060947456,
     "postMarketChangePercent": 0.17944822,
     "fiftyTwoWeekHigh": 84.64
-   },
-   {
-    "symbol": "PLTR",
-    "shortName": "Palantir Technologies Inc.",
-    "regularMarketPrice": 187.48,
-    "regularMarketChangePercent": -1.15464,
-    "regularMarketVolume": 17374529,
-    "averageDailyVolume3Month": 36945036,
-    "marketCap": 450525396992,
-    "postMarketChangePercent": 0.24002399,
-    "fiftyTwoWeekHigh": 207.52
-   },
-   {
-    "symbol": "AMD",
-    "shortName": "Advanced Micro Devices, Inc.",
-    "regularMarketPrice": 607.87,
-    "regularMarketChangePercent": -3.60909,
-    "regularMarketVolume": 21869999,
-    "averageDailyVolume3Month": 24468579,
-    "marketCap": 992332546048,
-    "postMarketChangePercent": 0.39975533,
-    "fiftyTwoWeekHigh": 639.0
    },
    {
     "symbol": "ORCL",
@@ -2702,17 +2682,6 @@
     "fiftyTwoWeekHigh": 65.65
    },
    {
-    "symbol": "AVGO",
-    "shortName": "Broadcom Inc.",
-    "regularMarketPrice": 349.57,
-    "regularMarketChangePercent": -0.918339,
-    "regularMarketVolume": 21253361,
-    "averageDailyVolume3Month": 22773469,
-    "marketCap": 1668717871104,
-    "postMarketChangePercent": -0.04242796,
-    "fiftyTwoWeekHigh": 495.0
-   },
-   {
     "symbol": "MU",
     "shortName": "Micron Technology, Inc.",
     "regularMarketPrice": 1053.98,
@@ -2724,6 +2693,39 @@
     "fiftyTwoWeekHigh": 1255.0
    },
    {
+    "symbol": "PLTR",
+    "shortName": "Palantir Technologies Inc.",
+    "regularMarketPrice": 187.48,
+    "regularMarketChangePercent": -1.15464,
+    "regularMarketVolume": 17374529,
+    "averageDailyVolume3Month": 36945036,
+    "marketCap": 450525396992,
+    "postMarketChangePercent": 0.24002399,
+    "fiftyTwoWeekHigh": 207.52
+   },
+   {
+    "symbol": "AMD",
+    "shortName": "Advanced Micro Devices, Inc.",
+    "regularMarketPrice": 607.87,
+    "regularMarketChangePercent": -3.60909,
+    "regularMarketVolume": 21869999,
+    "averageDailyVolume3Month": 24468579,
+    "marketCap": 992332546048,
+    "postMarketChangePercent": 0.39975533,
+    "fiftyTwoWeekHigh": 639.0
+   },
+   {
+    "symbol": "AVGO",
+    "shortName": "Broadcom Inc.",
+    "regularMarketPrice": 349.57,
+    "regularMarketChangePercent": -0.918339,
+    "regularMarketVolume": 21253361,
+    "averageDailyVolume3Month": 22773469,
+    "marketCap": 1668717871104,
+    "postMarketChangePercent": -0.04242796,
+    "fiftyTwoWeekHigh": 495.0
+   },
+   {
     "symbol": "SKHY",
     "shortName": "SK hynix Inc.",
     "regularMarketPrice": 181.92,
@@ -2733,17 +2735,6 @@
     "marketCap": 1293588496384,
     "postMarketChangePercent": 0.499618,
     "fiftyTwoWeekHigh": 199.87
-   },
-   {
-    "symbol": "CRDO",
-    "shortName": "Credo Technology Group Holding ",
-    "regularMarketPrice": 192.67,
-    "regularMarketChangePercent": -8.67422,
-    "regularMarketVolume": 9028495,
-    "averageDailyVolume3Month": 6873388,
-    "marketCap": 36212695040,
-    "postMarketChangePercent": 0.11937288,
-    "fiftyTwoWeekHigh": 308.67
    },
    {
     "symbol": "P",
@@ -2779,17 +2770,6 @@
     "fiftyTwoWeekHigh": 30.46
    },
    {
-    "symbol": "ASTS",
-    "shortName": "AST SpaceMobile, Inc.",
-    "regularMarketPrice": 61.0,
-    "regularMarketChangePercent": -1.31047,
-    "regularMarketVolume": 7475390,
-    "averageDailyVolume3Month": 12728684,
-    "marketCap": 23739215872,
-    "postMarketChangePercent": 0.16393192,
-    "fiftyTwoWeekHigh": 133.86
-   },
-   {
     "symbol": "DELL",
     "shortName": "Dell Technologies Inc.",
     "regularMarketPrice": 543.43,
@@ -2823,17 +2803,6 @@
     "fiftyTwoWeekHigh": 479.0
    },
    {
-    "symbol": "FIS",
-    "shortName": "Fidelity National Information S",
-    "regularMarketPrice": 34.31,
-    "regularMarketChangePercent": -3.10646,
-    "regularMarketVolume": 8890994,
-    "averageDailyVolume3Month": 5994663,
-    "marketCap": 17693870080,
-    "postMarketChangePercent": 0.11657563,
-    "fiftyTwoWeekHigh": 69.14
-   },
-   {
     "symbol": "WDC",
     "shortName": "Western Digital Corporation",
     "regularMarketPrice": 453.23,
@@ -2843,6 +2812,28 @@
     "marketCap": 163407970304,
     "postMarketChangePercent": -0.24517485,
     "fiftyTwoWeekHigh": 799.87
+   },
+   {
+    "symbol": "ASTS",
+    "shortName": "AST SpaceMobile, Inc.",
+    "regularMarketPrice": 61.0,
+    "regularMarketChangePercent": -1.31047,
+    "regularMarketVolume": 7475390,
+    "averageDailyVolume3Month": 12728684,
+    "marketCap": 23739215872,
+    "postMarketChangePercent": 0.16393192,
+    "fiftyTwoWeekHigh": 133.86
+   },
+   {
+    "symbol": "CRDO",
+    "shortName": "Credo Technology Group Holding ",
+    "regularMarketPrice": 192.67,
+    "regularMarketChangePercent": -8.67422,
+    "regularMarketVolume": 9028495,
+    "averageDailyVolume3Month": 6873388,
+    "marketCap": 36212695040,
+    "postMarketChangePercent": 0.11937288,
+    "fiftyTwoWeekHigh": 308.67
    },
    {
     "symbol": "STX",
@@ -2856,6 +2847,17 @@
     "fiftyTwoWeekHigh": 1145.0
    },
    {
+    "symbol": "DDOG",
+    "shortName": "Datadog, Inc.",
+    "regularMarketPrice": 268.7,
+    "regularMarketChangePercent": 0.212586,
+    "regularMarketVolume": 3407516,
+    "averageDailyVolume3Month": 4338946,
+    "marketCap": 96483459072,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 292.72
+   },
+   {
     "symbol": "ASX",
     "shortName": "ASE Technology Holding Co., Ltd",
     "regularMarketPrice": 43.79,
@@ -2867,15 +2869,15 @@
     "fiftyTwoWeekHigh": 45.52
    },
    {
-    "symbol": "AMKR",
-    "shortName": "Amkor Technology, Inc.",
-    "regularMarketPrice": 53.18,
-    "regularMarketChangePercent": -0.80209,
-    "regularMarketVolume": 3418609,
-    "averageDailyVolume3Month": 4909765,
-    "marketCap": 13212702720,
-    "postMarketChangePercent": -0.5453195,
-    "fiftyTwoWeekHigh": 96.68
+    "symbol": "FIS",
+    "shortName": "Fidelity National Information S",
+    "regularMarketPrice": 34.31,
+    "regularMarketChangePercent": -3.10646,
+    "regularMarketVolume": 8890994,
+    "averageDailyVolume3Month": 5994663,
+    "marketCap": 17734123520,
+    "postMarketChangePercent": 0.11657563,
+    "fiftyTwoWeekHigh": 69.14
    },
    {
     "symbol": "SMTC",
@@ -2922,28 +2924,6 @@
     "fiftyTwoWeekHigh": 445.91
    },
    {
-    "symbol": "TTMI",
-    "shortName": "TTM Technologies, Inc.",
-    "regularMarketPrice": 124.19,
-    "regularMarketChangePercent": -3.85538,
-    "regularMarketVolume": 1823227,
-    "averageDailyVolume3Month": 2535160,
-    "marketCap": 13083275264,
-    "postMarketChangePercent": -0.108706124,
-    "fiftyTwoWeekHigh": 223.83
-   },
-   {
-    "symbol": "DDOG",
-    "shortName": "Datadog, Inc.",
-    "regularMarketPrice": 268.7,
-    "regularMarketChangePercent": 0.212586,
-    "regularMarketVolume": 3407516,
-    "averageDailyVolume3Month": 4338946,
-    "marketCap": 96483459072,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 292.72
-   },
-   {
     "symbol": "MKSI",
     "shortName": "MKS Inc.",
     "regularMarketPrice": 258.38,
@@ -2955,15 +2935,15 @@
     "fiftyTwoWeekHigh": 447.62
    },
    {
-    "symbol": "TER",
-    "shortName": "Teradyne, Inc.",
-    "regularMarketPrice": 401.3,
-    "regularMarketChangePercent": 0.732964,
-    "regularMarketVolume": 2010170,
-    "averageDailyVolume3Month": 3177165,
-    "marketCap": 62739542016,
-    "postMarketChangePercent": -0.50916374,
-    "fiftyTwoWeekHigh": 487.91
+    "symbol": "AMKR",
+    "shortName": "Amkor Technology, Inc.",
+    "regularMarketPrice": 53.18,
+    "regularMarketChangePercent": -0.80209,
+    "regularMarketVolume": 3418609,
+    "averageDailyVolume3Month": 4909765,
+    "marketCap": 13181859840,
+    "postMarketChangePercent": -1.1282408,
+    "fiftyTwoWeekHigh": 96.68
    },
    {
     "symbol": "CLS",
@@ -2994,31 +2974,20 @@
     "regularMarketChangePercent": -2.47585,
     "regularMarketVolume": 1807947,
     "averageDailyVolume3Month": 3073958,
-    "marketCap": 16024915968,
+    "marketCap": 15933403136,
     "postMarketChangePercent": 0.0,
     "fiftyTwoWeekHigh": 187.5
    },
    {
-    "symbol": "DLO",
-    "shortName": "DLocal Limited",
-    "regularMarketPrice": 13.82,
-    "regularMarketChangePercent": -1.84659,
-    "regularMarketVolume": 1813804,
-    "averageDailyVolume3Month": 2299539,
-    "marketCap": 4066799104,
-    "postMarketChangePercent": 0.07236056,
-    "fiftyTwoWeekHigh": 16.78
-   },
-   {
-    "symbol": "CIEN",
-    "shortName": "Ciena Corporation",
-    "regularMarketPrice": 344.19,
-    "regularMarketChangePercent": -3.56392,
-    "regularMarketVolume": 1829975,
-    "averageDailyVolume3Month": 2283130,
-    "marketCap": 48809078784,
-    "postMarketChangePercent": -0.05520278,
-    "fiftyTwoWeekHigh": 637.51
+    "symbol": "KLIC",
+    "shortName": "Kulicke and Soffa Industries, I",
+    "regularMarketPrice": 91.68,
+    "regularMarketChangePercent": 0.548366,
+    "regularMarketVolume": 488115,
+    "averageDailyVolume3Month": 906323,
+    "marketCap": 4797533184,
+    "postMarketChangePercent": 0.56718653,
+    "fiftyTwoWeekHigh": 135.8
    },
    {
     "symbol": "FLYW",
@@ -3032,15 +3001,48 @@
     "fiftyTwoWeekHigh": 19.73
    },
    {
-    "symbol": "PAY",
-    "shortName": "Paymentus Holdings, Inc.",
-    "regularMarketPrice": 29.92,
-    "regularMarketChangePercent": -0.828638,
-    "regularMarketVolume": 731056,
-    "averageDailyVolume3Month": 1181339,
-    "marketCap": 3768114176,
-    "postMarketChangePercent": 0.0,
-    "fiftyTwoWeekHigh": 45.31
+    "symbol": "NTAP",
+    "shortName": "NetApp, Inc.",
+    "regularMarketPrice": 204.41,
+    "regularMarketChangePercent": 1.62321,
+    "regularMarketVolume": 2946796,
+    "averageDailyVolume3Month": 2539923,
+    "marketCap": 40150011904,
+    "postMarketChangePercent": 0.77784663,
+    "fiftyTwoWeekHigh": 209.06
+   },
+   {
+    "symbol": "TTMI",
+    "shortName": "TTM Technologies, Inc.",
+    "regularMarketPrice": 124.19,
+    "regularMarketChangePercent": -3.85538,
+    "regularMarketVolume": 1823227,
+    "averageDailyVolume3Month": 2535160,
+    "marketCap": 13083275264,
+    "postMarketChangePercent": -0.108706124,
+    "fiftyTwoWeekHigh": 223.83
+   },
+   {
+    "symbol": "CIEN",
+    "shortName": "Ciena Corporation",
+    "regularMarketPrice": 344.19,
+    "regularMarketChangePercent": -3.56392,
+    "regularMarketVolume": 1829975,
+    "averageDailyVolume3Month": 2283130,
+    "marketCap": 48809078784,
+    "postMarketChangePercent": -0.05520278,
+    "fiftyTwoWeekHigh": 637.51
+   },
+   {
+    "symbol": "TER",
+    "shortName": "Teradyne, Inc.",
+    "regularMarketPrice": 401.3,
+    "regularMarketChangePercent": 0.732964,
+    "regularMarketVolume": 2010170,
+    "averageDailyVolume3Month": 3177165,
+    "marketCap": 62739542016,
+    "postMarketChangePercent": -0.50916374,
+    "fiftyTwoWeekHigh": 487.91
    },
    {
     "symbol": "SNX",
@@ -3054,30 +3056,19 @@
     "fiftyTwoWeekHigh": 298.77
    },
    {
-    "symbol": "NTAP",
-    "shortName": "NetApp, Inc.",
-    "regularMarketPrice": 204.41,
-    "regularMarketChangePercent": 1.62321,
-    "regularMarketVolume": 2946796,
-    "averageDailyVolume3Month": 2539923,
-    "marketCap": 40150011904,
-    "postMarketChangePercent": 0.77784663,
-    "fiftyTwoWeekHigh": 209.06
+    "symbol": "KEYS",
+    "shortName": "Keysight Technologies Inc.",
+    "regularMarketPrice": 359.74,
+    "regularMarketChangePercent": -0.665471,
+    "regularMarketVolume": 862537,
+    "averageDailyVolume3Month": 1287087,
+    "marketCap": 61243846656,
+    "postMarketChangePercent": 0.0,
+    "fiftyTwoWeekHigh": 374.963
    }
   ]
  },
  "stats": {
-  "TSLA": {
-   "close": 372.11,
-   "ret_1d": -1.54,
-   "ret_5d": 2.15,
-   "ret_20d": 4.88,
-   "ret_60d": -12.51,
-   "atr14_pct": 3.01,
-   "avg_vol_20": 39928589,
-   "high_6mo": 453.4,
-   "off_high_pct": -17.93
-  },
   "NVDA": {
    "close": 225.07,
    "ret_1d": 0.22,
@@ -3088,17 +3079,6 @@
    "avg_vol_20": 113368566,
    "high_6mo": 236.54,
    "off_high_pct": -4.85
-  },
-  "SMCI": {
-   "close": 43.26,
-   "ret_1d": 4.22,
-   "ret_5d": 10.67,
-   "ret_20d": 12.48,
-   "ret_60d": 56.46,
-   "atr14_pct": 5.37,
-   "avg_vol_20": 37968779,
-   "high_6mo": 51.4,
-   "off_high_pct": -15.84
   },
   "PLTR": {
    "close": 189.67,
@@ -3111,16 +3091,16 @@
    "high_6mo": 194.68,
    "off_high_pct": -2.57
   },
-  "AVGO": {
-   "close": 352.81,
-   "ret_1d": 0.7,
-   "ret_5d": -1.34,
-   "ret_20d": -5.04,
-   "ret_60d": -4.48,
-   "atr14_pct": 2.88,
-   "avg_vol_20": 27632253,
-   "high_6mo": 495.0,
-   "off_high_pct": -28.73
+  "SMCI": {
+   "close": 43.26,
+   "ret_1d": 4.22,
+   "ret_5d": 10.67,
+   "ret_20d": 12.48,
+   "ret_60d": 56.46,
+   "atr14_pct": 5.37,
+   "avg_vol_20": 37968779,
+   "high_6mo": 51.4,
+   "off_high_pct": -15.84
   },
   "AMD": {
    "close": 630.63,
@@ -3132,6 +3112,39 @@
    "avg_vol_20": 21950244,
    "high_6mo": 639.0,
    "off_high_pct": -1.31
+  },
+  "AVGO": {
+   "close": 352.81,
+   "ret_1d": 0.7,
+   "ret_5d": -1.34,
+   "ret_20d": -5.04,
+   "ret_60d": -4.48,
+   "atr14_pct": 2.88,
+   "avg_vol_20": 27632253,
+   "high_6mo": 495.0,
+   "off_high_pct": -28.73
+  },
+  "TSLA": {
+   "close": 372.11,
+   "ret_1d": -1.54,
+   "ret_5d": 2.15,
+   "ret_20d": 4.88,
+   "ret_60d": -12.51,
+   "atr14_pct": 3.01,
+   "avg_vol_20": 39928589,
+   "high_6mo": 453.4,
+   "off_high_pct": -17.93
+  },
+  "MU": {
+   "close": 1082.28,
+   "ret_1d": 0.16,
+   "ret_5d": 6.54,
+   "ret_20d": 15.7,
+   "ret_60d": 4.84,
+   "atr14_pct": 4.12,
+   "avg_vol_20": 24951790,
+   "high_6mo": 1255.0,
+   "off_high_pct": -13.76
   },
   "APP": {
    "close": 310.75,
@@ -3155,17 +3168,6 @@
    "high_6mo": 126.74,
    "off_high_pct": -5.79
   },
-  "MU": {
-   "close": 1082.28,
-   "ret_1d": 0.16,
-   "ret_5d": 6.54,
-   "ret_20d": 15.7,
-   "ret_60d": 4.84,
-   "atr14_pct": 4.12,
-   "avg_vol_20": 24951790,
-   "high_6mo": 1255.0,
-   "off_high_pct": -13.76
-  },
   "COIN": {
    "close": 195.11,
    "ret_1d": -2.06,
@@ -3177,17 +3179,6 @@
    "high_6mo": 222.35,
    "off_high_pct": -12.25
   },
-  "IONQ": {
-   "close": 45.48,
-   "ret_1d": 1.11,
-   "ret_5d": 16.23,
-   "ret_20d": 7.11,
-   "ret_60d": -11.52,
-   "atr14_pct": 6.21,
-   "avg_vol_20": 24746088,
-   "high_6mo": 73.65,
-   "off_high_pct": -38.25
-  },
   "MSTR": {
    "close": 158.61,
    "ret_1d": -1.86,
@@ -3198,6 +3189,17 @@
    "avg_vol_20": 24046824,
    "high_6mo": 197.0,
    "off_high_pct": -19.49
+  },
+  "IONQ": {
+   "close": 45.48,
+   "ret_1d": 1.11,
+   "ret_5d": 16.23,
+   "ret_20d": 7.11,
+   "ret_60d": -11.52,
+   "atr14_pct": 6.21,
+   "avg_vol_20": 24746088,
+   "high_6mo": 73.65,
+   "off_high_pct": -38.25
   },
   "RGTI": {
    "close": 16.66,
@@ -3221,6 +3223,28 @@
    "high_6mo": 31.55,
    "off_high_pct": -44.82
   },
+  "QUBT": {
+   "close": 8.96,
+   "ret_1d": -2.18,
+   "ret_5d": 2.99,
+   "ret_20d": 3.58,
+   "ret_60d": -4.98,
+   "atr14_pct": 4.56,
+   "avg_vol_20": 7003789,
+   "high_6mo": 14.45,
+   "off_high_pct": -37.99
+  },
+  "SMR": {
+   "close": 8.42,
+   "ret_1d": -0.59,
+   "ret_5d": 1.81,
+   "ret_20d": -13.55,
+   "ret_60d": -17.04,
+   "atr14_pct": 8.72,
+   "avg_vol_20": 36939488,
+   "high_6mo": 14.3,
+   "off_high_pct": -41.12
+  },
   "OKLO": {
    "close": 38.04,
    "ret_1d": -0.65,
@@ -3243,27 +3267,16 @@
    "high_6mo": 31.59,
    "off_high_pct": -46.22
   },
-  "SMR": {
-   "close": 8.42,
-   "ret_1d": -0.59,
-   "ret_5d": 1.81,
-   "ret_20d": -13.55,
-   "ret_60d": -17.04,
-   "atr14_pct": 8.72,
-   "avg_vol_20": 36939488,
-   "high_6mo": 14.3,
-   "off_high_pct": -41.12
-  },
-  "QUBT": {
-   "close": 8.96,
-   "ret_1d": -2.18,
-   "ret_5d": 2.99,
-   "ret_20d": 3.58,
-   "ret_60d": -4.98,
-   "atr14_pct": 4.56,
-   "avg_vol_20": 7003789,
-   "high_6mo": 14.45,
-   "off_high_pct": -37.99
+  "RKLB": {
+   "close": 73.95,
+   "ret_1d": 0.46,
+   "ret_5d": 14.53,
+   "ret_20d": 9.51,
+   "ret_60d": -26.1,
+   "atr14_pct": 5.2,
+   "avg_vol_20": 19935147,
+   "high_6mo": 151.0,
+   "off_high_pct": -51.03
   },
   "ASTS": {
    "close": 61.81,
@@ -3276,16 +3289,16 @@
    "high_6mo": 133.86,
    "off_high_pct": -53.82
   },
-  "RKLB": {
-   "close": 73.95,
-   "ret_1d": 0.46,
-   "ret_5d": 14.53,
-   "ret_20d": 9.51,
-   "ret_60d": -26.1,
-   "atr14_pct": 5.2,
-   "avg_vol_20": 19935147,
-   "high_6mo": 151.0,
-   "off_high_pct": -51.03
+  "SOUN": {
+   "close": 6.05,
+   "ret_1d": -0.82,
+   "ret_5d": 2.02,
+   "ret_20d": -16.2,
+   "ret_60d": -9.43,
+   "atr14_pct": 4.04,
+   "avg_vol_20": 20575516,
+   "high_6mo": 10.045,
+   "off_high_pct": -39.77
   },
   "LUNR": {
    "close": 15.61,
@@ -3297,17 +3310,6 @@
    "avg_vol_20": 7114311,
    "high_6mo": 46.75,
    "off_high_pct": -66.61
-  },
-  "SOUN": {
-   "close": 6.05,
-   "ret_1d": -0.82,
-   "ret_5d": 2.02,
-   "ret_20d": -16.2,
-   "ret_60d": -9.43,
-   "atr14_pct": 4.04,
-   "avg_vol_20": 20575516,
-   "high_6mo": 10.045,
-   "off_high_pct": -39.77
   },
   "BBAI": {
    "close": 2.8,
@@ -3353,16 +3355,16 @@
    "high_6mo": 70.707,
    "off_high_pct": -37.59
   },
-  "WULF": {
-   "close": 15.74,
-   "ret_1d": -3.38,
-   "ret_5d": -7.47,
-   "ret_20d": -4.55,
-   "ret_60d": -33.25,
-   "atr14_pct": 7.1,
-   "avg_vol_20": 27887181,
-   "high_6mo": 29.84,
-   "off_high_pct": -47.25
+  "CIFR": {
+   "close": 17.73,
+   "ret_1d": -2.04,
+   "ret_5d": -3.33,
+   "ret_20d": 5.72,
+   "ret_60d": -22.37,
+   "atr14_pct": 8.47,
+   "avg_vol_20": 33741780,
+   "high_6mo": 30.14,
+   "off_high_pct": -41.17
   },
   "MARA": {
    "close": 12.55,
@@ -3375,16 +3377,27 @@
    "high_6mo": 16.43,
    "off_high_pct": -23.62
   },
-  "CIFR": {
-   "close": 17.73,
+  "WULF": {
+   "close": 15.74,
+   "ret_1d": -3.38,
+   "ret_5d": -7.47,
+   "ret_20d": -4.55,
+   "ret_60d": -33.25,
+   "atr14_pct": 7.1,
+   "avg_vol_20": 27887181,
+   "high_6mo": 29.84,
+   "off_high_pct": -47.25
+  },
+  "RIOT": {
+   "close": 23.0,
    "ret_1d": -2.04,
-   "ret_5d": -3.33,
-   "ret_20d": 5.72,
-   "ret_60d": -22.37,
-   "atr14_pct": 8.47,
-   "avg_vol_20": 33741780,
-   "high_6mo": 30.14,
-   "off_high_pct": -41.17
+   "ret_5d": -3.16,
+   "ret_20d": 10.15,
+   "ret_60d": -4.01,
+   "atr14_pct": 6.01,
+   "avg_vol_20": 16086350,
+   "high_6mo": 30.32,
+   "off_high_pct": -24.14
   },
   "HIMS": {
    "close": 29.42,
@@ -3408,17 +3421,6 @@
    "high_6mo": 20.13,
    "off_high_pct": -17.64
   },
-  "RIOT": {
-   "close": 23.0,
-   "ret_1d": -2.04,
-   "ret_5d": -3.16,
-   "ret_20d": 10.15,
-   "ret_60d": -4.01,
-   "atr14_pct": 6.01,
-   "avg_vol_20": 16086350,
-   "high_6mo": 30.32,
-   "off_high_pct": -24.14
-  },
   "AFRM": {
    "close": 71.52,
    "ret_1d": -0.07,
@@ -3429,17 +3431,6 @@
    "avg_vol_20": 4868326,
    "high_6mo": 90.44,
    "off_high_pct": -20.92
-  },
-  "UPST": {
-   "close": 23.81,
-   "ret_1d": -3.37,
-   "ret_5d": -4.76,
-   "ret_20d": -21.83,
-   "ret_60d": -33.38,
-   "atr14_pct": 4.52,
-   "avg_vol_20": 4414030,
-   "high_6mo": 36.9,
-   "off_high_pct": -35.47
   },
   "CVNA": {
    "close": 65.06,
@@ -3462,6 +3453,17 @@
    "avg_vol_20": 4822230,
    "high_6mo": 208.05,
    "off_high_pct": -27.98
+  },
+  "UPST": {
+   "close": 23.81,
+   "ret_1d": -3.37,
+   "ret_5d": -4.76,
+   "ret_20d": -21.83,
+   "ret_60d": -33.38,
+   "atr14_pct": 4.52,
+   "avg_vol_20": 4414030,
+   "high_6mo": 36.9,
+   "off_high_pct": -35.47
   },
   "BE": {
    "close": 288.7,
@@ -3496,6 +3498,17 @@
    "high_6mo": 88.09,
    "off_high_pct": -9.64
   },
+  "NVDL": {
+   "close": 35.72,
+   "ret_1d": 0.45,
+   "ret_5d": 2.44,
+   "ret_20d": -3.64,
+   "ret_60d": 22.58,
+   "atr14_pct": 4.56,
+   "avg_vol_20": 11472831,
+   "high_6mo": 43.2733,
+   "off_high_pct": -17.45
+  },
   "MSTU": {
    "close": 42.84,
    "ret_1d": -3.71,
@@ -3518,16 +3531,607 @@
    "high_6mo": 17.415,
    "off_high_pct": -42.92
   },
-  "NVDL": {
-   "close": 35.72,
-   "ret_1d": 0.45,
-   "ret_5d": 2.44,
-   "ret_20d": -3.64,
-   "ret_60d": 22.58,
-   "atr14_pct": 4.56,
-   "avg_vol_20": 11472831,
-   "high_6mo": 43.2733,
-   "off_high_pct": -17.45
+  "NVTS": {
+   "close": 12.2,
+   "ret_1d": 3.04,
+   "ret_5d": 6.74,
+   "ret_20d": -2.48,
+   "ret_60d": -26.19,
+   "atr14_pct": 5.63,
+   "avg_vol_20": 11135452,
+   "high_6mo": 34.17,
+   "off_high_pct": -64.3
+  },
+  "KOD": {
+   "close": 32.35,
+   "ret_1d": -2.62,
+   "ret_5d": -1.1,
+   "ret_20d": -17.31,
+   "ret_60d": -13.13,
+   "atr14_pct": 5.82,
+   "avg_vol_20": 2750370,
+   "high_6mo": 95.77,
+   "off_high_pct": -66.22
+  },
+  "VG": {
+   "close": 12.62,
+   "ret_1d": -4.61,
+   "ret_5d": -9.99,
+   "ret_20d": -12.85,
+   "ret_60d": 14.42,
+   "atr14_pct": 5.68,
+   "avg_vol_20": 15253613,
+   "high_6mo": 17.61,
+   "off_high_pct": -28.34
+  },
+  "MUU": {
+   "close": 37.85,
+   "ret_1d": 0.37,
+   "ret_5d": 12.25,
+   "ret_20d": 29.45,
+   "ret_60d": -10.94,
+   "atr14_pct": 7.72,
+   "avg_vol_20": 22090697,
+   "high_6mo": 62.64,
+   "off_high_pct": -39.58
+  },
+  "SNDK": {
+   "close": 1777.8,
+   "ret_1d": 1.38,
+   "ret_5d": -0.78,
+   "ret_20d": 19.72,
+   "ret_60d": -12.52,
+   "atr14_pct": 5.63,
+   "avg_vol_20": 10579854,
+   "high_6mo": 2354.3899,
+   "off_high_pct": -24.49
+  },
+  "AMC": {
+   "close": 2.94,
+   "ret_1d": 1.03,
+   "ret_5d": 8.89,
+   "ret_20d": 8.89,
+   "ret_60d": 52.33,
+   "atr14_pct": 5.47,
+   "avg_vol_20": 29636640,
+   "high_6mo": 3.4,
+   "off_high_pct": -13.53
+  },
+  "IONX": {
+   "close": 29.5,
+   "ret_1d": 2.18,
+   "ret_5d": 33.42,
+   "ret_20d": 8.5,
+   "ret_60d": -37.57,
+   "atr14_pct": 10.9,
+   "avg_vol_20": 1396198,
+   "high_6mo": 107.77,
+   "off_high_pct": -72.63
+  },
+  "INTC": {
+   "close": 123.0,
+   "ret_1d": -3.45,
+   "ret_5d": 13.26,
+   "ret_20d": 33.56,
+   "ret_60d": -3.16,
+   "atr14_pct": 5.65,
+   "avg_vol_20": 106891308,
+   "high_6mo": 142.35,
+   "off_high_pct": -13.59
+  },
+  "FRO": {
+   "close": 47.73,
+   "ret_1d": -0.5,
+   "ret_5d": -7.18,
+   "ret_20d": 9.1,
+   "ret_60d": 37.55,
+   "atr14_pct": 4.23,
+   "avg_vol_20": 3858382,
+   "high_6mo": 54.91,
+   "off_high_pct": -13.08
+  },
+  "CCL": {
+   "close": 22.25,
+   "ret_1d": 2.11,
+   "ret_5d": 1.88,
+   "ret_20d": -10.82,
+   "ret_60d": -21.98,
+   "atr14_pct": 3.22,
+   "avg_vol_20": 23394888,
+   "high_6mo": 31.6,
+   "off_high_pct": -29.59
+  },
+  "NKE": {
+   "close": 35.75,
+   "ret_1d": -0.67,
+   "ret_5d": 0.68,
+   "ret_20d": -7.0,
+   "ret_60d": -16.98,
+   "atr14_pct": 2.55,
+   "avg_vol_20": 32685818,
+   "high_6mo": 53.11,
+   "off_high_pct": -32.69
+  },
+  "DHT": {
+   "close": 21.78,
+   "ret_1d": 0.46,
+   "ret_5d": -6.4,
+   "ret_20d": 12.56,
+   "ret_60d": 31.76,
+   "atr14_pct": 3.79,
+   "avg_vol_20": 4039225,
+   "high_6mo": 23.56,
+   "off_high_pct": -7.56
+  },
+  "UCO": {
+   "close": 51.92,
+   "ret_1d": -2.64,
+   "ret_5d": -2.13,
+   "ret_20d": 21.62,
+   "ret_60d": 62.61,
+   "atr14_pct": 3.7,
+   "avg_vol_20": 2761032,
+   "high_6mo": 54.67,
+   "off_high_pct": -5.03
+  },
+  "SPCX": {
+   "close": 148.68,
+   "ret_1d": 0.44,
+   "ret_5d": -2.64,
+   "ret_20d": 5.54,
+   "ret_60d": -5.62,
+   "atr14_pct": 4.44,
+   "avg_vol_20": 91079148,
+   "high_6mo": 225.64,
+   "off_high_pct": -34.11
+  },
+  "NAT": {
+   "close": 7.72,
+   "ret_1d": 0.78,
+   "ret_5d": -6.42,
+   "ret_20d": 14.2,
+   "ret_60d": 38.85,
+   "atr14_pct": 4.04,
+   "avg_vol_20": 5086288,
+   "high_6mo": 8.33,
+   "off_high_pct": -7.32
+  },
+  "GUSH": {
+   "close": 41.41,
+   "ret_1d": -3.07,
+   "ret_5d": -9.41,
+   "ret_20d": -4.8,
+   "ret_60d": 35.55,
+   "atr14_pct": 5.68,
+   "avg_vol_20": 674805,
+   "high_6mo": 50.775,
+   "off_high_pct": -18.44
+  },
+  "MIRM": {
+   "close": 89.7,
+   "ret_1d": 0.38,
+   "ret_5d": -2.32,
+   "ret_20d": -10.08,
+   "ret_60d": -25.54,
+   "atr14_pct": 4.44,
+   "avg_vol_20": 717556,
+   "high_6mo": 130.0,
+   "off_high_pct": -31.0
+  },
+  "AMDL": {
+   "close": 84.22,
+   "ret_1d": 0.38,
+   "ret_5d": 25.67,
+   "ret_20d": 68.95,
+   "ret_60d": 17.92,
+   "atr14_pct": 7.18,
+   "avg_vol_20": 2281980,
+   "high_6mo": 86.431,
+   "off_high_pct": -2.56
+  },
+  "MDB": {
+   "close": 410.44,
+   "ret_1d": -2.6,
+   "ret_5d": 7.01,
+   "ret_20d": -6.84,
+   "ret_60d": 14.21,
+   "atr14_pct": 4.82,
+   "avg_vol_20": 2848986,
+   "high_6mo": 473.1,
+   "off_high_pct": -13.24
+  },
+  "META": {
+   "close": 751.66,
+   "ret_1d": -3.33,
+   "ret_5d": 12.9,
+   "ret_20d": 31.62,
+   "ret_60d": 22.64,
+   "atr14_pct": 3.94,
+   "avg_vol_20": 23507202,
+   "high_6mo": 779.82,
+   "off_high_pct": -3.61
+  },
+  "BA": {
+   "close": 198.07,
+   "ret_1d": 0.65,
+   "ret_5d": -0.07,
+   "ret_20d": -5.63,
+   "ret_60d": -9.38,
+   "atr14_pct": 2.95,
+   "avg_vol_20": 7176141,
+   "high_6mo": 244.07,
+   "off_high_pct": -18.85
+  },
+  "RCAT": {
+   "close": 6.66,
+   "ret_1d": -2.06,
+   "ret_5d": -1.33,
+   "ret_20d": -28.23,
+   "ret_60d": -36.87,
+   "atr14_pct": 6.78,
+   "avg_vol_20": 8664608,
+   "high_6mo": 15.79,
+   "off_high_pct": -57.82
+  },
+  "UMAC": {
+   "close": 24.05,
+   "ret_1d": 0.5,
+   "ret_5d": 3.75,
+   "ret_20d": -8.56,
+   "ret_60d": 3.57,
+   "atr14_pct": 7.12,
+   "avg_vol_20": 2423808,
+   "high_6mo": 34.926,
+   "off_high_pct": -31.14
+  },
+  "ONDS": {
+   "close": 7.64,
+   "ret_1d": 0.53,
+   "ret_5d": 3.38,
+   "ret_20d": -12.69,
+   "ret_60d": -3.54,
+   "atr14_pct": 4.75,
+   "avg_vol_20": 63597169,
+   "high_6mo": 14.16,
+   "off_high_pct": -46.05
+  },
+  "CLSK": {
+   "close": 13.95,
+   "ret_1d": -2.17,
+   "ret_5d": -3.59,
+   "ret_20d": 7.72,
+   "ret_60d": 2.42,
+   "atr14_pct": 6.6,
+   "avg_vol_20": 16976964,
+   "high_6mo": 19.17,
+   "off_high_pct": -27.23
+  },
+  "BTDR": {
+   "close": 11.51,
+   "ret_1d": -5.27,
+   "ret_5d": -11.26,
+   "ret_20d": 1.59,
+   "ret_60d": -25.45,
+   "atr14_pct": 7.38,
+   "avg_vol_20": 10039183,
+   "high_6mo": 20.72,
+   "off_high_pct": -44.45
+  },
+  "GME": {
+   "close": 23.39,
+   "ret_1d": -6.51,
+   "ret_5d": 3.31,
+   "ret_20d": 28.16,
+   "ret_60d": 3.31,
+   "atr14_pct": 4.39,
+   "avg_vol_20": 9904412,
+   "high_6mo": 26.88,
+   "off_high_pct": -12.98
+  },
+  "JEF": {
+   "close": 47.68,
+   "ret_1d": 3.11,
+   "ret_5d": -0.46,
+   "ret_20d": -9.77,
+   "ret_60d": -7.06,
+   "atr14_pct": 3.87,
+   "avg_vol_20": 2297751,
+   "high_6mo": 63.98,
+   "off_high_pct": -25.48
+  },
+  "TEM": {
+   "close": 85.01,
+   "ret_1d": 3.37,
+   "ret_5d": 9.21,
+   "ret_20d": 20.26,
+   "ret_60d": 38.0,
+   "atr14_pct": 5.57,
+   "avg_vol_20": 6945665,
+   "high_6mo": 86.4399,
+   "off_high_pct": -1.65
+  },
+  "UEC": {
+   "close": 9.41,
+   "ret_1d": -0.63,
+   "ret_5d": -4.08,
+   "ret_20d": -30.91,
+   "ret_60d": -10.81,
+   "atr14_pct": 6.03,
+   "avg_vol_20": 8709091,
+   "high_6mo": 16.83,
+   "off_high_pct": -44.09
+  },
+  "CCJ": {
+   "close": 88.07,
+   "ret_1d": -0.06,
+   "ret_5d": -3.87,
+   "ret_20d": -17.17,
+   "ret_60d": -9.57,
+   "atr14_pct": 3.61,
+   "avg_vol_20": 2824828,
+   "high_6mo": 131.21,
+   "off_high_pct": -32.88
+  },
+  "LEU": {
+   "close": 147.07,
+   "ret_1d": -0.17,
+   "ret_5d": 1.27,
+   "ret_20d": -24.49,
+   "ret_60d": -11.58,
+   "atr14_pct": 6.79,
+   "avg_vol_20": 759900,
+   "high_6mo": 235.0,
+   "off_high_pct": -37.42
+  },
+  "LMT": {
+   "close": 519.56,
+   "ret_1d": -0.79,
+   "ret_5d": -2.59,
+   "ret_20d": -8.19,
+   "ret_60d": -0.43,
+   "atr14_pct": 2.44,
+   "avg_vol_20": 1193754,
+   "high_6mo": 637.92,
+   "off_high_pct": -18.55
+  },
+  "XOM": {
+   "close": 160.59,
+   "ret_1d": -0.96,
+   "ret_5d": -1.8,
+   "ret_20d": 2.65,
+   "ret_60d": 17.84,
+   "atr14_pct": 2.5,
+   "avg_vol_20": 14591015,
+   "high_6mo": 176.41,
+   "off_high_pct": -8.97
+  },
+  "RTX": {
+   "close": 189.4,
+   "ret_1d": 0.42,
+   "ret_5d": -2.37,
+   "ret_20d": -10.69,
+   "ret_60d": -1.24,
+   "atr14_pct": 2.0,
+   "avg_vol_20": 3931501,
+   "high_6mo": 226.88,
+   "off_high_pct": -16.52
+  },
+  "OURA": {
+   "error": "OURA: HTTP Error 404: Not Found"
+  }
+ },
+ "fundamentals": {
+  "KOD": {
+   "marketCap": 5651422720,
+   "floatShares": 39559838,
+   "sharesShort": 10672646,
+   "shortPercentOfFloat": 0.2687,
+   "shortRatio": 17.79,
+   "averageVolume10days": 1075860,
+   "beta": 2.18,
+   "fiftyTwoWeekHigh": 95.77,
+   "fiftyTwoWeekLow": 10.94,
+   "targetMeanPrice": 64.0,
+   "recommendationKey": "strong_buy",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "earnings_dates": [
+    "2026-11-12"
+   ]
+  },
+  "MU": {
+   "marketCap": 1190357762048,
+   "floatShares": 1125541920,
+   "sharesShort": 27633780,
+   "shortPercentOfFloat": 0.024500001,
+   "shortRatio": 1.07,
+   "averageVolume10days": 24756190,
+   "beta": 2.222,
+   "fiftyTwoWeekHigh": 1255.0,
+   "fiftyTwoWeekLow": 159.97,
+   "targetMeanPrice": 1520.7609,
+   "recommendationKey": "strong_buy",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "earningsTimestamp": 1790798400,
+   "earnings_dates": [
+    "2026-09-30"
+   ]
+  },
+  "IONQ": {
+   "marketCap": 18060947456,
+   "floatShares": 378186707,
+   "sharesShort": 40486062,
+   "shortPercentOfFloat": 0.1004,
+   "shortRatio": 2.22,
+   "averageVolume10days": 26798280,
+   "beta": 3.295,
+   "fiftyTwoWeekHigh": 84.64,
+   "fiftyTwoWeekLow": 25.89,
+   "targetMeanPrice": 67.14231,
+   "recommendationKey": "strong_buy",
+   "sector": "Technology",
+   "industry": "Computer Hardware",
+   "earningsTimestamp": 1785960000,
+   "earnings_dates": [
+    "2026-11-04"
+   ]
+  },
+  "NVTS": {
+   "marketCap": 3079775488,
+   "floatShares": 242874384,
+   "sharesShort": 40298381,
+   "shortPercentOfFloat": 0.1735,
+   "shortRatio": 3.45,
+   "averageVolume10days": 11711930,
+   "beta": 3.875,
+   "fiftyTwoWeekHigh": 34.17,
+   "fiftyTwoWeekLow": 6.792,
+   "targetMeanPrice": 14.075,
+   "recommendationKey": "none",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "earningsTimestamp": 1785182400,
+   "earnings_dates": [
+    "2026-11-02"
+   ]
+  },
+  "VG": {
+   "marketCap": 32226199552,
+   "floatShares": 521644373,
+   "sharesShort": 43630968,
+   "shortPercentOfFloat": 0.8047,
+   "shortRatio": 3.15,
+   "averageVolume10days": 15893430,
+   "fiftyTwoWeekHigh": 17.62,
+   "fiftyTwoWeekLow": 5.72,
+   "targetMeanPrice": 16.66667,
+   "recommendationKey": "buy",
+   "sector": "Energy",
+   "industry": "Oil & Gas Midstream",
+   "earningsTimestamp": 1786451400,
+   "earnings_dates": [
+    "2026-11-09"
+   ]
+  },
+  "AMD": {
+   "marketCap": 992332546048,
+   "floatShares": 1623529079,
+   "sharesShort": 39975696,
+   "shortPercentOfFloat": 0.024600001,
+   "shortRatio": 2.23,
+   "averageVolume10days": 25662290,
+   "beta": 2.476,
+   "fiftyTwoWeekHigh": 639.0,
+   "fiftyTwoWeekLow": 159.33,
+   "targetMeanPrice": 618.508,
+   "recommendationKey": "strong_buy",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "earningsTimestamp": 1785873600,
+   "earnings_dates": [
+    "2026-11-03"
+   ]
+  },
+  "SOXL": {
+   "averageVolume10days": 64777630,
+   "fiftyTwoWeekHigh": 302.0,
+   "fiftyTwoWeekLow": 28.12
+  },
+  "NVDA": {
+   "marketCap": 5526282305536,
+   "floatShares": 23132626000,
+   "sharesShort": 294225803,
+   "shortPercentOfFloat": 0.0127,
+   "shortRatio": 2.29,
+   "averageVolume10days": 106374760,
+   "beta": 2.217,
+   "fiftyTwoWeekHigh": 236.54,
+   "fiftyTwoWeekLow": 164.27,
+   "targetMeanPrice": 327.7,
+   "recommendationKey": "strong_buy",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "earningsTimestamp": 1794945600,
+   "earnings_dates": [
+    "2026-11-17"
+   ]
+  },
+  "NKE": {
+   "marketCap": 53984518144,
+   "floatShares": 1176666666,
+   "sharesShort": 85698150,
+   "shortPercentOfFloat": 0.08979999,
+   "shortRatio": 2.93,
+   "averageVolume10days": 38012370,
+   "beta": 1.11,
+   "fiftyTwoWeekHigh": 76.97,
+   "fiftyTwoWeekLow": 35.22,
+   "targetMeanPrice": 46.32222,
+   "recommendationKey": "hold",
+   "sector": "Consumer Cyclical",
+   "industry": "Footwear & Accessories",
+   "earningsTimestamp": 1790884800,
+   "earnings_dates": [
+    "2026-10-01"
+   ]
+  },
+  "TSLA": {
+   "marketCap": 1411765764096,
+   "floatShares": 2819186930,
+   "sharesShort": 68862357,
+   "shortPercentOfFloat": 0.0195,
+   "shortRatio": 1.79,
+   "averageVolume10days": 35626190,
+   "beta": 1.845,
+   "fiftyTwoWeekHigh": 498.83,
+   "fiftyTwoWeekLow": 297.38,
+   "targetMeanPrice": 395.83212,
+   "recommendationKey": "buy",
+   "sector": "Consumer Cyclical",
+   "industry": "Auto Manufacturers",
+   "earningsTimestamp": 1784750400,
+   "earnings_dates": [
+    "2026-10-21"
+   ]
+  },
+  "AMC": {
+   "marketCap": 2936669184,
+   "floatShares": 835344050,
+   "sharesShort": 43340153,
+   "shortPercentOfFloat": 0.048800003,
+   "shortRatio": 2.15,
+   "averageVolume10days": 30318200,
+   "beta": 2.208,
+   "fiftyTwoWeekHigh": 3.4,
+   "fiftyTwoWeekLow": 0.93,
+   "targetMeanPrice": 2.95,
+   "recommendationKey": "hold",
+   "sector": "Communication Services",
+   "industry": "Entertainment",
+   "earningsTimestamp": 1784550600,
+   "earnings_dates": [
+    "2026-10-20"
+   ]
+  },
+  "MSTR": {
+   "marketCap": 62428839936,
+   "floatShares": 363658147,
+   "sharesShort": 30741182,
+   "shortPercentOfFloat": 0.081499994,
+   "shortRatio": 1.09,
+   "averageVolume10days": 25973420,
+   "beta": 3.597,
+   "fiftyTwoWeekHigh": 365.21,
+   "fiftyTwoWeekLow": 81.81,
+   "targetMeanPrice": 229.86667,
+   "recommendationKey": "strong_buy",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "earningsTimestamp": 1785441600,
+   "earnings_dates": [
+    "2026-10-29"
+   ]
   }
  }
 }

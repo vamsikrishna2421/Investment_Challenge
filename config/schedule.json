@@ -1,0 +1,4 @@
+{
+  "cadence": "Hourly during market hours on weekdays, plus pre-market and after-close reviews",
+  "routine_times_et": ["08:40", "09:40", "10:40", "11:40", "12:40", "13:40", "14:40", "15:40", "16:20"]
+}

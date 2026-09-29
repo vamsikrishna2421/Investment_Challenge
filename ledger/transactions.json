@@ -1,0 +1,13 @@
+{
+  "transactions": [
+    {
+      "id": "T0000",
+      "type": "DEPOSIT",
+      "ts": "2026-09-29T00:35:00Z",
+      "amount": 1000.0,
+      "net_cash": 1000.0,
+      "settle_date": "2026-09-28",
+      "note": "Paper capital funded. Challenge accepted Mon Sep 28, 8:35 PM ET."
+    }
+  ]
+}

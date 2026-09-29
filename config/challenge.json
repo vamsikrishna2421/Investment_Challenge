@@ -1,0 +1,37 @@
+{
+  "name": "H1B $1K One-Week Challenge",
+  "start_capital": 1000.0,
+  "currency": "USD",
+  "accepted_utc": "2026-09-29T00:35:00Z",
+  "trading_start_utc": "2026-09-29T13:30:00Z",
+  "end_utc": "2026-10-05T20:00:00Z",
+  "goal_multiple": 2.0,
+  "account": {
+    "holder_profile": "Indian citizen, US resident on H-1B",
+    "type": "Individual cash account (no margin)",
+    "broker_model": "US zero-commission broker, fractional shares allowed",
+    "margin": false,
+    "short_selling": false,
+    "options": false,
+    "settlement": "T+1"
+  },
+  "execution_model": {
+    "fill": "Last trade price from Yahoo Finance at execution time, adjusted for slippage",
+    "slippage_bps_by_price": [[20, 5], [5, 20], [0, 50]],
+    "commission": 0.0,
+    "sec_fee_per_million": 27.80,
+    "finra_taf_per_share": 0.000166,
+    "finra_taf_max": 8.30,
+    "sessions": "Regular session (9:30-16:00 ET) only",
+    "max_quote_age_sec": 900
+  },
+  "rules": {
+    "max_orders_per_day": 6,
+    "max_orders_total": 30,
+    "max_day_trades_rolling_5d": 3,
+    "max_position_pct_at_entry": 60,
+    "allowed_instruments": ["Common stock", "ETF", "Leveraged ETF"],
+    "blocked_lists": ["OFAC NS-CMIC (EO 14032) Chinese military-industrial complex securities"]
+  },
+  "benchmarks": ["SPY", "QQQ", "IWM"]
+}

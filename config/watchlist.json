@@ -1,0 +1,10 @@
+{
+  "strategy": "Setting up. Research in progress; first orders go in after the Tuesday open.",
+  "focus": ["NVDA", "TSLA", "PLTR", "IONQ", "RGTI", "OKLO", "RKLB", "MSTR", "COIN", "SOXL"],
+  "tickers": [
+    "NVDA", "TSLA", "PLTR", "AMD", "AVGO", "SMCI", "MU", "APP", "HOOD", "COIN", "MSTR",
+    "IONQ", "RGTI", "QBTS", "QUBT", "OKLO", "SMR", "NNE", "RKLB", "ASTS", "LUNR",
+    "SOUN", "BBAI", "CRWV", "NBIS", "IREN", "CIFR", "WULF", "MARA", "RIOT", "HIMS",
+    "SOFI", "AFRM", "UPST", "RDDT", "CVNA", "BE", "SOXL", "TQQQ", "TSLL", "NVDL", "MSTU"
+  ]
+}

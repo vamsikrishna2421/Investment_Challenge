@@ -2,9 +2,11 @@
 """Market-data pump. Runs inside GitHub Actions (the Claude container cannot
 reach quote hosts). Writes into the checked-out `market-data` branch:
 
-  data/quotes.json      latest quote per ticker (holdings + watchlist + benchmarks)
-  data/portfolio.json   portfolio valuation at those quotes
-  data/equity.jsonl     one line per run: equity curve + benchmark prices
+  data/quotes.json      latest quote per ticker (holdings + watchlists + benchmarks, both books;
+                        held option contracts are marked from the option chains)
+  data/options.json     option chains (nearest expiries) for the free book's options_watch list
+  data/portfolio.json   H-1B book valuation; data/portfolio_free.json for the free book
+  data/equity.jsonl     one line per run: equity curve + benchmark prices (equity_free.jsonl)
   data/scan.json        (mode=scan) Yahoo screeners + 3-month stats per ticker
 """
 from __future__ import annotations
@@ -245,6 +247,105 @@ def fundamentals(sym: str) -> dict:
         return {"error": str(e)[:200]}
 
 
+def _num(x):
+    try:
+        f = float(x)
+    except (TypeError, ValueError):
+        return None
+    return None if f != f else f  # NaN -> None
+
+
+def _chain_rows(rows, spot, band=0.3) -> list:
+    out = []
+    for r in rows:
+        k = _num(r.get("strike"))
+        if k is None or (spot and abs(k / spot - 1) > band):
+            continue
+        lt = r.get("lastTradeDate")
+        if hasattr(lt, "timestamp"):
+            lt = iso_epoch(lt.timestamp())
+        elif isinstance(lt, (int, float)):
+            lt = iso_epoch(lt)
+        out.append({"contract": r.get("contractSymbol"), "strike": k,
+                    "bid": _num(r.get("bid")) or 0.0, "ask": _num(r.get("ask")) or 0.0,
+                    "last": _num(r.get("lastPrice")) or 0.0, "change": _num(r.get("change")),
+                    "iv": round(_num(r.get("impliedVolatility")) or 0.0, 4),
+                    "oi": int(_num(r.get("openInterest")) or 0), "volume": int(_num(r.get("volume")) or 0),
+                    "last_trade": lt})
+    return out
+
+
+_YH = {"opener": None, "crumb": None}
+
+
+def _yahoo_raw_options(sym: str, epoch: int | None = None) -> dict:
+    """Yahoo v7 options endpoint with the cookie + crumb handshake (fallback path)."""
+    import http.cookiejar
+    if _YH["opener"] is None:
+        _YH["opener"] = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+        for u in ("https://fc.yahoo.com", "https://finance.yahoo.com/"):
+            try:
+                _YH["opener"].open(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=10).read(200)
+            except Exception:  # noqa: BLE001  (fc.yahoo.com answers 404 but sets the cookie)
+                pass
+        for host in ("query2", "query1"):
+            try:
+                c = _YH["opener"].open(urllib.request.Request(
+                    f"https://{host}.finance.yahoo.com/v1/test/getcrumb", headers={"User-Agent": UA}), timeout=10).read().decode().strip()
+                if c and "<" not in c and len(c) < 40:
+                    _YH["crumb"] = c
+                    break
+            except Exception:  # noqa: BLE001
+                pass
+    url = (f"https://query2.finance.yahoo.com/v7/finance/options/{urllib.parse.quote(sym)}"
+           f"?crumb={urllib.parse.quote(_YH['crumb'] or '')}" + (f"&date={epoch}" if epoch else ""))
+    r = _YH["opener"].open(urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"}), timeout=15)
+    return json.loads(r.read().decode())["optionChain"]["result"][0]
+
+
+def option_chains(unders: list, n_exp: int, need: dict, spots: dict) -> dict:
+    """Chains for the nearest n_exp expiries (plus any expiry in need[under])."""
+    out = {}
+    try:
+        import yfinance as yf  # type: ignore
+    except Exception:  # noqa: BLE001
+        yf = None
+    for u in unders:
+        entry = {"spot": spots.get(u), "expirations": [], "chains": {}, "source": None}
+        try:
+            if yf is None:
+                raise RuntimeError("yfinance unavailable")
+            t = yf.Ticker(u)
+            exps = list(t.options or [])
+            entry["expirations"] = exps[:8]
+            want = list(dict.fromkeys(exps[:n_exp] + [e for e in need.get(u, []) if e in exps]))
+            for e in want:
+                ch = t.option_chain(e)
+                entry["chains"][e] = {"calls": _chain_rows(ch.calls.to_dict("records"), entry["spot"]),
+                                      "puts": _chain_rows(ch.puts.to_dict("records"), entry["spot"])}
+                time.sleep(0.2)
+            entry["source"] = "yfinance"
+        except Exception as e1:  # noqa: BLE001
+            try:
+                res = _yahoo_raw_options(u)
+                epochs = res.get("expirationDates") or []
+                exps = [dt.datetime.fromtimestamp(x, UTC).strftime("%Y-%m-%d") for x in epochs]
+                entry["expirations"] = exps[:8]
+                entry["spot"] = entry["spot"] or (res.get("quote") or {}).get("regularMarketPrice")
+                want = list(dict.fromkeys(exps[:n_exp] + [e for e in need.get(u, []) if e in exps]))
+                for e in want:
+                    r2 = _yahoo_raw_options(u, epochs[exps.index(e)])
+                    o = (r2.get("options") or [{}])[0]
+                    entry["chains"][e] = {"calls": _chain_rows(o.get("calls", []), entry["spot"]),
+                                          "puts": _chain_rows(o.get("puts", []), entry["spot"])}
+                    time.sleep(0.2)
+                entry["source"] = "yahoo-v7"
+            except Exception as e2:  # noqa: BLE001
+                entry["error"] = f"yfinance: {str(e1)[:120]} | raw: {str(e2)[:120]}"
+        out[u] = entry
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", required=True, help="checkout of main (ledger/config)")
@@ -259,13 +360,50 @@ def main() -> int:
     sys.path.insert(0, str(root / "scripts"))
     import portfolio as pfm  # noqa: E402
 
-    cfg = json.loads((root / "config" / "challenge.json").read_text())
-    ledger = json.loads((root / "ledger" / "transactions.json").read_text())
-    wl_path = root / "config" / "watchlist.json"
-    wl = json.loads(wl_path.read_text()) if wl_path.exists() else {}
-    watch, focus = wl.get("tickers", []), wl.get("focus", [])
-    held = sorted({t["ticker"] for t in ledger["transactions"] if t.get("ticker")})
-    extra = [x.strip().upper() for x in a.extra.replace(" ", ",").split(",") if x.strip()]
+    books = {}
+    for b in pfm.BOOKS:
+        cp = pfm.book_path("config", b, root)
+        if not cp.exists():
+            continue
+        wlp = pfm.book_path("watchlist", b, root)
+        books[b] = {"cfg": json.loads(cp.read_text()),
+                    "ledger": json.loads(pfm.book_path("ledger", b, root).read_text()),
+                    "wl": json.loads(wlp.read_text()) if wlp.exists() else {}}
+    cfg = books["h1b"]["cfg"]
+    watch, focus, opt_watch, n_exp = [], [], [], 2
+    for bd in books.values():
+        watch += bd["wl"].get("tickers", [])
+        focus += bd["wl"].get("focus", [])
+        opt_watch += bd["wl"].get("options_watch", [])
+        n_exp = max(n_exp, int(bd["wl"].get("options_expiries", 2)))
+    watch, focus = list(dict.fromkeys(watch)), list(dict.fromkeys(focus))
+    held_opts, need_exp = set(), {}
+    held = set()
+    for bd in books.values():
+        for t in bd["ledger"]["transactions"]:
+            tk = t.get("ticker")
+            if not tk:
+                continue
+            o = pfm.parse_option(tk)
+            if o:
+                held_opts.add(tk)
+                held.add(o["underlying"])
+                need_exp.setdefault(o["underlying"], []).append(o["expiry"])
+            else:
+                held.add(tk)
+    held = sorted(held)
+    extra = []
+    for x in a.extra.replace(" ", ",").split(","):
+        x = x.strip().upper()
+        if not x:
+            continue
+        o = pfm.parse_option(x)
+        if o:
+            extra.append(o["underlying"])
+            opt_watch.append(o["underlying"])
+            need_exp.setdefault(o["underlying"], []).append(o["expiry"])
+        else:
+            extra.append(x)
     started = time.time()
 
     # Discovery (news/scan runs): trending tickers and today's biggest movers, so fresh
@@ -308,6 +446,29 @@ def main() -> int:
                 errors[s] = str(e)[:300]
 
     now = pfm.now_utc()
+    # Option chains (weekdays only; chains do not change on weekends).
+    opt_unders = list(dict.fromkeys(opt_watch + list(need_exp)))
+    if opt_unders and pfm.is_business_day(pfm.et_date(now)):
+        spots = {u: (quotes.get(u) or {}).get("price") for u in opt_unders}
+        chains = option_chains(opt_unders, n_exp, need_exp, spots)
+        (out / "options.json").write_text(json.dumps({"generated_at": pfm.iso(now), "session": pfm.market_session(now),
+                                                      "underlyings": chains}, indent=1))
+        for c in held_opts:
+            o = pfm.parse_option(c)
+            rows = ((chains.get(o["underlying"]) or {}).get("chains", {}).get(o["expiry"]) or {}).get(
+                "calls" if o["type"] == "call" else "puts", [])
+            row = next((r for r in rows if r["contract"] == c), None)
+            if not row:
+                continue
+            bid, ask, last = row["bid"], row["ask"], row["last"]
+            mid = round((bid + ask) / 2, 4) if bid > 0 and ask > 0 else (bid if bid > 0 else last)
+            quotes[c] = {"price": mid, "time": pfm.iso(now), "bid": bid, "ask": ask, "last": last,
+                         "prev_close": round(last - row["change"], 4) if row.get("change") is not None else None,
+                         "iv": row.get("iv"), "oi": row.get("oi"), "volume": row.get("volume"),
+                         "name": pfm.display_label(c), "underlying": o["underlying"],
+                         "instrument": "OPTION", "source": "yahoo-option-chain"}
+            if quotes[c]["prev_close"]:
+                quotes[c]["change_pct"] = round((mid / quotes[c]["prev_close"] - 1) * 100, 3)
     # Keep previous quotes for symbols that failed this run (marked stale).
     qfile = out / "quotes.json"
     if qfile.exists():
@@ -324,17 +485,19 @@ def main() -> int:
         "fetch_seconds": round(time.time() - started, 1),
     }, indent=1))
 
-    pf = pfm.Portfolio(ledger, cfg)
-    val = pf.valuation(quotes, now)
-    (out / "portfolio.json").write_text(json.dumps(val, indent=1))
-
-    point = {"t": pfm.iso(now), "session": val["session"], "equity": val["equity"],
-             "cash": val["cash"], "invested": val["invested_value"]}
-    for b in cfg["benchmarks"]:
-        if b in quotes and quotes[b].get("price"):
-            point[b] = pfm.mark(quotes[b])[0]
-    with open(out / "equity.jsonl", "a") as fh:
-        fh.write(json.dumps(point) + "\n")
+    vals = {}
+    for b, bd in books.items():
+        val = pfm.Portfolio(bd["ledger"], bd["cfg"]).valuation(quotes, now)
+        vals[b] = val
+        (out / pfm.BOOKS[b]["portfolio"]).write_text(json.dumps(val, indent=1))
+        point = {"t": pfm.iso(now), "session": val["session"], "equity": val["equity"],
+                 "cash": val["cash"], "invested": val["invested_value"]}
+        for bm in bd["cfg"]["benchmarks"]:
+            if bm in quotes and quotes[bm].get("price"):
+                point[bm] = pfm.mark(quotes[bm])[0]
+        with open(out / pfm.BOOKS[b]["equity"], "a") as fh:
+            fh.write(json.dumps(point) + "\n")
+    val = vals["h1b"]
 
     if a.mode == "scan":
         scan = {"generated_at": pfm.iso(now), "screeners": dict(fast), "stats": {}}
@@ -362,7 +525,7 @@ def main() -> int:
         top_disc = [d["symbol"] for d in sorted(
             (d for d in discovery if d.get("change_pct") is not None),
             key=lambda d: abs(d["change_pct"]), reverse=True)[:8]]
-        nsyms = list(dict.fromkeys(held + extra + focus + top_disc))[:32]
+        nsyms = list(dict.fromkeys(held + extra + focus + top_disc))[:40]
         nfile = out / "news.json"
         prev_titles = set()
         if nfile.exists():
@@ -404,8 +567,9 @@ def main() -> int:
             "new_headlines": fresh[:80], "movers": movers[:30], "discovery": discovery,
         }, indent=1))
 
-    print(f"quotes={len(quotes)} errors={len(errors)} equity={val['equity']} "
-          f"session={val['session']} mode={a.mode} discovery={len(discovery)}")
+    print(f"quotes={len(quotes)} errors={len(errors)} "
+          + " ".join(f"equity_{b}={v['equity']}" for b, v in vals.items())
+          + f" session={val['session']} mode={a.mode} discovery={len(discovery)}")
     if errors:
         print("errors:", json.dumps(errors)[:1500])
     return 0

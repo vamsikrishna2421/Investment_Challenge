@@ -14,6 +14,7 @@ import datetime as dt
 import json
 import math
 import os
+import re
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -90,12 +91,88 @@ def load_json(p) -> dict:
     return json.loads(Path(p).read_text())
 
 
-def load_config() -> dict:
-    return load_json(ROOT / "config" / "challenge.json")
+# Two paper books share the engine: "h1b" (the original H-1B challenge) and
+# "free" (no visa-driven limits: options and crypto allowed).
+BOOKS = {
+    "h1b": {"config": "config/challenge.json", "ledger": "ledger/transactions.json",
+            "journal": "ledger/journal.json", "watchlist": "config/watchlist.json",
+            "portfolio": "portfolio.json", "equity": "equity.jsonl",
+            "snapshot": "snapshot.json", "collection": "snapshots"},
+    "free": {"config": "books/free/challenge.json", "ledger": "books/free/transactions.json",
+             "journal": "books/free/journal.json", "watchlist": "books/free/watchlist.json",
+             "portfolio": "portfolio_free.json", "equity": "equity_free.jsonl",
+             "snapshot": "snapshot_free.json", "collection": "snapshots_free"},
+}
 
 
-def load_ledger() -> dict:
-    return load_json(ROOT / "ledger" / "transactions.json")
+def current_book(book: str | None = None) -> str:
+    b = (book or os.environ.get("BOOK") or "h1b").lower()
+    if b not in BOOKS:
+        raise SystemExit(f"unknown book '{b}' (use one of {', '.join(BOOKS)})")
+    return b
+
+
+def book_path(key: str, book: str | None = None, root: Path | None = None) -> Path:
+    return Path(root or ROOT) / BOOKS[current_book(book)][key]
+
+
+def load_config(book: str | None = None, root: Path | None = None) -> dict:
+    return load_json(book_path("config", book, root))
+
+
+def load_ledger(book: str | None = None, root: Path | None = None) -> dict:
+    return load_json(book_path("ledger", book, root))
+
+
+OPT_RE = re.compile(r"^([A-Z]{1,6})(\d{2})(\d{2})(\d{2})([CP])(\d{8})$")
+
+
+def parse_option(sym: str) -> dict | None:
+    """OCC option symbol, e.g. NKE261002C00036000 -> NKE Oct 2 2026 $36 call."""
+    m = OPT_RE.match(sym or "")
+    if not m:
+        return None
+    root, yy, mm, dd, cp, k = m.groups()
+    return {"underlying": root, "expiry": f"20{yy}-{mm}-{dd}",
+            "type": "call" if cp == "C" else "put", "strike": int(k) / 1000}
+
+
+def asset_class(sym: str) -> str:
+    if parse_option(sym):
+        return "option"
+    if sym.endswith("-USD"):
+        return "crypto"
+    return "stock"
+
+
+def multiplier(sym: str) -> int:
+    return 100 if asset_class(sym) == "option" else 1
+
+
+def display_label(sym: str) -> str:
+    o = parse_option(sym)
+    if o:
+        d = dt.date.fromisoformat(o["expiry"])
+        return f"{o['underlying']} {d.month}/{d.day} ${o['strike']:g} {'call' if o['type'] == 'call' else 'put'}"
+    if sym.endswith("-USD"):
+        return sym[:-4]
+    return sym
+
+
+def option_expired(sym: str, at: dt.datetime) -> bool:
+    o = parse_option(sym)
+    if not o:
+        return False
+    d = dt.date.fromisoformat(o["expiry"])
+    close = dt.datetime(d.year, d.month, d.day, 16, 0, tzinfo=ET)
+    return at >= close
+
+
+def intrinsic(sym: str, underlying_px: float | None) -> float:
+    o = parse_option(sym)
+    if not o or underlying_px is None:
+        return 0.0
+    return max(0.0, underlying_px - o["strike"]) if o["type"] == "call" else max(0.0, o["strike"] - underlying_px)
 
 
 def ceil_cents(x: float) -> float:
@@ -204,7 +281,7 @@ class Portfolio:
                     "date": d.isoformat(), "ts": t["ts"],
                     "unsettled_until": until.isoformat() if until else None,
                 })
-            elif typ == "SELL":
+            elif typ in ("SELL", "EXPIRE"):
                 qty = t["qty"]
                 basis = 0.0
                 consumed = []
@@ -224,11 +301,17 @@ class Portfolio:
                 self.realized += pnl
                 self.realized_by_ticker[tk] = self.realized_by_ticker.get(tk, 0.0) + pnl
                 self.cash += proceeds
-                self.pending.append([next_business_day(d), proceeds])
-                is_dt = any(c["date"] == d.isoformat() for c in consumed)
+                crypto = asset_class(tk) == "crypto"
+                if crypto:
+                    self.settled += proceeds  # crypto sales settle instantly
+                else:
+                    self.pending.append([next_business_day(d), proceeds])
+                is_dt = (not crypto) and typ == "SELL" and any(c["date"] == d.isoformat() for c in consumed)
                 if is_dt:
                     self.day_trades.append({"date": d.isoformat(), "ticker": tk, "txn": t["id"]})
                 for c in consumed:
+                    if crypto:
+                        break  # not a security: no good-faith-violation rule
                     if c["unsettled_until"] and d.isoformat() < c["unsettled_until"]:
                         self.gfv.append({"date": d.isoformat(), "ticker": tk, "txn": t["id"]})
                         break
@@ -281,23 +364,38 @@ class Portfolio:
             if qty <= 1e-9:
                 continue
             basis = sum(l["qty"] * l["price"] for l in lots)
+            mult = multiplier(tk)
+            asset = asset_class(tk)
             q = quotes.get(tk) or {}
             px, _, px_src = mark(q)
+            opt = parse_option(tk)
+            expired = False
+            if opt and option_expired(tk, at):
+                expired = True
+                uq = quotes.get(opt["underlying"]) or {}
+                px, px_src = intrinsic(tk, uq.get("price")), "expired-intrinsic"
             stale = px is None
             if px is None:
-                px = basis / qty
-            mv = qty * px
+                px = basis / qty / mult
+            mv = qty * px * mult
             mv_total += mv
             prev = q.get("prev_close")
             opened_today = all(l["date"] == d.isoformat() for l in lots)
-            ref = basis / qty if (opened_today or prev is None) else prev
-            dp = (px - ref) * qty
+            ref = basis / qty / mult if (opened_today or prev is None) else prev
+            dp = (px - ref) * qty * mult
             day_pnl += dp
             locked = [l for l in lots if l["unsettled_until"] and d.isoformat() < l["unsettled_until"]]
             positions.append({
                 "ticker": tk,
+                "label": display_label(tk),
+                "asset": asset,
+                "multiplier": mult,
+                "option": opt,
+                "expired": expired,
+                "bid": q.get("bid"),
+                "ask": q.get("ask"),
                 "qty": round(qty, 6),
-                "avg_cost": round(basis / qty, 4),
+                "avg_cost": round(basis / qty / mult, 4),
                 "cost_basis": round(basis, 2),
                 "price": round(px, 4),
                 "prev_close": prev,

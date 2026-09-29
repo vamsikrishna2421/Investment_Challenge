@@ -9,7 +9,7 @@ on:
     - cron: "7,22,37,52 10-23 * * 1-5"  # news + discovery + alerts every 15 min, 6 AM - 8 PM ET
   push:
     branches: [main]
-    paths: ["ledger/**", "config/**", "scripts/**"]
+    paths: ["ledger/**", "config/**", "scripts/**", "books/**"]
   workflow_dispatch:
     inputs:
       tickers:
@@ -31,7 +31,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - name: Checkout main (ledger + scripts)
         uses: actions/checkout@v4
@@ -62,8 +62,10 @@ jobs:
           EXTRA: ${{ inputs.tickers || '' }}
         run: python main/scripts/marketdata.py --root main --out md --mode "$MODE" --extra "$EXTRA"
 
-      - name: Build dashboard snapshot
-        run: python main/scripts/snapshot.py --cache md/data --out md/data/snapshot.json
+      - name: Build dashboard snapshots (both books)
+        run: |
+          python main/scripts/snapshot.py --cache md/data --out md/data/snapshot.json
+          python main/scripts/snapshot.py --book free --cache md/data --out md/data/snapshot_free.json
 
       - name: Commit data
         working-directory: md

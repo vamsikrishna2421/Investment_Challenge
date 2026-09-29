@@ -1,0 +1,13 @@
+{
+  "transactions": [
+    {
+      "id": "T0000",
+      "type": "DEPOSIT",
+      "ts": "2026-09-29T21:45:00Z",
+      "amount": 1000.0,
+      "net_cash": 1000.0,
+      "settle_date": "2026-09-29",
+      "note": "Paper capital funded. Unrestricted book opened Tue Sep 29, 5:45 PM ET; same finish line as the H-1B book (Mon Oct 5 close)."
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Append a research/decision entry to ledger/journal.json.
+"""Append a research/decision entry to a book's journal (default book: h1b, or $BOOK).
 
   python scripts/journal.py --kind plan --title "..." --body "..." [--tickers A,B]
+  python scripts/journal.py --book free --kind trade --title "..." --body "..."
   python scripts/journal.py --kind research --title "..." --body-file notes.md
 Kinds: plan, research, trade, review, risk, note
 """
@@ -15,8 +16,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import portfolio as pfm  # noqa: E402
 
-PATH = pfm.ROOT / "ledger" / "journal.json"
-
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -27,7 +26,9 @@ def main() -> int:
     b.add_argument("--body")
     b.add_argument("--body-file")
     ap.add_argument("--tickers", default="")
+    ap.add_argument("--book", default=None, help="h1b (default) or free")
     a = ap.parse_args()
+    PATH = pfm.book_path("journal", a.book)
     data = json.loads(PATH.read_text()) if PATH.exists() else {"entries": []}
     body = a.body if a.body is not None else Path(a.body_file).read_text().strip()
     n = len(data["entries"]) + 1
@@ -41,7 +42,7 @@ def main() -> int:
     }
     data["entries"].append(entry)
     PATH.write_text(json.dumps(data, indent=2) + "\n")
-    print(f"journal {entry['id']} added: {a.title}")
+    print(f"journal [{pfm.current_book(a.book)}] {entry['id']} added: {a.title}")
     return 0
 
 

@@ -28,24 +28,27 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--news-hours", type=float, default=6)
     ap.add_argument("--tickers", default="")
+    ap.add_argument("--book", default=None, help="h1b (default) or free")
+    ap.add_argument("--brief", action="store_true", help="portfolio and positions only")
     a = ap.parse_args()
+    book = pfm.current_book(a.book)
 
-    cfg = pfm.load_config()
-    ledger = pfm.load_ledger()
+    cfg = pfm.load_config(book)
+    ledger = pfm.load_ledger(book)
     qdoc = json.loads((CACHE / "quotes.json").read_text())
     quotes = qdoc["quotes"]
     now = pfm.now_utc()
     pf = pfm.Portfolio(ledger, cfg)
     val = pf.valuation(quotes, now)
     gen = pfm.parse_ts(qdoc["generated_at"])
-    print(f"== {pfm.iso(now)} ({pfm.fmt_et(now)}) session={val['session']} "
+    print(f"== [{book}] {pfm.iso(now)} ({pfm.fmt_et(now)}) session={val['session']} "
           f"quotes_age={int((now - gen).total_seconds() / 60)}m")
     print(f"Equity ${val['equity']:,.2f} | Net {val['net_profit']:+,.2f} ({val['return_pct']:+.2f}%) | "
           f"Cash ${val['cash']:,.2f} (settled {val['settled_cash']:,.2f}) | Day {val['day_pnl']:+,.2f} | "
           f"Realized {val['realized_pnl']:+,.2f} | Orders today {val['counts']['orders_today']} "
           f"total {val['counts']['orders_total']} | DT5d {val['counts']['day_trades_5d']}")
     base = cfg.get("benchmark_base", {})
-    print("Benchmarks since Sep 28 close (latest print): " + "  ".join(
+    print("Benchmarks since book start (latest print): " + "  ".join(
         f"{b} {(pfm.mark(quotes.get(b))[0] / base[b] - 1) * 100:+.2f}%"
         for b in cfg["benchmarks"] if base.get(b) and (quotes.get(b) or {}).get("price")))
 
@@ -68,15 +71,21 @@ def main() -> int:
             flag.append("TRIM>=25%")
         if flag:
             alerts.append(f"{p['ticker']}: {', '.join(flag)}")
+        extra = ""
+        if p.get("asset") == "option":
+            uq = quotes.get(p["option"]["underlying"]) or {}
+            extra = f" [{p['label']}] bid {p.get('bid')} ask {p.get('ask')} und {pfm.mark(uq)[0]}"
         print(f" {p['ticker']:5} qty {p['qty']:<10g} avg {p['avg_cost']:<9.4g} last {p['price']:<9.4g} "
               f"unrl {p['unrealized_pnl']:+8.2f} ({p['unrealized_pct']:+.1f}%) day {pct(q.get('change_pct'))} "
               f"ext {pct(q.get('ext_change_pct'))} wt {p['weight_pct']:.0f}% stop {stop} tgt {target} "
-              f"lock {p['sell_locked_until'] or '-'} {' '.join(flag)}")
+              f"lock {p['sell_locked_until'] or '-'} {' '.join(flag)}{extra}")
     if not val["positions"]:
         print(" (none)")
     print("ALERTS: " + ("; ".join(alerts) if alerts else "none"))
+    if a.brief:
+        return 0
 
-    wl = json.loads((ROOT / "config" / "watchlist.json").read_text())
+    wl = json.loads(pfm.book_path("watchlist", book).read_text())
     focus = list(dict.fromkeys(wl.get("focus", []) + [x.strip().upper() for x in a.tickers.split(",") if x.strip()]))
     print("FOCUS (last, day%, ext%, vol)")
     for tk in focus:

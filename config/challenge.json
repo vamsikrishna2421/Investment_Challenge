@@ -83,5 +83,7 @@
     "QQQ": 736.53,
     "IWM": 280.02
   },
-  "benchmark_base_note": "Regular-session closes on Mon Sep 28, 2026 (challenge accepted after that close)"
+  "benchmark_base_note": "Regular-session closes on Mon Sep 28, 2026 (challenge accepted after that close)",
+  "book": "h1b",
+  "short_name": "H-1B"
 }

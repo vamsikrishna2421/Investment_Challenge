@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build one dashboard snapshot document (for the artifact's `snapshots`
-collection) from the ledger, journal and the latest synced market data.
+"""Build one dashboard snapshot document for a book (artifact collection
+`snapshots` for h1b, `snapshots_free` for free) from the ledger, journal and
+the latest synced market data.
 
-  python scripts/snapshot.py [--note "..."]
-Prints the doc id and writes .cache/snapshot.json.
+  python scripts/snapshot.py [--book free] [--note "..."]
+Prints the doc id and writes .cache/snapshot.json (.cache/snapshot_free.json).
 """
 from __future__ import annotations
 
@@ -21,8 +22,8 @@ CACHE = ROOT / ".cache"
 MAX_POINTS = 700
 
 
-def load_equity(cfg: dict, cache: Path) -> list[dict]:
-    path = cache / "equity.jsonl"
+def load_equity(cfg: dict, cache: Path, book: str) -> list[dict]:
+    path = cache / pfm.BOOKS[book]["equity"]
     pts = []
     if path.exists():
         for line in path.read_text().splitlines():
@@ -55,12 +56,14 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--note", default="")
     ap.add_argument("--cache", default=str(CACHE), help="dir holding quotes.json and equity.jsonl")
-    ap.add_argument("--out", default="", help="output path (default <cache>/snapshot.json)")
+    ap.add_argument("--out", default="", help="output path (default <cache>/snapshot[_free].json)")
+    ap.add_argument("--book", default=None, help="h1b (default) or free")
     a = ap.parse_args()
     cache = Path(a.cache)
+    book = pfm.current_book(a.book)
 
-    cfg = pfm.load_config()
-    ledger = pfm.load_ledger()
+    cfg = pfm.load_config(book)
+    ledger = pfm.load_ledger(book)
     qdoc = json.loads((cache / "quotes.json").read_text()) if (cache / "quotes.json").exists() else {"quotes": {}}
     quotes = qdoc.get("quotes", {})
     now = pfm.now_utc()
@@ -81,17 +84,20 @@ def main() -> int:
 
     trades = []
     for t in pf.txns:
-        if t["type"] not in ("BUY", "SELL"):
+        if t["type"] not in ("BUY", "SELL", "EXPIRE"):
             continue
         row = {k: t.get(k) for k in ("id", "type", "ts", "ticker", "name", "qty", "price",
                                      "quote_price", "quote_time", "slippage_bps", "gross",
                                      "fees", "net_cash", "settle_date", "rationale", "tags",
-                                     "plan", "compliance")}
+                                     "plan", "compliance", "option", "quote_detail")}
+        row["label"] = pfm.display_label(t["ticker"])
+        row["asset"] = pfm.asset_class(t["ticker"])
+        row["multiplier"] = pfm.multiplier(t["ticker"])
         row.update(pf.sell_results.get(t["id"], {}))
         trades.append(row)
     trades.reverse()
 
-    pts = load_equity(cfg, cache)
+    pts = load_equity(cfg, cache, book)
     base = cfg.get("benchmark_base", {})
     series = {"t": [cfg["accepted_utc"]], "equity": [cfg["start_capital"]]}
     for b in cfg["benchmarks"]:
@@ -115,17 +121,17 @@ def main() -> int:
         series[b].append(r)
         bench[b] = {"base": base.get(b), "last": px, "ret_pct": r}
 
-    jpath = ROOT / "ledger" / "journal.json"
+    jpath = pfm.book_path("journal", book)
     journal = json.loads(jpath.read_text())["entries"] if jpath.exists() else []
     journal = sorted(journal, key=lambda e: (e["ts"], e["id"]), reverse=True)[:40]
 
-    wl_path = ROOT / "config" / "watchlist.json"
+    wl_path = pfm.book_path("watchlist", book)
     watch = json.loads(wl_path.read_text()) if wl_path.exists() else {}
     radar = []
     for tk in watch.get("focus", []):
         qq = quotes.get(tk) or {}
         if qq.get("price"):
-            radar.append({"ticker": tk, "name": qq.get("name"), "price": qq["price"],
+            radar.append({"ticker": tk, "label": pfm.display_label(tk), "name": qq.get("name"), "price": qq["price"],
                           "change_pct": qq.get("change_pct"),
                           "ext_change_pct": qq.get("ext_change_pct")})
 
@@ -133,7 +139,7 @@ def main() -> int:
     sched = json.loads(sched_path.read_text()) if sched_path.exists() else {}
     rules = cfg["rules"]
     c = val["counts"]
-    compliance = {
+    checks_h1b = {
         "checks": [
             {"id": "cash", "label": "Cash account only (no margin, no shorting)", "ok": True,
              "detail": "Balance under the $2,000 FINRA margin minimum, so margin isn't available anyway."},
@@ -150,15 +156,34 @@ def main() -> int:
         ],
         "wash_sale_flags": c["wash_sale_flags"],
     }
+    checks_free = {
+        "checks": [
+            {"id": "cash", "label": "Cash account, no margin", "ok": True,
+             "detail": "FINRA requires $2,000 of equity for margin, so at $1,000 there is no borrowing and no short selling. Bearish bets use puts or inverse ETFs."},
+            {"id": "instruments", "label": "Stocks, ETFs, listed options, spot crypto", "ok": True,
+             "detail": "Options are bought (calls and puts), so the most a contract can lose is its premium. No naked option writing."},
+            {"id": "gfv", "label": "No good-faith violations (T+1 settlement)", "ok": c["gfv"] == 0,
+             "detail": f"{c['gfv']} violations. Stocks and options settle T+1; crypto settles instantly."},
+            {"id": "activity", "label": "Activity tracked in the open", "ok": True,
+             "detail": f"{c['orders_total']} orders so far ({c['orders_today']} today), {c['day_trades_total']} day trades. No pattern-day-trader limit in a cash account."},
+            {"id": "law", "label": "Public information only", "ok": True,
+             "detail": "Trades act on published news and prices: no insider information, no coordinated pumping."},
+            {"id": "ofac", "label": "No OFAC-restricted (NS-CMIC) securities", "ok": True,
+             "detail": "Applies to every US person and anyone physically in the US."},
+        ],
+        "wash_sale_flags": c["wash_sale_flags"],
+    }
+    compliance = checks_free if book == "free" else checks_h1b
 
     doc_id = now.strftime("%Y%m%dT%H%M%SZ")
     snap = {
         "id": doc_id,
+        "book": book,
         "as_of": val["as_of"],
         "quotes_generated_at": qdoc.get("generated_at"),
         "session": val["session"],
         "challenge": {
-            "name": cfg["name"], "start_capital": cfg["start_capital"],
+            "name": cfg["name"], "short_name": cfg.get("short_name"), "start_capital": cfg["start_capital"],
             "accepted_utc": cfg["accepted_utc"], "trading_start_utc": cfg["trading_start_utc"],
             "end_utc": cfg["end_utc"], "goal_equity": val["goal_equity"],
             "account": cfg["account"],
@@ -175,7 +200,7 @@ def main() -> int:
         "schedule": {"next_update": next_update(now, sched), "cadence": sched.get("cadence", "")},
         "note": a.note,
     }
-    out = Path(a.out) if a.out else cache / "snapshot.json"
+    out = Path(a.out) if a.out else cache / pfm.BOOKS[book]["snapshot"]
     out.write_text(json.dumps(snap, separators=(",", ":")))
     size = out.stat().st_size
     print(f"doc_id={doc_id} bytes={size} equity={val['equity']} net={val['net_profit']} "

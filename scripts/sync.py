@@ -15,7 +15,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / ".cache"
-FILES = ["quotes.json", "portfolio.json", "equity.jsonl", "scan.json", "news.json", "alerts.json"]
+FILES = ["quotes.json", "portfolio.json", "equity.jsonl", "scan.json", "news.json", "alerts.json",
+         "portfolio_free.json", "equity_free.jsonl", "options.json"]
 
 
 def git(*args: str, check: bool = True) -> str:

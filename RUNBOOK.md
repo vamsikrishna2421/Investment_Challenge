@@ -52,3 +52,5 @@ Update `config/watchlist.json` `strategy` (the dashboard's game-plan line) and `
 * Sunday 7:00 PM review for Monday.
 * Final day Mon Oct 5: liquidate everything at the 15:40 run; 16:20 run writes the final report,
   then delete the routines.
+
+Routine ids (for `delete_trigger` after the final report): see `config/schedule.json` `routine_ids`.

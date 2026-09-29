@@ -1,4 +1,10 @@
 {
-  "cadence": "Hourly during market hours on weekdays, plus pre-market and after-close reviews",
-  "routine_times_et": ["08:40", "09:40", "10:40", "11:40", "12:40", "13:40", "14:40", "15:40", "16:20"]
+  "cadence": "Every 30 minutes during market hours on weekdays, plus pre-market, post-close and Sunday-evening reviews",
+  "routine_times_et": ["08:40", "09:40", "10:10", "10:40", "11:10", "11:40", "12:10", "12:40", "13:10", "13:40", "14:10", "14:40", "15:10", "15:40", "16:20"],
+  "routine_ids": {
+    "hourly_40": "trig_01VigsmdBpympkkojgEeH6tK",
+    "risk_10": "trig_01HEBqoXepMr79PjCFJwBVMM",
+    "post_close": "trig_013ggEan5tXBAq61oQ7oCRpu",
+    "sunday": "trig_01UP6tgGRKSNcTyBQga8gBzR"
+  }
 }

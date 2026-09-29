@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T21:00:47Z",
+ "generated_at": "2026-09-29T21:12:28Z",
  "tickers": {
   "IONX": [
    {
@@ -152,234 +152,6 @@
     "summary": "SOXL Oct 2026 141.500 put (SOXL261030P00141500) Stock Price, News, Quote & History Yahoo! Finance Canada"
    }
   ],
-  "MUU": [
-   {
-    "title": "ETF League Tables: Direxion Inflows Total $237M",
-    "source": null,
-    "published": "Thu, 02 Jul 2026 21:00:04 +0000",
-    "link": "http://www.etf.com/sections/etf-league-tables/etf-league-tables-direxion-inflows-total-237m?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
-    "summary": "Table below reflects daily flows on July 1, 2026 and asset totals as of that date."
-   },
-   {
-    "title": "Wall Street Upbeat in 1H 2026: Leveraged ETFs That Are Up At Least 500%",
-    "source": null,
-    "published": "Wed, 01 Jul 2026 15:00:00 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-upbeat-1h-2026-150000536.html?.tsrc=rss",
-    "summary": "Leveraged single-stock ETFs tied to chip and AI winners soared as Wall Street wrapped up a strong first half of 2026."
-   },
-   {
-    "title": "The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL",
-    "source": null,
-    "published": "Fri, 26 Jun 2026 09:28:00 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-092800403.html?.tsrc=rss",
-    "summary": "Micron soared after crushing Q3 estimates, forecasting stronger Q4 sales and highlighting AI-driven memory demand. See ETFs with significant MU exposure."
-   },
-   {
-    "title": "Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch",
-    "source": null,
-    "published": "Thu, 25 Jun 2026 16:00:00 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/micron-soars-post-q3-earnings-160000996.html?.tsrc=rss",
-    "summary": "Micron's stellar earnings, record margins and AI-fueled memory shortages put semiconductor ETFs with high MU exposure in the spotlight."
-   },
-   {
-    "title": "5 Best Leveraged ETFs of May 2026",
-    "source": null,
-    "published": "Mon, 01 Jun 2026 16:00:00 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-leveraged-etfs-may-160000028.html?.tsrc=rss",
-    "summary": "Leveraged ETFs delivered massive gains in May as easing geopolitical tensions, AI optimism and strong earnings fueled a sharp market rally."
-   },
-   {
-    "title": "MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion",
-    "source": null,
-    "published": "Thu, 28 May 2026 21:58:08 +0000",
-    "link": "http://www.etf.com/sections/features/muu-becomes-fourth-single-stock-etf-cross-5-billion?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
-    "summary": "The leveraged Micron ETF has surged more than 700% this year."
-   },
-   {
-    "title": "Daily ETF Flows: TLT, MUU Picks Up Assets",
-    "source": null,
-    "published": "Tue, 19 May 2026 21:00:04 +0000",
-    "link": "http://www.etf.com/sections/daily-etf-flows/daily-etf-flows-tlt-muu-picks-assets?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
-    "summary": "Here are the daily ETF fund flows for May 18, 2026."
-   },
-   {
-    "title": "4 Leveraged ETF Winners of Last Week",
-    "source": null,
-    "published": "Tue, 12 May 2026 16:00:00 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/4-leveraged-etf-winners-last-160000903.html?.tsrc=rss",
-    "summary": "AI momentum, upbeat earnings and easing geopolitical fears powered leveraged ETFs tied to chips, AI and space stocks last week."
-   },
-   {
-    "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 16:07:54 GMT",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5",
-    "summary": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway finance.yahoo.com"
-   },
-   {
-    "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - 24/7 Wall St.",
-    "source": "24/7 Wall St.",
-    "published": "Tue, 29 Sep 2026 16:07:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT1dpWDduVW1CSU1wcmVHWUVVcHpvNF8tUV9UT2ZuVEZYamY4S2VBM2JTNzZIeUpZdXV2SFhSb29PQkR3MDRlSjB0MEdiVzZMX0M3bkRzV0FhX1RPSmhHRWFDRnpySllRcnRsZk5yUjNIZnQ5UG11bW1zamJHZzQ2dmVCMFZHckRvWS1BblJQZWIwRVllZGU0Rlg5RWN1NWJmZl9FM081ZnQxWkNlejdLcUtn?oc=5",
-    "summary": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway 24/7 Wall St."
-   },
-   {
-    "title": "MU, SNDK, WDC Stocks Rise Sharply For Second Day: Retail Feels Memory Pullback Is Over - Stocktwits",
-    "source": "Stocktwits",
-    "published": "Tue, 29 Sep 2026 04:31:39 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNFpTcW1mMFE3N2FXbE85VllxY0prTjd4Qmdwc3ZpODR1R0QxeUs4ckJRWlNRUGtrcnNjZVJvQXRuQ0VLa2xxVDc5SnRwNUUwYldpT0kxcF9LTUhYVS10a0ctSHZQbzVGNzdkV2t5ejkwT2txRTZjWERXejQtU1gzQl9oY0ZYYXV2YndJUHZnVDFCQWJnV1VTUlNzM3d2ME92Umd4OEtVclNTTmxIdlRRc3RrOEloUDlHMDN4Qm9XYk5nRlBwTmtrUGxETnIyZmo4b2hCeWFJZ3hCOHQxbWZj?oc=5",
-    "summary": "MU, SNDK, WDC Stocks Rise Sharply For Second Day: Retail Feels Memory Pullback Is Over Stocktwits"
-   },
-   {
-    "title": "Micron's Stock Faces Another Post-Earnings Plunge (NASDAQ:MU) - Seeking Alpha",
-    "source": "Seeking Alpha",
-    "published": "Mon, 28 Sep 2026 11:00:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONG9jZzFWQndoOGl3OG5RMGhheE91MHN4UVJQZ0haM3g0QmNTNURGN1VlUzZJX0NTWDRlWDJ0SzNtNk1STGw2RXd2dWQ5RW9hampDSXpTdzVzTXg2TFd0SjBXcjVscV9zcmY2c29yMU1MSUc2M1N4MkNBVVRlRXo1X19iZUFRU1lUMEp1dnZZODVmUQ?oc=5",
-    "summary": "Micron's Stock Faces Another Post-Earnings Plunge (NASDAQ:MU) Seeking Alpha"
-   },
-   {
-    "title": "Ahead of Micron Earnings, Here's What Barchart Data Says Comes Next for MU Stock - Barchart.com",
-    "source": "Barchart.com",
-    "published": "Mon, 28 Sep 2026 17:41:04 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZGlQX0VhdHdEaXl6eU5scy1WbkdPU1V4M3NJQjExQlJ2SXB6RGxYUUJXOFdHaFlMRWtGbHhHOHlsZlh0RTZpeGpGRmR3VkFtYTEzS1lZTUp3elp2WThzdzg4dUR6aWJJNlF2T1QtLXZfejhzMTJPYkduYmItTUtIRDRtdzRNdldjbmoybnpyQWxCMVNMS1dBU0JJUUthQktQNENoNTRxeDZVdE15Ymo2bE92WjVBbmNVRHhRbE05b1M?oc=5",
-    "summary": "Ahead of Micron Earnings, Here's What Barchart Data Says Comes Next for MU Stock Barchart.com"
-   },
-   {
-    "title": "MUU Oct 2026 16.000 call (MUU261002C00016000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-    "source": "Yahoo! Finance Canada",
-    "published": "Tue, 29 Sep 2026 11:27:35 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB1aUg1SFNYUUVXN0VBS0drQmd0cUxoclo5VWxVNnJBemxncVFBV2pqczQ1SDhBMjdSWHkxa2dQd0ZvQmxodkxKQkpOU251MXJ4RnZkNXpQVU5fMmdJLXFuSDhPWG8?oc=5",
-    "summary": "MUU Oct 2026 16.000 call (MUU261002C00016000) Stock Price, News, Quote & History Yahoo! Finance Canada"
-   },
-   {
-    "title": "Trading the Move, Not the Narrative: (MUU) Edition - Stock Traders Daily",
-    "source": "Stock Traders Daily",
-    "published": "Mon, 28 Sep 2026 01:50:02 GMT",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOd1UySVFEeHVDNXVWbkNHV1g4ZXdBRWNqWmpTN1lVU21CNWVvanFPeUV6Ukpvb2Q4TkM3SWNzYlY5dkEtQmMxemRiNDJ2ZlJiaV95U1BwQkp5NkFqTW5PcW9EamFJUW81Nldzek16QU9Gd2NEOWlSS1N2eDNzMm0xVTcweHA2TXhqWlo1ZlMtS19uc0RKSUlSWUJhemhIdlpwdVQ0UkQ2YUIxb0x2UldQazVBem1ia1dkUXBFNHRkazlCU2drTFZB?oc=5",
-    "summary": "Trading the Move, Not the Narrative: (MUU) Edition Stock Traders Daily"
-   },
-   {
-    "title": "$Direxion Daily MU Bull 2X Shares (MUU.US)$ hello nice to meet you!! just added a position hope this will go well - Moomoo",
-    "source": "Moomoo",
-    "published": "Mon, 28 Sep 2026 14:56:13 GMT",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNekZ0aXhpcWh3ZzREOVRyU01OUWlsZjZGOVRhUHVhSERyZ1Exb2htbVdGUk5vSmNpTVVuUVp2RF9IYjFCblhQdzFtZHRYcW1XcXl2RXhsVGNqdk04ckotbDN3SnpKQVJxYkZMdG5JVGx5NjEwb19seko1WkNjZTVDM1lpQzA5bGtwakJDc0RKQmc4TVNqRUxEWkI3TlFsUWstWXBkaFFMSQ?oc=5",
-    "summary": "$Direxion Daily MU Bull 2X Shares (MUU.US)$ hello nice to meet you!! just added a position hope this will go well Moomoo"
-   }
-  ],
-  "NVDA": [
-   {
-    "title": "How Nvidia is tackling the AI safety problem",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:05:00 +0000",
-    "link": "https://finance.yahoo.com/video/nvidia-tackling-ai-safety-problem-200500655.html?.tsrc=rss",
-    "summary": "Ben Bajarin, Creative Strategies CEO and Principal Analyst, discusses Nvidia's (NVDA) AI safety software and breaks down how the new platform works amid rising AI safety concerns."
-   },
-   {
-    "title": "What we know about Trump's meeting with Alex Karp, Jensen Huang, & other AI leaders",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 19:40:43 +0000",
-    "link": "https://finance.yahoo.com/video/know-trumps-meeting-alex-karp-194043343.html?.tsrc=rss",
-    "summary": "President Trump met with several AI leaders at the White House on Tuesday, including Nvidia (NVDA) CEO Jensen Huang and Anthropic (ANTH.PVT) CEO Dario Amodei. Yahoo Finance Washington Correspondent Ben Werschkul outlines the details."
-   },
-   {
-    "title": "My Top AI Power Stock to Buy Right Now (and It's Not Even Close)",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:50:00 +0000",
-    "link": "https://www.fool.com/investing/2026/09/29/my-top-sector-stock-to-buy-right-now-and-its-not-e/?.tsrc=rss",
-    "summary": "GE Vernova remains one of the simplest ways to profit from the AI power boom."
-   },
-   {
-    "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:49:02 +0000",
-    "link": "https://finance.yahoo.com/m/8757314c-41ab-383f-89ee-51177c4ae956/stock-market-today%3A-dow%2C.html?.tsrc=rss",
-    "summary": "Stock Market Today: The Dow Jones index drops Tuesday as oil prices slide and Treasury yields rise. Nvidia and an AI stock test buy points."
-   },
-   {
-    "title": "Stocks making big moves yesterday: TTM Technologies, PacBio, Nvidia, Palo Alto Networks, and Teleflex",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:32:02 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-making-big-moves-yesterday-203202523.html?.tsrc=rss",
-    "summary": "Check out the companies making headlines yesterday:"
-   },
-   {
-    "title": "Here's Why SpaceX Buying More Nvidia GPUs Is Bigger News for SpaceX's Stock Than Nvidia's",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:20:00 +0000",
-    "link": "https://www.fool.com/investing/2026/09/29/heres-why-spacex-buying-more-nvidia-gpus-is-bigger/?.tsrc=rss",
-    "summary": "By renting out more compute capacity, SpaceX aims to generate revenue that it can put toward launching orbital data center satellites."
-   },
-   {
-    "title": "Nvidia Turns to Insurers to Spread AI Chip Financing Risk",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 19:19:55 +0000",
-    "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-turns-insurers-spread-ai-191955690.html?.tsrc=rss",
-    "summary": "Coverage would protect lenders if neocloud borrowers default and pledged chips fall short"
-   },
-   {
-    "title": "Prediction: Taiwan Semiconductor Manufacturing Will Hit a $3 Trillion Market Cap Before 2027 Is Over",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:49:00 +0000",
-    "link": "https://www.fool.com/investing/2026/09/29/prediction-taiwan-semiconductor-manufacturing-will/?.tsrc=rss",
-    "summary": "The world's largest chip foundry is bound to benefit as long as heavy AI spending persists."
-   },
-   {
-    "title": "Nvidia's record buyback shows chipmaker's stock is too cheap for CEO Huang to resist - CNBC",
-    "source": "CNBC",
-    "published": "Tue, 29 Sep 2026 11:00:01 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbm8waVZKNWVxY3ZfVUVnWS1BczZsV0R0azZEVnBfb3JfWVJ4dDlQSlBJaFp5RVhRdjZsUWJGUDllUzFtaWRvVUw1dHVUaGdXbHdnN2I2Z3JNNFpuMWIycGRiSmxGdkxsTEZkWnVMQUZVTnZEd2tVaHo0SUFxWGIwRkoyd3hzUHNZODVRRkhJZnU2eXhjWHFxRzZBLTZpbnhlYVZKZHBfcUdZZ9IBrwFBVV95cUxOTXVYSzZ4LVpyb3FtaGc4UTFXOG9GTXViRjFuWnc1eVJ6SlZ5VXFtVDZGVVhCU2lJb3Q0bXVreURvb2kwbDk4UUg3LS0zMG9RZ2NyWDdOa0RyLUE3bmswV0pjVzJhVWJXazhvcDZZZ2dVa3dlLTFaU1VDblhWbzYxQVBXcnoxWHFucktja0JyX0hKdGhQUWdXdW9naXFSZk90RlRWa0JTRE5BR2VnYWNr?oc=5",
-    "summary": "Nvidia's record buyback shows chipmaker's stock is too cheap for CEO Huang to resist CNBC"
-   },
-   {
-    "title": "Nvidia Stock Gains as $235 Billion Buyback Tests Capital Discipline - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 18:14:16 GMT",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdWJLQ0RpRnRubnVKZFJKRXhNSDBZZG04aDVzQi1tb29jZlYyQml5UmZWb0hEb3dLeUgxbGJjTWZwYjRoN25Dcjd4ZEdvQk5wN3RHelQyZWlvelRKYWZ6bDlCdDhrTS1lLVljUHo3MmU3Q05EQmhEbFR4Y2xCbFlma190NXRpN3JaV005N0VEZ25HVGthRHZYeTI3dw?oc=5",
-    "summary": "Nvidia Stock Gains as $235 Billion Buyback Tests Capital Discipline finance.yahoo.com"
-   },
-   {
-    "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase - nvidianews.nvidia.com",
-    "source": "nvidianews.nvidia.com",
-    "published": "Mon, 28 Sep 2026 17:02:51 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR0Vsb0ZuR3F0Sl9oYldFNF90azJObUVsNkJIb0VCWVJxWDRmRmdyR2swZE90ZkxwRGJERXBveVRvX040RUJMLU9Tc3lIbm44R2lzMzcxZHVYRkZmS0lGRWhHMDF4azNCakJHSk00UU1KdEhzNzVrYVd1SVpnNDZyZkV4bWVNVHY3cC1fSlpUSm1BTnZTdS1Vak5LOXB2NkF5X0VnZFhFR1A?oc=5",
-    "summary": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase nvidianews.nvidia.com"
-   },
-   {
-    "title": "Nvidia Stock Technicals Are Flashing Green. A Record High Could Be Next. - Barron's",
-    "source": "Barron's",
-    "published": "Tue, 29 Sep 2026 18:15:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ2duSFBFenVuX1VEa3JFMHBFcWxxeDdfUnhmLWJONjVnY2hCeU1LR0lzVUEyUjV0MDFEX2lHNDltNktzc3FhMEpJQXI2R09ZZ2RxNzhTVm52R293ZC11Qm5uemNGVVRYTUVmUHVvbVdNQkY5OEs5ck0yYm5pYmRNY2t0cHFselJHZnZzRWN1MFV4N0xqNFg2cGNuTzc?oc=5",
-    "summary": "Nvidia Stock Technicals Are Flashing Green. A Record High Could Be Next. Barron's"
-   },
-   {
-    "title": "Nvidia sets biggest-ever buyback plan as AI chip competition weighs on stock performance - Reuters",
-    "source": "Reuters",
-    "published": "Mon, 28 Sep 2026 11:06:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTzg4UzFUbWw0cThEbUEwYVdsdF9WVVpuSDZ0RkJjLWd1UE5XdVJFWjRKazNRU2lyVkxiX2xIZFplVnkxTTl4QUhnV1NaM21SdFNxTFBMYXVJMlJVU2lobmtWYkpqa2wyWlRPLWxuZTMtTzhRUVpHZ1V6VkRLS0psbzlQTWQwcGNpVXNuSGRYSjlCQU9sU3lXcXVteXk2ZmZf?oc=5",
-    "summary": "Nvidia sets biggest-ever buyback plan as AI chip competition weighs on stock performance Reuters"
-   },
-   {
-    "title": "Nvidia $150B Buyback: Is NVDA Stock Cheap Enough? - NVIDIA (NASDAQ:NVDA) - Benzinga",
-    "source": "Benzinga",
-    "published": "Tue, 29 Sep 2026 14:38:51 GMT",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHF5dGY3YUJzejRnQ3B5M0xlVnl4WGpuUVZ1Uk5OT1ZNWlpDa3A2c3FVQ0tSWVpRX3FMQ0RINVlSUml0Y3JZNVpyZkpVS0Q2SUpfbDJxQ3Jiam1XeGxzQnZkQzRraXZmWUN2MlZvVWx0NlBqVzBtUU96Skdsb0c2M1ZGbHdxSTRWa3A1Wk9qNXhaWWJTS2dHM0F0X2FlbHZqb0tFUERucw?oc=5",
-    "summary": "Nvidia $150B Buyback: Is NVDA Stock Cheap Enough? - NVIDIA (NASDAQ:NVDA) Benzinga"
-   },
-   {
-    "title": "What Could Push NVDA Stock Higher From Here? - Trefis",
-    "source": "Trefis",
-    "published": "Tue, 29 Sep 2026 10:40:24 GMT",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFVDMEF6WGZtX21hYnh3cWNHSDRFZmxqdGJ5ME5fTmNWbW5UT21DbE80SXN3dXliMGN3OFRjWFRGTFZMc3JONGxMZlVZdzhPbUplMHlWdHFaTzFYZFh6SmJKd0JLcDdPQ0NRSURSb1Nrb2EzeUI0Q1NxUVY5VFJUNHN1dDNoWmNMM3pyT2s3OGpKSEhPV2FjQmRXZW5oTnhoNHoyYkF2R3pzRjFIbGtZT1lmbVY?oc=5",
-    "summary": "What Could Push NVDA Stock Higher From Here? Trefis"
-   },
-   {
-    "title": "Nvidia's $150B buyback could fuel next stock rally - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 11:42:28 GMT",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbk9NclNoTkRDSV9PZWxzU0ZuNTI1TXkxT3dxSzJwMmJTaEVRM1QyYy1zRDNIVGxCSm03bmQtZFVSQnB1WDVtdERsM2dBNGZSWTV4d0VhRHpRNnVRSThVcUNJUkhRdHhLSWRuVjBWdlNqazEyYXVpMjN0R3hkYkYtakI2OHdYdm9uMkdfUnlFWkRlM2gwS0xzLWdEelV0QWhqNnVZcTRPVGFpSzRFNFMyMnZB?oc=5",
-    "summary": "Nvidia's $150B buyback could fuel next stock rally finance.yahoo.com"
-   }
-  ],
   "IOVA": [
    {
     "title": "Iovance Stock Surges as Strong Melanoma Drug Demand Drives Growth",
@@ -492,120 +264,6 @@
     "published": "Tue, 29 Sep 2026 11:03:37 GMT",
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORTdFb0pwcEE1VEVCa2VVQWJGQ1FtclF6NHZ3TDVlR0QtVFM2X0Yyb0JCc2lZbDVVV1hpSlRtU3NtSWZ1OVVscmZTTVZEZkhpQTZUVGdCM1U2Q2lfN2hxajJzLXRkMndUQkFVX0ZGUkxiNWlPMEphTmpJRU5zRV9LVlVtS3RNU2pOZk50bElodVBlVUxKd2RBWWphRWFtcVBxSEhsRWp3SGhTemhOQmhNVjY5d3ZGMHN2bUlsMw?oc=5",
     "summary": "Nearly 60% revenue growth is implied by Iovance's 2026 forecast. Stock Titan"
-   }
-  ],
-  "MU": [
-   {
-    "title": "What Micron\u2019s next earnings could reveal about the AI chip market",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:20:00 +0000",
-    "link": "https://finance.yahoo.com/video/micron-next-earnings-could-reveal-202000674.html?.tsrc=rss",
-    "summary": "Ben Bajarin, Creative Strategies CEO and Principal Analyst, joins the show to discuss what he\u2019s watching ahead of Micron\u2019s (MU) upcoming earnings report on Wednesday. Bajarin breaks down the key metrics and trends he\u2019ll be looking for."
-   },
-   {
-    "title": "Micron to report Q4 earnings as memory boom powers on",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 15:32:30 +0000",
-    "link": "https://finance.yahoo.com/technology/article/micron-to-report-q4-earnings-as-memory-boom-powers-on-153230577.html?.tsrc=rss",
-    "summary": "Micron to report fourth quarter earnings after the bell Wednesday."
-   },
-   {
-    "title": "Dow Jones Futures: Stocks Dip As Yields Rise But Bloom Energy Soars; Micron, Inflation Data Due",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:39:33 +0000",
-    "link": "https://finance.yahoo.com/m/0f05df74-8e19-37cc-8a3a-5b6885fbc760/dow-jones-futures%3A-stocks-dip.html?.tsrc=rss",
-    "summary": "Stocks are resilient as Treasury yields rise but aren't thriving. Bloom Energy surged. Inflation data, Micron earnings loom."
-   },
-   {
-    "title": "Prediction: Micron Will Do a Stock-Split Before the End of the Year. And It Could Come on Wednesday",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 19:35:01 +0000",
-    "link": "https://www.fool.com/investing/2026/09/29/prediction-micron-will-do-a-stock-split-before-the-end-of-the-year-and-it-could-come-on-wednesday/?.tsrc=rss",
-    "summary": "At a share price above $1,000, a stock split seems likely for the memory chip juggernaut."
-   },
-   {
-    "title": "JPMorgan Says Micron's Rally May Not Be Over",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 19:21:32 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-says-microns-rally-may-192132485.html?.tsrc=rss",
-    "summary": "Long-term contracts could make earnings more durable than expected"
-   },
-   {
-    "title": "What History Says Will Happen If Micron\u2019s Earnings Stars Align",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:15:00 +0000",
-    "link": "https://finance.yahoo.com/m/8939a13e-5928-3ca4-9cb2-e83f295df019/what-history-says-will-happen.html?.tsrc=rss",
-    "summary": "Micron stock has had some eye-watering moves after earnings in previous quarters. With analysts upbeat for the company\u2019s results this week, the stock could be in for a roller coaster."
-   },
-   {
-    "title": "Dow Jones Software Leader Microsoft, Palantir, Micron, Palo Alto In Or Near Buy Zones",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:07:02 +0000",
-    "link": "https://finance.yahoo.com/m/6c841e39-941b-3c2e-a976-277baf5769f2/dow-jones-software-leader.html?.tsrc=rss",
-    "summary": "Dow Jones software giant Microsoft, along with Palantir, Micron and Palo Alto, are in or near buy zones in the current stock market."
-   },
-   {
-    "title": "Micron Stock Is Up 530% in a Year. Here\u2019s What a $50 Billion Quarter Must Prove",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 17:26:07 +0000",
-    "link": "https://www.tikr.com/blog/micron-stock-is-up-530-in-a-year-heres-what-a-50-billion-quarter-must-prove?ref=yahoofinance&.tsrc=rss",
-    "summary": "Key Stats for MU StockPast week performance: -1. 7%52-week range: $164 to $1,255Valuation model target price: $1,152Implied upside: 9."
-   },
-   {
-    "title": "What History Says Will Happen If Micron\u2019s Earnings Stars Align - Barron's",
-    "source": "Barron's",
-    "published": "Tue, 29 Sep 2026 18:15:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMHdlWUtmLWRGSjNpbGczRGYxSTJkRkIxQ3hWZ0doRmJKS1VtUkd1SDhRZXNnaUpBcWpXcC1iSWZIRjY1c1FadWZuS2kyM2xGYV9JcDkyVlQ5Wkd2UktfSEtiT1h6RTJuWVlyYnRmWXRkVVl5Y19qUnBCV0ZqQmNmczl2Yw?oc=5",
-    "summary": "What History Says Will Happen If Micron\u2019s Earnings Stars Align Barron's"
-   },
-   {
-    "title": "Could Micron Stock Help You Become a Millionaire? - The Motley Fool",
-    "source": "The Motley Fool",
-    "published": "Tue, 29 Sep 2026 16:45:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQjRYTXh0QXBTNjlSUVVFMlUwOUhEcThaUXpBcVhHQzZtX3RXTUJ2WGlObTJsS1ZwWmNERDVkNy1jRFJQWTYwY3gxbmtNRWdFTFJIaU9mNEdsbFpENmxEZ0dtUG1qdGJQV3FRVVdfZzczRW5DWGVPYkVrSjJWcVB5NEJjZnFqTF9yWG8zQnZ1d1BMakczYWc?oc=5",
-    "summary": "Could Micron Stock Help You Become a Millionaire? The Motley Fool"
-   },
-   {
-    "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 16:07:54 GMT",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5",
-    "summary": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway finance.yahoo.com"
-   },
-   {
-    "title": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) - Benzinga",
-    "source": "Benzinga",
-    "published": "Tue, 29 Sep 2026 13:07:58 GMT",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb3VZc2I0VktraTRUaUl4VzB6TDJMdmt5dWJRZWR2U2VxTDU5ajB2azQtQ0hWc2lHTWNVei12N21RY21nTUpSUXVkR3lJaUhYNG1nOXlEVi1jTllFbE9BY202SEtueHRiQVVNMjR5TDg4bERyQzhueWFoWTdkY0pTSHg5c0FzcW04bVYwdTA5eXZ1ZklSYjZUUTRSVzRIdWtwWFJ3Y25Xbw?oc=5",
-    "summary": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) Benzinga"
-   },
-   {
-    "title": "Here\u2019s How Much Traders Expect Micron Stock to Move After Earnings - Investopedia",
-    "source": "Investopedia",
-    "published": "Mon, 28 Sep 2026 20:41:22 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOWJKdEQtdzlndWFwd1ZrbUNlSG9fdXJtMDN2bVFQcjVhSDN4MlczXzYwdXcySTNmTzF5VEFURnlzQTFHS2lLX2h1SHdHd2tLanU0dGFZbVM1ekNMSmI0LVgzcWlKbS1IS1g2aDc5dVB3UTV1c0JrRHhsT213SjhGUWRxNEFZb2lFZEVvZmhjUnpNUS1nQ0sydlBFVzU4bkVodHBiVnZVZWUtcVZJdC1wNnFLbHp5cXBic2c?oc=5",
-    "summary": "Here\u2019s How Much Traders Expect Micron Stock to Move After Earnings Investopedia"
-   },
-   {
-    "title": "MU Stock Gains Ahead Of Q4 Earnings: JPMorgan Sees 'Constructive' Setup Amid Netlist Legal Fight - TradingView",
-    "source": "TradingView",
-    "published": "Tue, 29 Sep 2026 12:58:28 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSl9tcEszYkI2YnFzRmU0bjl2ZHA3S3FldEpldm5PNHp2UGkyVUhwZ3ZINFJUQnJmYnNVVzRWYVl3VmZUNnhIcTNORzFZaHhobnZ1MnJMcDBIVXZ4aFFrWDRWQjlKVmQ0cjVudjBmWDMtZm1SNTRva05OZjZRWE53Y1QwTUJieVl5SGVSc1FEeTI5MmFjR3VPSmVRRHhfMnpoMGxmRFM0N1MwZVoxLVhuYWtqTXdhQm1xOEFjbWRFUndwVVdTMEJ0S2ptLXQzWVRBb2FnQVFVM1lka3Y0dEdfQXlOY2VtcUNo?oc=5",
-    "summary": "MU Stock Gains Ahead Of Q4 Earnings: JPMorgan Sees 'Constructive' Setup Amid Netlist Legal Fight TradingView"
-   },
-   {
-    "title": "Michael Burry Shifts Strategy With Put Options Targeting Micron and AI Semiconductor Stocks - TIKR.com",
-    "source": "TIKR.com",
-    "published": "Tue, 29 Sep 2026 14:30:05 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb2RIMnZFLW1SblhDRl8xb3k2NERzWnVPTmZ4RWhaMF9LM0doRGw4T2dEMWZycnkwQTVPQmNpS05TQXk5MmtVbDVpUENTajV2c3lMNnZ2Q2xEdS1iazFJTzJlWk5ISzkxcnJnUk5COWRHcE1faW85R29zaVZCTUdKeEZLcC1GeEd2RGlr?oc=5",
-    "summary": "Michael Burry Shifts Strategy With Put Options Targeting Micron and AI Semiconductor Stocks TIKR.com"
-   },
-   {
-    "title": "Micron to report Q4 earnings, as memory boom powers on - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 15:32:30 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5",
-    "summary": "Micron to report Q4 earnings, as memory boom powers on finance.yahoo.com"
    }
   ],
   "NKE": [
@@ -722,6 +380,234 @@
     "summary": "NKE Stock Faces Second Weekly Loss: Nike Takes Greater Control Of China Sales, Resets Digital Strategy Stocktwits"
    }
   ],
+  "MUU": [
+   {
+    "title": "ETF League Tables: Direxion Inflows Total $237M",
+    "source": null,
+    "published": "Thu, 02 Jul 2026 21:00:04 +0000",
+    "link": "http://www.etf.com/sections/etf-league-tables/etf-league-tables-direxion-inflows-total-237m?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+    "summary": "Table below reflects daily flows on July 1, 2026 and asset totals as of that date."
+   },
+   {
+    "title": "Wall Street Upbeat in 1H 2026: Leveraged ETFs That Are Up At Least 500%",
+    "source": null,
+    "published": "Wed, 01 Jul 2026 15:00:00 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-upbeat-1h-2026-150000536.html?.tsrc=rss",
+    "summary": "Leveraged single-stock ETFs tied to chip and AI winners soared as Wall Street wrapped up a strong first half of 2026."
+   },
+   {
+    "title": "The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL",
+    "source": null,
+    "published": "Fri, 26 Jun 2026 09:28:00 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-092800403.html?.tsrc=rss",
+    "summary": "Micron soared after crushing Q3 estimates, forecasting stronger Q4 sales and highlighting AI-driven memory demand. See ETFs with significant MU exposure."
+   },
+   {
+    "title": "Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch",
+    "source": null,
+    "published": "Thu, 25 Jun 2026 16:00:00 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/micron-soars-post-q3-earnings-160000996.html?.tsrc=rss",
+    "summary": "Micron's stellar earnings, record margins and AI-fueled memory shortages put semiconductor ETFs with high MU exposure in the spotlight."
+   },
+   {
+    "title": "5 Best Leveraged ETFs of May 2026",
+    "source": null,
+    "published": "Mon, 01 Jun 2026 16:00:00 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-leveraged-etfs-may-160000028.html?.tsrc=rss",
+    "summary": "Leveraged ETFs delivered massive gains in May as easing geopolitical tensions, AI optimism and strong earnings fueled a sharp market rally."
+   },
+   {
+    "title": "MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion",
+    "source": null,
+    "published": "Thu, 28 May 2026 21:58:08 +0000",
+    "link": "http://www.etf.com/sections/features/muu-becomes-fourth-single-stock-etf-cross-5-billion?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+    "summary": "The leveraged Micron ETF has surged more than 700% this year."
+   },
+   {
+    "title": "Daily ETF Flows: TLT, MUU Picks Up Assets",
+    "source": null,
+    "published": "Tue, 19 May 2026 21:00:04 +0000",
+    "link": "http://www.etf.com/sections/daily-etf-flows/daily-etf-flows-tlt-muu-picks-assets?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+    "summary": "Here are the daily ETF fund flows for May 18, 2026."
+   },
+   {
+    "title": "4 Leveraged ETF Winners of Last Week",
+    "source": null,
+    "published": "Tue, 12 May 2026 16:00:00 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/4-leveraged-etf-winners-last-160000903.html?.tsrc=rss",
+    "summary": "AI momentum, upbeat earnings and easing geopolitical fears powered leveraged ETFs tied to chips, AI and space stocks last week."
+   },
+   {
+    "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 16:07:54 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5",
+    "summary": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway finance.yahoo.com"
+   },
+   {
+    "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - 24/7 Wall St.",
+    "source": "24/7 Wall St.",
+    "published": "Tue, 29 Sep 2026 16:07:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT1dpWDduVW1CSU1wcmVHWUVVcHpvNF8tUV9UT2ZuVEZYamY4S2VBM2JTNzZIeUpZdXV2SFhSb29PQkR3MDRlSjB0MEdiVzZMX0M3bkRzV0FhX1RPSmhHRWFDRnpySllRcnRsZk5yUjNIZnQ5UG11bW1zamJHZzQ2dmVCMFZHckRvWS1BblJQZWIwRVllZGU0Rlg5RWN1NWJmZl9FM081ZnQxWkNlejdLcUtn?oc=5",
+    "summary": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway 24/7 Wall St."
+   },
+   {
+    "title": "MU, SNDK, WDC Stocks Rise Sharply For Second Day: Retail Feels Memory Pullback Is Over - Stocktwits",
+    "source": "Stocktwits",
+    "published": "Tue, 29 Sep 2026 04:31:39 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNFpTcW1mMFE3N2FXbE85VllxY0prTjd4Qmdwc3ZpODR1R0QxeUs4ckJRWlNRUGtrcnNjZVJvQXRuQ0VLa2xxVDc5SnRwNUUwYldpT0kxcF9LTUhYVS10a0ctSHZQbzVGNzdkV2t5ejkwT2txRTZjWERXejQtU1gzQl9oY0ZYYXV2YndJUHZnVDFCQWJnV1VTUlNzM3d2ME92Umd4OEtVclNTTmxIdlRRc3RrOEloUDlHMDN4Qm9XYk5nRlBwTmtrUGxETnIyZmo4b2hCeWFJZ3hCOHQxbWZj?oc=5",
+    "summary": "MU, SNDK, WDC Stocks Rise Sharply For Second Day: Retail Feels Memory Pullback Is Over Stocktwits"
+   },
+   {
+    "title": "Micron's Stock Faces Another Post-Earnings Plunge (NASDAQ:MU) - Seeking Alpha",
+    "source": "Seeking Alpha",
+    "published": "Mon, 28 Sep 2026 11:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONG9jZzFWQndoOGl3OG5RMGhheE91MHN4UVJQZ0haM3g0QmNTNURGN1VlUzZJX0NTWDRlWDJ0SzNtNk1STGw2RXd2dWQ5RW9hampDSXpTdzVzTXg2TFd0SjBXcjVscV9zcmY2c29yMU1MSUc2M1N4MkNBVVRlRXo1X19iZUFRU1lUMEp1dnZZODVmUQ?oc=5",
+    "summary": "Micron's Stock Faces Another Post-Earnings Plunge (NASDAQ:MU) Seeking Alpha"
+   },
+   {
+    "title": "Ahead of Micron Earnings, Here's What Barchart Data Says Comes Next for MU Stock - Barchart.com",
+    "source": "Barchart.com",
+    "published": "Mon, 28 Sep 2026 17:41:04 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZGlQX0VhdHdEaXl6eU5scy1WbkdPU1V4M3NJQjExQlJ2SXB6RGxYUUJXOFdHaFlMRWtGbHhHOHlsZlh0RTZpeGpGRmR3VkFtYTEzS1lZTUp3elp2WThzdzg4dUR6aWJJNlF2T1QtLXZfejhzMTJPYkduYmItTUtIRDRtdzRNdldjbmoybnpyQWxCMVNMS1dBU0JJUUthQktQNENoNTRxeDZVdE15Ymo2bE92WjVBbmNVRHhRbE05b1M?oc=5",
+    "summary": "Ahead of Micron Earnings, Here's What Barchart Data Says Comes Next for MU Stock Barchart.com"
+   },
+   {
+    "title": "Trading the Move, Not the Narrative: (MUU) Edition - Stock Traders Daily",
+    "source": "Stock Traders Daily",
+    "published": "Mon, 28 Sep 2026 01:50:02 GMT",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOd1UySVFEeHVDNXVWbkNHV1g4ZXdBRWNqWmpTN1lVU21CNWVvanFPeUV6Ukpvb2Q4TkM3SWNzYlY5dkEtQmMxemRiNDJ2ZlJiaV95U1BwQkp5NkFqTW5PcW9EamFJUW81Nldzek16QU9Gd2NEOWlSS1N2eDNzMm0xVTcweHA2TXhqWlo1ZlMtS19uc0RKSUlSWUJhemhIdlpwdVQ0UkQ2YUIxb0x2UldQazVBem1ia1dkUXBFNHRkazlCU2drTFZB?oc=5",
+    "summary": "Trading the Move, Not the Narrative: (MUU) Edition Stock Traders Daily"
+   },
+   {
+    "title": "$Direxion Daily MU Bull 2X Shares (MUU.US)$ hello nice to meet you!! just added a position hope this will go well - Moomoo",
+    "source": "Moomoo",
+    "published": "Mon, 28 Sep 2026 14:56:13 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNekZ0aXhpcWh3ZzREOVRyU01OUWlsZjZGOVRhUHVhSERyZ1Exb2htbVdGUk5vSmNpTVVuUVp2RF9IYjFCblhQdzFtZHRYcW1XcXl2RXhsVGNqdk04ckotbDN3SnpKQVJxYkZMdG5JVGx5NjEwb19seko1WkNjZTVDM1lpQzA5bGtwakJDc0RKQmc4TVNqRUxEWkI3TlFsUWstWXBkaFFMSQ?oc=5",
+    "summary": "$Direxion Daily MU Bull 2X Shares (MUU.US)$ hello nice to meet you!! just added a position hope this will go well Moomoo"
+   },
+   {
+    "title": "JPMorgan sets Micron stock price target - Finbold",
+    "source": "Finbold",
+    "published": "Mon, 28 Sep 2026 12:23:09 GMT",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93d3RrT3BfdlFnc25Fekw0QXMyWDQwQzhkQjFkMkVEX015ZnR0NHU5ZUZmbHN2QnZDWUlOREQxV3BCVURCV2o3WEtJaUZ3X1lyWElLdnhKRUdkb3hfeDA5WEs1VXY2NDRfWDRZWA?oc=5",
+    "summary": "JPMorgan sets Micron stock price target Finbold"
+   }
+  ],
+  "MU": [
+   {
+    "title": "What Micron\u2019s next earnings could reveal about the AI chip market",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:20:00 +0000",
+    "link": "https://finance.yahoo.com/video/micron-next-earnings-could-reveal-202000674.html?.tsrc=rss",
+    "summary": "Ben Bajarin, Creative Strategies CEO and Principal Analyst, joins the show to discuss what he\u2019s watching ahead of Micron\u2019s (MU) upcoming earnings report on Wednesday. Bajarin breaks down the key metrics and trends he\u2019ll be looking for."
+   },
+   {
+    "title": "Dow Jones Futures: Stocks Dip As Yields Rise But Bloom Energy Soars; Micron, Inflation Data Due",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 21:04:31 +0000",
+    "link": "https://finance.yahoo.com/m/0f05df74-8e19-37cc-8a3a-5b6885fbc760/dow-jones-futures%3A-stocks-dip.html?.tsrc=rss",
+    "summary": "Stocks are resilient as Treasury yields rise but aren't thriving. Bloom Energy surged. Inflation data, Micron earnings loom."
+   },
+   {
+    "title": "Bullish on Micron? When a 2X ETF makes sense \u2014 and when it doesn\u2019t",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:56:12 +0000",
+    "link": "https://www.thestreet.com/video/bullish-on-micron-when-2x-etf-makes-sense-and-when-it-doesnt?.tsrc=rss",
+    "summary": "Micron earnings are Wednesday, and options are pricing in a ~10% move. Is a 2X leveraged Micron ETF the smart way to play it, or a costly mistake? Direxion\u2019s Bilal Little breaks down how leveraged single-stock ETFs really work, why they\u2019re built for daily trading, and what happen"
+   },
+   {
+    "title": "Prediction: Micron Will Do a Stock-Split Before the End of the Year. And It Could Come on Wednesday",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 19:35:01 +0000",
+    "link": "https://www.fool.com/investing/2026/09/29/prediction-micron-will-do-a-stock-split-before-the-end-of-the-year-and-it-could-come-on-wednesday/?.tsrc=rss",
+    "summary": "At a share price above $1,000, a stock split seems likely for the memory chip juggernaut."
+   },
+   {
+    "title": "JPMorgan Says Micron's Rally May Not Be Over",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 19:21:32 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-says-microns-rally-may-192132485.html?.tsrc=rss",
+    "summary": "Long-term contracts could make earnings more durable than expected"
+   },
+   {
+    "title": "What History Says Will Happen If Micron\u2019s Earnings Stars Align",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:15:00 +0000",
+    "link": "https://finance.yahoo.com/m/8939a13e-5928-3ca4-9cb2-e83f295df019/what-history-says-will-happen.html?.tsrc=rss",
+    "summary": "Micron stock has had some eye-watering moves after earnings in previous quarters. With analysts upbeat for the company\u2019s results this week, the stock could be in for a roller coaster."
+   },
+   {
+    "title": "Dow Jones Software Leader Microsoft, Palantir, Micron, Palo Alto In Or Near Buy Zones",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:07:02 +0000",
+    "link": "https://finance.yahoo.com/m/6c841e39-941b-3c2e-a976-277baf5769f2/dow-jones-software-leader.html?.tsrc=rss",
+    "summary": "Dow Jones software giant Microsoft, along with Palantir, Micron and Palo Alto, are in or near buy zones in the current stock market."
+   },
+   {
+    "title": "Micron Stock Is Up 530% in a Year. Here\u2019s What a $50 Billion Quarter Must Prove",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 17:26:07 +0000",
+    "link": "https://www.tikr.com/blog/micron-stock-is-up-530-in-a-year-heres-what-a-50-billion-quarter-must-prove?ref=yahoofinance&.tsrc=rss",
+    "summary": "Key Stats for MU StockPast week performance: -1. 7%52-week range: $164 to $1,255Valuation model target price: $1,152Implied upside: 9."
+   },
+   {
+    "title": "What History Says Will Happen If Micron\u2019s Earnings Stars Align - Barron's",
+    "source": "Barron's",
+    "published": "Tue, 29 Sep 2026 18:15:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMHdlWUtmLWRGSjNpbGczRGYxSTJkRkIxQ3hWZ0doRmJKS1VtUkd1SDhRZXNnaUpBcWpXcC1iSWZIRjY1c1FadWZuS2kyM2xGYV9JcDkyVlQ5Wkd2UktfSEtiT1h6RTJuWVlyYnRmWXRkVVl5Y19qUnBCV0ZqQmNmczl2Yw?oc=5",
+    "summary": "What History Says Will Happen If Micron\u2019s Earnings Stars Align Barron's"
+   },
+   {
+    "title": "Could Micron Stock Help You Become a Millionaire? - The Motley Fool",
+    "source": "The Motley Fool",
+    "published": "Tue, 29 Sep 2026 16:45:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQjRYTXh0QXBTNjlSUVVFMlUwOUhEcThaUXpBcVhHQzZtX3RXTUJ2WGlObTJsS1ZwWmNERDVkNy1jRFJQWTYwY3gxbmtNRWdFTFJIaU9mNEdsbFpENmxEZ0dtUG1qdGJQV3FRVVdfZzczRW5DWGVPYkVrSjJWcVB5NEJjZnFqTF9yWG8zQnZ1d1BMakczYWc?oc=5",
+    "summary": "Could Micron Stock Help You Become a Millionaire? The Motley Fool"
+   },
+   {
+    "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 16:07:54 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5",
+    "summary": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway finance.yahoo.com"
+   },
+   {
+    "title": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) - Benzinga",
+    "source": "Benzinga",
+    "published": "Tue, 29 Sep 2026 13:07:58 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb3VZc2I0VktraTRUaUl4VzB6TDJMdmt5dWJRZWR2U2VxTDU5ajB2azQtQ0hWc2lHTWNVei12N21RY21nTUpSUXVkR3lJaUhYNG1nOXlEVi1jTllFbE9BY202SEtueHRiQVVNMjR5TDg4bERyQzhueWFoWTdkY0pTSHg5c0FzcW04bVYwdTA5eXZ1ZklSYjZUUTRSVzRIdWtwWFJ3Y25Xbw?oc=5",
+    "summary": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) Benzinga"
+   },
+   {
+    "title": "Here\u2019s How Much Traders Expect Micron Stock to Move After Earnings - Investopedia",
+    "source": "Investopedia",
+    "published": "Mon, 28 Sep 2026 20:41:22 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOWJKdEQtdzlndWFwd1ZrbUNlSG9fdXJtMDN2bVFQcjVhSDN4MlczXzYwdXcySTNmTzF5VEFURnlzQTFHS2lLX2h1SHdHd2tLanU0dGFZbVM1ekNMSmI0LVgzcWlKbS1IS1g2aDc5dVB3UTV1c0JrRHhsT213SjhGUWRxNEFZb2lFZEVvZmhjUnpNUS1nQ0sydlBFVzU4bkVodHBiVnZVZWUtcVZJdC1wNnFLbHp5cXBic2c?oc=5",
+    "summary": "Here\u2019s How Much Traders Expect Micron Stock to Move After Earnings Investopedia"
+   },
+   {
+    "title": "Michael Burry Shifts Strategy With Put Options Targeting Micron and AI Semiconductor Stocks - TIKR.com",
+    "source": "TIKR.com",
+    "published": "Tue, 29 Sep 2026 14:30:05 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb2RIMnZFLW1SblhDRl8xb3k2NERzWnVPTmZ4RWhaMF9LM0doRGw4T2dEMWZycnkwQTVPQmNpS05TQXk5MmtVbDVpUENTajV2c3lMNnZ2Q2xEdS1iazFJTzJlWk5ISzkxcnJnUk5COWRHcE1faW85R29zaVZCTUdKeEZLcC1GeEd2RGlr?oc=5",
+    "summary": "Michael Burry Shifts Strategy With Put Options Targeting Micron and AI Semiconductor Stocks TIKR.com"
+   },
+   {
+    "title": "Micron to report Q4 earnings, as memory boom powers on - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 15:32:30 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5",
+    "summary": "Micron to report Q4 earnings, as memory boom powers on finance.yahoo.com"
+   },
+   {
+    "title": "Micron Q4 Preview: Market Expert Highlights $1,575 as Stock Price to Watch - Benzinga",
+    "source": "Benzinga",
+    "published": "Tue, 29 Sep 2026 18:08:58 GMT",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOV2xJd2lTSThFb09udlB3ZVk3MU5CTGRtaFJWbW5FOGpZQXEtZ2RxbHo4NVVSangtRWVyTWhtcnNUSy1zMWZkbE1FQkpsX1lwVllMd3RabElqMTQ3b3R3cnRHUjFaUm43TjN6SnI5NllUQ1VuOF95Q1lPaG9IYVF6c2FTei1ZLWsyTlEyOFFNT0d1YzQzQkYxdThXc2ZldlY2d3ZBN3BPeENpbFQweTl0dlB6TExOQkpzb3JjU1pUU0M2ejBwTFdkUENOOWxlQWM?oc=5",
+    "summary": "Micron Q4 Preview: Market Expert Highlights $1,575 as Stock Price to Watch Benzinga"
+   }
+  ],
   "TSLL": [
    {
     "title": "MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion",
@@ -780,11 +666,11 @@
     "summary": "2X Daily Leveraged Exposure to SpaceX \u2013 the Largest IPO in History Direxion Liftoff for 2X Exposure to SpaceX as Direxion Launches LOFF New York, New York, June 15, 2026 (GLOBE NEWSWIRE) -- Direxion, a leading provider of ETFs for tactical traders, today announced the launch of t"
    },
    {
-    "title": "TSLL Oct 2026 16.000 call (TSLL261023C00016000) interactive stock chart - Yahoo Finance UK",
-    "source": "Yahoo Finance UK",
+    "title": "TSLL Oct 2026 16.000 call (TSLL261023C00016000) interactive stock chart - uk.finance.yahoo.com",
+    "source": "uk.finance.yahoo.com",
     "published": "Tue, 29 Sep 2026 02:08:14 GMT",
     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91ZVpZUkVmTkkwSlFXVzNGX3IyR0tDRUFkbVA4R2lrYUQyRTFnVjRuZnFBZXdCbDh2MTlGSnViaXpJcVVkTXNCZHFEVEdWb2puSVpCT2VVOEJ0WEZIb201WW9jX1ktQ2c2UjI4Y1dn?oc=5",
-    "summary": "TSLL Oct 2026 16.000 call (TSLL261023C00016000) interactive stock chart Yahoo Finance UK"
+    "summary": "TSLL Oct 2026 16.000 call (TSLL261023C00016000) interactive stock chart uk.finance.yahoo.com"
    },
    {
     "title": "Tesla Slips, and This Leveraged ETF Is Trading at Full Throttle - Benzinga",
@@ -801,11 +687,11 @@
     "summary": "$Direxion Daily TSLA Bull 2X Shares (TSLL.US)$ I told you I was going to make a killing today. 888 Moomoo"
    },
    {
-    "title": "TSLL Jan 2027 9.700 put (TSLL270115P00009700) interactive stock chart - Yahoo Finance UK",
-    "source": "Yahoo Finance UK",
+    "title": "TSLL Jan 2027 9.700 put (TSLL270115P00009700) interactive stock chart - uk.finance.yahoo.com",
+    "source": "uk.finance.yahoo.com",
     "published": "Mon, 28 Sep 2026 19:04:57 GMT",
     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA5NzhKaXZualZreXBTcHY3dUJ3X1BfV2JrbDFMdzhCa3BTVmxRQVJKTnpfRWpEbXc0ZVdEZ0lCY3VkdnRJcjhmSHlBRDhUVG1HeG9wMFRseURaNGphc0JDY3FGZ2RQdmNZRVRXVElB?oc=5",
-    "summary": "TSLL Jan 2027 9.700 put (TSLL270115P00009700) interactive stock chart Yahoo Finance UK"
+    "summary": "TSLL Jan 2027 9.700 put (TSLL270115P00009700) interactive stock chart uk.finance.yahoo.com"
    },
    {
     "title": "META Stock Outperformed GOOG, TSLA In July Despite Earnings Selloff \u2014 Analyst Says Shares Are \u2018Attractively Priced\u2019 Now - Stocktwits",
@@ -908,6 +794,13 @@
     "summary": "Tesla Roadster Speed Bump: Does It Dent TSLA's Investment Thesis? finance.yahoo.com"
    },
    {
+    "title": "Tesla (NASDAQ:TSLA) Stock Price Down 1.3% Following Analyst Downgrade - MarketBeat",
+    "source": "MarketBeat",
+    "published": "Tue, 29 Sep 2026 21:03:52 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWExxVzF4ejZubE5vZG5MVnB1YWgxNE1ZU2ZvcDdBSFhfT2lsRmlmTHVKTm0xRllROFVBZzBwZl9MTWk3LVFsZTlSRDFyTGhUN1YtdDlIRjJ4bkdiRkhrRmhTd1hfWW9NZ3otOWZKU3JrckNjNHJkZ0U2M0ViSExLMFQ3eDV5ZngtTzBNajRKV2RVaGc1ajJQdEpCTUV2N3pJQnY2dElBSnh1WDJPUHljZzM3b2R1QWVqa1lFNkhHckpxdjA?oc=5",
+    "summary": "Tesla (NASDAQ:TSLA) Stock Price Down 1.3% Following Analyst Downgrade MarketBeat"
+   },
+   {
     "title": "TSLA Stock Slides As Retail Turns Cautious Ahead Of Q3 Deliveries \u2014 But Musk\u2019s Terafab Is Moving Fast - Stocktwits",
     "source": "Stocktwits",
     "published": "Tue, 29 Sep 2026 03:52:37 GMT",
@@ -941,13 +834,6 @@
     "published": "Tue, 29 Sep 2026 05:45:47 GMT",
     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcy1BVjc1c3RJT2Q2WWQ0eXM3cXVzay1lOGFQOWViZnhYZ3RDRUg3TFVQWkVOSk1ydU03TDFEUGZXcGFId2J5SkJjLWNPaXAtVFJ0SmFhTTJtZndzeFpGbV9IN2J3MFh5SDQ0Wk5SUExXUXNoM2J2cnd5aWh6clpjR2Zvc2ZueTJuaUhyWktMTQ?oc=5",
     "summary": "(TSLA) Strategic Equity Report (TSLA:CA) Stock Traders Daily"
-   },
-   {
-    "title": "Can This Number Push Tesla Stock Higher? - Trefis",
-    "source": "Trefis",
-    "published": "Mon, 28 Sep 2026 14:26:34 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeThzdzdfUVRoT1ZGRkhUQlRPV0ZuZDhteVFhZEFRY2l3VzFUMjRnYjcyck80QTltTFc5WmtESWc4OUFNQ0N3Uld1QzJVTXExMkVfc3RrRVQ0Q0dBVW5SS3QyMDMwMVpmNmNlUW01Mjl5RXhneVk1UU1GNGJFSWFpZFg1bVQ5RU82bk1zM0t0Tnd5aXNQWmU2Yl93WVdWeHdIWVE?oc=5",
-    "summary": "Can This Number Push Tesla Stock Higher? Trefis"
    }
   ],
   "SMMT": [
@@ -1022,6 +908,13 @@
     "summary": "SMMT Stock Jumps As AstraZeneca Backs Ivonescimab Bet StocksToTrade"
    },
    {
+    "title": "SMMT Stock Jumps As AstraZeneca Backs Ivonescimab Bet - timothysykes.com",
+    "source": "timothysykes.com",
+    "published": "Tue, 29 Sep 2026 20:47:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTWJiS1dzNmNFTURWUUs0ek85RFIzcE5mMnptTFVVbkQ0MlhHWTNFd0xZUkpLbDhVckVjOV9VRHhDWVpZYjdfVzkyeERZcm9hY2VhWEt4ZlltWXZDZGlyODNQZTJ6ZXBPQ1hYMFpnVWVQcDVUZ0x3SV95YklCT2dQNTRzLXgxVkpY?oc=5",
+    "summary": "SMMT Stock Jumps As AstraZeneca Backs Ivonescimab Bet timothysykes.com"
+   },
+   {
     "title": "Summit Therapeutics Rises as AstraZeneca Backs Ivonescimab With $2 Billion Investment - Quiver Quantitative",
     "source": "Quiver Quantitative",
     "published": "Tue, 29 Sep 2026 17:38:00 GMT",
@@ -1055,13 +948,348 @@
     "published": "Tue, 29 Sep 2026 12:30:00 GMT",
     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTzhBVlNaU1JMalVuNnp4Z2hfX1dHckhRb3QtSjljaDJNY3RzTXpscEpwckxyTk1vY3daTVBjeFdVOFdHV3dZRTd4dVNWazZzajZCZV9mZjF6a2tvbFpnRlFYNDVSVWI3SktqcjdIeTk2ek5kdVdPQzh0ODd4Y0Zqa0ZseU14MTdXcTNwc0FnTldpVVFmM01tM2FjOVNuQlVYVDN3QldNWTlQODdHR1pQQS05RmdOZ24xWTBBcm9GSHpZazQ?oc=5",
     "summary": "These stocks that are showing activity before the opening bell on Tuesday. ChartMill"
+   }
+  ],
+  "CCL": [
+   {
+    "title": "'Vacations are sacrosanct': Carnival stock surges on record quarter, healthy cruise demand",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 14:50:02 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/article/vacations-are-sacrosanct-carnival-stock-surges-on-record-quarter-healthy-cruise-demand-145002464.html?.tsrc=rss",
+    "summary": "Cruise operator Carnival Corporation reported record third quarter bookings and customer deposits, demonstrating its ability to navigate rising fuel costs and keep travelers engaged."
    },
    {
-    "title": "Nasdaq Futures Tread Water After Monday Rout: MU, NVTS, NVO, KOD, SMMT, ASTS Stocks In Focus - TradingView",
-    "source": "TradingView",
-    "published": "Tue, 29 Sep 2026 08:31:36 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaG5nRmhNSzdVZW9ZQ3BLMG5MZGhVaGU0NGNsUlZfdS12dFV3VGE1RFdMTTJiYVBHQ1gwRmJHdlFjT3FTMW5PYmJhbkc5RHc0emZ0MzRCT1FiUVd5MDlweUlJc2dxeTkzRHB5TVdCMUxmWnpUZnhQNW9OLWdSZnMzWFViMWF4Tzg2UGt2WE9MYnc5WDcxYkpPRmpNQzVJemZab0pxNlRncEtIRTJ3dFd0SmlEVnpPbkcwUEtEVktSMkFjSGhLV1VaMTZQUk50d1Y1Y1BzanBXLS1VVmI3SXlN?oc=5",
-    "summary": "Nasdaq Futures Tread Water After Monday Rout: MU, NVTS, NVO, KOD, SMMT, ASTS Stocks In Focus TradingView"
+    "title": "Carnival Q3 Earnings Call Highlights",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 21:02:57 +0000",
+    "link": "https://www.marketbeat.com/instant-alerts/transcript-carnival-q3-earnings-call-highlights-2026-09-29/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+    "summary": "Carnival (NYSE:CCL) reported record third-quarter revenue, yields and net income, with results exceeding its prior guidance as stronger close-in bookings, onboard spending and cost controls offset higher fuel prices. Chief Executive Officer Josh Weinstein said the company generat"
+   },
+   {
+    "title": "Carnival Is Still Down 18% This Year: Did Today Just Mark the Bottom?",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:56:11 +0000",
+    "link": "https://247wallst.com/investing/2026/09/29/carnival-is-still-down-18-this-year-did-today-just-mark-the-bottom/?.tsrc=rss",
+    "summary": "Carnival just posted a blowout quarter and its stock surged, yet shares remain deep in the red while Norwegian slides even harder and fuel costs keep climbing. Whether today marks a turning point or simply the strongest session of a brutal year depends on one number buried in the"
+   },
+   {
+    "title": "Carnival Stock Surges After Earnings Show Record Revenue",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:45:00 +0000",
+    "link": "https://finance.yahoo.com/m/d392c527-ff93-3787-b3cd-483f67a9acf9/carnival-stock-surges-after.html?.tsrc=rss",
+    "summary": "Revenue hit a record $8.4 billion, the cruise operator said, beating consensus analyst projections of $8.3 billion."
+   },
+   {
+    "title": "Carnival Stock Rises 12% as Record Deposits Signal Strong 2027",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:00:40 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/carnival-stock-rises-12-record-180040309.html?.tsrc=rss",
+    "summary": "Record customer deposits and 2027 bookings point to sustained demand"
+   },
+   {
+    "title": "A Look Back at Consumer Discretionary - Travel and Vacation Providers Stocks\u2019 Q2 Earnings: Carnival (NYSE:CCL) Vs The Rest Of The Pack",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 17:12:02 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/look-back-consumer-discretionary-travel-171202745.html?.tsrc=rss",
+    "summary": "The end of the earnings season is always a good time to take a step back and see who shined (and who didn\u2019t). Let\u2019s take a look at how consumer discretionary - travel and vacation providers stocks fared in Q2, starting with Carnival (NYSE:CCL)."
+   },
+   {
+    "title": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 17:00:28 +0000",
+    "link": "https://finance.yahoo.com/m/f46a72ea-9e60-3e50-9dd8-2f7cd3188b3f/cruise-line-surprises-wall.html?.tsrc=rss",
+    "summary": "Carnival stock is having its best day in nearly 18 months after the cruise line beat profit estimates and gave a bullish outlook, defying worries over high fuel costs. Fuel costs cut gross margin yields by 1.3% year over year. Miami-based Carnival said it reduced fuel consumption"
+   },
+   {
+    "title": "Cruise Stocks Jump After Carnival Posts Strong Results and Rosy Outlook",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 16:10:07 +0000",
+    "link": "https://www.investopedia.com/market-update-cruise-stocks-jump-after-carnival-posts-strong-results-and-rosy-outlook-ccl-12147097?.tsrc=rss",
+    "summary": "Cruise stocks are surging after results from an industry leader topped Wall Street\u2019s expectations."
+   },
+   {
+    "title": "Cruise customers' deposits hit $7.6 billion at Carnival, a third-quarter record - Stock Titan",
+    "source": "Stock Titan",
+    "published": "Tue, 29 Sep 2026 13:15:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSlBYR1c1YWcxazRsQXFqcmU1WndzZWdOTHltRTRhLVRXNnNoMTdaWVdqWDUyV1doZ251dVU1X2hDNk5kTUtXRW5USkVhYTJtaHZoYk5ySkVwV1IwaWpLZHNvNEtKeTUyUlBNUzRBbEkxQ2UxSlg5U1M5TEJIc2lZMjZtZ1N2Tm92c3hNTFJIb09HSnJac19tVTdicUlBYzVQU0xCM3piRmFEQm1sNjVNaHJtbVV5bGs?oc=5",
+    "summary": "Cruise customers' deposits hit $7.6 billion at Carnival, a third-quarter record Stock Titan"
+   },
+   {
+    "title": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue - Barchart.com",
+    "source": "Barchart.com",
+    "published": "Tue, 29 Sep 2026 19:22:11 GMT",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNczJGalZIaXdhSUEwUHRRSWM3dEJyV0RJd1E5T2NmT2JKOUUxOXhHVzJBNklUeGFwQmJBekR2OWJxRlZqREF5UjYzYkNYZWJEOHMwU0l4U19zazR0UGsybjlGZTh0SWdmaHdCQWRBWmZ2b1ppX1hOUE52bHRIeTlSTDZMR0dKMzFvVjU0RUxTNWJvd01nMTY3MjlybVhKUQ?oc=5",
+    "summary": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue Barchart.com"
+   },
+   {
+    "title": "Why Carnival Stock Popped Today - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 15:13:52 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWTM2LUpmUDFycHJXSW5jVVVzWGFSMklfOTVQY1Z6NDdPRllhSmlwNkRTbDNWZnBrX2hqbVZKN2ZNRTFQUGNZa0ZJU3dDRmdHaU1IZ0pfc0hWNlpKS19uRVVtWGZxNi1DbmU3dUVXT1BCSWdpNXZlSDFLYWRFV3FqQ1FxM2NQZWk4TDFCQzJGOUdJby1KQTRjNUpiMFI?oc=5",
+    "summary": "Why Carnival Stock Popped Today finance.yahoo.com"
+   },
+   {
+    "title": "Stocks making the biggest moves midday: Carnival, Fair Isaac, Bloom Energy, Iovance Biotherapeutics & more - CNBC",
+    "source": "CNBC",
+    "published": "Tue, 29 Sep 2026 16:37:47 GMT",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOHFFMlVWLVlFUy1acXNBTGpOZ0JEWXk3UVY3TmtqaWZ0YTU0UUxpYi16U0FoaFFXMmtmS3F1c0RBM0lPcTFYOVpaUDZLdDBnYlpsVVhaMHlDZTZORzlzVVpRMm5CQV8xb1hERlBCUXRuQ29sa3luS2xjU3F1OWJFZWFqSHdoQ29VbGFSV0UwVVFFSVhPNVFB?oc=5",
+    "summary": "Stocks making the biggest moves midday: Carnival, Fair Isaac, Bloom Energy, Iovance Biotherapeutics & more CNBC"
+   },
+   {
+    "title": "Stock Traders Buy High Volume of Carnival Call Options (NYSE:CCL) - MarketBeat",
+    "source": "MarketBeat",
+    "published": "Tue, 29 Sep 2026 20:45:48 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZHJkeTZkdmVSOUVib3RMdGtoLTJtbEJLWG92TFlvQjRRQ3hEd2toQWcwbm1WODVuaHdWc1hMWW5PNHZFaTM4X1hlcHB1VExNXzlPUW9iMDViZzI1YUhySnlydS1oZnhla2pfdlI1WER6T0pzbG82RW5oNjhpQkFLMWU1MHJ1NU1STXRQR2xUN0o2VWdieHk3dkxaanhBUnJFV0c4SU5FOFNoZHBmamlseEpuTFBXN3hZUjZfdzY3OU54N2c?oc=5",
+    "summary": "Stock Traders Buy High Volume of Carnival Call Options (NYSE:CCL) MarketBeat"
+   },
+   {
+    "title": "Why Is Carnival Stock Soaring Tuesday? - Carnival (NYSE:CCL) - Benzinga",
+    "source": "Benzinga",
+    "published": "Tue, 29 Sep 2026 15:54:39 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTGZMOXVPejBqVzlET0pVM0tRQjh4d3Q4ZTdzVGo1Smc1aVBmY09JTzhWZ25aYy1iTkt3ZlFRd3hfMFpKblphWWhwMnFFelJCWVMwTDlvWEp4ck5WU0VVUGJBTmFRMjN3VGtGOWRYZWhMNWtLaXo0QmozRmVPbTdTOUlSVHhPckZ6eFB3Yk42U2dCd0VtZE9ydThKVUJJYTQ5U3UzN3JVTktHOVNockI2TFJKNU5yLVYtcUt1NnE5blowYkV2M3drMzhwa2dLWjhqUEdicFF2aUQ?oc=5",
+    "summary": "Why Is Carnival Stock Soaring Tuesday? - Carnival (NYSE:CCL) Benzinga"
+   },
+   {
+    "title": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost - Investor's Business Daily",
+    "source": "Investor's Business Daily",
+    "published": "Tue, 29 Sep 2026 17:00:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9YbnFRcGNnNGlrRUdYUjhzV1FLSFFjZ0ZORTBPZHVSM1FROTJuQ0ZCN1MyOTUyTnBObGt4ZGNJZ01sYnpFUmRNenV3QTRsWFg3YVZ4TjJDVmc0aUlnR0ZTOS1BTmFkTVRoTXA3SW9MQ2NDRzZM?oc=5",
+    "summary": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost Investor's Business Daily"
+   },
+   {
+    "title": "Why Are Carnival (CCL) Shares Soaring Today - tradingview.com",
+    "source": "tradingview.com",
+    "published": "Tue, 29 Sep 2026 16:35:48 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa0NFdUFNS2JpUW1kamlJcFRZOHZmV2dwUXVpVjBfazR0N3dPTXZjZEtoYTZkU0QwOWRPamg4UzBVdUhfMURyM1FnSlJwUm1WXzRUeDJCeEQyckN3MnhfNjB5d3ZuanpaZnF3QmJGbHNPX042aUN1ZVNWWUlOcXZoNnlGeVEwbDQyZlhxaV8tcWdSUGJDS0RMRWh3b1FQck9MNzc3Sw?oc=5",
+    "summary": "Why Are Carnival (CCL) Shares Soaring Today tradingview.com"
+   }
+  ],
+  "BE": [
+   {
+    "title": "Dow Jones Futures: Stocks Dip As Yields Rise But Bloom Energy Soars; Micron, Inflation Data Due",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 21:04:31 +0000",
+    "link": "https://finance.yahoo.com/m/0f05df74-8e19-37cc-8a3a-5b6885fbc760/dow-jones-futures%3A-stocks-dip.html?.tsrc=rss",
+    "summary": "Stocks are resilient as Treasury yields rise but aren't thriving. Bloom Energy surged. Inflation data, Micron earnings loom."
+   },
+   {
+    "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:40:47 +0000",
+    "link": "https://stocktwits.com/news-articles/markets/equity/be-stock-recovers-after-monday-slide-on-analyst-support-peers-fcel-plug-edge-higher/cZMZQn3RBWL?.tsrc=rss",
+    "summary": "Jefferies lifted its price target on BE to $264 from $229 while keeping a Hold rating."
+   },
+   {
+    "title": "Jefferies Lifts Bloom Energy Target but Flags Project Risks",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 19:19:01 +0000",
+    "link": "https://finance.yahoo.com/energy/articles/jefferies-lifts-bloom-energy-target-191901865.html?.tsrc=rss",
+    "summary": "Brookfield's $25 billion framework and AEP's $2.65 billion order support near-term growth"
+   },
+   {
+    "title": "Why Bloom Energy and AI Stocks Rise Even as OpenAI Safety Concerns Persist",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:28:00 +0000",
+    "link": "https://finance.yahoo.com/m/a33c544e-c625-31d1-9cb2-3252a8cf223f/why-bloom-energy-and-ai.html?.tsrc=rss",
+    "summary": "Bloom Energy and other AI-related stocks rise after OpenAI\u2019s decision to pause the training of its latest AI models sparked a sharp selloff Monday."
+   },
+   {
+    "title": "Silicon Valley's Leading CIOs, CISOs and Technology Executives to Gather October 6 for HMG Strategy's 18th Annual Silicon Valley C-Level Technology Leadership Summit; More Than 115 Technology Leaders Already Registered",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 18:04:00 +0000",
+    "link": "https://finance.yahoo.com/technology/articles/silicon-valleys-leading-cios-cisos-180400562.html?.tsrc=rss",
+    "summary": "Complimentary executive passes remain available for qualified technology leadersFAIRFIELD, Conn., Sept. 29, 2026 (GLOBE NEWSWIRE) -- More than 115 CIOs, CISOs, CTOs, Chief Data Officers, Chief AI Officers and senior technology leaders from many of Silicon Valley's leading organiz"
+   },
+   {
+    "title": "Why Bloom Energy Stock Is Powering Higher Today",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 17:31:17 +0000",
+    "link": "https://www.fool.com/investing/2026/09/29/why-bloom-energy-stock-is-powering-higher-today/?.tsrc=rss",
+    "summary": "One firm is reading the tea leaves and sees this fuel cell stock flying higher."
+   },
+   {
+    "title": "Bloom Energy COO Satish Chitoori Covers Significance of Joining S&P 500 Index",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 15:56:21 +0000",
+    "link": "https://finance.yahoo.com/video/bloom-energy-coo-satish-chitoori-155621240.html?.tsrc=rss",
+    "summary": "Bloom Energy COO Satish Chitoori Covers joins Kristen Scholer on NYSE Live to discuss the Significance of Joining S&P 500 Index"
+   },
+   {
+    "title": "What's Up With the Jump in Bloom Energy Stock?",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 14:30:10 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/whats-jump-bloom-energy-stock-143010760.html?.tsrc=rss",
+    "summary": "Bloom Energy Corp (NYSE:BE) shares are booming Tuesday. Jefferies raised its price target on the stock while maintaining a Hold rating. Here\u2019s what you should know. Bloom Energy stock is surging to new heights today. Why are BE shares rallying? Jefferies Raises Its Bloom Energy P"
+   },
+   {
+    "title": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 14:04:05 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTjZETGxZdks5ZjhMb0FldEtPS0pfai1TbzRhZnBVN1QwdjdHWGNBUkZuSWFQUE1yZ2ZUNktXV0N2aUJuOUl1bEZ5WjlwWXFId0Nuak1xY2VaWkFoc1FxVGRYUW1tZlFTNjYya3h1M3RXYjg0bG5sZllvZThJZjlmTV9FYWpGT2JONDlVQ0lWY0tiU0FIWGVjYw?oc=5",
+    "summary": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% finance.yahoo.com"
+   },
+   {
+    "title": "Why is Bloom Energy stock surging today? - Investing.com",
+    "source": "Investing.com",
+    "published": "Tue, 29 Sep 2026 14:07:14 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQW9UZWdqb0l3bC1QZnBVd1pQdjZlSkswY2c0NWZQWkIzUUh1djNhakxFU3V2LXBQRU5CSC03UEtnR1F2YW9IX21vUWYwdHhocEhmd1B4SWVXQjg3VXU4aXlmc1hfNnhyc2Y5aUgyZ05MMVpFaG1zaWgxYV9DTlppTDZmQS1PaEYyQ2w2QnBVeVhPNXVHLTVoY2tRdVNRS1dxUjdV?oc=5",
+    "summary": "Why is Bloom Energy stock surging today? Investing.com"
+   },
+   {
+    "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - tradingview.com",
+    "source": "tradingview.com",
+    "published": "Tue, 29 Sep 2026 20:40:47 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPeHBzWW1CZFlwYzVLc1JZeVJENWYtUzVpUURXNnlTamNkYkxZQUllQkRNNl9KTEhUV3RVYnNBVGloaGFUdzZkZm1LZ0M2STk0NldxYzdGdzgzZWgtRHd4VGJtY0xkSFNuTGMyM2xnSEZaeGtUSHNoQnFjMHRCZUQzVTdFMUhLNmJuUVVRWUhuZThNNERBTHl3d2M5alVjZmxkZmowZWQyWHhMS2lCaWp2bXFNN01tMWMtamhXVV81X1VMYWItckZ1R3pVa1M2VHJIcXBoNkN0UWlmR3Ux?oc=5",
+    "summary": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher tradingview.com"
+   },
+   {
+    "title": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. - Barchart.com",
+    "source": "Barchart.com",
+    "published": "Tue, 29 Sep 2026 20:18:43 GMT",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYVpNMC1QbGhITGpGMk45U3I3MnBMMXlTeV9FZ3FtdEFlZEc3eE91bnkzZUlPZDFlZ1BBVzdsZHBOWVF2WE1jZzJ4bkFEb2FPdDlXRTY3UkxjeFcxSzVKdjBmWlhoWl94X2kzQlRUZmpsUy00REdyMnU2aFVLTTNaUVRVNHVlQW1SUW5kXzQwTlhZc0poVXg3d3lVVHozbW5SdEdLWmJ3SnRjVzZHalRHYWl3TWFXU3pPLUlVRHVzTQ?oc=5",
+    "summary": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. Barchart.com"
+   },
+   {
+    "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - Stocktwits",
+    "source": "Stocktwits",
+    "published": "Tue, 29 Sep 2026 19:30:36 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUVgtdkMtU0xQWHNPdmRCTi1HdFJXWWo3Zl93a2lodDFoUEM2TmZzTXV3MlVwZU9MeVdaNk9sdXBTN2pidHI2NUZvbW14UUFFZW9lcE5HSERtYTVQSUJCS2d1LXRGTVlQMl9zYXdfOHZjNzJwT1piYWdUYmwxUDEyWjI2Vkx5UHRRbnRMdWkxbkNVMXhqOUlFQTRYczNSdFI4M0Z2cm1xVXNjdWZHaDdod1pYNDdJb3pqWV9RMUt5cUlwX0xBa0tNRklybTRZZHBjR3Z0WDNCblVtTlJ3UmVRSg?oc=5",
+    "summary": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher Stocktwits"
+   },
+   {
+    "title": "Bloom Energy (NYSE:BE) Stock Surges 14% as a Factory Expansion and Oracle Reassurance Lift Shares - Stocks Down Under",
+    "source": "Stocks Down Under",
+    "published": "Tue, 29 Sep 2026 19:04:21 GMT",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2cVVnRTUzVnlhanFlRk8wTXRxS1FHc1EydUYtODNLX1NwVS1iZTZ1UjVKUzJRNWczZzJxLWs3NlNoakljWHhVUWN6TjlsZHJwM0JJVUtvdG9yXzRFNUxUVU1ab2ZUa3hacll5bDdKVEZZb3RmakhhS19veDAtdw?oc=5",
+    "summary": "Bloom Energy (NYSE:BE) Stock Surges 14% as a Factory Expansion and Oracle Reassurance Lift Shares Stocks Down Under"
+   },
+   {
+    "title": "If You Invested $100 In Bloom Energy Stock 5 Years Ago, You Would Have This Much Today - Benzinga",
+    "source": "Benzinga",
+    "published": "Tue, 29 Sep 2026 20:00:24 GMT",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSmtlWkFsYTg1REF5WEc1NkJRV0tfa09fWk5ER1FvNGNVMHoyc01VM3hLLTd1Y1ZyeWI2UVl2akFaS19XNEJ2d3dfN05xZ3lZdlNIV2VRYUxxMEk3ZTJoNWozX1MxMUpibXdhZHNXUFpMX1BhR0RTMVNrNFZILWQ4ZU0tbWZ0amdqWmRZc2tGLXFWLVMyNkNBS3JNb3RZbWNYVWZZM1RhRG9zZFIwUHJDRHVRQkthNjgydUk1V0N3?oc=5",
+    "summary": "If You Invested $100 In Bloom Energy Stock 5 Years Ago, You Would Have This Much Today Benzinga"
+   },
+   {
+    "title": "Bloom Energy stock gains on factory expansion, fuel-cell demand outlook (BE:NYSE) - Seeking Alpha",
+    "source": "Seeking Alpha",
+    "published": "Tue, 29 Sep 2026 15:48:09 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOHQ3ZDVsTm4tTVZDNXZyN05XWW5sZmVaYWI3V2xfTFo1TVpWT1JKcXp6bUZiZjZidHVUXzNMNjNNNTgycE0wQlZMVkcxTU1Uc1h2Tm1uc2g3U2dPdm9mbll6R2lzRGZteVlxc2pQWDRlX2g3SVZiYUk4ekxaLTJ2TkJzRUNBTmtMemFFU0RubWFaNUgtYVJwMU5vTFdIODRIQ0FqcUc4UjA1TkRy?oc=5",
+    "summary": "Bloom Energy stock gains on factory expansion, fuel-cell demand outlook (BE:NYSE) Seeking Alpha"
+   }
+  ],
+  "NVDA": [
+   {
+    "title": "How Nvidia is tackling the AI safety problem",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:05:00 +0000",
+    "link": "https://finance.yahoo.com/video/nvidia-tackling-ai-safety-problem-200500655.html?.tsrc=rss",
+    "summary": "Ben Bajarin, Creative Strategies CEO and Principal Analyst, discusses Nvidia's (NVDA) AI safety software and breaks down how the new platform works amid rising AI safety concerns."
+   },
+   {
+    "title": "What we know about Trump's meeting with Alex Karp, Jensen Huang, & other AI leaders",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 19:40:43 +0000",
+    "link": "https://finance.yahoo.com/video/know-trumps-meeting-alex-karp-194043343.html?.tsrc=rss",
+    "summary": "President Trump met with several AI leaders at the White House on Tuesday, including Nvidia (NVDA) CEO Jensen Huang and Anthropic (ANTH.PVT) CEO Dario Amodei. Yahoo Finance Washington Correspondent Ben Werschkul outlines the details."
+   },
+   {
+    "title": "My Top AI Power Stock to Buy Right Now (and It's Not Even Close)",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:50:00 +0000",
+    "link": "https://www.fool.com/investing/2026/09/29/my-top-sector-stock-to-buy-right-now-and-its-not-e/?.tsrc=rss",
+    "summary": "GE Vernova remains one of the simplest ways to profit from the AI power boom."
+   },
+   {
+    "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:49:02 +0000",
+    "link": "https://finance.yahoo.com/m/8757314c-41ab-383f-89ee-51177c4ae956/stock-market-today%3A-dow%2C.html?.tsrc=rss",
+    "summary": "Stock Market Today: The Dow Jones index drops Tuesday as oil prices slide and Treasury yields rise. Nvidia and an AI stock test buy points."
+   },
+   {
+    "title": "Stocks making big moves yesterday: TTM Technologies, PacBio, Nvidia, Palo Alto Networks, and Teleflex",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:32:02 +0000",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-making-big-moves-yesterday-203202523.html?.tsrc=rss",
+    "summary": "Check out the companies making headlines yesterday:"
+   },
+   {
+    "title": "Here's Why SpaceX Buying More Nvidia GPUs Is Bigger News for SpaceX's Stock Than Nvidia's",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:20:00 +0000",
+    "link": "https://www.fool.com/investing/2026/09/29/heres-why-spacex-buying-more-nvidia-gpus-is-bigger/?.tsrc=rss",
+    "summary": "By renting out more compute capacity, SpaceX aims to generate revenue that it can put toward launching orbital data center satellites."
+   },
+   {
+    "title": "Nvidia Turns to Insurers to Spread AI Chip Financing Risk",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 19:19:55 +0000",
+    "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-turns-insurers-spread-ai-191955690.html?.tsrc=rss",
+    "summary": "Coverage would protect lenders if neocloud borrowers default and pledged chips fall short"
+   },
+   {
+    "title": "Prediction: Taiwan Semiconductor Manufacturing Will Hit a $3 Trillion Market Cap Before 2027 Is Over",
+    "source": null,
+    "published": "Tue, 29 Sep 2026 20:49:00 +0000",
+    "link": "https://www.fool.com/investing/2026/09/29/prediction-taiwan-semiconductor-manufacturing-will/?.tsrc=rss",
+    "summary": "The world's largest chip foundry is bound to benefit as long as heavy AI spending persists."
+   },
+   {
+    "title": "Nvidia's record buyback shows chipmaker's stock is too cheap for CEO Huang to resist - CNBC",
+    "source": "CNBC",
+    "published": "Tue, 29 Sep 2026 11:00:01 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbm8waVZKNWVxY3ZfVUVnWS1BczZsV0R0azZEVnBfb3JfWVJ4dDlQSlBJaFp5RVhRdjZsUWJGUDllUzFtaWRvVUw1dHVUaGdXbHdnN2I2Z3JNNFpuMWIycGRiSmxGdkxsTEZkWnVMQUZVTnZEd2tVaHo0SUFxWGIwRkoyd3hzUHNZODVRRkhJZnU2eXhjWHFxRzZBLTZpbnhlYVZKZHBfcUdZZ9IBrwFBVV95cUxOTXVYSzZ4LVpyb3FtaGc4UTFXOG9GTXViRjFuWnc1eVJ6SlZ5VXFtVDZGVVhCU2lJb3Q0bXVreURvb2kwbDk4UUg3LS0zMG9RZ2NyWDdOa0RyLUE3bmswV0pjVzJhVWJXazhvcDZZZ2dVa3dlLTFaU1VDblhWbzYxQVBXcnoxWHFucktja0JyX0hKdGhQUWdXdW9naXFSZk90RlRWa0JTRE5BR2VnYWNr?oc=5",
+    "summary": "Nvidia's record buyback shows chipmaker's stock is too cheap for CEO Huang to resist CNBC"
+   },
+   {
+    "title": "Nvidia Stock Gains as $235 Billion Buyback Tests Capital Discipline - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 18:14:16 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdWJLQ0RpRnRubnVKZFJKRXhNSDBZZG04aDVzQi1tb29jZlYyQml5UmZWb0hEb3dLeUgxbGJjTWZwYjRoN25Dcjd4ZEdvQk5wN3RHelQyZWlvelRKYWZ6bDlCdDhrTS1lLVljUHo3MmU3Q05EQmhEbFR4Y2xCbFlma190NXRpN3JaV005N0VEZ25HVGthRHZYeTI3dw?oc=5",
+    "summary": "Nvidia Stock Gains as $235 Billion Buyback Tests Capital Discipline finance.yahoo.com"
+   },
+   {
+    "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase - nvidianews.nvidia.com",
+    "source": "nvidianews.nvidia.com",
+    "published": "Mon, 28 Sep 2026 17:02:51 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR0Vsb0ZuR3F0Sl9oYldFNF90azJObUVsNkJIb0VCWVJxWDRmRmdyR2swZE90ZkxwRGJERXBveVRvX040RUJMLU9Tc3lIbm44R2lzMzcxZHVYRkZmS0lGRWhHMDF4azNCakJHSk00UU1KdEhzNzVrYVd1SVpnNDZyZkV4bWVNVHY3cC1fSlpUSm1BTnZTdS1Vak5LOXB2NkF5X0VnZFhFR1A?oc=5",
+    "summary": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase nvidianews.nvidia.com"
+   },
+   {
+    "title": "Nvidia Stock Technicals Are Flashing Green. A Record High Could Be Next. - Barron's",
+    "source": "Barron's",
+    "published": "Tue, 29 Sep 2026 18:15:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ2duSFBFenVuX1VEa3JFMHBFcWxxeDdfUnhmLWJONjVnY2hCeU1LR0lzVUEyUjV0MDFEX2lHNDltNktzc3FhMEpJQXI2R09ZZ2RxNzhTVm52R293ZC11Qm5uemNGVVRYTUVmUHVvbVdNQkY5OEs5ck0yYm5pYmRNY2t0cHFselJHZnZzRWN1MFV4N0xqNFg2cGNuTzc?oc=5",
+    "summary": "Nvidia Stock Technicals Are Flashing Green. A Record High Could Be Next. Barron's"
+   },
+   {
+    "title": "Nvidia sets biggest-ever buyback plan as AI chip competition weighs on stock performance - Reuters",
+    "source": "Reuters",
+    "published": "Mon, 28 Sep 2026 11:06:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTzg4UzFUbWw0cThEbUEwYVdsdF9WVVpuSDZ0RkJjLWd1UE5XdVJFWjRKazNRU2lyVkxiX2xIZFplVnkxTTl4QUhnV1NaM21SdFNxTFBMYXVJMlJVU2lobmtWYkpqa2wyWlRPLWxuZTMtTzhRUVpHZ1V6VkRLS0psbzlQTWQwcGNpVXNuSGRYSjlCQU9sU3lXcXVteXk2ZmZf?oc=5",
+    "summary": "Nvidia sets biggest-ever buyback plan as AI chip competition weighs on stock performance Reuters"
+   },
+   {
+    "title": "Nvidia $150B Buyback: Is NVDA Stock Cheap Enough? - NVIDIA (NASDAQ:NVDA) - Benzinga",
+    "source": "Benzinga",
+    "published": "Tue, 29 Sep 2026 14:38:51 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHF5dGY3YUJzejRnQ3B5M0xlVnl4WGpuUVZ1Uk5OT1ZNWlpDa3A2c3FVQ0tSWVpRX3FMQ0RINVlSUml0Y3JZNVpyZkpVS0Q2SUpfbDJxQ3Jiam1XeGxzQnZkQzRraXZmWUN2MlZvVWx0NlBqVzBtUU96Skdsb0c2M1ZGbHdxSTRWa3A1Wk9qNXhaWWJTS2dHM0F0X2FlbHZqb0tFUERucw?oc=5",
+    "summary": "Nvidia $150B Buyback: Is NVDA Stock Cheap Enough? - NVIDIA (NASDAQ:NVDA) Benzinga"
+   },
+   {
+    "title": "What Could Push NVDA Stock Higher From Here? - Trefis",
+    "source": "Trefis",
+    "published": "Tue, 29 Sep 2026 10:40:24 GMT",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRFVDMEF6WGZtX21hYnh3cWNHSDRFZmxqdGJ5ME5fTmNWbW5UT21DbE80SXN3dXliMGN3OFRjWFRGTFZMc3JONGxMZlVZdzhPbUplMHlWdHFaTzFYZFh6SmJKd0JLcDdPQ0NRSURSb1Nrb2EzeUI0Q1NxUVY5VFJUNHN1dDNoWmNMM3pyT2s3OGpKSEhPV2FjQmRXZW5oTnhoNHoyYkF2R3pzRjFIbGtZT1lmbVY?oc=5",
+    "summary": "What Could Push NVDA Stock Higher From Here? Trefis"
+   },
+   {
+    "title": "Nvidia's $150B buyback could fuel next stock rally - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 11:42:28 GMT",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbk9NclNoTkRDSV9PZWxzU0ZuNTI1TXkxT3dxSzJwMmJTaEVRM1QyYy1zRDNIVGxCSm03bmQtZFVSQnB1WDVtdERsM2dBNGZSWTV4d0VhRHpRNnVRSThVcUNJUkhRdHhLSWRuVjBWdlNqazEyYXVpMjN0R3hkYkYtakI2OHdYdm9uMkdfUnlFWkRlM2gwS0xzLWdEelV0QWhqNnVZcTRPVGFpSzRFNFMyMnZB?oc=5",
+    "summary": "Nvidia's $150B buyback could fuel next stock rally finance.yahoo.com"
    }
   ],
   "SDEV": [
@@ -1094,11 +1322,11 @@
     "summary": "Stablecoin Development Corporation Common Stock (NYSE:SDEV) Stock Quote The Chronicle-Journal"
    },
    {
-    "title": "Stablecoin Development Corporation stock surges 5.37% then plunges 9.77% intraday - Cryptonews.net",
-    "source": "Cryptonews.net",
-    "published": "Tue, 29 Sep 2026 20:43:14 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wSFJBY2hOd1B5X1l4NmZaRlk1emlHS1FlTjVod3RlSUMxNlVmU2ZUWnJueHRELXpHT2FwTkQwcGhualRVS2dtaFhrQTR0cGpLRnBnUHRETlVkeEU?oc=5",
-    "summary": "Stablecoin Development Corporation stock surges 5.37% then plunges 9.77% intraday Cryptonews.net"
+    "title": "Stablecoin Development Corporation Stock Analysis: Overbought Signals & Cooling Momentum - The Cryptonomist",
+    "source": "The Cryptonomist",
+    "published": "Tue, 29 Sep 2026 18:29:33 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSnNtdUJjUkFhaFN4Z2IwQzFVOXJoQ3pGOWdBZm9OY3lLVlMzNzFFNGdRUk9jckZ0WHVKM2JkV0EzbVJMUXd2ZWEtb1I5WGZNbS03VTRNMldFRVFabG83S0ZYSGRiOENDZktwMUVNN19yM1p1S2p2MVdnVkU2Z01HaVotYnQ0X3pqeS13UmlwR3F0SFhpbGJvZ1dHaHdidnFMTGZaN205dVZYUk5PRTN0RjM5X1VCTWhDWlE?oc=5",
+    "summary": "Stablecoin Development Corporation Stock Analysis: Overbought Signals & Cooling Momentum The Cryptonomist"
    },
    {
     "title": "Top movers analysis one hour before the close of the markets on 2026-09-29: top gainers and losers in today's session. - ChartMill",
@@ -1111,7 +1339,7 @@
     "title": "SDEV Stock Pops As Traders Zero In On Volatile Breakout - timothysykes.com",
     "source": "timothysykes.com",
     "published": "Mon, 28 Sep 2026 13:19:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONVZqanYydkh5VndWQktHbS1WREw5Q05Dbm9uX3FscEo4WXpjUG5mVV9qQmlQcXVveEdYQWltd2ZBTjdmYTI0SmpRRVNCQjB3TjFoYmdXZG1kVjg2ODNhRlNLMk81NW9vZmlYcjJMWGExdmZsWUoycGt3OXNnMHhua3EwQkNPY29hYlNIZ3hFQjdpVWNRaWZR?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQLXRqOVV2c0lFWnVOYTFoZXIwQUo1NFN1TzZ2U0RrYU42Q0prcVZUVFdtSHhqSlF4YUltaGwxMzlDTGpmdEpMNnVJVzRIMUF5TE5vZXM3VXdxUWRUM3J6MkplbWNzejVlNzRzSUFYZDJqUnM0UzRGUnBvdWczWDE0a0xfMEF1UU85UV82UUJPLTFVZw?oc=5",
     "summary": "SDEV Stock Pops As Traders Zero In On Volatile Breakout timothysykes.com"
    },
    {
@@ -1185,234 +1413,6 @@
     "published": "Tue, 29 Sep 2026 13:37:06 GMT",
     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTjNhTDFKZnpEMkxQN0NabzcyY3V5RWc2U2YyM3FrTlFsaGhWbXpPVGE2RVFfQmN0YzJVUXBESGo1eXlMQWdldlAzM2V3NGh2QmJtUnFqSENoM1BRbUc5RlZEeGNxdjU5QjNXUmFUZzRvOHhUUkFxUUlGa2JRSjJTRFMxWnZHdVhGdmFrRGNQdDYwQUNxUkdKNTBjRk8zNkQ1dEFnTUIzTFB3QTJibEFrbHR3OUZaTDdjc0VROXRsbGxEWmVoTV9GZk9MN3hVNDlV?oc=5",
     "summary": "AIFU Posts First-Half 2026 Profit Despite Revenue Drop After Business Restructuring TipRanks"
-   }
-  ],
-  "BE": [
-   {
-    "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:40:47 +0000",
-    "link": "https://stocktwits.com/news-articles/markets/equity/be-stock-recovers-after-monday-slide-on-analyst-support-peers-fcel-plug-edge-higher/cZMZQn3RBWL?.tsrc=rss",
-    "summary": "Jefferies lifted its price target on BE to $264 from $229 while keeping a Hold rating."
-   },
-   {
-    "title": "Dow Jones Futures: Stocks Dip As Yields Rise But Bloom Energy Soars; Micron, Inflation Data Due",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 20:39:33 +0000",
-    "link": "https://finance.yahoo.com/m/0f05df74-8e19-37cc-8a3a-5b6885fbc760/dow-jones-futures%3A-stocks-dip.html?.tsrc=rss",
-    "summary": "Stocks are resilient as Treasury yields rise but aren't thriving. Bloom Energy surged. Inflation data, Micron earnings loom."
-   },
-   {
-    "title": "Jefferies Lifts Bloom Energy Target but Flags Project Risks",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 19:19:01 +0000",
-    "link": "https://finance.yahoo.com/energy/articles/jefferies-lifts-bloom-energy-target-191901865.html?.tsrc=rss",
-    "summary": "Brookfield's $25 billion framework and AEP's $2.65 billion order support near-term growth"
-   },
-   {
-    "title": "Why Bloom Energy and AI Stocks Rise Even as OpenAI Safety Concerns Persist",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:28:00 +0000",
-    "link": "https://finance.yahoo.com/m/a33c544e-c625-31d1-9cb2-3252a8cf223f/why-bloom-energy-and-ai.html?.tsrc=rss",
-    "summary": "Bloom Energy and other AI-related stocks rise after OpenAI\u2019s decision to pause the training of its latest AI models sparked a sharp selloff Monday."
-   },
-   {
-    "title": "Silicon Valley's Leading CIOs, CISOs and Technology Executives to Gather October 6 for HMG Strategy's 18th Annual Silicon Valley C-Level Technology Leadership Summit; More Than 115 Technology Leaders Already Registered",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:04:00 +0000",
-    "link": "https://finance.yahoo.com/technology/articles/silicon-valleys-leading-cios-cisos-180400562.html?.tsrc=rss",
-    "summary": "Complimentary executive passes remain available for qualified technology leadersFAIRFIELD, Conn., Sept. 29, 2026 (GLOBE NEWSWIRE) -- More than 115 CIOs, CISOs, CTOs, Chief Data Officers, Chief AI Officers and senior technology leaders from many of Silicon Valley's leading organiz"
-   },
-   {
-    "title": "Why Bloom Energy Stock Is Powering Higher Today",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 17:31:17 +0000",
-    "link": "https://www.fool.com/investing/2026/09/29/why-bloom-energy-stock-is-powering-higher-today/?.tsrc=rss",
-    "summary": "One firm is reading the tea leaves and sees this fuel cell stock flying higher."
-   },
-   {
-    "title": "Bloom Energy COO Satish Chitoori Covers Significance of Joining S&P 500 Index",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 15:56:21 +0000",
-    "link": "https://finance.yahoo.com/video/bloom-energy-coo-satish-chitoori-155621240.html?.tsrc=rss",
-    "summary": "Bloom Energy COO Satish Chitoori Covers joins Kristen Scholer on NYSE Live to discuss the Significance of Joining S&P 500 Index"
-   },
-   {
-    "title": "What's Up With the Jump in Bloom Energy Stock?",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 14:30:10 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/whats-jump-bloom-energy-stock-143010760.html?.tsrc=rss",
-    "summary": "Bloom Energy Corp (NYSE:BE) shares are booming Tuesday. Jefferies raised its price target on the stock while maintaining a Hold rating. Here\u2019s what you should know. Bloom Energy stock is surging to new heights today. Why are BE shares rallying? Jefferies Raises Its Bloom Energy P"
-   },
-   {
-    "title": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 14:04:05 GMT",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTjZETGxZdks5ZjhMb0FldEtPS0pfai1TbzRhZnBVN1QwdjdHWGNBUkZuSWFQUE1yZ2ZUNktXV0N2aUJuOUl1bEZ5WjlwWXFId0Nuak1xY2VaWkFoc1FxVGRYUW1tZlFTNjYya3h1M3RXYjg0bG5sZllvZThJZjlmTV9FYWpGT2JONDlVQ0lWY0tiU0FIWGVjYw?oc=5",
-    "summary": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% finance.yahoo.com"
-   },
-   {
-    "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - tradingview.com",
-    "source": "tradingview.com",
-    "published": "Tue, 29 Sep 2026 20:40:47 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPeHBzWW1CZFlwYzVLc1JZeVJENWYtUzVpUURXNnlTamNkYkxZQUllQkRNNl9KTEhUV3RVYnNBVGloaGFUdzZkZm1LZ0M2STk0NldxYzdGdzgzZWgtRHd4VGJtY0xkSFNuTGMyM2xnSEZaeGtUSHNoQnFjMHRCZUQzVTdFMUhLNmJuUVVRWUhuZThNNERBTHl3d2M5alVjZmxkZmowZWQyWHhMS2lCaWp2bXFNN01tMWMtamhXVV81X1VMYWItckZ1R3pVa1M2VHJIcXBoNkN0UWlmR3Ux?oc=5",
-    "summary": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher tradingview.com"
-   },
-   {
-    "title": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. - Barchart.com",
-    "source": "Barchart.com",
-    "published": "Tue, 29 Sep 2026 20:18:43 GMT",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYVpNMC1QbGhITGpGMk45U3I3MnBMMXlTeV9FZ3FtdEFlZEc3eE91bnkzZUlPZDFlZ1BBVzdsZHBOWVF2WE1jZzJ4bkFEb2FPdDlXRTY3UkxjeFcxSzVKdjBmWlhoWl94X2kzQlRUZmpsUy00REdyMnU2aFVLTTNaUVRVNHVlQW1SUW5kXzQwTlhZc0poVXg3d3lVVHozbW5SdEdLWmJ3SnRjVzZHalRHYWl3TWFXU3pPLUlVRHVzTQ?oc=5",
-    "summary": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. Barchart.com"
-   },
-   {
-    "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - Stocktwits",
-    "source": "Stocktwits",
-    "published": "Tue, 29 Sep 2026 19:30:36 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUVgtdkMtU0xQWHNPdmRCTi1HdFJXWWo3Zl93a2lodDFoUEM2TmZzTXV3MlVwZU9MeVdaNk9sdXBTN2pidHI2NUZvbW14UUFFZW9lcE5HSERtYTVQSUJCS2d1LXRGTVlQMl9zYXdfOHZjNzJwT1piYWdUYmwxUDEyWjI2Vkx5UHRRbnRMdWkxbkNVMXhqOUlFQTRYczNSdFI4M0Z2cm1xVXNjdWZHaDdod1pYNDdJb3pqWV9RMUt5cUlwX0xBa0tNRklybTRZZHBjR3Z0WDNCblVtTlJ3UmVRSg?oc=5",
-    "summary": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher Stocktwits"
-   },
-   {
-    "title": "Bloom Energy (NYSE:BE) Stock Surges 14% as a Factory Expansion and Oracle Reassurance Lift Shares - Stocks Down Under",
-    "source": "Stocks Down Under",
-    "published": "Tue, 29 Sep 2026 19:04:21 GMT",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2cVVnRTUzVnlhanFlRk8wTXRxS1FHc1EydUYtODNLX1NwVS1iZTZ1UjVKUzJRNWczZzJxLWs3NlNoakljWHhVUWN6TjlsZHJwM0JJVUtvdG9yXzRFNUxUVU1ab2ZUa3hacll5bDdKVEZZb3RmakhhS19veDAtdw?oc=5",
-    "summary": "Bloom Energy (NYSE:BE) Stock Surges 14% as a Factory Expansion and Oracle Reassurance Lift Shares Stocks Down Under"
-   },
-   {
-    "title": "If You Invested $100 In Bloom Energy Stock 5 Years Ago, You Would Have This Much Today - Benzinga",
-    "source": "Benzinga",
-    "published": "Tue, 29 Sep 2026 20:00:24 GMT",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSmtlWkFsYTg1REF5WEc1NkJRV0tfa09fWk5ER1FvNGNVMHoyc01VM3hLLTd1Y1ZyeWI2UVl2akFaS19XNEJ2d3dfN05xZ3lZdlNIV2VRYUxxMEk3ZTJoNWozX1MxMUpibXdhZHNXUFpMX1BhR0RTMVNrNFZILWQ4ZU0tbWZ0amdqWmRZc2tGLXFWLVMyNkNBS3JNb3RZbWNYVWZZM1RhRG9zZFIwUHJDRHVRQkthNjgydUk1V0N3?oc=5",
-    "summary": "If You Invested $100 In Bloom Energy Stock 5 Years Ago, You Would Have This Much Today Benzinga"
-   },
-   {
-    "title": "Bloom Energy stock gains on factory expansion, fuel-cell demand outlook (BE:NYSE) - Seeking Alpha",
-    "source": "Seeking Alpha",
-    "published": "Tue, 29 Sep 2026 15:48:09 GMT",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOHQ3ZDVsTm4tTVZDNXZyN05XWW5sZmVaYWI3V2xfTFo1TVpWT1JKcXp6bUZiZjZidHVUXzNMNjNNNTgycE0wQlZMVkcxTU1Uc1h2Tm1uc2g3U2dPdm9mbll6R2lzRGZteVlxc2pQWDRlX2g3SVZiYUk4ekxaLTJ2TkJzRUNBTmtMemFFU0RubWFaNUgtYVJwMU5vTFdIODRIQ0FqcUc4UjA1TkRy?oc=5",
-    "summary": "Bloom Energy stock gains on factory expansion, fuel-cell demand outlook (BE:NYSE) Seeking Alpha"
-   },
-   {
-    "title": "These S&P500 stocks that are showing activity before the opening bell on Tuesday. - ChartMill",
-    "source": "ChartMill",
-    "published": "Tue, 29 Sep 2026 12:35:01 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaUNyNEdheE9sQ2lyNndmMjIzNmlJUE1ydzRfNUplMUh3YUExdG5qTi04RUljb2xxRmJKZ09VVS1YLWNKTUtoa2JMT2o4bFhxSVYwVVZhNXptdVZDdjk5WnI0WmhuNDRLWjVGUmFPZE5IWmJWMTktYzdfaDdiWFdna2MzNDBnaU5IVlE1cTBmeDNiTG9QanExLXB1Mi1Ya3hIVjVTVXA2eGEteG5faXRMUnpqT09LOENJdllGUUtoY0ZuTFRpaGRJZg?oc=5",
-    "summary": "These S&P500 stocks that are showing activity before the opening bell on Tuesday. ChartMill"
-   }
-  ],
-  "CCL": [
-   {
-    "title": "'Vacations are sacrosanct': Carnival stock surges on record quarter, healthy cruise demand",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 14:50:02 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/article/vacations-are-sacrosanct-carnival-stock-surges-on-record-quarter-healthy-cruise-demand-145002464.html?.tsrc=rss",
-    "summary": "Cruise operator Carnival Corporation reported record third quarter bookings and customer deposits, demonstrating its ability to navigate rising fuel costs and keep travelers engaged."
-   },
-   {
-    "title": "Carnival Is Still Down 18% This Year: Did Today Just Mark the Bottom?",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:56:11 +0000",
-    "link": "https://247wallst.com/investing/2026/09/29/carnival-is-still-down-18-this-year-did-today-just-mark-the-bottom/?.tsrc=rss",
-    "summary": "Carnival just posted a blowout quarter and its stock surged, yet shares remain deep in the red while Norwegian slides even harder and fuel costs keep climbing. Whether today marks a turning point or simply the strongest session of a brutal year depends on one number buried in the"
-   },
-   {
-    "title": "Carnival Stock Surges After Earnings Show Record Revenue",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:45:00 +0000",
-    "link": "https://finance.yahoo.com/m/d392c527-ff93-3787-b3cd-483f67a9acf9/carnival-stock-surges-after.html?.tsrc=rss",
-    "summary": "Revenue hit a record $8.4 billion, the cruise operator said, beating consensus analyst projections of $8.3 billion."
-   },
-   {
-    "title": "Carnival Stock Rises 12% as Record Deposits Signal Strong 2027",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 18:00:40 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/carnival-stock-rises-12-record-180040309.html?.tsrc=rss",
-    "summary": "Record customer deposits and 2027 bookings point to sustained demand"
-   },
-   {
-    "title": "A Look Back at Consumer Discretionary - Travel and Vacation Providers Stocks\u2019 Q2 Earnings: Carnival (NYSE:CCL) Vs The Rest Of The Pack",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 17:12:02 +0000",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/look-back-consumer-discretionary-travel-171202745.html?.tsrc=rss",
-    "summary": "The end of the earnings season is always a good time to take a step back and see who shined (and who didn\u2019t). Let\u2019s take a look at how consumer discretionary - travel and vacation providers stocks fared in Q2, starting with Carnival (NYSE:CCL)."
-   },
-   {
-    "title": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 17:00:28 +0000",
-    "link": "https://finance.yahoo.com/m/f46a72ea-9e60-3e50-9dd8-2f7cd3188b3f/cruise-line-surprises-wall.html?.tsrc=rss",
-    "summary": "Carnival stock is having its best day in nearly 18 months after the cruise line beat profit estimates and gave a bullish outlook, defying worries over high fuel costs. Fuel costs cut gross margin yields by 1.3% year over year. Miami-based Carnival said it reduced fuel consumption"
-   },
-   {
-    "title": "Cruise Stocks Jump After Carnival Posts Strong Results and Rosy Outlook",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 16:10:07 +0000",
-    "link": "https://www.investopedia.com/market-update-cruise-stocks-jump-after-carnival-posts-strong-results-and-rosy-outlook-ccl-12147097?.tsrc=rss",
-    "summary": "Cruise stocks are surging after results from an industry leader topped Wall Street\u2019s expectations."
-   },
-   {
-    "title": "Carnival shares surge as quarterly earnings top expectations",
-    "source": null,
-    "published": "Tue, 29 Sep 2026 14:37:00 +0000",
-    "link": "https://www.proactiveinvestors.com/companies/news/1099313/carnival-shares-surge-as-quarterly-earnings-top-expectations-1099313.html?.tsrc=rss",
-    "summary": "Carnival Corp (NYSE:CCL) shares jumped more than 12% on Tuesday after the cruise operator reported third-quarter results above Wall Street estimates and raised its full-year net yield outlook, while pointing to strong bookings for 2027. Revenue rose to $8.4 billion in the quarter"
-   },
-   {
-    "title": "Cruise customers' deposits hit $7.6 billion at Carnival, a third-quarter record - Stock Titan",
-    "source": "Stock Titan",
-    "published": "Tue, 29 Sep 2026 13:15:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSlBYR1c1YWcxazRsQXFqcmU1WndzZWdOTHltRTRhLVRXNnNoMTdaWVdqWDUyV1doZ251dVU1X2hDNk5kTUtXRW5USkVhYTJtaHZoYk5ySkVwV1IwaWpLZHNvNEtKeTUyUlBNUzRBbEkxQ2UxSlg5U1M5TEJIc2lZMjZtZ1N2Tm92c3hNTFJIb09HSnJac19tVTdicUlBYzVQU0xCM3piRmFEQm1sNjVNaHJtbVV5bGs?oc=5",
-    "summary": "Cruise customers' deposits hit $7.6 billion at Carnival, a third-quarter record Stock Titan"
-   },
-   {
-    "title": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue - Barchart.com",
-    "source": "Barchart.com",
-    "published": "Tue, 29 Sep 2026 19:22:11 GMT",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNczJGalZIaXdhSUEwUHRRSWM3dEJyV0RJd1E5T2NmT2JKOUUxOXhHVzJBNklUeGFwQmJBekR2OWJxRlZqREF5UjYzYkNYZWJEOHMwU0l4U19zazR0UGsybjlGZTh0SWdmaHdCQWRBWmZ2b1ppX1hOUE52bHRIeTlSTDZMR0dKMzFvVjU0RUxTNWJvd01nMTY3MjlybVhKUQ?oc=5",
-    "summary": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue Barchart.com"
-   },
-   {
-    "title": "Why Carnival Stock Popped Today - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 15:13:52 GMT",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWTM2LUpmUDFycHJXSW5jVVVzWGFSMklfOTVQY1Z6NDdPRllhSmlwNkRTbDNWZnBrX2hqbVZKN2ZNRTFQUGNZa0ZJU3dDRmdHaU1IZ0pfc0hWNlpKS19uRVVtWGZxNi1DbmU3dUVXT1BCSWdpNXZlSDFLYWRFV3FqQ1FxM2NQZWk4TDFCQzJGOUdJby1KQTRjNUpiMFI?oc=5",
-    "summary": "Why Carnival Stock Popped Today finance.yahoo.com"
-   },
-   {
-    "title": "Stocks making the biggest moves midday: Carnival, Fair Isaac, Bloom Energy, Iovance Biotherapeutics & more - CNBC",
-    "source": "CNBC",
-    "published": "Tue, 29 Sep 2026 16:37:47 GMT",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOHFFMlVWLVlFUy1acXNBTGpOZ0JEWXk3UVY3TmtqaWZ0YTU0UUxpYi16U0FoaFFXMmtmS3F1c0RBM0lPcTFYOVpaUDZLdDBnYlpsVVhaMHlDZTZORzlzVVpRMm5CQV8xb1hERlBCUXRuQ29sa3luS2xjU3F1OWJFZWFqSHdoQ29VbGFSV0UwVVFFSVhPNVFB?oc=5",
-    "summary": "Stocks making the biggest moves midday: Carnival, Fair Isaac, Bloom Energy, Iovance Biotherapeutics & more CNBC"
-   },
-   {
-    "title": "Stock Traders Buy High Volume of Carnival Call Options (NYSE:CCL) - MarketBeat",
-    "source": "MarketBeat",
-    "published": "Tue, 29 Sep 2026 20:45:48 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZHJkeTZkdmVSOUVib3RMdGtoLTJtbEJLWG92TFlvQjRRQ3hEd2toQWcwbm1WODVuaHdWc1hMWW5PNHZFaTM4X1hlcHB1VExNXzlPUW9iMDViZzI1YUhySnlydS1oZnhla2pfdlI1WER6T0pzbG82RW5oNjhpQkFLMWU1MHJ1NU1STXRQR2xUN0o2VWdieHk3dkxaanhBUnJFV0c4SU5FOFNoZHBmamlseEpuTFBXN3hZUjZfdzY3OU54N2c?oc=5",
-    "summary": "Stock Traders Buy High Volume of Carnival Call Options (NYSE:CCL) MarketBeat"
-   },
-   {
-    "title": "Why Is Carnival Stock Soaring Tuesday? - Carnival (NYSE:CCL) - Benzinga",
-    "source": "Benzinga",
-    "published": "Tue, 29 Sep 2026 15:54:39 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTGZMOXVPejBqVzlET0pVM0tRQjh4d3Q4ZTdzVGo1Smc1aVBmY09JTzhWZ25aYy1iTkt3ZlFRd3hfMFpKblphWWhwMnFFelJCWVMwTDlvWEp4ck5WU0VVUGJBTmFRMjN3VGtGOWRYZWhMNWtLaXo0QmozRmVPbTdTOUlSVHhPckZ6eFB3Yk42U2dCd0VtZE9ydThKVUJJYTQ5U3UzN3JVTktHOVNockI2TFJKNU5yLVYtcUt1NnE5blowYkV2M3drMzhwa2dLWjhqUEdicFF2aUQ?oc=5",
-    "summary": "Why Is Carnival Stock Soaring Tuesday? - Carnival (NYSE:CCL) Benzinga"
-   },
-   {
-    "title": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost - Investor's Business Daily",
-    "source": "Investor's Business Daily",
-    "published": "Tue, 29 Sep 2026 17:00:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9YbnFRcGNnNGlrRUdYUjhzV1FLSFFjZ0ZORTBPZHVSM1FROTJuQ0ZCN1MyOTUyTnBObGt4ZGNJZ01sYnpFUmRNenV3QTRsWFg3YVZ4TjJDVmc0aUlnR0ZTOS1BTmFkTVRoTXA3SW9MQ2NDRzZM?oc=5",
-    "summary": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost Investor's Business Daily"
-   },
-   {
-    "title": "Why Are Carnival (CCL) Shares Soaring Today - tradingview.com",
-    "source": "tradingview.com",
-    "published": "Tue, 29 Sep 2026 16:35:48 GMT",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa0NFdUFNS2JpUW1kamlJcFRZOHZmV2dwUXVpVjBfazR0N3dPTXZjZEtoYTZkU0QwOWRPamg4UzBVdUhfMURyM1FnSlJwUm1WXzRUeDJCeEQyckN3MnhfNjB5d3ZuanpaZnF3QmJGbHNPX042aUN1ZVNWWUlOcXZoNnlGeVEwbDQyZlhxaV8tcWdSUGJDS0RMRWh3b1FQck9MNzc3Sw?oc=5",
-    "summary": "Why Are Carnival (CCL) Shares Soaring Today tradingview.com"
    }
   ],
   "SANG": [
@@ -1829,18 +1829,11 @@
     "summary": "Odisha seeks Bengal partnership as India aims 37Mt aluminium capacity by FY47 AL Circle"
    },
    {
-    "title": "Vigilant farmer helps foil terror scare near RAF Fairford - Farmers Weekly",
-    "source": "Farmers Weekly",
-    "published": "Mon, 28 Sep 2026 10:33:22 GMT",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc3hvYmEwZVh2Q0QxN0hrV0RKWmZKd1BVQkZIWDhIR2VYLTdRRlpMeTFpdnQ1Y25nU1NGdi1XWjBDem5ET3duV3Z1SmRUWGMtaW9jOWRUZkdEUS1ZQUN5TUFVeXVjV2NZV21oOWV5SFptV2VyTFZzdGZTN2RGUXlGS3JIbjUtQjF1UktlUg?oc=5",
-    "summary": "Vigilant farmer helps foil terror scare near RAF Fairford Farmers Weekly"
-   },
-   {
-    "title": "Arm and Carnival Corp among market cap stock movers on Tuesday - Investing.com Nigeria",
-    "source": "Investing.com Nigeria",
-    "published": "Tue, 29 Sep 2026 14:44:09 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMFRVai03RXFhMGZMb0RsVDdVZlpIN21UM0lKckpqbGExT2pDclJOc3JXdmh1YXhGakZDRVhVb2xITDdYMFFtNlk5QTZ1NmFRcjR4S3BoTVhIVURaTzZ0QkFmRGdwQzJDUVoyQ2JFSDFTYzBHWFpqRjc5ekpnbnpETGN4TzFDclJEMEREUmJ4Vlplb1lNbEs4TkhQOU5FUjMweVAtNkdzNzhNUjNDeXZ3WHpvNXFwclZzVkJweTF5bzk?oc=5",
-    "summary": "Arm and Carnival Corp among market cap stock movers on Tuesday Investing.com Nigeria"
+    "title": "Arm and Carnival Corp among market cap stock movers on Tuesday - Investing.com Canada",
+    "source": "Investing.com Canada",
+    "published": "Tue, 29 Sep 2026 14:43:19 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOd2hHWjJzMjdYLXVJd21NeXRRTFVKTTZ6aWtWcDhsMTNYYmVfYlRkYUwwU0JYQlZvaHdOSEl2Ym1CR2VtNERfNkczdWZTQUJCTXpHV3FYY2lPNHNZb0loaFREbFVGenhCMVlhdlBmSEdnZ3gxSWNrbDhEYzJnYmwxVGFyY0NmWkhKOWFVM29fVzRJcDc4STRWWVd6bHI2N3Q3YlpGcFhEVEg0ZHdkRHVwR252dHd6UjhPcmgzblJrQ0I?oc=5",
+    "summary": "Arm and Carnival Corp among market cap stock movers on Tuesday Investing.com Canada"
    },
    {
     "title": "JUPALCO Puts Wide Casting and Thin-Gauge Foil Stock in Focus at Aluminium Bharat 2026 - businessnewsthisweek.com",
@@ -1957,11 +1950,11 @@
     "summary": "As AI Transforms Scientific Landscape, Questions of Liability, Equity, Job Security Emerge Genome Web"
    },
    {
-    "title": "A man who spent decades on Utah's death row is released and awaits a new trial in a 1985 killing - Audacy",
-    "source": "Audacy",
+    "title": "A man who spent decades on Utah's death row is released and awaits a new trial in a 1985 killing - audacy.com",
+    "source": "audacy.com",
     "published": "Mon, 28 Sep 2026 23:11:00 GMT",
     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYVNNYl9kaXJuUnhIM0NacVZXa2Z5NlotQWhlNHRieXczcWNGYUEySWQtT2l6ZFB5ZlRrMTM2N1hnSTRvclNoaGVfOHVtUzd3SC1RY1RQTHVsdXN5dzVFdU5sbUR2aWptWmtPWGlZX1FBWjF4c3pDRTRqYlBlbWhhc2ZtNEVmN2hhbWZZbDFLYXRUSGtlVE5CV3EtVWtQT0ZFRnMwYlBuS2lWdWx3aUVxOTZuaU9FQms?oc=5",
-    "summary": "A man who spent decades on Utah's death row is released and awaits a new trial in a 1985 killing Audacy"
+    "summary": "A man who spent decades on Utah's death row is released and awaits a new trial in a 1985 killing audacy.com"
    },
    {
     "title": "Surbhi Chandna recalls her 'secret getaway sans the husband', shares memories from first-ever girls' holi - The Times of India",
@@ -1998,13 +1991,6 @@
     "summary": "Stocks making the biggest moves midday: Carnival, Fair Isaac, Bloom Energy, Iovance Biotherapeutics & more CNBC"
    },
    {
-    "title": "Nelson Peltz\u2019s $4.2 billion portfolio: Top 5 stock holdings and latest bets - financialexpress.com",
-    "source": "financialexpress.com",
-    "published": "Tue, 29 Sep 2026 14:12:58 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRG1taFJsQi1paVNMOFFKZDNlMXR0V0pHbTVPb2xoZHMxWlJFRmVQS0VEQXRvWWt3MjRkRklFRy1XXzYyWDVEWWE1MkNRMTFHYVh6UDNoTUdReURqNkl1M1hQbzQzbEJfLVBnSklLdkhNLWEtU1p5T3ZSWUxnLUVFODhmRmh1ei1FWEZpb245UmdyZ245U2ZtN0hsOTNQNU5XcFdtQzBwa05DYTB6UW1kVXFiYlp3bVpuOFhMTmVudTl1R2ZJRjhKVGRPN3JOeU9MX1HSAdgBQVVfeXFMTUIwMXFsSzFBazRJVjEwelg5Vm03Z2dLYnQyVGlDd0VLaVpHd2VoZ0NCSm9DU01jT2tzUE4xR1RsNnUzM1h5c1J5aDR5ZDZmc00xaWFNV1JLQ0tWaVJUeFNWRkg1NmpGZHJxUWpGS3J5NWdTMWtOR21CdUptUVVjX0w4MDlqOG95SDYtSllZbEJXNzFPRDViYWtnTkNWWk9CZ3psYXNFeElqU0Q4N2NWRFJWRm10bmsyb1JfNFp3d25ZTHZ1QllSVXZmZlpEc0FpYWFsVlloX0Vf?oc=5",
-    "summary": "Nelson Peltz\u2019s $4.2 billion portfolio: Top 5 stock holdings and latest bets financialexpress.com"
-   },
-   {
     "title": "Stocks making the biggest moves midday: Pharma, Tata group stocks, Indus Tower and more - financialexpress.com",
     "source": "financialexpress.com",
     "published": "Tue, 29 Sep 2026 08:19:29 GMT",
@@ -2017,6 +2003,13 @@
     "published": "Tue, 29 Sep 2026 07:48:52 GMT",
     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQck9ESnd2Z0J6d2pvMlN5T1lEdWFNNUFxOFJDR3ExT01relZ2MkdZYWxZektfQnY1TTBUYkZhbENjS19RVnJkUExoYTBfWVJvc0IyWUVKRGV3UTVsR3NhYXZQNEpWMUJnZ3o1RnVpLXJoTEZxT3RydXFxYzRVZ3Excm5XYVJXNUhXUGtZWEdFWkpJRHdJLVc2aE1ZN19Oa1NJRzI0WGxDZkZ2bExreTdYaWJlQTFrSTc2akVLdjl6cDBPYXotWXhXNnpDV3gzR2VwRldLSUFyRDXSAd4BQVVfeXFMTTlNREVQRHpPS2puNXhreWVwRlNpdlM5bWctbk9rZnVCZWVxWkRfSEZJajVQYU1CSUVQLXdDRFJkVlIzVnFLYy1uenVIdDEyaVpkY1dXbFMyUHR4UFFfMVBCWGV4V1NlZEViME9zUzNEclQ1OFFMSUlQMEVydzlaajlpSE1rXzAwMF84T3ZVNWQ5akNNdEVEV08zQzFQOWlNYjVJMFk2MElkek84ZDlxRTFHZzZfN1RQR0s5bjYtRWhhS1VPeVllQ2tJNVZEajJKRzdreTNQZlROR3Vka2pB?oc=5",
     "summary": "Biggest midday movers: Dr. Reddy\u2019s, Honasa Consumer, PB Fintech, and others ET Now"
+   },
+   {
+    "title": "Nelson Peltz\u2019s $4.2 billion portfolio: Top 5 stock holdings and latest bets - financialexpress.com",
+    "source": "financialexpress.com",
+    "published": "Tue, 29 Sep 2026 14:12:58 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRG1taFJsQi1paVNMOFFKZDNlMXR0V0pHbTVPb2xoZHMxWlJFRmVQS0VEQXRvWWt3MjRkRklFRy1XXzYyWDVEWWE1MkNRMTFHYVh6UDNoTUdReURqNkl1M1hQbzQzbEJfLVBnSklLdkhNLWEtU1p5T3ZSWUxnLUVFODhmRmh1ei1FWEZpb245UmdyZ245U2ZtN0hsOTNQNU5XcFdtQzBwa05DYTB6UW1kVXFiYlp3bVpuOFhMTmVudTl1R2ZJRjhKVGRPN3JOeU9MX1HSAdgBQVVfeXFMTUIwMXFsSzFBazRJVjEwelg5Vm03Z2dLYnQyVGlDd0VLaVpHd2VoZ0NCSm9DU01jT2tzUE4xR1RsNnUzM1h5c1J5aDR5ZDZmc00xaWFNV1JLQ0tWaVJUeFNWRkg1NmpGZHJxUWpGS3J5NWdTMWtOR21CdUptUVVjX0w4MDlqOG95SDYtSllZbEJXNzFPRDViYWtnTkNWWk9CZ3psYXNFeElqU0Q4N2NWRFJWRm10bmsyb1JfNFp3d25ZTHZ1QllSVXZmZlpEc0FpYWFsVlloX0Vf?oc=5",
+    "summary": "Nelson Peltz\u2019s $4.2 billion portfolio: Top 5 stock holdings and latest bets financialexpress.com"
    },
    {
     "title": "GE Vernova vs Hitachi vs Siemens: JPMorgan\u2019s power sector picks as grid capex surges - financialexpress.com",
@@ -2056,18 +2049,18 @@
     "summary": "Nike stock has never been more hated by the market finance.yahoo.com"
    },
    {
-    "title": "What's Wrong With Nike Stock? - theglobeandmail.com",
-    "source": "theglobeandmail.com",
-    "published": "Tue, 29 Sep 2026 12:50:57 GMT",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON2FVVU5YNC0tb0c5X1lQRlpORDFtQUZMcE9IcV9PYkRHN0d2UTV1NTdSNmd6VlR1RWg2RE1BQTM4WkRHaXlCa0ZQVVZ2NWNhUW0wbWpoamNzZmlDbUNXME5Kakp6RHRaNHBLUE9qSlMzdk1vY1RhNGI3Q0lnVVdDVEZrb1B0NVF6eGMza004Y2FNZG9GTDRxWmRtQjRrMWdJYThoclFudXgwcHZMemNSWU5NWnQ?oc=5",
-    "summary": "What's Wrong With Nike Stock? theglobeandmail.com"
-   },
-   {
     "title": "NKE Stock Heads For Another Month In The Red: Jefferies Bets On Nike's Recovery, Sees A Q1 Earnings Beat - fr.tradingview.com",
     "source": "fr.tradingview.com",
     "published": "Tue, 29 Sep 2026 08:19:41 GMT",
     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZ1pjejFrQkR1S0pvNFRkMl9wclEySGFmSmFSdWIzV3FPQThGUUJOVUtfeUhpNmRJQ2RzeWlUOExmQlBzeTNYWnNvRWI5cUpUODJ5cldlSzlydHVyWElFdTRGalVSOFVmM0JIMzdUamxpLVRjcjJmY2wzdndxZEo3MkJaWkM3NTZJOGFWcnNLMkd1T3Q0ZW5yaWxkX1dfTi1obXhGV29TN2hzTjZEdDBrekxrYlA3OXRuU2FjSGZHYUVDMENERnlPSEpqSGxhLUN6VThpYjY2VkdlVkZqd1IxWklsSFNLWkJVZ3JzX1JZdlFBQTFX?oc=5",
     "summary": "NKE Stock Heads For Another Month In The Red: Jefferies Bets On Nike's Recovery, Sees A Q1 Earnings Beat fr.tradingview.com"
+   },
+   {
+    "title": "What's Wrong With Nike Stock? - theglobeandmail.com",
+    "source": "theglobeandmail.com",
+    "published": "Tue, 29 Sep 2026 12:50:57 GMT",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON2FVVU5YNC0tb0c5X1lQRlpORDFtQUZMcE9IcV9PYkRHN0d2UTV1NTdSNmd6VlR1RWg2RE1BQTM4WkRHaXlCa0ZQVVZ2NWNhUW0wbWpoamNzZmlDbUNXME5Kakp6RHRaNHBLUE9qSlMzdk1vY1RhNGI3Q0lnVVdDVEZrb1B0NVF6eGMza004Y2FNZG9GTDRxWmRtQjRrMWdJYThoclFudXgwcHZMemNSWU5NWnQ?oc=5",
+    "summary": "What's Wrong With Nike Stock? theglobeandmail.com"
    },
    {
     "title": "Nike Faces 2 Major Tests This Week. Earnings Isn't the One To Watch - The Motley Fool",
@@ -2112,92 +2105,6 @@
     "summary": "Nike Q1 Results Unlikely to Miss Guidance by Much, RBC Says finance.yahoo.com"
    }
   ],
-  "Iran Strait of Hormuz talks oil": [
-   {
-    "title": "Crude Oil Lower As Saudi Arabia Resumes Red Sea Oil Exports - WSJ",
-    "source": "WSJ",
-    "published": "Tue, 29 Sep 2026 13:34:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRXVfY2J4VE5CQTNyaWlYdlE1MTZaVGxmNEphMHBRanFoOVNKTFlMVmNQTllHMUpaMVFiemVMNW1BdGhGT2ZPUzhVczJTbW92bWlXcWVQMmxpTTZnYVNoRFFOUmpIbjgwc3hlZVRuUlJxODZFbGxqaWhhQjM5SW1TOU55c3R3Qy1ybzVyREdKaXZsWFJHUF9vOVN1XzMzb2lPMXVTWXVJMHNIei1z?oc=5",
-    "summary": "Crude Oil Lower As Saudi Arabia Resumes Red Sea Oil Exports WSJ"
-   },
-   {
-    "title": "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz - France 24",
-    "source": "France 24",
-    "published": "Tue, 29 Sep 2026 06:32:31 GMT",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWXNNNkpQeU9xQW9OTGVaSVFFckNmWkVNb0NoRTc5RHZpSllEaHFYS3RYODlfdFV3VVQxTGpMZGo2b0hQbWdGVGMtS0Rfd2hGUjg1OXJqczVCaWFPSmZTX0xuSnc5UlpNYXpLR283NFJwX3RXcWoyMVBnTC01Um1udDd1MkFaQ0NUSExsNlFid0RiSnJKenQ2Rm5BZWN0amhjZUtRV1pLeGVYblR4cmM4dmktYmgtdw?oc=5",
-    "summary": "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz France 24"
-   },
-   {
-    "title": "Iran war: Oil remains well supported as Trump rejects Iran\u2019s proposal - engine.online",
-    "source": "engine.online",
-    "published": "Tue, 29 Sep 2026 09:35:16 GMT",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQS3h1bFVZTUNwWjdPdDNSeEN0anpWMHZqNFplSmhjcnZtcV8yRHROM3hCY2NiRzhpaHlqT1BaYnphVUhVWTRWejFid1F2d3FjcUJ6VTBIYmdMWVFRakx3TTYzQzdTQlFUa3FwbE1TNm54b0ZoUzlIUzdoX2IwQkNYd2hKZU52NDczT2k5el9iT3puSWhuU2k3TTZDX3FKODB1R1dHQ1B3?oc=5",
-    "summary": "Iran war: Oil remains well supported as Trump rejects Iran\u2019s proposal engine.online"
-   },
-   {
-    "title": "Oil Rises Above $107 as US-Iran Talks Stall; Bond Yields Hit Multi-Year Highs - News and Statistics - IndexBox",
-    "source": "IndexBox",
-    "published": "Tue, 29 Sep 2026 13:33:41 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc2RtTkE4SjVYMnd2UXNsMi1RMXFvZHBjb012aDY1RlVoTFIyZzBUTEJqUERTeVJEUlE3LXV3R0pmQlhqMVVRdGlEQnFjcGUxTThiTGswSG9GblE5R3pYS3h1NlRiZzZOa2JmdEJoUm5iU0doR2tqM1h3ckRKLW5mYnZhaHlib3dUa2tnVEZJalFzYS16SkVrWkpXTUo0bzZZR3BB?oc=5",
-    "summary": "Oil Rises Above $107 as US-Iran Talks Stall; Bond Yields Hit Multi-Year Highs - News and Statistics IndexBox"
-   },
-   {
-    "title": "Iran\u2019s Araghchi meets Qatari mediators as US calls for nuclear talks - Al Jazeera",
-    "source": "Al Jazeera",
-    "published": "Tue, 29 Sep 2026 02:39:46 GMT",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcE44alQta2RFLXNvU0JiaFZSbUxkcExUYzBMeEhRX0dWeUZMNVNUYUdybHhQOXpnZnRLT1BhV1RIVVIyTHBhUjdpNC0xN3huVl9fcVpxSExGZ213MGJobkl6b2Jvc0lRRWVUekNSWUVrQmM4eVZxQ1k2R3N3MDlqeWVSdFlxVE5NRVpzbmQ1LTFOanp6YU5SSHpzeWhuNkNoMVAzUk1hd0NvQVJmN3fSAbMBQVVfeXFMUGpqdDdjQnVuTmxIUWZxQWRlLUF3NTR1c2JjYlVWaUFJT0ZPMVF4MV9yN2x2RlZIWUs5Y0dyLTRfWG9TdTBqZjBibjl0ajB2Q0thcV9ZZnljMWVvcFRVTGh1aV9qX3MweE1ZNzdGWUJkbGhQeHZlUmdQWjB3eVJpdVp6Wks2OWh6cUZFeE9lWTVIb0RCRk5rOWJsQlphYzE3VlYzWGp1N2ZVdHVQYUJkUjlwNmM?oc=5",
-    "summary": "Iran\u2019s Araghchi meets Qatari mediators as US calls for nuclear talks Al Jazeera"
-   },
-   {
-    "title": "Iran Warns Region Over Oil Exports as Trump Talks With Tehran Continue - Haaretz",
-    "source": "Haaretz",
-    "published": "Tue, 29 Sep 2026 12:01:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxONUlROFJTZ1haRUY3eEk4Q080dHpYaURWZGNfMnNrOWJySWprVzA1V0NkeXlXVEQ2YU1JNnRfOHR1VmFqdThLV1VGcWVLUzRFWlB4MW9DWjR0SDhwZjZ3THVYOHhYWUFEZDN0M1BsWDZtbTVvN3laNVdRN3N3UThjVmhQX29JOExMT1BEelZxZUFaQ19oMjZrT1M5QllYdnVnQ0FwT0lOc2F2YjVCWnJjS2RXTGZVM0JXcm1PenAtZWVFbFVRZUNVSjJmSWlRMVRVNFdQNUp5NEZSSHQ1V3lGc2haQ3NHc3JWN0lvQ0I2TER2cU52OXJ3OFM2Z0FHVmk5Qmg4WHh3?oc=5",
-    "summary": "Iran Warns Region Over Oil Exports as Trump Talks With Tehran Continue Haaretz"
-   },
-   {
-    "title": "Oil futures: Crude lower in choppy trade, uncertainty over US-Iran talks - Quantum Commodity Intelligence",
-    "source": "Quantum Commodity Intelligence",
-    "published": "Tue, 29 Sep 2026 18:52:58 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzNJcjI0ckVqR0J2TXVaZEM3by1jY2pnWDR6cTc0elA2QTh2Q0tIQ3JPYmdlZDZZWWJZNzJjS3pNczRiN0ZBTTJrWEpWNFZjT3Brb0hNOExOR2o1MWk4bDg0Vzd0NTlRUFBEemZlc0JiX3FiV204aFB6TzY5SEh3ZjhRZDVGbUliNVFaZjhuRWtJWWJSMjZTYUJrS0ozOHl3b0FrVjRianhxNS15NnNCNzFnZw?oc=5",
-    "summary": "Oil futures: Crude lower in choppy trade, uncertainty over US-Iran talks Quantum Commodity Intelligence"
-   },
-   {
-    "title": "\u2018If we can\u2019t sell oil, no one else will\u2019: Iran threatens regional infrastructure as Hormuz talks stall - Malay Mail",
-    "source": "Malay Mail",
-    "published": "Tue, 29 Sep 2026 12:00:44 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNY1RBQmgtNW5wX3ROY0N0TlJJdkQ4cHVNMXpzLXpSNVlkN1lreFhQblNYQ3p3RUI5cV9kbFVCc25PMDV6TG5OZ05SX1Jtd1V6TEtxUW5EbjN3UjJuZVdjSkdVM0VLbGNBcXFxZkw0TXY3VTFTTHJYalI2NzVaZF92TUttWnZjNGc0Vk9jZURnejRnMTFjenBHaTBrZUlJMHZ6eWFiX2tNQ2tZV2hPaU14SEs4MFNYeE0xUGF1YnF6eUdsSG9UX3k3M08wZjZyNlhDbFRycDVkVG1lekI2WnhVR2RuR1dJWFnSAewBQVVfeXFMT3BkdFFLbkdON2dqbzdBa29IQ1RNZnFYZVlaZWtVY2w4THBnaXQtZ1FfMHd1WGhROEhmcUkwZlZldGdLVkpfLVFvZlpRN01GWTdLRHdDUjdYUV83dWpMVFlVcUhEVlV1LTlNVE4tczVUbWxtYTJkdjlPV0VhZzZFMzBQdW1KLTZkOGdKNlJGZkpObGVpbE5qcFF5a1Nsb0xIUTNYM09kTzE5eVVYbVQ1UXByLVRiN2lqcWVaRERTUDh3Tm5nUzdVMDBqTS1TWjNCOWlZM2czOTlfSU9Pb3h6Ykc1Mmg3aENMemozamk?oc=5",
-    "summary": "\u2018If we can\u2019t sell oil, no one else will\u2019: Iran threatens regional infrastructure as Hormuz talks stall Malay Mail"
-   },
-   {
-    "title": "Stocks move sideways despite oil moving lower - sg.finance.yahoo.com",
-    "source": "sg.finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 13:48:31 GMT",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMElZbnpOY09xNTRMNmZZOWhIajB5YlZ2ZzRXczAteWdwTW9UbG95UnA3blEzel91SUd3d09LcGZRWlg1aTcxcDhJMHpoVmtpeTN4RFozMHpxN29MbDVqSXZUMDd0VE90cWFQN3RPRFp5MzBxQTIyWjV3Si1SN2l3X0wtYw?oc=5",
-    "summary": "Stocks move sideways despite oil moving lower sg.finance.yahoo.com"
-   },
-   {
-    "title": "Oil Prices Fall as Gulf Crude Exports Recover - WSJ",
-    "source": "WSJ",
-    "published": "Tue, 29 Sep 2026 18:59:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ1UwdjZ0Qk53aGpUZnhLRG93OE5SRm9idmd2VDJuMmJhRS1KaC1WTGMxWUQ0bVk5OW5RNXZ5V29sZmJIcEg5UWs2ZjA4RTNacjIwalpnaVhhVE54Zl9HVXNkajROUWVQTFZwR1E0VGZSU0xwVGRzTlRBdzBxZEI3aHZueUxEQXJpNUY1UFlaRG53RXhZTkd2ZV93NWxDdzVI?oc=5",
-    "summary": "Oil Prices Fall as Gulf Crude Exports Recover WSJ"
-   },
-   {
-    "title": "\u062f\u0644\u0627\u0631 \u0645\u06cc\u0644\u06cc \u06af\u0644\u062f \u0633\u06cc\u062f \u0645\u062c\u062a\u0628\u06cc \u062e\u0627\u0645\u0646\u0647\u0627\u06cc Iran's Hormuz oil leverage crumbles as US blockade bites - www.israelhayom.com",
-    "source": "www.israelhayom.com",
-    "published": "Tue, 29 Sep 2026 05:42:37 GMT",
-    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yalowVzFKWmtEQkE0TGtmRFFfc3pZWkJVcGhFYXVDUE9Ic21za3F1WmpZM0EteGZwcGY4MEFrcnBiamhheEdMRkNJWXZyaG8yRzU2R0xtbi1IYkc3OGRsS1BRV28zeUE5MjhnVE9obE9MNW44aG9CY0tCblZkZw?oc=5",
-    "summary": "\u062f\u0644\u0627\u0631 \u0645\u06cc\u0644\u06cc \u06af\u0644\u062f \u0633\u06cc\u062f \u0645\u062c\u062a\u0628\u06cc \u062e\u0627\u0645\u0646\u0647\u0627\u06cc Iran's Hormuz oil leverage crumbles as US blockade bites www.israelhayom.com"
-   },
-   {
-    "title": "US, Iran separately talk with mediators in latest bid to end war - Al Arabiya English",
-    "source": "Al Arabiya English",
-    "published": "Tue, 29 Sep 2026 06:04:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS0FfZVBobE5SWlF4eDB6V2VzTDNQLTZ1N2JLcUtrR0N3Z2JlSXN1VUh5Qk53Q1hici12WWIwNVZCU1p6aDJXWWI0eGxzOUVVZFBlQnFmaURFd3VWS2hGWnk5TlNHclExRmJVV1lMUjZTYkZET3BNVW93V09zZ2xEVzJGcXJ0X2ViV1NFN1NNbnBRWDNqNnZYcnM5UHRmWUI5YnV4VEV0X0lsN1JzbWt2cERCMlpZeGlhRU9kYXotUi0tc0HSAcMBQVVfeXFMTktBX2VQaGxOUlpReHgweldlc0wzUC02dTdiS3FLa0dDd2diZUlzdVVIeUJOd0NYYnItdlliMDVWQlNaemgyV1liNHhsczlFVWRQZUJxZmlERXd1VktoRlp5OU5TR3JRMUZiVVdZTFI2U2JGRE9wTVVvd1dPc2dsRFcyRnFydF9lYldTRTdTTW5wUVgzajZ2WHJzOVB0ZllCOWJ1eFRFdF9JbDdSc21rdnBEQjJaWXhpYUVPZGF6LVItLXNB?oc=5",
-    "summary": "US, Iran separately talk with mediators in latest bid to end war Al Arabiya English"
-   }
-  ],
   "Micron earnings": [
    {
     "title": "What History Says Will Happen If Micron\u2019s Earnings Stars Align - Barron's",
@@ -2228,11 +2135,11 @@
     "summary": "Could Micron Stock Help You Become a Millionaire? The Motley Fool"
    },
    {
-    "title": "Why I Wouldn't Own Micron Into The Print - Earnings Preview (NASDAQ:MU) - Seeking Alpha",
+    "title": "Micron Q4 earnings on deck: What to expect (MU:NASDAQ) - Seeking Alpha",
     "source": "Seeking Alpha",
-    "published": "Tue, 29 Sep 2026 13:30:58 GMT",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQX0h2Z3lWS3dGVHN5NUl2MjZvZTZvenE3RkJxeXA3LUJoeHUxWFpBQU10OGRWVFp2Mmoyam56aldvNWpFNHZJempwY0J1ckhGeXVxRWtqX1VxQUZMcEpNbmExN1pvLTNMVW44MV9tVFRmN3BIcXBrejZDWnFJSkM5enJVZUhIbERzVzFmejFuUnRvOHh2b2xHRQ?oc=5",
-    "summary": "Why I Wouldn't Own Micron Into The Print - Earnings Preview (NASDAQ:MU) Seeking Alpha"
+    "published": "Tue, 29 Sep 2026 15:06:36 GMT",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcU82VkIyQVJNZ2ZXbHVfd3hraExUYm0ta29ORkJQRTRfM2o0V09pWExKQXBPNjRYbkhUNF9jeTh0dFNaMzc4UkNwNklsWkZyMDdVcFAzOWl1b0FxbWpBMERQZ0xXbjZhZUJ1TERTLXBPeEIteGpWUHUzcjBXTmxDRUhXcE81Zw?oc=5",
+    "summary": "Micron Q4 earnings on deck: What to expect (MU:NASDAQ) Seeking Alpha"
    },
    {
     "title": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) - Benzinga",
@@ -2263,11 +2170,11 @@
     "summary": "EARNINGS PRIMER: Micron (MU) earnings due 30th September at 21:00BST/16:00EDT Newsquawk"
    },
    {
-    "title": "Micron Q4 earnings on deck: What to expect (MU:NASDAQ) - Seeking Alpha",
+    "title": "Why I Wouldn't Own Micron Into The Print - Earnings Preview (NASDAQ:MU) - Seeking Alpha",
     "source": "Seeking Alpha",
-    "published": "Tue, 29 Sep 2026 15:06:36 GMT",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcU82VkIyQVJNZ2ZXbHVfd3hraExUYm0ta29ORkJQRTRfM2o0V09pWExKQXBPNjRYbkhUNF9jeTh0dFNaMzc4UkNwNklsWkZyMDdVcFAzOWl1b0FxbWpBMERQZ0xXbjZhZUJ1TERTLXBPeEIteGpWUHUzcjBXTmxDRUhXcE81Zw?oc=5",
-    "summary": "Micron Q4 earnings on deck: What to expect (MU:NASDAQ) Seeking Alpha"
+    "published": "Tue, 29 Sep 2026 13:30:58 GMT",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQX0h2Z3lWS3dGVHN5NUl2MjZvZTZvenE3RkJxeXA3LUJoeHUxWFpBQU10OGRWVFp2Mmoyam56aldvNWpFNHZJempwY0J1ckhGeXVxRWtqX1VxQUZMcEpNbmExN1pvLTNMVW44MV9tVFRmN3BIcXBrejZDWnFJSkM5enJVZUhIbERzVzFmejFuUnRvOHh2b2xHRQ?oc=5",
+    "summary": "Why I Wouldn't Own Micron Into The Print - Earnings Preview (NASDAQ:MU) Seeking Alpha"
    },
    {
     "title": "Micron may be sitting on a 'substantial' surprise - finance.yahoo.com",
@@ -2284,13 +2191,185 @@
     "summary": "Micron options chain skews bullish in run-up to Q4 earnings (MU:NASDAQ) Seeking Alpha"
    }
   ],
+  "Iran Strait of Hormuz talks oil": [
+   {
+    "title": "Crude Oil Lower As Saudi Arabia Resumes Red Sea Oil Exports - WSJ",
+    "source": "WSJ",
+    "published": "Tue, 29 Sep 2026 13:34:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRXVfY2J4VE5CQTNyaWlYdlE1MTZaVGxmNEphMHBRanFoOVNKTFlMVmNQTllHMUpaMVFiemVMNW1BdGhGT2ZPUzhVczJTbW92bWlXcWVQMmxpTTZnYVNoRFFOUmpIbjgwc3hlZVRuUlJxODZFbGxqaWhhQjM5SW1TOU55c3R3Qy1ybzVyREdKaXZsWFJHUF9vOVN1XzMzb2lPMXVTWXVJMHNIei1z?oc=5",
+    "summary": "Crude Oil Lower As Saudi Arabia Resumes Red Sea Oil Exports WSJ"
+   },
+   {
+    "title": "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz - France 24",
+    "source": "France 24",
+    "published": "Tue, 29 Sep 2026 06:32:31 GMT",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWXNNNkpQeU9xQW9OTGVaSVFFckNmWkVNb0NoRTc5RHZpSllEaHFYS3RYODlfdFV3VVQxTGpMZGo2b0hQbWdGVGMtS0Rfd2hGUjg1OXJqczVCaWFPSmZTX0xuSnc5UlpNYXpLR283NFJwX3RXcWoyMVBnTC01Um1udDd1MkFaQ0NUSExsNlFid0RiSnJKenQ2Rm5BZWN0amhjZUtRV1pLeGVYblR4cmM4dmktYmgtdw?oc=5",
+    "summary": "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz France 24"
+   },
+   {
+    "title": "Iran war: Oil remains well supported as Trump rejects Iran\u2019s proposal - engine.online",
+    "source": "engine.online",
+    "published": "Tue, 29 Sep 2026 09:35:16 GMT",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQS3h1bFVZTUNwWjdPdDNSeEN0anpWMHZqNFplSmhjcnZtcV8yRHROM3hCY2NiRzhpaHlqT1BaYnphVUhVWTRWejFid1F2d3FjcUJ6VTBIYmdMWVFRakx3TTYzQzdTQlFUa3FwbE1TNm54b0ZoUzlIUzdoX2IwQkNYd2hKZU52NDczT2k5el9iT3puSWhuU2k3TTZDX3FKODB1R1dHQ1B3?oc=5",
+    "summary": "Iran war: Oil remains well supported as Trump rejects Iran\u2019s proposal engine.online"
+   },
+   {
+    "title": "Iran\u2019s Araghchi meets Qatari mediators as US calls for nuclear talks - Al Jazeera",
+    "source": "Al Jazeera",
+    "published": "Tue, 29 Sep 2026 02:39:46 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcE44alQta2RFLXNvU0JiaFZSbUxkcExUYzBMeEhRX0dWeUZMNVNUYUdybHhQOXpnZnRLT1BhV1RIVVIyTHBhUjdpNC0xN3huVl9fcVpxSExGZ213MGJobkl6b2Jvc0lRRWVUekNSWUVrQmM4eVZxQ1k2R3N3MDlqeWVSdFlxVE5NRVpzbmQ1LTFOanp6YU5SSHpzeWhuNkNoMVAzUk1hd0NvQVJmN3fSAbMBQVVfeXFMUGpqdDdjQnVuTmxIUWZxQWRlLUF3NTR1c2JjYlVWaUFJT0ZPMVF4MV9yN2x2RlZIWUs5Y0dyLTRfWG9TdTBqZjBibjl0ajB2Q0thcV9ZZnljMWVvcFRVTGh1aV9qX3MweE1ZNzdGWUJkbGhQeHZlUmdQWjB3eVJpdVp6Wks2OWh6cUZFeE9lWTVIb0RCRk5rOWJsQlphYzE3VlYzWGp1N2ZVdHVQYUJkUjlwNmM?oc=5",
+    "summary": "Iran\u2019s Araghchi meets Qatari mediators as US calls for nuclear talks Al Jazeera"
+   },
+   {
+    "title": "Oil Rises Above $107 as US-Iran Talks Stall; Bond Yields Hit Multi-Year Highs - News and Statistics - IndexBox",
+    "source": "IndexBox",
+    "published": "Tue, 29 Sep 2026 13:33:41 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc2RtTkE4SjVYMnd2UXNsMi1RMXFvZHBjb012aDY1RlVoTFIyZzBUTEJqUERTeVJEUlE3LXV3R0pmQlhqMVVRdGlEQnFjcGUxTThiTGswSG9GblE5R3pYS3h1NlRiZzZOa2JmdEJoUm5iU0doR2tqM1h3ckRKLW5mYnZhaHlib3dUa2tnVEZJalFzYS16SkVrWkpXTUo0bzZZR3BB?oc=5",
+    "summary": "Oil Rises Above $107 as US-Iran Talks Stall; Bond Yields Hit Multi-Year Highs - News and Statistics IndexBox"
+   },
+   {
+    "title": "Iran Warns Region Over Oil Exports as Trump Talks With Tehran Continue - Haaretz",
+    "source": "Haaretz",
+    "published": "Tue, 29 Sep 2026 12:01:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxONUlROFJTZ1haRUY3eEk4Q080dHpYaURWZGNfMnNrOWJySWprVzA1V0NkeXlXVEQ2YU1JNnRfOHR1VmFqdThLV1VGcWVLUzRFWlB4MW9DWjR0SDhwZjZ3THVYOHhYWUFEZDN0M1BsWDZtbTVvN3laNVdRN3N3UThjVmhQX29JOExMT1BEelZxZUFaQ19oMjZrT1M5QllYdnVnQ0FwT0lOc2F2YjVCWnJjS2RXTGZVM0JXcm1PenAtZWVFbFVRZUNVSjJmSWlRMVRVNFdQNUp5NEZSSHQ1V3lGc2haQ3NHc3JWN0lvQ0I2TER2cU52OXJ3OFM2Z0FHVmk5Qmg4WHh3?oc=5",
+    "summary": "Iran Warns Region Over Oil Exports as Trump Talks With Tehran Continue Haaretz"
+   },
+   {
+    "title": "Oil futures: Crude lower in choppy trade, uncertainty over US-Iran talks - Quantum Commodity Intelligence",
+    "source": "Quantum Commodity Intelligence",
+    "published": "Tue, 29 Sep 2026 17:25:43 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzNJcjI0ckVqR0J2TXVaZEM3by1jY2pnWDR6cTc0elA2QTh2Q0tIQ3JPYmdlZDZZWWJZNzJjS3pNczRiN0ZBTTJrWEpWNFZjT3Brb0hNOExOR2o1MWk4bDg0Vzd0NTlRUFBEemZlc0JiX3FiV204aFB6TzY5SEh3ZjhRZDVGbUliNVFaZjhuRWtJWWJSMjZTYUJrS0ozOHl3b0FrVjRianhxNS15NnNCNzFnZw?oc=5",
+    "summary": "Oil futures: Crude lower in choppy trade, uncertainty over US-Iran talks Quantum Commodity Intelligence"
+   },
+   {
+    "title": "Stocks move lower despite oil prices dropping - sg.finance.yahoo.com",
+    "source": "sg.finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 15:48:50 GMT",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMElZbnpOY09xNTRMNmZZOWhIajB5YlZ2ZzRXczAteWdwTW9UbG95UnA3blEzel91SUd3d09LcGZRWlg1aTcxcDhJMHpoVmtpeTN4RFozMHpxN29MbDVqSXZUMDd0VE90cWFQN3RPRFp5MzBxQTIyWjV3Si1SN2l3X0wtYw?oc=5",
+    "summary": "Stocks move lower despite oil prices dropping sg.finance.yahoo.com"
+   },
+   {
+    "title": "\u2018If we can\u2019t sell oil, no one else will\u2019: Iran threatens regional infrastructure as Hormuz talks stall - Malay Mail",
+    "source": "Malay Mail",
+    "published": "Tue, 29 Sep 2026 12:00:44 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNY1RBQmgtNW5wX3ROY0N0TlJJdkQ4cHVNMXpzLXpSNVlkN1lreFhQblNYQ3p3RUI5cV9kbFVCc25PMDV6TG5OZ05SX1Jtd1V6TEtxUW5EbjN3UjJuZVdjSkdVM0VLbGNBcXFxZkw0TXY3VTFTTHJYalI2NzVaZF92TUttWnZjNGc0Vk9jZURnejRnMTFjenBHaTBrZUlJMHZ6eWFiX2tNQ2tZV2hPaU14SEs4MFNYeE0xUGF1YnF6eUdsSG9UX3k3M08wZjZyNlhDbFRycDVkVG1lekI2WnhVR2RuR1dJWFnSAewBQVVfeXFMT3BkdFFLbkdON2dqbzdBa29IQ1RNZnFYZVlaZWtVY2w4THBnaXQtZ1FfMHd1WGhROEhmcUkwZlZldGdLVkpfLVFvZlpRN01GWTdLRHdDUjdYUV83dWpMVFlVcUhEVlV1LTlNVE4tczVUbWxtYTJkdjlPV0VhZzZFMzBQdW1KLTZkOGdKNlJGZkpObGVpbE5qcFF5a1Nsb0xIUTNYM09kTzE5eVVYbVQ1UXByLVRiN2lqcWVaRERTUDh3Tm5nUzdVMDBqTS1TWjNCOWlZM2czOTlfSU9Pb3h6Ykc1Mmg3aENMemozamk?oc=5",
+    "summary": "\u2018If we can\u2019t sell oil, no one else will\u2019: Iran threatens regional infrastructure as Hormuz talks stall Malay Mail"
+   },
+   {
+    "title": "Oil Prices Fall as Gulf Crude Exports Recover - WSJ",
+    "source": "WSJ",
+    "published": "Tue, 29 Sep 2026 18:59:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ1UwdjZ0Qk53aGpUZnhLRG93OE5SRm9idmd2VDJuMmJhRS1KaC1WTGMxWUQ0bVk5OW5RNXZ5V29sZmJIcEg5UWs2ZjA4RTNacjIwalpnaVhhVE54Zl9HVXNkajROUWVQTFZwR1E0VGZSU0xwVGRzTlRBdzBxZEI3aHZueUxEQXJpNUY1UFlaRG53RXhZTkd2ZV93NWxDdzVI?oc=5",
+    "summary": "Oil Prices Fall as Gulf Crude Exports Recover WSJ"
+   },
+   {
+    "title": "\u062f\u0644\u0627\u0631 \u0645\u06cc\u0644\u06cc \u06af\u0644\u062f \u0633\u06cc\u062f \u0645\u062c\u062a\u0628\u06cc \u062e\u0627\u0645\u0646\u0647\u0627\u06cc Iran's Hormuz oil leverage crumbles as US blockade bites - www.israelhayom.com",
+    "source": "www.israelhayom.com",
+    "published": "Tue, 29 Sep 2026 05:42:37 GMT",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yalowVzFKWmtEQkE0TGtmRFFfc3pZWkJVcGhFYXVDUE9Ic21za3F1WmpZM0EteGZwcGY4MEFrcnBiamhheEdMRkNJWXZyaG8yRzU2R0xtbi1IYkc3OGRsS1BRV28zeUE5MjhnVE9obE9MNW44aG9CY0tCblZkZw?oc=5",
+    "summary": "\u062f\u0644\u0627\u0631 \u0645\u06cc\u0644\u06cc \u06af\u0644\u062f \u0633\u06cc\u062f \u0645\u062c\u062a\u0628\u06cc \u062e\u0627\u0645\u0646\u0647\u0627\u06cc Iran's Hormuz oil leverage crumbles as US blockade bites www.israelhayom.com"
+   },
+   {
+    "title": "US, Iran separately talk with mediators in latest bid to end war - Al Arabiya English",
+    "source": "Al Arabiya English",
+    "published": "Tue, 29 Sep 2026 06:04:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS0FfZVBobE5SWlF4eDB6V2VzTDNQLTZ1N2JLcUtrR0N3Z2JlSXN1VUh5Qk53Q1hici12WWIwNVZCU1p6aDJXWWI0eGxzOUVVZFBlQnFmaURFd3VWS2hGWnk5TlNHclExRmJVV1lMUjZTYkZET3BNVW93V09zZ2xEVzJGcXJ0X2ViV1NFN1NNbnBRWDNqNnZYcnM5UHRmWUI5YnV4VEV0X0lsN1JzbWt2cERCMlpZeGlhRU9kYXotUi0tc0HSAcMBQVVfeXFMTktBX2VQaGxOUlpReHgweldlc0wzUC02dTdiS3FLa0dDd2diZUlzdVVIeUJOd0NYYnItdlliMDVWQlNaemgyV1liNHhsczlFVWRQZUJxZmlERXd1VktoRlp5OU5TR3JRMUZiVVdZTFI2U2JGRE9wTVVvd1dPc2dsRFcyRnFydF9lYldTRTdTTW5wUVgzajZ2WHJzOVB0ZllCOWJ1eFRFdF9JbDdSc21rdnBEQjJaWXhpYUVPZGF6LVItLXNB?oc=5",
+    "summary": "US, Iran separately talk with mediators in latest bid to end war Al Arabiya English"
+   }
+  ],
+  "stock market today": [
+   {
+    "title": "Stock Market Today: Stock Market News And Analysis - Investor's Business Daily",
+    "source": "Investor's Business Daily",
+    "published": "Tue, 29 Sep 2026 16:04:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zdGl1MmxTM2JJa2pLNlFSWVhuZUd1ekRIeVpDcGVqckVJcloxaWlnRHJ3b0hqb291NXk4dlo0SmRQNlhDaGpubDh6ZWNTUHZiYVhjOVJINUxSYXE0NHRiNVE2OW51R2h4N1daaXRIdzVBR1UxT0g4?oc=5",
+    "summary": "Stock Market Today: Stock Market News And Analysis Investor's Business Daily"
+   },
+   {
+    "title": "Stocks Grind Lower Under Interest Rate Pressure: Stock Market Today - Kiplinger",
+    "source": "Kiplinger",
+    "published": "Tue, 29 Sep 2026 20:09:09 GMT",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRnBGNG1pa3o5WGkxOW50Qll5WDVlS3phQ0FaZDl4bXZzbm1jM0JKMDV1Vm5NME9mUHVGaDA2VFJJSkN1R2pTaEFocS1GNnJ0ZzRGUTRTdmRTUHhCWFhtM0taclBuX2N4b0F5eWJRX3A0YmIwNHk0TlZ2Q25oUVpHQWF3cXJhWTR6Ymg0d3l1ekx4b3FwUTRMMUlJa245LXVBNTk5QnhfLU9CcTg5b0E?oc=5",
+    "summary": "Stocks Grind Lower Under Interest Rate Pressure: Stock Market Today Kiplinger"
+   },
+   {
+    "title": "Stock Market Today, Sept. 29: Carnival Surges 13% on Record Bookings, Raised Guidance - The Motley Fool",
+    "source": "The Motley Fool",
+    "published": "Tue, 29 Sep 2026 20:51:33 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLThyaTVvUmFCc0VKZEluVjF1WkxxTjJGX0JJcVFnVmhnSjh0RjBIX01COGJDV2VlUXBFSVo5RG1EZmdSUmhmRVZUZHNOU1JPN3NhSW1PRjZvZmhEdFNGU1J0cWhsNm1ldWloY3BmUXg1a1VwUGxrbnJiMTAzdnkzekNnaTV4MjZZczEwQURmSjhYWlY1SUk4VjFwUy1qZUJnRUxsbVJDcGRzZGZ6NDFfMzNONjFFOWFnenE3TnZzN0JBOFlQTEliajM1WEJxQkdPZjlNdXYyQ00?oc=5",
+    "summary": "Stock Market Today, Sept. 29: Carnival Surges 13% on Record Bookings, Raised Guidance The Motley Fool"
+   },
+   {
+    "title": "Stock Market News for Sep 29, 2026 - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 08:30:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUVVkVXFLdDNkWWZPeThtWWtLWXdYTkMyaXpPdkRkT3BFRnFGNjZXUmE4TjkwRjItTUJYbWpVR0FCTmhvSXpjS2d0TkFTVHpvUTJ5TGxLUFBTSEdSbU81RFFrRmR6NzZGSWVROUVHb0RRZ2xBd1BkbzdOQ3pFWU5ma1duY3BJSEdUNXdSUGdrUFVvcXc?oc=5",
+    "summary": "Stock Market News for Sep 29, 2026 finance.yahoo.com"
+   },
+   {
+    "title": "Trump meets with AI execs, Treasury yields pressure stocks, Alaska's luxury push and more in Morning Squawk - CNBC",
+    "source": "CNBC",
+    "published": "Tue, 29 Sep 2026 12:28:45 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTU9XV1VlNDl6X2N5N1FCWVY4VG5Rby1ZbzRZRlhwRmh0czRNY0VJUy1VMUVZQWZWLXhqZjB4cjN1NlhFYUlyb2lFSDQ4ZXIzYldaQWxRSzUxQVVmUnpVTHlac1N5SWV3dzdxUl9EVUxvY3RwWmRtSmdwc1lnaERJTF8xOGZ3ang3UGQ00gGQAUFVX3lxTE9obU4yTmFoMC1pRndHWkR4djlPYUdOZS1KVkxJZnJONFB5ZnVaRG1qX1ZfS2tpOUtvclFUbjB6eXlleW51N1dBSEZVcFJIdUQtUlczeEVTMWpCUjZuZTMzeDdKUmJ1bjVjYlBRVFdibHlvenNPMWRXTEJKRlBJNGlmY1Z2YTJNWDNDY0Y0MzBsVw?oc=5",
+    "summary": "Trump meets with AI execs, Treasury yields pressure stocks, Alaska's luxury push and more in Morning Squawk CNBC"
+   },
+   {
+    "title": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+    "source": "Yahoo! Finance Canada",
+    "published": "Tue, 29 Sep 2026 17:13:01 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NdF9xWW1RaDk2MmNFdk5acnJHSVhGM0dqcF90M081cUplRkpyVjZmakJsdS11TFhOcnVVRnM0T1RXcEo5ZzBITzA1N1BsaWVacVE?oc=5",
+    "summary": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History Yahoo! Finance Canada"
+   },
+   {
+    "title": "Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Sell Off - Investor's Business Daily",
+    "source": "Investor's Business Daily",
+    "published": "Tue, 29 Sep 2026 02:51:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWWk2YThmRWdIMTQ0SWMxNEVnQ2haSFBKXzZqT0JmbG9rQ05DN2FoeU12RXJfb0Zjdm1jN3R2dWw2MGVlWFA3dUF3bGoyOGF6Vm55VWdsNWF5czlLVnlxZV9CUzZfLVNfakdnRnEwM25OaE9wTXFxanFHNXJOb3ZLdUdrdkdTTjJfdkVPT1h5UlR6dGpHSFFqc0N5UlVKNG9KNWsxMGhnZVJiVHJxZDI4YUt4MllQdktvX1JNM05ESUZ5cWM?oc=5",
+    "summary": "Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Sell Off Investor's Business Daily"
+   },
+   {
+    "title": "US Stock Market Today: S&P 500 Futures Slip On Renewed Inflation And Rate Jitters - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 08:10:26 GMT",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONlB5NGtBbFZWYjZpb2ZjMkJqM2tuVnIwOS1TT2RiM1Jta0FiQzcxN0VXbFhCTDVZaWg4TDJjR0ZSUTRXQ1d3aW5NR3AwZ01YczE0NTk2dEJ6d24teTJtMl80bmVpanhoYzVGX1RxYk5iQjl0MVZRR1JUcnBSVGpqUUsydnA0QUdfc2hNUjVscUxmdw?oc=5",
+    "summary": "US Stock Market Today: S&P 500 Futures Slip On Renewed Inflation And Rate Jitters finance.yahoo.com"
+   },
+   {
+    "title": "Stock Market Today: Major Indexes Decline as Treasury Yields Rise Further; Oil Prices Slip - finance.yahoo.com",
+    "source": "finance.yahoo.com",
+    "published": "Tue, 29 Sep 2026 10:50:17 GMT",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdDhiOW9YNmtlTkdqUUpfanpEMGxEbzhfdWNJUlg4OUNMSWVLX3M1VUpLTW1FcnBQeE5OdGg4ZkwzZDRkRTk4Q0VYMDk4MzhJbXVxU3g0aFFqQ3h6V3BDMU1XWmRIUGJwdW1taVNfSUxfa3o2a0h1RDhnTHF0WHFzSW13aVQ1Y2k0bmROLWRrZ1B0dEszVmxpNGN3TGw1Zw?oc=5",
+    "summary": "Stock Market Today: Major Indexes Decline as Treasury Yields Rise Further; Oil Prices Slip finance.yahoo.com"
+   },
+   {
+    "title": "Stock Market Midday, Sept. 29: Stocks Edge Lower Despite $2 Trillion Anthropic Valuation - The Motley Fool",
+    "source": "The Motley Fool",
+    "published": "Tue, 29 Sep 2026 17:26:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWkVIcWEyTG1wc1M5QzI2V3ZSaVItaWd0US1odkhWUE04Qy1HZ3VvaUlQWlhOc2k3NjhoaVFxbDdxaldwaFk1TWRuRXdWTVBaSmdQZ21aUi1mRHdnajN0aWNzZkhTdk9RSGk5SUFfZDN1Zk91WElVX2hPb1VQYmZYVGcyblIwdmtxWlEwLUZxNzloakpJc0tUdTJTTEVjbE9ZbUhqSG1NX2MwWkpxZVkxVnM4R1ZlcklDM0FvTFlTSjd4NE1MTnNwaVBOdndycHR6Y1VmVkxuSmQzbExfeUlfNWZ3?oc=5",
+    "summary": "Stock Market Midday, Sept. 29: Stocks Edge Lower Despite $2 Trillion Anthropic Valuation The Motley Fool"
+   },
+   {
+    "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market - Barron's",
+    "source": "Barron's",
+    "published": "Tue, 29 Sep 2026 18:34:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44VVMtOG9CUjVYUkY0cFJhRk53RS00dFhTZ2Fvc1p4enctWGxHWXVqSTMzdmp2M1BPblljZUR0NkxvSDUxaS1sRmVNaUk5V1E1NkhlSzZwUXNlS1NwODVkVFN2NXU?oc=5",
+    "summary": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market Barron's"
+   },
+   {
+    "title": "Calm stock markets today could help gold price hold support despite surging bond yields \u2013 MarketVector\u2019s Yang - Kitco",
+    "source": "Kitco",
+    "published": "Tue, 29 Sep 2026 13:11:00 GMT",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMDdmSzl5MXhaVllULWlaT2hnTU9NLWZ3ZDczd0N6RGg3VVRUaWxMbU5YeENEVnY4a05vdlQxTUV3NkxVeXBTdmhSWGUtUXFfY2VGdUJUbk1sV3pVcEVWS1lCMXNXM2RPT1JZZnRad2VBWUJQeFVSMmZzOFhsZ0E2SjZjVWFLMkgxR2JRUTNHV19Fbi1NZllZbmd3cVJ4Szk2TEU1VV9DTnVZcHNia0ZLdkpXMlEzRnRyOFNkYmJR?oc=5",
+    "summary": "Calm stock markets today could help gold price hold support despite surging bond yields \u2013 MarketVector\u2019s Yang Kitco"
+   }
+  ],
   "Tesla deliveries Q3 2026": [
    {
-    "title": "Tesla Q3 deliveries preview, as Roadster delayed - finance.yahoo.com",
+    "title": "Tesla's Q3 deliveries loom large as the Roadster slips again - finance.yahoo.com",
     "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 14:55:14 GMT",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeWVuUXNydW1aLUJxOUxTUUdQSXlnSkJIYUp0bTB4akRpTEU4S2dsLXV2MG1xcUJBMUJBZnNuazJockRwMXc4UDNVTEp5ZmVhZk1FRXltZlpqMFVXblhkWW5BcGk0cXNNTUx6ZFAxSUdiUVh2NVdkSXptSlNnQ0RfR3RvQVJsZ1poVmZIYjVaVFJweTVDMXBMSUpIX1Awd1ZJN0JXR0lER2stbFJwV0hMdw?oc=5",
-    "summary": "Tesla Q3 deliveries preview, as Roadster delayed finance.yahoo.com"
+    "published": "Tue, 29 Sep 2026 15:00:07 GMT",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOLXBDTEplVDNLdl9EdXRyUnItWmJJMmZaRzhxbExwQXZ3b2VBT0RGRThOWU9iTEtxX01NSm5WYXYwYjdJSHNEYVY1TXpySGtGUkFwa3ppdURNbEZoWDh2elZ6bVlfVlhmSVI3aVdwbzFnNGpmYzlrbjc0UnRxcHhfZnpfOERWVXhOZmIwMGczeVVvREhVOWRFMGJzRWxnS0V1VF9nM3p3NExQQzRTWGtHSi0xRTc2RVZMNktldGJacFE?oc=5",
+    "summary": "Tesla's Q3 deliveries loom large as the Roadster slips again finance.yahoo.com"
    },
    {
     "title": "Tesla showrooms picked clean ahead of Q3 end as demand looks strong - Teslarati",
@@ -2370,92 +2449,6 @@
     "summary": "Micron Q4 Earnings Preview: Can Unprecedented HBM Demand Sustain the AI Memory Supercycle? MEXC"
    }
   ],
-  "stock market today": [
-   {
-    "title": "Stocks Grind Lower Under Interest Rate Pressure: Stock Market Today - Kiplinger",
-    "source": "Kiplinger",
-    "published": "Tue, 29 Sep 2026 20:09:09 GMT",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRnBGNG1pa3o5WGkxOW50Qll5WDVlS3phQ0FaZDl4bXZzbm1jM0JKMDV1Vm5NME9mUHVGaDA2VFJJSkN1R2pTaEFocS1GNnJ0ZzRGUTRTdmRTUHhCWFhtM0taclBuX2N4b0F5eWJRX3A0YmIwNHk0TlZ2Q25oUVpHQWF3cXJhWTR6Ymg0d3l1ekx4b3FwUTRMMUlJa245LXVBNTk5QnhfLU9CcTg5b0E?oc=5",
-    "summary": "Stocks Grind Lower Under Interest Rate Pressure: Stock Market Today Kiplinger"
-   },
-   {
-    "title": "Stock Market Today, Sept. 29: Carnival Surges 13% on Record Bookings, Raised Guidance - The Motley Fool",
-    "source": "The Motley Fool",
-    "published": "Tue, 29 Sep 2026 20:51:33 GMT",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLThyaTVvUmFCc0VKZEluVjF1WkxxTjJGX0JJcVFnVmhnSjh0RjBIX01COGJDV2VlUXBFSVo5RG1EZmdSUmhmRVZUZHNOU1JPN3NhSW1PRjZvZmhEdFNGU1J0cWhsNm1ldWloY3BmUXg1a1VwUGxrbnJiMTAzdnkzekNnaTV4MjZZczEwQURmSjhYWlY1SUk4VjFwUy1qZUJnRUxsbVJDcGRzZGZ6NDFfMzNONjFFOWFnenE3TnZzN0JBOFlQTEliajM1WEJxQkdPZjlNdXYyQ00?oc=5",
-    "summary": "Stock Market Today, Sept. 29: Carnival Surges 13% on Record Bookings, Raised Guidance The Motley Fool"
-   },
-   {
-    "title": "Stock Market Midday, Sept. 29: Stocks Edge Lower Despite $2 Trillion Anthropic Valuation - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 16:46:54 GMT",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVGttNkJwVThQcXBWSFJCbnQxUGtpVFRBa3N0MEZWMlFscGhJdlRXQ2g1MFhScXRUc1JNYmxmU0VOeGR5b19QTFF4WTNtNjZsengzT244MkZxOWRMMldoVWVsMW4xSUlUT2FRdk5wYlJadnlEMy1nem5vQVN0RWNLZDMzZ0kyWFBsV0o5dlVEcWg3bldlVmpr?oc=5",
-    "summary": "Stock Market Midday, Sept. 29: Stocks Edge Lower Despite $2 Trillion Anthropic Valuation finance.yahoo.com"
-   },
-   {
-    "title": "Trump meets with AI execs, Treasury yields pressure stocks, Alaska's luxury push and more in Morning Squawk - CNBC",
-    "source": "CNBC",
-    "published": "Tue, 29 Sep 2026 12:28:45 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTU9XV1VlNDl6X2N5N1FCWVY4VG5Rby1ZbzRZRlhwRmh0czRNY0VJUy1VMUVZQWZWLXhqZjB4cjN1NlhFYUlyb2lFSDQ4ZXIzYldaQWxRSzUxQVVmUnpVTHlac1N5SWV3dzdxUl9EVUxvY3RwWmRtSmdwc1lnaERJTF8xOGZ3ang3UGQ00gGQAUFVX3lxTE9obU4yTmFoMC1pRndHWkR4djlPYUdOZS1KVkxJZnJONFB5ZnVaRG1qX1ZfS2tpOUtvclFUbjB6eXlleW51N1dBSEZVcFJIdUQtUlczeEVTMWpCUjZuZTMzeDdKUmJ1bjVjYlBRVFdibHlvenNPMWRXTEJKRlBJNGlmY1Z2YTJNWDNDY0Y0MzBsVw?oc=5",
-    "summary": "Trump meets with AI execs, Treasury yields pressure stocks, Alaska's luxury push and more in Morning Squawk CNBC"
-   },
-   {
-    "title": "Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Sell Off - Investor's Business Daily",
-    "source": "Investor's Business Daily",
-    "published": "Tue, 29 Sep 2026 02:51:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWWk2YThmRWdIMTQ0SWMxNEVnQ2haSFBKXzZqT0JmbG9rQ05DN2FoeU12RXJfb0Zjdm1jN3R2dWw2MGVlWFA3dUF3bGoyOGF6Vm55VWdsNWF5czlLVnlxZV9CUzZfLVNfakdnRnEwM25OaE9wTXFxanFHNXJOb3ZLdUdrdkdTTjJfdkVPT1h5UlR6dGpHSFFqc0N5UlVKNG9KNWsxMGhnZVJiVHJxZDI4YUt4MllQdktvX1JNM05ESUZ5cWM?oc=5",
-    "summary": "Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Sell Off Investor's Business Daily"
-   },
-   {
-    "title": "Stock Market News for Sep 29, 2026 - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 08:30:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUVVkVXFLdDNkWWZPeThtWWtLWXdYTkMyaXpPdkRkT3BFRnFGNjZXUmE4TjkwRjItTUJYbWpVR0FCTmhvSXpjS2d0TkFTVHpvUTJ5TGxLUFBTSEdSbU81RFFrRmR6NzZGSWVROUVHb0RRZ2xBd1BkbzdOQ3pFWU5ma1duY3BJSEdUNXdSUGdrUFVvcXc?oc=5",
-    "summary": "Stock Market News for Sep 29, 2026 finance.yahoo.com"
-   },
-   {
-    "title": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-    "source": "Yahoo! Finance Canada",
-    "published": "Tue, 29 Sep 2026 17:13:01 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NdF9xWW1RaDk2MmNFdk5acnJHSVhGM0dqcF90M081cUplRkpyVjZmakJsdS11TFhOcnVVRnM0T1RXcEo5ZzBITzA1N1BsaWVacVE?oc=5",
-    "summary": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History Yahoo! Finance Canada"
-   },
-   {
-    "title": "US Stock Market Today: S&P 500 Futures Slip On Renewed Inflation And Rate Jitters - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 08:10:26 GMT",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONlB5NGtBbFZWYjZpb2ZjMkJqM2tuVnIwOS1TT2RiM1Jta0FiQzcxN0VXbFhCTDVZaWg4TDJjR0ZSUTRXQ1d3aW5NR3AwZ01YczE0NTk2dEJ6d24teTJtMl80bmVpanhoYzVGX1RxYk5iQjl0MVZRR1JUcnBSVGpqUUsydnA0QUdfc2hNUjVscUxmdw?oc=5",
-    "summary": "US Stock Market Today: S&P 500 Futures Slip On Renewed Inflation And Rate Jitters finance.yahoo.com"
-   },
-   {
-    "title": "Stock Market Today: Major Indexes Decline as Treasury Yields Rise Further; Oil Prices Slip - finance.yahoo.com",
-    "source": "finance.yahoo.com",
-    "published": "Tue, 29 Sep 2026 10:50:17 GMT",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdDhiOW9YNmtlTkdqUUpfanpEMGxEbzhfdWNJUlg4OUNMSWVLX3M1VUpLTW1FcnBQeE5OdGg4ZkwzZDRkRTk4Q0VYMDk4MzhJbXVxU3g0aFFqQ3h6V3BDMU1XWmRIUGJwdW1taVNfSUxfa3o2a0h1RDhnTHF0WHFzSW13aVQ1Y2k0bmROLWRrZ1B0dEszVmxpNGN3TGw1Zw?oc=5",
-    "summary": "Stock Market Today: Major Indexes Decline as Treasury Yields Rise Further; Oil Prices Slip finance.yahoo.com"
-   },
-   {
-    "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market - Barron's",
-    "source": "Barron's",
-    "published": "Tue, 29 Sep 2026 18:34:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44VVMtOG9CUjVYUkY0cFJhRk53RS00dFhTZ2Fvc1p4enctWGxHWXVqSTMzdmp2M1BPblljZUR0NkxvSDUxaS1sRmVNaUk5V1E1NkhlSzZwUXNlS1NwODVkVFN2NXU?oc=5",
-    "summary": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market Barron's"
-   },
-   {
-    "title": "Calm stock markets today could help gold price hold support despite surging bond yields \u2013 MarketVector\u2019s Yang - Kitco",
-    "source": "Kitco",
-    "published": "Tue, 29 Sep 2026 13:11:00 GMT",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMDdmSzl5MXhaVllULWlaT2hnTU9NLWZ3ZDczd0N6RGg3VVRUaWxMbU5YeENEVnY4a05vdlQxTUV3NkxVeXBTdmhSWGUtUXFfY2VGdUJUbk1sV3pVcEVWS1lCMXNXM2RPT1JZZnRad2VBWUJQeFVSMmZzOFhsZ0E2SjZjVWFLMkgxR2JRUTNHV19Fbi1NZllZbmd3cVJ4Szk2TEU1VV9DTnVZcHNia0ZLdkpXMlEzRnRyOFNkYmJR?oc=5",
-    "summary": "Calm stock markets today could help gold price hold support despite surging bond yields \u2013 MarketVector\u2019s Yang Kitco"
-   },
-   {
-    "title": "5 Things to Know Before the Stock Market Opens on Tuesday - Investopedia",
-    "source": "Investopedia",
-    "published": "Tue, 29 Sep 2026 12:06:47 GMT",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVHN5T0xQd3R1Q3lsZ2RPOWdfWmpzRkhmVWFJcnlMWTlCTXo5NVA4S3JsbGU5bkJuR192ZW9iUlRkR2FrczVObFI0RFkyc2VGRXRoLWZfUzlNc2Q5MnJrQTdhdUNSUDJDb3p4ZzM0bk1qM1VQZlE1ekhMdGRWMDdJbjZIS0ZhcHlrS3FXSGRnWW1MYTZvU0RjMHpGajgzWjAtZng0WFFHOGFORkFKYjRPTHZBRQ?oc=5",
-    "summary": "5 Things to Know Before the Stock Market Opens on Tuesday Investopedia"
-   }
-  ],
   "short squeeze stock": [
    {
     "title": "2 Short-Squeeze Candidates Waiting for the Right Catalyst - MarketBeat",
@@ -2486,11 +2479,11 @@
     "summary": "RIGL Stock Jumps 15%, Short Interest Surges To Record High \u2013 Why Is Retail Eyeing A Further 40% Upside? Stocktwits"
    },
    {
-    "title": "Jerash Holdings (US), Inc. (NASDAQ:JRSH) Stock Short Interest Drops 50.8% - MarketBeat",
+    "title": "Braveheart Bio, Inc. (NASDAQ:BRVE) Shares Shorted: Short Interest Up 76.1% in September - MarketBeat",
     "source": "MarketBeat",
-    "published": "Tue, 29 Sep 2026 20:45:48 GMT",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSjhsNWtyUVNUc3JSNmg4b2pZb0JwN21qZkM1ZWllMU5oUGhoWWV5T1lSMjYxN0xNaEo2TmZoaXA4WnJCbk4yNzJ3ck5Rc3h1SFNnbzktQ2pMZ3FsaTBSNktQbVVqS21wbndvbUMwbnR0UEo2R1ZRZFd0aHNEbWNVNGFYOEl3alRWQWIwaDZnQlZPSFJleXdqOWt3TmFMMFFxZTBoUTlWVmJDVklMWUZkVXpMOEpmRmM3bmZFTGJ6UzVVbFRSdVE?oc=5",
-    "summary": "Jerash Holdings (US), Inc. (NASDAQ:JRSH) Stock Short Interest Drops 50.8% MarketBeat"
+    "published": "Tue, 29 Sep 2026 17:04:28 GMT",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcWM3dHlKUlBGWnZUMUxfZTBWbHpLSV9TU0VhRzdOWWJoTWZGamRGZ2EyMWlFSTVTVUVoVVhobDBsMl96OE5Zb2dVald5M2ZJWWdyblNpajBtaHB4elFRYmRaVUtJdlJmSzZCUVhTX3FqaG5IbDBoQTY5YlVDbG9Bc25DRTZZSkltbkJXanJITkpBYTA3UUZPVEJrU0VzeHNONE81NkRtTUkweDdVN1ZNV2ZNaWJMd1h5dUJNS2szbEhIUnc1ck1fM2UxNUZMRUpCSnBjUXhDcVV3UQ?oc=5",
+    "summary": "Braveheart Bio, Inc. (NASDAQ:BRVE) Shares Shorted: Short Interest Up 76.1% in September MarketBeat"
    },
    {
     "title": "AMC UPGRADE! SHORTS GETTING MARGIN CALLED! Beckett Sennecke (Z0wkU08m5Y) - Unisba Media",

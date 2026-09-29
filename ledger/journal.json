@@ -84,6 +84,19 @@
         "NVTS",
         "KOD"
       ]
+    },
+    {
+      "id": "J0007",
+      "ts": "2026-09-29T13:42:40Z",
+      "kind": "trade",
+      "title": "Opened IONX and MUU; skipped SMMT after its open fade",
+      "body": "Bought at 9:42 AM, after the opening prints settled:\n- IONX: 10.37 shares at $28.92 ($300). IonQ is holding above Monday's $44.58 close (now $45.17) after BofA's Buy call. Stop $24.60 (-15%); sell a third at $36.15 (+25%).\n- MUU: 8.25 shares at $36.38 ($300). SOXL is +3.6%, confirming the chip bounce. This is the run-up into Micron's Wednesday report. Stop $30.90 (-15%); sell a third at $45.45 (+25%).\n\nSkipped SMMT. It traded as high as $18.94 pre-market (+22%) and opened at $16.95 (+9.5%), below the $18 line the plan required. The pre-market pop faded exactly the way the plan guarded against. NVTS did the same: +10% pre-market, flat at the open.\n\n$400 stays in cash until after the 10:00 JOLTS and consumer-confidence data. Candidates from the opening scan:\n- CCL +12% on earnings.\n- IOVA +24%.\n- BE +10% rebound.\n- SMMT, if it gets back above $18.",
+      "tickers": [
+        "IONX",
+        "MUU",
+        "SMMT",
+        "NVTS"
+      ]
     }
   ]
 }

@@ -8,6 +8,75 @@
       "net_cash": 1000.0,
       "settle_date": "2026-09-28",
       "note": "Paper capital funded. Challenge accepted Mon Sep 28, 8:35 PM ET."
+    },
+    {
+      "id": "T0001",
+      "type": "BUY",
+      "ts": "2026-09-29T13:42:25Z",
+      "ticker": "IONX",
+      "name": "Defiance Daily Target 2X Long I",
+      "qty": 10.3718,
+      "price": 28.9245,
+      "quote_price": 28.91,
+      "quote_time": "2026-09-29T13:41:28Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 300.0,
+      "fees": 0.0,
+      "net_cash": -300.0,
+      "settle_date": "2026-09-30",
+      "rationale": "Quantum momentum: IonQ holding above Monday's close after BofA's Buy initiation and a raised 2026 revenue guide. 2x exposure via IONX.",
+      "tags": [
+        "momentum",
+        "quantum"
+      ],
+      "plan": {
+        "stop": 24.6,
+        "target": 36.15
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 57,
+        "cash_account": true,
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 30.0
+      }
+    },
+    {
+      "id": "T0002",
+      "type": "BUY",
+      "ts": "2026-09-29T13:42:25Z",
+      "ticker": "MUU",
+      "name": "Direxion Daily MU Bull 2X ETF",
+      "qty": 8.2466,
+      "price": 36.3782,
+      "quote_price": 36.36,
+      "quote_time": "2026-09-29T13:41:48Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 300.0,
+      "fees": 0.0,
+      "net_cash": -300.0,
+      "settle_date": "2026-09-30",
+      "rationale": "Run-up into Micron's Wednesday report (guide: $50B revenue, $31 EPS); chips bouncing, SOXL +3.6%. 2x Micron via MUU; hold-through decision Wednesday 3:55 PM.",
+      "tags": [
+        "catalyst",
+        "earnings",
+        "semis"
+      ],
+      "plan": {
+        "stop": 30.9,
+        "target": 45.45
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 37,
+        "cash_account": true,
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 30.0
+      }
     }
   ]
 }

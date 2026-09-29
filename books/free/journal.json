@@ -1,3 +1,19 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "id": "J0001",
+      "ts": "2026-09-29T21:59:05Z",
+      "kind": "plan",
+      "title": "Plan: four trading days to double",
+      "body": "Start: $1,000 cash at Tue Sep 29, 5:45 PM ET. Finish: the Mon Oct 5, 4:00 PM ET close, the same finish line as the H-1B book but one trading day later to start. Target: $2,000, so +100% in four sessions (Wed, Thu, Fri, Mon) plus a weekend of crypto.\n\nThe approach: doubling in four sessions needs concentrated, convex bets. That means options on dated catalysts, sized so that one or two hits can double the book, with total losses on the misses accepted. There is no margin at $1,000 (FINRA's $2,000 minimum), so leverage comes from options and 2x/3x ETFs.\n\nCatalyst calendar and instruments:\n1. Wed Sep 30, after the close: Micron FQ4. MU Oct 2 options imply about \u00b17.6% (the at-the-money straddle costs $81). MU contracts cost $700+ even well out of the money, so MUU (2x Micron) Oct 2 calls at $1-3 (about 180% implied volatility) are the sized vehicle. Plan: buy MUU Oct 2 calls (38-40 strikes) for $300-350 at the 9:55 or 10:25 run if MU holds flat or better after the open. Implied volatility usually rises into the print, so buying earlier costs less than buying at 3:55. Skip if MU is down more than 2%. Sell half at Thursday's open on a gap up and the rest by noon Thursday (volatility crush and Friday expiry).\n2. Thu Oct 1, after the close: Nike FQ1. NKE Oct 2 options imply about \u00b18.8%. Sentiment is washed out (\"never been more hated\"), Jefferies expects a beat, and RBC says a big miss is unlikely. Plan: buy NKE Oct 2 calls (37-38 strikes at $0.75-1.10) for $250-300 near Thursday's close; sell Friday morning.\n3. Fri Oct 2: jobs report at 8:30 AM, Tesla Q3 deliveries around 9 AM. Decide at the 8:33 check: SPY/QQQ short-dated options or TSLA/TSLL calls or puts with the proceeds.\n4. Weekend: crypto is the only open market. Hold crypto into Monday only with a clear trend or catalyst.\n5. Mon Oct 5: final session, everything sold by the 3:40 run.\n\nTonight: no trades. Crypto has no catalyst-driven setup (BTC $83.4K, -0.1% on the day) and after-hours stock liquidity is thin. Cash waits for Wednesday's Micron setup and any morning news trade.\n\nRisk rules: at most 40% of equity per options catalyst; take profits in thirds (+50%, +100%, and on the catalyst); never hold a contract through its expiration close. Stocks and ETFs use the H-1B book's stops (-15% on 2x ETFs, -12% on stocks). Crypto stop: -8%.",
+      "tickers": [
+        "MU",
+        "MUU",
+        "NKE",
+        "SPY",
+        "TSLA",
+        "BTC-USD"
+      ]
+    }
+  ]
 }

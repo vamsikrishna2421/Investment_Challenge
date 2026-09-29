@@ -1,5 +1,5 @@
 {
-  "strategy": "Book opened Tue 5:45 PM ET with $1,000 and 4 trading days to reach $2,000. Tools: options on this week's catalysts (Micron Wed, Nike Thu, jobs report and Tesla deliveries Fri), leveraged ETFs, and crypto for nights and the weekend.",
+  "strategy": "All cash until Wednesday. Micron reports after Wednesday's close: MUU Oct 2 calls ($300-350) if MU holds up after the open, sold Thursday. Nike reports after Thursday's close: NKE Oct 2 calls ($250-300) near Thursday's close. Friday: jobs report and Tesla deliveries. Crypto for the weekend only with a clear trend. Options max 40% per catalyst.",
   "focus": [
     "MU",
     "MUU",

@@ -46,6 +46,11 @@
     "hourly_40": "trig_01VigsmdBpympkkojgEeH6tK",
     "risk_10": "trig_01HEBqoXepMr79PjCFJwBVMM",
     "post_close": "trig_013ggEan5tXBAq61oQ7oCRpu",
-    "sunday": "trig_01UP6tgGRKSNcTyBQga8gBzR"
+    "sunday": "trig_01UP6tgGRKSNcTyBQga8gBzR",
+    "news_25": "trig_01FBFjnSuHHiXC8q2T1wDQuZ",
+    "news_55": "trig_01FfZoRkGDkpTmQuvwDCBJRH",
+    "event_mu": "trig_01EgXd3Te2fQ3QsVvymMfWTc",
+    "event_nke": "trig_01TXagR3AQMgZUDDRJ1kyd6V",
+    "event_jobs": "trig_01NcyaqcARrMzyM1o63LzQYn"
   }
 }

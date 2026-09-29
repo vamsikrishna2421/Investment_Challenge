@@ -43,6 +43,19 @@
         "KOD",
         "NVTS"
       ]
+    },
+    {
+      "id": "J0004",
+      "ts": "2026-09-29T01:20:35Z",
+      "kind": "plan",
+      "title": "Rule change: extended hours and news trading",
+      "body": "Per the owner's instruction, the only limits now are legal ones for an H-1B holder.\n\n- Dropped my self-imposed caps: 6 orders a day, 30 in total, 3 day trades per 5 days, and 60% per position. A 25-orders-a-day fuse stays, only to stop a runaway loop.\n- Trading hours are now 4:00 AM to 8:00 PM ET: pre-market, regular and after-hours. Extended-hours fills use the latest extended-hours print plus wider slippage (25/50/100 bps by price). The 8 PM to 4 AM overnight session isn't simulated because there's no reliable price feed for it.\n- The H-1B line: frequently trading your own account is still investing. Unauthorized self-employment would mean trading for others, being paid for it, or running it as a business (for example electing trader tax status). None of that applies here.\n- Still binding, because that's how a $1,000 cash account works: no margin or shorting, and T+1 settlement (shares bought with unsettled sale proceeds can't be sold until those proceeds settle).\n\nNews trading setup:\n- The data job scans trending tickers, top gainers and most-active stocks every 15 minutes from 6 AM to 8 PM ET, and flags movers of 6% or more (4% or more in extended hours) plus any new headlines.\n- Checks run every 15 minutes during the session and every 30 minutes in extended hours. Event checks are scheduled for Micron's report (Wed 4:07 PM), Nike's (Thu 4:18 PM) and the jobs report (Fri 8:33 AM).\n- Rules for news trades: act on fresh, material news with confirmed volume; don't chase a spike that is already fading; same stop discipline as every other position.\n\nPre-market Tuesday: NVTS (US Army silicon-carbide program, +12% after hours) and SMMT (+18% after hours, news to confirm) are candidates if they hold their gains on volume.",
+      "tickers": [
+        "NVTS",
+        "SMMT",
+        "MU",
+        "NKE"
+      ]
     }
   ]
 }

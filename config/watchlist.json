@@ -1,5 +1,5 @@
 {
-  "strategy": "Concentrated, catalyst-driven book. First orders after 9:40 AM ET Tuesday: ~30% IONX (2x IonQ), ~30% MUU (2x Micron into Wednesday's earnings), ~20-25% KOD or NVTS, the rest in cash. Stops at -15% (2x ETFs) and -12% (stocks); trim a third at +25%.",
+  "strategy": "Catalyst and news-driven book, trading 4 AM-8 PM ET. Tuesday: ~30% IONX (2x IonQ), ~30% MUU (2x Micron into Wednesday's report), ~20-25% KOD or NVTS, the rest in cash for news trades: after-hours earnings reactions (Micron Wed, Nike Thu) and the Friday jobs report. Stops -15% on 2x ETFs, -12% on stocks; trim a third at +25%.",
   "focus": [
     "IONX",
     "IONQ",
@@ -7,11 +7,11 @@
     "MU",
     "KOD",
     "NVTS",
+    "SMMT",
     "AMDL",
     "MSTU",
     "SOXL",
     "NVDA",
-    "TSLA",
     "NKE"
   ],
   "tickers": [
@@ -92,6 +92,7 @@
     "LEU",
     "XOM",
     "LMT",
-    "RTX"
+    "RTX",
+    "SMMT"
   ]
 }

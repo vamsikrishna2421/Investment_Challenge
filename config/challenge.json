@@ -17,11 +17,24 @@
   },
   "execution_model": {
     "fill": "Last trade price from Yahoo Finance at execution time, adjusted for slippage",
-    "slippage_bps_by_price": [[20, 5], [5, 20], [0, 50]],
+    "slippage_bps_by_price": [
+      [
+        20,
+        5
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        0,
+        50
+      ]
+    ],
     "commission": 0.0,
-    "sec_fee_per_million": 27.80,
+    "sec_fee_per_million": 27.8,
     "finra_taf_per_share": 0.000166,
-    "finra_taf_max": 8.30,
+    "finra_taf_max": 8.3,
     "sessions": "Regular session (9:30-16:00 ET) only",
     "max_quote_age_sec": 900
   },
@@ -30,8 +43,24 @@
     "max_orders_total": 30,
     "max_day_trades_rolling_5d": 3,
     "max_position_pct_at_entry": 60,
-    "allowed_instruments": ["Common stock", "ETF", "Leveraged ETF"],
-    "blocked_lists": ["OFAC NS-CMIC (EO 14032) Chinese military-industrial complex securities"]
+    "allowed_instruments": [
+      "Common stock",
+      "ETF",
+      "Leveraged ETF"
+    ],
+    "blocked_lists": [
+      "OFAC NS-CMIC (EO 14032) Chinese military-industrial complex securities"
+    ]
   },
-  "benchmarks": ["SPY", "QQQ", "IWM"]
+  "benchmarks": [
+    "SPY",
+    "QQQ",
+    "IWM"
+  ],
+  "benchmark_base": {
+    "SPY": 765.61,
+    "QQQ": 736.53,
+    "IWM": 280.02
+  },
+  "benchmark_base_note": "Regular-session closes on Mon Sep 28, 2026 (challenge accepted after that close)"
 }

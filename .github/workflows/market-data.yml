@@ -4,7 +4,8 @@ on:
   schedule:
     - cron: "*/5 13-20 * * 1-5"   # every 5 min, 9:00 AM - 4:55 PM ET (EDT)
     - cron: "10,40 11,12 * * 1-5" # pre-market samples, 7:10 - 8:40 AM ET
-    - cron: "20 12 * * 1-5"       # 8:20 AM ET scan (screeners + stats)
+    - cron: "20 12 * * 1-5"       # 8:20 AM ET scan (screeners, stats, fundamentals, news)
+    - cron: "33 14-19 * * 1-5"    # hourly headlines, 10:33 AM - 3:33 PM ET
   workflow_dispatch:
     inputs:
       tickers:
@@ -12,7 +13,7 @@ on:
         required: false
         default: ""
       mode:
-        description: "quotes or scan"
+        description: "quotes, news or scan"
         required: false
         default: "quotes"
 
@@ -53,7 +54,7 @@ jobs:
 
       - name: Fetch quotes
         env:
-          MODE: ${{ (github.event.schedule == '20 12 * * 1-5' && 'scan') || inputs.mode || 'quotes' }}
+          MODE: ${{ (github.event.schedule == '20 12 * * 1-5' && 'scan') || (github.event.schedule == '33 14-19 * * 1-5' && 'news') || inputs.mode || 'quotes' }}
           EXTRA: ${{ inputs.tickers || '' }}
         run: python main/scripts/marketdata.py --root main --out md --mode "$MODE" --extra "$EXTRA"
 

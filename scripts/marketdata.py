@@ -146,6 +146,75 @@ def screener(scr: str) -> list:
     return [{k: row.get(k) for k in keep if row.get(k) is not None} for row in rows]
 
 
+def _rss_items(url: str, limit: int) -> list:
+    import html
+    import re
+    import xml.etree.ElementTree as ET
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/xml"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        root = ET.fromstring(r.read())
+    out = []
+    for it in root.iter("item"):
+        title = (it.findtext("title") or "").strip()
+        desc = re.sub(r"<[^>]+>", " ", html.unescape(it.findtext("description") or ""))
+        desc = re.sub(r"\s+", " ", desc).strip()
+        src = it.find("source")
+        out.append({
+            "title": title,
+            "source": (src.text or "").strip() if src is not None else None,
+            "published": (it.findtext("pubDate") or "").strip(),
+            "link": (it.findtext("link") or "").strip(),
+            "summary": desc[:280] if desc and desc not in title else None,
+        })
+        if len(out) >= limit:
+            break
+    return out
+
+
+def ticker_news(sym: str) -> list:
+    items = []
+    try:
+        items += _rss_items(f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={urllib.parse.quote(sym)}"
+                            "&region=US&lang=en-US", 8)
+    except Exception as e:  # noqa: BLE001
+        items.append({"error": f"yahoo: {str(e)[:120]}"})
+    try:
+        q = urllib.parse.quote(f"{sym} stock when:2d")
+        items += _rss_items(f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en", 8)
+    except Exception as e:  # noqa: BLE001
+        items.append({"error": f"gnews: {str(e)[:120]}"})
+    return items
+
+
+def query_news(query: str) -> list:
+    q = urllib.parse.quote(f"{query} when:1d")
+    try:
+        return _rss_items(f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en", 12)
+    except Exception as e:  # noqa: BLE001
+        return [{"error": str(e)[:200]}]
+
+
+def fundamentals(sym: str) -> dict:
+    try:
+        import yfinance as yf  # type: ignore
+        t = yf.Ticker(sym)
+        info = t.get_info() or {}
+        keep = ("marketCap", "floatShares", "sharesShort", "shortPercentOfFloat", "shortRatio",
+                "averageVolume10days", "beta", "fiftyTwoWeekHigh", "fiftyTwoWeekLow",
+                "targetMeanPrice", "recommendationKey", "sector", "industry", "earningsTimestamp")
+        out = {k: info.get(k) for k in keep if info.get(k) is not None}
+        try:
+            cal = t.calendar or {}
+            ed = cal.get("Earnings Date") if isinstance(cal, dict) else None
+            if ed:
+                out["earnings_dates"] = [str(x) for x in ed]
+        except Exception:  # noqa: BLE001
+            pass
+        return out
+    except Exception as e:  # noqa: BLE001
+        return {"error": str(e)[:200]}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", required=True, help="checkout of main (ledger/config)")
@@ -221,7 +290,27 @@ def main() -> int:
                     scan["stats"][futs[f]] = f.result()
                 except Exception as e:  # noqa: BLE001
                     scan["stats"][futs[f]] = {"error": str(e)[:200]}
+        focus = json.loads(wl_path.read_text()).get("focus", []) if wl_path.exists() else []
+        fsyms = list(dict.fromkeys(held + focus + extra))[:30]
+        with cf.ThreadPoolExecutor(max_workers=4) as ex:
+            futs = {ex.submit(fundamentals, s): s for s in fsyms}
+            scan["fundamentals"] = {futs[f]: f.result() for f in cf.as_completed(futs)}
         (out / "scan.json").write_text(json.dumps(scan, indent=1))
+
+    if a.mode in ("scan", "news"):
+        ncfg_path = root / "config" / "news.json"
+        ncfg = json.loads(ncfg_path.read_text()) if ncfg_path.exists() else {}
+        focus = json.loads(wl_path.read_text()).get("focus", []) if wl_path.exists() else []
+        nsyms = list(dict.fromkeys(held + extra + focus))[:24]
+        news = {"generated_at": pfm.iso(now), "tickers": {}, "queries": {}}
+        with cf.ThreadPoolExecutor(max_workers=6) as ex:
+            futs = {ex.submit(ticker_news, s): s for s in nsyms}
+            for f in cf.as_completed(futs):
+                news["tickers"][futs[f]] = f.result()
+            qfuts = {ex.submit(query_news, q): q for q in ncfg.get("queries", [])}
+            for f in cf.as_completed(qfuts):
+                news["queries"][qfuts[f]] = f.result()
+        (out / "news.json").write_text(json.dumps(news, indent=1))
 
     print(f"quotes={len(quotes)} errors={len(errors)} equity={val['equity']} "
           f"session={val['session']} mode={a.mode}")

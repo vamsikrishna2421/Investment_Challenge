@@ -39,6 +39,8 @@ def main() -> None:
         f"<style>{RESET}</style>\n"
         f"{head}\n</head>\n<body>\n{body}\n</body>\n</html>\n"
     )
+    # Light minify: drop indentation and blank lines (keeps line breaks, so JS semantics are unchanged).
+    doc = "\n".join(line.strip() for line in doc.splitlines() if line.strip()) + "\n"
     OUT.mkdir(exist_ok=True)
     (OUT / "index.html").write_text(doc)
     (OUT / "vercel.json").write_text(json.dumps({

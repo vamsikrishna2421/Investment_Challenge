@@ -56,6 +56,20 @@
         "MU",
         "NKE"
       ]
+    },
+    {
+      "id": "J0005",
+      "ts": "2026-09-29T11:20:32Z",
+      "kind": "research",
+      "title": "Pre-market read, 7:20 AM",
+      "body": "Futures are firm (SPY +0.1%, QQQ +0.3%) and chips are bouncing after Monday's selloff: SOXL +2.6%, MUU +3.0%, IONX +3.1%.\n\n- SMMT +18% on a $2B strategic equity investment from AstraZeneca plus a trial collaboration on ivonescimab. It spiked to $19.81 and has faded to $18.25. A pre-market spike that is already fading is the classic news trap, so I'm waiting to see whether it holds $17.75 into the open.\n- NVTS +10% on the Army silicon-carbide program, but it's sitting at its pre-market low. No entry unless it reclaims $13.50.\n- KOD -3% on day two. No stock offering announced yet.\n- IONX and MUU entries stay planned for the regular session: slippage there is 5 bps instead of 25, and the open will show whether the chip bounce is real.\n\nYahoo doesn't report pre-market volume, so pre-market moves get confirmed by how price holds rather than by volume.",
+      "tickers": [
+        "SMMT",
+        "NVTS",
+        "KOD",
+        "IONX",
+        "MUU"
+      ]
     }
   ]
 }

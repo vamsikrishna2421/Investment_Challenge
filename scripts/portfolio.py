@@ -13,6 +13,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import math
+import os
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -36,6 +37,9 @@ def iso(t: dt.datetime) -> str:
 
 
 def now_utc() -> dt.datetime:
+    override = os.environ.get("CHALLENGE_NOW")  # test hook: pin the clock
+    if override:
+        return parse_ts(override)
     return dt.datetime.now(UTC).replace(microsecond=0)
 
 
@@ -98,11 +102,23 @@ def ceil_cents(x: float) -> float:
     return math.ceil(round(x * 100, 6)) / 100.0
 
 
-def slippage_bps(price: float, cfg: dict) -> float:
-    for floor, bps in cfg["execution_model"]["slippage_bps_by_price"]:
+def slippage_bps(price: float, cfg: dict, extended: bool = False) -> float:
+    em = cfg["execution_model"]
+    table = em.get("ext_slippage_bps_by_price", em["slippage_bps_by_price"]) if extended else em["slippage_bps_by_price"]
+    for floor, bps in table:
         if price >= floor:
             return float(bps)
-    return 50.0
+    return float(table[-1][1])
+
+
+def mark(q: dict) -> tuple[float | None, str | None, str]:
+    """Most recent trade for a quote: the extended-hours print when it is newer
+    than the regular-session price, otherwise the regular-session price."""
+    px, t = q.get("price"), q.get("time")
+    ep, et = q.get("ext_price"), q.get("ext_time")
+    if ep and et and (not t or et > t):
+        return float(ep), et, "extended"
+    return (float(px) if px is not None else None), t, "regular"
 
 
 def sell_fees(qty: float, gross: float, cfg: dict) -> float:
@@ -266,7 +282,7 @@ class Portfolio:
                 continue
             basis = sum(l["qty"] * l["price"] for l in lots)
             q = quotes.get(tk) or {}
-            px = q.get("price")
+            px, _, px_src = mark(q)
             stale = px is None
             if px is None:
                 px = basis / qty
@@ -289,7 +305,8 @@ class Portfolio:
                 "unrealized_pnl": round(mv - basis, 2),
                 "unrealized_pct": round((mv - basis) / basis * 100, 2) if basis else 0.0,
                 "day_pnl": round(dp, 2),
-                "day_change_pct": q.get("change_pct"),
+                "day_change_pct": round((px / prev - 1) * 100, 2) if prev else q.get("change_pct"),
+                "price_source": px_src,
                 "ext_price": q.get("ext_price"),
                 "ext_change_pct": q.get("ext_change_pct"),
                 "quote_time": q.get("time"),

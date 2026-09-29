@@ -50,8 +50,9 @@ def main() -> int:
     now = pfm.now_utc()
     em, rules = cfg["execution_model"], cfg["rules"]
 
-    if pfm.market_session(now) != "regular":
-        fail(f"market session is '{pfm.market_session(now)}'; orders execute in the regular session only")
+    session = pfm.market_session(now)
+    if session not in em.get("sessions_allowed", ["regular"]):
+        fail(f"market session is '{session}'; orders execute {em['sessions']}")
     if now > pfm.parse_ts(cfg["end_utc"]):
         fail("challenge window has ended")
     blocklist = json.loads((ROOT / "config" / "blocklist.json").read_text())
@@ -62,22 +63,28 @@ def main() -> int:
         fail(f"no synced quote for {tk}; add it to the data run first")
     if q.get("stale"):
         fail(f"quote for {tk} is marked stale")
-    qt = pfm.parse_ts(q["time"]) if q.get("time") else pfm.parse_ts(qdoc["generated_at"])
-    age = (now - qt).total_seconds()
+    extended = session != "regular"
+    if extended:
+        if not q.get("ext_price") or not q.get("ext_time"):
+            fail(f"no {session}-market trade in {tk} yet this session; extended-hours orders need a live print")
+        ref_price, ref_time = float(q["ext_price"]), q["ext_time"]
+    else:
+        ref_price, ref_time = float(q["price"]), q.get("time") or qdoc["generated_at"]
+    age = (now - pfm.parse_ts(ref_time)).total_seconds()
     if age > em["max_quote_age_sec"]:
-        fail(f"quote for {tk} is {int(age)}s old (max {em['max_quote_age_sec']}s); re-sync")
+        fail(f"last {session} trade in {tk} is {int(age)}s old (max {em['max_quote_age_sec']}s); re-sync")
 
     pf = pfm.Portfolio(ledger, cfg)
     val = pf.valuation(quotes, now)
     today = pfm.et_date(now).isoformat()
     if val["counts"]["orders_today"] >= rules["max_orders_per_day"]:
-        fail("daily order cap reached (investor-not-trader guardrail)")
+        fail("daily order fuse reached (runaway-loop protection)")
     if val["counts"]["orders_total"] >= rules["max_orders_total"]:
-        fail("weekly order cap reached (investor-not-trader guardrail)")
+        fail("total order fuse reached (runaway-loop protection)")
 
-    ref = float(q["price"])
-    bps = pfm.slippage_bps(ref, cfg)
-    compliance = {"session": "regular", "quote_age_sec": int(age), "cash_account": True}
+    ref = ref_price
+    bps = pfm.slippage_bps(ref, cfg, extended)
+    compliance = {"session": session, "quote_age_sec": int(age), "cash_account": True}
 
     if a.side == "buy":
         if a.all:
@@ -124,7 +131,8 @@ def main() -> int:
             fail(f"good-faith-violation guard: lot {locked[0]['txn']} was bought with unsettled "
                  f"proceeds that settle {locked[0]['unsettled_until']}")
         is_dt = any(l["date"] == today for l in consumed)
-        if is_dt and val["counts"]["day_trades_5d"] >= rules["max_day_trades_rolling_5d"]:
+        cap = rules.get("max_day_trades_rolling_5d")
+        if is_dt and cap is not None and val["counts"]["day_trades_5d"] >= cap:
             fail("day-trade cap reached for the rolling 5-day window")
         fill = round(ref * (1 - bps / 10_000), 4)
         gross = round(qty * fill, 2)
@@ -142,7 +150,8 @@ def main() -> int:
         "qty": qty,
         "price": fill,
         "quote_price": ref,
-        "quote_time": q.get("time"),
+        "quote_time": ref_time,
+        "session": session,
         "quote_source": q.get("source", "yahoo-v8-chart"),
         "slippage_bps": bps,
         "gross": gross,

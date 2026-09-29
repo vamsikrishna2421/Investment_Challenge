@@ -91,6 +91,24 @@ def main() -> int:
     print("WATCHLIST TOP: " + ", ".join(f"{tk} {q['change_pct']:+.1f}%" for tk, q in movers[:8]))
     print("WATCHLIST BOTTOM: " + ", ".join(f"{tk} {q['change_pct']:+.1f}%" for tk, q in movers[-6:]))
 
+    apath = CACHE / "alerts.json"
+    if apath.exists():
+        al = json.loads(apath.read_text())
+        print(f"ALERTS (generated {al['generated_at']}, session {al['session']})")
+        for m in al.get("movers", [])[:15]:
+            print(f" MOVER {m['symbol']:5} {'HELD ' if m.get('held') else ''}day {pct(m.get('change_pct'))} "
+                  f"ext {pct(m.get('ext_change_pct'))} px {m.get('ext_price') or m.get('price')} vol {m.get('volume') or 0:,} "
+                  f"{(m.get('name') or '')[:30]}")
+        disc = [d for d in al.get("discovery", []) if d.get("change_pct") is not None]
+        if disc:
+            print(" DISCOVERY: " + ", ".join(f"{d['symbol']} {d['change_pct']:+.1f}% ({d['source']})" for d in
+                                            sorted(disc, key=lambda d: -abs(d['change_pct']))[:14]))
+        trend = [d["symbol"] for d in al.get("discovery", []) if d["source"] == "trending"]
+        if trend:
+            print(" TRENDING: " + ", ".join(trend[:20]))
+        for h in al.get("new_headlines", [])[:25]:
+            print(f" NEW {h['about'][:28]:28} {h['title'][:130]}")
+
     npath = CACHE / "news.json"
     if npath.exists():
         news = json.loads(npath.read_text())

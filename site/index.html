@@ -209,7 +209,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <div>
 <div class="eyebrow">Paper portfolio · Individual cash account · H-1B investor rules</div>
 <h1 class="wordmark">H1B <span class="k">$1K</span> Challenge</h1>
-<div class="window">Mon Sep 28, 8:35 PM ET &rarr; Mon Oct 5, 4:00 PM ET close · US stocks &amp; ETFs</div>
+<div class="window">Mon Sep 28, 8:35 PM ET &rarr; Mon Oct 5, 4:00 PM ET close · US stocks &amp; ETFs · trading 4 AM&ndash;8 PM ET</div>
 </div>
 <div class="status">
 <span class="pill" id="mkt"><span class="dot"></span><span id="mkt-t">Market closed</span></span>
@@ -284,7 +284,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <section class="card" aria-labelledby="h-g">
 <div class="card-head"><h2 id="h-g">H-1B &amp; cash-account guardrails</h2></div>
 <div class="checks" id="checks"></div>
-<div class="note">An H-1B holder may invest in US securities: passive investment income is allowed. What the visa does not allow is self-employment, so the account avoids anything that looks like running a trading business: few orders, a hard cap on day trades, no margin and no trading for others. Gains are short-term capital gains, taxed as ordinary income for a US tax resident; as an NRI for Indian tax purposes, US trading gains aren't taxed in India.</div>
+<div class="note">An H-1B holder may invest in US securities, and no law caps how often you trade your own account, including pre-market and after-hours sessions. What the visa bars is unauthorized employment, so the lines not to cross are trading for other people, being paid for it, or running it as a business (for example electing trader tax status). Gains are short-term capital gains, taxed as ordinary income for a US tax resident; as an NRI for Indian tax purposes, US trading gains aren't taxed in India.</div>
 </section>
 </div>
 <section class="card" aria-labelledby="h-r">
@@ -292,7 +292,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <div class="radar" id="radar"><div class="empty">Watchlist quotes appear after the first update.</div></div>
 </section>
 <footer>
-<span>Prices: Yahoo Finance, pulled every 5 minutes by a GitHub Actions job. Fills: last trade price at execution plus slippage (5 bps above $20, 20 bps $5&ndash;$20, 50 bps under $5). $0 commission; SEC and FINRA TAF fees on sells. Regular session only.</span>
+<span>Prices: Yahoo Finance, pulled by a GitHub Actions job every 5 minutes in the regular session and every 10 minutes pre-market and after hours; headlines every 15 minutes. Fills: latest trade at execution plus slippage (regular session 5/20/50 bps above $20, $5&ndash;$20 and under $5; extended hours 25/50/100 bps). $0 commission; SEC and FINRA TAF fees on sells. Trading hours 4:00 AM&ndash;8:00 PM ET; the overnight session is not simulated.</span>
 <span>Full ledger and journal: <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/ledger/transactions.json" target="_blank" rel="noopener">ledger/transactions.json</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge" target="_blank" rel="noopener">repository</a></span>
 <span>Paper trading with simulated money. Not investment advice.</span>
 </footer>
@@ -423,8 +423,8 @@ var rows = [
 ["Unsettled proceeds", "From sales in the last business day", usd(sm.unsettled_cash)],
 ["Invested (market value)", null, usd(sm.invested_value)],
 ["Fees paid", "SEC + FINRA TAF on sells", usd(sm.fees_paid)],
-["Orders placed", "Today / total (caps 6 / 30)", sm.counts.orders_today + " / " + sm.counts.orders_total],
-["Day trades", "Rolling 5 days (cap 3)", String(sm.counts.day_trades_5d)],
+["Orders placed", "Today / total", sm.counts.orders_today + " / " + sm.counts.orders_total],
+["Day trades", "Rolling 5 days, tracked (no cap)", String(sm.counts.day_trades_5d)],
 ];
 rows.forEach(function (r) {
 var row = el("div", "r"), k = el("div", "k", r[0]);
@@ -484,6 +484,8 @@ var rc = td(row, usd(x.realized_pnl, true), "n " + cls(x.realized_pnl)); rc.appe
 } else td(row, "—", "n muted");
 td(row, x.settle_date || "—", "num");
 var w = td(row, x.rationale || "", "why");
+var ses = (x.compliance && x.compliance.session) || "regular";
+if (ses !== "regular") { w.appendChild(document.createTextNode(" ")); w.appendChild(el("span", "tag", ses === "pre" ? "pre-market" : "after-hours")); }
 (x.tags || []).forEach(function (g) { w.appendChild(document.createTextNode(" ")); w.appendChild(el("span", "tag", g)); });
 tb.appendChild(row);
 });

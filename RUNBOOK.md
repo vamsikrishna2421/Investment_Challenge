@@ -28,12 +28,18 @@ Use `mode=news` at least once an hour during the session and `mode=scan` pre-mar
 
 ## 2. Decide
 
-* Exit rules first: stop -15% (2x ETFs) / -12% (stocks) from entry, trim a third at +25% and move the
-  stop to breakeven, never average down.
-* Then entries per the latest `plan` entry in `ledger/journal.json`.
-* Guardrails are enforced by `scripts/trade.py`: regular session only, fresh quote (<15 min),
-  cash only, 60% max position at entry, 6 orders/day, 30 total, 3 day trades per 5 days,
-  no sale of shares bought with unsettled proceeds before settlement (T+1).
+* Read `ALERTS` in review.py first: new headlines since the last news run, movers (>=6% on the day or
+  >=4% extended-hours) and discovery (trending tickers, top gainers, most actives). This is the
+  news-trading feed; the Actions job refreshes it every 15 minutes from 6 AM to 8 PM ET.
+* Exit rules: stop -15% (2x ETFs) / -12% (stocks) from entry, trim a third at +25% and move the stop
+  to breakeven, never average down. In extended hours, judge stops on news, not on a thin print.
+* Entries per the latest `plan` entry in `ledger/journal.json`, plus news trades: act on material,
+  fresh news with confirmed volume; don't chase a spike that has already faded.
+* Hard rules enforced by `scripts/trade.py`: sessions 4:00 AM-8:00 PM ET (pre, regular, after-hours;
+  extended-hours orders need a live print), fresh quote (<15 min), cash only, no sale of shares bought
+  with unsettled proceeds before settlement (T+1). Order counts are a runaway fuse only (25/day).
+  No trade-count or position-size limits otherwise: H-1B restricts employment, not how often you
+  trade your own account.
 
 ## 3. Execute and log
 
@@ -56,7 +62,8 @@ Update `config/watchlist.json` `strategy` (the dashboard's game-plan line) and `
 
 ## Schedule
 
-* Weekdays 8:40 (pre-market plan), 9:40-15:40 every 30 minutes, 16:20 (post-close review).
+* Weekdays: :10 runs 7:10 AM-7:10 PM, :40 runs 8:40 AM-7:40 PM, :25 and :55 runs 9:25 AM-3:55 PM,
+  16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
 * Sunday 7:00 PM review for Monday.
 * Final day Mon Oct 5: liquidate everything at the 15:40 run; 16:20 run writes the final report,
   then delete the routines.

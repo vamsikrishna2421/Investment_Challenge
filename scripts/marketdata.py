@@ -122,6 +122,18 @@ def stats(sym: str) -> dict:
     }
 
 
+FAST_SCREENERS = ["day_gainers", "small_cap_gainers", "most_actives"]
+SYM_RE = __import__("re").compile(r"^[A-Z]{1,5}$")
+
+
+def trending() -> list:
+    try:
+        j = http_json("https://query1.finance.yahoo.com/v1/finance/trending/US?count=30")
+        return [q["symbol"] for q in j["finance"]["result"][0]["quotes"]]
+    except Exception:  # noqa: BLE001
+        return []
+
+
 SCREENERS = ["day_gainers", "most_actives", "small_cap_gainers", "aggressive_small_caps",
              "day_losers", "most_shorted_stocks", "growth_technology_stocks"]
 
@@ -232,14 +244,43 @@ def main() -> int:
     cfg = json.loads((root / "config" / "challenge.json").read_text())
     ledger = json.loads((root / "ledger" / "transactions.json").read_text())
     wl_path = root / "config" / "watchlist.json"
-    watch = json.loads(wl_path.read_text()).get("tickers", []) if wl_path.exists() else []
+    wl = json.loads(wl_path.read_text()) if wl_path.exists() else {}
+    watch, focus = wl.get("tickers", []), wl.get("focus", [])
     held = sorted({t["ticker"] for t in ledger["transactions"] if t.get("ticker")})
     extra = [x.strip().upper() for x in a.extra.replace(" ", ",").split(",") if x.strip()]
-    syms = list(dict.fromkeys(cfg["benchmarks"] + held + watch + extra))
-
     started = time.time()
+
+    # Discovery (news/scan runs): trending tickers and today's biggest movers, so fresh
+    # news-driven names get quotes even when they are not on the watchlist.
+    discovery, disc_syms = [], []
+    fast = {}
+    if a.mode in ("news", "scan"):
+        for scr in FAST_SCREENERS:
+            fast[scr] = screener(scr)
+        seen = set()
+        for scr, rows in fast.items():
+            rows = [r for r in rows if "symbol" in r and SYM_RE.match(r["symbol"])
+                    and (r.get("regularMarketPrice") or 0) >= 1]
+            key = (lambda r: abs(r.get("regularMarketChangePercent") or 0)) if scr == "most_actives" \
+                else (lambda r: r.get("regularMarketChangePercent") or 0)
+            for r in sorted(rows, key=key, reverse=True)[:12]:
+                if r["symbol"] not in seen:
+                    seen.add(r["symbol"])
+                    discovery.append({"symbol": r["symbol"], "source": scr, "name": r.get("shortName"),
+                                      "price": r.get("regularMarketPrice"),
+                                      "change_pct": r.get("regularMarketChangePercent"),
+                                      "volume": r.get("regularMarketVolume"),
+                                      "pre_change_pct": r.get("preMarketChangePercent"),
+                                      "post_change_pct": r.get("postMarketChangePercent")})
+        for sym in trending():
+            if SYM_RE.match(sym) and sym not in seen:
+                seen.add(sym)
+                discovery.append({"symbol": sym, "source": "trending"})
+        disc_syms = [d["symbol"] for d in discovery]
+
+    syms = list(dict.fromkeys(cfg["benchmarks"] + held + watch + extra + disc_syms))
     quotes, errors = {}, {}
-    with cf.ThreadPoolExecutor(max_workers=6) as ex:
+    with cf.ThreadPoolExecutor(max_workers=8) as ex:
         futs = {ex.submit(quote, s): s for s in syms}
         for f in cf.as_completed(futs):
             s = futs[f]
@@ -273,15 +314,16 @@ def main() -> int:
              "cash": val["cash"], "invested": val["invested_value"]}
     for b in cfg["benchmarks"]:
         if b in quotes and quotes[b].get("price"):
-            point[b] = quotes[b]["price"]
+            point[b] = pfm.mark(quotes[b])[0]
     with open(out / "equity.jsonl", "a") as fh:
         fh.write(json.dumps(point) + "\n")
 
     if a.mode == "scan":
-        scan = {"generated_at": pfm.iso(now), "screeners": {}, "stats": {}}
+        scan = {"generated_at": pfm.iso(now), "screeners": dict(fast), "stats": {}}
         for scr in SCREENERS:
-            scan["screeners"][scr] = screener(scr)
-            time.sleep(0.4)
+            if scr not in scan["screeners"]:
+                scan["screeners"][scr] = screener(scr)
+                time.sleep(0.4)
         stat_syms = list(dict.fromkeys(held + watch + extra))
         with cf.ThreadPoolExecutor(max_workers=6) as ex:
             futs = {ex.submit(stats, s): s for s in stat_syms}
@@ -290,7 +332,6 @@ def main() -> int:
                     scan["stats"][futs[f]] = f.result()
                 except Exception as e:  # noqa: BLE001
                     scan["stats"][futs[f]] = {"error": str(e)[:200]}
-        focus = json.loads(wl_path.read_text()).get("focus", []) if wl_path.exists() else []
         fsyms = list(dict.fromkeys(held + focus + extra))[:30]
         with cf.ThreadPoolExecutor(max_workers=4) as ex:
             futs = {ex.submit(fundamentals, s): s for s in fsyms}
@@ -300,8 +341,19 @@ def main() -> int:
     if a.mode in ("scan", "news"):
         ncfg_path = root / "config" / "news.json"
         ncfg = json.loads(ncfg_path.read_text()) if ncfg_path.exists() else {}
-        focus = json.loads(wl_path.read_text()).get("focus", []) if wl_path.exists() else []
-        nsyms = list(dict.fromkeys(held + extra + focus))[:24]
+        top_disc = [d["symbol"] for d in sorted(
+            (d for d in discovery if d.get("change_pct") is not None),
+            key=lambda d: abs(d["change_pct"]), reverse=True)[:8]]
+        nsyms = list(dict.fromkeys(held + extra + focus + top_disc))[:32]
+        nfile = out / "news.json"
+        prev_titles = set()
+        if nfile.exists():
+            try:
+                prev = json.loads(nfile.read_text())
+                for items in list(prev.get("tickers", {}).values()) + list(prev.get("queries", {}).values()):
+                    prev_titles.update(i.get("title") for i in items if i.get("title"))
+            except Exception:  # noqa: BLE001
+                pass
         news = {"generated_at": pfm.iso(now), "tickers": {}, "queries": {}}
         with cf.ThreadPoolExecutor(max_workers=6) as ex:
             futs = {ex.submit(ticker_news, s): s for s in nsyms}
@@ -310,10 +362,32 @@ def main() -> int:
             qfuts = {ex.submit(query_news, q): q for q in ncfg.get("queries", [])}
             for f in cf.as_completed(qfuts):
                 news["queries"][qfuts[f]] = f.result()
-        (out / "news.json").write_text(json.dumps(news, indent=1))
+        nfile.write_text(json.dumps(news, indent=1))
+
+        fresh = []
+        if prev_titles:
+            for key, items in [("$" + k, v) for k, v in news["tickers"].items()] + list(news["queries"].items()):
+                for i in items:
+                    if i.get("title") and i["title"] not in prev_titles:
+                        fresh.append({"about": key, "title": i["title"], "source": i.get("source"),
+                                      "published": i.get("published"), "link": i.get("link")})
+        movers = []
+        for sym, q in quotes.items():
+            if sym in cfg["benchmarks"]:
+                continue
+            ch, ech = q.get("change_pct"), q.get("ext_change_pct")
+            if (ch is not None and abs(ch) >= 6) or (ech is not None and abs(ech) >= 4):
+                movers.append({"symbol": sym, "name": q.get("name"), "price": q.get("price"),
+                               "change_pct": ch, "ext_price": q.get("ext_price"), "ext_change_pct": ech,
+                               "volume": q.get("volume"), "held": sym in held})
+        movers.sort(key=lambda m: max(abs(m["change_pct"] or 0), abs(m["ext_change_pct"] or 0)), reverse=True)
+        (out / "alerts.json").write_text(json.dumps({
+            "generated_at": pfm.iso(now), "session": pfm.market_session(now),
+            "new_headlines": fresh[:80], "movers": movers[:30], "discovery": discovery,
+        }, indent=1))
 
     print(f"quotes={len(quotes)} errors={len(errors)} equity={val['equity']} "
-          f"session={val['session']} mode={a.mode}")
+          f"session={val['session']} mode={a.mode} discovery={len(discovery)}")
     if errors:
         print("errors:", json.dumps(errors)[:1500])
     return 0

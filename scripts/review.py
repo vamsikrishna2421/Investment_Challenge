@@ -45,8 +45,8 @@ def main() -> int:
           f"Realized {val['realized_pnl']:+,.2f} | Orders today {val['counts']['orders_today']} "
           f"total {val['counts']['orders_total']} | DT5d {val['counts']['day_trades_5d']}")
     base = cfg.get("benchmark_base", {})
-    print("Benchmarks since Sep 28 close: " + "  ".join(
-        f"{b} {((quotes.get(b) or {}).get('price', 0) / base[b] - 1) * 100:+.2f}%"
+    print("Benchmarks since Sep 28 close (latest print): " + "  ".join(
+        f"{b} {(pfm.mark(quotes.get(b))[0] / base[b] - 1) * 100:+.2f}%"
         for b in cfg["benchmarks"] if base.get(b) and (quotes.get(b) or {}).get("price")))
 
     last_buy = {}
@@ -84,8 +84,12 @@ def main() -> int:
         if not q:
             print(f" {tk:5} no quote")
             continue
+        ext = ""
+        if q.get("ext_price"):
+            ext = (f" | ext {q['ext_price']:<9.4g} vol {q.get('ext_volume') or 0:,} "
+                   f"range {q.get('ext_low')}-{q.get('ext_high')}")
         print(f" {tk:5} {q['price']:<10.4g} {pct(q.get('change_pct'))} ext {pct(q.get('ext_change_pct'))} "
-              f"vol {q.get('volume') or 0:,}")
+              f"vol {q.get('volume') or 0:,}{ext}")
     movers = sorted(((tk, q) for tk, q in quotes.items() if q.get("change_pct") is not None),
                     key=lambda kv: kv[1]["change_pct"], reverse=True)
     print("WATCHLIST TOP: " + ", ".join(f"{tk} {q['change_pct']:+.1f}%" for tk, q in movers[:8]))

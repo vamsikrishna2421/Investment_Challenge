@@ -71,9 +71,24 @@ def quote(sym: str) -> dict:
     prev = m.get("previousClose") or m.get("chartPreviousClose")
     reg = (m.get("currentTradingPeriod") or {}).get("regular") or {}
     ext_px = ext_t = None
+    ext_vol, ext_hi, ext_lo = 0, None, None
     if last_t is not None and reg:
         if last_t < reg.get("start", 0) or last_t >= reg.get("end", 1 << 62):
             ext_px, ext_t = last_px, last_t
+            # Volume and range of the current extended session (pre or post).
+            pre = last_t < reg.get("start", 0)
+            vols = q.get("volume") or []
+            highs, lows = q.get("high") or [], q.get("low") or []
+            for i, t in enumerate(ts):
+                in_session = (t < reg.get("start", 0)) if pre else (t >= reg.get("end", 1 << 62))
+                if not in_session:
+                    continue
+                if i < len(vols) and vols[i]:
+                    ext_vol += int(vols[i])
+                if i < len(highs) and highs[i] is not None:
+                    ext_hi = highs[i] if ext_hi is None else max(ext_hi, highs[i])
+                if i < len(lows) and lows[i] is not None:
+                    ext_lo = lows[i] if ext_lo is None else min(ext_lo, lows[i])
     out = {
         "price": float(price) if price is not None else last_px,
         "time": iso_epoch(rtime),
@@ -86,6 +101,9 @@ def quote(sym: str) -> dict:
         "instrument": m.get("instrumentType"),
         "ext_price": ext_px,
         "ext_time": iso_epoch(ext_t),
+        "ext_volume": ext_vol if ext_px else None,
+        "ext_high": round(ext_hi, 4) if ext_hi else None,
+        "ext_low": round(ext_lo, 4) if ext_lo else None,
         "source": "yahoo-v8-chart",
     }
     if out["price"] and out["prev_close"]:

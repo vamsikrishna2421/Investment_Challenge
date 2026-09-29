@@ -14,6 +14,18 @@
         "TSLA",
         "BTC-USD"
       ]
+    },
+    {
+      "id": "J0002",
+      "ts": "2026-09-29T23:41:33Z",
+      "kind": "research",
+      "title": "Evening notes for Micron and Nike",
+      "body": "Micron: Citi raised its estimates ahead of Wednesday's report; MU is up 0.4% after hours and MUU 1.2%. That supports the plan to buy MUU Oct 2 calls after the open if MU holds flat or better. Nike: S3 Partners reports short positioning at record highs as the shares fall into Thursday's report, alongside 'never been more hated' coverage and Jefferies expecting a beat. A beat against record short interest can force covering, which strengthens the case for Oct 2 calls near Thursday's close. Tonight: no trades; crypto flat.",
+      "tickers": [
+        "MU",
+        "MUU",
+        "NKE"
+      ]
     }
   ]
 }

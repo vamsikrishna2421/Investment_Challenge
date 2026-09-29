@@ -1,18 +1,18 @@
 {
-  "strategy": "Holding MUU (2x Micron into Wednesday's report) and IOVA (news trade on a raised revenue guide); IONX cut Tuesday at -5.7% after IonQ lost Monday's close. ~$430 cash for Micron's report and Wednesday's best news setup. Stops -15% on 2x ETFs, -12% on stocks; sell a third at +25%.",
+  "strategy": "Holding MUU (2x Micron) into Wednesday's after-close report and IOVA (raised-guide news trade). $433 cash: the best fresh news setup Wednesday morning, and up to $250 more MUU at 3:55 PM if Micron holds up into the print. Stops -15% on 2x ETFs, -12% on stocks; sell a third at +25%.",
   "focus": [
     "MUU",
     "MU",
-    "IONX",
-    "IONQ",
     "IOVA",
     "SOXL",
+    "NVDA",
+    "NKE",
+    "TSLA",
+    "TSLL",
+    "SMMT",
     "BE",
     "CCL",
-    "SMMT",
-    "NVTS",
-    "NVDA",
-    "NKE"
+    "SDEV"
   ],
   "tickers": [
     "NVDA",
@@ -94,6 +94,7 @@
     "LMT",
     "RTX",
     "SMMT",
-    "IOVA"
+    "IOVA",
+    "SDEV"
   ]
 }

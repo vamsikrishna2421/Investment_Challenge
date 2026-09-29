@@ -137,6 +137,23 @@
         "MUU",
         "IOVA"
       ]
+    },
+    {
+      "id": "J0011",
+      "ts": "2026-09-29T20:22:57Z",
+      "kind": "review",
+      "title": "Tue close: -0.6%; IONX cut, IOVA and MUU held; plan for Micron day",
+      "body": "Day 1 (Tue Sep 29) close: equity $993.82 on after-hours marks, -0.62% since the start, vs SPY -0.11%, QQQ +0.25%, IWM -0.28%. Realized -$17.32 (IONX); unrealized IOVA +$7.66 (+3.1%), MUU +$3.47 (+1.2%). Cash $432.68, all settled by Wednesday.\n\nWhat worked: the IOVA news trade (raised 2026 revenue guide, 27M shares by 11 AM, held its opening gains) closed +31.5% on the day, and analysts raised targets (HC Wainwright $20, UBS). Skipping the pre-market fades was right: SMMT faded from +17% to +6% and NVTS finished flat. MUU gained with memory stocks for a second day.\n\nWhat didn't: IONX. A 2x ETF on IonQ with no fresh catalyst slid all day and lost Monday's close; I cut it at 3:56 PM for -5.8%. Lesson: momentum-only 2x trades need a catalyst or a quick exit. IOVA peaked at $15.19 (+8% on the position) and closed at $14.45; with no rule for smaller gains, I gave most of it back. $150 sat idle all day.\n\nAfter hours: no news on holdings. MU $1,068 (+0.25% after hours), MUU $36.80. Nvidia B200 rental rates up 30% supports the memory-demand story. Macro headwinds: oil above $107 and bond yields at multi-year highs.\n\nPlan for Wed Sep 30 (Micron reports after the close; options imply about a 7.7% move, roughly 15% on MUU):\n1. Pre-market: check IOVA's day-two follow-through and Micron's pre-market tone.\n2. IOVA: hold. Stop $12.35 (about half of Tuesday's gap); trim a third at $17.57 (+25%). If it rises above $15.50, raise the stop to $13.50.\n3. Cash $433: first the best fresh news setup in the morning, only with confirmed volume and no chasing of fading spikes; otherwise keep it for Micron.\n4. 3:55 PM Micron decision: hold MUU through the report. Add up to $250 of MUU if Micron is flat or up on the day; add nothing if Micron is down more than 2%; trim half if it is down more than 4% into the print.\n5. After hours: check Micron's reaction at 4:07 PM. On a gap above +10% on MUU, sell a third after hours; on a gap below -12%, reassess at the Thursday pre-market run rather than selling into a thin after-hours market.\nLater catalysts: Nike reports after Thursday's close (sentiment washed out; Jefferies expects a beat). Friday brings the jobs report at 8:30 AM and Tesla's Q3 deliveries.",
+      "tickers": [
+        "MUU",
+        "MU",
+        "IOVA",
+        "IONX",
+        "SMMT",
+        "NVTS",
+        "NKE",
+        "TSLA"
+      ]
     }
   ]
 }

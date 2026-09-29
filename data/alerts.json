@@ -1,566 +1,566 @@
 {
- "generated_at": "2026-09-29T01:18:47Z",
- "session": "closed",
+ "generated_at": "2026-09-29T11:18:35Z",
+ "session": "pre",
  "new_headlines": [
   {
-   "about": "$NVTS",
-   "title": "Why NVTS Stock Surged 20% After-Hours - TradingView",
-   "source": "TradingView",
-   "published": "Mon, 28 Sep 2026 21:32:12 GMT",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT05Dd3kwZVlvV0ZwRjJfUlJ4eTc3Nm1Xc0NzZlhkVEhzSGZUUmFzNmxpcnVIaUlSUVRhN3R3d2lodXM3YjV0WlJLY2NCdndKWFNLZXNCVUFnS0hmNWFhVDB3MVpSendMOHpXYkVfYWJvN1JUeVV0dEhGTjY4dFRQY1c3Vkl3RTJwOEgxdjV5TzRxdGlUZ01jS1NjTHU?oc=5"
+   "about": "$SMMT",
+   "title": "Summit Secures $2 Billion AstraZeneca Investment, Cancer Drug Trial Collaboration",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 11:06:27 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/summit-secures-2-billion-astrazeneca-110627591.html?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Summit Therapeutics Shares Rise 22% After $2 Billion AstraZeneca Investment",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 10:24:51 +0000",
+   "link": "https://investorshub.advfn.com/market-news/article/37062/summit-therapeutics-shares-rise-22-after-2-billion-astrazeneca-investment?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "AMD, Nvidia, Navitas, Summit Therapeutics, Fair Isaac, and More Stocks That Explain Today\u2019s Market",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 09:58:00 +0000",
+   "link": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/amd%2C-nvidia%2C-navitas%2C-summit.html?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "AstraZeneca invests $2 billion in Summit Therapeutics in cancer drug deal",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 06:32:00 +0000",
+   "link": "https://www.proactiveinvestors.com/companies/news/1099267/astrazeneca-invests-2-billion-in-summit-therapeutics-in-cancer-drug-deal-1099267.html?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "SMMT Stock Soars After-Hours: Did AstraZeneca Just End Summit\u2019s Cash Scare?",
+   "source": null,
+   "published": "Mon, 28 Sep 2026 23:35:56 +0000",
+   "link": "https://stocktwits.com/news-articles/markets/equity/smmt-stock-soars-after-hours-did-astra-zeneca-just-end-summit-s-cash-scare/cZMj9EcRBXi?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Summit Therapeutics Stock Surges After AstraZeneca Reveals $2 Billion Investment",
+   "source": null,
+   "published": "Mon, 28 Sep 2026 22:27:00 +0000",
+   "link": "https://finance.yahoo.com/m/0bbe8da9-06b2-351f-82d1-49a1f1187b7c/summit-therapeutics-stock.html?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "AstraZeneca Makes $2 Billion Strategic Equity Investment in Summit Therapeutics",
+   "source": null,
+   "published": "Mon, 28 Sep 2026 21:30:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/astrazeneca-makes-2-billion-strategic-213000200.html?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Is Summit Therapeutics (SMMT) Below Fair Value On New Ivonescimab Survival Data?",
+   "source": null,
+   "published": "Wed, 16 Sep 2026 08:11:11 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/summit-therapeutics-smmt-below-fair-081111676.html?.tsrc=rss"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Summit Therapeutics Inc. (SMMT) stock price, news, quote and history - Yahoo Finance Singapore",
+   "source": "Yahoo Finance Singapore",
+   "published": "Mon, 28 Sep 2026 22:09:20 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5MNGpmYWROSkhJS2hqR1JNS1k1WEQtWXh2S3otSWQ4Tjg1RHRqVkdnLW5MQm9oQld3YzJGX0EzaVE3aDUzV0lldDRrWnBETVJGZHc?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "SMMT Stock Soars After-Hours: Did AstraZeneca Just End Summit\u2019s Cash Scare? - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Tue, 29 Sep 2026 05:29:36 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPLURnWWNNcTc4OFgyRllCXzhyZ21XbmVWb1kwLXRSVkZtRU1zc0RjNUdhQkx5VWFhaUVZS0pxVUJPUG5sXzRBcjlWNVNZYlZpNmZJV0daMGFwRWZGVDFGcnNxaFNZZW5JdXVEamFoRXVjSGxQNkxCMmRlQ3J2a1UySzZQR1ZyWTN6Y3RHQ0RkLVU5UzluQnBUaHpBWGZNb2ZFckd0RlhreDZjVDljWkw2NHQtXy1LYUFJMXhZXzlEQlVsWVM4aGRFZlFtX3hEWjhzU2JPdg?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Analysts back AstraZeneca's $2B Summit Therapeutics investment as stock gains (AZN:NYSE) - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Tue, 29 Sep 2026 08:19:07 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRTdZY1JMNUlQTFNqbUhOWXFTUXZEOVVSbzA4bmdFcUd0XzNGZ0otZGh0SnlDUFFDc3RnbzRweDFhTDNneWdKTllaaGdUVm92emF2eXp0cDJ6dENYVVk5eVROVmhob01rZ2oydktUWmpqVHJxazM5UFBTamIwS094NlZ3Y2VUZDh4N0lVTm8xVUVKcmFrbW4tdTA0VEVtMjRLX1lXNlZHT3E0VGdvQUVibC1WRQ?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "AstraZeneca Makes $2 Billion Strategic Equity Investment in Summit Therapeutics - stocktitan.net",
+   "source": "stocktitan.net",
+   "published": "Mon, 28 Sep 2026 21:30:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTzh4LUpYcl9KR3h2NndMX24tWXlMcUxadjNvbTVSclFmckc4RGc3bXN3Zko2R00tNXFESGpMazY5TGhkUHQwTnZBdElTaDgzcG1id1FKTHhGOTFxZFV0ckgxMVJoTXI2ZVJLalpGZUp2bzY5WUQ4N2JqU3hJSTBWeEdsMDhZRUkwYTh6dklvVHR6RTFPNUw0dGFaQ0ZUQTgxZHlxUXJTQm9VdnZOdFg3OEhBMnlqMG95eW1pQzZn?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Summit Therapeutics Shares Rise 22% After $2 Billion AstraZeneca Investment - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Tue, 29 Sep 2026 10:24:51 GMT",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQXM4WkdrNzBBQWNUSHZ2OWNiVlFNV0ZhYXIxZ0ZKQmltUkxxZ3JrSEhjc1BFQURFbDB1aGdVWTd5OGdpaGs5dENBRWJNRjBWLURQaDV5NVFwUUp5Q1owNGhzMzFZa0IzWmhGcWZjeWJqNXFWUlVEWFE1elFBWHc0MlFTR0o4dDZWUFFHM2xxWjBfdGF4bDhHQUFsTQ?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Summit Therapeutics (SMMT) Secures $2B AstraZeneca Investment, S - GuruFocus",
+   "source": "GuruFocus",
+   "published": "Mon, 28 Sep 2026 23:13:56 GMT",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQWN3eThVeksxajJRNXdNcHpfTWRxQUF1eDZoZjFwU1FpdWoyT0EzQjVJUWpubFdCMDdTbGVPMGtyOWR1WVdtdEhFRDJtbGpONzJBdHNnQXhhZ2NMelByRUJSYlZlN3djbTM0OUE0Znp0MDRoSmRPSjZ6TWxDcFNWemxOX29ESVBXRlVjaTh5eUN3Z0lFMWJzQXNsazhOYU5rWFh6Z2NoeFFoa05tVkRGZ2dB?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "SMMT Stock Gains After Summit Reports Strong Lung Cancer Survival Results \u2014 Investors Await Q2 Earnings - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Mon, 28 Sep 2026 21:15:38 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZlpoWV9QWlNZWDhJb0p0bjRhdzRkOGpZQUppZkVXSUZQZ25NVXVnM2FyenlHR1V4Y3BuUlg2Z1lWYVNPdmVFLUVIMW1sSF9XVVBvSGh0OUJtejdENjlxUHJBc05pZmlIeWwyZGRzdEpiY2RxcWRBSVFGZHJmZnBxdlkxdlNYcW4wNG5WVE05S3g5RHV6eDJNcHJYT0VnSGZ5d3NxNV9zaTVRZV95VHVSb1Y5LWZFMS1IS29GMVFEVmtCSVRXUldtMENZSEtlTmNkWEVWeVpqR01obU1KVHZiZHlib3VXTHZNVG93azRGYy1UY2ZOVzEydw?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Why is Summit Therapeutics stock surging today? - Investing.com",
+   "source": "Investing.com",
+   "published": "Tue, 29 Sep 2026 08:50:37 GMT",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ2xldnBNbWUzV0MxVTNCSFNkV3hIWTE2TUNlRkVqQWRuRjBpRFlfaWo0MHUxbWlOVkVIbjl5SzFHRFYxTzlvemtXa0VuS3hXajhJcjJxZDlXVXlpcjlQb2ZOeEZja2M3MEpOM011bmtEdmRuTUIyWVVsTTh2OG5sVG1oWmNBSFNlM05kVTMzel9KWVJqYXZvRllhbV9UV050azFnWjJiVk9KQy1W?oc=5"
+  },
+  {
+   "about": "$KOD",
+   "title": "Why Kodiak Sciences Skyrocketed Today",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 02:58:49 +0000",
+   "link": "https://www.fool.com/investing/2026/09/28/why-kodiak-sciences-skyrocketed-today/?.tsrc=rss"
+  },
+  {
+   "about": "$KOD",
+   "title": "KOD Stock Cracks September\u2019s Top 5 Biotech Gainers On Eye Drug Win \u2014 But \u2018Pharma Bro\u2019 Shkreli Says It \u2018Still Sucks\u2019",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 02:13:00 +0000",
+   "link": "https://stocktwits.com/news-articles/markets/equity/kod-stock-september-top-5-biotech-gainers-eye-drug-shkreli-still-sucks/cZMmZ2VRBXj?.tsrc=rss"
+  },
+  {
+   "about": "$KOD",
+   "title": "KOD Stock Cracks September\u2019s Top 5 Biotech Gainers On Eye Drug Win \u2014 But \u2018Pharma Bro\u2019 Shkreli Says It \u2018Still Sucks\u2019 - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Tue, 29 Sep 2026 02:13:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcTIyMjV3YUlQeU1Hazlhb1JXM05NbG9FTzJYZGtoS2thWGp4NjdJeTFsUHprbDl2LU1SUnNScDlMdVRrWWVLczJaQXpTNnF1ZkplekdXd3Vwck91ZGIyY0ZHN2d0SUFPbk1OMEZZV3VRWUMtd2ViTVppM0tFMjFKeXlHcW1yckNMYUV6bEx5cmFVc3pvZVE?oc=5"
+  },
+  {
+   "about": "$KOD",
+   "title": "Results are due Monday from a study of two potential treatments for an age-related eye disease. - stocktitan.net",
+   "source": "stocktitan.net",
+   "published": "Tue, 29 Sep 2026 07:31:02 GMT",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM3BDamRhQmRxNlhHZmd4aVRlaDM3U1R0VGZoOGlMS2x4ZGVJVnhDeHF6NkVqSm5IR0JzNllJUVJQd2UxemRNQVJPLUVGU2RYbHFvSTg2WEZVMzVPbXFmMlgxNllFM1FIbXdsUGxab2N2dUZpT3pNaFVtUkU3dTFlZndjUWpqWVk0dGs1aXRNRnBRQmdUY05lUnkwNWRIQ2h3bFlVNGNQLWNtUXd6YW00UTlrMEgyUW16NlhCZ0R3Zw?oc=5"
+  },
+  {
+   "about": "$KOD",
+   "title": "Market Movers | Winners: KOD, CD, QNC | Losers: ITG, OCUL, CYPH - Trefis",
+   "source": "Trefis",
+   "published": "Tue, 29 Sep 2026 09:05:21 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZkdDd0RLc0dXNkFHbW1kczQ0LWRpajdsS0ZJTjV2WGxUT3pGN2lHRHRwZnBzTHNpaU8tSVN0am5xMEJjRmFBT3g5X1VRZmNraTY0ZHhfb2pPeEdmVGF1Y2JWZkd0cElNMzJpdm5DNHpJVllUSUdaVk9CUFNQYjRYcUhlSm5fN0ZqUGhCTnVaWmdFTFplS3pka2FfRjhWZnh6aUZSYXBnM0J4cS1HaFFUeTMwUQ?oc=5"
+  },
+  {
+   "about": "$KOD",
+   "title": "KOD Stock Soars 178% to Record High Following Phase 3 Trial Success - Intellectia AI",
+   "source": "Intellectia AI",
+   "published": "Tue, 29 Sep 2026 03:37:50 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYnJTQm9ra1VuRUJfYU5EYXVyS0o1WmxVdUlFc25vOTZaVUgwMHhPZndfcVFvZEdQOUJZWlA5c3ZHVmZSU2p0b05CSHhIS1M0Zy1TejVUUXB1TWVOamVfNHk4ZURCUkJPLXpnUDNVYzZCWllHbW9ES1N0RTNGbzdLUnZNT2xWVnNJb3F6VHB4N3h0LWhXNjlzVHhaWHJZM3VoM3c?oc=5"
+  },
+  {
+   "about": "$KOD",
+   "title": "Biotech Stock Kodiak Sciences (Nasdaq: KOD) Leads Nasdaq's Monday Gainers; up 177% - Investorideas.com",
+   "source": "Investorideas.com",
+   "published": "Tue, 29 Sep 2026 06:42:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUDlTTFJwM3VTUHlkeldYemlSckRiMm9BYi1SOFBxZ0VidXdjRTdqcnNHYjc0bHBWUUVwcEF2dGtoel9IQ001cGd3eHQ2dDBRSkg2UjhCUC04eTViQWRLMlZCQWtJenQ3UzhERTNmMzBYa0F0anVYNlkzVk02NUg5RHVnZWJGeVpCLU1VUkJ1NUhKbEhlam9hSXFHYjJDZVRacnJXOHhCSlFPU1ZDSFVwak80UTVqRzI3S25Gd0RHMExoaFpCc2MzT2V3UzZyaUk?oc=5"
+  },
+  {
+   "about": "$KOD",
+   "title": "Dow, S&P 500, Nasdaq Futures Fall Amid Rising Bond Yields, AI Concerns: KOD, SMMT, CLF, VKTX Stocks In Focus - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Tue, 29 Sep 2026 03:29:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPVDlSdVJIdFhIV1VGNWo1Y0xacU9telpTVlpabGxSX3hWOTJrSnd6V0hMZHJYM2xCOURvVGJHZGNxUXFHYVJaNUdhaUJVMkMzMW8xdVFZNElRNU9EZ2JpVTE4T1hBMEJFem04V2dveS1xaG9iNmtucHI1WWFZRkxZN1hLb3hCVEhTNzBXc0R4ZndYR28wNXZNY0N3c0xxLXc1QmVjS0VXQXVjZnpmTzQ3Wms5TEFmTVV5Unk1X0RKS0pVNE4zdXBKcWp2R1BMQ3lvV01jWGRyNXg2MFpHS2FBVnBDM0IybGdPV3luSTJDbVlwRlQ2MGhGMDhrYVgzdw?oc=5"
+  },
+  {
+   "about": "$IONQ",
+   "title": "Bank of America makes fresh 33% call on surging quantum stock",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 03:17:00 +0000",
+   "link": "https://www.thestreet.com/investing/stocks/ionq-ionq-stock-bank-of-america-33-call-on-quantum-stock-september-2026?.tsrc=rss"
+  },
+  {
+   "about": "$IONQ",
+   "title": "IonQ (IONQ): BofA Sees Upside as Quantum Roadmap Gains Commercial Traction",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 02:06:43 +0000",
+   "link": "https://finance.yahoo.com/technology/ai/articles/ionq-ionq-bofa-sees-upside-020643123.html?.tsrc=rss"
+  },
+  {
+   "about": "$IONQ",
+   "title": "IonQ (IONQ) Signs Korean Hardware Deal. Can Broader Products Bring Repeat Sales?",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 01:54:26 +0000",
+   "link": "https://finance.yahoo.com/technology/ai/articles/ionq-ionq-signs-korean-hardware-015426436.html?.tsrc=rss"
+  },
+  {
+   "about": "$IONQ",
+   "title": "Cerebras Systems vs. IonQ: Which Technology Stock Is a Better Buy in 2026?",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 01:19:52 +0000",
+   "link": "https://www.fool.com/coverage/better-buy/2026/09/28/cerebras-systems-vs-ionq-which-technology-stock-is-a-better-buy-in-2026/?.tsrc=rss"
+  },
+  {
+   "about": "$IONQ",
+   "title": "IonQ (IONQ) Lands First On Premise Superion 256 Deployment At Major US University",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 01:07:35 +0000",
+   "link": "https://finance.yahoo.com/technology/ai/articles/ionq-ionq-lands-first-premise-010735680.html?.tsrc=rss"
+  },
+  {
+   "about": "$IONQ",
+   "title": "What Is Driving Attention Around IonQ (IONQ)? - simplywall.st",
+   "source": "simplywall.st",
+   "published": "Tue, 29 Sep 2026 06:46:10 GMT",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFVHeENtOUFwUVozbjFnUm1jV0tGajNVRkNHT2ZDRWZubzFkV1RDVFFuaFFwZk5fMmw0RVNPbFFUeWl1c1ZwMVBoYmt2Rk9MTDlIVXUxc1NnaW9Jb2xOczRoZEFvRk9SU1Izd0VIQWFoRDZremx5YWdtYy1ZMkhTZmhPUXVYRWpFYm5oOENnUm1XSXBYaTFITmZCdjZtajJKMHpyNk9DQkxCNEV0SlHSAbMBQVVfeXFMTzg2ZldfU1Z0Tjc3dklBbUZKNDFyQVdSOFRaM2xUZ2txckZGeXB6QlJPYjZ0MFUyaTA1bTNJV1hJMUkwYldTVW1YdGJYXzVRWkhSWHlDUUxLZXVXRFBuYlpsckxzWm5fbUgwbllSVWVEYmFfclQxd2dwYzlUYlF0LXF1aEs0d2RGcWN1bWtiNm5hZEFJVGd0Z29KQk1ueDM3Y0VvMU1yR3FpNWdXQ21FYUdmZTg?oc=5"
+  },
+  {
+   "about": "$IONQ",
+   "title": "IonQ Stock Wins Analyst Backing Ahead of 2027 Superion Launch - Benzinga",
+   "source": "Benzinga",
+   "published": "Mon, 28 Sep 2026 17:30:09 GMT",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdUVBUXo4QTVFOGk0OG9GTG0zaHU0SElCcUxSZUZjYTVGNjZMcDFLTjZWUGRpMTliRk5Uai1nWjNsaHljUzBpdVRRcnZjWjM3R2tuNWdHVHBYMUk3SmxJN3FNdXZ4UTVIU0Qxc29INVFTTXNJYm9qSlNmNkpfZVJnYVpoTHRhYnF2S0tkUGRoRjVIYUw5YUY0eHJ5TDBpS2lhQThSXzIxVmRQOEE4RXdqcE5yU3Y?oc=5"
+  },
+  {
+   "about": "$MUU",
+   "title": "MU Stock Is \u2018Absolutely in a Bubble,\u2019 But Bulls Can Still Make Money, Says Analyst: \u2018Best Cycle Anyone\u2019 Has Ever Seen - Benzinga",
+   "source": "Benzinga",
+   "published": "Tue, 29 Sep 2026 10:39:38 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNTzBWVWZHR1VHVWM2VWhoWTJyb3FvNlZlUElSclprNEtpdDA5VzR3cnNoTjdyYXRyR1c3dl8zc2RzSVNOSXJMLTlieFpGQ3BFTlh5WTJOdFhVMmtncWJMbURPQ3FScXJDdF93VkJQYzJoTkNNOVVLSDRhM0drTWpXNl83UHFNRDBDYlk5d1FOVkRKb0lpbVNJU0RhWUJjSXRkMnZIcDVVSHdMNnRxeEdMc2Y2VUR4dzhYcE5VbURuX2MyeVFIXy1oUHhqUDA4NWE3WlozbC1pUlRVMXd6NDAzQ2hhS0E0MmRJMVZPMTRxRnVJSmxYQmQ2ODJjbGVzdw?oc=5"
+  },
+  {
+   "about": "$MUU",
+   "title": "MU Stock Is Up 854% Over The Past Year \u2014 Barclays Sees It Soaring Another 28% After Hitting $1 Trillion Market Cap - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Mon, 28 Sep 2026 23:11:18 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOd1JVQ1RSTmFQODllUFhUNWJVeVI1OGVDZ1oxSlpfQkhVdDNCbjgtbWYwYUFvekhudWZPMGp3SFY3ZUh3Qk02SVUzWTV1ZW1qaU83S2pKX01HSzNJOHRJeHprZjZraEZJY2tTbFl4OWtiem9sc092NnpLbTM0MTFISTRQQldlWmpyUkRUN29vejZhVUJyRGZ6dGJjdDFFdHc2Q3JlcXhGdjYyYU1udVdjdUZMaEFwSjdmUGxOQjhSM0xIZUswZ3lNQzZTVlRoMVR4YVpsd3RR?oc=5"
+  },
+  {
+   "about": "$MUU",
+   "title": "Michael Burry Swaps MU, NBIS, NVDA, PLTR Shorts For Puts \u2014 Says AI Bubble May Burst \u2018Sooner Than Later\u2019 - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Mon, 28 Sep 2026 20:42:43 GMT",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVXAtaFAwaVVjRzFIck1kbHk2Vk8wM0pnZmNQa1IzNVhZTTJzbzlzTHRXNzlna3lHSTQwM0lTbTdtd1NFOHZtTFFVZzUwTUpHd3FVOE1uMHVVVmVpbW9VbkpFRFZpZXN3cnA4YjdqdzZBMFlQbVdmY3YtYlF2OFYwOFViSEZjMUFHWmZzbjY3ZkQ1UnhlVzdzbQ?oc=5"
+  },
+  {
+   "about": "$MUU",
+   "title": "MU, SNDK, WDC Stocks Rise Sharply For Second Day: Retail Feels Memory Pullback Is Over - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Tue, 29 Sep 2026 04:31:39 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNFpTcW1mMFE3N2FXbE85VllxY0prTjd4Qmdwc3ZpODR1R0QxeUs4ckJRWlNRUGtrcnNjZVJvQXRuQ0VLa2xxVDc5SnRwNUUwYldpT0kxcF9LTUhYVS10a0ctSHZQbzVGNzdkV2t5ejkwT2txRTZjWERXejQtU1gzQl9oY0ZYYXV2YndJUHZnVDFCQWJnV1VTUlNzM3d2ME92Umd4OEtVclNTTmxIdlRRc3RrOEloUDlHMDN4Qm9XYk5nRlBwTmtrUGxETnIyZmo4b2hCeWFJZ3hCOHQxbWZj?oc=5"
   },
   {
    "about": "$NVTS",
-   "title": "Navitas Semiconductor Corp (NVTS) Stock Down 3.9% but Still Over - gurufocus.com",
-   "source": "gurufocus.com",
+   "title": "AMD, Nvidia, Navitas, Summit Therapeutics, Fair Isaac, and More Stocks That Explain Today\u2019s Market",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 09:58:00 +0000",
+   "link": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/amd%2C-nvidia%2C-navitas%2C-summit.html?.tsrc=rss"
+  },
+  {
+   "about": "$NVTS",
+   "title": "Navitas Semiconductor Corporation (NVTS) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Mon, 28 Sep 2026 21:03:41 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9neWpvNGdaR0FmbE9iR2YyckJkbGhOQ1F0Yk5GVjRxWTJCeVM2dUpNQUpCRjdpY3pPa2REbTlqenMtdldFaTQ2WHFYSmJzNW41c3c?oc=5"
+  },
+  {
+   "about": "$NVTS",
+   "title": "The U.S. Army chose Navitas to develop 10,000-volt devices for military systems. - stocktitan.net",
+   "source": "stocktitan.net",
+   "published": "Mon, 28 Sep 2026 20:15:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSEt2cFBxZVVaQnlLTU1TbjBZbC1BNzY0OFo0aTVDMDBVOS1VdWFEdXFtdFJabldDVzdtcWVXSmpxSlcxcEdIVVRXeFFUX1hfZFNLWDMtX2VIdFNkSVp2bG9kcXYxNEp2eFhLM213blNfRWlPbEpMeWEzb1NSekVMRzFyY25SRHBpUlZhX3pBa0tjVnI3YXB2LXBMVDN5NnhENjlFS09sSmNJRTNTSWVXSTBLMlNTRzdqSm1NSTRmRQ?oc=5"
+  },
+  {
+   "about": "$NVTS",
+   "title": "Why NVTS Stock Surged 20% After-Hours - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Mon, 28 Sep 2026 21:32:12 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZXZaQ3Z6Q3FEcEVvdWRfc1kxUDY1NXJNQlAzMEdKMVkxdjVhQlZpZEo5OHVsc0J6M2dBd1VSQ2t3T3dOdVRZUzlzdUlmNUhfUGlfU2phS1JCUlVMVDVQakRsOE5ReTNCcUU0LTNmMWRDb2pXZVZvcXNPQkwyY2JmWHVNN1hPSE1PbjA0LUI1bG1KSjQ?oc=5"
+  },
+  {
+   "about": "$NVTS",
+   "title": "Biggest stock movers Tuesday: SMMT, NVTS, and more - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Tue, 29 Sep 2026 09:01:49 GMT",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMzBJck1lSzJ5UXVYUGxaMVFTZTk4aU5WNzU0TWxjRWZ6aTdXUjNPN1pKNkI3RUYxVWkzaVY2aFBMLU1OT3hzVFpBVk5hTUYySVVwNm83LXA1SWZKTF96VDM0ZW9OWDBMNUNXbks0ZEtONGdQdDhDUGJ0R3dWNDlZZW00ckhQRTYtVW8xQ3Jn?oc=5"
+  },
+  {
+   "about": "$NVTS",
+   "title": "Navitas Semiconductor Corp (NVTS) Stock Down 3.9% but Still Over - GuruFocus",
+   "source": "GuruFocus",
    "published": "Tue, 29 Sep 2026 00:01:54 GMT",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNFRFbVZoTHBFbldFTXhpOHBYVmFHR2c4dFRUQ2V2T2xOeWlNRXFMdEJuSzdLaGdJM21hMjVmMi1vbEpELXZsR2hGTm9YN1NZUHhEbEhNWW9uSGZxQ2F1eUhnR1MtamlJSTkyeFBscHBHeEh5Q2FwOU9pWDhnVmZVSGwxRmpqdDVORnNDdjUzNkpydWJIOVBlbkE0T3lQVzRZeFh6bDNIazNDWTZ2c1RlNTlnaXJlREpKNzRPQQ?oc=5"
   },
   {
-   "about": "$MUU",
-   "title": "ETF League Tables: Direxion Inflows Total $237M",
-   "source": null,
-   "published": "Thu, 02 Jul 2026 21:00:04 +0000",
-   "link": "http://www.etf.com/sections/etf-league-tables/etf-league-tables-direxion-inflows-total-237m?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss"
+   "about": "$SOXL",
+   "title": "SOXL May 2027 104.000 call (SOXL270521C00104000) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 07:05:07 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lMFp0TkZhZElwQlFiQlNJZjZVdDMwUThDcHZKbUl2d19WSXZJamF0RVZoWDZNT1RicTRTd2JySTA0QkJhVUkxNWtyTHhmVzR2c1UzemJ6Tll1bG9YbGp5VUJWcHZqQQ?oc=5"
   },
   {
-   "about": "$MUU",
-   "title": "Wall Street Upbeat in 1H 2026: Leveraged ETFs That Are Up At Least 500%",
-   "source": null,
-   "published": "Wed, 01 Jul 2026 15:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-upbeat-1h-2026-150000536.html?.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "The Zacks Analyst Blog Highlights Micron, MUU, MULL, SHOC,CHPX and FTXL",
-   "source": null,
-   "published": "Fri, 26 Jun 2026 09:28:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-micron-092800403.html?.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "Micron Soars Post Q3 Earnings on AI Memory Crunch: ETFs to Watch",
-   "source": null,
-   "published": "Thu, 25 Jun 2026 16:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/micron-soars-post-q3-earnings-160000996.html?.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "5 Best Leveraged ETFs of May 2026",
-   "source": null,
-   "published": "Mon, 01 Jun 2026 16:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-leveraged-etfs-may-160000028.html?.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "MUU Becomes the Fourth Single-Stock ETF to Cross $5 Billion",
-   "source": null,
-   "published": "Thu, 28 May 2026 21:58:08 +0000",
-   "link": "http://www.etf.com/sections/features/muu-becomes-fourth-single-stock-etf-cross-5-billion?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "Daily ETF Flows: TLT, MUU Picks Up Assets",
-   "source": null,
-   "published": "Tue, 19 May 2026 21:00:04 +0000",
-   "link": "http://www.etf.com/sections/daily-etf-flows/daily-etf-flows-tlt-muu-picks-assets?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "4 Leveraged ETF Winners of Last Week",
-   "source": null,
-   "published": "Tue, 12 May 2026 16:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/4-leveraged-etf-winners-last-160000903.html?.tsrc=rss"
-  },
-  {
-   "about": "$MUU",
-   "title": "Citi Raises Estimates for Micron Ahead of Earnings. How to Play MU Stock Now. - Barchart.com",
-   "source": "Barchart.com",
-   "published": "Mon, 28 Sep 2026 11:00:03 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNHVHYjlpQllCd0RHWTliQ2Zqc3lqTWhxVFA2VG4zcmNZWno2bmhKSVJ5Z3dsa1dsVjk3cmNrX2ZrQlczNjJ4RkpTRlJCSjVoMXgwMFpLNi1McUtTNjU3SS1BREdCZ205Rm1xREtxZEZOcXBDakpwdm9mNXgtYVBsSkROM0lKWWlyblg5UzJQLUh6YmRTaEgwXzdlUmtIamIyX05NV3ZWWW1ubzlZdWE0Q2U3SWJaMC12Z3pv?oc=5"
-  },
-  {
-   "about": "$MUU",
-   "title": "4 Winning Single-Stock Leveraged ETF Areas of First Nine Months of 2026 - TradingView",
-   "source": "TradingView",
-   "published": "Mon, 28 Sep 2026 11:00:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdkxGUzdUNmdUbnhxU3RXb1hJdkt1UmVrVUJNdzM5bC1VWUtRYy1SQk5raGszZlM4emJWRHhNUHozc2QzblRBRmhNMEpzeDFJS0ZVb21ZRDQ5VllyNFRRcHE4TXJlOFMxcFFFc0NDVUVrdlZ5YWljcHFxa1NJMU5uT3RpcnR6aDlGTjVpU2tBbkVNVW1XVWlEMFozSzhfSUtQQnNBM2RaS21NMlpYTlZEUGpscWZpaHpUN0tJQVlLbG15RVpXY3c?oc=5"
-  },
-  {
-   "about": "$MUU",
-   "title": "$Direxion Daily MU Bull 2X Shares (MUU.US)$ hello nice to meet you!! just added a position hope this will go well - Moomoo",
+   "about": "$SOXL",
+   "title": "$Direxion Daily Semiconductor Bull 3X Shares (SOXL.US)$ I'm back in, catching the falling knife - Moomoo",
    "source": "Moomoo",
-   "published": "Mon, 28 Sep 2026 14:56:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNekZ0aXhpcWh3ZzREOVRyU01OUWlsZjZGOVRhUHVhSERyZ1Exb2htbVdGUk5vSmNpTVVuUVp2RF9IYjFCblhQdzFtZHRYcW1XcXl2RXhsVGNqdk04ckotbDN3SnpKQVJxYkZMdG5JVGx5NjEwb19seko1WkNjZTVDM1lpQzA5bGtwakJDc0RKQmc4TVNqRUxEWkI3TlFsUWstWXBkaFFMSQ?oc=5"
+   "published": "Mon, 28 Sep 2026 09:38:55 GMT",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaUNXSXZoY2VwT3FJYkdnWkRyY0xxaVVSXzdRWDc2LVNobDNtLWpvN0FteHdRWEtnajZHSGF5Tk52RVBaM0dKdnQ5S1pvTVJzV3B0cHE0Yk9NX3dzQXRLY0t6Q21qR2R0MUxTYzFXYWh1a2hEWnVqN1l1LVRxQ1VOWG9GRGt5aFRUZ0xlZ0pWelg0eUxNRjZuVkdYSGFkYU5ScjZ2eFhOMzNmRjlkV1E?oc=5"
   },
   {
-   "about": "$MUU",
-   "title": "JPMorgan sets Micron stock price target - Finbold",
-   "source": "Finbold",
-   "published": "Mon, 28 Sep 2026 12:23:09 GMT",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93d3RrT3BfdlFnc25Fekw0QXMyWDQwQzhkQjFkMkVEX015ZnR0NHU5ZUZmbHN2QnZDWUlOREQxV3BCVURCV2o3WEtJaUZ3X1lyWElLdnhKRUdkb3hfeDA5WEs1VXY2NDRfWDRZWA?oc=5"
+   "about": "$SOXL",
+   "title": "SOXL Sep 2026 173.000 call (SOXL260930C00173000) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 00:52:02 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qR191aVBIc1ljaVE5aWd3b3FtMjhoVmZFZXoxcXNfTEpNQ3F4ZVNSVFpheTBLal90bFlPNmtzTjFfLXZ4TTRCN2tZWkVFaXBsMUpLay0zODR5VVoxLWVpazc5R0pCZw?oc=5"
   },
   {
-   "about": "$IONQ",
-   "title": "Cerebras Systems vs. IonQ: Which Technology Stock Is a Better Buy in 2026? - The Motley Fool",
-   "source": "The Motley Fool",
-   "published": "Tue, 29 Sep 2026 01:05:17 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQzRhNUpxbHR2cVplYk9ucEgxWGxDT2ZWN3ZTb3RjREtUSEdJMW9jdHRobnhFSlYySE5GbW9xenBIVHFnclBTbFZ6ZFBRUVpGbm9DM1o1ZXpFTlhQVWxtWEczNU02MEd0c2RFNWhldVVuN09xMkVEWjhoTEc5b3pWSzlfbUpsUkp5Y1N0SXBrRlpzRzdGa280bVNuNlJ4dVc5a28wSEVxem1lclpKcktiSVBDUmR5OENPUE5QU2hRWjNaZw?oc=5"
+   "about": "$SOXL",
+   "title": "Bybit Expands TradFi Perp Options with Tesla, QQQ, SOXL and More, Launches Trading Challenge with Up to 70,000 USDT in Prizes - yellow.com",
+   "source": "yellow.com",
+   "published": "Tue, 29 Sep 2026 09:34:53 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOaHlNWE42SDZCMTA4X0txSVkyTkVjUXo4Q0hqTHotRkRqYjU4MElKd0ZVeHhLRFhXLUFHczNrVk9QcERHdzNNell1ZGhoNjE1NVEtMmR3blYxc1gySXdMVXd3R3NyZ2t3VVNWWVlGbklqX1FBWTQzaXdQNzV2a3h2TWFrSVhmVEpoQ1kwZWhUTGRoeUxkWUlFaWhTcThsWlp6UW1Rcllfb240bFRfODRyd25KSG1uU1hLenJxUFBJWFZ0M05kUTRTLUpNN3M4TFA4Mi03YWRMTmN2NzFHaDlOaGFtMDJhX29kRDE2Xw?oc=5"
   },
   {
-   "about": "$IONX",
-   "title": "Best-Performing Leveraged ETFs of Last Week",
+   "about": "$SOXL",
+   "title": "SOXL Sep 2026 174.000 call (SOXL260930C00174000) Interactive Stock Chart - Yahoo Finance - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 01:25:26 GMT",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jQWQ2TzM1UlBuaXVDdGNPSHJZQ2d2ZnUxVnpVN19RZ09PS0pEM2p1WWFMRm8zN3phSk9wMl9PNHNGS0FzZHl6RHpmYnhvZ2hZbVVkWldZTEY2QmtndjNIWWZORmt6bm1xUUd2Rzdn?oc=5"
+  },
+  {
+   "about": "$SOXL",
+   "title": "SOXL Sep 2026 143.000 call (SOXL260930C00143000) Stock Historical Prices & Data - Yahoo Finance - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 01:21:25 GMT",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wM1BXZTRzaEQ2OWxrUTYtT1FUcXZVYklKdThvamxsVUFCeDdLNy1tTy1MVDBBVVpjMVU2WHg1VWVDS19zbUtVRlU0RFptSG1ZZWZEZEpxNTVpOHllaTlwMXBCc1dnRnpDYVhZbTRSWjg?oc=5"
+  },
+  {
+   "about": "$SOXL",
+   "title": "SOXL Oct 2026 141.500 put (SOXL261030P00141500) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Mon, 28 Sep 2026 01:10:42 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GRElITkNrN0diaWcwbEVLQkEtS1hEWDlROXplcmx2RzYtQVNidklSSWk1VV9tUVVqc3hJc0hHTC1nd2FTNkFlcXNhVWVidzlhMkxmbjZSRV9ZdzJieTRMNE5pLS1wdw?oc=5"
+  },
+  {
+   "about": "$SOXL",
+   "title": "SOXL May 2027 113.000 call (SOXL270521C00113000) Interactive Stock Chart - Yahoo Finance - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
+   "published": "Mon, 28 Sep 2026 05:25:56 GMT",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BZnpJaFFRcFp6ZW1BYlgtbjVXQ0tsMm5fWUJaWmZJVktmNnR0bTlwQkItSEI3Znd6azl1V1NiRl94Y1RaRVdLckR5bFNxWWY1YUJnSVJlUEYyb1RLbnZ0ODlhZHZ0SDVMc3J3QzFn?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics Reports Positive Preclinical Findings for SIL204, Demonstrating Key Mechanism for Endogenous Systemic Uptake in KRAS-Driven Cancers",
    "source": null,
-   "published": "Tue, 21 Apr 2026 12:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/best-performing-leveraged-etfs-last-120000570.html?.tsrc=rss"
+   "published": "Mon, 28 Sep 2026 12:30:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/silexion-therapeutics-reports-positive-preclinical-123000285.html?.tsrc=rss"
   },
   {
-   "about": "$IONX",
-   "title": "Defiance ETFs Surpass $8 Billion in Assets Under Management",
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics to Participate in September 2026 Industry and Investor Conferences",
    "source": null,
-   "published": "Mon, 26 Jan 2026 15:10:00 +0000",
-   "link": "https://finance.yahoo.com/news/defiance-etfs-surpass-8-billion-151000996.html?.tsrc=rss"
+   "published": "Wed, 09 Sep 2026 13:00:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/silexion-therapeutics-participate-september-2026-130000645.html?.tsrc=rss"
   },
   {
-   "about": "$IONX",
-   "title": "$Defiance Daily Target 2X Long IONQ ETF (IONX.US)$ - Moomoo",
-   "source": "Moomoo",
-   "published": "Mon, 28 Sep 2026 05:17:28 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYkh3aHZIOUo3ZGJYMFo1X3RJVm9jdVV4S0phdEhPZWVjVXIxam9nb2VEdmpVWVJJMXNLcVJmR3FrQ0pPQXU3cTc2Q3owSHdYMWxFMXNSS2xjV3pmOXFIZXpwYThmY28zVzhSa3RTVXl1elhNb1RJQmRENEFfUlhLb3ZUTVhaenZUdFZjVVRPMDl5Zi1yRi0xRUl3UUVzTGgzbFE?oc=5"
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics Reports Second Quarter 2026 Financial Results and Provides Business Update",
+   "source": null,
+   "published": "Fri, 14 Aug 2026 12:45:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/silexion-therapeutics-reports-second-quarter-124500844.html?.tsrc=rss"
   },
   {
-   "about": "$IONX",
-   "title": "Trading Systems Reacting to (IONX) Volatility - Stock Traders Daily",
-   "source": "Stock Traders Daily",
-   "published": "Sun, 27 Sep 2026 21:42:02 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcFVXcVN3X3BrVFB1ZkhfNXM4MmlaNHQ0aEhJbExSNTRtSHI3VVUxY2pOcElySWlsSHUxamE4aF9FQ2E3NWx4eFdiUzdDTlhLOTRWRGdMUkZNa19nd3R1T2pIWTJBUmluRmNJRkNtdnJNN0dRN0NhRjRMcTFKbDgzaXIyRU1oeXBCNUhTY2x4VUxqdzZZNVBzbjhZSG5SRkJEbUpobElDN19PUkdIMnpnTTBnejh4bVlDMjBtMVI1RQ?oc=5"
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics Reports New Positive Preclinical Findings Demonstrating Multi-Mechanism Immune Sensitization by SIL204 in KRAS-Driven Cancers",
+   "source": null,
+   "published": "Tue, 04 Aug 2026 13:15:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/silexion-therapeutics-reports-positive-preclinical-131500001.html?.tsrc=rss"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics Successfully Initiates Phase 2/3 Clinical Trial of SIL204 in Locally Advanced Pancreatic Cancer at Tel Aviv Sourasky Medical Center",
+   "source": null,
+   "published": "Wed, 29 Jul 2026 11:00:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/silexion-therapeutics-successfully-initiates-phase-110000805.html?.tsrc=rss"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics to Attend BIO International Convention 2026",
+   "source": null,
+   "published": "Tue, 16 Jun 2026 20:30:00 +0000",
+   "link": "https://finance.yahoo.com/healthcare/articles/silexion-therapeutics-attend-bio-international-203000135.html?.tsrc=rss"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics Announces 1-for-10 Reverse Share Split",
+   "source": null,
+   "published": "Tue, 26 May 2026 12:30:00 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/silexion-therapeutics-announces-1-10-123000401.html?.tsrc=rss"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics Reports First Quarter 2026 Financial Results and Provides Business Update",
+   "source": null,
+   "published": "Mon, 18 May 2026 12:30:00 +0000",
+   "link": "https://finance.yahoo.com/sectors/healthcare/articles/silexion-therapeutics-reports-first-quarter-123000253.html?.tsrc=rss"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Therapeutics (SLXN) Stock Soars 61% After Hours: Here's What's Going On - Benzinga",
+   "source": "Benzinga",
+   "published": "Tue, 29 Sep 2026 06:29:05 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPaEZpNDAwak80Nzc3RC1Od0ZxSWc3OHg5RmlvR29oRUhvTnhEbHpxc3JRMUUzM2Utck5Vd0ZVRVZBQmlXUkp1YmtsSDU3U0I2RGZqVEpkZ3Nja0MwcDVESHRsU2FJdkEtTlgyYl8zOWVHWHV6UUNaTjEzTVRyQnBfWmNfaTNyNmJtUlU4d0kzcUNsN1RJcmdoalZudEM2RTVVY3ZGT2ZnMFNZVTNMR0pERlNfRDRtUDZBWFNMRkY3cmNENE1qNFlSMGZmVUZpbk1Jem5DQWZCeTgxSWFrcUVaTXlBZHhmY3pwYXNhOA?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Monday's after hours session: top gainers and losers - ChartMill",
+   "source": "ChartMill",
+   "published": "Mon, 28 Sep 2026 21:00:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQM2lNUk9wWnNBZ1pJRlduWE55UVpia1pjQUFNUU1LanE3Y0ZVMEw3R3F3U1dSZU5KNVlLUlJqMGNsdEEyZzZrNkVWTGxoc0w3bjN0Rk1kXzcwX2RPSkpJU1JiOHRwR1pKMnlmaFVsbnktOG10S2xIZUMtX082Q1Y0bW1wSGhubFVTY1p1VVk3LXFsZUMzTnFOS2pVdDdFcWtoVk5z?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Form 8K Silexion Therapeutics Corp For: 28 September By Investing.com - Investing.com Nigeria",
+   "source": "Investing.com Nigeria",
+   "published": "Mon, 28 Sep 2026 14:41:44 GMT",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPelZUdHhZQWlTMjN1cGllRC1USjh2TVFFUG1yQXZEYVRBUThOZzRtb2drWXJIVGkxOThBMThPdjlFT0k5ZW9fdkphUTJiNmRxOW13RWZSR1dEN2J2YUNpaUp0ZHUxSWxnUzZ3TVhqOU1MMkthZnlPTWlZV3Yza3NXc25wVkZSenpUTXlSbXVHVzI4N29TQlhsTEIyS2p1VGRZejZVaHdnT3VaNnE3b215QQ?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "12 Health Care Stocks Moving In Monday's After-Market Session - Benzinga",
+   "source": "Benzinga",
+   "published": "Mon, 28 Sep 2026 21:06:02 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbHNJc3g0VnRXM1ZrejRPYU94OWlBTjJia1ZhT0prcnFyd19VSkx2UU5pRU42NlJxVm11X3BadzdKQmo1dUVhbVMxdHVQTDdfRGR5enFCZVk5NGg2dUpWeTJqVGRvNko2NjZOMkk2Q2lvZ3hKYmpuY0J5cUtGWk9jcUVqOUN0YmNjOTlzMml1NjFYVmtRMUNnTmJsVHFYbkJrWlNQLTJuVl8zLXFQTjFtcEhlZVNfUHVGLWpj?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Blood Pressure Drug Recall Hits Nearly 14,000 Medicines in US Under FDA\u2019s \u2018Adverse Health Consequences\u2019 Risk - Benzinga",
+   "source": "Benzinga",
+   "published": "Tue, 29 Sep 2026 08:13:55 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPZmZXYjBhMDEtTUctQkVFVmVxZUJnUFBvSDZaQVRmM1Jsbi1FaXV5UndQMkdfYzFmUXNrMEZTUVczWDBvM3ZsS182OFZEdjRmaWI2NjNwOENtckpLOF9IZ01uRFgyanlMczBlR042RjRwR28xVUx3Um1sVnFqQ2Qyd0c0V2Z6YjRib3FoMWxzYW1VdmVMaWNzRzY4Y3NnR0h2WWJ5dG9FUi1CSEZudm1FN01BcTBWV3lqZTdralZ3WmpUSFU5dGk1SGVmcnkwWFJYZF9vTnd3TjV3ajFOR3h0dTBrX1RTMzhE?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion reports preclinical data on SIL204 delivery mechanism By Investing.com - Investing.com India",
+   "source": "Investing.com India",
+   "published": "Mon, 28 Sep 2026 13:21:45 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYXlvZmJwT3otQmZFZWhzQkotX3B4bXZrTkpGSkVmMHhNSkIwWWdSa25wQmg5TkdmTXU2aDZNNDUtZHZKRjVZSHptbkxzX19mVEoxWFlpMW9qLS1MZjdFYWxsamZOLUN0RTQzVEdoOHBLbFJBdzkxOVVXbnQzblZhTlB6VFdSQ3gxaExCWGIycnlBSkhjWWxxbk81bFJ1WTVtbmMwWXc2LWVIWnd2Nl9RMmY0M1JIcDl4N181ZnhBd2o?oc=5"
+  },
+  {
+   "about": "$SLXN",
+   "title": "Silexion Highlights Positive Translational Data for RNAi Oncology - TipRanks",
+   "source": "TipRanks",
+   "published": "Mon, 28 Sep 2026 13:36:24 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZ09EekstWk1MYlI2STZVNE1reF9ib0pHNmJnc1J5ZE93RmZIcTluQWIyTnZOSXN1OGJGblhsWkpxRG9EN0pBM0hMZkw3SVV3VGlJZ0g5UmZLbGNDZU93cWxDNHpPN1V2MmZxT0pSUnNtd2IxcEN1dkZQaEd6SldTQ0VNbktXZm9GSTJYX0t3bk1UaGZNb3Bxc1o5cnNvX1VHbUZDdFBhWk5HQzRoUjYxM1BHcTdMQzgx?oc=5"
   },
   {
    "about": "$MSTU",
-   "title": "MSTX vs. MSTU: Which 2x MicroStrategy ETF Survives the Volatility?",
-   "source": null,
-   "published": "Mon, 15 Jun 2026 17:19:29 +0000",
-   "link": "https://247wallst.com/investing/2026/06/15/mstx-vs-mstu-which-2x-microstrategy-etf-survives-the-volatility/?.tsrc=rss"
-  },
-  {
-   "about": "$MSTU",
-   "title": "Riches to Rags: Buying This Crypto ETF Lost Investors 98% of Their Money",
-   "source": null,
-   "published": "Thu, 11 Jun 2026 18:10:12 +0000",
-   "link": "https://247wallst.com/investing/2026/06/11/riches-to-rags-buying-this-crypto-etf-lost-investors-98-of-their-money/?.tsrc=rss"
-  },
-  {
-   "about": "$MSTU",
-   "title": "MSTU Down 95% in a Year, How a 2x Daily Fund Lost Nearly Everything While Its Underlying Fell 67%",
-   "source": null,
-   "published": "Sun, 07 Jun 2026 17:00:23 +0000",
-   "link": "https://247wallst.com/investing/2026/06/07/mstu-down-95-in-a-year-how-a-2x-daily-fund-lost-nearly-everything-while-its-underlying-fell-67/?.tsrc=rss"
-  },
-  {
-   "about": "$MSTU",
-   "title": "'I was made for bitcoin': Strategy CEO on his background",
-   "source": null,
-   "published": "Tue, 02 Dec 2025 20:15:00 +0000",
-   "link": "https://finance.yahoo.com/video/made-bitcoin-strategy-ceo-background-201500410.html?.tsrc=rss"
-  },
-  {
-   "about": "$MSTU",
-   "title": "Avoiding Lag: Real-Time Signals in (MSTU) Movement - Stock Traders Daily",
-   "source": "Stock Traders Daily",
-   "published": "Mon, 28 Sep 2026 01:38:02 GMT",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRmZCYzFSRmVzNHF5V3NyQllyNXBSYjV2TE5JRDlZai1YcFN5eWRyYW00Q1JoT1BXVXY0bktoWUF6ZWlvenpnTllPdGZReFhaY2tYWEw4bXpJT09DU2FLaGRuUTVOSHk0SHl2SlJaZWFRM3FwbkdxaWtoSEZpWmNtN09UVjZJYTlxTzJnWU5vTnBaM0RsNm9vMy1zRTdqNDJUYXlYakpUekRmc2RjaGJ3OWFnZm4yNTU3eEtscVhrY0l4TE1HRk80?oc=5"
-  },
-  {
-   "about": "$MSTU",
-   "title": "MSTU Oct 2026 1.500 put(CONTRAC (MSTU2261002P00001500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
+   "title": "MSTU Oct 2026 1.500 put(CONTRAC (MSTU2261002P00001500) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+   "source": "ca.finance.yahoo.com",
    "published": "Sun, 27 Sep 2026 17:49:05 GMT",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wYVIybGVXSVhMQU03N1hNMGdGcVByU1VpQjA4S2NyNVktejNsZTl0UnNnb1lhTEt2UmZ5WjdUOXFPbUFQOTFpbHhxQ21EWmRlME56UTh3RUFHT0FNNjFEYXJNckJtZ00?oc=5"
   },
   {
-   "about": "$SOXL",
-   "title": "$Direxion Daily Semiconductor Bull 3x Shares ETF (SOXL.US)$ I'll keep pushing forward like this \ud83e\udd1d\ud83e\udd8d - Moomoo",
-   "source": "Moomoo",
-   "published": "Mon, 28 Sep 2026 13:48:38 GMT",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZXd0Q0xUdlViNVZEd251b3FhbTdIVVdRQWhDTUtweGVWa2JuMnIxTUJZNUhWSHlCaURfeVlRYjdJTUMxUFBLQmZOYW9ZQmdCNmk1T19GeVh0NlQxTFVERHhyUUtpblRCWHRtTU42WmIwWWRUMDJqOHpkczJmQkE2MnpmQnpJMUJQdElWcXctbzZqdkdTcVRGa3c1TzBTa0g4RF81eERNYXZmMDFUV3MtZw?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "New Exclusive Perp Options LIVE: TSLA, QQQ, SOXL, MU, SKHY, and SNDK - Bybit",
-   "source": "Bybit",
-   "published": "Sun, 27 Sep 2026 07:00:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYnZ6NnU0T0R1MmNmWm9NQ2MzYkxDalI5eWt5NERlUnRCVnBaWXVKVDRVTVh5YXIwenJuNTJkMjhsTE1VeHRQMHJWT1UzZmdmZmlYYl9Qa1I0N2kyQmREaEdrbjFIUy0yd3VaWnRxc0VDVl9ULTM2Tk83WTJxYTF2VmRUZXJOcm85U3NZQTJNTEw0SjJYNjdEaUY1R2xreFhIdzZRSHhGWUhaMjU0NURzdVVOcnRoRUFaQ2FzZmt1Y2I?oc=5"
+   "about": "$AMDL",
+   "title": "AMD just spent $8.2 billion to enlist the 'Godmother of AI' - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Tue, 29 Sep 2026 08:16:23 GMT",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMXlWUW5ycmtzTVhGNmRrRXBCTG9pbUtxSW9BS1RYcHVjaVNUeGo4Z3Fvc0hOV1dIVXJpbVNFSXVaTEQwU2NmV09LcXlCc21RdklCbV95UVBrRklhZVg1UWd5NVY2MExCT2JnV1dMV2hlc0xNMlhDMXNBcThsUzd6aFZINWZtaFM1bW5fczkzMjRtOW1uWmpyR1ZId0JjS2lKeGo5RXVIblpodUtOanFqX3ZpaDZHdw?oc=5"
   },
   {
    "about": "$AMDL",
-   "title": "Daily ETF Flows: $481M Flows Into AMDL",
-   "source": null,
-   "published": "Wed, 10 Jun 2026 21:00:04 +0000",
-   "link": "http://www.etf.com/sections/daily-etf-flows/daily-etf-flows-481m-flows-amdl?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss"
+   "title": "Stifel reiterates AMD stock rating on World Labs deal strategy - Investing.com",
+   "source": "Investing.com",
+   "published": "Tue, 29 Sep 2026 10:23:07 GMT",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRUo4cVBmQjRMcHhrVk8tYXVZd095MlFXLTNaUWFGWldnRElMN1Y3dDV0b0h4UWRabFRUXzl6V3VvaDJONndCTy1OekNkT1J3TzJ2U3oyWm81UW1jUW55dndDVktDT0RBaUREamR1dDk3cjR1VVY3dmUzZkc3aGpPTndWWnJHZkZDLWd6LThKVjVuVTl3RUs5WFFHMGs1UURlaW14UGsxenJhSTZ4QWJYZHBFcFRsVVJ6VWtIbFEwdw?oc=5"
   },
   {
    "about": "$AMDL",
-   "title": "Zacks Investment Ideas feature highlights: Advanced Micro, Oracle, NVIDIA, AMDL and Meta",
-   "source": null,
-   "published": "Thu, 06 Nov 2025 08:46:00 +0000",
-   "link": "https://finance.yahoo.com/news/zacks-investment-ideas-feature-highlights-084600164.html?.tsrc=rss"
+   "title": "\u2018Godmother Of AI\u2019 Joining AMD In $8.2 Billion Deal For World Labs - forbes.com",
+   "source": "forbes.com",
+   "published": "Mon, 28 Sep 2026 21:05:36 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZTRvUTQzcFF6Q2RkM1M2cU5DRWVQYnFBX2d2LUxzTWJwcDhWbzA0dF81Y1FCdFpxa3NEUkZDR1lVUjNEMFAzYkoyLTVGclpCS0s4TGItZDhzOUQ1bVExR0pnWHVUaHoySDhMT3hqTzZSbFRxdjhQUWF4c0diOTB6ZkxzRl9DNHJGWndkS3VPZ2ZuMEpnSkRvRHVHUF9wU2phQWZmeF84eVlQQkJOU1N4Tm5uU2Nxb3N1R2lr?oc=5"
   },
   {
    "about": "$AMDL",
-   "title": "AMD Gets Some Respect",
-   "source": null,
-   "published": "Tue, 04 Nov 2025 21:14:00 +0000",
-   "link": "https://finance.yahoo.com/news/amd-gets-respect-211400729.html?.tsrc=rss"
+   "title": "AMD, Nvidia, Navitas, Summit Therapeutics, Fair Isaac, and More Stocks That Explain Today\u2019s Market - Barron's",
+   "source": "Barron's",
+   "published": "Tue, 29 Sep 2026 09:58:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE44VVMtOG9CUjVYUkY0cFJhRk53RS00dFhTZ2Fvc1p4enctWGxHWXVqSTMzdmp2M1BPblljZUR0NkxvSDUxaS1sRmVNaUk5V1E1NkhlSzZwUXNlS1NwODVkVFN2NXU?oc=5"
   },
   {
    "about": "$AMDL",
-   "title": "AMD to buy Fei-Fei Li's World Labs in $8.2 billion bet on 'physical AI' - reuters.com",
-   "source": "reuters.com",
-   "published": "Mon, 28 Sep 2026 23:18:36 GMT",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUEpLOGExLXd6b0dKeXJadmdubW9zdWZzTDB6eVhLb0RSN3RSQTYyenBJdTVRdmR6Vm5jRnp4VHVQQ1NEbGFQb1J0V08xcThIRUs1aG5NQ0piLXhEQTRhcXZQNEZkMUVuaHVyLTRNVjhjbDEtZmxuTGpuR2d1ZDU2b1pGdkxqS1o2TUNDcUMyaFUzRVdmUUpPQndkdEZMZw?oc=5"
+   "title": "AMD acquires startup cofounded by \u2018godmother of AI\u2019 Fei-Fei Li for $8.2 billion - fortune.com",
+   "source": "fortune.com",
+   "published": "Mon, 28 Sep 2026 21:56:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbTJZazg1STZjVGNheUZjOW1SczBSSXJCOXpzbldyNWFaWVlYZmFETkExZWZzdnRrNk42eVN5VjVxZzFBY0s3Um5rV0RxSHhpam5NMzc4bXVMZ2ZYOXVjSy1zMWtnTzlJcWFXOUI1V2UwNDhXNXY2Y1VJYXhxYzFmUTZ2QktsaTdtVUc5ekZYUQ?oc=5"
   },
   {
    "about": "$AMDL",
-   "title": "AMD Stock Hits Record High, Briefly Joins $1 Trillion Club Amid Chip Sector Rally - Stocktwits",
+   "title": "MU, WDC, SKHY, AMD \u2014 VanEck\u2019s Nicholas Frasse Downplays Volatility In Semiconductor Stocks, Says Chip Trade Is Still Very Strong - Stocktwits",
    "source": "Stocktwits",
-   "published": "Mon, 28 Sep 2026 21:04:36 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdExqeDBaWEpfLU1xekQ0aVZYUDlFaFIzMGNaY1YyVU9uSmQ1XzFVemYyNFFVRGtsVk9uemJSWlIzZjZlRUlxMjA5MWNCN0tCa3JuUEpPcGFIUlU1LUMwLW1VdmwzdTNjSG9PUGtMazMzNENZVGg2dmZSSTliczBWd0xrX3cwY3dKREZCdlpzLUwxSVRzRnJReVFtbjZ1S0JqUlBTbU9nV2ZFVUVIVTlpdmYwUWJHVXRlWllMcTZZdFpKOER6RE9kY3FKYW9sdkVyd0RDaTEyMVBaeDQ?oc=5"
+   "published": "Tue, 29 Sep 2026 03:33:36 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYmRyNW9FODMwaFRucHBPRDZiZ19WNkZzTzI1QWZFY2VPTXJsd1ZydDhGM2tSVmdsRElocTk5akpkYl85QmViV28wQXJrSmFtNS1SVG9uMUpEaVBUR2h4UmhMMHdxalczOGFjeTRUaUs0aGhwQURzVGVrT19uTHc1bFZVU3RVcnp6Sk1ncV9HWE85TU5tQVNTa2w1X1VCVkVPbUNuOWZRSHBURUp2MWtiRHZPbElmVGtZd2R1YWpYY1JKQUFhU1o4SDRUanF6TllXMlRZMmJOZEQ?oc=5"
   },
   {
    "about": "$AMDL",
-   "title": "Prediction: AMD Will Join the $3 Trillion Club in 2030. Here\u2019s the Math. - The Motley Fool",
-   "source": "The Motley Fool",
-   "published": "Mon, 28 Sep 2026 15:44:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNV3Rqc19VR1M1b2hMM1ZIYUI5dXl5NFRxckhrUWlHZThVMGNMZ2lfOWRWWHhRcG8xRldhV3VuMzNPV1FHYVl6V3I2UzgwU2N5WGhWbXk1RHBVWWlld0RQLVJzWlpJdk1kUW0tSk90M1o2N3g3cS1NWDJxVk9zcDBjTzNnOU1CRUowX3ZOcWlVRzJPSkxOS01tQWJROThtOWFROHNiZkk1NlJkSHYyZzZhNERzOFk?oc=5"
+   "title": "AMD has agreed to buy an AI lab that creates interactive 3D worlds and robot-learning tools. - stocktitan.net",
+   "source": "stocktitan.net",
+   "published": "Mon, 28 Sep 2026 20:06:04 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOVAyYjhlQUNibTRsS0JTRmhldXQzYXZtT1lpci03WXdVcnR6eExZMTMzSXNTaDlaME45bEtnU0F0MVEta2d3QWowVWlENzdpZzFUZThDTlFqTnNxWkxQNEVGVkY3T1dpNWhQRkdTYzQ5YUwwSnZVekg3M1hNLTlPVmdDNjlfRnBNRDdpSmNDZlIxcUVzNTJMOTA2Y3NRX3lHZ2ZKRVBkeGpTYmc?oc=5"
   },
   {
-   "about": "$AMDL",
-   "title": "SCHMID Stock Rises as Nvidia, AMD, Intel Eye Glass Substrate Technology - Benzinga",
-   "source": "Benzinga",
-   "published": "Mon, 28 Sep 2026 13:48:15 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMVdwN0lJOU9fQVJvcEJMczNYSGVlbmxzdmlKZWFwdGJLOHg0SU9XUnNtRWdKTVF1Q3ppNEdHeU85N1BPalpRb2lwMXo2bE9UOXhUeXNiRnRMYl9ldklDWkdmU3V6RUM5Y2NrdFlBWXhabHhONjZDZ193NkxVNGZQVFlIX3RuYmNCUXdMMDRwSjFYTG9LYVI5dXNNV1FVckYtVWV4T2dha2xvd05JaXRNRTh6U1VpRjBraGVvbGZYQW1MR2FVSENlX2lR?oc=5"
-  },
-  {
-   "about": "$TSLA",
-   "title": "Tesla Pushes Roadster Event To Oct. 15 After Storm Forecast, Says It \u2018Can Only Be Held Outdoors\u2019 - TradingView",
-   "source": "TradingView",
-   "published": "Mon, 28 Sep 2026 20:20:25 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPV2F0Z0dmaWhPVWJmWDZFUXhhYUlRMDg5VmsyOHFNQ3RvUWFiU055WDh0YUFjLTVHQWFheEs1UW9YczJJUElfQ01qWGw5dngtS2N0VHFtT0pNdG51NnBrZ3pFWGJ2Uk1TMkt5VHJoeWJHRzhUekxnZ0lPNHpNZUREYzdET3ZKWWxPUkpmWHpZMU53VFN1WlM0cFFrcDYxcWFvYzcxUnRCbEF2TkcxeWg0RnZTdjh2SDRBaUZteG94SmJUYjR3NW92eFh1Ny1jZERtbkpqaFlBc1ZoOEhxeXNNbzRLemZLYXN4?oc=5"
-  },
-  {
-   "about": "$NKE",
-   "title": "Piper Sandler cuts Nike stock price target on worsening trends - Investing.com",
-   "source": "Investing.com",
-   "published": "Mon, 28 Sep 2026 14:13:42 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb3d0VlJWYUJJMmtvSmFmVVk1ZlotNTJSWTFaWTdLVU01ODRadExWVVhXV2NRRnZLbzdPWjFQeXJWZlVRV0JoXzhDQWY2c0gxZllZWGYwX2FTcHBVZ2VmemxNNm1BUXk3VTEzTEhfUExvS3YtQnE5dTN2OWtoM3huVTVOcDN3UmJNaDhLMVI0UDdDdHZJLXNhQ3ZNUW9jUXU0SFBDTGw4UU1YWUd3SDQxcjFlbDFIRlBGSWM1c0NMZw?oc=5"
-  },
-  {
-   "about": "$NVDA",
-   "title": "Nvidia sets biggest-ever buyback plan as AI chip competition weighs on stock performance - reuters.com",
-   "source": "reuters.com",
-   "published": "Mon, 28 Sep 2026 19:53:54 GMT",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTzg4UzFUbWw0cThEbUEwYVdsdF9WVVpuSDZ0RkJjLWd1UE5XdVJFWjRKazNRU2lyVkxiX2xIZFplVnkxTTl4QUhnV1NaM21SdFNxTFBMYXVJMlJVU2lobmtWYkpqa2wyWlRPLWxuZTMtTzhRUVpHZ1V6VkRLS0psbzlQTWQwcGNpVXNuSGRYSjlCQU9sU3lXcXVteXk2ZmZf?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical to be Acquired by Webster Equity Partners",
+   "about": "$MU",
+   "title": "Micron may be sitting on a 'substantial' surprise",
    "source": null,
-   "published": "Mon, 28 Sep 2026 12:45:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/lifecore-biomedical-acquired-webster-equity-124500829.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 10:39:53 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/article/micron-may-be-sitting-on-a-substantial-surprise-103953207.html?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical to Participate at CPHI Global Conference",
+   "about": "$MU",
+   "title": "Micron Earned More in 3 Months Than Tesla Did in 3 Years. Prediction: It Will Be Worth More Than Tesla Before 2028.",
    "source": null,
-   "published": "Thu, 03 Sep 2026 20:05:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/lifecore-biomedical-participate-cphi-global-200500616.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 08:43:01 +0000",
+   "link": "https://www.fool.com/investing/2026/09/29/micron-earned-more-in-3-months-than-tesla-did-in-3-years-prediction-it-will-be-worth-more-than-tesla-before-2028/?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical Signs Agreement for Commercial Site Transfer Supporting Global Pharmaceutical Company",
+   "about": "$MU",
+   "title": "Sept. 30 Could Be the Start of a New Paradigm for Micron",
    "source": null,
-   "published": "Wed, 02 Sep 2026 11:05:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/lifecore-biomedical-signs-agreement-commercial-110500356.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 07:23:00 +0000",
+   "link": "https://www.fool.com/investing/2026/09/29/sept-30-could-be-the-start-of-a-new-paradigm-for-m/?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Core Thesis Behind Lifecore Biomedical (LFCR): Monetizing Excess Capacity",
+   "about": "$MU",
+   "title": "The Zacks Analyst Blog Highlights Seagate, Western Digital, Micron and Sandisk",
    "source": null,
-   "published": "Mon, 17 Aug 2026 15:29:02 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/core-thesis-lifecore-biomedical-lfcr-152902193.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 06:14:00 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-seagate-061400412.html?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical (LFCR) Q2 2026 Earnings Call Transcript",
+   "about": "$MU",
+   "title": "Michael Burry Said AI Bursts in 2028. One Weekend of Research Changed That",
    "source": null,
-   "published": "Wed, 12 Aug 2026 15:31:30 +0000",
-   "link": "https://www.fool.com/earnings/call-transcripts/2026/08/12/lifecore-biomedical-lfcr-q2-2026-earnings-call-transcript/?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 05:19:58 +0000",
+   "link": "https://beincrypto.com/michael-burry-ai-bubble-puts-micron/?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical Inc (LFCR) (Q2 2026) Earnings Call Highlights: Strategic Wins and Capacity ...",
+   "about": "$MU",
+   "title": "What To Expect From Micron\u2019s (MU) Q3 Earnings",
    "source": null,
-   "published": "Wed, 05 Aug 2026 19:04:15 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/lifecore-biomedical-inc-lfcr-q2-190415444.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 03:24:52 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/expect-micron-mu-q3-earnings-032452093.html?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical to Report Financial Results for the Second Quarter Ended June 30, 2026, on August 5, 2026",
+   "about": "$MU",
+   "title": "Baird's strong agentic AI call on Micron is spot on",
    "source": null,
-   "published": "Wed, 29 Jul 2026 20:05:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/lifecore-biomedical-report-financial-results-200500162.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 02:03:00 +0000",
+   "link": "https://www.thestreet.com/investing/stocks/why-baird-raised-micron-price-target?.tsrc=rss"
   },
   {
-   "about": "$LFCR",
-   "title": "Lifecore\u00a0Biomedical Signs\u00a0Three New Customer Agreements",
+   "about": "$MU",
+   "title": "MiTAC Computing Fuels the Agentic AI Factory at Data Centre World Asia 2026",
    "source": null,
-   "published": "Tue, 28 Jul 2026 11:05:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/lifecore-biomedical-signs-three-customer-110500563.html?.tsrc=rss"
-  },
-  {
-   "about": "$LFCR",
-   "title": "LFCR Stock Alert: Halper Sadeh LLC is Investigating Whether Lifecore Biomedical, Inc. is Obtaining a Fair Price for its Shareholders - Business Wire",
-   "source": "Business Wire",
-   "published": "Mon, 28 Sep 2026 15:39:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOVVRldEZsNXJRVXNadFVNYW9IaGRFLTVXelAzMXpGNjhCZmlBTFllVExhbEhqUWd2c0ZmWE1PLWJtdUdBWGk5RHh2WVE4WVBFY0xJZWNTTllELUh2bWZ3eWhZVW5jRjdVVWNZeXktQWN3WjYtMzlmaFo1VUtsMGVQdjdibGRDUkFKOEliZkViMDlQOVBFUXZadHVvRHJpNXdvTGw0U1ZLUndPa1ItSlpIMlNDdzNWQzdKcE52eFp3N3dnT2JxbmVtcmZCb1FkazR3Y3JfS0hSWm9xa1lUN1dRU2RQb1FLdHd1a2hPWDYxX1ZHZjNWM0FTbGFkNTRiM1hhOERCY1VIQm1wTnFMNGlmYVRxT0VGUQ?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "A $6.28-a-share merger gets a voting pledge from Legion Partners at Lifecore Biomedical (LFCR). - Stock Titan",
-   "source": "Stock Titan",
-   "published": "Mon, 28 Sep 2026 21:42:38 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVUtTZW1xOFhGWW95QktITUxRR2xmdy1nOGlCRU5Ca2ZCUVRpbnY3UGFNTDdoamtWdHpLNHpDUXNteFROaUgyUVVXNWphdlM0V1N1MVR1S3ZRMUwyZFZiODBfcmctYXZ4SDN2NXJzTVJCRVo3RmRPSEItV0xwRTk1T0xLTmN2WU9tNlVDZXV4TUFGSHFfMDFKYmJOZnMyU2IzU1BrSFJ4TC1sQm9UMTVsUG5uczVjQldCRzNLd09TYlR2LUw2R2lyb09tMA?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "Top stock movements in today's session. - ChartMill",
-   "source": "ChartMill",
-   "published": "Mon, 28 Sep 2026 19:00:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSkNtaWlCX1g5OV8ybW02LWllTkFQdXpFZ3FwRURJdnB3TS0zbmhkSWMwejYteWhRNERKc2FUUE1CazZMZjRUdEpJeVdfbDgzZFdJeV9QMjBSdi15OEhKYmVWdm8yRzdESmVURWdVam5UTzFKZVg3WUtjNE42aGtXRHh1Q1RvejRuVEtGY21pRnJwdw?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "LFCR SHAREHOLDER ALERT: ADEMI LLP INVESTIGATES WHETHER BUYOUT FAIRLY VALUES LIFECORE BIOMEDICAL, INC. - Morningstar",
-   "source": "Morningstar",
-   "published": "Mon, 28 Sep 2026 16:25:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZy1leWhkalJqcFN4Z2xCMzlhekNRZnc1b2lVM0hoYUpBVXVGLWhBTjRUYllJeEo4U2pBcWpXYWxFTkJnSDFHQ2dhWUNWVUVRSW4ta09oRWZZWG83cnVFLXREQWF3cDJEV2RtUVliQm12R28yRUQ4Z05UT0U1TjJoSHNhSlF5UWxZWmRobHdCTktldzM5ZGE5Y1hEMS1LR3RsYkxDM3NONHZTMzNtMDFRZGNrNGNqaTFZaGhES1Z0a05QLXQtNEh2QVJ2M2lwOWh3dFc4NzhLOVZjOHp4WDcyQlBCNlZLMWx2dXQ4dFZfOXE?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical to be Acquired by Webster Equity Partners - GlobeNewswire",
-   "source": "GlobeNewswire",
-   "published": "Mon, 28 Sep 2026 12:45:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORlNMbXBhbzFWSHViZWlJZm9EQ29lbjRiOFkzZzNIdjRPQ3BDcnBRZ3U2NFZLUmluU09TNEtLUXNiTG95Y215MjRfM3JkZVdpTXdVU2VIcFFLVzNiZ2ZLWXJXcFM1VTNfQXMwQUp3V1JOSldwb3A5aG8wYUQtVFAwZlRKYVZBemlJazZLcF9UR2xueXljM00yU0hKTlhyNlc4dEFaTU9aMHZOV1JqZWVFQXlITlZaZWRjMG5CRTBGckxLLVlGQlN0RUZMVVR0N2lnZjBF?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "Let's take a look at the stocks that are in motion in today's session. - ChartMill",
-   "source": "ChartMill",
-   "published": "Mon, 28 Sep 2026 16:30:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRmtoMGQ4TlJmS2lzSjRSSFQ4b2ZHMGoxVUJ4Z05saFlWRkpWb2Z6MG8tcG50MlFwakY1NHRWRU13M2pRYXFlUmVGaDBfamZNTXJOeVVwVEhZWE92RVdOTVZ4V25QTExHTmZMbFdhanZGY3FuU2YzQTdFa3FpZGd5bG5takptaXZPa3VMdE43Q3ZfMzV5N19Dd2pSSHhIU19EX2ZVUmFMZ1dVTThObmYyMkR3WVBVNlR4Nm5V?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "A 49.5% premium is built into Lifecore Biomedical\u2019s (LFCR) proposed sale. The cash price is only part of the deal. - Stock Titan",
-   "source": "Stock Titan",
-   "published": "Mon, 28 Sep 2026 12:54:26 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbW00UGNtdjhERkVNY0YxQmZQUXdyZ1Z4cUhsc2ZrN2hKUEJzMG1fUjhkbUZ6cmxQcUlTa1lCbGdtQTVzRzhrM0dvaWpUZTVlSlpMNGZ1TUxCcW0wOGJFenliUlFQUlRoY0hlTjNsQ2xUOGJHSWhMdG1taVlWOEp1TmVxN25vVFVfN0M0eXBqZDRlQnBZZTkzQjZ2NHRFejFwRmQ2b0VKRFBIaTFSZ01YRTZSeHEzZw?oc=5"
-  },
-  {
-   "about": "$LFCR",
-   "title": "Lifecore Biomedical to Be Taken Private by Webster Affiliates in $6.28-Per-Share Cash Deal Plus CVR - TradingView",
-   "source": "TradingView",
-   "published": "Mon, 28 Sep 2026 13:04:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNOTlQNHFzZGI1RmJQV1JqbTNheTVadlVCS3JJdU5RSVI4R2NqeV82X1dHRW5UUGZBdDNnUTlYNHo3cDBPNENxZ3RoaEJCSjFSUFBMT2dRZElIYjVCY2NDNGVRalR2aEJXYmFELVo4OW1Ibkx3ek9UMnFMQ1I2Z0hCRkFRUTBCdDUtN2QxWDV0cUY5TVJSTkdKLW1lUkxwalViaEp6Mk5Ddm9RcVdTSVFxbWlXOXdHOTEzbHdtemRmaFRXQ29Kdkl0N3VvV1VlV1hlVlJyUXNELTFiR1JMRHF0Y2hMc0ZGZUZHclBfYWVza1pTUQ?oc=5"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango stock surges over 20% following Buy initiation at Jones Trading",
-   "source": null,
-   "published": "Mon, 28 Sep 2026 16:03:28 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/cango-stock-surges-over-20-160328006.html?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango (CANG) Q2 2026 Earnings Call Transcript",
-   "source": null,
-   "published": "Mon, 07 Sep 2026 22:28:17 +0000",
-   "link": "https://www.fool.com/earnings/call-transcripts/2026/09/07/cango-cang-q2-2026-earnings-call-transcript/?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango Inc (CANG) (Q2 2026) Earnings Call Highlights: Strategic Shift to AI and Cost Cuts Amid ...",
-   "source": null,
-   "published": "Tue, 01 Sep 2026 09:00:26 +0000",
-   "link": "https://finance.yahoo.com/markets/crypto/articles/cango-inc-cang-q2-2026-090026227.html?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango sets July 20 effective date for 10-for-1 share consolidation amid NYSE price deficiency",
-   "source": null,
-   "published": "Fri, 10 Jul 2026 14:00:12 +0000",
-   "link": "https://blockspace.media/insight/cango-announces-share-consolidation-nyse-compliance-2026/?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango Sets July 20 Date for 1-for-10 Reverse Stock Split",
-   "source": null,
-   "published": "Fri, 10 Jul 2026 10:59:25 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/cango-sets-july-20-date-105925593.html?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango Inc. Announces Results of Extraordinary General Meeting",
-   "source": null,
-   "published": "Wed, 24 Jun 2026 10:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/cango-inc-announces-results-extraordinary-100000319.html?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango Inc (CANG) Q1 2026 Earnings Call Highlights: Navigating Challenges with Strategic ...",
-   "source": null,
-   "published": "Mon, 01 Jun 2026 09:00:17 +0000",
-   "link": "https://finance.yahoo.com/markets/crypto/articles/cango-inc-cang-q1-2026-090017735.html?.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango Q1 Earnings Call Highlights",
-   "source": null,
-   "published": "Mon, 01 Jun 2026 02:03:19 +0000",
-   "link": "https://www.marketbeat.com/instant-alerts/cango-q1-earnings-call-highlights-2026-05-31/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss"
-  },
-  {
-   "about": "$CANG",
-   "title": "Cango stock surges over 20% following Buy initiation at Jones Trading - Investing.com",
-   "source": "Investing.com",
-   "published": "Mon, 28 Sep 2026 15:34:35 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZktGcDlXOFVEQVVGQWhSQU8teFc3Rl9UUlJfYXQ3M2RyZC15NkN1QmxMRUdhemE2a0RGVWxpd20xanJLZllaMzJDU2owN1pyUVh3Mk9Hdmg4XzhWR2VzaVkzYU9KVlpUZVg1cFBWa2xfLUxSeFRWLV9GX2dvWGF0RXhtY0RRb0hGbVJyRGtOUEMzejVZYnIxNTNJNURINnB2X2RJY21tUDVpSnMwUnBqd1VzZldCSDNzbmxDanRfNFRrZVE?oc=5"
-  },
-  {
-   "about": "$CANG",
-   "title": "12 Information Technology Stocks Moving In Monday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Mon, 28 Sep 2026 17:06:03 GMT",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTUNRVGVsZTVKYXhha1prQlFhSVZRdWhOS2x0V1FqNlpTSU1uZS1ZWDZKZ242eWRESlB3WTlRYnRqM01zYnhYV3ZleXg4MHNiTFBWR0ZWSE1mcnhBMU1mR1daQlB6cE5kZ0FJaGlNeVlhS3N0QllvTnJyVnRkbHdJVk04amQ3YUVnMWdUODg3YW9renY1X1RqRkFrOXlhWUpSOFhPaVJUcTN2UWZYaUxwTW51Y1NIVzVRMTRKSV80UzJlUUE4?oc=5"
-  },
-  {
-   "about": "$CANG",
-   "title": "Jones Trading initiates Cango stock with buy on AI pivot - Investing.com",
-   "source": "Investing.com",
-   "published": "Mon, 28 Sep 2026 09:16:28 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbHVCcmNieW55MVljYjdPYVVZeTZjQkQxa3J3eS1KQ3BsWFQ5OFFEd0t1STNQNS1xWjNaNURNWGVHNVRVTjJRemVacEVKQVQySFQtNENaVndueHFfTEtPU2QxTTFaUDh6T3FnbG9zREhQWGRHWklySXFDZlE1V2VtS29YbnhvZHRtTndHQTVEdzJRdEVaRlZZSGEybmFmUHc2b0MzdElFRU1TdGN5N3lEcFRRNmdMa2c?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx (FLX) Q2 2026 Earnings Call Transcript",
-   "source": null,
-   "published": "Fri, 21 Aug 2026 00:43:23 +0000",
-   "link": "https://www.fool.com/earnings/call-transcripts/2026/08/20/bingex-flx-q2-2026-earnings-call-transcript/?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx Ltd (FLX) (Q2 2026) Earnings Call Highlights: Revenue Dips Amid Fierce Competition, but ...",
-   "source": null,
-   "published": "Thu, 20 Aug 2026 21:01:40 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bingex-ltd-flx-q2-2026-210140116.html?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx Limited Announces Second Quarter 2026 Financial Results",
-   "source": null,
-   "published": "Thu, 20 Aug 2026 09:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bingex-limited-announces-second-quarter-090000559.html?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx Limited to Report Second Quarter 2026 Results on August 20, 2026",
-   "source": null,
-   "published": "Tue, 11 Aug 2026 09:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bingex-limited-report-second-quarter-090000863.html?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx (FLX) Q4 2025 Earnings Transcript",
-   "source": null,
-   "published": "Tue, 02 Jun 2026 17:40:10 +0000",
-   "link": "https://www.fool.com/earnings/call-transcripts/2026/06/02/bingex-flx-q4-2025-earnings-transcript/?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx (FLX) Q1 2026 Earnings Transcript",
-   "source": null,
-   "published": "Thu, 21 May 2026 17:49:23 +0000",
-   "link": "https://www.fool.com/earnings/call-transcripts/2026/05/21/bingex-flx-q1-2026-earnings-transcript/?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx Ltd (FLX) Q1 2026 Earnings Call Highlights: Navigating Market Challenges with Innovation ...",
-   "source": null,
-   "published": "Thu, 21 May 2026 19:00:41 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bingex-ltd-flx-q1-2026-190041220.html?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "BingEx Limited Announces First Quarter 2026 Financial Results",
-   "source": null,
-   "published": "Thu, 21 May 2026 09:00:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/bingex-limited-announces-first-quarter-090000698.html?.tsrc=rss"
-  },
-  {
-   "about": "$FLX",
-   "title": "Flex Ltd. (FLEX) stock price, news, quote and history - Yahoo Finance Singapore",
-   "source": "Yahoo Finance Singapore",
-   "published": "Mon, 28 Sep 2026 13:50:22 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE42al92SGxlTEl0WWd1MUVOZlNMVW94UXJlaS01dHMySl9PT1V4bEpjRlE0QTZtclgzN1puWU11aWk4dnB1MW83ekV0NEtIam9uT2c?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "12 Industrials Stocks Moving In Monday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Mon, 28 Sep 2026 17:06:03 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNVN5ZElSSS1qZDNiZEVaQmFybWhBeHlFc3F2SlRodi05UlYtQS1hZWtMeDYzQld4UHdqM3FTN0VVaEVYNGdvd1pYcUxDSlNDanhxWEtIMU1WejRzaE9kVDFQRkpuNUNqd1U0dUNYZlcwbkg0TFZTUncyaGxGS0RqbkVocU1rRmRRLTQyZnlSb0Ntb3I3QS0yOEpheV9fZHlMVDVlLTZOYmNuaERrOEU3emtNbXVmZw?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Holdings Launches Securities Purchase Plan at $0.038 Per Share - Kalkine",
-   "source": "Kalkine",
-   "published": "Sun, 27 Sep 2026 23:38:07 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVmdxTnpXWkp4bDQ3ZXVRUUlEOWlzdnBKSlNDLTVwV0JqLVcxeDZXdkxjdFBNbElDejNoSU5WVmZ0STR0VFBMeWcxeFVxeDFZN1pGLWRrb0dfa0RyNnYyLVN0bkFacnRsSzA2bDIwSmZvVEYxVDYzaUlObXVzMExjVkZPVm85YVc3MWxnMWJwM3JDUkxMZWRIeW1SYWZaVW9jMnZ1WWJjTTJOdktWeHFiVFhMUUs?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Holdings Announces $0.038 Per Share Securities Purchase Plan to Raise Capital - Kalkine Media",
-   "source": "Kalkine Media",
-   "published": "Sun, 27 Sep 2026 23:38:07 GMT",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWEk0ZHdEVFptUy1oaXkyRWl4MHIyOXpVWFRIVzBOeUhhTWpuMTdldXZFamRYUTB4MXJtMXIyaEswWktBX0duRjBhNkg4SEFSZ0tPc09DUXh4Q0ZNanEwbG1iQzllNlExLV83bTd5aWhJNmk3Z1FOZm4tNEg4UmlscG9kdWk5UHFueG5fVTFEd3p3Z1ZTajlBQnhTcjJIWmJ2ZjFKT0NIZ21RRVV3cTZQdTYyWHVUdzNsak03V3ZuNE4tdEN4ZFZOV2ptNGRfTEE?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Holdings Proposes Issue of 77.98 Million Ordinary Shares at $0.038 Each - Kalkine",
-   "source": "Kalkine",
-   "published": "Sun, 27 Sep 2026 23:38:07 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdGd3bnNDQTgwbzRHTHNGeV8zblVZSHpJSVZ5S1NnR3JFT0R2cjRyTm50QnBORndEYS10YjNkaTM4cml1Ti16ZDdFVl96dVZuQ2xBRk41VXR1WG1qMUpsbnVUUU1MVTkxZU5YRS1BSzk1elpiQmE1OTNuZ2xibm9OVEdPT1dvRGMyYjFPQmFydkU5TlBEdDhtbUdfQjFkZDdxb0t3NjBXU3p0LWFrX1cyQks4eWxOQXJHa1dMRFZnbw?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Unveils Securities Purchase Plan to Issue Up to 26.3 Million Shares - TipRanks",
-   "source": "TipRanks",
-   "published": "Mon, 28 Sep 2026 00:00:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOblV1SjFBZklYQmFJM0xXWUgzbGYyMWllOHk2NlFCRGxRSExzWXl6Q2RIQlZWZktIQTdDdi15NkxXWmFCMUJSakRtSExLSTNEempMNHQ2WVBRWjh6UGVMaWlqSi05QkJLd1F5ZTE0ZGhVY19HUFRreHJMOVI0VXhCa25LSEhpZ0h1QWFRcmZEQThSZzAwaVdYNWxqbzVNRXFGcmpIYm1zRzh1WVlXUC05NWpfZFNvcDRDTVk5bUFMaXJlSGk3LWtLcUM4dw?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Plans Major Share Placement to Fund Growth - TipRanks",
-   "source": "TipRanks",
-   "published": "Mon, 28 Sep 2026 00:00:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVEVLcDlmcnl2eC02VU1WZU14TGVlZDZsTEw2N1pfRnlKQXRqWmVsWDhIX0FkdnkxaTNzUWZieTJic0U0Uktxc1FuaTN5Tktaa21SbGlrVm1Ld3huaWstb2FEd2Z2MWRocW9XaEFqb2hoTGNJMU5sZDVCVVNqRUJkYm16OERxM1AyWVlpQVZuYzRyRUxWTFM3LVlsMEdVUXFOSkNrczVVSXBhQQ?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Plans Major Share Placement on ASX - TipRanks",
-   "source": "TipRanks",
-   "published": "Mon, 28 Sep 2026 00:00:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNXRFUVp5eFpkMzVMUHQ4LVQ4V1FMWFM1eGhkOWZ4bnAwa2pBMVFpWFR5bjR1NnZYVG5kUXloY0xGaXhNXy1oR3ZrSWd6cXc0aFd4YnB0ZGtQTXMtbUhQenJQRFI1S1JhQVBWUUFPcVVGQ0Iwci0yUzBKT3JadlNibGJrWFY5ekxUYURMeTlSNTJodlk2SHEwb3lDY0Q3czg?oc=5"
+   "published": "Tue, 29 Sep 2026 02:00:00 +0000",
+   "link": "https://finance.yahoo.com/technology/ai/articles/mitac-computing-fuels-agentic-ai-020000143.html?.tsrc=rss"
   }
  ],
  "movers": [
@@ -569,19 +569,9 @@
    "name": "Kodiak Sciences Inc",
    "price": 89.92,
    "change_pct": 177.96,
-   "ext_price": 88.11,
-   "ext_change_pct": -2.013,
+   "ext_price": 86.75,
+   "ext_change_pct": -3.525,
    "volume": 38398805,
-   "held": false
-  },
-  {
-   "symbol": "SOAR",
-   "name": "Volato Group, Inc.",
-   "price": 0.3188,
-   "change_pct": 77.604,
-   "ext_price": 0.347,
-   "ext_change_pct": 8.846,
-   "volume": 972188181,
    "held": false
   },
   {
@@ -589,9 +579,19 @@
    "name": "Silexion Therapeutics Corp",
    "price": 0.2484,
    "change_pct": -4.572,
-   "ext_price": 0.3999,
-   "ext_change_pct": 60.99,
+   "ext_price": 0.5037,
+   "ext_change_pct": 102.778,
    "volume": 34598951,
+   "held": false
+  },
+  {
+   "symbol": "SOAR",
+   "name": "Volato Group, Inc.",
+   "price": 0.3188,
+   "change_pct": 77.604,
+   "ext_price": 0.2977,
+   "ext_change_pct": -6.619,
+   "volume": 972188181,
    "held": false
   },
   {
@@ -599,19 +599,29 @@
    "name": "Lifecore Biomedical, Inc.",
    "price": 6.52,
    "change_pct": 55.238,
-   "ext_price": 6.62,
-   "ext_change_pct": 1.534,
+   "ext_price": 6.54,
+   "ext_change_pct": 0.307,
    "volume": 4003471,
    "held": false
   },
   {
-   "symbol": "FFAI",
-   "name": "Faraday Future Intelligent Elec",
-   "price": 1.41,
-   "change_pct": -12.422,
-   "ext_price": 1.7189,
-   "ext_change_pct": 21.908,
-   "volume": 5499758,
+   "symbol": "BKYI",
+   "name": "BIO-key International, Inc.",
+   "price": 1.68,
+   "change_pct": -6.145,
+   "ext_price": 2.4198,
+   "ext_change_pct": 44.036,
+   "volume": 93298,
+   "held": false
+  },
+  {
+   "symbol": "YMT",
+   "name": "Yimutian Inc.",
+   "price": 1.77,
+   "change_pct": -2.21,
+   "ext_price": 2.1598,
+   "ext_change_pct": 22.023,
+   "volume": 12566450,
    "held": false
   },
   {
@@ -619,8 +629,8 @@
    "name": "Cango Inc.",
    "price": 2.29,
    "change_pct": 19.895,
-   "ext_price": 2.29,
-   "ext_change_pct": 0.0,
+   "ext_price": 2.24,
+   "ext_change_pct": -2.183,
    "volume": 1564832,
    "held": false
   },
@@ -629,8 +639,8 @@
    "name": "BINGEX LIMITED",
    "price": 1.39,
    "change_pct": 18.803,
-   "ext_price": 1.3411,
-   "ext_change_pct": -3.518,
+   "ext_price": 1.24,
+   "ext_change_pct": -10.791,
    "volume": 208089,
    "held": false
   },
@@ -639,9 +649,19 @@
    "name": "MongoDB, Inc.",
    "price": 334.68,
    "change_pct": -18.458,
-   "ext_price": 337.3929,
-   "ext_change_pct": 0.811,
+   "ext_price": 338.74,
+   "ext_change_pct": 1.213,
    "volume": 17806336,
+   "held": false
+  },
+  {
+   "symbol": "FICO",
+   "name": "Fair Isaac Corporation",
+   "price": 840.89,
+   "change_pct": -2.572,
+   "ext_price": 690.9745,
+   "ext_change_pct": -17.828,
+   "volume": 356584,
    "held": false
   },
   {
@@ -649,8 +669,8 @@
    "name": "Viomi Technology Co., Ltd",
    "price": 1.59,
    "change_pct": 17.778,
-   "ext_price": 1.5536,
-   "ext_change_pct": -2.289,
+   "ext_price": 1.59,
+   "ext_change_pct": 0.0,
    "volume": 768328,
    "held": false
   },
@@ -659,8 +679,8 @@
    "name": "Summit Therapeutics Inc.",
    "price": 15.48,
    "change_pct": -0.833,
-   "ext_price": 18.2301,
-   "ext_change_pct": 17.766,
+   "ext_price": 18.15,
+   "ext_change_pct": 17.248,
    "volume": 4359177,
    "held": false
   },
@@ -669,8 +689,8 @@
    "name": "Maase Inc.",
    "price": 17.95,
    "change_pct": 16.786,
-   "ext_price": 17.6,
-   "ext_change_pct": -1.95,
+   "ext_price": 17.95,
+   "ext_change_pct": 0.0,
    "volume": 647812,
    "held": false
   },
@@ -679,8 +699,8 @@
    "name": "Magnachip Semiconductor Corpora",
    "price": 3.79,
    "change_pct": 14.848,
-   "ext_price": 4.01,
-   "ext_change_pct": 5.805,
+   "ext_price": 4.12,
+   "ext_change_pct": 8.707,
    "volume": 6665200,
    "held": false
   },
@@ -689,8 +709,8 @@
    "name": "Stitch Fix, Inc.",
    "price": 2.47,
    "change_pct": 14.617,
-   "ext_price": 2.4299,
-   "ext_change_pct": -1.623,
+   "ext_price": 2.54,
+   "ext_change_pct": 2.834,
    "volume": 7412701,
    "held": false
   },
@@ -699,19 +719,9 @@
    "name": "Aurora Innovation, Inc.",
    "price": 5.29,
    "change_pct": -12.417,
-   "ext_price": 5.38,
-   "ext_change_pct": 1.701,
+   "ext_price": 5.3577,
+   "ext_change_pct": 1.28,
    "volume": 46377556,
-   "held": false
-  },
-  {
-   "symbol": "NVTS",
-   "name": "Navitas Semiconductor Corporati",
-   "price": 11.73,
-   "change_pct": -3.852,
-   "ext_price": 13.1837,
-   "ext_change_pct": 12.393,
-   "volume": 17320349,
    "held": false
   },
   {
@@ -719,9 +729,29 @@
    "name": "AMC Entertainment Holdings, Inc",
    "price": 3.29,
    "change_pct": 11.905,
-   "ext_price": 3.27,
-   "ext_change_pct": -0.608,
+   "ext_price": 3.29,
+   "ext_change_pct": 0.0,
    "volume": 72388813,
+   "held": false
+  },
+  {
+   "symbol": "ENVX",
+   "name": "Enovix Corporation",
+   "price": 2.555,
+   "change_pct": -10.976,
+   "ext_price": 2.58,
+   "ext_change_pct": 0.978,
+   "volume": 17241838,
+   "held": false
+  },
+  {
+   "symbol": "NVTS",
+   "name": "Navitas Semiconductor Corporati",
+   "price": 11.73,
+   "change_pct": -3.852,
+   "ext_price": 12.96,
+   "ext_change_pct": 10.486,
+   "volume": 17320349,
    "held": false
   },
   {
@@ -729,8 +759,8 @@
    "name": "Annexon, Inc.",
    "price": 4.01,
    "change_pct": 10.165,
-   "ext_price": 4.01,
-   "ext_change_pct": 0.0,
+   "ext_price": 4.1,
+   "ext_change_pct": 2.244,
    "volume": 5071706,
    "held": false
   },
@@ -739,29 +769,9 @@
    "name": "Nu Holdings Ltd.",
    "price": 12.23,
    "change_pct": -10.007,
-   "ext_price": 12.36,
-   "ext_change_pct": 1.063,
+   "ext_price": 12.37,
+   "ext_change_pct": 1.145,
    "volume": 143251890,
-   "held": false
-  },
-  {
-   "symbol": "RBLX",
-   "name": "Roblox Corporation",
-   "price": 41.86,
-   "change_pct": -9.862,
-   "ext_price": 41.96,
-   "ext_change_pct": 0.239,
-   "volume": 17962034,
-   "held": false
-  },
-  {
-   "symbol": "FICO",
-   "name": "Fair Isaac Corporation",
-   "price": 840.89,
-   "change_pct": -2.572,
-   "ext_price": 758.3022,
-   "ext_change_pct": -9.821,
-   "volume": 356584,
    "held": false
   },
   {
@@ -769,8 +779,8 @@
    "name": "AbCellera Biologics Inc.",
    "price": 13.92,
    "change_pct": 9.606,
-   "ext_price": 13.9415,
-   "ext_change_pct": 0.154,
+   "ext_price": 14.26,
+   "ext_change_pct": 2.443,
    "volume": 7772249,
    "held": false
   },
@@ -779,8 +789,8 @@
    "name": "Corporacion America Airports SA",
    "price": 26.05,
    "change_pct": 9.087,
-   "ext_price": 26.05,
-   "ext_change_pct": 0.0,
+   "ext_price": 26.25,
+   "ext_change_pct": 0.768,
    "volume": 1068920,
    "held": false
   },
@@ -789,8 +799,8 @@
    "name": "Bloom Energy Corporation",
    "price": 262.87,
    "change_pct": -8.947,
-   "ext_price": 264.8376,
-   "ext_change_pct": 0.749,
+   "ext_price": 269.7048,
+   "ext_change_pct": 2.6,
    "volume": 15498318,
    "held": false
   },
@@ -799,8 +809,8 @@
    "name": "San Juan Basin Royalty Trust",
    "price": 3.72,
    "change_pct": 8.772,
-   "ext_price": 3.72,
-   "ext_change_pct": 0.0,
+   "ext_price": null,
+   "ext_change_pct": null,
    "volume": 1199497,
    "held": false
   },
@@ -809,8 +819,8 @@
    "name": "MacroGenics, Inc.",
    "price": 4.06,
    "change_pct": 8.556,
-   "ext_price": 4.06,
-   "ext_change_pct": 0.0,
+   "ext_price": null,
+   "ext_change_pct": null,
    "volume": 1912786,
    "held": false
   },
@@ -819,8 +829,8 @@
    "name": "Lument Finance Trust, Inc.",
    "price": 5.61,
    "change_pct": 8.092,
-   "ext_price": 5.61,
-   "ext_change_pct": 0.0,
+   "ext_price": null,
+   "ext_change_pct": null,
    "volume": 67824,
    "held": false
   },
@@ -829,8 +839,8 @@
    "name": "Howard Hughes Holdings Inc.",
    "price": 73.95,
    "change_pct": 8.067,
-   "ext_price": 73.6757,
-   "ext_change_pct": -0.371,
+   "ext_price": 73.7,
+   "ext_change_pct": -0.338,
    "volume": 1887444,
    "held": false
   },
@@ -839,8 +849,8 @@
    "name": "BlossomHill Therapeutics, Inc.",
    "price": 21.34,
    "change_pct": 8.051,
-   "ext_price": 21.34,
-   "ext_change_pct": 0.0,
+   "ext_price": null,
+   "ext_change_pct": null,
    "volume": 146397,
    "held": false
   },
@@ -849,19 +859,9 @@
    "name": "Xeris Biopharma Holdings, Inc.",
    "price": 9.83,
    "change_pct": 8.022,
-   "ext_price": 9.83,
-   "ext_change_pct": 0.0,
+   "ext_price": 9.52,
+   "ext_change_pct": -3.154,
    "volume": 3463233,
-   "held": false
-  },
-  {
-   "symbol": "TSLL",
-   "name": "Direxion Daily TSLA Bull 2X ETF",
-   "price": 9.15,
-   "change_pct": -7.948,
-   "ext_price": 9.185,
-   "ext_change_pct": 0.383,
-   "volume": 63655691,
    "held": false
   }
  ],
@@ -873,8 +873,8 @@
    "price": 89.92,
    "change_pct": 177.96,
    "volume": 38398805,
-   "pre_change_pct": null,
-   "post_change_pct": -2.0128977
+   "pre_change_pct": -3.525354,
+   "post_change_pct": null
   },
   {
    "symbol": "MAAS",
@@ -883,8 +883,8 @@
    "price": 17.95,
    "change_pct": 16.786,
    "volume": 647812,
-   "pre_change_pct": null,
-   "post_change_pct": -1.9498627
+   "pre_change_pct": 0.0,
+   "post_change_pct": null
   },
   {
    "symbol": "ABCL",
@@ -893,8 +893,8 @@
    "price": 13.92,
    "change_pct": 9.6063,
    "volume": 7772249,
-   "pre_change_pct": null,
-   "post_change_pct": 0.15445139
+   "pre_change_pct": 2.44253,
+   "post_change_pct": null
   },
   {
    "symbol": "CAAP",
@@ -903,8 +903,8 @@
    "price": 26.05,
    "change_pct": 9.0871,
    "volume": 1068920,
-   "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "pre_change_pct": 0.7677573,
+   "post_change_pct": null
   },
   {
    "symbol": "HHH",
@@ -913,8 +913,8 @@
    "price": 73.95,
    "change_pct": 8.06663,
    "volume": 1887444,
-   "pre_change_pct": null,
-   "post_change_pct": -0.3709258
+   "pre_change_pct": -0.2976207,
+   "post_change_pct": null
   },
   {
    "symbol": "ADMA",
@@ -923,8 +923,8 @@
    "price": 10.12,
    "change_pct": 7.88912,
    "volume": 3567999,
-   "pre_change_pct": null,
-   "post_change_pct": 0.19763298
+   "pre_change_pct": -0.6916966,
+   "post_change_pct": null
   },
   {
    "symbol": "LQDA",
@@ -933,8 +933,8 @@
    "price": 73.67,
    "change_pct": 7.65746,
    "volume": 1195094,
-   "pre_change_pct": null,
-   "post_change_pct": 0.6515588
+   "pre_change_pct": 1.6288918,
+   "post_change_pct": null
   },
   {
    "symbol": "MBX",
@@ -943,8 +943,8 @@
    "price": 57.54,
    "change_pct": 7.29069,
    "volume": 439520,
-   "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "pre_change_pct": 0.0,
+   "post_change_pct": null
   },
   {
    "symbol": "BB",
@@ -953,8 +953,8 @@
    "price": 8.8,
    "change_pct": 7.18636,
    "volume": 30091690,
-   "pre_change_pct": null,
-   "post_change_pct": -1.1363679
+   "pre_change_pct": 1.0170394,
+   "post_change_pct": null
   },
   {
    "symbol": "ALVO",
@@ -963,8 +963,8 @@
    "price": 6.15,
    "change_pct": 6.95652,
    "volume": 1434275,
-   "pre_change_pct": null,
-   "post_change_pct": 0.32520294
+   "pre_change_pct": 0.48780054,
+   "post_change_pct": null
   },
   {
    "symbol": "PLBL",
@@ -974,7 +974,7 @@
    "change_pct": 6.65399,
    "volume": 185853,
    "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "post_change_pct": null
   },
   {
    "symbol": "VSXY",
@@ -983,8 +983,8 @@
    "price": 88.29,
    "change_pct": 6.48896,
    "volume": 2231613,
-   "pre_change_pct": null,
-   "post_change_pct": 0.69090563
+   "pre_change_pct": -0.32846406,
+   "post_change_pct": null
   },
   {
    "symbol": "LFCR",
@@ -993,8 +993,8 @@
    "price": 6.52,
    "change_pct": 55.2381,
    "volume": 4003471,
-   "pre_change_pct": null,
-   "post_change_pct": 1.5337409
+   "pre_change_pct": 0.30674818,
+   "post_change_pct": null
   },
   {
    "symbol": "CANG",
@@ -1003,8 +1003,8 @@
    "price": 2.29,
    "change_pct": 19.8953,
    "volume": 1564832,
-   "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "pre_change_pct": -0.2183352,
+   "post_change_pct": null
   },
   {
    "symbol": "FLX",
@@ -1013,8 +1013,8 @@
    "price": 1.39,
    "change_pct": 18.8034,
    "volume": 208089,
-   "pre_change_pct": null,
-   "post_change_pct": -3.5179863
+   "pre_change_pct": -10.791366,
+   "post_change_pct": null
   },
   {
    "symbol": "VIOT",
@@ -1023,8 +1023,8 @@
    "price": 1.59,
    "change_pct": 17.7778,
    "volume": 768328,
-   "pre_change_pct": null,
-   "post_change_pct": -2.289313
+   "pre_change_pct": 0.0,
+   "post_change_pct": null
   },
   {
    "symbol": "MX",
@@ -1033,8 +1033,8 @@
    "price": 3.79,
    "change_pct": 14.8485,
    "volume": 6665200,
-   "pre_change_pct": null,
-   "post_change_pct": 5.8047566
+   "pre_change_pct": 9.283817,
+   "post_change_pct": null
   },
   {
    "symbol": "SFIX",
@@ -1043,8 +1043,8 @@
    "price": 2.47,
    "change_pct": 14.6172,
    "volume": 7412701,
-   "pre_change_pct": null,
-   "post_change_pct": -1.6234857
+   "pre_change_pct": 2.8340054,
+   "post_change_pct": null
   },
   {
    "symbol": "ANNX",
@@ -1053,8 +1053,8 @@
    "price": 4.01,
    "change_pct": 10.1648,
    "volume": 5071706,
-   "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "pre_change_pct": 2.2443807,
+   "post_change_pct": null
   },
   {
    "symbol": "SJT",
@@ -1074,7 +1074,7 @@
    "change_pct": 8.55615,
    "volume": 1912786,
    "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "post_change_pct": null
   },
   {
    "symbol": "LFT",
@@ -1094,7 +1094,7 @@
    "change_pct": 8.05063,
    "volume": 146397,
    "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "post_change_pct": null
   },
   {
    "symbol": "XERS",
@@ -1103,8 +1103,8 @@
    "price": 9.83,
    "change_pct": 8.02197,
    "volume": 3463233,
-   "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "pre_change_pct": -3.153606,
+   "post_change_pct": null
   },
   {
    "symbol": "AUR",
@@ -1113,8 +1113,8 @@
    "price": 5.29,
    "change_pct": -12.4172,
    "volume": 46377556,
-   "pre_change_pct": null,
-   "post_change_pct": 1.7013261
+   "pre_change_pct": 1.2797714,
+   "post_change_pct": null
   },
   {
    "symbol": "AMC",
@@ -1123,8 +1123,8 @@
    "price": 3.29,
    "change_pct": 11.9048,
    "volume": 72388813,
-   "pre_change_pct": null,
-   "post_change_pct": -0.60790217
+   "pre_change_pct": 0.22848235,
+   "post_change_pct": null
   },
   {
    "symbol": "NU",
@@ -1133,8 +1133,8 @@
    "price": 12.23,
    "change_pct": -10.0074,
    "volume": 143251890,
-   "pre_change_pct": null,
-   "post_change_pct": 1.0629609
+   "pre_change_pct": 1.18609,
+   "post_change_pct": null
   },
   {
    "symbol": "CDE",
@@ -1143,8 +1143,8 @@
    "price": 17.87,
    "change_pct": -7.02393,
    "volume": 36838648,
-   "pre_change_pct": null,
-   "post_change_pct": 0.1678723
+   "pre_change_pct": 2.3216834,
+   "post_change_pct": null
   },
   {
    "symbol": "HL",
@@ -1153,8 +1153,8 @@
    "price": 17.01,
    "change_pct": -6.48708,
    "volume": 39725684,
-   "pre_change_pct": null,
-   "post_change_pct": 0.032327373
+   "pre_change_pct": 1.9112072,
+   "post_change_pct": null
   },
   {
    "symbol": "PLUG",
@@ -1163,8 +1163,8 @@
    "price": 1.86,
    "change_pct": -6.06061,
    "volume": 65043173,
-   "pre_change_pct": null,
-   "post_change_pct": 1.1774161
+   "pre_change_pct": 5.370968,
+   "post_change_pct": null
   },
   {
    "symbol": "SMR",
@@ -1173,8 +1173,8 @@
    "price": 7.91,
    "change_pct": -6.05701,
    "volume": 32797260,
-   "pre_change_pct": null,
-   "post_change_pct": 0.63084775
+   "pre_change_pct": 1.6434908,
+   "post_change_pct": null
   },
   {
    "symbol": "INTC",
@@ -1183,8 +1183,8 @@
    "price": 116.03,
    "change_pct": -5.66667,
    "volume": 109978476,
-   "pre_change_pct": null,
-   "post_change_pct": 0.02912886
+   "pre_change_pct": 0.65500486,
+   "post_change_pct": null
   },
   {
    "symbol": "OPEN",
@@ -1193,18 +1193,18 @@
    "price": 2.43,
    "change_pct": -5.44747,
    "volume": 30184108,
-   "pre_change_pct": null,
-   "post_change_pct": 0.41152224
+   "pre_change_pct": 0.41152224,
+   "post_change_pct": null
   },
   {
-   "symbol": "META",
+   "symbol": "RKT",
    "source": "most_actives",
-   "name": "Meta Platforms, Inc.",
-   "price": 715.62,
-   "change_pct": -4.79472,
-   "volume": 27629348,
-   "pre_change_pct": null,
-   "post_change_pct": 0.34665227
+   "name": "Rocket Companies, Inc.",
+   "price": 11.64,
+   "change_pct": -4.35497,
+   "volume": 45339668,
+   "pre_change_pct": 2.0627656,
+   "post_change_pct": null
   },
   {
    "symbol": "MDB",
@@ -1215,15 +1215,11 @@
    "source": "trending"
   },
   {
-   "symbol": "BA",
-   "source": "trending"
-  },
-  {
    "symbol": "SMMT",
    "source": "trending"
   },
   {
-   "symbol": "SOAR",
+   "symbol": "NVDA",
    "source": "trending"
   },
   {
@@ -1231,23 +1227,47 @@
    "source": "trending"
   },
   {
+   "symbol": "SOAR",
+   "source": "trending"
+  },
+  {
+   "symbol": "BA",
+   "source": "trending"
+  },
+  {
+   "symbol": "BKYI",
+   "source": "trending"
+  },
+  {
    "symbol": "SLXN",
    "source": "trending"
   },
   {
-   "symbol": "FFAI",
+   "symbol": "KMX",
    "source": "trending"
   },
   {
-   "symbol": "RBLX",
+   "symbol": "YMT",
    "source": "trending"
   },
   {
-   "symbol": "CMG",
+   "symbol": "RDDT",
    "source": "trending"
   },
   {
-   "symbol": "CLF",
+   "symbol": "ASML",
+   "source": "trending"
+  },
+  {
+   "symbol": "UEC",
+   "source": "trending"
+  },
+  {
+   "symbol": "ENVX",
+   "source": "trending"
+  },
+  {
+   "symbol": "CCL",
    "source": "trending"
   },
   {
@@ -1255,7 +1275,11 @@
    "source": "trending"
   },
   {
-   "symbol": "ISRG",
+   "symbol": "XPEV",
+   "source": "trending"
+  },
+  {
+   "symbol": "PEP",
    "source": "trending"
   }
  ]

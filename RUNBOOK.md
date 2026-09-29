@@ -2,8 +2,16 @@
 
 Every scheduled run (and any manual check) follows these steps. Times are US Eastern.
 
-Dashboard: https://claude.ai/artifact/28rMDx9DZwFEfXBjxWKkcJ (db collection `snapshots`, one new
-doc per update, doc id = UTC timestamp, page shows the newest).
+Dashboards:
+* Public: https://h1b-1k-challenge.vercel.app (Vercel project `h1b-1k-challenge`). Its data is
+  `data/snapshot.json` on the `market-data` branch, rebuilt by the market-data workflow every 5 min
+  during market hours and on every push to `main` that touches `ledger/`, `config/` or `scripts/`.
+* Private: https://claude.ai/artifact/28rMDx9DZwFEfXBjxWKkcJ (db collection `snapshots`, one new
+  doc per update, doc id = UTC timestamp, page shows the newest).
+
+Page changes: edit `dashboard/index.html`, run `python3 scripts/build_site.py`, commit and push
+(Vercel serves the new `site/index.html` within ~10 min), and republish the artifact from the same path.
+Public check: dispatch `site-check.yml`; screenshots land on the `checks` branch.
 
 ## 1. Refresh data
 

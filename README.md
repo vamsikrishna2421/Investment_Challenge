@@ -14,7 +14,8 @@ Goal: double it. Account profile: Indian citizen living in the US on an H-1B vis
 | Live quotes, equity curve (written every 5 min by GitHub Actions) | `market-data` branch, `data/` |
 | Portfolio engine (FIFO lots, T+1 settlement, compliance flags) | `scripts/portfolio.py` |
 | Order entry with guardrails | `scripts/trade.py` |
-| Dashboard | Claude artifact (link shared in chat), fed from `scripts/snapshot.py` |
+| Public dashboard | https://h1b-1k-challenge.vercel.app (Vercel function `vercel/api/index.js` serves `site/index.html` from `main`; the page reads `data/snapshot.json` from the `market-data` branch, rebuilt every 5 min) |
+| Private dashboard | claude.ai artifact, fed from the `snapshots` collection at each routine run |
 
 ## Execution model
 

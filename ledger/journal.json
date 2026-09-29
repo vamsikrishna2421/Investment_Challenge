@@ -109,6 +109,21 @@
         "IONX",
         "MUU"
       ]
+    },
+    {
+      "id": "J0009",
+      "ts": "2026-09-29T16:42:04Z",
+      "kind": "review",
+      "title": "12:40 PM: hold; skip SDEV, SANG and BE",
+      "body": "Portfolio $999.39 (-0.06%) vs SPY -0.32%. IOVA +3.5% on the position and +32% on the day, near its high after CNBC's midday movers list; HC Wainwright target raised to $20. MUU +1.0% with Micron +1.2% into tomorrow's report (options price a ~7.7% move, about 15% on 2x). IONX -4.1%; IonQ $44.10 is above the $43 early-exit line. No stop, target or trim level hit. Skipped: SDEV +123% ($3.50, 8% off its $3.82 high, no catalyst in the feed, a parabolic sub-$5 chase); SANG +37% (cash takeover by BRC, upside capped); BE +13% (fuel-cell rebound on factory expansion, already extended). $150 cash stays reserved for Micron's after-hours reaction.",
+      "tickers": [
+        "IONX",
+        "MUU",
+        "IOVA",
+        "SDEV",
+        "SANG",
+        "BE"
+      ]
     }
   ]
 }

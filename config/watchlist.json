@@ -1,18 +1,18 @@
 {
-  "strategy": "Setting up. Research in progress; first orders go in after the Tuesday open.",
+  "strategy": "Concentrated, catalyst-driven book. First orders after 9:40 AM ET Tuesday: ~30% IONX (2x IonQ), ~30% MUU (2x Micron into Wednesday's earnings), ~20-25% KOD or NVTS, the rest in cash. Stops at -15% (2x ETFs) and -12% (stocks); trim a third at +25%.",
   "focus": [
-    "NVTS",
-    "KOD",
+    "IONX",
     "IONQ",
+    "MUU",
     "MU",
+    "KOD",
+    "NVTS",
+    "AMDL",
+    "MSTU",
     "SOXL",
-    "VG",
-    "AMD",
     "NVDA",
-    "NKE",
     "TSLA",
-    "AMC",
-    "MSTR"
+    "NKE"
   ],
   "tickers": [
     "NVDA",

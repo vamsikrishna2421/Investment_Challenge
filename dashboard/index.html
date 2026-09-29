@@ -3,9 +3,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: a brokerage top sheet. The P&L reads as one equation (invested -> value = profit),
-   a goal track to 2x sits under it, then the week's return chart, holdings, the trade ledger,
-   the journal and the H-1B guardrails. */
+/* Layout: a brokerage top sheet for two books. A two-card scoreboard (H-1B vs Unrestricted) doubles as
+   the tab control, one chart races both books against the S&P 500 and Nasdaq-100, and the selected
+   book's statement, holdings, trade log, journal and rules sit below. */
 :root {
   --bg: #edf1f2;
   --surface: #ffffff;
@@ -22,9 +22,10 @@
   --loss: #bf3a2b;
   --gain-wash: rgba(11, 122, 75, 0.10);
   --loss-wash: rgba(191, 58, 43, 0.10);
-  --s-port: #a86400;
-  --s-spy: #2a78d6;
-  --s-qqq: #0d8a6a;
+  --s-h1b: #a86400;
+  --s-free: #2a78d6;
+  --s-free-wash: rgba(42, 120, 214, 0.14);
+  --s-bench: #7d8b91;
   --grid: #e7edef;
   --axis: #c3ced2;
   --future: rgba(15, 27, 33, 0.035);
@@ -39,8 +40,8 @@
     --muted: #8697a0; --line: #24323a; --line-strong: #33444e; --accent: #f0a414; --accent-fill: #f0a414;
     --accent-wash: rgba(240, 164, 20, 0.14); --gain: #3ccb84; --loss: #ff6b5b;
     --gain-wash: rgba(60, 203, 132, 0.12); --loss-wash: rgba(255, 107, 91, 0.12);
-    --s-port: #c98500; --s-spy: #3987e5; --s-qqq: #199e70; --grid: #1d2930; --axis: #33444e;
-    --future: rgba(230, 238, 240, 0.03); color-scheme: dark;
+    --s-h1b: #c98500; --s-free: #3987e5; --s-free-wash: rgba(57, 135, 229, 0.16); --s-bench: #7f909a;
+    --grid: #1d2930; --axis: #33444e; --future: rgba(230, 238, 240, 0.03); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
@@ -48,8 +49,8 @@
   --muted: #8697a0; --line: #24323a; --line-strong: #33444e; --accent: #f0a414; --accent-fill: #f0a414;
   --accent-wash: rgba(240, 164, 20, 0.14); --gain: #3ccb84; --loss: #ff6b5b;
   --gain-wash: rgba(60, 203, 132, 0.12); --loss-wash: rgba(255, 107, 91, 0.12);
-  --s-port: #c98500; --s-spy: #3987e5; --s-qqq: #199e70; --grid: #1d2930; --axis: #33444e;
-  --future: rgba(230, 238, 240, 0.03); color-scheme: dark;
+  --s-h1b: #c98500; --s-free: #3987e5; --s-free-wash: rgba(57, 135, 229, 0.16); --s-bench: #7f909a;
+  --grid: #1d2930; --axis: #33444e; --future: rgba(230, 238, 240, 0.03); color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -81,6 +82,36 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .stat-mini .v { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 15px; font-weight: 500; }
 .stat-mini .s { font-size: 12px; color: var(--muted); }
 
+/* Scoreboard: one card per book, also the tab control for the details below */
+.scoreboard { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 760px) { .scoreboard { grid-template-columns: minmax(0, 1fr); } }
+.book-card { appearance: none; text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; min-width: 0; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.book-card:hover { border-color: var(--line-strong); }
+.book-card.h1b { --book: var(--s-h1b); }
+.book-card.free { --book: var(--s-free); }
+.book-card[aria-selected="true"] { border-color: var(--book); box-shadow: inset 0 0 0 1px var(--book); }
+.bc-head { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; flex-wrap: wrap; }
+.bc-title { display: inline-flex; align-items: center; gap: 8px; }
+.bc-title i { width: 12px; height: 12px; border-radius: 3px; background: var(--book); display: inline-block; }
+.bc-name { font-family: var(--font-display); font-weight: 800; font-size: 26px; line-height: 1; text-transform: uppercase; letter-spacing: 0.02em; }
+.bc-state { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.book-card[aria-selected="true"] .bc-state { color: var(--ink-2); }
+.bc-rules { font-size: 12px; color: var(--ink-2); }
+.bc-figs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.bc-eq { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: clamp(26px, 3.6vw, 34px); font-weight: 600; letter-spacing: -0.01em; }
+.bc-pl { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 15px; font-weight: 600; }
+.bc-track { position: relative; height: 8px; border-radius: 4px; background: var(--surface-2); border: 1px solid var(--line); overflow: hidden; }
+.bc-track .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--book); border-radius: 4px; transition: width 0.6s ease; }
+.bc-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; font-size: 12px; color: var(--muted); }
+.bc-foot b { color: var(--ink-2); font-weight: 600; }
+.lead { font-size: 13px; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.lead strong { color: var(--ink); }
+
+/* Book panel heading */
+.book-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding-top: 6px; border-top: 1px solid var(--line-strong); }
+.book-head h2 { font-family: var(--font-display); font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; }
+.book-head .d { color: var(--ink-2); font-size: 13px; }
+
 /* P&L statement */
 .statement { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: grid; grid-template-columns: 1fr auto 1fr auto 1.25fr; align-items: center; gap: 12px 20px; }
 .fig { min-width: 0; }
@@ -102,7 +133,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .goal-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; font-size: 13px; color: var(--ink-2); }
 .goal-head strong { color: var(--ink); }
 .track { position: relative; height: 14px; border-radius: 7px; background: var(--accent-wash); overflow: hidden; }
+.track.free { background: var(--s-free-wash); }
 .track .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent-fill); border-radius: 7px; transition: width 0.6s ease; }
+.track.free .fill { background: var(--s-free); }
 .track .below { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--loss-wash); }
 .track-scale { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 .plan { font-size: 13px; color: var(--ink-2); background: var(--surface-2); border: 1px dashed var(--line-strong); border-radius: 8px; padding: 10px 12px; }
@@ -128,12 +161,12 @@ h2 { font-size: 15px; font-weight: 700; margin: 0; letter-spacing: 0.01em; }
 /* Chart */
 .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--ink-2); margin-bottom: 6px; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
-.legend i { display: inline-block; width: 16px; height: 2px; border-radius: 1px; }
+.legend svg { width: 18px; height: 6px; }
 .chart-wrap { position: relative; }
-#chart { display: block; width: 100%; height: 280px; touch-action: pan-y; }
+#chart { display: block; width: 100%; height: 300px; touch-action: pan-y; }
 #chart:focus-visible { outline: 2px solid var(--accent-fill); outline-offset: 2px; }
 #chart text { font-family: var(--font-mono); font-size: 11px; fill: var(--muted); }
-.tooltip { position: absolute; top: 0; left: 0; pointer-events: none; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 8px; padding: 8px 10px; font-size: 12px; min-width: 170px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); }
+.tooltip { position: absolute; top: 0; left: 0; pointer-events: none; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 8px; padding: 8px 10px; font-size: 12px; min-width: 190px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); }
 .tooltip .t { color: var(--muted); margin-bottom: 4px; }
 .tooltip .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .tooltip .row span:first-child { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
@@ -158,10 +191,10 @@ td { padding: 9px 10px; border-bottom: 1px solid var(--grid); vertical-align: to
 td.n, th.n { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
 tr:last-child td { border-bottom: 0; }
 .tk { font-weight: 700; letter-spacing: 0.02em; }
-.nm { display: block; font-size: 12px; color: var(--muted); max-width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nm { display: block; font-size: 12px; color: var(--muted); max-width: 240px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .side { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 5px; }
 .side.BUY { color: var(--gain); background: var(--gain-wash); }
-.side.SELL { color: var(--loss); background: var(--loss-wash); }
+.side.SELL, .side.EXPIRE { color: var(--loss); background: var(--loss-wash); }
 .tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--ink-2); margin: 2px 4px 0 0; white-space: nowrap; }
 .why { font-size: 12px; color: var(--ink-2); min-width: 240px; max-width: 460px; }
 .empty { padding: 18px 4px; color: var(--muted); font-size: 13px; }
@@ -201,15 +234,15 @@ tr:last-child td { border-bottom: 0; }
 
 footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 4px; padding-top: 8px; border-top: 1px solid var(--line); }
 .banner { background: var(--surface); border: 1px dashed var(--line-strong); border-radius: var(--radius); padding: 14px 16px; font-size: 13px; color: var(--ink-2); }
-@media (prefers-reduced-motion: reduce) { .track .fill { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .track .fill, .bc-track .fill, .book-card { transition: none; } }
 </style>
 
 <div class="page">
   <header class="top">
     <div>
-      <div class="eyebrow">Paper portfolio · Individual cash account · H-1B investor rules</div>
+      <div class="eyebrow">Two paper portfolios · $1,000 each · same $2,000 target · same finish line</div>
       <h1 class="wordmark">H1B <span class="k">$1K</span> Challenge</h1>
-      <div class="window">Mon Sep 28, 8:35 PM ET &rarr; Mon Oct 5, 4:00 PM ET close · US stocks &amp; ETFs · trading 4 AM&ndash;8 PM ET</div>
+      <div class="window">H-1B book from Mon Sep 28, 8:35 PM ET · Unrestricted book from Tue Sep 29, 5:45 PM ET · both end at the Mon Oct 5, 4:00 PM ET close</div>
     </div>
     <div class="status">
       <span class="pill" id="mkt"><span class="dot"></span><span id="mkt-t">Market closed</span></span>
@@ -220,90 +253,113 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 
   <div class="banner" id="banner" hidden></div>
 
-  <section class="statement" aria-label="Profit and loss">
-    <div class="fig">
-      <div class="label">Net investment</div>
-      <div class="value num" id="invested">$1,000.00</div>
-      <div class="sub">Paper cash deposited</div>
+  <section aria-label="Scoreboard" class="scoreboard" role="tablist" id="scoreboard">
+    <button class="book-card h1b" role="tab" id="tab-h1b" aria-controls="book-panel" aria-selected="true" data-book="h1b">
+      <div class="bc-head"><span class="bc-title"><i aria-hidden="true"></i><span class="bc-name">H-1B</span></span><span class="bc-state" id="st-h1b">Showing details</span></div>
+      <div class="bc-rules">US stocks &amp; ETFs · cash account · H-1B investor rules</div>
+      <div class="bc-figs"><span class="bc-eq" id="eq-h1b">&mdash;</span><span class="bc-pl" id="pl-h1b">&mdash;</span></div>
+      <div class="bc-track" aria-hidden="true"><div class="fill" id="tr-h1b"></div></div>
+      <div class="bc-foot"><span id="gl-h1b">Goal $2,000</span><span id="bm-h1b">&nbsp;</span></div>
+    </button>
+    <button class="book-card free" role="tab" id="tab-free" aria-controls="book-panel" aria-selected="false" tabindex="-1" data-book="free">
+      <div class="bc-head"><span class="bc-title"><i aria-hidden="true"></i><span class="bc-name">Unrestricted</span></span><span class="bc-state" id="st-free">View details</span></div>
+      <div class="bc-rules">Stocks, ETFs, options &amp; crypto · no visa limits · a day less to reach $2,000</div>
+      <div class="bc-figs"><span class="bc-eq" id="eq-free">&mdash;</span><span class="bc-pl" id="pl-free">&mdash;</span></div>
+      <div class="bc-track" aria-hidden="true"><div class="fill" id="tr-free"></div></div>
+      <div class="bc-foot"><span id="gl-free">Goal $2,000</span><span id="bm-free">&nbsp;</span></div>
+    </button>
+  </section>
+  <div class="lead" id="lead" hidden></div>
+
+  <section class="card" aria-labelledby="h-chart">
+    <div class="card-head"><h2 id="h-chart">Return since each book opened</h2><span class="hint">Trading hours only · Sep 29 &ndash; Oct 5 · crypto moves overnight show at the next open</span></div>
+    <div class="legend" id="legend">
+      <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-h1b)" stroke-width="2.5" stroke-linecap="round"/></svg>H-1B book</span>
+      <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-free)" stroke-width="2.5" stroke-linecap="round"/></svg>Unrestricted book</span>
+      <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-bench)" stroke-width="1.5"/></svg>S&amp;P 500 (SPY)</span>
+      <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-bench)" stroke-width="1.5" stroke-dasharray="3 2.5"/></svg>Nasdaq-100 (QQQ)</span>
     </div>
-    <div class="op" aria-hidden="true">&rarr;</div>
-    <div class="fig">
-      <div class="label">Portfolio value</div>
-      <div class="value" id="equity">&mdash;</div>
-      <div class="sub" id="equity-sub">Cash plus holdings at last price</div>
+    <div class="chart-wrap" id="chart-wrap">
+      <svg id="chart" tabindex="0" role="img" aria-label="Return of the H-1B and Unrestricted books versus the S&amp;P 500 and Nasdaq-100 since the Monday Sep 28 close"></svg>
+      <div class="tooltip" id="tip" hidden></div>
     </div>
-    <div class="op" aria-hidden="true">=</div>
-    <div class="fig hero">
-      <div class="label">Net profit</div>
-      <div class="value" id="profit">&mdash;</div>
-      <div class="sub" id="profit-sub">Waiting for the first snapshot</div>
-    </div>
+    <details class="data"><summary>Chart data by session</summary><div class="table-scroll"><table id="chart-table"></table></div></details>
   </section>
 
-  <section class="goal" aria-label="Progress to the 2x goal">
-    <div class="goal-head"><span>Goal: <strong>double to $2,000</strong> by the Oct 5 close</span><span id="goal-pct" class="num">&mdash;</span></div>
-    <div class="track" role="img" id="goal-track" aria-label="Progress to goal"><div class="below" id="goal-below"></div><div class="fill" id="goal-fill"></div></div>
-    <div class="track-scale"><span>$1,000 start</span><span>$1,500</span><span>$2,000 goal</span></div>
-    <div class="plan" id="plan" hidden></div>
-  </section>
+  <div role="tabpanel" id="book-panel" aria-labelledby="tab-h1b" style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="book-head"><h2 id="book-title">H-1B book</h2><span class="d" id="book-desc">&nbsp;</span></div>
 
-  <section class="tiles" aria-label="Key figures">
-    <div class="tile"><div class="label">Today's P&amp;L</div><div class="v num" id="t-day">&mdash;</div><div class="s">vs previous close</div></div>
-    <div class="tile"><div class="label">Realized P&amp;L</div><div class="v num" id="t-real">&mdash;</div><div class="s">Closed trades, after fees</div></div>
-    <div class="tile"><div class="label">Unrealized P&amp;L</div><div class="v num" id="t-unreal">&mdash;</div><div class="s">Open positions</div></div>
-    <div class="tile"><div class="label">Cash</div><div class="v num" id="t-cash">&mdash;</div><div class="s" id="t-cash-s">&nbsp;</div></div>
-  </section>
-
-  <div class="grid-2">
-    <section class="card" aria-labelledby="h-chart">
-      <div class="card-head"><h2 id="h-chart">Return since start</h2><span class="hint">Trading hours only · Sep 29 &ndash; Oct 5</span></div>
-      <div class="legend" id="legend">
-        <span><i style="background: var(--s-port)"></i>Portfolio</span>
-        <span><i style="background: var(--s-spy)"></i>S&amp;P 500 (SPY)</span>
-        <span><i style="background: var(--s-qqq)"></i>Nasdaq-100 (QQQ)</span>
+    <section class="statement" aria-label="Profit and loss">
+      <div class="fig">
+        <div class="label">Net investment</div>
+        <div class="value num" id="invested">$1,000.00</div>
+        <div class="sub">Paper cash deposited</div>
       </div>
-      <div class="chart-wrap" id="chart-wrap">
-        <svg id="chart" tabindex="0" role="img" aria-label="Portfolio return versus S&amp;P 500 and Nasdaq-100 since the start of the challenge"></svg>
-        <div class="tooltip" id="tip" hidden></div>
+      <div class="op" aria-hidden="true">&rarr;</div>
+      <div class="fig">
+        <div class="label">Portfolio value</div>
+        <div class="value" id="equity">&mdash;</div>
+        <div class="sub" id="equity-sub">Cash plus holdings at last price</div>
       </div>
-      <details class="data"><summary>Chart data by session</summary><div class="table-scroll"><table id="chart-table"></table></div></details>
+      <div class="op" aria-hidden="true">=</div>
+      <div class="fig hero">
+        <div class="label">Net profit</div>
+        <div class="value" id="profit">&mdash;</div>
+        <div class="sub" id="profit-sub">Waiting for the first snapshot</div>
+      </div>
     </section>
-    <section class="card" aria-labelledby="h-cash">
-      <div class="card-head"><h2 id="h-cash">Cash &amp; settlement</h2><span class="hint">T+1 settlement</span></div>
-      <div class="kv" id="cashkv"></div>
+
+    <section class="goal" aria-label="Progress to the 2x goal">
+      <div class="goal-head"><span>Goal: <strong>double to $2,000</strong> by the Oct 5 close</span><span id="goal-pct" class="num">&mdash;</span></div>
+      <div class="track" role="img" id="goal-track" aria-label="Progress to goal"><div class="below" id="goal-below"></div><div class="fill" id="goal-fill"></div></div>
+      <div class="track-scale"><span>$1,000 start</span><span>$1,500</span><span>$2,000 goal</span></div>
+      <div class="plan" id="plan" hidden></div>
+    </section>
+
+    <section class="tiles" aria-label="Key figures">
+      <div class="tile"><div class="label">Today's P&amp;L</div><div class="v num" id="t-day">&mdash;</div><div class="s">vs previous close</div></div>
+      <div class="tile"><div class="label">Realized P&amp;L</div><div class="v num" id="t-real">&mdash;</div><div class="s">Closed trades, after fees</div></div>
+      <div class="tile"><div class="label">Unrealized P&amp;L</div><div class="v num" id="t-unreal">&mdash;</div><div class="s">Open positions</div></div>
+      <div class="tile"><div class="label">Cash</div><div class="v num" id="t-cash">&mdash;</div><div class="s" id="t-cash-s">&nbsp;</div></div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card" aria-labelledby="h-hold">
+        <div class="card-head"><h2 id="h-hold">Holdings</h2><span class="hint" id="hold-hint">&nbsp;</span></div>
+        <div class="table-scroll"><table id="holdings"></table></div>
+      </section>
+      <section class="card" aria-labelledby="h-cash">
+        <div class="card-head"><h2 id="h-cash">Cash &amp; settlement</h2><span class="hint" id="cash-hint">T+1 settlement</span></div>
+        <div class="kv" id="cashkv"></div>
+      </section>
+    </div>
+
+    <section class="card" aria-labelledby="h-tx">
+      <div class="card-head"><h2 id="h-tx">Transaction log</h2><span class="hint" id="tx-hint">&nbsp;</span></div>
+      <div class="table-scroll"><table id="trades"></table></div>
+    </section>
+
+    <div class="grid-2 even">
+      <section class="card" aria-labelledby="h-j">
+        <div class="card-head"><h2 id="h-j">Research &amp; decision journal</h2><span class="hint">Newest first</span></div>
+        <div class="journal" id="journal"><div class="empty">Research notes and trade decisions will appear here.</div></div>
+      </section>
+      <section class="card" aria-labelledby="h-g">
+        <div class="card-head"><h2 id="h-g">Account rules</h2></div>
+        <div class="checks" id="checks"></div>
+        <div class="note" id="rules-note"></div>
+      </section>
+    </div>
+
+    <section class="card" aria-labelledby="h-r">
+      <div class="card-head"><h2 id="h-r">On the radar</h2><span class="hint">Watchlist at last update</span></div>
+      <div class="radar" id="radar"><div class="empty">Watchlist quotes appear after the first update.</div></div>
     </section>
   </div>
-
-  <section class="card" aria-labelledby="h-hold">
-    <div class="card-head"><h2 id="h-hold">Holdings</h2><span class="hint" id="hold-hint">&nbsp;</span></div>
-    <div class="table-scroll"><table id="holdings"></table></div>
-  </section>
-
-  <section class="card" aria-labelledby="h-tx">
-    <div class="card-head"><h2 id="h-tx">Transaction log</h2><span class="hint" id="tx-hint">&nbsp;</span></div>
-    <div class="table-scroll"><table id="trades"></table></div>
-  </section>
-
-  <div class="grid-2 even">
-    <section class="card" aria-labelledby="h-j">
-      <div class="card-head"><h2 id="h-j">Research &amp; decision journal</h2><span class="hint">Newest first</span></div>
-      <div class="journal" id="journal"><div class="empty">Research notes and trade decisions will appear here.</div></div>
-    </section>
-    <section class="card" aria-labelledby="h-g">
-      <div class="card-head"><h2 id="h-g">H-1B &amp; cash-account guardrails</h2></div>
-      <div class="checks" id="checks"></div>
-      <div class="note">An H-1B holder may invest in US securities, and no law caps how often you trade your own account, including pre-market and after-hours sessions. What the visa bars is unauthorized employment, so the lines not to cross are trading for other people, being paid for it, or running it as a business (for example electing trader tax status). Gains are short-term capital gains, taxed as ordinary income for a US tax resident; as an NRI for Indian tax purposes, US trading gains aren't taxed in India.</div>
-    </section>
-  </div>
-
-  <section class="card" aria-labelledby="h-r">
-    <div class="card-head"><h2 id="h-r">On the radar</h2><span class="hint">Watchlist at last update</span></div>
-    <div class="radar" id="radar"><div class="empty">Watchlist quotes appear after the first update.</div></div>
-  </section>
 
   <footer>
-    <span>Prices: Yahoo Finance, pulled by a GitHub Actions job every 5 minutes in the regular session and every 10 minutes pre-market and after hours; headlines every 15 minutes. Fills: latest trade at execution plus slippage (regular session 5/20/50 bps above $20, $5&ndash;$20 and under $5; extended hours 25/50/100 bps). $0 commission; SEC and FINRA TAF fees on sells. Trading hours 4:00 AM&ndash;8:00 PM ET; the overnight session is not simulated.</span>
-    <span>Full ledger and journal: <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/ledger/transactions.json" target="_blank" rel="noopener">ledger/transactions.json</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge" target="_blank" rel="noopener">repository</a></span>
+    <span>Prices: Yahoo Finance. Stocks and ETFs fill at the latest trade plus slippage (regular session 5/20/50 bps above $20, $5&ndash;$20 and under $5; extended hours 25/50/100 bps), $0 commission, SEC and FINRA TAF fees on sells, 4:00 AM&ndash;8:00 PM ET. Options (Unrestricted book only) fill at the ask to buy and the bid to sell from the live option chain, regular session only, $0.03 per contract in fees, and are valued at the bid/ask midpoint. Crypto (Unrestricted book only) trades 24/7 at the last price plus a 0.30% spread.</span>
+    <span>Full ledgers and journals: <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/ledger/transactions.json" target="_blank" rel="noopener">H-1B ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/books/free/transactions.json" target="_blank" rel="noopener">Unrestricted ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge" target="_blank" rel="noopener">repository</a></span>
     <span>Paper trading with simulated money. Not investment advice.</span>
   </footer>
 </div>
@@ -311,11 +367,29 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <script>
 (function () {
   "use strict";
-  var START_UTC = Date.parse("2026-09-29T00:35:00Z");
   var END_UTC = Date.parse("2026-10-05T20:00:00Z");
   var SESSIONS = ["2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-05"];
+  var DAY_NAMES = ["Tue 29", "Wed 30", "Thu 1", "Fri 2", "Mon 5"];
   var SESSION_MIN = 390;
-  var SNAP = null;
+  var DATA_BASE = "https://raw.githubusercontent.com/vamsikrishna2421/Investment_Challenge/market-data/data/";
+  var BOOKS = {
+    h1b: {
+      name: "H-1B", title: "H-1B book", collection: "snapshots", file: "snapshot.json", color: "var(--s-h1b)",
+      desc: "US stocks and ETFs in an individual cash account, run under the rules for an Indian citizen on an H-1B visa. Opened Mon Sep 28, 8:35 PM ET.",
+      cashHint: "T+1 settlement",
+      rulesTitle: "H-1B & cash-account guardrails",
+      note: "An H-1B holder may invest in US securities, and no law caps how often you trade your own account, including pre-market and after-hours sessions. What the visa bars is unauthorized employment, so the lines not to cross are trading for other people, being paid for it, or running it as a business (for example electing trader tax status). Gains are short-term capital gains, taxed as ordinary income for a US tax resident; as an NRI for Indian tax purposes, US trading gains aren't taxed in India."
+    },
+    free: {
+      name: "Unrestricted", title: "Unrestricted book", collection: "snapshots_free", file: "snapshot_free.json", color: "var(--s-free)",
+      desc: "No visa-driven limits: stocks, ETFs, listed options and spot crypto. Opened Tue Sep 29, 5:45 PM ET, a trading day after the H-1B book, with the same $2,000 target and finish line.",
+      cashHint: "T+1 stocks & options · crypto instant",
+      rulesTitle: "Account rules",
+      note: "No visa limits apply here. What remains applies to every US retail account holding $1,000: margin needs $2,000 of equity (FINRA), so there is no borrowing, no short selling and no naked option writing. Bearish views go through puts or inverse ETFs, and an option can lose at most the premium paid."
+    }
+  };
+  var SNAPS = { h1b: null, free: null };
+  var CUR = "h1b";
   var chartState = null;
 
   function $(id) { return document.getElementById(id); }
@@ -347,16 +421,17 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     if (signed === false) return s;
     return (x > 0.004 ? "+" : x < -0.004 ? "−" : "") + s;
   }
-  function qty(x) {
+  function qtyText(x, asset, label) {
     if (x === null || x === undefined) return "—";
-    return Number.isInteger(x) ? String(x) : x.toFixed(4).replace(/0+$/, "").replace(/\.$/, "");
+    if (asset === "option") return x + (x === 1 ? " contract" : " contracts");
+    var s = Number.isInteger(x) ? String(x) : x.toFixed(asset === "crypto" ? 6 : 4).replace(/0+$/, "").replace(/\.$/, "");
+    return asset === "crypto" ? s + " " + label : s;
   }
   function cls(x) { return x > 0.004 ? "gain" : x < -0.004 ? "loss" : ""; }
   function arrow(x) { return x > 0.004 ? "▲ " : x < -0.004 ? "▼ " : ""; }
 
   var etFmt = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   var etParts = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
-  function fmtET(iso) { return iso ? etFmt.format(new Date(iso)) + " ET" : "—"; }
   function fmtShortET(iso) {
     if (!iso) return "—";
     var p = {}; etParts.formatToParts(new Date(iso)).forEach(function (x) { p[x.type] = x.value; });
@@ -374,12 +449,18 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     return "closed";
   }
 
+  function newest() {
+    var a = SNAPS.h1b, b = SNAPS.free;
+    if (!a) return b; if (!b) return a;
+    return Date.parse(a.as_of) >= Date.parse(b.as_of) ? a : b;
+  }
+
   function tick() {
     var now = new Date();
     var s = sessionNow(now);
     var pill = $("mkt");
     pill.className = "pill" + (s === "regular" ? " open" : s === "pre" || s === "post" ? " ext" : "");
-    $("mkt-t").textContent = s === "regular" ? "Market open" : s === "pre" ? "Pre-market" : s === "post" ? "After hours" : "Market closed";
+    $("mkt-t").textContent = (s === "regular" ? "Market open" : s === "pre" ? "Pre-market" : s === "post" ? "After hours" : "Market closed") + " · crypto 24/7";
     var left = END_UTC - now.getTime();
     if (left <= 0) {
       $("countdown").textContent = "Finished";
@@ -387,10 +468,11 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
       var d = Math.floor(left / 86400000), h = Math.floor(left % 86400000 / 3600000), mi = Math.floor(left % 3600000 / 60000), se = Math.floor(left % 60000 / 1000);
       $("countdown").textContent = (d ? d + "d " : "") + h + "h " + String(mi).padStart(2, "0") + "m " + String(se).padStart(2, "0") + "s";
     }
-    if (SNAP) {
-      var ago = Math.max(0, Math.round((now.getTime() - Date.parse(SNAP.as_of)) / 60000));
+    var n = newest();
+    if (n) {
+      var ago = Math.max(0, Math.round((now.getTime() - Date.parse(n.as_of)) / 60000));
       $("updated").textContent = ago < 1 ? "just now" : ago < 90 ? ago + " min ago" : Math.round(ago / 60) + " h ago";
-      var nu = SNAP.schedule && SNAP.schedule.next_update;
+      var nu = n.schedule && n.schedule.next_update;
       $("nextupd").textContent = nu && Date.parse(nu) > now.getTime() ? "next " + fmtShortET(nu) + " ET" : "";
     }
   }
@@ -401,6 +483,71 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     b.textContent = text; b.hidden = false;
   }
 
+  /* ---------- Scoreboard ---------- */
+  function benchText(s) {
+    var spy = s.benchmarks && s.benchmarks.SPY;
+    if (!spy || spy.ret_pct === null || spy.ret_pct === undefined) return "";
+    var diff = s.summary.return_pct - spy.ret_pct;
+    if (Math.abs(diff) < 0.005) return "Level with the S&P 500";
+    return (diff > 0 ? "Ahead of" : "Behind") + " the S&P 500 by " + Math.abs(diff).toFixed(2) + " pts";
+  }
+  function renderScoreboard() {
+    ["h1b", "free"].forEach(function (b) {
+      var s = SNAPS[b];
+      var sel = b === CUR;
+      var tab = $("tab-" + b);
+      tab.setAttribute("aria-selected", sel ? "true" : "false");
+      tab.tabIndex = sel ? 0 : -1;
+      $("st-" + b).textContent = sel ? "Showing details" : "View details";
+      if (!s) { $("eq-" + b).textContent = "—"; $("pl-" + b).textContent = "Waiting for data"; return; }
+      var sm = s.summary;
+      $("eq-" + b).textContent = usd(sm.equity);
+      var pl = $("pl-" + b);
+      pl.textContent = arrow(sm.net_profit) + usd(sm.net_profit, true) + " (" + pct(sm.return_pct) + ")";
+      pl.className = "bc-pl " + cls(sm.net_profit);
+      $("tr-" + b).style.width = Math.max(0, Math.min(100, sm.goal_progress_pct)) + "%";
+      $("gl-" + b).textContent = sm.equity >= sm.start_capital
+        ? sm.goal_progress_pct.toFixed(1) + "% of the way to $2,000"
+        : usd(sm.start_capital - sm.equity) + " below start · goal $2,000";
+      $("bm-" + b).textContent = benchText(s);
+    });
+    var lead = $("lead");
+    if (SNAPS.h1b && SNAPS.free) {
+      var a = SNAPS.h1b.summary.equity, f = SNAPS.free.summary.equity, d = f - a;
+      lead.textContent = "";
+      var who = Math.abs(d) < 0.005 ? null : d > 0 ? "Unrestricted" : "H-1B";
+      var strong = el("strong", null, who ? who + " leads by " + usd(Math.abs(d)) : "The books are level");
+      lead.appendChild(strong);
+      lead.appendChild(el("span", null, "Both finish at the Mon Oct 5, 4:00 PM ET close"));
+      lead.hidden = false;
+    } else lead.hidden = true;
+  }
+
+  function select(b, focus) {
+    if (!BOOKS[b]) return;
+    CUR = b;
+    try { localStorage.setItem("challenge-book", b); } catch (e) { /* storage unavailable */ }
+    $("book-panel").setAttribute("aria-labelledby", "tab-" + b);
+    renderScoreboard();
+    renderBook();
+    if (focus) $("tab-" + b).focus();
+  }
+  (function wireTabs() {
+    ["h1b", "free"].forEach(function (b) {
+      $("tab-" + b).addEventListener("click", function () { select(b); });
+      $("tab-" + b).addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft" || e.key === "ArrowDown" || e.key === "ArrowUp") {
+          select(b === "h1b" ? "free" : "h1b", true); e.preventDefault();
+        }
+      });
+    });
+    var h = (location.hash || "").replace("#", "");
+    var saved = null;
+    try { saved = localStorage.getItem("challenge-book"); } catch (e) { saved = null; }
+    CUR = h === "unrestricted" || h === "free" ? "free" : h === "h1b" ? "h1b" : (saved === "free" ? "free" : "h1b");
+  })();
+
+  /* ---------- Selected book ---------- */
   function renderStatement(s) {
     var sm = s.summary;
     $("invested").textContent = usd(sm.deposits);
@@ -412,18 +559,17 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     p.className = "value num " + cls(sm.net_profit);
     var sub = $("profit-sub");
     sub.textContent = "";
-    var chip = el("span", "delta-chip " + cls(sm.return_pct), arrow(sm.return_pct) + pct(sm.return_pct));
-    sub.appendChild(chip);
+    sub.appendChild(el("span", "delta-chip " + cls(sm.return_pct), arrow(sm.return_pct) + pct(sm.return_pct)));
     sub.appendChild(document.createTextNode(" return on $" + sm.deposits.toLocaleString("en-US")));
 
-    var prog = Math.max(0, Math.min(100, sm.goal_progress_pct));
-    $("goal-fill").style.width = prog + "%";
+    $("goal-track").className = "track" + (CUR === "free" ? " free" : "");
+    $("goal-fill").style.width = Math.max(0, Math.min(100, sm.goal_progress_pct)) + "%";
     var below = sm.equity < sm.start_capital ? Math.min(100, (sm.start_capital - sm.equity) / sm.start_capital * 100) : 0;
     $("goal-below").style.width = below + "%";
     $("goal-pct").textContent = sm.equity >= sm.start_capital
       ? sm.goal_progress_pct.toFixed(1) + "% of the way to 2x"
       : usd(sm.start_capital - sm.equity) + " below start";
-    $("goal-track").setAttribute("aria-label", "Portfolio at " + usd(sm.equity) + ", goal $2,000");
+    $("goal-track").setAttribute("aria-label", BOOKS[CUR].name + " book at " + usd(sm.equity) + ", goal $2,000");
 
     var plan = $("plan");
     if (s.strategy) { plan.hidden = false; plan.textContent = ""; plan.appendChild(el("b", null, "Game plan: ")); plan.appendChild(document.createTextNode(s.strategy)); }
@@ -438,14 +584,15 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   function renderCash(s) {
     var sm = s.summary, box = $("cashkv");
     box.textContent = "";
+    $("cash-hint").textContent = BOOKS[CUR].cashHint;
     var rows = [
       ["Cash balance", "Buying power in a cash account", usd(sm.cash)],
       ["Settled cash", "Free to use with no settlement risk", usd(sm.settled_cash)],
-      ["Unsettled proceeds", "From sales in the last business day", usd(sm.unsettled_cash)],
+      ["Unsettled proceeds", "From stock or option sales in the last business day", usd(sm.unsettled_cash)],
       ["Invested (market value)", null, usd(sm.invested_value)],
-      ["Fees paid", "SEC + FINRA TAF on sells", usd(sm.fees_paid)],
+      ["Fees paid", CUR === "free" ? "Option contract fees, SEC + FINRA TAF on stock sells" : "SEC + FINRA TAF on sells", usd(sm.fees_paid)],
       ["Orders placed", "Today / total", sm.counts.orders_today + " / " + sm.counts.orders_total],
-      ["Day trades", "Rolling 5 days, tracked (no cap)", String(sm.counts.day_trades_5d)],
+      ["Day trades", "Rolling 5 days, tracked (no cap in a cash account)", String(sm.counts.day_trades_5d)],
     ];
     rows.forEach(function (r) {
       var row = el("div", "r"), k = el("div", "k", r[0]);
@@ -454,33 +601,38 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     });
   }
 
-  function th(tr, text, n) { var h = el("th", n ? "n" : null, text); tr.appendChild(h); }
+  function th(tr, text, n) { tr.appendChild(el("th", n ? "n" : null, text)); }
   function td(tr, text, c) { var d = el("td", c || null, text); tr.appendChild(d); return d; }
 
   function renderHoldings(s) {
     var t = $("holdings"); t.textContent = "";
     var pos = s.positions || [];
     $("hold-hint").textContent = pos.length ? pos.length + " open · " + usd(s.summary.invested_value) : "All cash";
-    if (!pos.length) { var tr0 = el("tr"); var c = td(tr0, "No open positions. Cash is waiting for the next entry.", "empty"); c.colSpan = 9; t.appendChild(tr0); return; }
-    var hr = el("tr"); ["Ticker", "Shares", "Avg cost", "Last", "Day", "Value", "Unrealized", "Weight", "Plan"].forEach(function (h, i) { th(hr, h, i > 0 && i < 8); });
+    if (!pos.length) { var tr0 = el("tr"); var c = td(tr0, "No open positions. Cash is waiting for the next entry.", "empty"); c.colSpan = 8; t.appendChild(tr0); return; }
+    var hr = el("tr"); ["Position", "Quantity", "Avg cost", "Last", "Day", "Value", "Unrealized", "Plan"].forEach(function (h, i) { th(hr, h, i > 0 && i < 7); });
     var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
     var tb = el("tbody");
     pos.forEach(function (p) {
       var tr = el("tr");
-      var c0 = el("td"); c0.appendChild(el("span", "tk", p.ticker)); if (p.name) c0.appendChild(el("span", "nm", p.name));
+      var label = p.label || p.ticker;
+      var c0 = el("td"); c0.appendChild(el("span", "tk", label));
+      var sub = p.asset === "option" ? (p.expired ? "Expired · valued at intrinsic" : "Option · 100 shares per contract") : p.name;
+      if (sub && sub !== label) c0.appendChild(el("span", "nm", sub));
       if (p.sell_locked_until) c0.appendChild(el("span", "lock", "Sell-locked to " + p.sell_locked_until));
       tr.appendChild(c0);
-      td(tr, qty(p.qty), "n"); td(tr, px(p.avg_cost), "n"); td(tr, px(p.price), "n");
+      td(tr, qtyText(p.qty, p.asset, label), "n");
+      var ac = td(tr, px(p.avg_cost), "n"); if (p.asset === "option") ac.appendChild(el("div", "muted", "per share"));
+      var lc = td(tr, px(p.price), "n");
+      if (p.asset === "option" && (p.bid || p.ask)) lc.appendChild(el("div", "muted", "bid " + px(p.bid) + " · ask " + px(p.ask)));
       var dc = p.day_change_pct; td(tr, dc === null || dc === undefined ? "—" : pct(dc), "n " + cls(dc || 0));
-      td(tr, usd(p.market_value), "n");
+      var vc = td(tr, usd(p.market_value), "n"); vc.appendChild(el("div", "muted", p.weight_pct.toFixed(1) + "% of book"));
       var u = td(tr, usd(p.unrealized_pnl, true), "n " + cls(p.unrealized_pnl));
       u.appendChild(el("div", "muted", pct(p.unrealized_pct)));
-      td(tr, p.weight_pct.toFixed(1) + "%", "n");
       var plan = [];
       if (p.stop) plan.push("Stop " + px(p.stop));
       if (p.target) plan.push("Target " + px(p.target));
       var pc = td(tr, plan.join(" · ") || "—", "why");
-      if (p.thesis) { pc.appendChild(el("div", "muted", p.thesis)); }
+      if (p.thesis) pc.appendChild(el("div", "muted", p.thesis));
       tb.appendChild(tr);
     });
     t.appendChild(tb);
@@ -491,25 +643,33 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     var tr = s.trades || [];
     var buys = tr.filter(function (x) { return x.type === "BUY"; }).length;
     $("tx-hint").textContent = tr.length ? tr.length + " orders · " + buys + " buys, " + (tr.length - buys) + " sells" : "No orders yet";
-    if (!tr.length) { var r0 = el("tr"); var c = td(r0, "No trades yet. Orders execute during the regular session and are logged here with price, amount and reasoning.", "empty"); c.colSpan = 9; t.appendChild(r0); return; }
-    var hr = el("tr"); ["Time (ET)", "Side", "Ticker", "Shares", "Fill price", "Amount", "Realized", "Settles", "Why"].forEach(function (h, i) { th(hr, h, i >= 3 && i <= 6); });
+    if (!tr.length) { var r0 = el("tr"); var c = td(r0, "No trades yet. Every order is logged here with price, amount and reasoning.", "empty"); c.colSpan = 9; t.appendChild(r0); return; }
+    var hr = el("tr"); ["Time (ET)", "Side", "Position", "Quantity", "Fill price", "Amount", "Realized", "Settles", "Why"].forEach(function (h, i) { th(hr, h, i >= 3 && i <= 6); });
     var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
     var tb = el("tbody");
     tr.forEach(function (x) {
       var row = el("tr");
+      var label = x.label || x.ticker;
       var c0 = td(row, fmtShortET(x.ts), "num"); c0.appendChild(el("div", "muted", x.id));
       var c1 = el("td"); c1.appendChild(el("span", "side " + x.type, x.type)); row.appendChild(c1);
-      var c2 = el("td"); c2.appendChild(el("span", "tk", x.ticker)); if (x.name) c2.appendChild(el("span", "nm", x.name)); row.appendChild(c2);
-      td(row, qty(x.qty), "n");
-      var fp = td(row, px(x.price), "n"); fp.appendChild(el("div", "muted", "quote " + px(x.quote_price) + " · " + x.slippage_bps + " bps"));
+      var c2 = el("td"); c2.appendChild(el("span", "tk", label));
+      var nm = x.asset === "option" ? x.ticker : x.name;
+      if (nm && nm !== label) c2.appendChild(el("span", "nm", nm));
+      row.appendChild(c2);
+      td(row, qtyText(x.qty, x.asset, label), "n");
+      var fp = td(row, px(x.price), "n");
+      var qd = x.quote_detail;
+      if (x.asset === "option" && qd) fp.appendChild(el("div", "muted", "bid " + px(qd.bid) + " · ask " + px(qd.ask)));
+      else fp.appendChild(el("div", "muted", "quote " + px(x.quote_price) + " · " + x.slippage_bps + " bps"));
       var am = td(row, usd(x.gross), "n"); if (x.fees) am.appendChild(el("div", "muted", "fees " + usd(x.fees)));
-      if (x.type === "SELL" && x.realized_pnl !== undefined) {
+      if (x.type !== "BUY" && x.realized_pnl !== undefined) {
         var rc = td(row, usd(x.realized_pnl, true), "n " + cls(x.realized_pnl)); rc.appendChild(el("div", "muted", pct(x.return_pct) + (x.held_hours !== undefined ? " · " + x.held_hours + " h" : "")));
       } else td(row, "—", "n muted");
-      td(row, x.settle_date || "—", "num");
+      td(row, x.asset === "crypto" ? "Instant" : (x.settle_date || "—"), "num");
       var w = td(row, x.rationale || "", "why");
       var ses = (x.compliance && x.compliance.session) || "regular";
-      if (ses !== "regular") { w.appendChild(document.createTextNode(" ")); w.appendChild(el("span", "tag", ses === "pre" ? "pre-market" : "after-hours")); }
+      if (x.asset !== "crypto" && ses !== "regular") { w.appendChild(document.createTextNode(" ")); w.appendChild(el("span", "tag", ses === "pre" ? "pre-market" : "after-hours")); }
+      if (x.asset === "crypto" && ses !== "regular") { w.appendChild(document.createTextNode(" ")); w.appendChild(el("span", "tag", "outside market hours")); }
       (x.tags || []).forEach(function (g) { w.appendChild(document.createTextNode(" ")); w.appendChild(el("span", "tag", g)); });
       tb.appendChild(row);
     });
@@ -517,12 +677,11 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   }
 
   function renderBody(target, text) {
-    var blocks = String(text || "").split(/\n\s*\n/);
-    blocks.forEach(function (b) {
+    String(text || "").split(/\n\s*\n/).forEach(function (b) {
       var lines = b.split("\n").filter(function (l) { return l.trim(); });
       if (!lines.length) return;
-      if (lines.every(function (l) { return /^\s*[-*]\s+/.test(l); })) {
-        var ul = el("ul"); lines.forEach(function (l) { ul.appendChild(el("li", null, l.replace(/^\s*[-*]\s+/, ""))); }); target.appendChild(ul);
+      if (lines.every(function (l) { return /^\s*([-*]|\d+\.)\s+/.test(l); })) {
+        var ul = el("ul"); lines.forEach(function (l) { ul.appendChild(el("li", null, l.replace(/^\s*([-*]|\d+\.)\s+/, ""))); }); target.appendChild(ul);
       } else target.appendChild(el("p", null, lines.join(" ")));
     });
   }
@@ -551,6 +710,8 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   }
 
   function renderChecks(s) {
+    $("h-g").textContent = BOOKS[CUR].rulesTitle;
+    $("rules-note").textContent = BOOKS[CUR].note;
     var box = $("checks"); box.textContent = "";
     ((s.compliance && s.compliance.checks) || []).forEach(function (c) {
       var row = el("div", "check"); row.appendChild(icon(c.ok));
@@ -568,14 +729,27 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     if (!r.length) { box.appendChild(el("div", "empty", "Watchlist quotes appear after the first update.")); return; }
     r.forEach(function (x) {
       var t = el("div", "rt"); t.title = x.name || x.ticker;
-      t.appendChild(el("div", "tk", x.ticker));
+      t.appendChild(el("div", "tk", x.label || x.ticker));
       t.appendChild(el("div", "p", px(x.price)));
       t.appendChild(el("div", "c " + cls(x.change_pct || 0), arrow(x.change_pct || 0) + pct(x.change_pct)));
       box.appendChild(t);
     });
   }
 
-  /* ---------- Chart: % return in trading time ---------- */
+  function renderBook() {
+    var s = SNAPS[CUR], B = BOOKS[CUR];
+    $("book-title").textContent = B.title;
+    $("book-desc").textContent = B.desc;
+    if (!s) {
+      $("equity").textContent = "—"; $("profit").textContent = "—"; $("profit-sub").textContent = "Waiting for the first snapshot of this book";
+      ["holdings", "trades"].forEach(function (id) { $(id).textContent = ""; });
+      $("journal").textContent = ""; $("journal").appendChild(el("div", "empty", "Loading this book…"));
+      return;
+    }
+    renderStatement(s); renderCash(s); renderHoldings(s); renderTrades(s); renderJournal(s); renderChecks(s); renderRadar(s);
+  }
+
+  /* ---------- Chart: both books' % return in trading time ---------- */
   function tradingX(iso) {
     var t = Date.parse(iso);
     for (var i = 0; i < SESSIONS.length; i++) {
@@ -590,29 +764,36 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     for (var i = 0; i < steps.length; i++) if (span / steps[i] <= 6) return steps[i];
     return 200;
   }
-
-  function buildSeries(s) {
-    var e = s.equity || { t: [] }, base = s.summary.deposits || 1000;
-    var pts = [];
+  function series(s, withBench) {
+    var out = [];
+    if (!s || !s.equity) return out;
+    var e = s.equity, base = s.summary.deposits || 1000;
     for (var i = 0; i < e.t.length; i++) {
-      pts.push({ t: e.t[i], x: tradingX(e.t[i]), eq: e.equity[i], p: (e.equity[i] / base - 1) * 100,
-        spy: e.SPY ? e.SPY[i] : null, qqq: e.QQQ ? e.QQQ[i] : null });
+      var p = { t: e.t[i], ms: Date.parse(e.t[i]), x: tradingX(e.t[i]), eq: e.equity[i], p: (e.equity[i] / base - 1) * 100 };
+      if (withBench) { p.spy = e.SPY ? e.SPY[i] : null; p.qqq = e.QQQ ? e.QQQ[i] : null; }
+      out.push(p);
     }
-    pts.sort(function (a, b) { return a.x - b.x || (a.t < b.t ? -1 : 1); });
-    return pts;
+    out.sort(function (a, b) { return a.ms - b.ms; });
+    return out;
+  }
+  function lastAtOrBefore(arr, ms) {
+    var best = null;
+    for (var i = 0; i < arr.length; i++) { if (arr[i].ms <= ms) best = arr[i]; else break; }
+    return best;
   }
 
   function drawChart() {
     var svg = $("chart");
-    if (!SNAP) return;
-    var pts = buildSeries(SNAP);
-    var W = svg.clientWidth || 600, H = svg.clientHeight || 280;
-    var m = { l: 46, r: 16, t: 14, b: 26 };
+    if (!SNAPS.h1b && !SNAPS.free) return;
+    var H1 = series(SNAPS.h1b, true), FR = series(SNAPS.free, false);
+    var W = svg.clientWidth || 600, H = svg.clientHeight || 300;
+    var m = { l: 46, r: 16, t: 16, b: 26 };
     while (svg.firstChild) svg.removeChild(svg.firstChild);
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
     var xMax = SESSIONS.length * SESSION_MIN;
     var vals = [0];
-    pts.forEach(function (p) { [p.p, p.spy, p.qqq].forEach(function (v) { if (v !== null && v !== undefined && !isNaN(v)) vals.push(v); }); });
+    H1.forEach(function (p) { [p.p, p.spy, p.qqq].forEach(function (v) { if (v !== null && v !== undefined && !isNaN(v)) vals.push(v); }); });
+    FR.forEach(function (p) { vals.push(p.p); });
     var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
     var span = Math.max(hi - lo, 4), step = niceStep(span);
     lo = Math.floor((lo - span * 0.08) / step) * step; hi = Math.ceil((hi + span * 0.08) / step) * step;
@@ -627,53 +808,73 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
       svg.appendChild(svgEl("line", { x1: m.l, x2: W - m.r, y1: y, y2: y, stroke: Math.abs(v) < 1e-9 ? "var(--axis)" : "var(--grid)", "stroke-width": 1 }));
       var lab = svgEl("text", { x: m.l - 8, y: y + 4, "text-anchor": "end" }); lab.textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(step < 1 ? 1 : 0) + "%"; svg.appendChild(lab);
     }
-    var dayNames = ["Tue 29", "Wed 30", "Thu 1", "Fri 2", "Mon 5"];
     for (var i = 0; i <= SESSIONS.length; i++) {
       var xx = X(i * SESSION_MIN);
       svg.appendChild(svgEl("line", { x1: xx, x2: xx, y1: m.t, y2: H - m.b, stroke: "var(--grid)", "stroke-width": 1 }));
       if (i < SESSIONS.length) {
-        var tl = svgEl("text", { x: X(i * SESSION_MIN + SESSION_MIN / 2), y: H - 8, "text-anchor": "middle" }); tl.textContent = dayNames[i]; svg.appendChild(tl);
+        var tl = svgEl("text", { x: X(i * SESSION_MIN + SESSION_MIN / 2), y: H - 8, "text-anchor": "middle" }); tl.textContent = DAY_NAMES[i]; svg.appendChild(tl);
       }
     }
-    var series = [["qqq", "var(--s-qqq)"], ["spy", "var(--s-spy)"], ["p", "var(--s-port)"]];
-    var ends = {};
-    series.forEach(function (sr) {
+    function path(pts, key, stroke, width, dash) {
       var d = "", started = false, last = null;
       pts.forEach(function (p) {
-        var v = p[sr[0]]; if (v === null || v === undefined || isNaN(v)) return;
+        var v = p[key]; if (v === null || v === undefined || isNaN(v)) return;
         d += (started ? "L" : "M") + X(p.x).toFixed(1) + " " + Y(v).toFixed(1); started = true; last = p;
       });
-      if (!d) return;
-      svg.appendChild(svgEl("path", { d: d, fill: "none", stroke: sr[1], "stroke-width": sr[0] === "p" ? 2.5 : 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
-      ends[sr[0]] = last;
-    });
-    if (ends.p) {
-      var ex = X(ends.p.x), ey = Y(ends.p.p);
-      svg.appendChild(svgEl("circle", { cx: ex, cy: ey, r: 5, fill: "var(--s-port)", stroke: "var(--surface)", "stroke-width": 2 }));
-      var lbl = svgEl("text", { x: Math.min(ex + 9, W - m.r - 4), y: ey - 9, "text-anchor": ex + 90 > W ? "end" : "start", style: "fill: var(--ink); font-weight: 600" });
-      lbl.textContent = "Portfolio " + pct(ends.p.p); svg.appendChild(lbl);
+      if (!d) return null;
+      var a = { d: d, fill: "none", stroke: stroke, "stroke-width": width, "stroke-linejoin": "round", "stroke-linecap": "round" };
+      if (dash) a["stroke-dasharray"] = dash;
+      svg.appendChild(svgEl("path", a));
+      return last;
     }
+    path(H1, "qqq", "var(--s-bench)", 1.5, "4 3");
+    path(H1, "spy", "var(--s-bench)", 1.5);
+    var endH = path(H1, "p", "var(--s-h1b)", 2.5);
+    var endF = path(FR, "p", "var(--s-free)", 2.5);
+    var labels = [];
+    if (endH) labels.push({ p: endH, name: "H-1B", color: "var(--s-h1b)" });
+    if (endF) labels.push({ p: endF, name: "Unrestricted", color: "var(--s-free)" });
+    labels.forEach(function (L) { L.y = Y(L.p.p); });
+    if (labels.length === 2 && Math.abs(labels[0].y - labels[1].y) < 16) {
+      var up = labels[0].y <= labels[1].y ? labels[0] : labels[1], dn = up === labels[0] ? labels[1] : labels[0];
+      var mid = (up.y + dn.y) / 2; up.ly = mid - 9; dn.ly = mid + 9;
+    }
+    labels.forEach(function (L) {
+      var ex = X(L.p.x), ey = L.y;
+      svg.appendChild(svgEl("circle", { cx: ex, cy: ey, r: 5, fill: L.color, stroke: "var(--surface)", "stroke-width": 2 }));
+      var right = ex + 120 > W;
+      var t = svgEl("text", { x: right ? ex - 9 : ex + 9, y: (L.ly !== undefined ? L.ly : ey - 9) + 4, "text-anchor": right ? "end" : "start", style: "fill: var(--ink); font-weight: 600" });
+      t.textContent = L.name + " " + pct(L.p.p); svg.appendChild(t);
+    });
     var cross = svgEl("line", { x1: 0, x2: 0, y1: m.t, y2: H - m.b, stroke: "var(--line-strong)", "stroke-width": 1, visibility: "hidden" });
     svg.appendChild(cross);
     var dots = {};
-    series.forEach(function (sr) { dots[sr[0]] = svgEl("circle", { r: 4, fill: sr[1], stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" }); svg.appendChild(dots[sr[0]]); });
-    chartState = { pts: pts, X: X, Y: Y, W: W, H: H, cross: cross, dots: dots, idx: pts.length - 1 };
-    renderChartTable(pts);
+    [["h", "var(--s-h1b)"], ["f", "var(--s-free)"], ["spy", "var(--s-bench)"], ["qqq", "var(--s-bench)"]].forEach(function (sr) {
+      dots[sr[0]] = svgEl("circle", { r: 4, fill: sr[1], stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" }); svg.appendChild(dots[sr[0]]);
+    });
+    var anchor = H1.length >= FR.length ? H1 : FR;
+    chartState = { H1: H1, FR: FR, anchor: anchor, X: X, Y: Y, W: W, H: H, cross: cross, dots: dots, idx: anchor.length - 1 };
+    renderChartTable(H1, FR);
   }
 
   function showTip(i) {
-    var cs = chartState; if (!cs || !cs.pts.length) return;
-    i = Math.max(0, Math.min(cs.pts.length - 1, i)); cs.idx = i;
-    var p = cs.pts[i], x = cs.X(p.x);
+    var cs = chartState; if (!cs || !cs.anchor.length) return;
+    i = Math.max(0, Math.min(cs.anchor.length - 1, i)); cs.idx = i;
+    var a = cs.anchor[i], x = cs.X(a.x);
+    var h = lastAtOrBefore(cs.H1, a.ms), f = lastAtOrBefore(cs.FR, a.ms);
     cs.cross.setAttribute("x1", x); cs.cross.setAttribute("x2", x); cs.cross.setAttribute("visibility", "visible");
-    ["p", "spy", "qqq"].forEach(function (k) {
-      var v = p[k], d = cs.dots[k];
+    function dot(k, v) {
+      var d = cs.dots[k];
       if (v === null || v === undefined || isNaN(v)) { d.setAttribute("visibility", "hidden"); return; }
       d.setAttribute("cx", x); d.setAttribute("cy", cs.Y(v)); d.setAttribute("visibility", "visible");
-    });
+    }
+    dot("h", h ? h.p : null); dot("f", f ? f.p : null); dot("spy", h ? h.spy : null); dot("qqq", h ? h.qqq : null);
     var tip = $("tip"); tip.textContent = "";
-    tip.appendChild(el("div", "t", fmtShortET(p.t) + " ET"));
-    [["Portfolio", "var(--s-port)", pct(p.p) + " · " + usd(p.eq)], ["S&P 500", "var(--s-spy)", pct(p.spy)], ["Nasdaq-100", "var(--s-qqq)", pct(p.qqq)]].forEach(function (r) {
+    tip.appendChild(el("div", "t", fmtShortET(a.t) + " ET"));
+    [["H-1B book", "var(--s-h1b)", h ? pct(h.p) + " · " + usd(h.eq) : "—"],
+     ["Unrestricted", "var(--s-free)", f ? pct(f.p) + " · " + usd(f.eq) : "not open yet"],
+     ["S&P 500", "var(--s-bench)", h ? pct(h.spy) : "—"],
+     ["Nasdaq-100", "var(--s-bench)", h ? pct(h.qqq) : "—"]].forEach(function (r) {
       var row = el("div", "row"), l = el("span"), key = el("i"); key.style.background = r[1]; l.appendChild(key); l.appendChild(document.createTextNode(r[0]));
       row.appendChild(l); row.appendChild(el("b", null, r[2])); tip.appendChild(row);
     });
@@ -690,12 +891,12 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   function nearest(clientX) {
     var cs = chartState, svg = $("chart"), r = svg.getBoundingClientRect();
     var x = (clientX - r.left) / r.width * cs.W, best = 0, bd = Infinity;
-    cs.pts.forEach(function (p, i) { var d = Math.abs(cs.X(p.x) - x); if (d < bd) { bd = d; best = i; } });
+    cs.anchor.forEach(function (p, i) { var d = Math.abs(cs.X(p.x) - x); if (d < bd) { bd = d; best = i; } });
     return best;
   }
   (function wireChart() {
     var svg = $("chart");
-    svg.addEventListener("pointermove", function (e) { if (chartState && chartState.pts.length) showTip(nearest(e.clientX)); });
+    svg.addEventListener("pointermove", function (e) { if (chartState && chartState.anchor.length) showTip(nearest(e.clientX)); });
     svg.addEventListener("pointerleave", hideTip);
     svg.addEventListener("focus", function () { if (chartState) showTip(chartState.idx); });
     svg.addEventListener("blur", hideTip);
@@ -707,42 +908,52 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     if (window.ResizeObserver) new ResizeObserver(function () { drawChart(); }).observe($("chart-wrap"));
   })();
 
-  function renderChartTable(pts) {
+  function renderChartTable(H1, FR) {
     var t = $("chart-table"); t.textContent = "";
-    var hr = el("tr"); ["Session end", "Portfolio", "Return", "S&P 500", "Nasdaq-100"].forEach(function (h, i) { th(hr, h, i > 0); });
+    var hr = el("tr"); ["Session end", "H-1B book", "H-1B return", "Unrestricted", "Unrestricted return", "S&P 500", "Nasdaq-100"].forEach(function (h, i) { th(hr, h, i > 0); });
     var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
     var tb = el("tbody"), byDay = {};
-    pts.forEach(function (p) { var k = Math.min(SESSIONS.length - 1, Math.floor(Math.max(0, p.x - 0.001) / SESSION_MIN)); byDay[k] = p; });
+    H1.forEach(function (p) { var k = Math.min(SESSIONS.length - 1, Math.floor(Math.max(0, p.x - 0.001) / SESSION_MIN)); byDay[k] = p; });
     Object.keys(byDay).sort().forEach(function (k) {
-      var p = byDay[k], tr = el("tr");
-      td(tr, fmtShortET(p.t), "num"); td(tr, usd(p.eq), "n"); td(tr, pct(p.p), "n " + cls(p.p)); td(tr, pct(p.spy), "n"); td(tr, pct(p.qqq), "n");
+      var p = byDay[k], f = lastAtOrBefore(FR, p.ms), tr = el("tr");
+      td(tr, fmtShortET(p.t), "num"); td(tr, usd(p.eq), "n"); td(tr, pct(p.p), "n " + cls(p.p));
+      td(tr, f ? usd(f.eq) : "—", "n"); td(tr, f ? pct(f.p) : "—", "n " + (f ? cls(f.p) : ""));
+      td(tr, pct(p.spy), "n"); td(tr, pct(p.qqq), "n");
       tb.appendChild(tr);
     });
     t.appendChild(tb);
   }
 
-  function render(s) {
-    SNAP = s;
-    setBanner(s.note || "");
-    renderStatement(s); renderCash(s); renderHoldings(s); renderTrades(s); renderJournal(s); renderChecks(s); renderRadar(s);
-    drawChart(); tick();
+  function renderAll() {
+    var n = newest();
+    setBanner(n && n.note ? n.note : "");
+    renderScoreboard(); renderBook(); drawChart(); tick();
+  }
+  function accept(book, s) {
+    if (!s || !s.summary) return;
+    if (SNAPS[book] && SNAPS[book].id === s.id) return;
+    SNAPS[book] = s;
+    renderAll();
   }
 
+  renderScoreboard(); renderBook();
   tick();
   setInterval(tick, 1000);
-  setInterval(function () { if (SNAP) drawChart(); }, 60000);
+  setInterval(function () { drawChart(); }, 60000);
 
-  /* Public copy (e.g. Vercel): no claude.ai runtime, so read the snapshot that the
-     GitHub Actions job rebuilds every 5 minutes in the public repo. */
-  var PUBLIC_SNAPSHOT = "https://raw.githubusercontent.com/vamsikrishna2421/Investment_Challenge/market-data/data/snapshot.json";
+  /* Public copy (e.g. Vercel): no claude.ai runtime, so read the snapshots that the
+     GitHub Actions job rebuilds in the public repo. */
   function pollPublic() {
-    fetch(PUBLIC_SNAPSHOT + "?t=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
-      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-      .then(function (s) { if (!SNAP || s.id !== SNAP.id) render(s); })
-      .catch(function (e) { if (!SNAP) setBanner("Couldn't load portfolio data (" + e.message + "). Retrying every minute."); });
+    var stamp = Math.floor(Date.now() / 60000);
+    ["h1b", "free"].forEach(function (b) {
+      fetch(DATA_BASE + BOOKS[b].file + "?t=" + stamp, { cache: "no-store" })
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(function (s) { accept(b, s); if (SNAPS.h1b || SNAPS.free) setBanner(newest() && newest().note || ""); })
+        .catch(function (e) { if (!SNAPS[b] && b === "h1b") setBanner("Couldn't load portfolio data (" + e.message + "). Retrying every minute."); });
+    });
   }
   function startPublic() {
-    setBanner("Loading the latest portfolio snapshot…");
+    setBanner("Loading the latest portfolio snapshots…");
     pollPublic();
     setInterval(pollPublic, 60000);
     document.addEventListener("visibilitychange", function () { if (!document.hidden) pollPublic(); });
@@ -753,13 +964,15 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     if (!window.claude || !window.claude.use) { startPublic(); return; }
     try { db = await window.claude.use("db"); } catch (e) { db = null; }
     if (!db) { startPublic(); return; }
-    setBanner("Loading the latest portfolio snapshot…");
-    db.collection("snapshots").orderBy("id", "desc").limit(1).onSnapshot(function (q) {
-      var d = q.docs[0];
-      if (d && d.exists) { render(d.data()); }
-      else setBanner("No snapshot yet. The first update is written right after setup.");
-    }, function (err) {
-      setBanner("The live feed stopped (" + (err && err.code ? err.code : "error") + "). Reload the page to reconnect.");
+    setBanner("Loading the latest portfolio snapshots…");
+    ["h1b", "free"].forEach(function (b) {
+      db.collection(BOOKS[b].collection).orderBy("id", "desc").limit(1).onSnapshot(function (q) {
+        var d = q.docs[0];
+        if (d && d.exists) accept(b, d.data());
+        else if (b === "h1b" && !SNAPS.h1b) setBanner("No snapshot yet. The first update is written right after setup.");
+      }, function (err) {
+        setBanner("The live feed stopped (" + (err && err.code ? err.code : "error") + "). Reload the page to reconnect.");
+      });
     });
   })();
 })();

@@ -303,8 +303,9 @@ def _yahoo_raw_options(sym: str, epoch: int | None = None) -> dict:
     return json.loads(r.read().decode())["optionChain"]["result"][0]
 
 
-def option_chains(unders: list, n_exp: int, need: dict, spots: dict) -> dict:
-    """Chains for the nearest n_exp expiries (plus any expiry in need[under])."""
+def option_chains(unders: list, n_exp: int, need: dict, spots: dict, first_live: str) -> dict:
+    """Chains for the nearest n_exp live expiries (plus any expiry in need[under]).
+    first_live: earliest expiry date (YYYY-MM-DD) still trading."""
     out = {}
     try:
         import yfinance as yf  # type: ignore
@@ -316,7 +317,7 @@ def option_chains(unders: list, n_exp: int, need: dict, spots: dict) -> dict:
             if yf is None:
                 raise RuntimeError("yfinance unavailable")
             t = yf.Ticker(u)
-            exps = list(t.options or [])
+            exps = [e for e in (t.options or []) if e >= first_live]
             entry["expirations"] = exps[:8]
             want = list(dict.fromkeys(exps[:n_exp] + [e for e in need.get(u, []) if e in exps]))
             for e in want:
@@ -329,7 +330,9 @@ def option_chains(unders: list, n_exp: int, need: dict, spots: dict) -> dict:
             try:
                 res = _yahoo_raw_options(u)
                 epochs = res.get("expirationDates") or []
-                exps = [dt.datetime.fromtimestamp(x, UTC).strftime("%Y-%m-%d") for x in epochs]
+                allx = [dt.datetime.fromtimestamp(x, UTC).strftime("%Y-%m-%d") for x in epochs]
+                keep = [i for i, e in enumerate(allx) if e >= first_live]
+                epochs, exps = [epochs[i] for i in keep], [allx[i] for i in keep]
                 entry["expirations"] = exps[:8]
                 entry["spot"] = entry["spot"] or (res.get("quote") or {}).get("regularMarketPrice")
                 want = list(dict.fromkeys(exps[:n_exp] + [e for e in need.get(u, []) if e in exps]))
@@ -450,7 +453,10 @@ def main() -> int:
     opt_unders = list(dict.fromkeys(opt_watch + list(need_exp)))
     if opt_unders and pfm.is_business_day(pfm.et_date(now)):
         spots = {u: (quotes.get(u) or {}).get("price") for u in opt_unders}
-        chains = option_chains(opt_unders, n_exp, need_exp, spots)
+        today = pfm.et_date(now)
+        live = today if pfm.market_session(now) in ("pre", "regular") or now.astimezone(pfm.ET).hour < 4 \
+            else today + dt.timedelta(days=1)
+        chains = option_chains(opt_unders, n_exp, need_exp, spots, live.isoformat())
         (out / "options.json").write_text(json.dumps({"generated_at": pfm.iso(now), "session": pfm.market_session(now),
                                                       "underlyings": chains}, indent=1))
         for c in held_opts:

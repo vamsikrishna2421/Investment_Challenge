@@ -10,8 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "dashboard" / "index.html"
 OUT = ROOT / "site"
 
-DESC = ("Paper portfolio: $1,000 invested on Sep 28, 2026, aiming to double by the Oct 5 close. "
-        "Live holdings, every trade, the research journal and H-1B guardrails.")
+DESC = ("Two $1,000 paper portfolios racing to double by the Oct 5 close: an H-1B book (stocks and ETFs) "
+        "and an Unrestricted book (options and crypto too). Live holdings, every trade and the research journal.")
 FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
            "%3Crect width='32' height='32' rx='7' fill='%230f1b21'/%3E"
            "%3Cpath d='M6 23l7-7 5 4 8-10' fill='none' stroke='%23f0a414' stroke-width='3' "

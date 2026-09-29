@@ -31,11 +31,44 @@ def remote_sha() -> str:
     return out.split()[0] if out.strip() else ""
 
 
+def fetch_local(mode: str, tickers: str) -> int:
+    """Run the data pump here (needs internet access) into a scratch copy of the
+    cache, then copy the fresh quotes/chains/news back. Equity history stays the
+    one published by the Actions job on the market-data branch."""
+    import shutil
+    tmp = ROOT / ".cache-local" / "data"
+    tmp.mkdir(parents=True, exist_ok=True)
+    for f in FILES:
+        if (CACHE / f).exists():
+            shutil.copy(CACHE / f, tmp / f)
+    r = subprocess.run([sys.executable, str(ROOT / "scripts" / "marketdata.py"), "--root", str(ROOT),
+                        "--out", str(ROOT / ".cache-local"), "--mode", mode, "--extra", tickers],
+                       cwd=ROOT, capture_output=True, text=True, timeout=420)
+    if r.returncode != 0:
+        print(r.stdout[-800:], r.stderr[-1500:])
+        return 1
+    CACHE.mkdir(exist_ok=True)
+    for f in ("quotes.json", "options.json", "news.json", "alerts.json", "scan.json",
+              "portfolio.json", "portfolio_free.json"):
+        if (tmp / f).exists():
+            shutil.copy(tmp / f, CACHE / f)
+    q = json.loads((CACHE / "quotes.json").read_text())
+    print(f"local {mode}: generated_at={q['generated_at']} session={q['session']} quotes={len(q['quotes'])} "
+          f"errors={list(q.get('errors', {}))} | {r.stdout.strip().splitlines()[-1][:160] if r.stdout.strip() else ''}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--wait", type=int, default=0)
     ap.add_argument("--since", default="", help="SHA to wait past (default: current remote)")
+    ap.add_argument("--local", action="store_true",
+                    help="fetch quotes directly from this machine instead of waiting for the Actions job")
+    ap.add_argument("--mode", default="quotes", help="with --local: quotes, news or scan")
+    ap.add_argument("--tickers", default="", help="with --local: extra tickers or option contracts")
     a = ap.parse_args()
+    if a.local:
+        return fetch_local(a.mode, a.tickers)
     if a.wait:
         base = a.since or remote_sha()
         deadline = time.time() + a.wait

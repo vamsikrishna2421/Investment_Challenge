@@ -112,6 +112,37 @@
         "funded_with_settled_cash": true,
         "position_weight_pct": 25.1
       }
+    },
+    {
+      "id": "T0004",
+      "type": "SELL",
+      "ts": "2026-09-29T19:57:12Z",
+      "ticker": "IONX",
+      "name": "Defiance Daily Target 2X Long I",
+      "qty": 10.3718,
+      "price": 27.2564,
+      "quote_price": 27.27,
+      "quote_time": "2026-09-29T19:56:32Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 282.7,
+      "fees": 0.02,
+      "net_cash": 282.68,
+      "settle_date": "2026-09-30",
+      "rationale": "Overnight decision at 3:56 PM: IonQ closed out the day weak ($43.75, -1.9%), below Monday's close, so the entry thesis (IonQ holding above Monday's close after BofA's initiation) failed. No near-term catalyst; a 2x ETF on a fading momentum name is poor overnight risk. Cutting at -5.7% to free capital for Micron's Wednesday report.",
+      "tags": [
+        "exit",
+        "thesis-broken"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 40,
+        "cash_account": true,
+        "day_trade": true,
+        "good_faith_ok": true
+      }
     }
   ]
 }

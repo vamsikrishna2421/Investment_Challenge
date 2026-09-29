@@ -124,6 +124,19 @@
         "SANG",
         "BE"
       ]
+    },
+    {
+      "id": "J0010",
+      "ts": "2026-09-29T19:57:27Z",
+      "kind": "trade",
+      "title": "Sold IONX at 3:56 PM: thesis failed",
+      "body": "Sold all 10.3718 IONX at $27.26 (quote $27.27), a same-day round trip: -$17.3 (-5.7%). Bought with settled cash, so no good-faith issue; proceeds settle Wed Sep 30. Why: the entry thesis was IonQ holding above Monday's close after BofA's Buy initiation. IonQ faded all afternoon and closed at $43.75 (-1.9%), below Monday's close and near the $43 exit line; quantum headlines turned to valuation worries. Holding a 2x ETF overnight on a failed momentum setup with no catalyst is poor risk. Overnight: hold MUU (2x Micron into Wednesday's after-close report, decision Wed 3:55 PM) and IOVA (+31.9% on the day on the raised guide; stop $12.35). Cash $432.68 goes to Wednesday's best setup, possibly adding to Micron before the report.",
+      "tickers": [
+        "IONX",
+        "IONQ",
+        "MUU",
+        "IOVA"
+      ]
     }
   ]
 }

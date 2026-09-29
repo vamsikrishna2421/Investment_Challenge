@@ -21,8 +21,8 @@ CACHE = ROOT / ".cache"
 MAX_POINTS = 700
 
 
-def load_equity(cfg: dict) -> list[dict]:
-    path = CACHE / "equity.jsonl"
+def load_equity(cfg: dict, cache: Path) -> list[dict]:
+    path = cache / "equity.jsonl"
     pts = []
     if path.exists():
         for line in path.read_text().splitlines():
@@ -54,11 +54,14 @@ def next_update(now: dt.datetime, sched: dict) -> str | None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--note", default="")
+    ap.add_argument("--cache", default=str(CACHE), help="dir holding quotes.json and equity.jsonl")
+    ap.add_argument("--out", default="", help="output path (default <cache>/snapshot.json)")
     a = ap.parse_args()
+    cache = Path(a.cache)
 
     cfg = pfm.load_config()
     ledger = pfm.load_ledger()
-    qdoc = json.loads((CACHE / "quotes.json").read_text()) if (CACHE / "quotes.json").exists() else {"quotes": {}}
+    qdoc = json.loads((cache / "quotes.json").read_text()) if (cache / "quotes.json").exists() else {"quotes": {}}
     quotes = qdoc.get("quotes", {})
     now = pfm.now_utc()
     pf = pfm.Portfolio(ledger, cfg)
@@ -88,7 +91,7 @@ def main() -> int:
         trades.append(row)
     trades.reverse()
 
-    pts = load_equity(cfg)
+    pts = load_equity(cfg, cache)
     base = cfg.get("benchmark_base", {})
     series = {"t": [cfg["accepted_utc"]], "equity": [cfg["start_capital"]]}
     for b in cfg["benchmarks"]:
@@ -174,7 +177,7 @@ def main() -> int:
         "schedule": {"next_update": next_update(now, sched), "cadence": sched.get("cadence", "")},
         "note": a.note,
     }
-    out = CACHE / "snapshot.json"
+    out = Path(a.out) if a.out else cache / "snapshot.json"
     out.write_text(json.dumps(snap, separators=(",", ":")))
     size = out.stat().st_size
     print(f"doc_id={doc_id} bytes={size} equity={val['equity']} net={val['net_profit']} "

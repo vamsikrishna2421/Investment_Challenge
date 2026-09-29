@@ -77,6 +77,41 @@
         "funded_with_settled_cash": true,
         "position_weight_pct": 30.0
       }
+    },
+    {
+      "id": "T0003",
+      "type": "BUY",
+      "ts": "2026-09-29T15:05:27Z",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
+      "qty": 17.7833,
+      "price": 14.0581,
+      "quote_price": 14.03,
+      "quote_time": "2026-09-29T15:04:41Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 20.0,
+      "gross": 250.0,
+      "fees": 0.0,
+      "net_cash": -250.0,
+      "settle_date": "2026-09-30",
+      "rationale": "News trade: Iovance raised 2026 revenue guidance to $410-420M; stock at a 2-year high on 27M shares by 11 AM and holding its gains since the open.",
+      "tags": [
+        "news",
+        "biotech",
+        "guidance"
+      ],
+      "plan": {
+        "stop": 12.35,
+        "target": 17.5
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 46,
+        "cash_account": true,
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 25.1
+      }
     }
   ]
 }

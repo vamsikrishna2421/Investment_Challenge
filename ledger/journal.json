@@ -97,6 +97,18 @@
         "SMMT",
         "NVTS"
       ]
+    },
+    {
+      "id": "J0008",
+      "ts": "2026-09-29T15:05:49Z",
+      "kind": "trade",
+      "title": "News trade: bought IOVA on its guidance raise",
+      "body": "Bought 17.78 shares of IOVA at $14.06 ($250). Iovance raised its 2026 revenue guidance to $410-420M. The stock is +28% at a two-year high on about 27M shares by 11 AM, and it has held above its $13.58 opening level. A guidance raise tends to keep drawing buyers for days as analysts lift their targets. Stop $12.35 (-12%); sell a third at $17.50 (+25%).\n\nBook at 11:04 AM:\n- MUU +3.0% (MU +2.2%, SOXL +6.3%).\n- IONX -4.8%: IonQ slipped below Monday's close.\n- IOVA just opened.\n- $150 cash.\n\nIONX watch: the stop is $24.60, but I'll exit early if IonQ breaks $43, where the momentum case no longer holds.\n\nPassed on:\n- CCL +12% on earnings.\n- BE +13%.\n- SMMT, which faded to +6.7%.\n- Adding SOXL: MUU already carries the chip and Micron-earnings exposure.",
+      "tickers": [
+        "IOVA",
+        "IONX",
+        "MUU"
+      ]
     }
   ]
 }

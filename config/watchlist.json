@@ -1,18 +1,18 @@
 {
-  "strategy": "Holding IONX (2x IonQ) and MUU (2x Micron into Wednesday's report), 30% each; $400 cash for news trades after the 10:00 AM data. SMMT skipped after it faded below $18 at the open. Stops -15% on 2x ETFs, -12% on stocks; sell a third at +25%.",
+  "strategy": "Holding MUU (2x Micron into Wednesday's report), IONX (2x IonQ) and IOVA (news trade on a raised revenue guide); $150 cash for Micron's after-hours reaction. Stops -15% on 2x ETFs, -12% on stocks; sell a third at +25%.",
   "focus": [
-    "IONX",
-    "IONQ",
     "MUU",
     "MU",
-    "SOXL",
-    "SMMT",
-    "CCL",
+    "IONX",
+    "IONQ",
     "IOVA",
+    "SOXL",
     "BE",
+    "CCL",
+    "SMMT",
     "NVTS",
-    "KOD",
-    "NVDA"
+    "NVDA",
+    "NKE"
   ],
   "tickers": [
     "NVDA",

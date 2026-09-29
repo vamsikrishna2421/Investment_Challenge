@@ -1,0 +1,28 @@
+{
+ "as_of": "2026-09-29T00:45:55Z",
+ "session": "closed",
+ "start_capital": 1000.0,
+ "deposits": 1000.0,
+ "equity": 1000.0,
+ "cash": 1000.0,
+ "settled_cash": 1000.0,
+ "unsettled_cash": 0,
+ "invested_value": 0.0,
+ "net_profit": 0.0,
+ "return_pct": 0.0,
+ "goal_equity": 2000.0,
+ "goal_progress_pct": 0.0,
+ "realized_pnl": 0.0,
+ "unrealized_pnl": 0,
+ "day_pnl": 0.0,
+ "fees_paid": 0.0,
+ "positions": [],
+ "counts": {
+  "orders_total": 0,
+  "orders_today": 0,
+  "day_trades_5d": 0,
+  "day_trades_total": 0,
+  "gfv": 0,
+  "wash_sale_flags": 0
+ }
+}

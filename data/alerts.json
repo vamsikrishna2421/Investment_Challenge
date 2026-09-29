@@ -1,566 +1,412 @@
 {
- "generated_at": "2026-09-29T20:41:56Z",
+ "generated_at": "2026-09-29T21:00:47Z",
  "session": "post",
  "new_headlines": [
   {
-   "about": "$IONX",
-   "title": "$Defiance Daily Target 2X Long IONQ ETF (IONX.US)$ - Moomoo",
-   "source": "Moomoo",
-   "published": "Mon, 28 Sep 2026 05:17:28 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYkh3aHZIOUo3ZGJYMFo1X3RJVm9jdVV4S0phdEhPZWVjVXIxam9nb2VEdmpVWVJJMXNLcVJmR3FrQ0pPQXU3cTc2Q3owSHdYMWxFMXNSS2xjV3pmOXFIZXpwYThmY28zVzhSa3RTVXl1elhNb1RJQmRENEFfUlhLb3ZUTVhaenZUdFZjVVRPMDl5Zi1yRi0xRUl3UUVzTGgzbFE?oc=5"
-  },
-  {
    "about": "$SOXL",
-   "title": "SOXL May 2027 131.000 call (SOXL270521C00131000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Tue, 29 Sep 2026 07:22:41 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1YNi1FeUl6ZVR5RHprcmV1M1VMdk5tVE9Zd0NyZFNHNVo2WmRDUklLY0lWc2p6WjZKQ2hvQjNLTlZ6UFluR3RGczc1ZjV3QWd5OTRadDRSY1RsZXBZWXctREhRakc5Zw?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "$Direxion Daily Semiconductor Bull 3x Shares ETF (SOXL.US)$ I'll keep pushing forward like this \ud83e\udd1d\ud83e\udd8d - Moomoo",
-   "source": "Moomoo",
-   "published": "Mon, 28 Sep 2026 13:48:38 GMT",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZXd0Q0xUdlViNVZEd251b3FhbTdIVVdRQWhDTUtweGVWa2JuMnIxTUJZNUhWSHlCaURfeVlRYjdJTUMxUFBLQmZOYW9ZQmdCNmk1T19GeVh0NlQxTFVERHhyUUtpblRCWHRtTU42WmIwWWRUMDJqOHpkczJmQkE2MnpmQnpJMUJQdElWcXctbzZqdkdTcVRGa3c1TzBTa0g4RF81eERNYXZmMDFUV3MtZw?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "SOXL May 2027 104.000 call (SOXL270521C00104000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Tue, 29 Sep 2026 07:05:07 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lMFp0TkZhZElwQlFiQlNJZjZVdDMwUThDcHZKbUl2d19WSXZJamF0RVZoWDZNT1RicTRTd2JySTA0QkJhVUkxNWtyTHhmVzR2c1UzemJ6Tll1bG9YbGp5VUJWcHZqQQ?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "SOXL Sep 2026 161.000 call (SOXL260930C00161000) Stock Historical Prices & Data - Yahoo Finance - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Tue, 29 Sep 2026 10:17:51 GMT",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1CM0lPWEtZaXdfMzZ1Vml1eHRXTkdYX1hteUtkMk1qUG10akpnYUtsVktKazdjZnNMY05VdnpUaXh3d2E1R3JoTXJldVZST0VRWFU3M29WUzRyTVFwb1VTZW8zZktreHVINEh3TGI1b1Q?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "SOXL Sep 2026 174.000 call (SOXL260930C00174000) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Tue, 29 Sep 2026 01:25:26 GMT",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jQWQ2TzM1UlBuaXVDdGNPSHJZQ2d2ZnUxVnpVN19RZ09PS0pEM2p1WWFMRm8zN3phSk9wMl9PNHNGS0FzZHl6RHpmYnhvZ2hZbVVkWldZTEY2QmtndjNIWWZORmt6bm1xUUd2Rzdn?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "SOXL Oct 2026 141.500 put (SOXL261030P00141500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Mon, 28 Sep 2026 01:10:42 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GRElITkNrN0diaWcwbEVLQkEtS1hEWDlROXplcmx2RzYtQVNidklSSWk1VV9tUVVqc3hJc0hHTC1nd2FTNkFlcXNhVWVidzlhMkxmbjZSRV9ZdzJieTRMNE5pLS1wdw?oc=5"
-  },
-  {
-   "about": "$SOXL",
-   "title": "SOXL May 2027 113.000 call (SOXL270521C00113000) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Mon, 28 Sep 2026 05:25:56 GMT",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BZnpJaFFRcFp6ZW1BYlgtbjVXQ0tsMm5fWUJaWmZJVktmNnR0bTlwQkItSEI3Znd6azl1V1NiRl94Y1RaRVdLckR5bFNxWWY1YUJnSVJlUEYyb1RLbnZ0ODlhZHZ0SDVMc3J3QzFn?oc=5"
-  },
-  {
-   "about": "$IOVA",
-   "title": "IOVA Stock Hits Over 2-Year Highs \u2013 Why Iovance Raised Its FY2026 Revenue Outlook - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Tue, 29 Sep 2026 14:15:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ1VXMnFSN0pJcERLal9MbWFPZGdoM2tCUXhUcWRnck85Q3U1cVhrWlhfNWJXTHFmOHJOWFFLcmxXVWJFcnlFSVhLV3B2OFh6UHJhbVlXUlpuSnhlTWtiM2QtRTJXVDh3Y1dTZGlPNVdVaVVWMFJaaDRTM1A3U2U3R1BvSGV1Zjg0VzdHZEFBdm4?oc=5"
-  },
-  {
-   "about": "$IOVA",
-   "title": "IOVA Stock Hits Fresh 52-Week Peak On UBS Target Hike, Melanoma Sector Optimism - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Tue, 29 Sep 2026 03:03:52 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWDFCSTdWb0FtZ3BQNXl3TVhtTmVudkU0Z2NjVkdZZGZrMmthMHIxY3dDbXdMUzZpeFpjUmVXWUdqR1NjTlVHdHRSWjI5Ynp2LU9DSGM1OVhSdXk5bWlSb0ZDM3NkZUZiRURFSVZTWlpsX3YxOG9kOUdDVFBBTFFlRHhIWUhmQjR5Uk1Fb2p0cnRRU2RsbVRuOGxuUmlfMUdQc0hrRnk3b0o4eDk5dnRkRVRwWkV6bEU4MkRIbmlfYkZzQjJpMFRkX19lc2REX1FBS2t6X1EtZFJEUQ?oc=5"
-  },
-  {
-   "about": "$IOVA",
-   "title": "Iovance Biotherapeutics\u2019 Amtagvi Demand Drives 2026 Revenue Guidance Bump, Stock Soars - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 17:08:10 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUm14MGZBdGZxMFJic2xmaU05ZnFfelZuMzFqM2NLbFFuamYtcmY2ZDBfYWI1ODJJNlJoTS1QQzFiaUZJTm8tVHUwN2JLcW9Ea0IxbWpLdkNJZnVhMmhQWXNITDBLSE5HZTZfRnlhODM1bndscU5UeUFEaFBaVGliSDNWcUVpZ2N1UWp0ZlU4eEdzbklNMmNPWGd0M29ZTmFuSjc1cTVUWWUzdV8wb29Ea203UnBYQk5TWllNVGNZRmxvY21Xd1JackJWZkdwejVfeFNlN1dCWVg?oc=5"
+   "title": "SOXL: Not The Time For Leverage In Semis (NYSEARCA:SOXL) - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Tue, 29 Sep 2026 20:25:43 GMT",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUjJSRmxVOEtCNldER2RxRlBfaEN1MnFSSGVsamlNazJfNGpJNUhlMlRCWC1xMjRySVhoQlA1SmV2SVJ3TmVHUlJDOTMwYTJCTTM3NDFZX0g2V3BXeXR6NmFlMjBYclhvNDFUMFZtTk1xX3M2UkxGZGFhZ3RxcThFLVhXUUpPM2s?oc=5"
   },
   {
    "about": "$MUU",
-   "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 16:07:54 GMT",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5"
   },
   {
    "about": "$MUU",
-   "title": "MU, SNDK, WDC Stocks Rise Sharply For Second Day: Retail Feels Memory Pullback Is Over - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Tue, 29 Sep 2026 04:31:39 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNFpTcW1mMFE3N2FXbE85VllxY0prTjd4Qmdwc3ZpODR1R0QxeUs4ckJRWlNRUGtrcnNjZVJvQXRuQ0VLa2xxVDc5SnRwNUUwYldpT0kxcF9LTUhYVS10a0ctSHZQbzVGNzdkV2t5ejkwT2txRTZjWERXejQtU1gzQl9oY0ZYYXV2YndJUHZnVDFCQWJnV1VTUlNzM3d2ME92Umd4OEtVclNTTmxIdlRRc3RrOEloUDlHMDN4Qm9XYk5nRlBwTmtrUGxETnIyZmo4b2hCeWFJZ3hCOHQxbWZj?oc=5"
-  },
-  {
-   "about": "$MUU",
-   "title": "Ahead of Micron Earnings, Here's What Barchart Data Says Comes Next for MU Stock - barchart.com",
-   "source": "barchart.com",
+   "title": "Ahead of Micron Earnings, Here's What Barchart Data Says Comes Next for MU Stock - Barchart.com",
+   "source": "Barchart.com",
    "published": "Mon, 28 Sep 2026 17:41:04 GMT",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZGlQX0VhdHdEaXl6eU5scy1WbkdPU1V4M3NJQjExQlJ2SXB6RGxYUUJXOFdHaFlMRWtGbHhHOHlsZlh0RTZpeGpGRmR3VkFtYTEzS1lZTUp3elp2WThzdzg4dUR6aWJJNlF2T1QtLXZfejhzMTJPYkduYmItTUtIRDRtdzRNdldjbmoybnpyQWxCMVNMS1dBU0JJUUthQktQNENoNTRxeDZVdE15Ymo2bE92WjVBbmNVRHhRbE05b1M?oc=5"
   },
   {
    "about": "$MUU",
-   "title": "$Direxion Daily MU Bull 2X Shares (MUU.US)$ hello nice to meet you!! just added a position hope this will go well - Moomoo",
-   "source": "Moomoo",
-   "published": "Mon, 28 Sep 2026 14:56:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNekZ0aXhpcWh3ZzREOVRyU01OUWlsZjZGOVRhUHVhSERyZ1Exb2htbVdGUk5vSmNpTVVuUVp2RF9IYjFCblhQdzFtZHRYcW1XcXl2RXhsVGNqdk04ckotbDN3SnpKQVJxYkZMdG5JVGx5NjEwb19seko1WkNjZTVDM1lpQzA5bGtwakJDc0RKQmc4TVNqRUxEWkI3TlFsUWstWXBkaFFMSQ?oc=5"
-  },
-  {
-   "about": "$MUU",
-   "title": "JPMorgan sets Micron stock price target - finbold.com",
-   "source": "finbold.com",
-   "published": "Mon, 28 Sep 2026 12:23:09 GMT",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93d3RrT3BfdlFnc25Fekw0QXMyWDQwQzhkQjFkMkVEX015ZnR0NHU5ZUZmbHN2QnZDWUlOREQxV3BCVURCV2o3WEtJaUZ3X1lyWElLdnhKRUdkb3hfeDA5WEs1VXY2NDRfWDRZWA?oc=5"
-  },
-  {
-   "about": "$NKE",
-   "title": "Nike stock has never been more hated by the market - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Tue, 29 Sep 2026 17:51:05 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSHVVdExPdDk2Q0lyZE5PSjhaZkVZd0ZKTkQ3QU9mRFczaEVnRFdCTGNvNW9sVHRqeVNPV1V4TjRzc1RUdGhlTXFnaGdzM29ySGxlUUtKcGd6UkdCRGhCYWhIY1ducFY0WG8xRUo0VzdBWkVuM3pzSEo5TWNuNGJiSXhOUUJuMWpidjlVMFNfckVkdWZrS2J1QUpLbFpLelBMT3p1TEFmSGlQcXFKSFJmMFVpVEU?oc=5"
-  },
-  {
-   "about": "$NKE",
-   "title": "NKE Stock Heads For Another Month In The Red: Jefferies Bets On Nike's Recovery, Sees A Q1 Earnings Beat - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Tue, 29 Sep 2026 08:19:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVklUM1J0SDdQV3B0REJrSGdjU2pjbGdQTndBT1dJRFZIeTRHdTY3bzVsWWNxUjFlbXRBUkZCTzNRRUhpZDQwdmZTbjRHd3VpYWhkZFNLbmNjMGN0TzJ6MGtaczJUN1pwS0s4QTlaWDdLODlPWFl3YmdybXJyNkFlZ1I1XzUxTnpwcWlLNl9UakdyaVRzcWRiN2c0aDhwUlk3Q0NFWVdFbW5oRlVlcXM2NFRZRkNGdl9wZGkxTE02WXg3dVFSRm5KdWpXTXVUWk4yLWpRTWVGdWItWlItQzdCcDRnRzNKZFhCRk51S0RpVG9jc1NpX20wOU1n?oc=5"
-  },
-  {
-   "about": "$NKE",
-   "title": "Ahead of Nike Earnings, Here's What Barchart Data Says Comes Next for NKE Stock - barchart.com",
-   "source": "barchart.com",
-   "published": "Mon, 28 Sep 2026 20:52:29 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN0ozbkc3cFVuMUJYSDRzaVNJQ3dPdkxhRHVyTzktaWREbk5wTTlHSFc3VHpUVV92bUs5SE1QOWNLdjIwbXN5RE5ZWWs0cEEycExjb1R3bU9xTlY4bkxGcVN3YmVPZkR6OUd0QkcxdlZiZkZ1REdhdWdpTHlaY0t5RWZxQXhXNHdvekJ4REdyNF8yS3ZzUW5ER0FPTGtROHhCT01VWFlKdmNpT0lOX2pFZm5TN08zNkhSeWV1ZkxuVQ?oc=5"
-  },
-  {
-   "about": "$NKE",
-   "title": "NKE Stock Faces Second Weekly Loss: Nike Takes Greater Control Of China Sales, Resets Digital Strategy - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Mon, 28 Sep 2026 23:11:25 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNTHhZd3BTZmdCRXRMTVJsTkJtLWFxZlNmSHoxa05USV9xYzNpSGdfakFDWjNhYWV1enRWXzRXRTl5ejdzQVpoTXZjZzRuNk9JQWxkekdrdlV1NmpiNU1sRVdJamlyNmo3TDFJd3F0VUYwamZhLWpZc2NSaVN6eFlHaWtlaG9HbHFmNjZFUmIydTlVQ25iWVlrWTdDMHhqd3l0b1l3ZlNRUEtjUmd3QjU3VTJwUFFUM2NGMjBGNjdBSEtUNE92b19OZVYwTElMc1ZuWXFWVTVacVBEeDVQT3pVS2hOVlFIZVg3MFk2UXMxaXRORHFKZExj?oc=5"
-  },
-  {
-   "about": "$MU",
-   "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Tue, 29 Sep 2026 16:07:54 GMT",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5"
-  },
-  {
-   "about": "$MU",
-   "title": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 13:07:58 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb3VZc2I0VktraTRUaUl4VzB6TDJMdmt5dWJRZWR2U2VxTDU5ajB2azQtQ0hWc2lHTWNVei12N21RY21nTUpSUXVkR3lJaUhYNG1nOXlEVi1jTllFbE9BY202SEtueHRiQVVNMjR5TDg4bERyQzhueWFoWTdkY0pTSHg5c0FzcW04bVYwdTA5eXZ1ZklSYjZUUTRSVzRIdWtwWFJ3Y25Xbw?oc=5"
-  },
-  {
-   "about": "$MU",
-   "title": "Michael Burry Shifts Strategy With Put Options Targeting Micron and AI Semiconductor Stocks - TIKR.com",
-   "source": "TIKR.com",
-   "published": "Tue, 29 Sep 2026 14:30:05 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb2RIMnZFLW1SblhDRl8xb3k2NERzWnVPTmZ4RWhaMF9LM0doRGw4T2dEMWZycnkwQTVPQmNpS05TQXk5MmtVbDVpUENTajV2c3lMNnZ2Q2xEdS1iazFJTzJlWk5ISzkxcnJnUk5COWRHcE1faW85R29zaVZCTUdKeEZLcC1GeEd2RGlr?oc=5"
-  },
-  {
-   "about": "$MU",
-   "title": "Micron to report Q4 earnings, as memory boom powers on - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Tue, 29 Sep 2026 15:32:30 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5"
-  },
-  {
-   "about": "$TSLL",
-   "title": "Tesla Slips, and This Leveraged ETF Is Trading at Full Throttle - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 19:59:46 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNREhBZTRlb1dOZzJqUXhsUVZDdjMwMjhGdndkMmIwS2l3Rk5tOEhqWE9SRXZBU3ltLWlONTYzOEZkMDhHa25MbjF3V1lTcmx3SkZwTUs2eDZMUHdwWmFZcUxjbnhOZHVEbTZTZWVQdGpoM0FabXNFV2VtWmlnM2FaSW9yM2JKU0kwdmYyTVBPQ0JNTzZkVi0zcHdPQUk1eDE5VUE3clg4MGtrdWt5RTBVemJRVnZLLW4yY3pYalRpYw?oc=5"
-  },
-  {
-   "about": "$TSLL",
-   "title": "$Direxion Daily TSLA Bull 2X Shares (TSLL.US)$ I told you I was going to make a killing today. 888 - Moomoo",
-   "source": "Moomoo",
-   "published": "Tue, 29 Sep 2026 14:07:05 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQTJMdW5LY213WF8tblJyWVI1bDdVZHkxOWNXQXk5X2REbzduZXpfQVZCTHAzbVJvWFNCQnpJdlNGbEdwS1Y0S3FXN1lEenNWZFZ5d0RwbU8zUDdOS0s1UjV4WGVMR25SMnROaWlMR1Yxa3RfdFVaRTFlYnZ5eEt4RnZyS25hZUpvYjZzTURjWXo4RGNXZnpCT0N0WFBDbTE0a2EyV3VoOU1tUQ?oc=5"
-  },
-  {
-   "about": "$TSLL",
-   "title": "META Stock Outperformed GOOG, TSLA In July Despite Earnings Selloff \u2014 Analyst Says Shares Are \u2018Attractively Priced\u2019 Now - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Mon, 28 Sep 2026 22:40:27 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRl9kUWgxNkUwaTFDWS1DdGpfVEs5RzBBSm9KekxsZXRnZElWclF4YWFtb1N4V0w3MGVnQ3pUTzlQZ0NuOWxoRE1CR3JsSGwyRXYycUdRNkc5V09UaGVvTUV0dC0zSkNoY0tETjVwb2s2Wll0cWhENHNDZlI0TXBPVVdVWEp1TFdUY3M0S2VzVVMyX21obG95YjlvSXZSMk5zY3l5MFNTend5b013X3pQenRMQjlFelYtREFLcFJoSUs?oc=5"
-  },
-  {
-   "about": "$TSLL",
-   "title": "Tesla's Stock Falls as Launch of Semi Truck Fails to Excite Investors - Moomoo",
-   "source": "Moomoo",
-   "published": "Sun, 27 Sep 2026 23:55:12 GMT",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTTZCbmR6SkhlUHF6eF9qejVPWHE4dkowaVJjZE5VVjU0ZFk1TjJkUGxQZTV0b2FkMjZSb2pFS3JHS3NaSW5WN3VtbXBBeEFVSFk5bEdyX2QxUklpbWw3SldvaHBDN3VnSXNKYjdtVGNjWVAxSzdkMzZzUnpRUl9sX3VNc1V3VmQyOUo4amFoMFJLWU9GWUFuTA?oc=5"
-  },
-  {
-   "about": "$TSLL",
-   "title": "TSLA Stock Cools Overnight After Miami Robotaxi Rally \u2014 But Morgan Stanley Sees 30,000-Vehicle Fleet By 2030 - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Mon, 28 Sep 2026 23:04:08 GMT",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRXBDR09mbWJCLWdwUUhpQkhKaTB6aHNBdXpueXQxNkdqMmUyc05NLU5BcDFaei12dms2QXdjTW9lamc2T29saHFSRDZ3ZVFSZEw0ZUpLNmhETkNZY0k5d0dmcUVPaURENkRleG9YbVh4V3RXOVpLOGE5TVRBTGs0X2tOOFVxcjZXRjFHdUthei1qdHRNX200ZHFhLWtXeVp4WXFHZmxMQ3E2ODkxYmJmOTlB?oc=5"
-  },
-  {
-   "about": "$TSLA",
-   "title": "3 Numbers That Could Push Tesla's Stock Higher This Week",
-   "source": null,
-   "published": "Tue, 29 Sep 2026 20:27:35 +0000",
-   "link": "https://www.fool.com/investing/2026/09/29/numbers-could-push-tesla-stock-higher-oct-2/?.tsrc=rss"
-  },
-  {
-   "about": "$TSLA",
-   "title": "Tesla Delays Roadster Reveal Over Severe Weather in Texas",
-   "source": null,
-   "published": "Tue, 29 Sep 2026 19:31:57 +0000",
-   "link": "https://www.investopedia.com/market-update-tesla-delays-roadster-reveal-over-severe-weather-in-texas-tsla-12147595?.tsrc=rss"
-  },
-  {
-   "about": "$TSLA",
-   "title": "Tesla Roadster Speed Bump: Does It Dent TSLA's Investment Thesis? - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Tue, 29 Sep 2026 11:45:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWVRPVVJ5TlpwUFlaU3JXcXV6ZnJobTlmNWRRLWtIS2xhZzROd3R1Z1dkanJmbVJCRUFzU0Y0REdhc0ZnQ3Y3WDQwMzBJU3RzdzU0M1pjTGNNMXJxSG1MQS1JdUdkQlBwaUlqUlhFLWpIem9fWExkc2s4X0xLUHY3Q1dJZFk4OUdHM0h4b1dFSTZiRXlNcllRc3N5VQ?oc=5"
-  },
-  {
-   "about": "$TSLA",
-   "title": "TSLA Stock Slides As Retail Turns Cautious Ahead Of Q3 Deliveries \u2014 But Musk\u2019s Terafab Is Moving Fast - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Tue, 29 Sep 2026 03:52:37 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbExPOG1FUkduOFhoQktDVFZqT1Z4RHd6Y1pzMzdUN1JnQVpKLTlTMXpoOUlfa1lnc3pWb2NDQkVWclBBWjdTTl9zLWlSVmZxMjcxdHUybU9lekFGUWRnTkw3Q2RVME94RWU0WXhHNUhjd25qSmw1VVUwRGFSVFVBXzBINGVxMU1IeGF6Q1ZwOEo1Z20xenNTbHEtbVZ6Zm9kVGUwYWNBZGlTenpYZXdHQnM4c2NmWV9NalRQQ0c3ZWwwSWRyQjQ1QQ?oc=5"
-  },
-  {
-   "about": "$TSLA",
-   "title": "Tesla Stock Drops: What's Going On Today? - Benzinga",
-   "source": "Benzinga",
-   "published": "Mon, 28 Sep 2026 15:46:14 GMT",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM2VHVWFOeTF4a2ZIcldZTHRZNFRSQkRiMklnVkVCRFhGTy01Z3lOcGdnaFhQNkxKRThZVURqV0FsWEpROWtnQk5lU3lUOWdzRHBXU3o5MTJUZ3N0cDR2WHBIVGlhRVhQSENVWjB1RjVBbm9Gb0c5dG1QZmZfVjVjVElNSElWaFE0VWUwRF9CQUVFVTJ0Qy03aV9tcTkxQ3Fk?oc=5"
-  },
-  {
-   "about": "$SDEV",
-   "title": "Stablecoin Development Stock Skyrockets Tuesday: What's Happening? - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 19:02:22 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLXMxUEM4MFhVWjFCdXUzZ0pFclluaVpHOExaNllnVFZiTFprWUhzRVlTb1VrWll0UDZ5dTlEenk3WE56YTlOdHI2anBELTA2ZVR3UFJPdXFTNzNvdjExNTVvOGhDR2FteEtzYWstMWZyT3ZKcXBocVF2VkpVUGt3N1NFem5LNTdhZHlxMGoxRm9qUTVLeVVhVHc1N2ZRaGF5NFFhbV80dWMyNklBLS12bXFkcHQ3SmpiUmdjZkc3QWJxQQ?oc=5"
-  },
-  {
-   "about": "$SDEV",
-   "title": "Top movers analysis one hour before the close of the markets on 2026-09-29: top gainers and losers in today's session. - ChartMill",
-   "source": "ChartMill",
-   "published": "Tue, 29 Sep 2026 19:00:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNX3AtaExBTGphRFh0TnJ0UFBkYmVDeVFnb0JubWpSc3JhU3RGRlpmekIwaXlNS1FDdTktRnVMdTZEOHJfMWJsNmlTNnYzb0pWSzcwc29tYXduYlZTa1NXT1IxVm1yNnhkb1FVVXptUDVtZ195WWhhMDJjc2FncXpoejI1Z3NVSHNZWFhRU2pad2lMSlRNNTc1T0xyc21GNk1ObXFfLUlKNzBpbE5uMTNaRTJXNE5WdUNnM0FnZTJEVE9UNWVoVXA1RldoMElzYmJxN0ZqNGV5Z3NjUFdRdjRBX0ZWWFczS1YtQ2hPTEpEV0E5YTVxYnZsMmpsTQ?oc=5"
-  },
-  {
-   "about": "$SDEV",
-   "title": "12 Health Care Stocks Moving In Tuesday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 17:06:01 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONGJVYlRUSzl6SUh0V3JHZ09NV05ZeXpmWmdmV3M3M0hIMzM0dmM1RTV6ZGFBUHVGWnI2MmlSSk5NbFJLYWJKVzZ5WUhKd29fZzlkY2gtSXVOcDBYVUZvWmdlbDE1dlZiVm13TjlKVmk3cGYxZHUycDdKY1pmWDhBYmdKVUlrQUp2bk9yYkRCcTZiWGNLdDM0YnFvcmpJeTZuaTNlc2FKSzNucmwzVXNHWXZsQzRQSUk?oc=5"
-  },
-  {
-   "about": "$SMMT",
-   "title": "Summit Therapeutics Rises as AstraZeneca Backs Ivonescimab With $2 Billion Investment - Quiver Quantitative",
-   "source": "Quiver Quantitative",
-   "published": "Tue, 29 Sep 2026 17:38:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdWIzZ3NzRFFMb2g1ZFB5bldGMGg4WEZEaGJsZFF6Q0FubzNIS1h2ZFFkd1JSM3NkQ01IY1prd19YcW5lVkhzczRxTllIX00xTll6cDF5YTlDeDFpVkJpM1VhMXBSWGZpMkh6MFA5UGFCbTFRWlBKWkgzeEpuU2ludnJKemM5ZVVzN3RWWTZNaHpJV1NGenRNWnVoNHNPUmROamtEVFR4b185UkhNZ1FSUmozQkNwa3Y1Y252UQ?oc=5"
-  },
-  {
-   "about": "$SMMT",
-   "title": "SMMT Stock Soars After-Hours: Did AstraZeneca Just End Summit\u2019s Cash Scare? - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Tue, 29 Sep 2026 05:29:36 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPLURnWWNNcTc4OFgyRllCXzhyZ21XbmVWb1kwLXRSVkZtRU1zc0RjNUdhQkx5VWFhaUVZS0pxVUJPUG5sXzRBcjlWNVNZYlZpNmZJV0daMGFwRWZGVDFGcnNxaFNZZW5JdXVEamFoRXVjSGxQNkxCMmRlQ3J2a1UySzZQR1ZyWTN6Y3RHQ0RkLVU5UzluQnBUaHpBWGZNb2ZFckd0RlhreDZjVDljWkw2NHQtXy1LYUFJMXhZXzlEQlVsWVM4aGRFZlFtX3hEWjhzU2JPdg?oc=5"
-  },
-  {
-   "about": "$SMMT",
-   "title": "Summit Therapeutics Inc. (SMMT) stock price, news, quote and history - sg.finance.yahoo.com",
-   "source": "sg.finance.yahoo.com",
-   "published": "Mon, 28 Sep 2026 22:09:20 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5MNGpmYWROSkhJS2hqR1JNS1k1WEQtWXh2S3otSWQ4Tjg1RHRqVkdnLW5MQm9oQld3YzJGX0EzaVE3aDUzV0lldDRrWnBETVJGZHc?oc=5"
+   "title": "MUU Oct 2026 16.000 call (MUU261002C00016000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Tue, 29 Sep 2026 11:27:35 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB1aUg1SFNYUUVXN0VBS0drQmd0cUxoclo5VWxVNnJBemxncVFBV2pqczQ1SDhBMjdSWHkxa2dQd0ZvQmxodkxKQkpOU251MXJ4RnZkNXpQVU5fMmdJLXFuSDhPWG8?oc=5"
   },
   {
    "about": "$NVDA",
-   "title": "Stocks making big moves yesterday: TTM Technologies, PacBio, Nvidia, Palo Alto Networks, and Teleflex",
+   "title": "My Top AI Power Stock to Buy Right Now (and It's Not Even Close)",
    "source": null,
-   "published": "Tue, 29 Sep 2026 20:32:02 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-making-big-moves-yesterday-203202523.html?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 20:50:00 +0000",
+   "link": "https://www.fool.com/investing/2026/09/29/my-top-sector-stock-to-buy-right-now-and-its-not-e/?.tsrc=rss"
   },
   {
    "about": "$NVDA",
-   "title": "Here's Why SpaceX Buying More Nvidia GPUs Is Bigger News for SpaceX's Stock Than Nvidia's",
+   "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
    "source": null,
-   "published": "Tue, 29 Sep 2026 20:20:00 +0000",
-   "link": "https://www.fool.com/investing/2026/09/29/heres-why-spacex-buying-more-nvidia-gpus-is-bigger/?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 20:49:02 +0000",
+   "link": "https://finance.yahoo.com/m/8757314c-41ab-383f-89ee-51177c4ae956/stock-market-today%3A-dow%2C.html?.tsrc=rss"
   },
   {
    "about": "$NVDA",
-   "title": "3 Numbers That Could Push Tesla's Stock Higher This Week",
+   "title": "Prediction: Taiwan Semiconductor Manufacturing Will Hit a $3 Trillion Market Cap Before 2027 Is Over",
    "source": null,
-   "published": "Tue, 29 Sep 2026 20:27:35 +0000",
-   "link": "https://www.fool.com/investing/2026/09/29/numbers-could-push-tesla-stock-higher-oct-2/?.tsrc=rss"
+   "published": "Tue, 29 Sep 2026 20:49:00 +0000",
+   "link": "https://www.fool.com/investing/2026/09/29/prediction-taiwan-semiconductor-manufacturing-will/?.tsrc=rss"
   },
   {
    "about": "$NVDA",
-   "title": "Michael Burry just named who can't afford an AI crash, and his bearish bets tell a different story",
-   "source": null,
-   "published": "Tue, 29 Sep 2026 20:23:00 +0000",
-   "link": "https://www.thestreet.com/investing/burry-shorts-ai-stocks-predicts-crash?.tsrc=rss"
-  },
-  {
-   "about": "$NVDA",
-   "title": "Nvidia Stock Gains as $235 Billion Buyback Tests Capital Discipline - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "Nvidia Stock Gains as $235 Billion Buyback Tests Capital Discipline - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 18:14:16 GMT",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdWJLQ0RpRnRubnVKZFJKRXhNSDBZZG04aDVzQi1tb29jZlYyQml5UmZWb0hEb3dLeUgxbGJjTWZwYjRoN25Dcjd4ZEdvQk5wN3RHelQyZWlvelRKYWZ6bDlCdDhrTS1lLVljUHo3MmU3Q05EQmhEbFR4Y2xCbFlma190NXRpN3JaV005N0VEZ25HVGthRHZYeTI3dw?oc=5"
   },
   {
    "about": "$NVDA",
-   "title": "Nvidia $150B Buyback: Is NVDA Stock Cheap Enough? - NVIDIA (NASDAQ:NVDA) - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 14:38:51 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHF5dGY3YUJzejRnQ3B5M0xlVnl4WGpuUVZ1Uk5OT1ZNWlpDa3A2c3FVQ0tSWVpRX3FMQ0RINVlSUml0Y3JZNVpyZkpVS0Q2SUpfbDJxQ3Jiam1XeGxzQnZkQzRraXZmWUN2MlZvVWx0NlBqVzBtUU96Skdsb0c2M1ZGbHdxSTRWa3A1Wk9qNXhaWWJTS2dHM0F0X2FlbHZqb0tFUERucw?oc=5"
+   "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase - nvidianews.nvidia.com",
+   "source": "nvidianews.nvidia.com",
+   "published": "Mon, 28 Sep 2026 17:02:51 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR0Vsb0ZuR3F0Sl9oYldFNF90azJObUVsNkJIb0VCWVJxWDRmRmdyR2swZE90ZkxwRGJERXBveVRvX040RUJMLU9Tc3lIbm44R2lzMzcxZHVYRkZmS0lGRWhHMDF4azNCakJHSk00UU1KdEhzNzVrYVd1SVpnNDZyZkV4bWVNVHY3cC1fSlpUSm1BTnZTdS1Vak5LOXB2NkF5X0VnZFhFR1A?oc=5"
   },
   {
    "about": "$NVDA",
-   "title": "Nvidia Adds $150 Billion to Massive Stock Buyback, the Largest Ever - The New York Times",
-   "source": "The New York Times",
-   "published": "Mon, 28 Sep 2026 13:49:59 GMT",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9iclhOaUhUeDFGRDNBZWJzNWFOWUVtaVBwck91TFE4Um5rUDJ5Z1RsRXJSN2VWTUR3X2lmV0x5cDRqZEM5aDRwLVp5OWpzOHNtV2phY2hVNTF5NWo5M0JpYW1rcEhqTHFSTmZqZl9KSTdNZkt0QWhrZQ?oc=5"
+   "title": "Nvidia's $150B buyback could fuel next stock rally - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 11:42:28 GMT",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbk9NclNoTkRDSV9PZWxzU0ZuNTI1TXkxT3dxSzJwMmJTaEVRM1QyYy1zRDNIVGxCSm03bmQtZFVSQnB1WDVtdERsM2dBNGZSWTV4d0VhRHpRNnVRSThVcUNJUkhRdHhLSWRuVjBWdlNqazEyYXVpMjN0R3hkYkYtakI2OHdYdm9uMkdfUnlFWkRlM2gwS0xzLWdEelV0QWhqNnVZcTRPVGFpSzRFNFMyMnZB?oc=5"
+  },
+  {
+   "about": "$IOVA",
+   "title": "IOVA Stock Hits Over 2-Year Highs \u2013 Why Iovance Raised Its FY2026 Revenue Outlook - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 14:15:13 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ1VXMnFSN0pJcERLal9MbWFPZGdoM2tCUXhUcWRnck85Q3U1cVhrWlhfNWJXTHFmOHJOWFFLcmxXVWJFcnlFSVhLV3B2OFh6UHJhbVlXUlpuSnhlTWtiM2QtRTJXVDh3Y1dTZGlPNVdVaVVWMFJaaDRTM1A3U2U3R1BvSGV1Zjg0VzdHZEFBdm4?oc=5"
+  },
+  {
+   "about": "$MU",
+   "title": "Dow Jones Futures: Stocks Dip As Yields Rise But Bloom Energy Soars; Micron, Inflation Data Due",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 20:39:33 +0000",
+   "link": "https://finance.yahoo.com/m/0f05df74-8e19-37cc-8a3a-5b6885fbc760/dow-jones-futures%3A-stocks-dip.html?.tsrc=rss"
+  },
+  {
+   "about": "$MU",
+   "title": "Micron\u2019s Earnings Guidance May Look Weak Tomorrow. Buy MU Stock Anyway - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 16:07:54 GMT",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzdxUnVCS0M4VDRsT1R1R2dDLVA3M2NhRnNWZFlnTWFZekRoRjBWT0ZXaXRHN0lpZ3picW45MWo2SXRKTnJ1R2paNmNYbHNpdzNxVGFQNmdLSWRkV3pNQ0QyOXBCR3hHLXJIYU1XUEc2WDlCdThIdnVvTjF2R0RRdzFhVnpfbW1rQWpjbkkyWXVEVjBzRFJ5cHlTTmt2OW8?oc=5"
+  },
+  {
+   "about": "$MU",
+   "title": "MU Stock Gains Ahead Of Q4 Earnings: JPMorgan Sees 'Constructive' Setup Amid Netlist Legal Fight - TradingView",
+   "source": "TradingView",
+   "published": "Tue, 29 Sep 2026 12:58:28 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSl9tcEszYkI2YnFzRmU0bjl2ZHA3S3FldEpldm5PNHp2UGkyVUhwZ3ZINFJUQnJmYnNVVzRWYVl3VmZUNnhIcTNORzFZaHhobnZ1MnJMcDBIVXZ4aFFrWDRWQjlKVmQ0cjVudjBmWDMtZm1SNTRva05OZjZRWE53Y1QwTUJieVl5SGVSc1FEeTI5MmFjR3VPSmVRRHhfMnpoMGxmRFM0N1MwZVoxLVhuYWtqTXdhQm1xOEFjbWRFUndwVVdTMEJ0S2ptLXQzWVRBb2FnQVFVM1lka3Y0dEdfQXlOY2VtcUNo?oc=5"
+  },
+  {
+   "about": "$MU",
+   "title": "Micron to report Q4 earnings, as memory boom powers on - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 15:32:30 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5"
+  },
+  {
+   "about": "$NKE",
+   "title": "Nike stock has never been more hated by the market - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 17:51:05 GMT",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSHVVdExPdDk2Q0lyZE5PSjhaZkVZd0ZKTkQ3QU9mRFczaEVnRFdCTGNvNW9sVHRqeVNPV1V4TjRzc1RUdGhlTXFnaGdzM29ySGxlUUtKcGd6UkdCRGhCYWhIY1ducFY0WG8xRUo0VzdBWkVuM3pzSEo5TWNuNGJiSXhOUUJuMWpidjlVMFNfckVkdWZrS2J1QUpLbFpLelBMT3p1TEFmSGlQcXFKSFJmMFVpVEU?oc=5"
+  },
+  {
+   "about": "$NKE",
+   "title": "Ahead of Nike Earnings, Here's What Barchart Data Says Comes Next for NKE Stock - Barchart.com",
+   "source": "Barchart.com",
+   "published": "Mon, 28 Sep 2026 20:52:29 GMT",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN0ozbkc3cFVuMUJYSDRzaVNJQ3dPdkxhRHVyTzktaWREbk5wTTlHSFc3VHpUVV92bUs5SE1QOWNLdjIwbXN5RE5ZWWs0cEEycExjb1R3bU9xTlY4bkxGcVN3YmVPZkR6OUd0QkcxdlZiZkZ1REdhdWdpTHlaY0t5RWZxQXhXNHdvekJ4REdyNF8yS3ZzUW5ER0FPTGtROHhCT01VWFlKdmNpT0lOX2pFZm5TN08zNkhSeWV1ZkxuVQ?oc=5"
+  },
+  {
+   "about": "$TSLA",
+   "title": "Tesla Roadster Speed Bump: Does It Dent TSLA's Investment Thesis? - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 11:45:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWVRPVVJ5TlpwUFlaU3JXcXV6ZnJobTlmNWRRLWtIS2xhZzROd3R1Z1dkanJmbVJCRUFzU0Y0REdhc0ZnQ3Y3WDQwMzBJU3RzdzU0M1pjTGNNMXJxSG1MQS1JdUdkQlBwaUlqUlhFLWpIem9fWExkc2s4X0xLUHY3Q1dJZFk4OUdHM0h4b1dFSTZiRXlNcllRc3N5VQ?oc=5"
+  },
+  {
+   "about": "$TSLA",
+   "title": "SEC Staff Green-Lights Tesla Program Letting Retail Shareholders Auto-Vote With The Board: Robinhood CEO Cheers - tradingview.com",
+   "source": "tradingview.com",
+   "published": "Tue, 29 Sep 2026 18:46:53 GMT",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQm8ySFRiQ0NKaUpYXzVBOVNhRHU4TlFXaE5NaHNPNXJtVHNTOEtvOXRqdWxyd21OV1dPN3B4anV1eGxybWw3OU1zNElsTTAybzRsUlllUzJxeUpTb05RTXgtMVliSV92X01GZTFjVk9ISEtfeUJGU294SkJXZzNjRmpic3lJVklyOE9XUXdVQzNFdm5QTUZER05CN1JGeG1GakdfNEN2Wi1FZmprT3ZSQjZBVEx1S3V1MjdfWjg0cm5fQzBIQ0tWQlVwV3Q5TkFJN2tmellvdk9SUHhtdzE0X2UwSlpFcGpJLTFjSGtCX2ItUXhha282aVlhN3pmcnhZ?oc=5"
+  },
+  {
+   "about": "$SMMT",
+   "title": "Nasdaq Futures Tread Water After Monday Rout: MU, NVTS, NVO, KOD, SMMT, ASTS Stocks In Focus - TradingView",
+   "source": "TradingView",
+   "published": "Tue, 29 Sep 2026 08:31:36 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaG5nRmhNSzdVZW9ZQ3BLMG5MZGhVaGU0NGNsUlZfdS12dFV3VGE1RFdMTTJiYVBHQ1gwRmJHdlFjT3FTMW5PYmJhbkc5RHc0emZ0MzRCT1FiUVd5MDlweUlJc2dxeTkzRHB5TVdCMUxmWnpUZnhQNW9OLWdSZnMzWFViMWF4Tzg2UGt2WE9MYnc5WDcxYkpPRmpNQzVJemZab0pxNlRncEtIRTJ3dFd0SmlEVnpPbkcwUEtEVktSMkFjSGhLV1VaMTZQUk50d1Y1Y1BzanBXLS1VVmI3SXlN?oc=5"
+  },
+  {
+   "about": "$SDEV",
+   "title": "Stablecoin Development Corporation stock surges 5.37% then plunges 9.77% intraday - Cryptonews.net",
+   "source": "Cryptonews.net",
+   "published": "Tue, 29 Sep 2026 20:43:14 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wSFJBY2hOd1B5X1l4NmZaRlk1emlHS1FlTjVod3RlSUMxNlVmU2ZUWnJueHRELXpHT2FwTkQwcGhualRVS2dtaFhrQTR0cGpLRnBnUHRETlVkeEU?oc=5"
+  },
+  {
+   "about": "$SDEV",
+   "title": "Form 8K Stablecoin Development Corp For: 29 September By Investing.com - Investing.com Canada",
+   "source": "Investing.com Canada",
+   "published": "Tue, 29 Sep 2026 20:27:04 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV2lmRXIyRDlVMExzRVA4bnhOZGp5SFZ5OEtaWU1XbWZUNjNjZXl6RVpJdVBxcDJWMVI4cWhrNW9lUnpPQUZRMk9hTko5cUJQZkxOdklJSkk5eUk5ZmNTd2lOMWthMXZteVVydTZiMW1sQlBMVURxYzgwdlROWWp5WTRHdlhrcGd3elZZcWRUYzhYWmlhbjB6Ui1JMi0xeDdkM2RmZGhtTERLME1OV3NYNmI3Zw?oc=5"
   },
   {
    "about": "$BE",
-   "title": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 20:40:47 +0000",
+   "link": "https://stocktwits.com/news-articles/markets/equity/be-stock-recovers-after-monday-slide-on-analyst-support-peers-fcel-plug-edge-higher/cZMZQn3RBWL?.tsrc=rss"
+  },
+  {
+   "about": "$BE",
+   "title": "Dow Jones Futures: Stocks Dip As Yields Rise But Bloom Energy Soars; Micron, Inflation Data Due",
+   "source": null,
+   "published": "Tue, 29 Sep 2026 20:39:33 +0000",
+   "link": "https://finance.yahoo.com/m/0f05df74-8e19-37cc-8a3a-5b6885fbc760/dow-jones-futures%3A-stocks-dip.html?.tsrc=rss"
+  },
+  {
+   "about": "$BE",
+   "title": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 14:04:05 GMT",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTjZETGxZdks5ZjhMb0FldEtPS0pfai1TbzRhZnBVN1QwdjdHWGNBUkZuSWFQUE1yZ2ZUNktXV0N2aUJuOUl1bEZ5WjlwWXFId0Nuak1xY2VaWkFoc1FxVGRYUW1tZlFTNjYya3h1M3RXYjg0bG5sZllvZThJZjlmTV9FYWpGT2JONDlVQ0lWY0tiU0FIWGVjYw?oc=5"
   },
   {
    "about": "$BE",
-   "title": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. - barchart.com",
-   "source": "barchart.com",
+   "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - tradingview.com",
+   "source": "tradingview.com",
+   "published": "Tue, 29 Sep 2026 20:40:47 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPeHBzWW1CZFlwYzVLc1JZeVJENWYtUzVpUURXNnlTamNkYkxZQUllQkRNNl9KTEhUV3RVYnNBVGloaGFUdzZkZm1LZ0M2STk0NldxYzdGdzgzZWgtRHd4VGJtY0xkSFNuTGMyM2xnSEZaeGtUSHNoQnFjMHRCZUQzVTdFMUhLNmJuUVVRWUhuZThNNERBTHl3d2M5alVjZmxkZmowZWQyWHhMS2lCaWp2bXFNN01tMWMtamhXVV81X1VMYWItckZ1R3pVa1M2VHJIcXBoNkN0UWlmR3Ux?oc=5"
+  },
+  {
+   "about": "$BE",
+   "title": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. - Barchart.com",
+   "source": "Barchart.com",
    "published": "Tue, 29 Sep 2026 20:18:43 GMT",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYVpNMC1QbGhITGpGMk45U3I3MnBMMXlTeV9FZ3FtdEFlZEc3eE91bnkzZUlPZDFlZ1BBVzdsZHBOWVF2WE1jZzJ4bkFEb2FPdDlXRTY3UkxjeFcxSzVKdjBmWlhoWl94X2kzQlRUZmpsUy00REdyMnU2aFVLTTNaUVRVNHVlQW1SUW5kXzQwTlhZc0poVXg3d3lVVHozbW5SdEdLWmJ3SnRjVzZHalRHYWl3TWFXU3pPLUlVRHVzTQ?oc=5"
   },
   {
    "about": "$BE",
-   "title": "If You Invested $100 In Bloom Energy Stock 5 Years Ago, You Would Have This Much Today - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 20:00:24 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSmtlWkFsYTg1REF5WEc1NkJRV0tfa09fWk5ER1FvNGNVMHoyc01VM3hLLTd1Y1ZyeWI2UVl2akFaS19XNEJ2d3dfN05xZ3lZdlNIV2VRYUxxMEk3ZTJoNWozX1MxMUpibXdhZHNXUFpMX1BhR0RTMVNrNFZILWQ4ZU0tbWZ0amdqWmRZc2tGLXFWLVMyNkNBS3JNb3RZbWNYVWZZM1RhRG9zZFIwUHJDRHVRQkthNjgydUk1V0N3?oc=5"
-  },
-  {
-   "about": "$BE",
-   "title": "BE share price: Bloom Energy Corp stock rises over 12 per cent, shares near USD 300 - The Economic Times",
-   "source": "The Economic Times",
-   "published": "Tue, 29 Sep 2026 18:06:46 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxORWJBOHV1MUYyOTlBbHdJZ3c3UXZNMldjQ3g0NjBYRGZuTFp2bDZWS1EtdEdVYTY4dlRQMFp4T19IdE9uNnlZLUw2MGt6S2VvOE53SU91OVIyUFVISjJWdWdlNDk3aTFZZVF0Wlp1cWRkaTdjQXVMUUNoY2pyTTJQQ1BmNHZyTWZSc1RuVGJRblp4WkdYYkt2UXY4ZG4yNjhPMmRLOE5mdVJBU1UwOTFKU2t3cC1paTlTTUVDQlMwSVJMZVd0a3ZkZ3ZVUjZUT0xGZkJWeGQtTTBOMFV1M25lM3hxb09pVGZEYmxFUzBB0gHzAUFVX3lxTE45SkUxME1EYWJhNFdHaVhTZVFYTW1pT3RRZnIxeEx4Z1dQbDVBdGNYOUt5UmZyXzNnbklBTldHdTlSRng5MjhxbjU2QzJIYmNDaWsxeGgxdzJPRm5iQkxneXRyOVJqLVhWNGlpR2tTNnNocWMwQkMyaGx2TXJ2R2owbEJwWFBobEM1M0NObENMNVVfdTdzQjdqYk55NW5sMFpMNk5BaG41Und6V1pnLU1oWkQxQzFuLS1uSm1acExacEJRZ01xSVVreXM2aVpjZXAxNmpNMGtSNzFsMEdyWkJBb0RKbjQyRVZxN3pBWXRBR1VTdw?oc=5"
+   "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Tue, 29 Sep 2026 19:30:36 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUVgtdkMtU0xQWHNPdmRCTi1HdFJXWWo3Zl93a2lodDFoUEM2TmZzTXV3MlVwZU9MeVdaNk9sdXBTN2pidHI2NUZvbW14UUFFZW9lcE5HSERtYTVQSUJCS2d1LXRGTVlQMl9zYXdfOHZjNzJwT1piYWdUYmwxUDEyWjI2Vkx5UHRRbnRMdWkxbkNVMXhqOUlFQTRYczNSdFI4M0Z2cm1xVXNjdWZHaDdod1pYNDdJb3pqWV9RMUt5cUlwX0xBa0tNRklybTRZZHBjR3Z0WDNCblVtTlJ3UmVRSg?oc=5"
   },
   {
    "about": "$CCL",
-   "title": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue - barchart.com",
-   "source": "barchart.com",
+   "title": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue - Barchart.com",
+   "source": "Barchart.com",
    "published": "Tue, 29 Sep 2026 19:22:11 GMT",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNczJGalZIaXdhSUEwUHRRSWM3dEJyV0RJd1E5T2NmT2JKOUUxOXhHVzJBNklUeGFwQmJBekR2OWJxRlZqREF5UjYzYkNYZWJEOHMwU0l4U19zazR0UGsybjlGZTh0SWdmaHdCQWRBWmZ2b1ppX1hOUE52bHRIeTlSTDZMR0dKMzFvVjU0RUxTNWJvd01nMTY3MjlybVhKUQ?oc=5"
   },
   {
    "about": "$CCL",
-   "title": "Why Carnival Stock Popped Today - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "Why Carnival Stock Popped Today - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 15:13:52 GMT",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWTM2LUpmUDFycHJXSW5jVVVzWGFSMklfOTVQY1Z6NDdPRllhSmlwNkRTbDNWZnBrX2hqbVZKN2ZNRTFQUGNZa0ZJU3dDRmdHaU1IZ0pfc0hWNlpKS19uRVVtWGZxNi1DbmU3dUVXT1BCSWdpNXZlSDFLYWRFV3FqQ1FxM2NQZWk4TDFCQzJGOUdJby1KQTRjNUpiMFI?oc=5"
   },
   {
    "about": "$CCL",
-   "title": "Why Is Carnival Stock Soaring Tuesday? - Carnival (NYSE:CCL) - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 15:54:39 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTGZMOXVPejBqVzlET0pVM0tRQjh4d3Q4ZTdzVGo1Smc1aVBmY09JTzhWZ25aYy1iTkt3ZlFRd3hfMFpKblphWWhwMnFFelJCWVMwTDlvWEp4ck5WU0VVUGJBTmFRMjN3VGtGOWRYZWhMNWtLaXo0QmozRmVPbTdTOUlSVHhPckZ6eFB3Yk42U2dCd0VtZE9ydThKVUJJYTQ5U3UzN3JVTktHOVNockI2TFJKNU5yLVYtcUt1NnE5blowYkV2M3drMzhwa2dLWjhqUEdicFF2aUQ?oc=5"
+   "title": "Stock Traders Buy High Volume of Carnival Call Options (NYSE:CCL) - MarketBeat",
+   "source": "MarketBeat",
+   "published": "Tue, 29 Sep 2026 20:45:48 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZHJkeTZkdmVSOUVib3RMdGtoLTJtbEJLWG92TFlvQjRRQ3hEd2toQWcwbm1WODVuaHdWc1hMWW5PNHZFaTM4X1hlcHB1VExNXzlPUW9iMDViZzI1YUhySnlydS1oZnhla2pfdlI1WER6T0pzbG82RW5oNjhpQkFLMWU1MHJ1NU1STXRQR2xUN0o2VWdieHk3dkxaanhBUnJFV0c4SU5FOFNoZHBmamlseEpuTFBXN3hZUjZfdzY3OU54N2c?oc=5"
   },
   {
    "about": "$CCL",
-   "title": "Carnival Rallies as Investors Appear to Welcome Its Earnings Setup and Demand Outlook - Quiver Quantitative",
-   "source": "Quiver Quantitative",
-   "published": "Tue, 29 Sep 2026 14:49:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQ0Z4dF9UdUlZV25RUUFyUXYzczluc1JZUHFta3dkY0phM2laQUdKdkg1dnYzY0ZGdUxwb1JIRm1PaUpuc2F0b3Bnc3RfUVF2djQ5Vmd0TC0yOWFxSjBvMW5hOTdlMV9XQnBDYzY4ck1Naml2XzhuQkk5N3NhUTB4OHFCOG1Nd1ZaWFo5LW50YlNlUmFCNHlrOVpPUXNmVTNyN01IUms2dFBwLV9fNnlOSHVJVXdIYjFFX0E?oc=5"
+   "title": "Why Are Carnival (CCL) Shares Soaring Today - tradingview.com",
+   "source": "tradingview.com",
+   "published": "Tue, 29 Sep 2026 16:35:48 GMT",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOa0NFdUFNS2JpUW1kamlJcFRZOHZmV2dwUXVpVjBfazR0N3dPTXZjZEtoYTZkU0QwOWRPamg4UzBVdUhfMURyM1FnSlJwUm1WXzRUeDJCeEQyckN3MnhfNjB5d3ZuanpaZnF3QmJGbHNPX042aUN1ZVNWWUlOcXZoNnlGeVEwbDQyZlhxaV8tcWdSUGJDS0RMRWh3b1FQck9MNzc3Sw?oc=5"
   },
   {
-   "about": "$AIFU",
-   "title": "12 Financials Stocks Moving In Tuesday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 17:06:01 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRkpITm10THlodWtnYzBiZnprUnFYUEQwejktSzdZN2J5cE84SkoyazVSS2w2dmt2cDZXMjcySVJJdjE5RDQxRUx1Y2UtWWRjcTJMdENMWklEekJXNFd1ZXE5d19mNkxQYXZsUlhNbHNNRTVUZVg2SE9RQ0xPdXUxSXJuMXFObjhuY3VUbmcxdHk1cGJHTTlZX0pJcG9TVmhaOE53WHRNVXJBNlNPbXJBX0RiMVpIZw?oc=5"
-  },
-  {
-   "about": "$ITG",
-   "title": "CarMax Posts Upbeat Q2 Earnings, Joins Iovance Biotherapeutics, Perella Weinberg Partners And Other Big S - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 14:26:05 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxORVl6cHlNaVQwc0p5dXFIVi1mRDZVQ25MbXdieG1mS0xFLXV2ZmhFQ0draDE5c0FtTDlqeDhBRlNGaDNvd1YyUDVnaXFkNVl0NzA0NndPbU04VEo2UFlLTVJ5S3ZDM0pEMlgwRVZYZm1iY3V5N012Slk2Q2ZkSC1NVElQaHY0aUtDWUhQNENLbW5JTlc2NUFJMWd5MzVxSVFrVGlKbTBIelppMkxlNkpBR2kyRlBUbEkxa0xqZkJIOHlMSWtZbHJvNUphZlU3MnNVb1Myd3AyU0ZKZWx4VkoyNXVwZThpbk1rb2g1eng0ZHE2TE5pMXdWYnN2ODRMZjJKdUhfMTJnRDgzUQ?oc=5"
+   "about": "$SANG",
+   "title": "Sangoma Stock Explodes 35% After $204 Million Buyout Deal - tradingview.com",
+   "source": "tradingview.com",
+   "published": "Tue, 29 Sep 2026 16:49:55 GMT",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTFplRGlVc3NyYlVnalNsd1lTRFRzNjJLUVFPUDZzYTBKWG1tNjE4VlZKTUFPUkY4X1pvRFV0Mms3c2h2S1dXcXZJUm9rOEh6YmduTU9tZmltWEVWSE9sN3dudlJubEV3cG42Q3hlWV9YSy1VZ192dE9BdzlYQmVhejdGbVNCUGdhQkJlQ29TcHN1UmFrTm53YTYyTmpXcmtqVEFXemZ0NUVFSDlpdWRYTUx3T25iUQ?oc=5"
   },
   {
    "about": "$ITG",
-   "title": "Can You Justify Buying Palantir Stock Today? - Trefis",
-   "source": "Trefis",
-   "published": "Tue, 29 Sep 2026 14:23:01 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb3VQeDRUTHZxSTh6akZCTjI3YzJKSzk3V1p6TGRLY2VoWUM1VkpqbEllUG5HUkVRS3pzUE9wSkF5TlpUZFFFU19ScDVxa0NRcHluN1lLSmV5QWd5eFNfQTJUY0JBakUtMXJCaW9fNFZ0YkdqSWxMSWY3Y0ZpT2Q5dG1XajREMEVSdE1wTkJJWHhvU0QyM2NnOHBmbUZlejY0dmI4TzN2Yw?oc=5"
+   "title": "ITG: The September 28 Collapse Looks Like A Seller, Not A Broken Business (NASDAQ:ITG) - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Tue, 29 Sep 2026 20:42:55 GMT",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQV9DdFRPako3X1R2VDYyRUJ4b2Q2RHN4ejRDWVlrQUFVb2FiQnVTZlJ3NXUtWGJ3TjA1Y3F1MUpXTFpWdXhMdzM5dDFtV2dXM0VXcXFpSHpkbVRtdVBXUVU0Z2dDWDBGMzQ2dEtVdWd6V1FJLUdDOC1CSE90WXNBakZHLWp1Rnd2ejB6LTNZTTVhZEZQRDk0OVFxRE01Q1dQTW9RcEhZQkVCV3M5Y0hOVEVR?oc=5"
   },
   {
    "about": "$FLX",
-   "title": "Flex Ltd. (FLEX) stock price, news, quote and history - sg.finance.yahoo.com",
-   "source": "sg.finance.yahoo.com",
-   "published": "Tue, 29 Sep 2026 07:01:25 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE42al92SGxlTEl0WWd1MUVOZlNMVW94UXJlaS01dHMySl9PT1V4bEpjRlE0QTZtclgzN1puWU11aWk4dnB1MW83ekV0NEtIam9uT2c?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "12 Industrials Stocks Moving In Monday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Mon, 28 Sep 2026 17:06:03 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNVN5ZElSSS1qZDNiZEVaQmFybWhBeHlFc3F2SlRodi05UlYtQS1hZWtMeDYzQld4UHdqM3FTN0VVaEVYNGdvd1pYcUxDSlNDanhxWEtIMU1WejRzaE9kVDFQRkpuNUNqd1U0dUNYZlcwbkg0TFZTUncyaGxGS0RqbkVocU1rRmRRLTQyZnlSb0Ntb3I3QS0yOEpheV9fZHlMVDVlLTZOYmNuaERrOEU3emtNbXVmZw?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "12 Industrials Stocks Moving In Tuesday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 17:06:01 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPamZpZlp6N3AyMHZOa2lNQlhrYUJkTkZCSkg4alNUME1JV3FrQ2ZiM0k2dnYzRnlROXN2RVJ3clhxNEZySE95QWYxVEQ3TjNiUFVpN2t3Qm1ENVRLODZZY2hCU0ZmQnNHenVqSjdvd0J3SG9vc0ZhY2xvNFJvbnJsWGJiQkRDTjh2dFEwd0pPU3lPaUY5OXJPN2FfYVpUTkRnU0g0VE5tdTMyS3BYREwtVUJDd3V4VGM?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "12 Industrials Stocks Moving In Tuesday's Pre-Market Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 12:05:59 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbklrRjhsZ0tVNjFNQUI1bVJYVTBMSkN2U2J4RHlfOExRaUtMNUZoOTJFWE1rcDF4S3ZwQXJ3eDd3dnR2T1lkWHJLSTBtNzFkNzN3eGMyZEhWWVUwNXFjVzdwNGNHM2cxNzBFWjF6Sy15aE1MOHBQRDJhOWNudTRzWGQ2WjNfLUgwT1hla3NjZzhHdkgyM0tsbkZBWjV1NzN4ZldhNmZhaGJsTFctNDc3LW1kS3VSV2FhRXc?oc=5"
-  },
-  {
-   "about": "$FLX",
-   "title": "Felix Group Holdings Announces $0.038 Per Share Securities Purchase Plan to Raise Capital - kalkinemedia.com",
-   "source": "kalkinemedia.com",
+   "title": "Felix Group Holdings Announces $0.038 Per Share Securities Purchase Plan to Raise Capital - Kalkine Media",
+   "source": "Kalkine Media",
    "published": "Sun, 27 Sep 2026 23:38:07 GMT",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWEk0ZHdEVFptUy1oaXkyRWl4MHIyOXpVWFRIVzBOeUhhTWpuMTdldXZFamRYUTB4MXJtMXIyaEswWktBX0duRjBhNkg4SEFSZ0tPc09DUXh4Q0ZNanEwbG1iQzllNlExLV83bTd5aWhJNmk3Z1FOZm4tNEg4UmlscG9kdWk5UHFueG5fVTFEd3p3Z1ZTajlBQnhTcjJIWmJ2ZjFKT0NIZ21RRVV3cTZQdTYyWHVUdzNsak03V3ZuNE4tdEN4ZFZOV2ptNGRfTEE?oc=5"
   },
   {
-   "about": "$SANG",
-   "title": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 12:05:59 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUjhRc2VjUGNsQ3hmZWhHaUZld2kycXdaQ2UtOFpmdXA4QWIyVjYtZjlVa3N5Uzk1ajdDbGNyY3EwYjN4Y3FpZ19xNld0Z3RXRlI2MFZYYm9vTUN1MWFhd2J1Ujl4ak9FR21XN05vRm12VllCb05VU0xRR2d3bE8zR0lDVXAwaWhDZVpNMENxQVQxWEJQQ0FHblZXVnAtenI1cFlMcGxnamZVcnVYdUIweGdvZy1jMXhuRnhQNkdaWVVaTDNjTEhsaQ?oc=5"
-  },
-  {
    "about": "$FOIL",
-   "title": "Arm and Carnival Corp among market cap stock movers on Tuesday By Investing.com - Investing.com South Africa",
-   "source": "Investing.com South Africa",
-   "published": "Tue, 29 Sep 2026 14:42:18 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2lEa1l6UXEtcDcxM3RWc2VaWEZwdEZUbnJELWw4dGRqb3oxOWV2dllJNk1JcktkRHNUWG9RdTVBMGcwaWZ4eEJfSjZRRl90bkdDWUlIcjNIT0NFdWJlSjgwc1ktYWdpWTNzQmFjdV9RT1BiWjVsa2hGdTg1ZTVkSzBocm0yLWlzdy1GZ19vUVNYZ3N4X1dPSDF3d2hIUzNEM0REN3UwUGYxTnRoUnQyM3Zpc2d5NVk5R0VnVTVZT0k?oc=5"
+   "title": "Arm and Carnival Corp among market cap stock movers on Tuesday - Investing.com Nigeria",
+   "source": "Investing.com Nigeria",
+   "published": "Tue, 29 Sep 2026 14:44:09 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMFRVai03RXFhMGZMb0RsVDdVZlpIN21UM0lKckpqbGExT2pDclJOc3JXdmh1YXhGakZDRVhVb2xITDdYMFFtNlk5QTZ1NmFRcjR4S3BoTVhIVURaTzZ0QkFmRGdwQzJDUVoyQ2JFSDFTYzBHWFpqRjc5ekpnbnpETGN4TzFDclJEMEREUmJ4Vlplb1lNbEs4TkhQOU5FUjMweVAtNkdzNzhNUjNDeXZ3WHpvNXFwclZzVkJweTF5bzk?oc=5"
   },
   {
    "about": "$DNA",
-   "title": "ctDNA Assay Shows High Specificity for Post-Transplant Liver Cancer Recurrence - CancerNetwork",
-   "source": "CancerNetwork",
-   "published": "Mon, 28 Sep 2026 18:08:11 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQUJpNlQ2V3p4d19wUFV5TV84akR1OHN0R1RQVllQNW1lTGZ1MkRYWlRIT3NOcWJnLUxEWmh0NzMxU0MyUTZsNFBoZnQtZUNMNnFhMlFsVEZTcmVuOElYTmc4cmtDMXUwODJZaWF3QjVkVm5QUkNnb3pSOFVpUTZ4TzYtYll1bHBPaGtCd3RTR3hIR21mX3BnM09ZY0hXTWo1ZGV6WFd0YnlsNUJOSU9oU1dHVQ?oc=5"
+   "title": "Ginkgo Bioworks: Another Curious Rally (NYSE:DNA) - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Tue, 29 Sep 2026 20:47:39 GMT",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNEFhZFdDVGhLci00VW44M1ZXclNuazBCVEd5cHllaWdKakVyRURNb0xsbFFoVExLMmY1dnJ3Tkt5ZThVeTBkVGd0R2xDNWlteUFoQzF2cU1BSFRnNHhLWXlWNXZCc3RIRkhkTzFBbzlOZ3h2QmRXZHNMbkxOdXVMVjNxT20tY0JMT295MEFrdUh5WHNlSWlMTDJDYjhVUQ?oc=5"
   },
   {
    "about": "$DNA",
-   "title": "Surbhi Chandna recalls her 'secret getaway sans the husband', shares memories from first-ever girls' holi - The Times of India",
-   "source": "The Times of India",
-   "published": "Tue, 29 Sep 2026 18:29:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNc0VVdW9MQW9yTUZPQjhCNWJGRG9rWllIdlk2WDhyODNxaHQ2ZVF1Z2p3TW1YckdIRUpHdWVUb3VoblY4WnM0YjA2Z0pjcThuNzN2SlBoYXVHWEJpdmZObjdyRndaTWk0ZXZ5LUdFckcwWlg4d05uVnJUQ0l2SmNXcFpDQ2RqREhWQVd6RXpxalljMV9hUWhvQ2Nkd1RrN0YyYl9FRE01SHdCYUdWWGRsS19fNlBfM3VLenJZTnhwdzZSZE1Cc1ZDQ19HM1VJMndrbnNYOUFJNFlmbmVkNHV4ZURodFVUMGpCMUN0Mzl0aTlHU3VCcmx0aFEzLVJNQVFPbTVvN3lLbERIeV8wNHRoRFlR0gGSAkFVX3lxTE1zRVV1b0xBb3JNRk9COEI1YkZEb2taWUh2WTZYOHI4M3FodDZlUXVnandNbVhyR0hFSkd1ZVRvdWhuVjhaczRiMDZnSmNxOG43M3ZKUGhhdUdYQml2Zk5uN3JGd1pNaTRldnktR0VyRzBaWDh3Tm5WclRDSXZKY1dwWkNDZGpESFZBV3pFenFqWWMxX2FRaG9DY2R3VGs3RjJiX0VETTVId0JhR1ZYZGxLX182UF8zdUt6cllOeHB3NlJkTUJzVkNDX0czVUkyd2tuc1g5QUk0WWZuZWQ0dXhlRGh0VVQwakIxQ3QzOXRpOUdTdUJybHRoUTMtUk1BUU9tNW83eUtsREh5XzA0dGhEWVE?oc=5"
-  },
-  {
-   "about": "stocks making the biggest moves midday",
-   "title": "Biggest midday movers: Dr. Reddy\u2019s, Honasa Consumer, PB Fintech, and others - ET Now",
-   "source": "ET Now",
-   "published": "Tue, 29 Sep 2026 07:48:52 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQck9ESnd2Z0J6d2pvMlN5T1lEdWFNNUFxOFJDR3ExT01relZ2MkdZYWxZektfQnY1TTBUYkZhbENjS19RVnJkUExoYTBfWVJvc0IyWUVKRGV3UTVsR3NhYXZQNEpWMUJnZ3o1RnVpLXJoTEZxT3RydXFxYzRVZ3Excm5XYVJXNUhXUGtZWEdFWkpJRHdJLVc2aE1ZN19Oa1NJRzI0WGxDZkZ2bExreTdYaWJlQTFrSTc2akVLdjl6cDBPYXotWXhXNnpDV3gzR2VwRldLSUFyRDXSAd4BQVVfeXFMTTlNREVQRHpPS2puNXhreWVwRlNpdlM5bWctbk9rZnVCZWVxWkRfSEZJajVQYU1CSUVQLXdDRFJkVlIzVnFLYy1uenVIdDEyaVpkY1dXbFMyUHR4UFFfMVBCWGV4V1NlZEViME9zUzNEclQ1OFFMSUlQMEVydzlaajlpSE1rXzAwMF84T3ZVNWQ5akNNdEVEV08zQzFQOWlNYjVJMFk2MElkek84ZDlxRTFHZzZfN1RQR0s5bjYtRWhhS1VPeVllQ2tJNVZEajJKRzdreTNQZlROR3Vka2pB?oc=5"
-  },
-  {
-   "about": "stocks making the biggest moves midday",
-   "title": "Citi sees more pain for TCS, Wipro, HCLTech; Recommends \u2018Buy\u2019 on just 2 IT stocks - financialexpress.com",
-   "source": "financialexpress.com",
-   "published": "Tue, 29 Sep 2026 09:01:32 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRXVhQjJzekRKS2NXVEl5ZU5TaHE3eGROMnJGbkdDVEExREdYNk55bWRPRVhWNGtUTm1ma3l4S3c4ZTFyWUJmT2kwZXZuVTgwWl91eDV2MFhCT0NINkdOVUZsblEyRFpfQTBiWHpMY0Rhc1VHeUt5OFlPRjJkVk9weENYMXlST19rdWJ2dWlpbkwzNFdUR0F3STdrbEdqVHNIOUxfS0VUTEVzOUlqR2FFTm5Qb1VpNUVtQ040TUNvakZzWknSAcoBQVVfeXFMTTBUTEJFY25WUGY3dTY0MFVmUkFLRGFuNU52NW9DYUJjSkotcEVaelBDa1hkaDhKXzNJTnZCQ1NwLTVvTFZKTjdWN1l4SVFtXzN4dFNrUjB0UUVRVElPYUR4c3ltbDhyTUhGNkp3Q2hGWEx0TXZpTGdYMkp4UHQxSFZsaEthbjhDTjdUblF4R2xMci16OF9OUTJvamZIbFVkMTNDMnI1X0I2YUxzdlpKVzNrUEhMOFBiTWsxWmZZLVV4NUNWWENJTlp1dw?oc=5"
+   "title": "1 Mid-Cap Stock for Long-Term Investors and 2 We Ignore - theglobeandmail.com",
+   "source": "theglobeandmail.com",
+   "published": "Tue, 29 Sep 2026 04:31:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQb25WSkEtcFhGN1FEN1huVTV4VjIxSk1Cb3Y5cjR0MXBudE5wZTZHY2hmV1ZYWkludHlkZXpzZUZMTlRNUHBqM05jZGNjUXdYMDhvT0Y1S1pnX3RBSERlOFJwc0dKd0RmVW9kV0JRUUNjeWNvV255VlVraHhSdDRkek1DcGFrdkxfS29JRy1zSUY3V3FseVNyNGRUVjFjYnVMV3hqc0xZdFdPdVdHci1rYi1EU3g1MkNpQ3ptbExZXzhraVBRX0swVnF6YzZZakNWT0UxN08xdw?oc=5"
   },
   {
    "about": "Nike earnings",
-   "title": "NIKE to Post Q1 Earnings: Should You Buy the Stock Before the Release? - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "NIKE to Post Q1 Earnings: Should You Buy the Stock Before the Release? - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 13:25:00 GMT",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb1E4Ump3dkQzdHZ6dGd6VmcxZkRYcDlLdXlPdFpYNW10Ym84ME5BM1lTNzF6ang3NFpRTDVPV1dyQlVURDRGeUhSQWk4MDc3ZnVhQnMzNERZVldTZ3hkQXBObWw5a1oyMjhOZDJBblVwejNKaWh3enZFUlFEMlg4WGZBS1lObzZzdnpPcW1XS012Wkxi?oc=5"
   },
   {
    "about": "Nike earnings",
-   "title": "Wall Street Is Giving Up on Nike. How to Play NKE Ahead of Q1 Earnings - barchart.com",
-   "source": "barchart.com",
+   "title": "Wall Street Is Giving Up on Nike. How to Play NKE Ahead of Q1 Earnings - Barchart.com",
+   "source": "Barchart.com",
    "published": "Tue, 29 Sep 2026 12:19:06 GMT",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT0ZaeGNfVjcxbHFYZmt4ZFFPSDF4eUdBdW82T0NGeDNGbXZuZ2o2R1Q2N2M4RVljRFQxR2V6YnVaek0wVWtrYVdSSXpOTVo3SHVwbEdVMlJJTjNBS19admdqVDlHZmplbENnMTJzd24xeC1DS3lHdnl4VFJZZWhWbFQ4OFRJLVp4dEZpVWxVeXJ6TmtvN3Rtd2lwblh2c1gzSnlCZXpOWFI0V2J2UjY5d2pvYw?oc=5"
   },
   {
    "about": "Nike earnings",
-   "title": "NKE Stock Heads For Another Month In The Red: Jefferies Bets On Nike's Recovery, Sees A Q1 Earnings Beat - TradingView",
-   "source": "TradingView",
-   "published": "Tue, 29 Sep 2026 08:19:41 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZ1pjejFrQkR1S0pvNFRkMl9wclEySGFmSmFSdWIzV3FPQThGUUJOVUtfeUhpNmRJQ2RzeWlUOExmQlBzeTNYWnNvRWI5cUpUODJ5cldlSzlydHVyWElFdTRGalVSOFVmM0JIMzdUamxpLVRjcjJmY2wzdndxZEo3MkJaWkM3NTZJOGFWcnNLMkd1T3Q0ZW5yaWxkX1dfTi1obXhGV29TN2hzTjZEdDBrekxrYlA3OXRuU2FjSGZHYUVDMENERnlPSEpqSGxhLUN6VThpYjY2VkdlVkZqd1IxWklsSFNLWkJVZ3JzX1JZdlFBQTFX?oc=5"
-  },
-  {
-   "about": "Nike earnings",
-   "title": "Nike stock has never been more hated by the market - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "Nike stock has never been more hated by the market - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 17:51:05 GMT",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSHVVdExPdDk2Q0lyZE5PSjhaZkVZd0ZKTkQ3QU9mRFczaEVnRFdCTGNvNW9sVHRqeVNPV1V4TjRzc1RUdGhlTXFnaGdzM29ySGxlUUtKcGd6UkdCRGhCYWhIY1ducFY0WG8xRUo0VzdBWkVuM3pzSEo5TWNuNGJiSXhOUUJuMWpidjlVMFNfckVkdWZrS2J1QUpLbFpLelBMT3p1TEFmSGlQcXFKSFJmMFVpVEU?oc=5"
   },
   {
    "about": "Nike earnings",
-   "title": "NKE Stock Heads For Another Month In The Red: Jefferies Bets On Nike's Recovery, Sees A Q1 Earnings Beat - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Tue, 29 Sep 2026 08:19:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVklUM1J0SDdQV3B0REJrSGdjU2pjbGdQTndBT1dJRFZIeTRHdTY3bzVsWWNxUjFlbXRBUkZCTzNRRUhpZDQwdmZTbjRHd3VpYWhkZFNLbmNjMGN0TzJ6MGtaczJUN1pwS0s4QTlaWDdLODlPWFl3YmdybXJyNkFlZ1I1XzUxTnpwcWlLNl9UakdyaVRzcWRiN2c0aDhwUlk3Q0NFWVdFbW5oRlVlcXM2NFRZRkNGdl9wZGkxTE02WXg3dVFSRm5KdWpXTXVUWk4yLWpRTWVGdWItWlItQzdCcDRnRzNKZFhCRk51S0RpVG9jc1NpX20wOU1n?oc=5"
+   "title": "What's Wrong With Nike Stock? - theglobeandmail.com",
+   "source": "theglobeandmail.com",
+   "published": "Tue, 29 Sep 2026 12:50:57 GMT",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON2FVVU5YNC0tb0c5X1lQRlpORDFtQUZMcE9IcV9PYkRHN0d2UTV1NTdSNmd6VlR1RWg2RE1BQTM4WkRHaXlCa0ZQVVZ2NWNhUW0wbWpoamNzZmlDbUNXME5Kakp6RHRaNHBLUE9qSlMzdk1vY1RhNGI3Q0lnVVdDVEZrb1B0NVF6eGMza004Y2FNZG9GTDRxWmRtQjRrMWdJYThoclFudXgwcHZMemNSWU5NWnQ?oc=5"
   },
   {
    "about": "Nike earnings",
-   "title": "Nike Likely to Issue Conservative Guidance, RBC Says - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Tue, 29 Sep 2026 15:53:08 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdzg5MHFTRW5HWnlPU0FwbU9Fc2NfVFVxc09MS2tia2dPbmR6VUxoTm53SEJVa2RxTXFoTnJtZFpUZ3lBUE9aU2hTQUZocTFsQThVTlJBdWEyZU1RODg2Z2EwNDFxVWtXQklrclB3WTZrZHM4RkxhOEE1UVJnZ2xhSVFkMTVjN3VhcXROWEs3N2VReHYtZUJZU1FNQU1QN3dwMG1zNk43NA?oc=5"
+   "title": "NKE Stock Heads For Another Month In The Red: Jefferies Bets On Nike's Recovery, Sees A Q1 Earnings Beat - fr.tradingview.com",
+   "source": "fr.tradingview.com",
+   "published": "Tue, 29 Sep 2026 08:19:41 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZ1pjejFrQkR1S0pvNFRkMl9wclEySGFmSmFSdWIzV3FPQThGUUJOVUtfeUhpNmRJQ2RzeWlUOExmQlBzeTNYWnNvRWI5cUpUODJ5cldlSzlydHVyWElFdTRGalVSOFVmM0JIMzdUamxpLVRjcjJmY2wzdndxZEo3MkJaWkM3NTZJOGFWcnNLMkd1T3Q0ZW5yaWxkX1dfTi1obXhGV29TN2hzTjZEdDBrekxrYlA3OXRuU2FjSGZHYUVDMENERnlPSEpqSGxhLUN6VThpYjY2VkdlVkZqd1IxWklsSFNLWkJVZ3JzX1JZdlFBQTFX?oc=5"
   },
   {
    "about": "Nike earnings",
-   "title": "Ahead of Nike Earnings, Here's What Barchart Data Says Comes Next for NKE Stock - barchart.com",
-   "source": "barchart.com",
-   "published": "Mon, 28 Sep 2026 20:52:29 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNN0ozbkc3cFVuMUJYSDRzaVNJQ3dPdkxhRHVyTzktaWREbk5wTTlHSFc3VHpUVV92bUs5SE1QOWNLdjIwbXN5RE5ZWWs0cEEycExjb1R3bU9xTlY4bkxGcVN3YmVPZkR6OUd0QkcxdlZiZkZ1REdhdWdpTHlaY0t5RWZxQXhXNHdvekJ4REdyNF8yS3ZzUW5ER0FPTGtROHhCT01VWFlKdmNpT0lOX2pFZm5TN08zNkhSeWV1ZkxuVQ?oc=5"
+   "title": "Nike stock heads into earnings at EUR 32.18 - ad-hoc-news.de",
+   "source": "ad-hoc-news.de",
+   "published": "Tue, 29 Sep 2026 10:01:53 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSTNBaVdsWm1CQ1B3Wm9Ec0VpQkM1OFp5VURQbkpZSWVZVHltajdtT0VuUUhtOTNNWVpQelRZZnVsazZXaU9wT3VRSG5fNWtkYmVVNkZreWozQzllUmdPME1IU3JMM1hOcE1USDlaRFRicE5vcGJoS2NjUGhscXp0eVNEX2VMWUdCcm5jNEJ1bUw1WHlwRm9EUVBkWXZ1SjNvekJ6TnBGdkVDQQ?oc=5"
+  },
+  {
+   "about": "Nike earnings",
+   "title": "Nike Q1 Results Unlikely to Miss Guidance by Much, RBC Says - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 15:57:43 GMT",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcXR6WHpDUDQ2UlpQWGZhYnRCTGhxdDZpSFRMWXRNY0k2MGpKOGxkbFlob2U0VUR6RTA1MGxKcEJPa3lhQlUwWkZwRTNRMFRneG05X0pPNmRQam1yRV9LNzY4anJ4S0xESTBmQ01PSlZnZU9nd2MtMl9LQUJ4dW1Hc0pLY0p6eFFQdXFGVlpkNVBaMlBheVVWRXdn?oc=5"
   },
   {
    "about": "Micron earnings",
-   "title": "Micron to report Q4 earnings, as memory boom powers on - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "Micron to report Q4 earnings, as memory boom powers on - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 15:32:30 GMT",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2REVk9Lb2VfOThUV0hPeUZrdGt4aEFwdFdCVVlHNFB4WmhBbjFaWkxweHhBZlVMTFphUlhqbUZPSkRWdG12OWFNb1phQ2xpRC0xZ2d2akxmTnRLb1Nnc1Blbk1KQ19jNndORFp1U2MtMUtCT3hoc3dwaHFFS0ljODctU1RvNFk2T2RsTzQtZmJ6Y29RaGJOaEpKdFhON1ZOZVFIcGoyNUpQMy1fZ3Q0WERsWQ?oc=5"
   },
   {
    "about": "Micron earnings",
-   "title": "Micron Earnings: Should You Buy MU Stock Before Results? - Micron Technology (NASDAQ:MU) - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 29 Sep 2026 13:07:58 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb3VZc2I0VktraTRUaUl4VzB6TDJMdmt5dWJRZWR2U2VxTDU5ajB2azQtQ0hWc2lHTWNVei12N21RY21nTUpSUXVkR3lJaUhYNG1nOXlEVi1jTllFbE9BY202SEtueHRiQVVNMjR5TDg4bERyQzhueWFoWTdkY0pTSHg5c0FzcW04bVYwdTA5eXZ1ZklSYjZUUTRSVzRIdWtwWFJ3Y25Xbw?oc=5"
-  },
-  {
-   "about": "Micron earnings",
-   "title": "Micron Options Price a 7.69% Earnings Swing as Wall Street Sees Big Beats: Options Chatter - Moomoo",
-   "source": "Moomoo",
-   "published": "Tue, 29 Sep 2026 15:09:32 GMT",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORERBOFlLQl9kbzJBNHE2dVl2MEg4aXFmTDNoWjhTTmRvTGNDMWF1UHMxQkFJSFk5VEtPdENXNEdlZkRPTXJ4WjFTRmp6cU15UGFQMktRNEk5cTNLMnk0cG1PbDd3RWlfVGY0LXo1OXJXRlp4NW56M2VsdTFTUERXUHlOcEdJdUhmRHV0bDZpdG1SRmpiWWxscDMzeDIwUGV4QVd2SjVpWQ?oc=5"
-  },
-  {
-   "about": "Micron earnings",
-   "title": "Micron may be sitting on a 'substantial' surprise - Yahoo Finance",
-   "source": "Yahoo Finance",
+   "title": "Micron may be sitting on a 'substantial' surprise - finance.yahoo.com",
+   "source": "finance.yahoo.com",
    "published": "Tue, 29 Sep 2026 10:39:53 GMT",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNREcyVXJBUGtYRUVJRm5SX0RmTThGWjFWQkN3NGlYemFIZEVmdVV2UC00LWNjZi1FT094U2Z6UEtVQTF0RUpmdUJQei1yeHBtM1M2Z1oxRWNXYVlhbW0xX09lNDNWeWxKUEJCY2xyUzFPTjRLNmp3SjZxT19NMGFaUkJUNWhRT1BRUUhWY2NqeFpVbFVmeWdZMks5c1UwR190MS1NaFpQazFEWVhEMkpGTg?oc=5"
+  },
+  {
+   "about": "Tesla deliveries Q3 2026",
+   "title": "Tesla Q3 deliveries preview, as Roadster delayed - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 14:55:14 GMT",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeWVuUXNydW1aLUJxOUxTUUdQSXlnSkJIYUp0bTB4akRpTEU4S2dsLXV2MG1xcUJBMUJBZnNuazJockRwMXc4UDNVTEp5ZmVhZk1FRXltZlpqMFVXblhkWW5BcGk0cXNNTUx6ZFAxSUdiUVh2NVdkSXptSlNnQ0RfR3RvQVJsZ1poVmZIYjVaVFJweTVDMXBMSUpIX1Awd1ZJN0JXR0lER2stbFJwV0hMdw?oc=5"
+  },
+  {
+   "about": "Tesla deliveries Q3 2026",
+   "title": "Tesla Stock Falls 4% as Investors Weigh Semi Progress Against Near-Term Pressure - fxleaders.com",
+   "source": "fxleaders.com",
+   "published": "Tue, 29 Sep 2026 10:20:03 GMT",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaEFReWR6enNnNDBZNHMxbHFQYTJYWF83cFpodnN5WC1GWHhWX3pzUFhXVmZuM282dWh3ZHQyYWt1VHRxTDhsTk8ybXpENlhDc2lvMmVCWFJxcTlyYjhsb0xvUjREaXBMak9WZDZyNE1yeXVfaTlieTlCT0xEWWEyQjRqQy1pQUFUS1JJNl9fbGJMR0d4alE?oc=5"
+  },
+  {
+   "about": "stock market today",
+   "title": "Stock Market Today, Sept. 29: Carnival Surges 13% on Record Bookings, Raised Guidance - The Motley Fool",
+   "source": "The Motley Fool",
+   "published": "Tue, 29 Sep 2026 20:51:33 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLThyaTVvUmFCc0VKZEluVjF1WkxxTjJGX0JJcVFnVmhnSjh0RjBIX01COGJDV2VlUXBFSVo5RG1EZmdSUmhmRVZUZHNOU1JPN3NhSW1PRjZvZmhEdFNGU1J0cWhsNm1ldWloY3BmUXg1a1VwUGxrbnJiMTAzdnkzekNnaTV4MjZZczEwQURmSjhYWlY1SUk4VjFwUy1qZUJnRUxsbVJDcGRzZGZ6NDFfMzNONjFFOWFnenE3TnZzN0JBOFlQTEliajM1WEJxQkdPZjlNdXYyQ00?oc=5"
+  },
+  {
+   "about": "stock market today",
+   "title": "Stock Market Midday, Sept. 29: Stocks Edge Lower Despite $2 Trillion Anthropic Valuation - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 16:46:54 GMT",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVGttNkJwVThQcXBWSFJCbnQxUGtpVFRBa3N0MEZWMlFscGhJdlRXQ2g1MFhScXRUc1JNYmxmU0VOeGR5b19QTFF4WTNtNjZsengzT244MkZxOWRMMldoVWVsMW4xSUlUT2FRdk5wYlJadnlEMy1nem5vQVN0RWNLZDMzZ0kyWFBsV0o5dlVEcWg3bldlVmpr?oc=5"
+  },
+  {
+   "about": "stock market today",
+   "title": "Stock Market News for Sep 29, 2026 - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 08:30:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUVVkVXFLdDNkWWZPeThtWWtLWXdYTkMyaXpPdkRkT3BFRnFGNjZXUmE4TjkwRjItTUJYbWpVR0FCTmhvSXpjS2d0TkFTVHpvUTJ5TGxLUFBTSEdSbU81RFFrRmR6NzZGSWVROUVHb0RRZ2xBd1BkbzdOQ3pFWU5ma1duY3BJSEdUNXdSUGdrUFVvcXc?oc=5"
+  },
+  {
+   "about": "stock market today",
+   "title": "US Stock Market Today: S&P 500 Futures Slip On Renewed Inflation And Rate Jitters - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 08:10:26 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONlB5NGtBbFZWYjZpb2ZjMkJqM2tuVnIwOS1TT2RiM1Jta0FiQzcxN0VXbFhCTDVZaWg4TDJjR0ZSUTRXQ1d3aW5NR3AwZ01YczE0NTk2dEJ6d24teTJtMl80bmVpanhoYzVGX1RxYk5iQjl0MVZRR1JUcnBSVGpqUUsydnA0QUdfc2hNUjVscUxmdw?oc=5"
+  },
+  {
+   "about": "stock market today",
+   "title": "Stock Market Today: Major Indexes Decline as Treasury Yields Rise Further; Oil Prices Slip - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 10:50:17 GMT",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdDhiOW9YNmtlTkdqUUpfanpEMGxEbzhfdWNJUlg4OUNMSWVLX3M1VUpLTW1FcnBQeE5OdGg4ZkwzZDRkRTk4Q0VYMDk4MzhJbXVxU3g0aFFqQ3h6V3BDMU1XWmRIUGJwdW1taVNfSUxfa3o2a0h1RDhnTHF0WHFzSW13aVQ1Y2k0bmROLWRrZ1B0dEszVmxpNGN3TGw1Zw?oc=5"
+  },
+  {
+   "about": "short squeeze stock",
+   "title": "Jerash Holdings (US), Inc. (NASDAQ:JRSH) Stock Short Interest Drops 50.8% - MarketBeat",
+   "source": "MarketBeat",
+   "published": "Tue, 29 Sep 2026 20:45:48 GMT",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSjhsNWtyUVNUc3JSNmg4b2pZb0JwN21qZkM1ZWllMU5oUGhoWWV5T1lSMjYxN0xNaEo2TmZoaXA4WnJCbk4yNzJ3ck5Rc3h1SFNnbzktQ2pMZ3FsaTBSNktQbVVqS21wbndvbUMwbnR0UEo2R1ZRZFd0aHNEbWNVNGFYOEl3alRWQWIwaDZnQlZPSFJleXdqOWt3TmFMMFFxZTBoUTlWVmJDVklMWUZkVXpMOEpmRmM3bmZFTGJ6UzVVbFRSdVE?oc=5"
+  },
+  {
+   "about": "short squeeze stock",
+   "title": "Ubisoft stock among the strongest gainers in the SBF 120, short interest declines - ideal-investisseur.fr",
+   "source": "ideal-investisseur.fr",
+   "published": "Tue, 29 Sep 2026 10:08:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQczdiSjVtLUJwY3JIeDhDcFpub1ZpWHp5cmI4TW5jRzFNbTBCZ1FETWhYa0JWMnVyTHpFUTlqaEpkS2dyVDBQbl9NMkVRQWNDQkE3M3ZRZVlvbU1XZWQ0Q21SejJsOEJTbFhhWkd4NUhibENHQ19JbW82d0prS3VCTzl4V0RMcFdwaTJfMUowREpiVXdOQ2NUdlBmdFBadDVjQ2JBRTMyOF9VSUJza183U2d3ZkVHdEJBcTFnblpaenR4eG5UWXdvRDl4a2g2OC13dUhVcjdn?oc=5"
+  },
+  {
+   "about": "FDA approval stock soars",
+   "title": "Teleflex (TFX) Soars 4.4%: Is Further Upside Left in the Stock? - finance.yahoo.com",
+   "source": "finance.yahoo.com",
+   "published": "Tue, 29 Sep 2026 06:57:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSVFpUjU3c1h4WHk4WGxJQ2RKVi1pRnRrd2FtTWYzazB2YV9hVU9MWTVEOTFjajdPeGRqSnBNdzktNnN4amV3UC1NS21qSmpSNEZlRFh3Xzh5U2lDSlh5SXd3clp1TTFzc3RGQ1ZVU3ptMjBHMWVVU3lMX2J3Sm1DMUtLUG5jTTN2UC1KUkZDSVE?oc=5"
+  },
+  {
+   "about": "FDA approval stock soars",
+   "title": "SMMT Stock Soars After-Hours: Did AstraZeneca Just End Summit\u2019s Cash Scare? - tradingview.com",
+   "source": "tradingview.com",
+   "published": "Mon, 28 Sep 2026 23:35:56 GMT",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaWFZTGNoR1dRcjdFRW5LZDhnck0wbUFNNmRLZm55MDN2OERCcEZ1SFMyVWhDTEUzT3hiTEhMTUQwdDZucy00anNfNDlfc3d4dVY5YkVxN2dTTU1xal90V3dDaGRRU1RPaWlzUUFUdFB3NnZtRVdCY0NwdU5TTW4xVTNrcVR1V18tTDZzaWRlTGpnWmkxTjA3RWFyNHI0aGptSFd0c0hLNzY2UlJxbzBSRXFtSGNja1RaWEF0WXphSDl3bFI5Ykc5b015TkwxYzQ?oc=5"
   }
  ],
  "movers": [
@@ -569,9 +415,9 @@
    "name": "Stablecoin Development Corporat",
    "price": 3.27,
    "change_pct": 108.28,
-   "ext_price": 2.96,
-   "ext_change_pct": -9.48,
-   "volume": 181846158,
+   "ext_price": 2.34,
+   "ext_change_pct": -28.44,
+   "volume": 186343431,
    "held": false
   },
   {
@@ -581,7 +427,7 @@
    "change_pct": -37.331,
    "ext_price": 24.58,
    "ext_change_pct": 0.286,
-   "volume": 29592968,
+   "volume": 29605952,
    "held": false
   },
   {
@@ -589,9 +435,9 @@
    "name": "Sangoma Technologies Corporatio",
    "price": 4.93,
    "change_pct": 37.326,
-   "ext_price": 4.98,
-   "ext_change_pct": 1.014,
-   "volume": 4039861,
+   "ext_price": 5.08,
+   "ext_change_pct": 3.043,
+   "volume": 4051576,
    "held": false
   },
   {
@@ -599,9 +445,9 @@
    "name": "Iovance Biotherapeutics, Inc.",
    "price": 14.45,
    "change_pct": 31.483,
-   "ext_price": 14.4653,
-   "ext_change_pct": 0.106,
-   "volume": 77372757,
+   "ext_price": 14.4113,
+   "ext_change_pct": -0.268,
+   "volume": 78030223,
    "held": true
   },
   {
@@ -609,9 +455,9 @@
    "name": "Fair Isaac Corporation",
    "price": 617.87,
    "change_pct": -26.522,
-   "ext_price": 614.15,
-   "ext_change_pct": -0.602,
-   "volume": 4885417,
+   "ext_price": 614.0,
+   "ext_change_pct": -0.626,
+   "volume": 4895965,
    "held": false
   },
   {
@@ -619,9 +465,9 @@
    "name": "Nautilus Biotechnology, Inc.",
    "price": 1.365,
    "change_pct": 22.973,
-   "ext_price": 1.3983,
-   "ext_change_pct": 2.44,
-   "volume": 21888383,
+   "ext_price": 1.39,
+   "ext_change_pct": 1.832,
+   "volume": 21957778,
    "held": false
   },
   {
@@ -639,9 +485,9 @@
    "name": "Quantum-Si Incorporated",
    "price": 0.958,
    "change_pct": 20.503,
-   "ext_price": 0.9509,
-   "ext_change_pct": -0.741,
-   "volume": 22815843,
+   "ext_price": 0.9505,
+   "ext_change_pct": -0.783,
+   "volume": 22871348,
    "held": false
   },
   {
@@ -649,9 +495,9 @@
    "name": "ITG, Inc.",
    "price": 8.16,
    "change_pct": 15.499,
-   "ext_price": 8.16,
-   "ext_change_pct": 0.0,
-   "volume": 762078,
+   "ext_price": 8.11,
+   "ext_change_pct": -0.613,
+   "volume": 762240,
    "held": false
   },
   {
@@ -661,7 +507,7 @@
    "change_pct": 14.388,
    "ext_price": 1.61,
    "ext_change_pct": 1.258,
-   "volume": 122565,
+   "volume": 122577,
    "held": false
   },
   {
@@ -669,9 +515,9 @@
    "name": "Ginkgo Bioworks Holdings, Inc.",
    "price": 11.96,
    "change_pct": 14.34,
-   "ext_price": 12.04,
-   "ext_change_pct": 0.669,
-   "volume": 4699774,
+   "ext_price": 12.08,
+   "ext_change_pct": 1.003,
+   "volume": 4704453,
    "held": false
   },
   {
@@ -679,9 +525,9 @@
    "name": "Carnival Corporation Ltd.",
    "price": 25.11,
    "change_pct": 13.415,
-   "ext_price": 25.032,
-   "ext_change_pct": -0.311,
-   "volume": 75218553,
+   "ext_price": 25.0306,
+   "ext_change_pct": -0.316,
+   "volume": 75324198,
    "held": false
   },
   {
@@ -699,9 +545,9 @@
    "name": "Southland Holdings, Inc.",
    "price": 0.69,
    "change_pct": 13.115,
-   "ext_price": 0.6921,
-   "ext_change_pct": 0.304,
-   "volume": 252111702,
+   "ext_price": 0.7064,
+   "ext_change_pct": 2.377,
+   "volume": 252610931,
    "held": false
   },
   {
@@ -711,7 +557,7 @@
    "change_pct": 12.532,
    "ext_price": 4.4,
    "ext_change_pct": 0.0,
-   "volume": 965872,
+   "volume": 966001,
    "held": false
   },
   {
@@ -719,9 +565,9 @@
    "name": "JELD-WEN Holding, Inc.",
    "price": 1.99,
    "change_pct": 12.429,
-   "ext_price": 1.99,
-   "ext_change_pct": 0.0,
-   "volume": 5997580,
+   "ext_price": 1.81,
+   "ext_change_pct": -9.045,
+   "volume": 6000280,
    "held": false
   },
   {
@@ -729,9 +575,9 @@
    "name": "Perella Weinberg Partners",
    "price": 16.37,
    "change_pct": 11.817,
-   "ext_price": 16.39,
-   "ext_change_pct": 0.122,
-   "volume": 12429934,
+   "ext_price": 16.4,
+   "ext_change_pct": 0.183,
+   "volume": 12430676,
    "held": false
   },
   {
@@ -739,9 +585,9 @@
    "name": "GeneDx Holdings Corp.",
    "price": 75.79,
    "change_pct": -11.8,
-   "ext_price": 75.59,
-   "ext_change_pct": -0.264,
-   "volume": 1306129,
+   "ext_price": 75.7,
+   "ext_change_pct": -0.119,
+   "volume": 1331638,
    "held": false
   },
   {
@@ -761,7 +607,7 @@
    "change_pct": 11.395,
    "ext_price": 27.47,
    "ext_change_pct": 0.0,
-   "volume": 5188268,
+   "volume": 5197594,
    "held": false
   },
   {
@@ -771,7 +617,7 @@
    "change_pct": 10.845,
    "ext_price": 11.6,
    "ext_change_pct": 0.433,
-   "volume": 3487904,
+   "volume": 3580893,
    "held": false
   },
   {
@@ -779,9 +625,9 @@
    "name": "Bloom Energy Corporation",
    "price": 291.25,
    "change_pct": 10.796,
-   "ext_price": 292.85,
-   "ext_change_pct": 0.549,
-   "volume": 23600058,
+   "ext_price": 292.8133,
+   "ext_change_pct": 0.537,
+   "volume": 23633242,
    "held": false
   },
   {
@@ -789,9 +635,9 @@
    "name": "Apnimed, Inc.",
    "price": 23.9,
    "change_pct": 10.291,
-   "ext_price": 24.378,
-   "ext_change_pct": 2.0,
-   "volume": 669246,
+   "ext_price": 24.5,
+   "ext_change_pct": 2.51,
+   "volume": 669447,
    "held": false
   },
   {
@@ -799,9 +645,9 @@
    "name": "Magnite, Inc.",
    "price": 25.67,
    "change_pct": 9.701,
-   "ext_price": 25.72,
-   "ext_change_pct": 0.195,
-   "volume": 4131898,
+   "ext_price": 25.8085,
+   "ext_change_pct": 0.54,
+   "volume": 4134308,
    "held": false
   },
   {
@@ -811,7 +657,7 @@
    "change_pct": -2.24,
    "ext_price": 22.65,
    "ext_change_pct": -8.963,
-   "volume": 2846957,
+   "volume": 3178145,
    "held": false
   },
   {
@@ -819,9 +665,9 @@
    "name": "Recursion Pharmaceuticals, Inc.",
    "price": 4.03,
    "change_pct": 8.919,
-   "ext_price": 4.005,
-   "ext_change_pct": -0.62,
-   "volume": 21347400,
+   "ext_price": 4.01,
+   "ext_change_pct": -0.496,
+   "volume": 21382964,
    "held": false
   },
   {
@@ -829,9 +675,9 @@
    "name": "Royal Caribbean Cruises Ltd.",
    "price": 260.67,
    "change_pct": 7.453,
-   "ext_price": 260.5,
-   "ext_change_pct": -0.065,
-   "volume": 4019625,
+   "ext_price": 261.0,
+   "ext_change_pct": 0.127,
+   "volume": 4022769,
    "held": false
   },
   {
@@ -839,9 +685,9 @@
    "name": "DraftKings Inc.",
    "price": 19.59,
    "change_pct": -7.42,
-   "ext_price": 19.62,
-   "ext_change_pct": 0.153,
-   "volume": 25346855,
+   "ext_price": 19.6185,
+   "ext_change_pct": 0.145,
+   "volume": 25388709,
    "held": false
   },
   {
@@ -851,7 +697,7 @@
    "change_pct": 7.159,
    "ext_price": 152.82,
    "ext_change_pct": 0.0,
-   "volume": 335454,
+   "volume": 344360,
    "held": false
   },
   {
@@ -859,9 +705,9 @@
    "name": "Wingstop Inc.",
    "price": 108.62,
    "change_pct": 6.699,
-   "ext_price": 108.6,
-   "ext_change_pct": -0.018,
-   "volume": 1887738,
+   "ext_price": 108.58,
+   "ext_change_pct": -0.037,
+   "volume": 1887908,
    "held": false
   }
  ],
@@ -872,9 +718,9 @@
    "name": "Iovance Biotherapeutics, Inc.",
    "price": 14.45,
    "change_pct": 31.483168,
-   "volume": 77372757,
+   "volume": 78030223,
    "pre_change_pct": null,
-   "post_change_pct": 0.10588095
+   "post_change_pct": -0.2678208
   },
   {
    "symbol": "CCL",
@@ -882,9 +728,9 @@
    "name": "Carnival Corporation Ltd.",
    "price": 25.11,
    "change_pct": 13.4146,
-   "volume": 75218553,
+   "volume": 75324198,
    "pre_change_pct": null,
-   "post_change_pct": -0.31063727
+   "post_change_pct": -0.3162127
   },
   {
    "symbol": "WRBY",
@@ -892,7 +738,7 @@
    "name": "Warby Parker Inc.",
    "price": 27.47,
    "change_pct": 11.395,
-   "volume": 5188268,
+   "volume": 5197594,
    "pre_change_pct": null,
    "post_change_pct": 0.0
   },
@@ -902,9 +748,9 @@
    "name": "Bloom Energy Corporation",
    "price": 291.25,
    "change_pct": 10.7962,
-   "volume": 23600058,
+   "volume": 23633242,
    "pre_change_pct": null,
-   "post_change_pct": 0.5493583
+   "post_change_pct": 0.5367531
   },
   {
    "symbol": "MGNI",
@@ -912,9 +758,9 @@
    "name": "Magnite, Inc.",
    "price": 25.67,
    "change_pct": 9.700857,
-   "volume": 4131898,
+   "volume": 4134308,
    "pre_change_pct": null,
-   "post_change_pct": 0.19477692
+   "post_change_pct": 0.5395411
   },
   {
    "symbol": "RCL",
@@ -922,9 +768,9 @@
    "name": "Royal Caribbean Cruises Ltd.",
    "price": 260.67,
    "change_pct": 7.45291,
-   "volume": 4019625,
+   "volume": 4022769,
    "pre_change_pct": null,
-   "post_change_pct": -0.065221705
+   "post_change_pct": 0.12659168
   },
   {
    "symbol": "CAMT",
@@ -932,7 +778,7 @@
    "name": "Camtek Ltd.",
    "price": 152.82,
    "change_pct": 7.1593904,
-   "volume": 335454,
+   "volume": 344360,
    "pre_change_pct": null,
    "post_change_pct": 0.0
   },
@@ -942,9 +788,9 @@
    "name": "Wingstop Inc.",
    "price": 108.62,
    "change_pct": 6.69941,
-   "volume": 1887738,
+   "volume": 1887908,
    "pre_change_pct": null,
-   "post_change_pct": -0.018416747
+   "post_change_pct": -0.036826473
   },
   {
    "symbol": "VEON",
@@ -952,7 +798,7 @@
    "name": "VEON Ltd.",
    "price": 73.97,
    "change_pct": 6.5696545,
-   "volume": 279397,
+   "volume": 279401,
    "pre_change_pct": null,
    "post_change_pct": 1.122079
   },
@@ -962,9 +808,9 @@
    "name": "Argan, Inc.",
    "price": 378.39,
    "change_pct": 6.52572,
-   "volume": 420743,
+   "volume": 423143,
    "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "post_change_pct": -0.23521093
   },
   {
    "symbol": "ABCL",
@@ -972,7 +818,7 @@
    "name": "AbCellera Biologics Inc.",
    "price": 14.82,
    "change_pct": 6.4655147,
-   "volume": 9058202,
+   "volume": 9066455,
    "pre_change_pct": null,
    "post_change_pct": 0.06747793
   },
@@ -982,9 +828,9 @@
    "name": "Duolingo, Inc.",
    "price": 142.62,
    "change_pct": 6.1950793,
-   "volume": 1066973,
+   "volume": 1067434,
    "pre_change_pct": null,
-   "post_change_pct": -0.014015576
+   "post_change_pct": 0.027346421
   },
   {
    "symbol": "SANG",
@@ -992,9 +838,9 @@
    "name": "Sangoma Technologies Corporatio",
    "price": 4.93,
    "change_pct": 37.325905,
-   "volume": 4039861,
+   "volume": 4051576,
    "pre_change_pct": null,
-   "post_change_pct": 1.0142027
+   "post_change_pct": 3.0425985
   },
   {
    "symbol": "AIFU",
@@ -1012,9 +858,9 @@
    "name": "ITG, Inc.",
    "price": 8.16,
    "change_pct": 15.498935,
-   "volume": 762078,
+   "volume": 762240,
    "pre_change_pct": null,
-   "post_change_pct": -0.7352876
+   "post_change_pct": -0.61274743
   },
   {
    "symbol": "FLX",
@@ -1022,7 +868,7 @@
    "name": "BINGEX LIMITED",
    "price": 1.59,
    "change_pct": 14.388493,
-   "volume": 122565,
+   "volume": 122577,
    "pre_change_pct": null,
    "post_change_pct": 1.2578604
   },
@@ -1032,9 +878,9 @@
    "name": "Ginkgo Bioworks Holdings, Inc.",
    "price": 11.96,
    "change_pct": 14.3403,
-   "volume": 4699774,
+   "volume": 4704453,
    "pre_change_pct": null,
-   "post_change_pct": 0.66889566
+   "post_change_pct": 1.0033435
   },
   {
    "symbol": "FOIL",
@@ -1052,7 +898,7 @@
    "name": "Xponential Fitness, Inc.",
    "price": 4.4,
    "change_pct": 12.532,
-   "volume": 965872,
+   "volume": 966001,
    "pre_change_pct": null,
    "post_change_pct": 0.0
   },
@@ -1062,9 +908,9 @@
    "name": "JELD-WEN Holding, Inc.",
    "price": 1.99,
    "change_pct": 12.4294,
-   "volume": 5997580,
+   "volume": 6000280,
    "pre_change_pct": null,
-   "post_change_pct": -0.4004012
+   "post_change_pct": -9.04523
   },
   {
    "symbol": "PWP",
@@ -1072,9 +918,9 @@
    "name": "Perella Weinberg Partners",
    "price": 16.37,
    "change_pct": 11.816942,
-   "volume": 12429934,
+   "volume": 12430676,
    "pre_change_pct": null,
-   "post_change_pct": 0.12216585
+   "post_change_pct": 0.1832546
   },
   {
    "symbol": "ASPS",
@@ -1092,7 +938,7 @@
    "name": "Canadian Solar Inc.",
    "price": 11.55,
    "change_pct": 10.844531,
-   "volume": 3487904,
+   "volume": 3580893,
    "pre_change_pct": null,
    "post_change_pct": 0.43290207
   },
@@ -1102,9 +948,9 @@
    "name": "Apnimed, Inc.",
    "price": 23.9,
    "change_pct": 10.290723,
-   "volume": 669246,
+   "volume": 669447,
    "pre_change_pct": null,
-   "post_change_pct": 2.0000026
+   "post_change_pct": 2.5104618
   },
   {
    "symbol": "AMC",
@@ -1112,9 +958,9 @@
    "name": "AMC Entertainment Holdings, Inc",
    "price": 3.08,
    "change_pct": -6.38298,
-   "volume": 42867452,
+   "volume": 42997311,
    "pre_change_pct": null,
-   "post_change_pct": -0.31492928
+   "post_change_pct": -0.3311696
   },
   {
    "symbol": "SMMT",
@@ -1122,9 +968,9 @@
    "name": "Summit Therapeutics Inc.",
    "price": 16.39,
    "change_pct": 5.878552,
-   "volume": 27180594,
+   "volume": 27223926,
    "pre_change_pct": null,
-   "post_change_pct": -0.3331285
+   "post_change_pct": -0.008541757
   },
   {
    "symbol": "NIO",
@@ -1132,9 +978,9 @@
    "name": "NIO Inc.",
    "price": 3.4,
    "change_pct": -5.29247,
-   "volume": 57938701,
+   "volume": 59353050,
    "pre_change_pct": null,
-   "post_change_pct": 0.5882347
+   "post_change_pct": 0.35293663
   },
   {
    "symbol": "STLA",
@@ -1142,9 +988,9 @@
    "name": "Stellantis N.V.",
    "price": 4.43,
    "change_pct": -4.11256,
-   "volume": 40915322,
+   "volume": 40923411,
    "pre_change_pct": null,
-   "post_change_pct": 0.45146686
+   "post_change_pct": 0.22573881
   },
   {
    "symbol": "ORCL",
@@ -1152,9 +998,9 @@
    "name": "Oracle Corporation",
    "price": 137.79,
    "change_pct": 3.91402,
-   "volume": 45316918,
+   "volume": 45396386,
    "pre_change_pct": null,
-   "post_change_pct": 0.19703871
+   "post_change_pct": 0.22498935
   },
   {
    "symbol": "PLUG",
@@ -1162,9 +1008,9 @@
    "name": "Plug Power, Inc.",
    "price": 1.91,
    "change_pct": 2.6881695,
-   "volume": 52465903,
+   "volume": 52519807,
    "pre_change_pct": null,
-   "post_change_pct": 0.047121998
+   "post_change_pct": 0.0
   },
   {
    "symbol": "AAPL",
@@ -1172,9 +1018,9 @@
    "name": "Apple Inc.",
    "price": 329.4,
    "change_pct": -2.6595745,
-   "volume": 37659671,
+   "volume": 37773928,
    "pre_change_pct": null,
-   "post_change_pct": 0.12750863
+   "post_change_pct": 0.094109766
   },
   {
    "symbol": "ONDS",
@@ -1182,9 +1028,9 @@
    "name": "Ondas Inc",
    "price": 7.48,
    "change_pct": -2.6041641,
-   "volume": 48566599,
+   "volume": 48660493,
    "pre_change_pct": null,
-   "post_change_pct": 0.0
+   "post_change_pct": 0.11630874
   },
   {
    "symbol": "SPCX",
@@ -1192,9 +1038,9 @@
    "name": "Space Exploration Technologies ",
    "price": 149.24,
    "change_pct": 2.5916026,
-   "volume": 79143245,
+   "volume": 79711331,
    "pre_change_pct": null,
-   "post_change_pct": 0.0066969353
+   "post_change_pct": 0.040202063
   },
   {
    "symbol": "NOK",
@@ -1202,9 +1048,9 @@
    "name": "Nokia Corporation Sponsored",
    "price": 10.36,
    "change_pct": 2.37154,
-   "volume": 48313239,
+   "volume": 48381190,
    "pre_change_pct": null,
-   "post_change_pct": 0.13513455
+   "post_change_pct": 0.38514268
   },
   {
    "symbol": "FICO",

@@ -38,6 +38,10 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 
 # Catalyst tags, checked in order; the first that matches a headline wins for that headline.
+# An approval is a drug or device approval only with a regulator or a product in the headline (not "Trump approval",
+# "600,000 automated approvals" or "board approves").
+REG = (r"(EMA|European Commission|CHMP|NMPA|Health Canada|PMDA|MHRA|TGA|ANVISA|regulators?|regulatory|drugs?|therap\w*|"
+       r"treatments?|vaccines?|devices?|indications?|labels?|patients?|biosimilars?|NDA|BLA|sNDA|sBLA)")
 TAGS = [
     ("no-news", r"unusual (stock |share )?(trading|market|price)|no (material |new |corporate )*(news|developments|"
                 r"announcements)|not aware of any|unaware of any"),
@@ -50,7 +54,7 @@ TAGS = [
                  r"equity (line|purchase agreement)|\bELOC\b|standby equity"),
     ("refinancing", r"refinanc|debt|maturit|restructur|credit (facility|agreement)|secures \$|recapitaliz|"
                     r"chapter 11|bankruptcy|going concern"),
-    ("clinical-regulatory", r"\bFDA\b|(?<!trump )(?<!job )(?<!presidential )approv|phase [123i]|\btrials?\b|topline|clinical|breakthrough (therapy|device)|"
+    ("clinical-regulatory", r"\bFDA\b|\bapprov.*\b" + REG + r"\b|\b" + REG + r"\b.*\bapprov|phase [123i]|\btrials?\b|topline|clinical|breakthrough (therapy|device)|"
                             r"clearance|\bEMA\b"),
     ("earnings-guidance", r"guidance|outlook|raises? (its |full[- ]year |annual )?(forecast|guidance|outlook)|"
                           r"record (revenue|quarter|results|sales|bookings|deposits)|\bbeats?\b|"

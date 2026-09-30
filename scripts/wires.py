@@ -22,6 +22,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -54,23 +55,56 @@ TICKER_IN_TEXT = re.compile(r"\((?:NYSE|NASDAQ|Nasdaq|NYSE American|NYSE Arca|NY
 AMOUNT = re.compile(r"\$\s?(\d+(?:[.,]\d+)?)\s*(billion|million|bn|mm|[BM])\b", re.I)
 
 
+NAME_STOP = {"the", "and", "inc", "corp", "group", "holdings", "company", "international", "global", "american", "first",
+             "united", "national", "technologies", "therapeutics", "pharmaceuticals", "energy", "capital", "financial"}
+
+
+def names_company(title: str, name: str | None, ticker: str, aliases: tuple = ()) -> bool:
+    """Does the headline name the company (ticker or the first distinctive word of its name)?"""
+    t = title.lower()
+    if re.search(rf"(?<![a-z0-9]){re.escape(ticker.lower())}(?![a-z0-9])", t):
+        return True
+    for n in (name, *aliases):
+        if not n:
+            continue
+        words = [w for w in re.findall(r"[a-z0-9&]+", movers.SUFFIX.sub("", n).lower()) if len(w) >= 3 and w not in NAME_STOP]
+        if words and words[0] in t:
+            return True
+    return not name  # no name on file: cannot tell, assume it is theirs
+
+
+def is_html(data: bytes) -> bool:
+    head = data.lstrip()[:300].lower()
+    return head.startswith(b"<html") or head.startswith(b"<!doctype html")
+
+
 def fetch(url: str, timeout: float = 20.0) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "gzip", "Accept": "*/*"})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            data = r.read()
-    except urllib.error.HTTPError as e:
-        if e.code not in (401, 403):
-            raise
-        data = b"<html>"  # refused by a bot filter (fda.gov answers urllib with 401): retry with curl below
+    for attempt in (1, 2):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                data = r.read()
+            break
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403, 404):
+                # A bot filter: fda.gov answers urllib with 401, and PR Newswire's CDN answers it with 404 at
+                # times while curl gets the feed. Retry with curl below.
+                data = b"<html>"
+                break
+            if attempt == 2 or e.code < 500:
+                raise
+            time.sleep(2)
     data = gzip.decompress(data) if data[:2] == b"\x1f\x8b" else data
-    if data.lstrip()[:5].lower() == b"<html":
-        # Bot wall (the halts page sits behind Incapsula): curl sometimes passes where urllib does not.
-        out = subprocess.run(["curl", "-s", "--compressed", "-A", UA, "--max-time", str(int(timeout)), url],
-                             capture_output=True, timeout=timeout + 5)
-        data = out.stdout
-        if data.lstrip()[:5].lower() == b"<html":
-            raise RuntimeError("blocked by the site's bot wall")
+    if is_html(data):
+        # Bot wall (Incapsula on the halts page, Akamai on fda.gov): curl sometimes passes where urllib does
+        # not, and which user agent gets through changes from hour to hour.
+        for ua in (UA, "curl/8.5.0"):
+            out = subprocess.run(["curl", "-s", "--compressed", "-A", ua, "--max-time", str(int(timeout)), url],
+                                 capture_output=True, timeout=timeout + 5)
+            data = out.stdout
+            if data and not is_html(data):
+                return data
+        raise RuntimeError("blocked by the site's bot wall (or the page is gone)")
     return data
 
 
@@ -257,6 +291,8 @@ def main() -> int:
         r["tags"] = [] if r["src"] == "halts" else r["sec_tags"] if r["src"] == "sec" else [
             t for t in movers.classify([{"title": r["title"]}], [], r.get("name") or "", r["ticker"], aliases)
             if t != "no-clear-news"]
+        if r["src"] in ("stocktitan", "prnewswire") and not names_company(r["title"], r.get("name"), r["ticker"], aliases):
+            r["tags"].append("third-party")  # another company's release that mentions this one (lender, customer, owner)
         amt = amount_usd(r["title"])
         r["amount_usd"] = amt
         r["amount_to_mcap"] = round(amt / r["mcap"], 3) if amt and r.get("mcap") else None
@@ -276,6 +312,8 @@ def main() -> int:
             return r.get("code") in ("T1", "T2", "LUDP", "LUDS", "M")
         if r["src"] == "sec":
             return telling(r)
+        if "third-party" in r["tags"]:
+            return False
         return bool(set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-target", "dilution"}))
 
     def telling(r):
@@ -319,6 +357,8 @@ def main() -> int:
             s -= 2
         if "activist-stake" in tags:
             s += 1
+        if "third-party" in tags:
+            s -= 3
         mc = (r.get("mcap") or 0) / 1e6
         s += 1 if 100 <= mc <= 20000 else 0
         if r.get("amount_to_mcap") and r["amount_to_mcap"] >= 0.1:

@@ -126,12 +126,17 @@ def last_big_move(sym: str) -> list[str]:
             eve = m[(m.index.date == prev_day) & (m.index.hour >= 16)]
             pre = m[(m.index.date == day.date()) & ((m.index.hour < 9) | ((m.index.hour == 9) & (m.index.minute < 30)))]
             ext = [x for x in (eve, pre) if len(x)]
-            if ext:
+            # Base on the intraday series' own prior regular close: Yahoo's intraday bars are not split-adjusted
+            # the way daily bars are, so mixing the two after a reverse split gives nonsense percentages.
+            reg_prev = m[(m.index.date == prev_day) & (m.index.hour < 16) & (m.index.hour >= 9)]
+            base_px = float(reg_prev["Close"].iloc[-1]) if len(reg_prev) else None
+            if ext and base_px:
                 import pandas as pd  # type: ignore
                 e = pd.concat(ext)
                 hi, lo = float(e["High"].max()), float(e["Low"].min())
-                out.append(f"Extended hours before the open: high {hi:.2f} ({(hi / prev_close - 1) * 100:+.1f}%), "
-                           f"low {lo:.2f} ({(lo / prev_close - 1) * 100:+.1f}%).")
+                out.append(f"Extended hours before the open: high {hi:.2f} ({(hi / base_px - 1) * 100:+.1f}%), "
+                           f"low {lo:.2f} ({(lo / base_px - 1) * 100:+.1f}%) vs the prior close of {base_px:.2f} "
+                           "in the intraday data.")
         except Exception:  # noqa: BLE001
             pass
     return out

@@ -223,6 +223,16 @@
         "MU",
         "IOVA"
       ]
+    },
+    {
+      "id": "J0017",
+      "ts": "2026-09-30T03:30:06Z",
+      "kind": "research",
+      "title": "GPUS (Hyperscale Data): avoid; the company is the seller",
+      "body": "The user asked about GPUS (Hyperscale Data, formerly Ault Alliance). Deep dive in research/dossiers/GPUS-2026-09-29.md. Verdict: avoid in both books. The decline is mechanical. The company sells stock continuously through its at-the-market program (Class A shares 323M to 581M in the first half, then 70.8M more by Aug 13 for $9.2M). Six reverse splits since 2019 multiply to about 1-for-1.05 billion, and the price is back under NYSE American's $0.20 low-price line. Ahead of common: about $275M of liabilities (including $99M of notes due within a year) and $91M of preferred with monthly cash dividends. The auditors' going-concern doubt stands, and the company made a $5M loan to its controlling shareholder in June. The \"cash + Bitcoin = 153% of market cap\" release counts pledged Bitcoin and restricted cash and ignores those claims.",
+      "tickers": [
+        "GPUS"
+      ]
     }
   ]
 }

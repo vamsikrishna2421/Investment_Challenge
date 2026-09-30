@@ -318,6 +318,8 @@ def option_chains(unders: list, n_exp: int, need: dict, spots: dict, first_live:
                 raise RuntimeError("yfinance unavailable")
             t = yf.Ticker(u)
             exps = [e for e in (t.options or []) if e >= first_live]
+            if not exps:
+                raise RuntimeError("yfinance returned no expirations")  # a silent failure when Yahoo throttles
             entry["expirations"] = exps[:8]
             want = list(dict.fromkeys(exps[:n_exp] + [e for e in need.get(u, []) if e in exps]))
             for e in want:
@@ -457,6 +459,18 @@ def main() -> int:
         live = today if pfm.market_session(now) in ("pre", "regular") or now.astimezone(pfm.ET).hour < 4 \
             else today + dt.timedelta(days=1)
         chains = option_chains(opt_unders, n_exp, need_exp, spots, live.isoformat())
+        # A failed fetch keeps the last good chain for that underlying, marked stale with its time.
+        ofile = out / "options.json"
+        if ofile.exists():
+            try:
+                prev = json.loads(ofile.read_text())
+                for u, e in chains.items():
+                    old_e = (prev.get("underlyings") or {}).get(u) or {}
+                    if not e.get("chains") and old_e.get("chains"):
+                        chains[u] = {**old_e, "stale": True, "as_of": old_e.get("as_of") or prev.get("generated_at"),
+                                     "error": e.get("error") or "empty chain this run"}
+            except Exception:  # noqa: BLE001
+                pass
         (out / "options.json").write_text(json.dumps({"generated_at": pfm.iso(now), "session": pfm.market_session(now),
                                                       "underlyings": chains}, indent=1))
         for c in held_opts:
@@ -465,10 +479,14 @@ def main() -> int:
                 "calls" if o["type"] == "call" else "puts", [])
             row = next((r for r in rows if r["contract"] == c), None)
             if not row:
+                if not o["expiry"] < today.isoformat():
+                    errors[c] = "no option chain row this run"  # keeps the previous quote, marked stale
                 continue
+            ce = chains.get(o["underlying"]) or {}
             bid, ask, last = row["bid"], row["ask"], row["last"]
             mid = round((bid + ask) / 2, 4) if bid > 0 and ask > 0 else (bid if bid > 0 else last)
-            quotes[c] = {"price": mid, "time": pfm.iso(now), "bid": bid, "ask": ask, "last": last,
+            quotes[c] = {"price": mid, "time": ce.get("as_of") if ce.get("stale") else pfm.iso(now),
+                         **({"stale": True} if ce.get("stale") else {}), "bid": bid, "ask": ask, "last": last,
                          "prev_close": round(last - row["change"], 4) if row.get("change") is not None else None,
                          "iv": row.get("iv"), "oi": row.get("oi"), "volume": row.get("volume"),
                          "name": pfm.display_label(c), "underlying": o["underlying"],

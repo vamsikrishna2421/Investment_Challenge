@@ -197,6 +197,20 @@
         "FEIM",
         "IOVA"
       ]
+    },
+    {
+      "id": "J0015",
+      "ts": "2026-09-30T02:58:38Z",
+      "kind": "research",
+      "title": "GNRC: outside report checked; no trade inside the window",
+      "body": "The user shared an outside research report on Generac (4 pages); its main question is whether Generac can deliver its data center orders on time and at good margins. Checked against filings and price data:\n- Confirmed: Amazon agreement worth up to $8B, about $2.4B of initial deliveries expected in 2027-28; Amazon warrant for 1,693,745 shares at $200.93 (about 2.9% of 59.1M shares); 52-week high $296.44; 48.8x trailing earnings.\n- The \"+40% after hours\" is the after-hours peak: $255 at 4:45 PM on Sep 16 (+46% on thin volume). The stock opened +31% on Sep 17, closed +18.3% at $207.23, and has traded $198-212 since. The market priced the news within hours and sold off the overshoot.\n- 48x is on trailing GAAP EPS of $4.35. On consensus forward EPS of $12.47 it is 17x, close to Cummins (15x) and below Caterpillar (25.5x), Vertiv (27x), Eaton (27x) and Powell (27x). A multiples-based fair value comes down to two choices. Which earnings: does $12.47 hold without the Q2 tariff refund and after the warrant cost? Which peers: 15x (generator maker) gives about $188; 26-27x (data center power suppliers) gives about $330. At $212 the market prices Generac as a generator maker, not yet as a data center supplier.\n- \"Up to $8B\" is the ceiling for warrant vesting, not a firm order; the expected part is about $2.4B.\n- Warrants given to a customer are booked as a reduction of revenue as they vest. My rough Black-Scholes value is about $118 per warrant share ($207 price, 7-year life, 50% volatility), about $200M in total, or roughly 2.5% of $8B: a price concession to Amazon on top of the dilution.\nDecision: every checkpoint (Q3 results Oct 28, capacity build-out to Q3 2027) falls after Oct 5, and the jump study shows no average follow-through for jumps like this. No Generac trade in either book; it stays on the watchlist.",
+      "tickers": [
+        "GNRC",
+        "CMI",
+        "CAT",
+        "VRT",
+        "ETN"
+      ]
     }
   ]
 }

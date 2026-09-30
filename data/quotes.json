@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T02:19:52Z",
+ "generated_at": "2026-09-30T02:20:22Z",
  "session": "closed",
  "quotes": {
   "AFRM": {
@@ -193,8 +193,8 @@
    "ext_change_pct": 1.033
   },
   "BTC-USD": {
-   "price": 83360.33,
-   "time": "2026-09-30T02:19:49Z",
+   "price": 83349.34,
+   "time": "2026-09-30T02:20:19Z",
    "prev_close": 83624.79,
    "day_high": 83624.79,
    "day_low": 83315.83,
@@ -208,7 +208,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.316
+   "change_pct": -0.329
   },
   "BTDR": {
    "price": 10.9,
@@ -382,8 +382,8 @@
    "ext_change_pct": 0.334
   },
   "DOGE-USD": {
-   "price": 0.09387,
-   "time": "2026-09-30T02:19:49Z",
+   "price": 0.09381,
+   "time": "2026-09-30T02:20:19Z",
    "prev_close": 0.09385356,
    "day_high": 0.09420366,
    "day_low": 0.09336355,
@@ -397,11 +397,11 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.018
+   "change_pct": -0.046
   },
   "ETH-USD": {
-   "price": 2667.6,
-   "time": "2026-09-30T02:19:47Z",
+   "price": 2667.71,
+   "time": "2026-09-30T02:20:16Z",
    "prev_close": 2676.7407,
    "day_high": 2676.7407,
    "day_low": 2667.6956,
@@ -415,7 +415,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.341
+   "change_pct": -0.337
   },
   "FRO": {
    "price": 48.93,
@@ -644,6 +644,25 @@
    "source": "yahoo-v8-chart",
    "change_pct": -1.294,
    "ext_change_pct": 0.0
+  },
+  "JELD": {
+   "price": 1.99,
+   "time": "2026-09-29T20:00:02Z",
+   "prev_close": 1.77,
+   "day_high": 2.26,
+   "day_low": 1.815,
+   "volume": 6000280,
+   "name": "JELD-WEN Holding, Inc.",
+   "exchange": "NYSE",
+   "instrument": "EQUITY",
+   "ext_price": 1.98,
+   "ext_time": "2026-09-29T23:43:37Z",
+   "ext_volume": 110009,
+   "ext_high": 2.01,
+   "ext_low": 1.81,
+   "source": "yahoo-v8-chart",
+   "change_pct": 12.429,
+   "ext_change_pct": -0.503
   },
   "KOD": {
    "price": 91.12,
@@ -1349,8 +1368,8 @@
    "ext_change_pct": 0.126
   },
   "SOL-USD": {
-   "price": 119.54,
-   "time": "2026-09-30T02:19:46Z",
+   "price": 119.49,
+   "time": "2026-09-30T02:20:17Z",
    "prev_close": 119.056946,
    "day_high": 119.79413,
    "day_low": 118.57417,
@@ -1364,7 +1383,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.406
+   "change_pct": 0.364
   },
   "SOUN": {
    "price": 5.84,
@@ -1690,8 +1709,8 @@
    "ext_change_pct": -0.037
   },
   "XRP-USD": {
-   "price": 1.4988,
-   "time": "2026-09-30T02:19:46Z",
+   "price": 1.498,
+   "time": "2026-09-30T02:20:17Z",
    "prev_close": 1.4899551,
    "day_high": 1.5014595,
    "day_low": 1.4864278,
@@ -1705,9 +1724,9 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.594
+   "change_pct": 0.54
   }
  },
  "errors": {},
- "fetch_seconds": 8.8
+ "fetch_seconds": 9.3
 }

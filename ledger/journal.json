@@ -233,6 +233,21 @@
       "tickers": [
         "GPUS"
       ]
+    },
+    {
+      "id": "J0018",
+      "ts": "2026-09-30T12:44:18Z",
+      "kind": "plan",
+      "title": "Day plan Wed Sep 30: hold MUU and IOVA; no day-two entries",
+      "body": "Pre-market 8:43 AM (Robinhood): MU $1,080.80 (+1.5%), MUU $37.71 (+2.9%), IOVA $14.50 (+0.3%); SPY +0.4%, QQQ +0.4%. ADP private payrolls +90K in September (70K expected; August revised to 36K).\n- MUU: hold through Micron's report tonight, no add (J0016). Stop $30.90, target $45.45. A typical 8% Micron drop would take MUU to about $31.7, just above the stop; the stop is the plan if it gaps through.\n- IOVA: hold. Stop $12.35, sell a third at $17.57, sell all the same run an S-3, 424B or offering release appears.\n- Sep 29 scan names: no day-two entries. The 241-jump study (J0014) found breakout entries did worse than buying at the jump close, and calm stocks over $100M with real news lagged SPY by 2.4% over 10 sessions. CCL ($25.44 pre-market, +1.3%, record quarter), WRBY ($27.60, +0.5%) and JELD (a thin $1.86 print, -6%, after Tuesday's refinancing agreement) stay on watch only.\n- Cash $432.68, all settled: no new position without a written deep dive. Post-close: Micron's numbers and reaction, dossiers on anything the scan shortlists.",
+      "tickers": [
+        "MUU",
+        "MU",
+        "IOVA",
+        "CCL",
+        "WRBY",
+        "JELD"
+      ]
     }
   ]
 }

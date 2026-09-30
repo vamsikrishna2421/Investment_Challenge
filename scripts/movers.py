@@ -77,7 +77,7 @@ GENERIC = re.compile(
     r"penny stocks|worth watching|time to buy\?|what'?s next\?|stock (price, )?news|"
     # investor-relations calendar items: dates of results, calls, conferences
     r"\bto (announce|release|report|host|hold|present|participate)\b|announces? (the )?(date|dates|timing)\b|"
-    r"\bschedules?\b|conference call|webcast|fireside|investor day|will (report|release|announce|host)\b|"
+    r"\bschedules?\b|conference call|webcast|webinar|fireside|investor day|will (report|release|announce|host)\b|"
     r"\bparticipate in\b|\bto ring\b|\brelease dates?\b|"
     # opinion polls a PR or research firm publishes as marketing (Stagwell's Harris Poll)
     r"\bpoll\b", re.I)

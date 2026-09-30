@@ -1,5 +1,5 @@
 {
-  "strategy": "All cash. Wednesday: one MUU Oct 2 call (37-38 strike, about $250-300) if Micron holds flat or up, sold Thursday. Thursday: one or two NKE Oct 2 calls (36 strike, $150-300) if Nike holds its $35.22 low, sold Friday. Options fairly priced against history: small, bounded bets. Max 60% of the book in options.",
+  "strategy": "All cash before the open. Wednesday 9:55: one MUU Oct 2 call (at most $300, likely the 38 strike) if Micron is flat or up, sold Thursday. Thursday: one or two NKE Oct 2 calls (36 strike, $150-300) if Nike holds its $35.22 low, sold Friday. Options fairly priced against history: small, bounded bets. Max 60% of the book in options.",
   "focus": [
     "MU",
     "MUU",

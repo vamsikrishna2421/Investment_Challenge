@@ -116,6 +116,18 @@
         "MUU",
         "MU"
       ]
+    },
+    {
+      "id": "J0010",
+      "ts": "2026-09-30T12:44:18Z",
+      "kind": "plan",
+      "title": "Day plan Wed Sep 30: MUU call decision at 9:55",
+      "body": "Pre-market 8:43 AM (Robinhood): MU $1,080.80 (+1.5%), MUU $37.71 (+2.9%), NKE $35.79 (-0.1%); SPY +0.4%.\n- MUU call (J0007): the condition is MU flat or up; skip if MU is down more than 2%. Decide at the 9:55 run: re-quote the Oct 2 calls on Robinhood (read-only) and buy one contract through trade.py at a cost of $300 or less. With MUU about $1 higher than Tuesday's close, the 37 strike will likely cost more than that, so the 38 strike (Tuesday $2.15/$2.30) is the likely pick. Budget a total loss. Exits: half at Thursday's open on a gap up, the rest by noon; everything at the open on a gap down. Robinhood force-closes expiring contracts at 3:30 PM Friday; we are out long before.\n- NKE (Thursday): one or two Oct 2 calls at the 36 strike ($150-300 in total) near the 3:55 PM run if NKE holds $35.22; sell at Friday's open.\n- Jobs report benchmark: my own payroll and unemployment forecast Thursday before looking at Kalshi (inputs so far: ADP +90K, above the 70K expected), then kalshi.py --save at 4:10 PM Thursday and 7:10/8:10 AM Friday.\n- Max 60% of the book in options at once.",
+      "tickers": [
+        "MUU",
+        "MU",
+        "NKE"
+      ]
     }
   ]
 }

@@ -241,7 +241,9 @@ def build(sym: str, peers_override: list[str] | None = None) -> str:
     qpe = quartiles([r["fpe"] for r in rows])
     qeb = quartiles([r["ev_ebitda"] for r in rows])
     qsa = quartiles([r["ev_sales"] for r in rows])
-    shares = i.get("sharesOutstanding") or 0
+    # Market cap / price counts every share class; Yahoo's sharesOutstanding can miss one (Vicor's Class B).
+    px_now = i.get("currentPrice") or i.get("regularMarketPrice") or i.get("previousClose")
+    shares = (i["marketCap"] / px_now) if i.get("marketCap") and px_now else (i.get("sharesOutstanding") or 0)
     net_debt = debt - cash
     fwd_eps = i.get("forwardEps")
     L.append("")

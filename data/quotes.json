@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T02:20:22Z",
+ "generated_at": "2026-09-30T02:34:56Z",
  "session": "closed",
  "quotes": {
   "AFRM": {
@@ -193,12 +193,12 @@
    "ext_change_pct": 1.033
   },
   "BTC-USD": {
-   "price": 83349.34,
-   "time": "2026-09-30T02:20:19Z",
+   "price": 83300.66,
+   "time": "2026-09-30T02:34:51Z",
    "prev_close": 83624.79,
    "day_high": 83624.79,
    "day_low": 83315.83,
-   "volume": 26676594688,
+   "volume": 26681364480,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -208,7 +208,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.329
+   "change_pct": -0.388
   },
   "BTDR": {
    "price": 10.9,
@@ -382,12 +382,12 @@
    "ext_change_pct": 0.334
   },
   "DOGE-USD": {
-   "price": 0.09381,
-   "time": "2026-09-30T02:20:19Z",
+   "price": 0.09369,
+   "time": "2026-09-30T02:34:44Z",
    "prev_close": 0.09385356,
    "day_high": 0.09420366,
    "day_low": 0.09336355,
-   "volume": 916056384,
+   "volume": 909281472,
    "name": "Dogecoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -397,15 +397,15 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.046
+   "change_pct": -0.174
   },
   "ETH-USD": {
-   "price": 2667.71,
-   "time": "2026-09-30T02:20:16Z",
+   "price": 2666.06,
+   "time": "2026-09-30T02:34:51Z",
    "prev_close": 2676.7407,
    "day_high": 2676.7407,
-   "day_low": 2667.6956,
-   "volume": 14730594304,
+   "day_low": 2667.6353,
+   "volume": 14779972608,
    "name": "Ethereum USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -415,7 +415,26 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.337
+   "change_pct": -0.399
+  },
+  "FEIM": {
+   "price": 84.15,
+   "time": "2026-09-29T20:00:01Z",
+   "prev_close": 82.49,
+   "day_high": 85.31,
+   "day_low": 82.33,
+   "volume": 452032,
+   "name": "Frequency Electronics, Inc.",
+   "exchange": "NasdaqGM",
+   "instrument": "EQUITY",
+   "ext_price": 84.15,
+   "ext_time": "2026-09-29T23:30:05Z",
+   "ext_volume": 0,
+   "ext_high": 84.7,
+   "ext_low": 83.9,
+   "source": "yahoo-v8-chart",
+   "change_pct": 2.012,
+   "ext_change_pct": 0.0
   },
   "FRO": {
    "price": 48.93,
@@ -454,6 +473,25 @@
    "source": "yahoo-v8-chart",
    "change_pct": -0.835,
    "ext_change_pct": 2.02
+  },
+  "GNRC": {
+   "price": 212.22,
+   "time": "2026-09-29T20:00:03Z",
+   "prev_close": 205.21,
+   "day_high": 212.39,
+   "day_low": 205.27,
+   "volume": 1272600,
+   "name": "Generac Holdlings Inc.",
+   "exchange": "NYSE",
+   "instrument": "EQUITY",
+   "ext_price": 212.5,
+   "ext_time": "2026-09-29T23:42:58Z",
+   "ext_volume": 185775,
+   "ext_high": 212.5,
+   "ext_low": 209.96,
+   "source": "yahoo-v8-chart",
+   "change_pct": 3.416,
+   "ext_change_pct": 0.132
   },
   "GUSH": {
    "price": 40.2,
@@ -1272,6 +1310,25 @@
    "change_pct": 108.28,
    "ext_change_pct": -20.795
   },
+  "SEI": {
+   "price": 68.34,
+   "time": "2026-09-29T20:00:03Z",
+   "prev_close": 69.15,
+   "day_high": 71.22,
+   "day_low": 67.71,
+   "volume": 2262416,
+   "name": "Solaris Energy Infrastructure, ",
+   "exchange": "NYSE",
+   "instrument": "EQUITY",
+   "ext_price": 67.5,
+   "ext_time": "2026-09-29T23:14:12Z",
+   "ext_volume": 197799,
+   "ext_high": 69.9,
+   "ext_low": 67.5,
+   "source": "yahoo-v8-chart",
+   "change_pct": -1.171,
+   "ext_change_pct": -1.229
+  },
   "SMCI": {
    "price": 41.02,
    "time": "2026-09-29T20:00:00Z",
@@ -1368,12 +1425,12 @@
    "ext_change_pct": 0.126
   },
   "SOL-USD": {
-   "price": 119.49,
-   "time": "2026-09-30T02:20:17Z",
+   "price": 119.26,
+   "time": "2026-09-30T02:34:49Z",
    "prev_close": 119.056946,
    "day_high": 119.79413,
    "day_low": 118.57417,
-   "volume": 3368529920,
+   "volume": 3365634304,
    "name": "Solana USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1383,7 +1440,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.364
+   "change_pct": 0.171
   },
   "SOUN": {
    "price": 5.84,
@@ -1651,6 +1708,25 @@
    "change_pct": -2.715,
    "ext_change_pct": 0.455
   },
+  "VICR": {
+   "price": 290.68,
+   "time": "2026-09-29T20:00:00Z",
+   "prev_close": 285.1,
+   "day_high": 297.0,
+   "day_low": 283.59,
+   "volume": 524115,
+   "name": "Vicor Corporation",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 291.941,
+   "ext_time": "2026-09-29T23:56:43Z",
+   "ext_volume": 16245,
+   "ext_high": 292.0,
+   "ext_low": 284.01,
+   "source": "yahoo-v8-chart",
+   "change_pct": 1.957,
+   "ext_change_pct": 0.434
+  },
   "WDC": {
    "price": 453.48,
    "time": "2026-09-29T20:00:01Z",
@@ -1709,12 +1785,12 @@
    "ext_change_pct": -0.037
   },
   "XRP-USD": {
-   "price": 1.498,
-   "time": "2026-09-30T02:20:17Z",
+   "price": 1.4967,
+   "time": "2026-09-30T02:34:53Z",
    "prev_close": 1.4899551,
    "day_high": 1.5014595,
    "day_low": 1.4864278,
-   "volume": 4493064704,
+   "volume": 4478376448,
    "name": "XRP USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1724,9 +1800,9 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.54
+   "change_pct": 0.453
   }
  },
  "errors": {},
- "fetch_seconds": 9.3
+ "fetch_seconds": 12.8
 }

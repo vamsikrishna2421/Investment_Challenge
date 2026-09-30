@@ -248,6 +248,16 @@
         "WRBY",
         "JELD"
       ]
+    },
+    {
+      "id": "J0019",
+      "ts": "2026-09-30T13:26:42Z",
+      "kind": "research",
+      "title": "QTTB (Q32 Bio): +16% pre-market on a conference re-presentation; no entry in either book",
+      "body": "Top-ranked catalyst of the morning (wires.py): Q32 Bio presented 36-week and off-drug results from Part B of SIGNAL-AA (bempikibart in alopecia areata) as a late-breaker at EADV (8-K exhibit 99.1, Sep 30). Pre-market +15.9% from $9.53 (market cap about $284M).\nWhy no entry:\n- Not new topline data: the topline came out in July (the stock went from about $6 to $13.60 then). Today adds durability over a 16-week off-drug period in an open-label, 33-patient Phase 2a with no placebo arm.\n- The next step is a registration-directed program in the first half of 2027. Cash is $106M, enough for now, but pivotal trials usually get funded by selling stock after a rally like this one.\n- 18% of the float is short, so the open can squeeze and then fade. The 241-jump study found day-one chasing lagged SPY.\nRevisit only if it holds the gain through Thursday with no offering filed (SEC WARNINGS); a deep dive would come first.",
+      "tickers": [
+        "QTTB"
+      ]
     }
   ]
 }

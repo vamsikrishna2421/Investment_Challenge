@@ -139,6 +139,17 @@
         "MUU",
         "MU"
       ]
+    },
+    {
+      "id": "J0012",
+      "ts": "2026-09-30T20:09:12Z",
+      "kind": "research",
+      "title": "Micron beat and raise; the MUU call exit is set for Thursday's open",
+      "body": "Micron FQ4: revenue $54.23B (+5.3% vs consensus), EPS $33.42 (+5.0%); FQ1 guide $61.5B and $38.15 (+6.2% above consensus). After hours at 4:08 PM: MU -0.6%, MUU $36.50 (-0.8%).\nThe MUU Oct 2 $37 call (cost $2.90) cannot trade after hours. With MUU about $36.50 and one day left, implied vol will collapse from about 230% at the open. A flat open leaves the call worth roughly $0.60-1.10.\nPlan for Thursday, unchanged from J0011:\n- Gap down (MUU opens below Wednesday's $36.81 close): sell at the first regular-session run (9:40).\n- Gap up: sell by the 11:55 run, or earlier at $5.80.\n- No new Micron-related option entries. The NKE call plan for Thursday afternoon (J0007) stands.",
+      "tickers": [
+        "MU",
+        "MUU"
+      ]
     }
   ]
 }

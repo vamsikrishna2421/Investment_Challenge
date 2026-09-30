@@ -285,6 +285,17 @@
         "UTHR",
         "LQDA"
       ]
+    },
+    {
+      "id": "J0022",
+      "ts": "2026-09-30T20:09:12Z",
+      "kind": "research",
+      "title": "Micron FQ4: beat and raise, flat after hours; hold MUU, no add",
+      "body": "Micron FQ4-26 (8-K exhibit 99.1, 4:0x PM Sep 30):\n- Revenue $54.23B vs $51.51B consensus (+5.3%) and the $50.0B guide.\n- Non-GAAP EPS $33.42 vs $31.82 (+5.0%); gross margin 87.0%.\n- Operating cash flow $43.97B; cash $73.5B.\n- FQ1-27 guide: revenue $61.5B +/-1.5B vs $57.93B consensus (+6.2%), EPS $38.15 +/-1.00 vs $35.92 (+6.2%), gross margin about 86.25%. That is +13% quarter on quarter after a 14-week FQ4.\nAfter hours at 4:08 PM (Robinhood): MU $1,063 (-0.6% vs the $1,068.95 close), MUU $36.50 (-0.8%), SNDK -0.4%. A clean beat and raise, but the stock is not holding strength. Consensus was already above the guide (J0016), the high estimates ran to $47.81 EPS, and MU is up more than 10x in a year. The conference call starts at 4:30 PM ET.\nDecision: hold the 8.2466 MUU shares (stop $30.90, target $45.45) and do not add. The add rule needs a beat and raise with holding strength, and there is no strength. Re-check after the call at the 4:40 and 5:10 runs. Cut only on a break toward the stop on real news, not on a thin after-hours print.",
+      "tickers": [
+        "MU",
+        "MUU"
+      ]
     }
   ]
 }

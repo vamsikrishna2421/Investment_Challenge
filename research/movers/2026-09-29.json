@@ -1,0 +1,1595 @@
+{
+ "generated_at": "2026-09-30T02:12:13Z",
+ "date": "2026-09-29",
+ "min_move": 10.0,
+ "losers": false,
+ "min_mcap_m": 100.0,
+ "skipped_small": [
+  "BKYI",
+  "DXST",
+  "MSGY",
+  "PFSA",
+  "EJH",
+  "WYY",
+  "KEGS",
+  "KMRK",
+  "LONA",
+  "SMJF",
+  "XRPNW",
+  "NAMI",
+  "UZX",
+  "MTNB",
+  "ALDX",
+  "AVAT",
+  "NEXR",
+  "NCPL",
+  "SXTC",
+  "TRUG",
+  "BZFD"
+ ],
+ "rows": [
+  {
+   "symbol": "BGIN",
+   "name": "Bgin Blockchain Limited",
+   "price": 2.57,
+   "change_pct": 34.78,
+   "volume": 12385463,
+   "market_cap": 290759360,
+   "exchange": "NGM",
+   "sector": "Technology",
+   "industry": "Computer Hardware",
+   "enterprise_value": 261446800,
+   "revenue_ttm": 27108060,
+   "revenue_growth": -0.845,
+   "gross_margin": -2.9201002,
+   "profit_margin": 0.0,
+   "cash": 31420292,
+   "debt": 1992425,
+   "shares_out": 90581566,
+   "float_shares": 43350299,
+   "short_pct_float": 0.0017,
+   "avg_volume": 235647,
+   "high_52w": 6.5,
+   "low_52w": 1.61,
+   "rating": "none",
+   "ev_to_revenue": 9.645,
+   "rel_volume": 52.6,
+   "off_52w_high_pct": -60.5,
+   "news": [
+    {
+     "title": "12 Information Technology Stocks Moving In Tuesday's Intraday Session - Benzinga",
+     "published": "Tue, 29 Sep 2026 17:06:00 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Bgin Blockchain (BGIN) Stock Faces Revenue Collapse And Persistent Losses - simplywall.st",
+     "published": "Sun, 27 Sep 2026 02:52:01 GMT",
+     "source": "simplywall.st"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 6
+  },
+  {
+   "symbol": "IOVA",
+   "name": "Iovance Biotherapeutics, Inc.",
+   "price": 14.45,
+   "change_pct": 31.48,
+   "volume": 78030223,
+   "market_cap": 6545437184,
+   "exchange": "NGM",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 6293768192,
+   "revenue_ttm": 324968992,
+   "revenue_growth": 0.657,
+   "gross_margin": 0.48401,
+   "profit_margin": -0.89091,
+   "cash": 297673984,
+   "debt": 46003000,
+   "shares_out": 452971432,
+   "float_shares": 394311632,
+   "short_pct_float": 0.2057,
+   "avg_volume": 17672992,
+   "high_52w": 15.3,
+   "low_52w": 1.76,
+   "target_mean": 12.4,
+   "rating": "buy",
+   "analysts": 10,
+   "ev_to_revenue": 19.367,
+   "forward_pe": -55.311005,
+   "rel_volume": 4.4,
+   "off_52w_high_pct": -5.6,
+   "target_upside_pct": -14.2,
+   "news": [
+    {
+     "title": "IOVA Stock Hits Over 2-Year Highs \u2013 Why Iovance Raised Its FY2026 Revenue Outlook - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 14:15:13 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "IOVA Stock Hits Fresh 52-Week Peak On UBS Target Hike, Melanoma Sector Optimism - stocktwits.com",
+     "published": "Tue, 29 Sep 2026 03:03:52 GMT",
+     "source": "stocktwits.com"
+    },
+    {
+     "title": "Iovance stock rises as analysts cheer new outlook (IOVA:NASDAQ) - Seeking Alpha",
+     "published": "Tue, 29 Sep 2026 18:47:10 GMT",
+     "source": "Seeking Alpha"
+    },
+    {
+     "title": "Stocks making the biggest moves midday: Carnival, Fair Isaac, Bloom Energy, Iovance Biotherapeutics & more - CNBC",
+     "published": "Tue, 29 Sep 2026 16:37:47 GMT",
+     "source": "CNBC"
+    },
+    {
+     "title": "Iovance Stock Surges as Strong Melanoma Drug Demand Drives Growth - Barron's",
+     "published": "Tue, 29 Sep 2026 16:06:00 GMT",
+     "source": "Barron's"
+    },
+    {
+     "title": "Iovance Biotherapeutics (IOVA) Shares Surge Over 30% After Raisi - GuruFocus",
+     "published": "Tue, 29 Sep 2026 19:10:17 GMT",
+     "source": "GuruFocus"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 6
+  },
+  {
+   "symbol": "PWP",
+   "name": "Perella Weinberg Partners",
+   "price": 16.37,
+   "change_pct": 11.82,
+   "volume": 12430676,
+   "market_cap": 1593281408,
+   "exchange": "NMS",
+   "sector": "Financial Services",
+   "industry": "Capital Markets",
+   "enterprise_value": 1585608576,
+   "revenue_ttm": 689246976,
+   "revenue_growth": 0.008,
+   "gross_margin": 0.96626,
+   "profit_margin": 0.0322,
+   "cash": 115847000,
+   "debt": 179279008,
+   "shares_out": 77293011,
+   "float_shares": 68794992,
+   "short_pct_float": 0.10479999,
+   "avg_volume": 1390780,
+   "high_52w": 25.925,
+   "low_52w": 12.515,
+   "target_mean": 22.25,
+   "rating": "none",
+   "analysts": 4,
+   "ev_to_revenue": 2.3,
+   "forward_pe": 11.193163,
+   "rel_volume": 8.9,
+   "off_52w_high_pct": -36.9,
+   "target_upside_pct": 35.9,
+   "news": [
+    {
+     "title": "Perella Weinberg (PWP) Stock Trades Up, Here Is Why - Yahoo! Finance Canada",
+     "published": "Wed, 30 Sep 2026 00:08:00 GMT",
+     "source": "Yahoo! Finance Canada"
+    },
+    {
+     "title": "How UK Deal Activity Could Shape Perella Weinberg Partners Stock Next - simplywall.st",
+     "published": "Tue, 29 Sep 2026 22:28:14 GMT",
+     "source": "simplywall.st"
+    },
+    {
+     "title": "PWP Stock Jumps As Traders Eye Insider Form 4 Cluster - StocksToTrade",
+     "published": "Tue, 29 Sep 2026 16:35:00 GMT",
+     "source": "StocksToTrade"
+    },
+    {
+     "title": "Why Perella Weinberg Partners Stock Skyrocketed Today - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 23:44:43 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Why Is Piper Sandler Stock Falling Tuesday? - Piper Sandler (NYSE:PIPR), Perella Weinberg (NASDAQ:PWP) - Benzinga",
+     "published": "Tue, 29 Sep 2026 19:26:21 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Perella Weinberg Partners: Higher Interest Rates Are A Risk (NASDAQ:PWP) - Seeking Alpha",
+     "published": "Tue, 29 Sep 2026 13:58:43 GMT",
+     "source": "Seeking Alpha"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "contract-order"
+   ],
+   "score": 6
+  },
+  {
+   "symbol": "ITG",
+   "name": "ITG, Inc.",
+   "price": 8.16,
+   "change_pct": 15.5,
+   "volume": 762240,
+   "market_cap": 1010311424,
+   "exchange": "NMS",
+   "sector": "Industrials",
+   "industry": "Engineering & Construction",
+   "enterprise_value": 1268100352,
+   "revenue_ttm": 1375619968,
+   "revenue_growth": 0.384,
+   "gross_margin": 0.17517,
+   "profit_margin": -0.0133299995,
+   "cash": 2486000,
+   "debt": 875278976,
+   "shares_out": 48444533,
+   "float_shares": 22424974,
+   "short_pct_float": 0.0254,
+   "avg_volume": 478561,
+   "high_52w": 19.26,
+   "low_52w": 7.06,
+   "target_mean": 17.55556,
+   "rating": "none",
+   "analysts": 9,
+   "ev_to_revenue": 0.922,
+   "forward_pe": 8.393075,
+   "rel_volume": 1.6,
+   "off_52w_high_pct": -57.6,
+   "target_upside_pct": 115.1,
+   "news": [
+    {
+     "title": "ITG: The September 28 Collapse Looks Like A Seller, Not A Broken Business (NASDAQ:ITG) - Seeking Alpha",
+     "published": "Tue, 29 Sep 2026 20:42:55 GMT",
+     "source": "Seeking Alpha"
+    },
+    {
+     "title": "Market Movers | Winners: KOD, CD, QNC | Losers: ITG, OCUL, CYPH - trefis.com",
+     "published": "Tue, 29 Sep 2026 09:05:21 GMT",
+     "source": "trefis.com"
+    },
+    {
+     "title": "Top ITG (ITG) Competitors 2026 - MarketBeat",
+     "published": "Mon, 28 Sep 2026 20:21:20 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "CarMax Posts Upbeat Q2 Earnings, Joins Iovance Biotherapeutics, Perella Weinberg Partners And Other Big S - Benzinga",
+     "published": "Tue, 29 Sep 2026 14:26:05 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Do You Really Understand ISRG Stock\u2019s Risk? - trefis.com",
+     "published": "Tue, 29 Sep 2026 19:26:38 GMT",
+     "source": "trefis.com"
+    },
+    {
+     "title": "Several high-volume stocks plunge sharply amid profit-taking despite positive updates. - Pluang",
+     "published": "Mon, 28 Sep 2026 21:25:14 GMT",
+     "source": "Pluang"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "WW",
+   "name": "WW International, Inc.",
+   "price": 17.1,
+   "change_pct": 13.77,
+   "volume": 1276738,
+   "market_cap": 170978800,
+   "exchange": "NGM",
+   "sector": "Healthcare",
+   "industry": "Medical Care Facilities",
+   "enterprise_value": 495792800,
+   "revenue_ttm": 665488000,
+   "revenue_growth": -0.142,
+   "gross_margin": 0.71022004,
+   "profit_margin": -0.15218,
+   "cash": 101497000,
+   "debt": 426311008,
+   "shares_out": 9998760,
+   "float_shares": 6915942,
+   "short_pct_float": 0.1713,
+   "avg_volume": 215648,
+   "high_52w": 38.38,
+   "low_52w": 8.365,
+   "target_mean": 28.33333,
+   "rating": "buy",
+   "analysts": 3,
+   "ev_to_revenue": 0.745,
+   "forward_pe": -732.9619,
+   "rel_volume": 5.9,
+   "off_52w_high_pct": -55.4,
+   "target_upside_pct": 65.7,
+   "news": [
+    {
+     "title": "WeightWatchers (WW) Stock Trades Up, Here Is Why - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 21:44:02 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Why Is Weight Watchers Stock Gaining Tuesday? - WW International (NASDAQ:WW) - Benzinga",
+     "published": "Tue, 29 Sep 2026 17:11:16 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Google Fitbit links activity and sleep tracking to Weight Watchers in select employer programs. - Stock Titan",
+     "published": "Tue, 29 Sep 2026 12:00:00 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "Why is WW International stock surging today? - Investing.com",
+     "published": "Tue, 29 Sep 2026 12:44:15 GMT",
+     "source": "Investing.com"
+    },
+    {
+     "title": "WW International (NASDAQ:WW) Stock Breaks Above Two Hundred Day Moving Average - What's Next? - MarketBeat",
+     "published": "Tue, 29 Sep 2026 05:46:28 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "W.W. Grainger Inc. stock outperforms competitors on strong trading day - MarketWatch",
+     "published": "Mon, 28 Sep 2026 20:49:00 GMT",
+     "source": "MarketWatch"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "CSIQ",
+   "name": "Canadian Solar Inc.",
+   "price": 11.55,
+   "change_pct": 10.84,
+   "volume": 3580893,
+   "market_cap": 784207488,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Solar",
+   "enterprise_value": 8114841600,
+   "revenue_ttm": 4990202880,
+   "revenue_growth": -0.287,
+   "gross_margin": 0.17638999,
+   "profit_margin": -0.03733,
+   "cash": 1461248000,
+   "debt": 7306710016,
+   "shares_out": 67896749,
+   "float_shares": 43620387,
+   "short_pct_float": 0.3419,
+   "avg_volume": 2039893,
+   "high_52w": 34.59,
+   "low_52w": 10.34,
+   "target_mean": 17.84583,
+   "rating": "hold",
+   "analysts": 12,
+   "ev_to_revenue": 1.626,
+   "forward_pe": -2.8875,
+   "rel_volume": 1.8,
+   "off_52w_high_pct": -66.6,
+   "target_upside_pct": 54.5,
+   "news": [
+    {
+     "title": "Canadian Solar Inc (CSIQ) Stock Up 10.8% and Still Undervalued -- GF Score: 81/100 - GuruFocus",
+     "published": "Tue, 29 Sep 2026 23:01:39 GMT",
+     "source": "GuruFocus"
+    },
+    {
+     "title": "Canadian Solar Inc. (CSIQ) stock price, news, quote and history - Yahoo Finance Australia",
+     "published": "Sun, 27 Sep 2026 08:39:16 GMT",
+     "source": "Yahoo Finance Australia"
+    },
+    {
+     "title": "Canadian Solar (NASDAQ:CSIQ) Shares Up 6% - What's Next? - MarketBeat",
+     "published": "Tue, 29 Sep 2026 17:27:57 GMT",
+     "source": "MarketBeat"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "EGG",
+   "name": "Enigmatig Limited",
+   "price": 5.0,
+   "change_pct": 17.65,
+   "volume": 2244215,
+   "market_cap": 140026000,
+   "exchange": "ASE",
+   "sector": "Industrials",
+   "industry": "Consulting Services",
+   "enterprise_value": 127643232,
+   "revenue_ttm": 2738383,
+   "revenue_growth": -0.591,
+   "gross_margin": 0.33341998,
+   "profit_margin": -0.96310997,
+   "cash": 13207803,
+   "debt": 825031,
+   "shares_out": 12255200,
+   "float_shares": 8255093,
+   "short_pct_float": 0.0121,
+   "avg_volume": 560704,
+   "high_52w": 13.07,
+   "low_52w": 2.04,
+   "rating": "none",
+   "ev_to_revenue": 46.613,
+   "rel_volume": 4.0,
+   "off_52w_high_pct": -61.7,
+   "news": [
+    {
+     "title": "EGG Stock Erupts As Thin Float Meets Surging Volume - timothysykes.com",
+     "published": "Tue, 29 Sep 2026 11:49:00 GMT",
+     "source": "timothysykes.com"
+    },
+    {
+     "title": "EGG Stock Explodes On Volume As Traders Hunt Volatility - StocksToTrade",
+     "published": "Tue, 29 Sep 2026 12:32:00 GMT",
+     "source": "StocksToTrade"
+    },
+    {
+     "title": "Cal-Maine Foods, Inc. (CALM) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Mon, 28 Sep 2026 14:29:09 GMT",
+     "source": "Yahoo! Finance Canada"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Tuesday's After-Market Session - Benzinga",
+     "published": "Tue, 29 Sep 2026 21:06:03 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Nvidia set for historic $150B stock buyback - moneywise.com",
+     "published": "Tue, 29 Sep 2026 11:01:01 GMT",
+     "source": "moneywise.com"
+    },
+    {
+     "title": "On Tuesday, there are stocks with unusual volume. Let's take a look. - ChartMill",
+     "published": "Tue, 29 Sep 2026 17:00:00 GMT",
+     "source": "ChartMill"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "clinical-regulatory"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "CCL",
+   "name": "Carnival Corporation Ltd.",
+   "price": 25.11,
+   "change_pct": 13.41,
+   "volume": 75324198,
+   "market_cap": 33763162112,
+   "exchange": "NYQ",
+   "sector": "Consumer Cyclical",
+   "industry": "Travel Services",
+   "enterprise_value": 54267031552,
+   "revenue_ttm": 27310999552,
+   "revenue_growth": 0.053,
+   "gross_margin": 0.55676997,
+   "profit_margin": 0.11237001,
+   "cash": 2243000064,
+   "debt": 26169999360,
+   "shares_out": 1344610129,
+   "float_shares": 1270609791,
+   "short_pct_float": 0.0379,
+   "avg_volume": 20571312,
+   "high_52w": 34.03,
+   "low_52w": 21.45,
+   "target_mean": 34.02692,
+   "rating": "buy",
+   "analysts": 26,
+   "ev_to_revenue": 1.987,
+   "forward_pe": 9.708851,
+   "rel_volume": 3.7,
+   "off_52w_high_pct": -26.2,
+   "target_upside_pct": 35.5,
+   "news": [
+    {
+     "title": "Should Investors Chase Carnival (CCL) Stock After Its 13% Post-Earnings Surge? - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 21:32:00 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Carnival Corporation Ltd (CCL) Stock Up 13.4% but GF Value Says Overvalued -- GF Score: 79/100 - GuruFocus",
+     "published": "Tue, 29 Sep 2026 21:33:45 GMT",
+     "source": "GuruFocus"
+    },
+    {
+     "title": "Stock Traders Buy High Volume of Carnival Call Options (NYSE:CCL) - MarketBeat",
+     "published": "Tue, 29 Sep 2026 20:45:48 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "Cruise Line Surprises Wall Street With Buoyant Outlook, Giving Beaten-Up Industry A Boost - Investor's Business Daily",
+     "published": "Tue, 29 Sep 2026 17:00:00 GMT",
+     "source": "Investor's Business Daily"
+    },
+    {
+     "title": "Why Is Carnival Stock Soaring Tuesday? - Carnival (NYSE:CCL) - benzinga.com",
+     "published": "Tue, 29 Sep 2026 15:54:39 GMT",
+     "source": "benzinga.com"
+    },
+    {
+     "title": "CCL Stock Jumps as Carnival Reports Record Q3 Revenue - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 19:22:11 GMT",
+     "source": "Yahoo Finance"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "JELD",
+   "name": "JELD-WEN Holding, Inc.",
+   "price": 1.99,
+   "change_pct": 12.43,
+   "volume": 6000280,
+   "market_cap": 172659136,
+   "exchange": "NYQ",
+   "sector": "Industrials",
+   "industry": "Building Products & Equipment",
+   "enterprise_value": 1549556096,
+   "revenue_ttm": 3151406080,
+   "revenue_growth": -0.007,
+   "gross_margin": 0.15371999,
+   "profit_margin": -0.16434999,
+   "cash": 57218000,
+   "debt": 1434114944,
+   "shares_out": 86763382,
+   "float_shares": 80352436,
+   "short_pct_float": 0.113800004,
+   "avg_volume": 1624895,
+   "high_52w": 4.98,
+   "low_52w": 0.925,
+   "target_mean": 1.93333,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 0.492,
+   "forward_pe": -7.6863656,
+   "rel_volume": 3.7,
+   "off_52w_high_pct": -60.0,
+   "target_upside_pct": -2.8,
+   "news": [
+    {
+     "title": "Why JELD-WEN (JELD) Stock Is Trading Up Today - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 21:12:02 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Holders of 94.5% of its notes support JELD-WEN (JELD)'s proposed debt exchange. - Stock Titan",
+     "published": "Tue, 29 Sep 2026 11:10:16 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "JELD-WEN Holding, Inc. Announces Comprehensive Agreement to Extend Debt Maturities and Raise $135 Million of Incremental Liquidity to Support Business Plan - marketscreener.com",
+     "published": "Tue, 29 Sep 2026 20:02:15 GMT",
+     "source": "marketscreener.com"
+    },
+    {
+     "title": "Debt to assets ratio of JELD-WEN Holding, Inc. \u2013 HAN:0JW - TradingView",
+     "published": "Wed, 30 Sep 2026 00:41:57 GMT",
+     "source": "TradingView"
+    },
+    {
+     "title": "JELD-WEN Announces Comprehensive Agreement to Extend Debt Maturities and Raise $135 Million of Incremental Liquidity to Support Business Plan - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 10:55:00 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "JELD-WEN extends debt maturities to 2031, raises $135 million By Investing.com - Investing.com Canada",
+     "published": "Tue, 29 Sep 2026 11:15:17 GMT",
+     "source": "Investing.com Canada"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "refinancing"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "WRBY",
+   "name": "Warby Parker Inc.",
+   "price": 27.47,
+   "change_pct": 11.39,
+   "volume": 5197594,
+   "market_cap": 3395513088,
+   "exchange": "NYQ",
+   "sector": "Healthcare",
+   "industry": "Medical Instruments & Supplies",
+   "enterprise_value": 3353818368,
+   "revenue_ttm": 911606016,
+   "revenue_growth": 0.098,
+   "gross_margin": 0.53119,
+   "profit_margin": 0.00849,
+   "cash": 292673984,
+   "debt": 250979008,
+   "shares_out": 108239371,
+   "float_shares": 94603424,
+   "short_pct_float": 0.2027,
+   "avg_volume": 2779576,
+   "high_52w": 31.0,
+   "low_52w": 14.96,
+   "target_mean": 30.46154,
+   "rating": "buy",
+   "analysts": 13,
+   "ev_to_revenue": 3.679,
+   "forward_pe": 44.682648,
+   "rel_volume": 1.9,
+   "off_52w_high_pct": -11.4,
+   "target_upside_pct": 10.9,
+   "news": [
+    {
+     "title": "Why Is Warby Parker (WRBY) Stock Soaring Today - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 22:56:02 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Warby Parker Stock Surges on Meta\u2019s AI Glasses Push. Why Smart Eyewear Is Booming. - Barron's",
+     "published": "Tue, 29 Sep 2026 18:38:00 GMT",
+     "source": "Barron's"
+    },
+    {
+     "title": "Warby Parker Inc. (WRBY) stock price, news, quote and history - Yahoo Finance Australia",
+     "published": "Tue, 29 Sep 2026 14:17:50 GMT",
+     "source": "Yahoo Finance Australia"
+    },
+    {
+     "title": "Warby Parker Inc (WRBY) Stock Down 7.7% but Still Overvalued -- GF Score: 79/100 - GuruFocus",
+     "published": "Tue, 29 Sep 2026 00:01:54 GMT",
+     "source": "GuruFocus"
+    },
+    {
+     "title": "Did Store Expansion Just Shift Warby Parker (WRBY) Stock's Investment Narrative? - simplywall.st",
+     "published": "Sun, 27 Sep 2026 16:24:48 GMT",
+     "source": "simplywall.st"
+    },
+    {
+     "title": "Warby Parker (WRBY): Early-Stage Category Leader with High-Yield Earnings Potential - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 14:17:15 GMT",
+     "source": "Yahoo Finance"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "sector-theme",
+    "earnings-guidance"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "APMD",
+   "name": "Apnimed, Inc.",
+   "price": 23.9,
+   "change_pct": 10.29,
+   "volume": 669447,
+   "market_cap": 994975616,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 1148458624,
+   "revenue_ttm": 115120000,
+   "revenue_growth": -0.294,
+   "gross_margin": 0.93899,
+   "profit_margin": 1.4209801,
+   "cash": 172804000,
+   "debt": 80348000,
+   "shares_out": 41630779,
+   "float_shares": 20458614,
+   "avg_volume": 553204,
+   "high_52w": 35.29,
+   "low_52w": 16.12,
+   "target_mean": 50.33333,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 9.976,
+   "forward_pe": -6.0125785,
+   "rel_volume": 1.2,
+   "off_52w_high_pct": -32.3,
+   "target_upside_pct": 110.6,
+   "news": [
+    {
+     "title": "Apnimed (NASDAQ:APMD) Shares Climb 6.1% - Time to Buy? - MarketBeat",
+     "published": "Tue, 29 Sep 2026 16:43:47 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "Apnimed (APMD) Stock Analysis Report | Ratings, Financials & Performance - kr.benzinga.com",
+     "published": "Mon, 28 Sep 2026 04:00:15 GMT",
+     "source": "kr.benzinga.com"
+    },
+    {
+     "title": "Apnimed (NASDAQ:APMD) Stock Price Down 6.1% - Here's Why - MarketBeat",
+     "published": "Mon, 28 Sep 2026 18:04:10 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "APMD|Apnimed Ord Shs|Price:21.090|Chg%:-0.540 - TradingKey",
+     "published": "Sun, 27 Sep 2026 15:49:48 GMT",
+     "source": "TradingKey"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "SDEV",
+   "name": "Stablecoin Development Corporat",
+   "price": 3.27,
+   "change_pct": 108.28,
+   "volume": 186343431,
+   "market_cap": 165512480,
+   "exchange": "ASE",
+   "sector": "Financial Services",
+   "industry": "Asset Management",
+   "enterprise_value": 158544480,
+   "revenue_ttm": -23290000,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 6968000,
+   "debt": 0,
+   "shares_out": 50615437,
+   "float_shares": 22550189,
+   "short_pct_float": 0.0435,
+   "avg_volume": 4680128,
+   "high_52w": 99.75,
+   "low_52w": 0.78,
+   "rating": "none",
+   "ev_to_revenue": -6.807,
+   "rel_volume": 39.8,
+   "off_52w_high_pct": -96.7,
+   "news": [
+    {
+     "title": "Stablecoin Development Corporation Common Stock (NYSE:SDEV) Stock Quote - FinancialContent",
+     "published": "Wed, 30 Sep 2026 00:00:00 GMT",
+     "source": "FinancialContent"
+    },
+    {
+     "title": "Unusual stock trading prompted inquiries at Stablecoin Development (NYSE: SDEV). - Stock Titan",
+     "published": "Tue, 29 Sep 2026 20:17:24 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "Stablecoin Development Stock Skyrockets Tuesday: What's Happening? - TradingView",
+     "published": "Tue, 29 Sep 2026 19:02:22 GMT",
+     "source": "TradingView"
+    },
+    {
+     "title": "These stocks are moving in today's session - ChartMill",
+     "published": "Tue, 29 Sep 2026 16:30:00 GMT",
+     "source": "ChartMill"
+    },
+    {
+     "title": "Stablecoin Development Corporation Stock Analysis: Overbought Signals & Cooling Momentum - The Cryptonomist",
+     "published": "Tue, 29 Sep 2026 18:29:33 GMT",
+     "source": "The Cryptonomist"
+    },
+    {
+     "title": "What's going on in today's after hours session - ChartMill",
+     "published": "Tue, 29 Sep 2026 21:00:00 GMT",
+     "source": "ChartMill"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "SVRN",
+   "name": "SVRN, Inc.",
+   "price": 67.33,
+   "change_pct": 29.34,
+   "volume": 347106,
+   "market_cap": 126298696,
+   "exchange": "NCM",
+   "sector": "Financial Services",
+   "industry": "Asset Management",
+   "enterprise_value": 17640614,
+   "revenue_ttm": 13400000,
+   "revenue_growth": -0.374,
+   "gross_margin": 0.27612,
+   "profit_margin": 0.0,
+   "cash": 33200000,
+   "debt": 0,
+   "shares_out": 1875816,
+   "float_shares": 605376,
+   "short_pct_float": 0.0082,
+   "avg_volume": 83423,
+   "high_52w": 70.7,
+   "low_52w": 3.12,
+   "rating": "none",
+   "ev_to_revenue": 1.316,
+   "rel_volume": 4.2,
+   "off_52w_high_pct": -4.8,
+   "news": [
+    {
+     "title": "12 Industrials Stocks Moving In Monday's Intraday Session - Benzinga",
+     "published": "Mon, 28 Sep 2026 17:06:03 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "(SVRN) Movement Within Algorithmic Entry Frameworks - Stock Traders Daily",
+     "published": "Mon, 28 Sep 2026 12:46:02 GMT",
+     "source": "Stock Traders Daily"
+    },
+    {
+     "title": "$SVRN Inc (SVRN.US)$ - Moomoo",
+     "published": "Mon, 28 Sep 2026 15:26:54 GMT",
+     "source": "Moomoo"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Tuesday's Intraday Session - Benzinga",
+     "published": "Tue, 29 Sep 2026 17:06:01 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Tuesday's Pre-Market Session - Benzinga",
+     "published": "Tue, 29 Sep 2026 12:05:59 GMT",
+     "source": "Benzinga"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "clinical-regulatory"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "NAUT",
+   "name": "Nautilus Biotechnology, Inc.",
+   "price": 1.365,
+   "change_pct": 22.97,
+   "volume": 21957778,
+   "market_cap": 173703376,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 117488376,
+   "revenue_ttm": 190000,
+   "gross_margin": 0.92105,
+   "profit_margin": 0.0,
+   "cash": 84031000,
+   "debt": 27816000,
+   "shares_out": 127255223,
+   "float_shares": 67465629,
+   "short_pct_float": 0.0652,
+   "avg_volume": 1308285,
+   "high_52w": 4.31,
+   "low_52w": 0.82,
+   "target_mean": 3.83333,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 618.36,
+   "forward_pe": -1.8445946,
+   "rel_volume": 16.8,
+   "off_52w_high_pct": -68.3,
+   "target_upside_pct": 180.8,
+   "news": [
+    {
+     "title": "Top movers analysis one hour before the close of the markets on 2026-09-29: top gainers and losers in today's session. - ChartMill",
+     "published": "Tue, 29 Sep 2026 19:00:00 GMT",
+     "source": "ChartMill"
+    },
+    {
+     "title": "12 Health Care Stocks Moving In Tuesday's Intraday Session - Benzinga",
+     "published": "Tue, 29 Sep 2026 17:06:01 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "September 2026 Penny Stocks Worth Watching - simplywall.st",
+     "published": "Tue, 29 Sep 2026 11:24:19 GMT",
+     "source": "simplywall.st"
+    },
+    {
+     "title": "These stocks are moving in today's session - ChartMill",
+     "published": "Tue, 29 Sep 2026 16:30:00 GMT",
+     "source": "ChartMill"
+    },
+    {
+     "title": "Roth/MKM initiates Nautilus Biotechnology stock with buy rating By Investing.com - Investing.com India",
+     "published": "Tue, 29 Sep 2026 07:10:50 GMT",
+     "source": "Investing.com India"
+    },
+    {
+     "title": "This SpaceX Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Tuesday - Benzinga",
+     "published": "Tue, 29 Sep 2026 12:10:07 GMT",
+     "source": "Benzinga"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "NEOV",
+   "name": "NeoVolta Inc.",
+   "price": 2.54,
+   "change_pct": 11.4,
+   "volume": 2243811,
+   "market_cap": 149893648,
+   "exchange": "NCM",
+   "sector": "Industrials",
+   "industry": "Electrical Equipment & Parts",
+   "enterprise_value": 135108368,
+   "revenue_ttm": 13332953,
+   "revenue_growth": -0.997,
+   "gross_margin": 0.16037,
+   "profit_margin": -1.61035,
+   "cash": 22201976,
+   "debt": 9207393,
+   "shares_out": 59013247,
+   "float_shares": 51515919,
+   "short_pct_float": 0.0924,
+   "avg_volume": 1669890,
+   "high_52w": 7.13,
+   "low_52w": 1.36,
+   "target_mean": 9.75,
+   "rating": "buy",
+   "analysts": 4,
+   "ev_to_revenue": 10.133,
+   "forward_pe": 4.0,
+   "rel_volume": 1.3,
+   "off_52w_high_pct": -64.4,
+   "target_upside_pct": 283.9,
+   "news": [
+    {
+     "title": "NeoVolta (NASDAQ:NEOV) Given \"Buy\" Rating at Needham & Company LLC - MarketBeat",
+     "published": "Tue, 29 Sep 2026 19:04:36 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "NeoVolta Inc. SEC Filing (Sep 28, 2026) - Stock Titan",
+     "published": "Mon, 28 Sep 2026 10:07:22 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "NeoVolta Inc (NEOV) (Q4 2025) Earnings Call Highlights: Strategic Transformation Meets ... - Yahoo Finance",
+     "published": "Sun, 27 Sep 2026 19:00:25 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "NEOVOLTA, INC. (NASDAQ: NEOV) INVESTIGATION: Johnson Fistel Investigates Potential Securities Claims - GlobeNewswire",
+     "published": "Mon, 28 Sep 2026 19:27:46 GMT",
+     "source": "GlobeNewswire"
+    },
+    {
+     "title": "Sidoti Comments on NeoVolta's Q1 Earnings (NASDAQ:NEOV) - MarketBeat",
+     "published": "Mon, 28 Sep 2026 05:17:06 GMT",
+     "source": "MarketBeat"
+    },
+    {
+     "title": "NeoVolta Q1 Earnings Forecast Cut by Northland Securities - MarketBeat",
+     "published": "Mon, 28 Sep 2026 05:17:06 GMT",
+     "source": "MarketBeat"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "ONEN",
+   "name": "ONE Nuclear Energy Inc.",
+   "price": 2.62,
+   "change_pct": 21.86,
+   "volume": 814120,
+   "market_cap": 277812096,
+   "exchange": "NGM",
+   "sector": "Utilities",
+   "industry": "Utilities - Independent Power Producers",
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "shares_out": 106035149,
+   "avg_volume": 275695,
+   "high_52w": 12.05,
+   "low_52w": 1.9,
+   "rating": "none",
+   "rel_volume": 3.0,
+   "off_52w_high_pct": -78.3,
+   "news": [
+    {
+     "title": "What Is The One Risk Every Google Stock Investor Should Know? - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 19:20:20 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "ONE Nuclear Energy completes business combination and begins trading on Nasdaq - Investing.com UK",
+     "published": "Tue, 29 Sep 2026 22:02:00 GMT",
+     "source": "Investing.com UK"
+    },
+    {
+     "title": "Indian shares slide to near six-month low as US-Iran deadlock lifts oil prices - reuters.com",
+     "published": "Mon, 28 Sep 2026 02:19:00 GMT",
+     "source": "reuters.com"
+    },
+    {
+     "title": "Stock Market: Will S&P 500 Open Up or Down Today? - Benzinga",
+     "published": "Tue, 29 Sep 2026 05:54:26 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Capital One Financial Corporation (COF-PL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Tue, 29 Sep 2026 15:33:32 GMT",
+     "source": "Yahoo! Finance Canada"
+    },
+    {
+     "title": "Five Bands, One Big Cause: Swamp-Stock to Come to Swampscott - Swampscott Tides",
+     "published": "Mon, 28 Sep 2026 11:07:32 GMT",
+     "source": "Swampscott Tides"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "DNA",
+   "name": "Ginkgo Bioworks Holdings, Inc.",
+   "price": 11.96,
+   "change_pct": 14.34,
+   "volume": 4704453,
+   "market_cap": 805389760,
+   "exchange": "NYQ",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 907339712,
+   "revenue_ttm": 132421000,
+   "revenue_growth": -0.485,
+   "gross_margin": 0.68042,
+   "profit_margin": -2.19605,
+   "cash": 302163008,
+   "debt": 404112992,
+   "shares_out": 55383808,
+   "float_shares": 49877596,
+   "short_pct_float": 0.1336,
+   "avg_volume": 1306414,
+   "high_52w": 17.58,
+   "low_52w": 5.37,
+   "target_mean": 7.0,
+   "rating": "none",
+   "analysts": 2,
+   "ev_to_revenue": 6.852,
+   "forward_pe": -4.124138,
+   "rel_volume": 3.6,
+   "off_52w_high_pct": -32.0,
+   "target_upside_pct": -41.5,
+   "news": [
+    {
+     "title": "Ginkgo Bioworks: Another Curious Rally (NYSE:DNA) - Seeking Alpha",
+     "published": "Tue, 29 Sep 2026 20:47:39 GMT",
+     "source": "Seeking Alpha"
+    },
+    {
+     "title": "AbbVie and Takeda can use AI models without revealing sequences to other members - Stock Titan",
+     "published": "Tue, 29 Sep 2026 12:00:00 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "N.C. Food Festival Is Cracking Down on Imported Seafood with DNA Testing - People.com",
+     "published": "Tue, 29 Sep 2026 23:39:21 GMT",
+     "source": "People.com"
+    },
+    {
+     "title": "Genscript Biotech Corporation (1548.HK) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Tue, 29 Sep 2026 10:28:52 GMT",
+     "source": "Yahoo! Finance Canada"
+    },
+    {
+     "title": "DNA Identifies Man Found in Mississippi River 38 Years Ago - NEA Report",
+     "published": "Tue, 29 Sep 2026 21:29:17 GMT",
+     "source": "NEA Report"
+    },
+    {
+     "title": "Stocks under pressure as US bond yields increase - Bangkok Post",
+     "published": "Tue, 29 Sep 2026 22:31:00 GMT",
+     "source": "Bangkok Post"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "SANG",
+   "name": "Sangoma Technologies Corporatio",
+   "price": 4.93,
+   "change_pct": 37.33,
+   "volume": 4051576,
+   "market_cap": 165171456,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": 143890864,
+   "revenue_ttm": 212624992,
+   "revenue_growth": -0.122,
+   "gross_margin": 0.71230006,
+   "profit_margin": -0.030380001,
+   "cash": 15295000,
+   "debt": 39715000,
+   "shares_out": 33503340,
+   "float_shares": 25512852,
+   "avg_volume": 84247,
+   "high_52w": 5.42,
+   "low_52w": 3.4,
+   "target_mean": 5.2,
+   "rating": "buy",
+   "analysts": 1,
+   "ev_to_revenue": 0.677,
+   "forward_pe": 37.923077,
+   "rel_volume": 48.1,
+   "off_52w_high_pct": -9.0,
+   "target_upside_pct": 5.5,
+   "news": [
+    {
+     "title": "SANG Stock Jumps As BRC Group Launches $204M Takeover - timothysykes.com",
+     "published": "Tue, 29 Sep 2026 13:19:00 GMT",
+     "source": "timothysykes.com"
+    },
+    {
+     "title": "SANG Stock Jumps As BRC Group Buyout Locks In Big Premium - StocksToTrade",
+     "published": "Tue, 29 Sep 2026 13:18:00 GMT",
+     "source": "StocksToTrade"
+    },
+    {
+     "title": "Sangoma Stock Explodes 35% After $204 Million Buyout Deal - TradingView",
+     "published": "Tue, 29 Sep 2026 16:49:55 GMT",
+     "source": "TradingView"
+    },
+    {
+     "title": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session - Benzinga",
+     "published": "Tue, 29 Sep 2026 12:05:59 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "Sangoma shares jump 33% following $204M takeover deal with BRC Group - Seeking Alpha",
+     "published": "Tue, 29 Sep 2026 09:11:38 GMT",
+     "source": "Seeking Alpha"
+    },
+    {
+     "title": "Sangoma Technologies stock surges over 40% on BRC acquisition deal - Yahoo Finance",
+     "published": "Mon, 28 Sep 2026 22:31:23 GMT",
+     "source": "Yahoo Finance"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "takeover-target",
+    "contract-order"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "XRPN",
+   "name": "Armada Acquisition Corp. II",
+   "price": 12.9,
+   "change_pct": 21.99,
+   "volume": 3737086,
+   "market_cap": 407510976,
+   "exchange": "NGM",
+   "sector": "Financial Services",
+   "industry": "Shell Companies",
+   "enterprise_value": 407456512,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 54503,
+   "debt": 0,
+   "shares_out": 23710000,
+   "float_shares": 19139433,
+   "short_pct_float": 0.0029,
+   "avg_volume": 160039,
+   "high_52w": 17.0,
+   "low_52w": 10.1,
+   "rating": "none",
+   "rel_volume": 23.4,
+   "off_52w_high_pct": -24.1,
+   "news": [
+    {
+     "title": "An XRP Treasury Company Is One Vote Away from Nasdaq: What Happens if Evernorth Lists as XRPN? - 24/7 Wall St.",
+     "published": "Tue, 29 Sep 2026 11:30:00 GMT",
+     "source": "24/7 Wall St."
+    },
+    {
+     "title": "XRPN Archives - 24/7 Wall St.",
+     "published": "Tue, 29 Sep 2026 12:04:47 GMT",
+     "source": "24/7 Wall St."
+    },
+    {
+     "title": "An XRP Treasury Company Is One Vote Away from Nasdaq: What Happens if Evernorth Lists as XRPN? - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 11:30:50 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "These stocks are moving in today's session - ChartMill",
+     "published": "Tue, 29 Sep 2026 16:30:00 GMT",
+     "source": "ChartMill"
+    },
+    {
+     "title": "XRP Chart Is 'Enough to Make A Bet,' Trading Legend Peter Brandt Says - Benzinga",
+     "published": "Mon, 28 Sep 2026 16:40:55 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "These stocks that are showing activity before the opening bell on Tuesday. - ChartMill",
+     "published": "Tue, 29 Sep 2026 12:30:00 GMT",
+     "source": "ChartMill"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "DPRO",
+   "name": "Draganfly Inc.",
+   "price": 6.2,
+   "change_pct": 10.81,
+   "volume": 2721160,
+   "market_cap": 231096288,
+   "exchange": "NCM",
+   "sector": "Industrials",
+   "industry": "Aerospace & Defense",
+   "enterprise_value": 93649840,
+   "revenue_ttm": 9044783,
+   "revenue_growth": 0.26,
+   "gross_margin": 0.19545999,
+   "profit_margin": 0.0,
+   "cash": 136897280,
+   "debt": 226270,
+   "shares_out": 37273597,
+   "float_shares": 36773694,
+   "short_pct_float": 0.1075,
+   "avg_volume": 1184311,
+   "high_52w": 14.4,
+   "low_52w": 3.781,
+   "target_mean": 10.662375,
+   "rating": "none",
+   "analysts": 6,
+   "ev_to_revenue": 10.354,
+   "forward_pe": -9.048091,
+   "rel_volume": 2.3,
+   "off_52w_high_pct": -56.9,
+   "target_upside_pct": 72.0,
+   "news": [
+    {
+     "title": "Draganfly Closes US$10 Million Registered Direct Offering of Common Shares - Quiver Quantitative",
+     "published": "Wed, 30 Sep 2026 01:10:00 GMT",
+     "source": "Quiver Quantitative"
+    },
+    {
+     "title": "Two investors plan to put $5 million each into a drone maker - Stock Titan",
+     "published": "Mon, 28 Sep 2026 11:45:00 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "Draganfly stock rises on $10M strategic investment - Yahoo Finance",
+     "published": "Mon, 28 Sep 2026 13:52:32 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Draganfly Announces Closing of US$10 Million Strategic Investment - marketscreener.com",
+     "published": "Wed, 30 Sep 2026 01:00:11 GMT",
+     "source": "marketscreener.com"
+    },
+    {
+     "title": "Price-Driven Insight from (DPRO) for Rule-Based Strategy - Stock Traders Daily",
+     "published": "Mon, 28 Sep 2026 18:12:01 GMT",
+     "source": "Stock Traders Daily"
+    },
+    {
+     "title": "Draganfly (DPRO) Raises $10M to Boost Drone Tech Amid Overvalued Price-to-Sales - GuruFocus",
+     "published": "Mon, 28 Sep 2026 15:39:33 GMT",
+     "source": "GuruFocus"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "dilution",
+    "sector-theme",
+    "earnings-guidance"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "SSTI",
+   "name": "SoundThinking, Inc.",
+   "price": 8.21,
+   "change_pct": 50.09,
+   "volume": 5130558,
+   "market_cap": 108704608,
+   "exchange": "NCM",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "enterprise_value": 107102712,
+   "revenue_ttm": 97956000,
+   "revenue_growth": -0.077,
+   "gross_margin": 0.50987,
+   "profit_margin": -0.16917999,
+   "cash": 6483000,
+   "debt": 5511000,
+   "shares_out": 13240512,
+   "float_shares": 7199013,
+   "short_pct_float": 0.04,
+   "avg_volume": 190765,
+   "high_52w": 12.245,
+   "low_52w": 5.415,
+   "target_mean": 9.14,
+   "rating": "none",
+   "analysts": 5,
+   "ev_to_revenue": 1.093,
+   "forward_pe": -43.210526,
+   "rel_volume": 26.9,
+   "off_52w_high_pct": -33.0,
+   "target_upside_pct": 11.3,
+   "news": [
+    {
+     "title": "SSTI Stock Alert: Halper Sadeh LLC is Investigating Whether SoundThinking, Inc. is Obtaining a Fair Price for its Shareholders - Business Wire",
+     "published": "Tue, 29 Sep 2026 16:05:00 GMT",
+     "source": "Business Wire"
+    },
+    {
+     "title": "These stocks are moving in today's session - ChartMill",
+     "published": "Tue, 29 Sep 2026 16:30:00 GMT",
+     "source": "ChartMill"
+    },
+    {
+     "title": "SoundThinking Agrees to Transom Capital Acquisition With Up to $11.00 Per Share in Cash Consideration - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 14:51:29 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "SoundThinking Shares Jump 50% on Transom Capital Takeover Agreement - Benzinga",
+     "published": "Tue, 29 Sep 2026 17:00:09 GMT",
+     "source": "Benzinga"
+    },
+    {
+     "title": "An offer for every SoundThinking (SSTI) share is planned but has not yet begun. - Stock Titan",
+     "published": "Tue, 29 Sep 2026 18:22:53 GMT",
+     "source": "Stock Titan"
+    },
+    {
+     "title": "SSTI Stock Holds Support As Traders Digest Weak Financials - timothysykes.com",
+     "published": "Tue, 29 Sep 2026 13:19:00 GMT",
+     "source": "timothysykes.com"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -1
+  },
+  {
+   "symbol": "BE",
+   "name": "Bloom Energy Corporation",
+   "price": 291.25,
+   "change_pct": 10.8,
+   "volume": 23633242,
+   "market_cap": 85781094400,
+   "exchange": "NYQ",
+   "sector": "Industrials",
+   "industry": "Electrical Equipment & Parts",
+   "enterprise_value": 85907922944,
+   "revenue_ttm": 3113149952,
+   "revenue_growth": 1.655,
+   "gross_margin": 0.31651,
+   "profit_margin": 0.07868,
+   "cash": 2716858880,
+   "debt": 2815023104,
+   "shares_out": 294527346,
+   "float_shares": 289296540,
+   "short_pct_float": 0.0734,
+   "avg_volume": 15769887,
+   "high_52w": 351.28,
+   "low_52w": 75.7,
+   "target_mean": 281.58463,
+   "rating": "buy",
+   "analysts": 26,
+   "ev_to_revenue": 27.595,
+   "forward_pe": 59.09254,
+   "rel_volume": 1.5,
+   "off_52w_high_pct": -17.1,
+   "target_upside_pct": -3.3,
+   "news": [
+    {
+     "title": "BE Stock Rises Premarket: Retail Dismisses Short-Seller Report As \u2018Manipulation\u2019 - stocktwits.com",
+     "published": "Wed, 30 Sep 2026 00:23:49 GMT",
+     "source": "stocktwits.com"
+    },
+    {
+     "title": "Bloom Energy Rallies 11% as Fuel Cell Selloff Reverses; FuelCell Surges 7%, Plug Power Rises 3% - Yahoo Finance",
+     "published": "Tue, 29 Sep 2026 14:04:05 GMT",
+     "source": "Yahoo Finance"
+    },
+    {
+     "title": "Why is Bloom Energy stock surging today? - Investing.com",
+     "published": "Tue, 29 Sep 2026 14:07:14 GMT",
+     "source": "Investing.com"
+    },
+    {
+     "title": "Bloom Energy Is Up More Than 200% So Far This Year. What Comes Next for BE Stock. - Barchart.com",
+     "published": "Tue, 29 Sep 2026 20:18:43 GMT",
+     "source": "Barchart.com"
+    },
+    {
+     "title": "Bloom Energy (NYSE:BE) Stock Surges 14% as a Factory Expansion and Oracle Reassurance Lift Shares - Stocks Down Under",
+     "published": "Tue, 29 Sep 2026 19:07:13 GMT",
+     "source": "Stocks Down Under"
+    },
+    {
+     "title": "BE Stock Recovers After Monday Slide On Analyst Support: Peers FCEL, PLUG Edge Higher - fr.tradingview.com",
+     "published": "Tue, 29 Sep 2026 20:40:47 GMT",
+     "source": "fr.tradingview.com"
+    }
+   ],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -1
+  },
+  {
+   "symbol": "XPOF",
+   "name": "Xponential Fitness, Inc.",
+   "price": 4.4,
+   "change_pct": 12.53,
+   "volume": 966001,
+   "market_cap": 217874800,
+   "exchange": "NYQ",
+   "sector": "Consumer Cyclical",
+   "industry": "Leisure",
+   "enterprise_value": 642611584,
+   "revenue_ttm": 288470016,
+   "revenue_growth": -0.134,
+   "gross_margin": 0.66626,
+   "profit_margin": -0.14764,
+   "cash": 18233000,
+   "debt": 529745984,
+   "shares_out": 42219000,
+   "float_shares": 21114566,
+   "short_pct_float": 0.4748,
+   "avg_volume": 830996,
+   "high_52w": 9.25,
+   "low_52w": 3.565,
+   "target_mean": 5.6,
+   "rating": "hold",
+   "analysts": 5,
+   "ev_to_revenue": 2.228,
+   "forward_pe": 6.7692313,
+   "rel_volume": 1.2,
+   "off_52w_high_pct": -52.4,
+   "target_upside_pct": 27.3,
+   "news": [],
+   "filings": [
+    {
+     "error": "HTTP Error 403: Forbidden"
+    }
+   ],
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -2
+  }
+ ]
+}

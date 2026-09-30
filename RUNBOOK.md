@@ -33,6 +33,20 @@ ref `main`) at each :40 run so the public dashboard's equity history stays fresh
 If the direct fetch fails, fall back to the dispatch plus `python3 scripts/sync.py --wait 200`.
 Option chains: `.cache/options.json` (nearest two expiries for `books/free/watchlist.json` `options_watch`).
 
+## 1b. Big-mover catalyst scan (post-close daily, and the 8:40 run)
+
+```bash
+python3 scripts/movers.py --min-move 15 --min-mcap 100 --save     # today's big gainers, why they moved
+python3 scripts/movers.py --min-move 15 --losers                  # big losers (puts / inverse ideas, free book)
+python3 scripts/movers.py --follow-up                             # how earlier scans' names did since
+```
+Deep-dive the top 1-3 by score: read the release (what changed, how big relative to the company:
+guidance change %, order value / revenue, debt removed / market cap), check dilution risk (shelf, offering
+after the spike), valuation (EV/sales vs growth, analyst targets), and write verdicts to the journal.
+Buy candidates need material news, a market cap of at least $100M, relative volume above 2, no takeover cap,
+and day-two confirmation (holds above the prior close through the first 30-60 minutes). Skip no-news spikes,
+de-SPACs and financings.
+
 ## 2. Decide
 
 * Read `ALERTS` first: new headlines since the last news run, movers (>=6% on the day or >=4% extended-hours)

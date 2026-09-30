@@ -26,6 +26,21 @@
         "MUU",
         "NKE"
       ]
+    },
+    {
+      "id": "J0003",
+      "ts": "2026-09-30T02:14:17Z",
+      "kind": "research",
+      "title": "Big-mover catalyst scan: method and Sep 29 verdicts",
+      "body": "New daily screen (scripts/movers.py): every US stock up 10-15%+ on the day with real volume. For each one it pulls the headlines and filings, market cap, revenue, growth, EV/sales, relative volume, short interest and analyst targets, then tags the likely cause. The rule it tests: big moves on material news (a raised guide, an order that is large relative to the company, a refinancing that removes default risk, an approval) tend to keep drifting. Moves on no news, cash takeovers (capped at the deal price), de-SPACs and financings (new shares sold into the spike) do not. Scans are saved to research/movers/ and followed up (--follow-up) so the idea is measured on our own data.\n\nSep 29 scan: 44 stocks up 10%+, 23 above $100M market cap. Verdicts:\n- IOVA +31.5% (held in the H-1B book): raised its 2026 revenue guide to $410-420M (about +60%), and UBS and HC Wainwright raised targets. A real re-rating. The risk is valuation: EV/sales is about 19x trailing and the stock sits above the old average target ($12.40), so further gains need estimates to keep rising. Hold with the $12.35 stop.\n- JELD +12.4% ($1.99, $173M market cap on $3.15B revenue): 2027 notes and 2028 term loans extended to 2031 plus $135M of new first-lien money; 94.5% of noteholders and 72.2% of term lenders committed; no equity in the release. This is the \"long-standing problem solved\" case. Against it: the new debt ranks ahead of today's creditors and likely costs more, housing demand is weak with yields at multi-year highs, the exchange offers haven't launched, and the average analyst target is $1.93. Re-ratings like this take weeks. Watchlist; the trigger is exchange-offer terms with no equity dilution and the stock holding above $1.90.\n- CCL +13.4%: record Q3 revenue, record $7.6B of deposits, raised guidance. A classic post-earnings drift candidate, but a $34B company won't double. Watch for trend days.\n- ITG +15.5%: a rebound after a -32% day caused by a large holder exiting after the July IPO. Organic growth is weak and Comcast and Charter are 53% of revenue. Pass.\n- WW +13.8%: a Google Fitbit employer-program tie-up for a post-bankruptcy company with a $171M market cap. Small news. Pass for now.\n- PWP +11.8%: deal-activity and insider-buying chatter, no hard catalyst. Pass.\n- SDEV +108%: no news (the company said so) and -21% after hours. The no-news reversal case in action.\n- SANG +37%: cash takeover by BRC, capped. Pass. NAUT +23%: an analyst initiation only. ONEN +22%: de-SPAC on the nuclear theme. BGIN, EGG, SVRN: thin, no fundamental news. All pass.\n\nUse in this challenge: the drift plays out over weeks and we have four sessions, so the scan supplies candidates and a day-two entry needs confirmation: holding above the prior close through the first 30-60 minutes, relative volume above 2 and no offering filed.",
+      "tickers": [
+        "IOVA",
+        "JELD",
+        "CCL",
+        "ITG",
+        "WW",
+        "SDEV"
+      ]
     }
   ]
 }

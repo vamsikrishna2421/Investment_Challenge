@@ -12,7 +12,8 @@
     "QQQ",
     "BTC-USD",
     "ETH-USD",
-    "SOL-USD"
+    "SOL-USD",
+    "JELD"
   ],
   "tickers": [
     "AFRM",
@@ -101,7 +102,8 @@
     "WDC",
     "WULF",
     "XOM",
-    "XRP-USD"
+    "XRP-USD",
+    "JELD"
   ],
   "options_watch": [
     "MU",

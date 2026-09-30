@@ -12,7 +12,7 @@
     "SMMT",
     "BE",
     "CCL",
-    "SDEV"
+    "JELD"
   ],
   "tickers": [
     "NVDA",
@@ -94,6 +94,7 @@
     "RTX",
     "SMMT",
     "IOVA",
-    "SDEV"
+    "SDEV",
+    "JELD"
   ]
 }

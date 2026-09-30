@@ -60,7 +60,7 @@ NAME_STOP = {"the", "and", "inc", "corp", "group", "holdings", "company", "inter
 
 
 def names_company(title: str, name: str | None, ticker: str, aliases: tuple = ()) -> bool:
-    """Does the headline name the company (ticker or the first distinctive word of its name)?"""
+    """Does the headline name the company (ticker, or its name through the first distinctive word)?"""
     t = title.lower()
     squeezed = re.sub(r"[^a-z0-9&]", "", t)  # "Curiosity Stream" in a headline, "CuriosityStream Inc." on file
     if re.search(rf"(?<![a-z0-9]){re.escape(ticker.lower())}(?![a-z0-9])", t):
@@ -68,8 +68,14 @@ def names_company(title: str, name: str | None, ticker: str, aliases: tuple = ()
     for n in (name, *aliases):
         if not n:
             continue
-        words = [w for w in re.findall(r"[a-z0-9&]+", movers.SUFFIX.sub("", n).lower()) if len(w) >= 3 and w not in NAME_STOP]
-        if words and (words[0] in t or words[0] in squeezed):
+        # Leading words through the first distinctive one: "United Airlines" must not match
+        # an American Airlines headline, and "United Therapeutics" (all stop words) still matches.
+        allw = re.findall(r"[a-z0-9&]+", movers.SUFFIX.sub("", n).lower())
+        while allw and allw[0] == "the":
+            allw = allw[1:]
+        k = next((i for i, w in enumerate(allw) if len(w) >= 3 and w not in NAME_STOP), len(allw) - 1)
+        lead = "".join(allw[:k + 1])
+        if lead and lead in squeezed:
             return True
     return not name  # no name on file: cannot tell, assume it is theirs
 

@@ -324,6 +324,18 @@
         "LQDA",
         "QTTB"
       ]
+    },
+    {
+      "id": "J0025",
+      "ts": "2026-09-30T23:13:37Z",
+      "kind": "research",
+      "title": "UTHR's own release (7:09 PM ET): it will seek an order pulling Yutrepia's approval; Thursday test unchanged",
+      "body": "Source: United Therapeutics release on Business Wire, 7:09 PM ET (stocktitan.net/news/UTHR/united-therapeutics-corporation-prevails-in-patent-litigation-x8g58kv2gmy9.html). It is consistent with the court opinion read for J0024.\nNew points:\n- UTHR says the ruling entitles it to an order under 35 U.S.C. 271(e)(4)(A) directing FDA to withdraw approval of Liquidia's Yutrepia application. It says that could take Yutrepia off the US market entirely, for PAH as well as PH-ILD, until FDA approves a label without PH-ILD. That is broader than the PH-ILD-only recapture in the UTHR dossier.\n- UTHR will also seek damages, possibly a royalty on past Yutrepia sales.\n- The court gave the parties one week (about Oct 7) to submit an agreed form of final judgment. If they disagree, the court decides the scope.\nCaveats:\n- This is UTHR's claim. Liquidia will contest the scope and can seek a stay pending appeal.\n- A label without PH-ILD could come quickly, so any time off the market may be short.\nAfter hours (7:11 PM ET): UTHR $546 (+0.8% from $541.89), MNKD $3.95 (+1.3% from $3.90), LQDA $30.40 (+0.5%). The reaction is muted.\nDecision: no pre-market trade. The release makes it more likely UTHR holds its gains, but the 9:55 and 10:25 price checks still decide the trade (UTHR above $541.89 at both and at least $548 at 10:25; otherwise MNKD per J0024). Same stops: UTHR $527, MNKD $3.64.\nData fixes:\n- UTHR, MNKD and LQDA were on the focus list but not quoted. The quote list now includes focus names.\n- The news tagger marked this release as third-party because every word of 'United Therapeutics' is a stop word. Fixed.",
+      "tickers": [
+        "UTHR",
+        "MNKD",
+        "LQDA"
+      ]
     }
   ]
 }

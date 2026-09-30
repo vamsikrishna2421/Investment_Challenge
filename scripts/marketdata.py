@@ -439,7 +439,7 @@ def main() -> int:
                 discovery.append({"symbol": sym, "source": "trending"})
         disc_syms = [d["symbol"] for d in discovery]
 
-    syms = list(dict.fromkeys(cfg["benchmarks"] + held + watch + extra + disc_syms))
+    syms = list(dict.fromkeys(cfg["benchmarks"] + held + focus + watch + extra + disc_syms))
     quotes, errors = {}, {}
     with cf.ThreadPoolExecutor(max_workers=8) as ex:
         futs = {ex.submit(quote, s): s for s in syms}

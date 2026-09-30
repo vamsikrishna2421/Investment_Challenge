@@ -37,7 +37,8 @@ SEC_UA = "Investment Challenge research (github.com/vamsikrishna2421/Investment_
 
 # Catalyst tags, checked in order; the first that matches a headline wins for that headline.
 TAGS = [
-    ("no-news", r"unusual (trading|market) activity|no (material )?(new )?developments|not aware of any"),
+    ("no-news", r"unusual (stock |share )?(trading|market|price)|no (material |new |corporate )*(news|developments|"
+                r"announcements)|not aware of any|unaware of any"),
     ("takeover-target", r"to be acquired|agrees? to be acquired|definitive (merger )?agreement to be acquired|"
                         r"take[- ]private|tender offer|buyout|acquired by|to acquire \w+ (for|in) \$|agrees to acquire"),
     ("dilution", r"public offering|registered direct|private placement|priced .*offering|at-the-market|"
@@ -46,13 +47,31 @@ TAGS = [
                     r"chapter 11|bankruptcy|going concern"),
     ("clinical-regulatory", r"\bFDA\b|approv|phase [123i]|trial|topline|clinical|breakthrough (therapy|device)|"
                             r"clearance|\bEMA\b"),
-    ("earnings-guidance", r"guidance|outlook|raises|record (revenue|quarter)|beats?|results|earnings|revenue|"
-                          r"quarter|profit|forecast"),
-    ("contract-order", r"contract|award|order|selected|partnership|partners with|agreement with|collaborat|"
-                       r"deal|supply|deploy|customer|purchase order"),
+    ("earnings-guidance", r"guidance|outlook|raises? (its |full[- ]year |annual )?(forecast|guidance|outlook)|"
+                          r"record (revenue|quarter|results|sales|bookings|deposits)|\bbeats?\b|"
+                          r"(first|second|third|fourth|q[1-4]|fiscal|quarterly|annual)\b[\w ,-]{0,25}\bresults|"
+                          r"earnings|preliminary (revenue|results)|(revenue|sales|profit|bookings) "
+                          r"(grows?|growth|jumps?|soars?|rises?|surges?|doubles?|triples?)"),
+    ("contract-order", r"contract|award(ed|s)?\b|purchase order|orders? (for|from|worth|valued)|"
+                       r"(wins|secures|lands|receives|signs)\b.{0,40}\b(order|deal|contract|agreement)|"
+                       r"selected (by|as|to)|supply agreement|partners? with|partnership with|strategic "
+                       r"(partnership|agreement|alliance|investment)|agreement with|collaborat|deploy"),
+    ("product-news", r"launch(es|ed)?\b|unveil|introduc(es|ed)\b|integrat\w* (with|into)|expands? (into|to)\b|"
+                     r"roll(s|ed)? ?out|teams? up|tie[- ]up|\blinks?\b.{0,60}\b(to|with)\b|now available|goes live"),
+    ("analyst", r"upgrade|initiat\w* (coverage|at|with)|price target|(to|at|an?) outperform|overweight|buy rating|"
+                r"reiterat"),
     ("sector-theme", r"quantum|nuclear|uranium|crypto|bitcoin|stablecoin|\bAI\b|artificial intelligence|drone|"
                      r"defen[cs]e|space|rare earth"),
 ]
+# Price-action roundups and "why is X stock up" pieces say that it moved, not why: not a catalyst by themselves.
+GENERIC = re.compile(
+    r"stocks? (are |that are )?moving|\bmovers\b|stocks to watch|what'?s (going on|happening)|here'?s why|"
+    r"here is why|\bwhy\b.{0,60}\b(stock|shares)\b|stock (quote|price|forecast|analysis)|\btrades? (up|down)|"
+    r"overbought|oversold|technical|pre-?market|after[- ]hours|intraday|\btop (gainers|losers)|\bjoins\b.*\band other\b|"
+    r"moving average|(out|under)performs? (its )?(competitors|the market)|compared to competitors|trading day|"
+    r"penny stocks|worth watching|time to buy\?|what'?s next\?|stock (price, )?news", re.I)
+SUFFIX = re.compile(r"[,.]?\s+(inc|corp(oration)?|co|company|ltd|limited|plc|holdings?|group|n\.?v|s\.?a|"
+                    r"class [a-c]|common stock|ordinary shares|adr)\b\.?", re.I)
 CAPPED = {"takeover-target"}
 NEGATIVE = {"dilution", "no-news"}
 
@@ -73,7 +92,7 @@ def gnews(query: str, limit: int = 8) -> list[dict]:
     for it in root.iter("item"):
         title = html.unescape((it.findtext("title") or "").strip())
         out.append({"title": title, "published": (it.findtext("pubDate") or "").strip(),
-                    "source": (it.find("source").text if it.find("source") is not None else None)})
+                    "source": (it.find("source").text if it.find("source") is not None else None), "via": "google"})
         if len(out) >= limit:
             break
     return out
@@ -115,10 +134,29 @@ def sec_filings(sym: str, days: int = 4) -> list[dict]:
         return [{"error": str(e)[:120]}]
 
 
-def classify(texts: list[str], filings: list[dict]) -> list[str]:
+def classify(news: list[dict], filings: list[dict], name: str = "", sym: str = "") -> list[str]:
+    # The company's own name can trip theme words ("Stablecoin Development", "Nuclear ..."): drop it first.
+    core = SUFFIX.split(name or "")[0].strip()
+    first = core.split(" ")[0] if core else ""
+    names = sorted({w for w in (core, first if len(first) >= 4 else "") if w}, key=len, reverse=True)
     tags = []
-    for t in texts:
-        for tag, pat in TAGS:
+    for n in news:
+        t = n.get("title") or ""
+        # Google results for "SYM stock" can be about other companies: keep only those naming this one.
+        if n.get("via") == "google" and not (
+                (sym and re.search(rf"\b{re.escape(sym)}\b", t)) or any(re.search(re.escape(w), t, re.I) for w in names)):
+            continue
+        for w in names:
+            t = re.sub(re.escape(w), " ", t, flags=re.I)
+        if sym:
+            t = re.sub(rf"\b{re.escape(sym)}\b", " ", t)
+        if re.search(TAGS[0][1], t, re.I):
+            if "no-news" not in tags:
+                tags.append("no-news")
+            continue
+        if GENERIC.search(t):
+            continue
+        for tag, pat in TAGS[1:]:
             if re.search(pat, t, re.I):
                 if tag not in tags:
                     tags.append(tag)
@@ -142,6 +180,8 @@ def score(row: dict) -> int:
     tags = set(row["tags"])
     if tags & {"earnings-guidance", "contract-order", "refinancing", "clinical-regulatory"}:
         s += 3
+    elif "product-news" in tags:
+        s += 1
     if tags & CAPPED:
         s -= 4
     if tags & NEGATIVE:
@@ -194,7 +234,8 @@ def enrich(q: dict) -> dict:
         for n in (yf.Ticker(sym).news or [])[:8]:
             c = n.get("content") or n
             news.append({"title": c.get("title"), "published": c.get("pubDate") or c.get("providerPublishTime"),
-                         "source": (c.get("provider") or {}).get("displayName") if isinstance(c.get("provider"), dict) else c.get("publisher")})
+                         "source": (c.get("provider") or {}).get("displayName") if isinstance(c.get("provider"), dict) else c.get("publisher"),
+                         "via": "yahoo"})
     except Exception:  # noqa: BLE001
         pass
     news += gnews(f"{sym} stock", 6)
@@ -206,7 +247,8 @@ def enrich(q: dict) -> dict:
             uniq.append(n)
     row["news"] = uniq[:10]
     row["filings"] = sec_filings(sym)
-    row["tags"] = classify([n["title"] for n in row["news"]], [f for f in row["filings"] if "error" not in f])
+    row["tags"] = classify(row["news"], [f for f in row["filings"] if "error" not in f],
+                           row.get("name") or "", sym)
     row["score"] = score(row)
     return row
 

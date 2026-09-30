@@ -49,7 +49,7 @@ TAGS = [
                         r"take[- ]private|tender offer|buyout|acquired by|to acquire \w+ (for|in) \$|agrees to acquire"),
     ("reverse-split", r"reverse (stock |share )?split"),
     ("dilution", r"public offering|registered direct|private placement|priced .*offering|at-the-market|"
-                 r"\bATM\b|warrants?\b|shelf|strategic investment|closing of .{0,40}(offering|placement|financing)|"
+                 r"\bATM\b|warrants?\b|shelf|strategic (equity )?investment (from|by)\b|closing of .{0,40}(offering|placement|financing)|"
                  r"(prices|closes|announces) .{0,30}(financing|offering)|convertible (senior )?(notes|preferred)|"
                  r"equity (line|purchase agreement)|\bELOC\b|standby equity"),
     ("refinancing", r"refinanc|debt|maturit|restructur|credit (facility|agreement)|secures \$|recapitaliz|"

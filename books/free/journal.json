@@ -105,6 +105,17 @@
       "tickers": [
         "GPUS"
       ]
+    },
+    {
+      "id": "J0009",
+      "ts": "2026-09-30T04:44:04Z",
+      "kind": "research",
+      "title": "Robinhood check on the MUU call plan; 3:25 PM expiry rule",
+      "body": "Robinhood read-only check (Tue Sep 29 close, MUU Oct 2 calls): 36.5 strike 2.60/2.90 (implied vol 216%, delta 0.54, theta -0.51 a day, break-even $39.25, Robinhood's chance of profit 32%). 37 strike 2.55/2.70 (delta 0.52, break-even $39.63, 31%). 38 strike 2.15/2.30 (delta 0.46, break-even $40.23, 28%, open interest 1,152). Overnight trades: MU $1,073 (+0.7%), MUU $37.16 (+1.4%). New rule: Robinhood force-closes expiring options at 3:30 PM ET, so the book sells any contract expiring that day by the 3:25 PM run. The MUU call plan stands: one contract (37 strike, about $270 at the ask), with a 69% chance of losing per Robinhood's model. That matches the deep dive: a bounded bet, not an edge.",
+      "tickers": [
+        "MUU",
+        "MU"
+      ]
     }
   ]
 }

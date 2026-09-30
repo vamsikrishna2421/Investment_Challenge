@@ -120,6 +120,14 @@ previews, SEC filings) to cross-check prices and paper fills. Never call order, 
 scan-editing tools; they are denied in `.claude/settings.json`. Never read or publish the user's own account data
 (accounts, positions, orders, P&L) unless the user asks, and never put it in the repo or on the dashboards: both are
 public.
+Uses that change decisions:
+- Before any option paper trade: `get_option_instruments` (chain_symbol, expiration_dates, type) then `get_option_quotes`
+  for the contract. Check bid/ask and sizes, IV, delta, theta, break-even and Robinhood's chance of profit. If
+  Robinhood's ask is more than 5% above the ask in `.cache/options.json`, re-sync before trading, or skip.
+- Overnight prices (Robinhood's 24-hour market, `last_non_reg_trade_price`) at the 7:10 and 8:40 runs to size the gap
+  on holdings before the pre-market opens.
+- Expiring options: Robinhood force-closes at 3:30 PM ET on expiration day (`sellout_datetime`), so the books sell any
+  contract expiring that day by the 3:25 PM run at the latest.
 
 ## 2. Decide
 

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-30T22:43:16Z",
+ "as_of": "2026-09-30T22:45:44Z",
  "session": "post",
  "start_capital": 1000.0,
  "deposits": 1000.0,
@@ -44,7 +44,7 @@
    "price_source": "regular",
    "ext_price": null,
    "ext_change_pct": null,
-   "quote_time": "2026-09-30T22:43:16Z",
+   "quote_time": "2026-09-30T22:45:44Z",
    "stale_quote": false,
    "opened": "2026-09-30T13:57:18Z",
    "sell_locked_until": null,

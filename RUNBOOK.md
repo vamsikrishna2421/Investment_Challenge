@@ -137,6 +137,10 @@ prints each "above X" ladder with the market's probability per rung and the impl
 unemployment KXU3, CPI KXCPI / KXCPIYOY, Fed KXFED). Use the implied median as the surprise benchmark for scheduled
 releases: surprise = actual - median, snapshot before the market closes (--save logs to research/kalshi/). Neither
 book trades prediction markets.
+Forecast record (`scripts/forecasts.py`): for each scheduled release, write my own probability from the inputs
+(claims, ADP, trend) before reading the market ladder, then log both with `add`; `resolve` after the release;
+`score` compares Brier scores. Nothing is traded on these forecasts unless mine beat the market's over 30+
+questions by more than costs.
 
 ## 2. Decide
 

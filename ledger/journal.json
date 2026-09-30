@@ -258,6 +258,22 @@
       "tickers": [
         "QTTB"
       ]
+    },
+    {
+      "id": "J0020",
+      "ts": "2026-09-30T14:42:26Z",
+      "kind": "note",
+      "title": "10:40 day-two check on the Sep 29 scan: no entries",
+      "body": "RUNBOOK 1b day-two rule (holds above the prior close through the first 30-60 minutes, material news, relative volume above 2, market cap at least $100M), 10:41 AM prices:\n- CCL $25.18 (+0.3%): dipped to $24.81, below Tuesday's $25.11 close, before recovering. Fails the hold.\n- WRBY $27.94 (+1.7%, low $27.67): held above $27.47. But Tuesday's +11% was a sympathy move on Meta's AI-glasses push, not company news, and relative volume was 1.9. Fails the news and volume tests.\n- DNA $12.49 (+4.4%): dipped below $11.96 first, and its only tag is a sector theme. Fails.\n- JELD $1.89 (-5.0%) and WW $16.44 (-3.9%): below Tuesday's close. Fail.\n- NAUT $1.42: an analyst initiation only, and the low of $1.29 was below $1.37. Fails.\n- QTTB (Wednesday's day-one mover, J0019): $9.26, -2.8%. The 16% pre-market gain is gone.\nNone qualifies, which is consistent with the J0018 plan (no day-two entries). Both books keep their cash for names with a written deep dive.",
+      "tickers": [
+        "CCL",
+        "WRBY",
+        "JELD",
+        "WW",
+        "DNA",
+        "NAUT",
+        "QTTB"
+      ]
     }
   ]
 }

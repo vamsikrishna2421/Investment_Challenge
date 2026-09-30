@@ -274,6 +274,17 @@
         "NAUT",
         "QTTB"
       ]
+    },
+    {
+      "id": "J0021",
+      "ts": "2026-09-30T16:41:47Z",
+      "kind": "research",
+      "title": "UTHR +13% / LQDA -25%: procedural patent ruling; watch UTHR for day two, no entry today",
+      "body": "12:41 PM: United Therapeutics $544 (+13%) and Liquidia $53.22 (-24.7%; halted for news, then resumed). Cause: a ruling in United Therapeutics v. Liquidia (D. Del., Judge Andrews) over Yutrepia, Liquidia's inhaled treprostinil. The court denied Liquidia's motion to strike (GuruFocus, Sep 30). That is a procedural ruling, not a verdict or an injunction, yet the market moved $2-3B of value on it.\n- UTHR (about $24B market cap): material news for a large, liquid stock, and the day-one move is already 13%. The rule is no day-one chase. Day-two test Thursday: hold above Wednesday's close through the first 30-60 minutes. Goldman's recent Sell call (the base business is shrinking) cuts the other way. A deep dive is required before any entry.\n- LQDA: no trade. Both books are cash accounts with no shorting, and buying puts after a 25% drop is chasing.\nSources: gurufocus.com/news/9103788; courtlistener docket 1:25-cv-00368.",
+      "tickers": [
+        "UTHR",
+        "LQDA"
+      ]
     }
   ]
 }

@@ -211,6 +211,18 @@
         "VRT",
         "ETN"
       ]
+    },
+    {
+      "id": "J0016",
+      "ts": "2026-09-30T03:15:17Z",
+      "kind": "plan",
+      "title": "Plan update: deep dives on MU and IOVA; no MUU add",
+      "body": "Plan change after the deep dives (research/dossiers/MU-2026-09-29.md, IOVA-2026-09-29.md):\n- MUU: hold through Micron's report ($306, 31% of the book), stop $30.90. The $250 add at 3:55 PM is cancelled. The options price a 7.6% Micron move, in line with its last 15 reports (average 8.1%), so there's no edge. Micron beat in each of the last 12 quarters and still fell the next day 7 times. Consensus ($51.47B, $31.82) already sits above the top of the guide. Fiscal Q4 had 14 weeks, so the Q1 guide will look softer quarter on quarter than the business is.\n- IOVA: hold, stop $12.35, sell a third at $17.57. Cash covers about a year of burn, and the share count is up 14% in a year: exit the whole position the same run an S-3, 424B or offering release appears (wires.py, SEC WARNINGS).\n- Cash ($433, of which $150 settled; the rest settles Wednesday): no new position without a written deep dive first.",
+      "tickers": [
+        "MUU",
+        "MU",
+        "IOVA"
+      ]
     }
   ]
 }

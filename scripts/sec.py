@@ -7,6 +7,7 @@ SEC_CONTACT environment variable or .secrets/sec_contact (git-ignored) and sent 
 only. Without it every call here returns nothing.
 
   python scripts/sec.py JELD [--days 30]      # a ticker's recent filings
+  python scripts/sec.py JELD --exhibit        # the press release in its latest 8-K (--n 1 for the one before)
   python scripts/sec.py --current 8-K         # the live 8-K feed
 """
 from __future__ import annotations
@@ -131,6 +132,39 @@ def filings(sym: str, start: dt.date, end: dt.date | None = None) -> list[dict]:
     return out
 
 
+def html_text(raw: str) -> str:
+    """Readable text from an EDGAR HTML document."""
+    raw = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
+    raw = re.sub(r"(?i)<br\s*/?>|</(p|div|tr|li|h[1-6]|table)>", "\n", raw)
+    raw = re.sub(r"(?i)</t[dh]>", " | ", raw)
+    txt = html.unescape(re.sub(r"<[^>]+>", " ", raw)).replace("\xa0", " ")
+    lines = [re.sub(r"[ \t|]+", " ", ln).strip(" |") for ln in txt.splitlines()]
+    return "\n".join(ln for ln in lines if ln)
+
+
+def documents(filing_url: str) -> list[dict]:
+    """Every document in a filing (from its folder's index.json)."""
+    base = filing_url.rsplit("/", 1)[0]
+    idx = json.loads(get(base + "/index.json"))
+    return [{"name": it["name"], "size": it.get("size"), "url": f"{base}/{it['name']}"}
+            for it in idx.get("directory", {}).get("item", [])]
+
+
+def exhibit(sym: str, form: str = "8-K", n: int = 0, days: int = 120, max_chars: int = 12000) -> str:
+    """Text of the press release (exhibit 99.x) in the ticker's n-th most recent filing of this form,
+    or the filing's main document when there is no exhibit 99."""
+    fl = [f for f in filings(sym, dt.date.today() - dt.timedelta(days=days)) if f["form"].startswith(form)]
+    if len(fl) <= n:
+        return f"no {form} filing #{n} in {days} days for {sym}"
+    f = fl[n]
+    docs = [d for d in documents(f["url"]) if d["name"].lower().endswith((".htm", ".html", ".txt"))]
+    ex = [d for d in docs if re.search(r"ex-?_?99|exhibit_?99|dex99", d["name"], re.I)]
+    target = ex[0]["url"] if ex else f["url"]
+    body = html_text(get(target).decode("utf-8", "ignore"))
+    head = f"{sym} {f['form']} filed {f['date']} ({'; '.join(f['events'])})\nsource: {target}\n\n"
+    return head + body[:max_chars] + ("\n[... truncated]" if len(body) > max_chars else "")
+
+
 def tags(fl: list[dict]) -> list[str]:
     """Catalyst tags implied by filings (same vocabulary as movers.TAGS where they overlap)."""
     out = []
@@ -181,7 +215,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("ticker", nargs="?")
     ap.add_argument("--days", type=int, default=30)
-    ap.add_argument("--current", help="form type for the live feed, e.g. 8-K, 424B5, SC 13D")
+    ap.add_argument("--current", help="form type for the live feed, e.g. 8-K, 424B5, SCHEDULE 13D")
+    ap.add_argument("--exhibit", action="store_true", help="print the press release (exhibit 99) of a recent filing")
+    ap.add_argument("--form", default="8-K", help="with --exhibit: form type (default 8-K)")
+    ap.add_argument("--n", type=int, default=0, help="with --exhibit: 0 = most recent, 1 = the one before, ...")
+    ap.add_argument("--chars", type=int, default=12000)
     a = ap.parse_args()
     if not enabled():
         print("SEC contact not configured (.secrets/sec_contact or SEC_CONTACT)")
@@ -190,6 +228,9 @@ def main() -> int:
         for f in current(a.current):
             print(f"{(f['at'] or '')[:16]} {f['form']:8} {str(f['ticker'] or '-'):6} {f['company'][:40]:40} "
                   f"{'; '.join(f['events'])}")
+        return 0
+    if a.exhibit:
+        print(exhibit(a.ticker.upper(), a.form, a.n, max(a.days, 120), a.chars))
         return 0
     for f in filings(a.ticker, dt.date.today() - dt.timedelta(days=a.days)):
         print(f"{f['date']} {f['form']:10} {','.join(f['items']):16} {'; '.join(f['events'])[:70]} {f['url']}")

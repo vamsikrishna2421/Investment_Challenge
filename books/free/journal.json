@@ -83,6 +83,18 @@
         "VRT",
         "ETN"
       ]
+    },
+    {
+      "id": "J0007",
+      "ts": "2026-09-30T03:15:17Z",
+      "kind": "plan",
+      "title": "Plan update: deep dives on MU and NKE; option sizes cut",
+      "body": "Plan change after the deep dives (research/dossiers/MU-2026-09-29.md, NKE-2026-09-29.md):\n- Micron (Wed): at most one MUU Oct 2 call at a 37-38 strike (about $250-300), bought at the 9:55 or 10:25 run only if MU is flat or up; skip if MU is down more than 2%. The options are fairly priced against history (7.6% implied vs an 8.1% average move), so this is a bounded bet on direction, not an edge: budget a total loss. It pays if MU rises more than about 4%, which happened after 5 of the last 12 reports. Exits: half at Thursday's open on a gap up, the rest by noon; everything at the open on a gap down.\n- Nike (Thu): one or two Oct 2 calls at a 36 strike (about $150-300 in total) near Thursday's 3:55 PM run, only if NKE holds its $35.22 52-week low. Implied 8.6% vs an 8.7% average move; 6 of the last 9 reactions were down, but 9% of the float is short at the lows. Sell at Friday's open.\n- Never more than 60% of the book in options at once. Weekend crypto only with a clear trend.",
+      "tickers": [
+        "MUU",
+        "MU",
+        "NKE"
+      ]
     }
   ]
 }

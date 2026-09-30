@@ -86,6 +86,32 @@ day), then CATALYSTS. NEW marks items first seen in this run.
 For a real candidate, open the release: a raised guide, an order or contract worth >=10% of annual revenue, a
 refinancing that removes a near-term maturity, an approval. Then apply the entry rules in 1b.
 
+## 1d. Deep dive on every shortlisted stock (before any new position)
+
+```bash
+python3 scripts/dossier.py TICKER --save              # numbers: move, filings, insiders, peers, fair-value range
+python3 scripts/dossier.py TICKER --peers A,B,C --save  # when the automatic industry peers are the wrong comparison
+python3 scripts/sec.py TICKER --exhibit [--n 1]       # the press release behind the latest 8-K (primary source)
+```
+Then write the deep dive under the numbers in `research/dossiers/TICKER-<date>.md`, citing sources:
+what changed and how big relative to the company; firm vs contingent (orders, backlog, guide ranges); one-offs that
+flatter or hurt the numbers; dilution and financing; competition, customers, regulation; what the current price
+assumes (implied multiple vs the right peers; for cyclicals, peak vs mid-cycle earnings); what decides the stock and
+the next checkpoint; and the verdict for this challenge (trade or not, trigger, stop, size). For an earnings trade,
+also compare the options' implied move (at-the-money straddle / spot) with the stock's past earnings reactions.
+Journal a short summary in each book. No new position without a written verdict (exits and stops don't wait).
+The fair-value range is arithmetic on other companies' multiples, not a forecast; check the peer set and the
+earnings base before quoting it.
+
+## 1e. Social attention
+
+`python3 scripts/social.py [--save]` lists Stocktwits' trending US stocks with size and whether a filing or wire
+release sits behind the buzz; `python3 scripts/social.py IOVA MU` shows message rate and bull/bear tags. Use it
+as a crowding gauge: most stock-picking accounts have negative skill on average (Kakhbod et al. 2023: 56% of
+29,000 Stocktwits finfluencers at -2.3% a month; fading them earned 1.2% a month). A trending name with no
+filing or release behind it is a pump-risk flag, never a buy reason. X accounts in `config/x_accounts.json` are read
+only when `.secrets/x_bearer` holds a paid X API token ($0.005 per post read): `python3 scripts/social.py --x`.
+
 ## 2. Decide
 
 * Read `ALERTS` first: new headlines since the last news run, movers (>=6% on the day or >=4% extended-hours)

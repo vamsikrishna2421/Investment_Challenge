@@ -1,0 +1,11 @@
+{
+  "note": "Accounts read by scripts/social.py --x once an X API token is in .secrets/x_bearer (X charges $0.005 per post read). Starter list: edit freely. Purpose decides how a post is used: headlines are checked against the primary source before acting; research is read as a claim to verify; nothing here is a buy signal on its own.",
+  "accounts": [
+    {"handle": "DeItaone", "purpose": "headlines", "why": "fast relay of wire and Bloomberg headlines"},
+    {"handle": "FirstSquawk", "purpose": "headlines", "why": "market-moving headlines"},
+    {"handle": "LiveSquawk", "purpose": "headlines", "why": "market-moving headlines"},
+    {"handle": "unusual_whales", "purpose": "flow", "why": "unusual options activity, filings, congressional trades"},
+    {"handle": "muddywatersre", "purpose": "short-research", "why": "short reports: a warning check on anything we hold"},
+    {"handle": "CitronResearch", "purpose": "short-research", "why": "short and long calls that move small caps"}
+  ]
+}

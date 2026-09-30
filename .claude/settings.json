@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__Robinhood__place_equity_order",
+      "mcp__Robinhood__place_option_order",
+      "mcp__Robinhood__place_crypto_order",
+      "mcp__Robinhood__review_equity_order",
+      "mcp__Robinhood__review_option_order",
+      "mcp__Robinhood__preview_crypto_order",
+      "mcp__Robinhood__cancel_equity_order",
+      "mcp__Robinhood__cancel_option_order",
+      "mcp__Robinhood__cancel_crypto_order",
+      "mcp__Robinhood__exercise_option",
+      "mcp__Robinhood__cancel_option_exercise",
+      "mcp__Robinhood__add_to_watchlist",
+      "mcp__Robinhood__remove_from_watchlist",
+      "mcp__Robinhood__create_watchlist",
+      "mcp__Robinhood__update_watchlist",
+      "mcp__Robinhood__follow_watchlist",
+      "mcp__Robinhood__unfollow_watchlist",
+      "mcp__Robinhood__add_option_to_watchlist",
+      "mcp__Robinhood__remove_option_from_watchlist",
+      "mcp__Robinhood__create_alert",
+      "mcp__Robinhood__update_alert",
+      "mcp__Robinhood__delete_alert",
+      "mcp__Robinhood__mark_alerts_read",
+      "mcp__Robinhood__create_scan",
+      "mcp__Robinhood__update_scan_config",
+      "mcp__Robinhood__update_scan_filters"
+    ]
+  }
+}

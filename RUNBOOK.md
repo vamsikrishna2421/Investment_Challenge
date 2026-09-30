@@ -112,6 +112,15 @@ as a crowding gauge: most stock-picking accounts have negative skill on average 
 filing or release behind it is a pump-risk flag, never a buy reason. X accounts in `config/x_accounts.json` are read
 only when `.secrets/x_bearer` holds a paid X API token ($0.005 per post read): `python3 scripts/social.py --x`.
 
+## 1f. Robinhood connector (read-only)
+
+The user connected Robinhood for information only: no real trading. Use its read tools (quotes, option chains and
+quotes with Greeks, fundamentals, financials, earnings calendar and results, analyst ratings, historicals, scanner
+previews, SEC filings) to cross-check prices and paper fills. Never call order, cancel, exercise, watchlist, alert or
+scan-editing tools; they are denied in `.claude/settings.json`. Never read or publish the user's own account data
+(accounts, positions, orders, P&L) unless the user asks, and never put it in the repo or on the dashboards: both are
+public.
+
 ## 2. Decide
 
 * Read `ALERTS` first: new headlines since the last news run, movers (>=6% on the day or >=4% extended-hours)

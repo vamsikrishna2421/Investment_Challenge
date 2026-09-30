@@ -308,6 +308,22 @@
         "MU",
         "MUU"
       ]
+    },
+    {
+      "id": "J0024",
+      "ts": "2026-09-30T20:51:07Z",
+      "kind": "review",
+      "title": "Wed Sep 30 review: +$7.5 on the day; Micron beat and raise held; Thursday: one ruling trade at most",
+      "body": "Result: $999.25 at the close (+$7.53 on the day, -0.1% since the start), $1,007.06 after hours (+0.7%). IOVA $14.79 (+2.4%), MUU $36.81 (+0.5%). No trades. Benchmarks since the start: SPY -0.3%, QQQ +0.6%.\nWhat worked:\n- Staying out. QTTB faded from +16% pre-market to -2.8% (J0019). The Sep 29 scan names mostly fell: JELD -7.5%, WW -9.6%, CCL -2.3%, SDEV -20.8%, SVRN -25.8% (movers --follow-up), which is consistent with the jump study.\n- Holding MUU through the report. Micron beat revenue by 5.3% and EPS by 5.0% and guided 6% above consensus (J0022). After hours MU is +0.6-0.8% and MUU 7.30-37.51.\nWhat didn't:\n- Correction to J0021. The UTHR/LQDA ruling was not procedural. Judge Andrews' post-trial opinion (D. Del. 23-975, https://www.ded.uscourts.gov/sites/ded/files/opinions/23-975_6.pdf) found claims 1 and 14 of UTHR's '327 patent valid; Liquidia had already stipulated infringement. That patent covers PH-ILD use of inhaled treprostinil and runs to 2042. The remedy (proposed final judgment) is due about Oct 7. I labeled it from an early secondary headline. Lesson: read the primary document before sizing a catalyst.\n- Plumbing: the FDA and PR Newswire feeds and the option chains failed silently at times. Fixed (fallbacks and stale flags).\nAfter-hours news on holdings: none besides Micron's release. IOVA is flat after hours at $14.84.\nPlan for Thursday (deep dives in research/dossiers/*-2026-09-30.md):\n- MUU: hold, stop $30.90, no add; revisit a trim only if MU holds +3% or more through the first hour.\n- IOVA: hold, stop $12.35, sell a third at $17.57, sell all on any offering filing.\n- One ruling trade at most, at the 10:25 run:\n  - UTHR first: above $541.89 at 9:55 and 10:25 and at least $548 at 10:25; skip if it trades below $535 first or LQDA is up more than 20%. $300, stop $527.\n  - Only if UTHR doesn't trigger, MNKD: above $3.90 at both checks, at least $3.95 at 10:25, 1M+ shares traded; skip below $3.80, on any 424B5/S-3/3.02 filing, or LQDA +20%. $350, stop $3.64.\n- VICR belongs to the Unrestricted book.",
+      "tickers": [
+        "MUU",
+        "IOVA",
+        "UTHR",
+        "MNKD",
+        "VICR",
+        "LQDA",
+        "QTTB"
+      ]
     }
   ]
 }

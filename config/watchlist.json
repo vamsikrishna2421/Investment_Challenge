@@ -1,19 +1,18 @@
 {
-  "strategy": "Holding MUU (2x Micron) through tonight's report without adding (the options price a 7.6% move, in line with history: no edge) and IOVA after its guidance raise (stop $12.35; exit on any share offering). No day-two entries from the scan: our 241-jump study found them lagging SPY. Cash waits for a name with a written deep dive.",
+  "strategy": "Holding MUU (2x Micron) after Micron's beat and raise (no add; stop $30.90) and IOVA (stop $12.35; exit on any share offering). Thursday: at most one trade on the United Therapeutics patent win, only on the day-two test: UTHR on strength ($300, stop $527) or else MNKD ($350, stop $3.64). Deep dives in research/dossiers.",
   "focus": [
     "MUU",
     "MU",
     "IOVA",
+    "UTHR",
+    "MNKD",
+    "LQDA",
+    "VICR",
+    "NKE",
     "SOXL",
     "NVDA",
-    "NKE",
     "TSLA",
-    "TSLL",
-    "CCL",
-    "JELD",
     "GNRC",
-    "VICR",
-    "SEI",
     "FEIM"
   ],
   "tickers": [

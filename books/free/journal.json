@@ -150,6 +150,19 @@
         "MU",
         "MUU"
       ]
+    },
+    {
+      "id": "J0013",
+      "ts": "2026-09-30T20:51:07Z",
+      "kind": "review",
+      "title": "Wed Sep 30 review: -$35 (the MUU call); Thursday: sell the call, VICR on confirmation, NKE calls at 3:55",
+      "body": "Result: about $965 at the close (-3.5% since the start). The MUU Oct 2 $37 call (cost $2.90) closed at $2.50 bid / $2.60 ask with MUU at $36.81. MUU is $37.30-37.51 after hours after Micron's beat and raise (J0012).\nWhat didn't work: the call was bought at 9:56 AM, so it paid a full day of time decay and implied-vol premium while MU went nowhere. The paper fill used the options.json ask ($2.90), $0.15 above Robinhood's live ask. Lesson: for event options, buy close to the event (the NKE plan buys at 3:55 PM), and re-sync the chain right before the fill so the price is current.\nPlan for Thursday:\n- MUU call: sell at the first run if MUU opens below $36.81, otherwise by the 11:55 run, or at $5.80 if it gets there. Never hold it into Friday.\n- VICR (J0023; deep dive in research/dossiers/VICR-2026-09-30.md: royalties lift Q3 sequential growth to more than 30%, one-time vs recurring undisclosed, 53x forward):\n  - Buy $450 at the 10:25 run only if VICR is above $317 at the 9:55 and 10:25 runs, its low since 9:45 is at or above $317, and relative volume is 2x or more.\n  - $330 limit; skip above $340. Stop $289, a full gap fill.\n- NKE: one or two Oct 2 36-strike calls (about $125-255) at the 3:55 PM run, if NKE is at or above $35.16 (Wednesday's low) and made no new low in the final hour. Sell at Friday's open. Keep total options under 60% of the book.\n- 4:10 PM: write my own payroll and unemployment probabilities first, then run kalshi.py --save and forecasts.py add.",
+      "tickers": [
+        "MUU",
+        "MU",
+        "NKE",
+        "VICR"
+      ]
     }
   ]
 }

@@ -37,10 +37,24 @@ Option chains: `.cache/options.json` (nearest two expiries for `books/free/watch
 ## 1b. Big-mover catalyst scan (post-close daily, and the 8:40 run)
 
 ```bash
-python3 scripts/movers.py --min-move 15 --min-mcap 100 --save     # today's big gainers, why they moved
-python3 scripts/movers.py --min-move 15 --losers                  # big losers (puts / inverse ideas, free book)
-python3 scripts/movers.py --follow-up                             # how earlier scans' names did since
+python3 scripts/movers.py --min-move 15 --save          # today's big gainers, why they moved
+python3 scripts/movers.py --min-move 15 --losers --save # big losers (puts / inverse ideas, free book)
+python3 scripts/movers.py --follow-up                   # how earlier scans' names did since
+python3 scripts/sec.py TICKER --days 30                 # a company's filings, 8-K items decoded
 ```
+Filters: NYSE/Nasdaq/NYSE American only (no OTC), market cap >= $30M, >= $1M traded on the day, no share-price
+floor. Each name gets its one-year risk profile: annualized volatility, the number of +/-15% days, and the
+jump in standard deviations of its own history (a 15% day is news for a stock that moves 2% a day, routine
+for one that moves 8%). Noisy stocks (volatility >= 120% or >= 10 such days in the year) are skipped unless
+`--include-noisy`: on 241 jumps in Aug-Sep 2026 they fell a median 16% vs SPY in the next 10 sessions, the
+rest 4%. Market cap under $100M scores -3 (median -13% over 10 sessions). Also scored: share count growth
+over the year (serial issuers), reverse splits in 18 months, price under $1 (exchange deficiency, usually
+cured by a reverse split), and SEC filings around the
+jump (8-K items: 1.01 material agreement, 2.02 results, 2.03 new debt, 3.02 unregistered share sale,
+3.01 delisting notice, 4.02 unreliable financials; S-1/S-3/424B offerings; new 13D stakes).
+SEC access needs `.secrets/sec_contact` (git-ignored, one line: the user's account email, which they approved
+on Sep 29 for SEC requests only; it is sent to sec.gov and nowhere else). If a rebuilt container lost it,
+recreate it from the account email.
 Deep-dive the top 1-3 by score: read the release (what changed, how big relative to the company:
 guidance change %, order value / revenue, debt removed / market cap), check dilution risk (shelf, offering
 after the spike), valuation (EV/sales vs growth, analyst targets), and write verdicts to the journal.
@@ -51,18 +65,24 @@ de-SPACs and financings.
 To catch jumps from the last month that have not run yet (the "signal shown, rally not started" names):
 ```bash
 python3 scripts/movers.py --lookback 30 --min-move 15 --save   # ~10 min: every >=15% day on >=2x volume in 30 sessions
+                                                               # (same filters; noisy stocks counted but not researched)
 ```
 It groups them by what the price did since: `holding` (kept the jump, has not run: the main list),
 `extending` (drift under way), `fading`, `round-trip` (gave it all back: the market rejected it).
 Run it on Sundays and whenever the daily scan is thin; deep-dive the top `holding` names like 1b.
+`python3 scripts/jump_study.py --save` re-tests the idea on the same data (returns vs SPY 5 and 10 sessions
+after each jump, by volatility, jump size, price, market cap, catalyst, and entry timing). On the Sep 29 run
+no entry rule beat the market: the scan supplies research, not automatic entries.
 
 ## 1c. Live catalyst feed (every run)
 
 `python3 scripts/wires.py [--hours 6]` pulls the newest company press releases from every wire (Stock Titan's
-100-item feed plus PR Newswire), Nasdaq trading halts and FDA press releases. Each release is tagged by type and
+100-item feed plus PR Newswire), SEC EDGAR's live filings (8-Ks by item, 424B offerings, new 13D stakes),
+Nasdaq trading halts and FDA press releases. Each release is tagged by type and
 shown with market cap, the dollar figure in the headline as a share of market cap, and the price reaction
 (regular and extended hours, relative volume). Order of reading: HOLDINGS / WATCHLIST (anything about what we own,
-especially offerings), HALTS (T1 = news pending), then CATALYSTS. NEW marks items first seen in this run.
+especially offerings), HALTS (T1 = news pending), SEC EVENTS, SEC WARNINGS (never buy a name in this list that
+day), then CATALYSTS. NEW marks items first seen in this run.
 For a real candidate, open the release: a raised guide, an order or contract worth >=10% of annual revenue, a
 refinancing that removes a near-term maturity, an approval. Then apply the entry rules in 1b.
 

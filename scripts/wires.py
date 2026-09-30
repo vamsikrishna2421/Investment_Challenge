@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Live catalyst feed: the newest company press releases (every wire, via Stock Titan, plus PR
-Newswire), Nasdaq trading halts and FDA announcements. Each item is tagged by catalyst type and
+Newswire), SEC EDGAR's live filings (8-K events by item number, offering prospectuses, 13D stakes),
+Nasdaq trading halts and FDA announcements. Each item is tagged by catalyst type and
 joined with the company's size and the stock's price reaction. Items first seen in this run are
 marked NEW.
 
@@ -29,6 +30,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import movers  # noqa: E402
 import portfolio as pfm  # noqa: E402
+import sec  # noqa: E402
 
 ROOT = pfm.ROOT
 CACHE = ROOT / ".cache"
@@ -142,6 +144,35 @@ def fda() -> tuple[list[dict], list[str]]:
         return [], [f"fda: {str(e)[:100]}"]
 
 
+SEC_FEEDS = (("8-K", 2), ("424B5", 1), ("SCHEDULE 13D", 1))  # (form, pages of 100)
+SEC_TELLING = {"1.01", "1.02", "1.03", "2.01", "2.02", "2.03", "3.01", "3.02", "4.02", "5.01"}
+SEC_WARN = {"1.02", "3.01", "3.02", "4.02"}  # agreement ended, delisting notice, share sale, unreliable financials
+
+
+def sec_feed() -> tuple[list[dict], list[str]]:
+    """EDGAR's live feeds: 8-K events (decoded item numbers), offering prospectuses, activist 13D stakes."""
+    if not sec.enabled():
+        return [], ["sec: no contact configured"]
+    rows, errors = [], []
+    for form, pages in SEC_FEEDS:
+        for start in range(0, pages * 100, 100):
+            try:
+                for f in sec.current(form, 100, start):
+                    try:
+                        at = dt.datetime.fromisoformat(f["at"]).astimezone(dt.timezone.utc) if f.get("at") else None
+                    except ValueError:
+                        at = None
+                    what = "; ".join(f["events"]) if f["events"] else (
+                        "offering prospectus (shares or notes)" if f["form"].startswith("424B") else
+                        "activist stake (13D)" if "13D" in f["form"] else "filed")
+                    rows.append({"src": "sec", "ticker": f["ticker"], "name": f["company"], "at": at,
+                                 "title": f"{f['form']}: {what}", "link": f.get("link"), "items": f["items"],
+                                 "form": f["form"], "sec_tags": sec.tags([{"form": f["form"], "items": f["items"]}])})
+            except Exception as e:  # noqa: BLE001
+                errors.append(f"sec {form}: {str(e)[:80]}")
+    return rows, errors
+
+
 def load_universe() -> dict:
     """Listed US stocks >= $50M market cap (symbol -> name, size), refreshed once a day."""
     f = CACHE / "universe.json"
@@ -194,7 +225,8 @@ def main() -> int:
     rel, e1 = releases()
     hl, e2 = halts()
     fd, e3 = fda()
-    errors = e1 + e2 + e3
+    sf, e4 = sec_feed()
+    errors = e1 + e2 + e3 + e4
     uni = load_universe()
     mine = held_and_watched()
 
@@ -204,7 +236,7 @@ def main() -> int:
     seen = {k: v for k, v in seen.items() if v >= keep_after}
 
     rows, dup = [], set()
-    for r in rel + hl:
+    for r in rel + hl + sf:
         if not r.get("at") or r["at"] < since or not r.get("ticker"):
             continue
         key = (r["ticker"], re.sub(r"\W+", " ", r["title"].lower()).strip()[:80], r.get("code"))
@@ -216,7 +248,7 @@ def main() -> int:
         r["mcap"] = (u or {}).get("mcap")
         r["name"] = r.get("name") or (u or {}).get("name")
         aliases = tuple(x for x in ((u or {}).get("display"),) if x)
-        r["tags"] = [] if r["src"] == "halts" else [
+        r["tags"] = [] if r["src"] == "halts" else r["sec_tags"] if r["src"] == "sec" else [
             t for t in movers.classify([{"title": r["title"]}], [], r.get("name") or "", r["ticker"], aliases)
             if t != "no-clear-news"]
         amt = amount_usd(r["title"])
@@ -236,7 +268,16 @@ def main() -> int:
             return False
         if r["src"] == "halts":
             return r.get("code") in ("T1", "T2", "LUDP", "LUDS", "M")
+        if r["src"] == "sec":
+            return telling(r)
         return bool(set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-target", "dilution"}))
+
+    def telling(r):
+        return (bool(set(r.get("items") or []) & SEC_TELLING) or r.get("form", "").startswith("424B")
+                or r.get("form") in ("SCHEDULE 13D", "SC 13D"))
+
+    def warning(r):
+        return r.get("form", "").startswith("424B") or bool(set(r.get("items") or []) & SEC_WARN)
 
     look = sorted({r["ticker"] for r in rows if worth(r)})[:80]
     import marketdata  # noqa: E402  (after sys.path setup)
@@ -268,8 +309,10 @@ def main() -> int:
             s += 1
         if tags & {"takeover-target"}:
             s -= 2
-        if tags & {"dilution", "reverse-split"}:
+        if tags & {"dilution", "reverse-split", "red-flag"}:
             s -= 2
+        if "activist-stake" in tags:
+            s += 1
         mc = (r.get("mcap") or 0) / 1e6
         s += 1 if 100 <= mc <= 20000 else 0
         if r.get("amount_to_mcap") and r["amount_to_mcap"] >= 0.1:
@@ -299,9 +342,10 @@ def main() -> int:
         return (f"{'NEW ' if r['new'] else '    '}{age:>4}m {r['ticker']:6} {mc:>10}{px}{amt} | "
                 f"{','.join(r['tags']) or r.get('code') or '-'} | {r['title'][:110]}")
 
-    print(f"wires {now.astimezone(pfm.ET).strftime('%a %H:%M ET')}: {len(rel)} releases, {len(hl)} halts, {len(fd)} FDA items "
+    print(f"wires {now.astimezone(pfm.ET).strftime('%a %H:%M ET')}: {len(rel)} releases, {len(sf)} SEC filings, "
+          f"{len(hl)} halts, {len(fd)} FDA items "
           f"(last {a.hours:g}h shown){' | errors: ' + '; '.join(errors) if errors else ''}")
-    mine_rows = [r for r in rows if r["mine"] and r["src"] != "halts"]
+    mine_rows = [r for r in rows if r["mine"] and r["src"] != "halts" and (r["src"] != "sec" or telling(r))]
     if mine_rows:
         print("\nHOLDINGS / WATCHLIST")
         for r in sorted(mine_rows, key=lambda r: r["at"], reverse=True):
@@ -311,7 +355,18 @@ def main() -> int:
         print("\nHALTS (listed stocks)")
         for r in sorted(hrows, key=lambda r: r["at"], reverse=True)[:15]:
             print(line(r))
-    mat = [r for r in rows if r["src"] != "halts" and not r["mine"] and r["listed"]
+    srows = [r for r in rows if r["src"] == "sec" and not r["mine"] and r["listed"] and telling(r)]
+    ev_rows = [r for r in srows if not warning(r)]
+    warn_rows = [r for r in srows if warning(r)]
+    if ev_rows:
+        print("\nSEC EVENTS (listed stocks: material agreements, results, new debt, deals closed, new 13D stakes)")
+        for r in sorted(ev_rows, key=lambda r: (-r["rank"], -r["at"].timestamp()))[:20]:
+            print(f"[{r['rank']:+d}] " + line(r))
+    if warn_rows:
+        print("\nSEC WARNINGS (offerings, unregistered share sales, delisting notices, unreliable financials)")
+        for r in sorted(warn_rows, key=lambda r: -r["at"].timestamp())[:15]:
+            print("     " + line(r))
+    mat = [r for r in rows if r["src"] not in ("halts", "sec") and not r["mine"] and r["listed"]
            and (a.all or set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-target", "dilution"}))]
     if mat:
         print("\nCATALYSTS (listed stocks, ranked)")

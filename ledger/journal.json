@@ -183,6 +183,20 @@
         "FEIM",
         "KOD"
       ]
+    },
+    {
+      "id": "J0014",
+      "ts": "2026-09-30T02:45:07Z",
+      "kind": "research",
+      "title": "Evidence check: 241 jumps, noise rule, no $1 floor, breakout triggers withdrawn",
+      "body": "Tested on 241 one-day jumps (15% or more, at least 2x volume) across 3,914 NYSE/Nasdaq/NYSE American stocks with no share-price floor, market cap of at least $30M and at least $0.5M traded a day, Aug 18 to Sep 29. Returns are measured against SPY (scripts/jump_study.py, research/movers/study-2026-09-29.json).\n\n- All jumps: median -3.0% over the next 5 sessions and -5.1% over 10. Buying the day after a jump lost to the market in the typical case; the gains sit in a minority of names.\n- Noise, the user's volatility idea: stocks with one-year volatility of 120% or more, or 10 or more +/-15% days in the prior year, fell a median 15.7% over 10 sessions, and half lost more than 15%. The rest fell 4.1%. Rule adopted: skip those stocks. A stricter first version (4 or more such days) would have excluded IOVA, VICR and FEIM for no gain.\n- Share price: under $1 was no worse than $1-5 (10-session medians -5.6% and -5.1%). The $1 floor was the wrong filter and is gone.\n- Market cap: under $100M, median -13.2% over 10 sessions, and 19 of 40 lost more than 15%. Still scanned for visibility, but scored -3.\n- Calm stocks of $100M or more with fundamental news (71 jumps): median +0.3% at 5 sessions and -2.4% at 10; 7 of 55 gained more than 15% and 4 lost more than 15%. On average the market priced the news on day one.\n- Entry timing, calm stocks of $100M or more: buying at the first new post-jump closing high did worse than buying at the jump-day close (5-session median -2.2% vs -1.1%, up in 21 of 61 vs 52 of 117).\n\nDecision: the breakout triggers in J0013/J0004 (GNRC above $213, VICR above $292, SEI above $71, FEIM above $89) are withdrawn. These names stay on watch without a buy rule. The scan feeds research, not this week's entries. Scheduled catalysts (Micron, Nike, the jobs report) and the positions we hold stay the plan.\n\nCaveats: one market regime, overlapping windows, 10-session horizon, and only stocks still listed and above the size floor today (survivors), which flatters the small caps.",
+      "tickers": [
+        "GNRC",
+        "VICR",
+        "SEI",
+        "FEIM",
+        "IOVA"
+      ]
     }
   ]
 }

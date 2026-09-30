@@ -31,11 +31,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import portfolio as pfm  # noqa: E402
+import sec  # noqa: E402
 
 ROOT = pfm.ROOT
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
-SEC_UA = "Investment Challenge research (github.com/vamsikrishna2421/Investment_Challenge)"
 
 # Catalyst tags, checked in order; the first that matches a headline wins for that headline.
 TAGS = [
@@ -109,39 +109,11 @@ def gnews(query: str, limit: int = 8, window: str = "when:3d") -> list[dict]:
     return out
 
 
-_CIK: dict | None = None
-_SEC_OFF = False
-
-
-def sec_filings(sym: str, days: int = 4) -> list[dict]:
-    """Recent SEC filings (form, date, items/description) for the ticker.
-    EDGAR rejects anonymous clients (403); after the first refusal the run skips it."""
-    global _CIK, _SEC_OFF
-    if _SEC_OFF:
-        return []
+def sec_window(sym: str, start: dt.date, end: dt.date | None = None) -> list[dict]:
+    """SEC filings in a date window; empty when EDGAR is unreachable or no contact is configured."""
     try:
-        if _CIK is None:
-            data = json.loads(http("https://www.sec.gov/files/company_tickers.json", {"User-Agent": SEC_UA}))
-            _CIK = {v["ticker"].upper(): int(v["cik_str"]) for v in data.values()}
-        cik = _CIK.get(sym.upper())
-        if not cik:
-            return []
-        sub = json.loads(http(f"https://data.sec.gov/submissions/CIK{cik:010d}.json", {"User-Agent": SEC_UA}))
-        rec = sub.get("filings", {}).get("recent", {})
-        cutoff = (dt.date.today() - dt.timedelta(days=days)).isoformat()
-        out = []
-        for i, form in enumerate(rec.get("form", [])):
-            fdate = rec["filingDate"][i]
-            if fdate < cutoff:
-                break
-            acc = rec["accessionNumber"][i].replace("-", "")
-            out.append({"form": form, "date": fdate, "items": rec.get("items", [""] * (i + 1))[i],
-                        "desc": rec.get("primaryDocDescription", [""] * (i + 1))[i],
-                        "url": f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc}/{rec['primaryDocument'][i]}"})
-        return out[:10]
+        return sec.filings(sym, start, end)
     except Exception as e:  # noqa: BLE001
-        if "403" in str(e):
-            _SEC_OFF = True
         return [{"error": str(e)[:120]}]
 
 
@@ -177,17 +149,9 @@ def classify(news: list[dict], filings: list[dict], name: str = "", sym: str = "
                 if tag not in tags:
                     tags.append(tag)
                 break
-    for f in filings:
-        items = f.get("items") or ""
-        form = f.get("form") or ""
-        if form in ("S-1", "S-3", "424B5", "424B4", "424B3", "F-1", "F-3") and "dilution" not in tags:
-            tags.append("dilution")
-        if "1.01" in items and "contract-order" not in tags:
-            tags.append("contract-order")  # material definitive agreement
-        if "2.02" in items and "earnings-guidance" not in tags:
-            tags.append("earnings-guidance")
-        if "1.03" in items:
-            tags.append("refinancing")  # bankruptcy
+    for t in sec.tags([f for f in filings if "error" not in f]):
+        if t not in tags:
+            tags.append(t)
     return tags or ["no-clear-news"]
 
 
@@ -207,12 +171,30 @@ def score(row: dict) -> int:
     rv = row.get("rel_volume") or 0
     s += 2 if rv >= 5 else 1 if rv >= 2 else 0
     mc = (row.get("market_cap") or 0) / 1e6
-    s += 1 if 300 <= mc <= 20000 else (-1 if mc < 150 else 0)
+    s += 1 if 300 <= mc <= 20000 else (-3 if mc < 100 else 0)  # under $100M: median -13% in 10 sessions after a jump
     g = row.get("revenue_growth")
     if g is not None and g > 0.3:
         s += 1
     if row.get("off_52w_high_pct") is not None and row["off_52w_high_pct"] < -60:
         s += 1  # deeply beaten down: more room for a genuine re-rating
+    # How unusual the jump is for this stock: a 15% day is news for a quiet stock, routine for a noisy one.
+    z = row.get("jump_sigma")
+    if z is not None:
+        s += 2 if z >= 6 else 1 if z >= 4 else -2 if z < 2.5 else 0
+    if row.get("noisy"):
+        s -= 3
+    if (row.get("shares_change_1y_pct") or 0) > 25:
+        s -= 2  # serial issuer: new shares keep capping the price
+    if row.get("reverse_split"):
+        s -= 2
+    if (row.get("price") or 99) < 1:
+        s -= 1  # under $1: exchange deficiency notice, usually cured by a reverse split
+    if "red-flag" in tags:
+        s -= 3
+    if row.get("industry") == "Shell Companies":
+        s -= 3  # SPAC or shell: trades on deal rumors, not on a business
+    if "activist-stake" in tags:
+        s += 1
     return s
 
 
@@ -269,7 +251,9 @@ def enrich(q: dict) -> dict:
             seen.add(t)
             uniq.append(n)
     row["news"] = uniq[:10]
-    row["filings"] = sec_filings(sym)
+    row["filings"] = sec_window(sym, dt.date.today() - dt.timedelta(days=4))
+    row.update(q.get("_risk") or {})
+    row.update(issuance(sym))
     row["tags"] = classify(row["news"], [f for f in row["filings"] if "error" not in f],
                            row.get("name") or "", sym)
     row["score"] = score(row)
@@ -280,7 +264,8 @@ def screen(min_move: float, losers: bool, size: int = 100) -> list[dict]:
     import yfinance as yf  # type: ignore
     from yfinance import EquityQuery as Q  # type: ignore
     cond = Q("lt", ["percentchange", -min_move]) if losers else Q("gt", ["percentchange", min_move])
-    q = Q("and", [cond, Q("eq", ["region", "us"]), Q("gte", ["intradayprice", 1]), Q("gt", ["dayvolume", 300000])])
+    q = Q("and", [cond, Q("eq", ["region", "us"]), Q("gt", ["dayvolume", 100000]),
+                  Q("is-in", ["exchange", *EXCHANGES])])
     r = yf.screen(q, sortField="percentchange", sortAsc=losers, size=size)
     return r.get("quotes", [])
 
@@ -293,28 +278,35 @@ def derivative(sym: str) -> bool:
     return len(sym) > 4 and bool(re.search(r"(W|WS|U|R)$", sym[-2:]))
 
 
-def universe(min_mcap_m: float, min_avg_vol: int = 200_000) -> dict[str, dict]:
-    """Every US-listed common stock above the size and liquidity floor (Yahoo screener, ~3,300 names)."""
+def universe(min_mcap_m: float, min_avg_vol: int = 100_000, min_dollar_vol: float = 500_000) -> dict[str, dict]:
+    """Every NYSE/Nasdaq/NYSE American common stock above the size and liquidity floor. No share-price floor:
+    a $0.80 stock with 1B shares is an $800M company; liquidity is judged in dollars traded a day."""
     import yfinance as yf  # type: ignore
     from yfinance import EquityQuery as Q  # type: ignore
     q = Q("and", [Q("eq", ["region", "us"]), Q("gte", ["intradaymarketcap", min_mcap_m * 1e6]),
-                  Q("gte", ["intradayprice", 1]), Q("gt", ["avgdailyvol3m", min_avg_vol]),
-                  Q("is-in", ["exchange", *EXCHANGES])])
+                  Q("gt", ["avgdailyvol3m", min_avg_vol]), Q("is-in", ["exchange", *EXCHANGES])])
     out: dict[str, dict] = {}
     for off in range(0, 12000, 250):
         qs = yf.screen(q, offset=off, size=250, sortField="intradaymarketcap", sortAsc=False).get("quotes", [])
         for x in qs:
-            if x.get("quoteType") == "EQUITY" and not derivative(x["symbol"]):
+            dv = (x.get("regularMarketPrice") or 0) * (x.get("averageDailyVolume3Month") or 0)
+            if x.get("quoteType") == "EQUITY" and not derivative(x["symbol"]) and dv >= min_dollar_vol:
                 out[x["symbol"]] = x
         if len(qs) < 250:
             break
     return out
 
 
-def history(syms: list[str], period: str = "3mo", batch: int = 400):
-    """Daily closes and volumes (split-adjusted) for many symbols, as two DataFrames."""
+def history(syms: list[str], period: str = "1y", batch: int = 400):
+    """Daily closes and volumes (split-adjusted) for many symbols, as two DataFrames. Big pulls are cached
+    for the day in .cache/hist-<period>-<date>.pkl so a second scan the same evening is fast."""
     import pandas as pd  # type: ignore
     import yfinance as yf  # type: ignore
+    cache = ROOT / ".cache" / f"hist-{period}-{pfm.et_date(pfm.now_utc()).isoformat()}.pkl"
+    if len(syms) > 200 and cache.exists():
+        c0, v0 = pd.read_pickle(cache)
+        if set(syms) <= set(c0.columns):
+            return c0[syms], v0[syms]
     closes, vols = [], []
     for i in range(0, len(syms), batch):
         part = syms[i:i + batch]
@@ -330,7 +322,11 @@ def history(syms: list[str], period: str = "3mo", batch: int = 400):
             c, v = c.to_frame(part[0]), v.to_frame(part[0])
         closes.append(c)
         vols.append(v)
-    return pd.concat(closes, axis=1), pd.concat(vols, axis=1)
+    c_all, v_all = pd.concat(closes, axis=1), pd.concat(vols, axis=1)
+    if len(syms) > 200:
+        (ROOT / ".cache").mkdir(exist_ok=True)
+        pd.to_pickle((c_all, v_all), cache)
+    return c_all, v_all
 
 
 def find_events(closes, vols, days: int, min_move: float, min_rel_vol: float = 2.0) -> list[dict]:
@@ -353,6 +349,7 @@ def find_events(closes, vols, days: int, min_move: float, min_rel_vol: float = 2
         if not jumps:
             continue
         i, move, rv = max(jumps, key=lambda j: j[1])
+        prof = risk_profile(c, i)
         pre, evc, now = float(c.iloc[i - 1]), float(c.iloc[i]), float(c.iloc[-1])
         after = c.iloc[i:]
         since, vs_pre = now / evc - 1, now / pre - 1
@@ -375,7 +372,56 @@ def find_events(closes, vols, days: int, min_move: float, min_rel_vol: float = 2
                     "min_after_pct": round((float(after.min()) / evc - 1) * 100, 1),
                     "sessions_since": n_since, "run_up_before_pct": round((pre / float(c.iloc[i - 21]) - 1) * 100, 1),
                     "jumps": [{"date": c.index[j].date().isoformat(), "move_pct": round(m * 100, 1),
-                               "rel_volume": round(x, 1)} for j, m, x in jumps], "status": status})
+                               "rel_volume": round(x, 1)} for j, m, x in jumps], "status": status, **prof})
+    return out
+
+
+# Calibrated on 241 jumps (Aug-Sep 2026, research/movers/study-*.json): stocks above either line fell a median
+# 16% against the market in the 10 sessions after the jump, the rest about 4%.
+NOISY_VOL = 120.0      # annualized daily volatility (%) in the year before the jump
+NOISY_SPIKES = 10      # or this many +/-15% days in that year
+
+
+def risk_profile(c, i: int, lookback: int = 252) -> dict:
+    """How the stock behaved in the year before bar i: annualized volatility, the number of +/-15% days,
+    and the jump at bar i measured in that history's daily standard deviations."""
+    import numpy as np  # type: ignore
+    hist = c.iloc[max(0, i - lookback):i]
+    r = np.log(hist / hist.shift(1)).dropna()
+    if len(r) < 40:
+        return {}
+    sd = float(r.std())
+    jump = float(np.log(c.iloc[i] / c.iloc[i - 1]))
+    vol = sd * 252 ** 0.5 * 100
+    spikes = int(((r >= np.log(1.15)) | (r <= np.log(0.85))).sum())
+    return {"vol_1y": round(vol, 1), "jump_sigma": round(jump / sd, 1) if sd else None, "spike_days_1y": spikes,
+            "history_days": len(r), "noisy": bool(vol >= NOISY_VOL or spikes >= NOISY_SPIKES)}
+
+
+def issuance(sym: str) -> dict:
+    """Share count change over about a year, and any reverse split in the last 18 months (Yahoo)."""
+    import pandas as pd  # type: ignore
+    import yfinance as yf  # type: ignore
+    out: dict = {}
+    t = yf.Ticker(sym)
+    try:
+        sh = t.get_shares_full(start=(dt.date.today() - dt.timedelta(days=400)).isoformat())
+        if sh is not None and len(sh) >= 6:
+            sh = sh[~sh.index.duplicated(keep="last")].sort_index()
+            first, last = float(sh.iloc[:5].median()), float(sh.iloc[-5:].median())  # medians: the series has spikes
+            if first > 0:
+                out["shares_change_1y_pct"] = round((last / first - 1) * 100, 1)
+    except Exception:  # noqa: BLE001
+        pass
+    try:
+        sp = t.splits
+        if sp is not None and len(sp):
+            cutoff = pd.Timestamp.now(tz=sp.index.tz) - pd.Timedelta(days=540)
+            rev = sp[(sp.index >= cutoff) & (sp < 1)]
+            if len(rev):
+                out["reverse_split"] = f"{rev.index[-1].date()} 1-for-{round(1 / float(rev.iloc[-1]))}"
+    except Exception:  # noqa: BLE001
+        pass
     return out
 
 
@@ -406,8 +452,13 @@ def enrich_event(ev: dict, quote: dict) -> dict:
         pass
     row["news"] = _dedupe(news)[:10]
     row["later_news"] = _dedupe(later)[:10]
-    row["tags"] = classify(row["news"], [], row.get("name") or "", sym, aliases)
-    row["later_tags"] = [t for t in classify(row["later_news"], [], row.get("name") or "", sym, aliases)
+    fl = [f for f in sec_window(sym, d - dt.timedelta(days=2), d + dt.timedelta(days=1)) if "error" not in f]
+    later_fl = [f for f in sec_window(sym, d + dt.timedelta(days=2), dt.date.today()) if "error" not in f]
+    row["filings"] = fl[:8]
+    row["later_filings"] = [f for f in later_fl if f["form"] in sec.OFFERING_FORMS or f["items"]][:8]
+    row.update(issuance(sym))
+    row["tags"] = classify(row["news"], fl, row.get("name") or "", sym, aliases)
+    row["later_tags"] = [t for t in classify(row["later_news"], later_fl, row.get("name") or "", sym, aliases)
                          if t != "no-clear-news"]
     s = score(row) + STATUS_ADJ.get(row["status"], 0)
     if {"dilution", "reverse-split"} & set(row["later_tags"]):
@@ -428,11 +479,25 @@ def _dedupe(news: list[dict]) -> list[dict]:
     return out
 
 
-def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bool) -> int:
+def risk_line(r: dict) -> str:
+    bits = []
+    if r.get("jump_sigma") is not None:
+        bits.append(f"{r['jump_sigma']}sd move")
+    if r.get("vol_1y") is not None:
+        bits.append(f"1y vol {r['vol_1y']:.0f}%, {r.get('spike_days_1y')} 15% days{' NOISY' if r.get('noisy') else ''}")
+    if r.get("shares_change_1y_pct") is not None:
+        bits.append(f"shares {r['shares_change_1y_pct']:+.0f}% 1y")
+    if r.get("reverse_split"):
+        bits.append(f"reverse split {r['reverse_split']}")
+    return ", ".join(bits)
+
+
+def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bool, include_noisy: bool = False) -> int:
     from concurrent.futures import ThreadPoolExecutor
     t0 = time.time()
     uni = universe(min_mcap_m)
-    print(f"universe: {len(uni)} US stocks (mcap >= ${min_mcap_m:g}M, price >= $1, 3-month avg volume > 200K)")
+    print(f"universe: {len(uni)} NYSE/Nasdaq/NYSE American stocks (mcap >= ${min_mcap_m:g}M, >= $0.5M traded a day, "
+          f"no share-price floor)")
     closes, vols = history(sorted(uni))
     events = find_events(closes, vols, days, min_move)
     by_status: dict[str, int] = {}
@@ -442,8 +507,13 @@ def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bo
           + ", ".join(f"{k} {v}" for k, v in sorted(by_status.items(), key=lambda kv: -kv[1]))
           + f"  [{time.time() - t0:.0f}s]")
     # Enrich the ones the market has not rejected first; round-trips only if there is room.
-    events.sort(key=lambda e: (e["status"] == "round-trip", -e["move_pct"] * min(e["event_rel_volume"], 10)))
-    pick = events[:limit]
+    n_noisy = sum(1 for e in events if e.get("noisy"))
+    print(f"  {n_noisy} of them are noisy stocks (1y vol >= {NOISY_VOL:g}% or >= {NOISY_SPIKES} 15% days)"
+          + ("" if include_noisy else ": kept in the file, not researched"))
+    events.sort(key=lambda e: (bool(e.get("noisy")), e["status"] == "round-trip",
+                               -e["move_pct"] * min(e["event_rel_volume"], 10)))
+    pick = [e for e in events if include_noisy or not e.get("noisy")][:limit]
+    picked_syms = {e["symbol"] for e in pick}
 
     def work(e):
         try:
@@ -453,7 +523,7 @@ def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bo
 
     with ThreadPoolExecutor(max_workers=6) as pool:
         rows = list(pool.map(work, pick))
-    rows += [{**e, "tags": [], "score": None, "not_enriched": True} for e in events[limit:]]
+    rows += [{**e, "tags": [], "score": None, "not_enriched": True} for e in events if e["symbol"] not in picked_syms]
     order = {"holding": 0, "extending": 1, "new": 2, "fading": 3, "round-trip": 4}
     rows.sort(key=lambda r: (r.get("score") is None, -(r.get("score") or 0), order.get(r["status"], 9)))
     now = pfm.now_utc()
@@ -477,7 +547,8 @@ def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bo
             print(f"[{r['score']:+d}] {r['symbol']:6} +{r['move_pct']}% on {r['event_date']} (relvol {r['event_rel_volume']}) "
                   f"-> since {r['since_event_pct']:+}% (vs pre-jump {r['vs_pre_event_pct']:+}%) | ${r['price']} "
                   f"mcap ${mc:,.0f}M rev ${rev:,.0f}M g {r.get('revenue_growth')} | target {r.get('target_mean')} "
-                  f"| {','.join(r.get('tags', []))}{' | later: ' + ','.join(r['later_tags']) if r.get('later_tags') else ''}")
+                  f"| {','.join(r.get('tags', []))}{' | later: ' + ','.join(r['later_tags']) if r.get('later_tags') else ''}"
+                  f" | {risk_line(r)}")
             for n in r.get("news", [])[:3]:
                 print(f"      - {str(n.get('title'))[:140]}")
     return 0
@@ -492,11 +563,14 @@ def follow_up() -> int:
         return 0
     for f in files[-5:]:
         doc = json.loads(f.read_text())
+        doc["rows"] = [r for r in doc["rows"] if r.get("score") is not None and r.get("price")]
+        if doc.get("mode") == "lookback":
+            doc["rows"] = sorted(doc["rows"], key=lambda r: -r["score"])[:25]  # the researched top of the list
         syms = [r["symbol"] for r in doc["rows"]]
         if not syms:
             continue
         data = yf.download(syms, period="10d", interval="1d", progress=False, auto_adjust=False)["Close"]
-        print(f"== scan {doc['date']} ({len(syms)} names)")
+        print(f"== {'lookback ' if doc.get('mode') == 'lookback' else ''}scan {doc['date']} ({len(syms)} names)")
         for r in doc["rows"]:
             try:
                 ser = data[r["symbol"]].dropna()
@@ -511,7 +585,11 @@ def follow_up() -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-move", type=float, default=15.0)
-    ap.add_argument("--min-mcap", type=float, default=100.0, help="$ millions")
+    ap.add_argument("--min-mcap", type=float, default=30.0, help="$ millions")
+    ap.add_argument("--min-dollar-vol", type=float, default=1.0, help="today's $ volume floor, $ millions")
+    ap.add_argument("--include-noisy", action="store_true",
+                    help=f"also research stocks with 1-year volatility >= {NOISY_VOL:g}% or >= {NOISY_SPIKES} "
+                         "15% days (skipped by default)")
     ap.add_argument("--losers", action="store_true")
     ap.add_argument("--extra", default="", help="extra tickers to analyse, comma separated")
     ap.add_argument("--save", action="store_true")
@@ -523,10 +601,11 @@ def main() -> int:
     if a.follow_up:
         return follow_up()
     if a.lookback:
-        return lookback(a.lookback, a.min_move, a.min_mcap, a.limit, a.save)
+        return lookback(a.lookback, a.min_move, a.min_mcap, a.limit, a.save, a.include_noisy)
     quotes = [q for q in screen(a.min_move, a.losers)
               if q.get("quoteType", "EQUITY") == "EQUITY" and not derivative(q["symbol"])]
-    picked = [q for q in quotes if (q.get("marketCap") or 0) >= a.min_mcap * 1e6]
+    picked = [q for q in quotes if (q.get("marketCap") or 0) >= a.min_mcap * 1e6
+              and (q.get("regularMarketPrice") or 0) * (q.get("regularMarketVolume") or 0) >= a.min_dollar_vol * 1e6]
     skipped = [q["symbol"] for q in quotes if q not in picked]
     extra = [x.strip().upper() for x in a.extra.split(",") if x.strip()]
     if extra:
@@ -543,6 +622,18 @@ def main() -> int:
                                "regularMarketVolume": fi.get("lastVolume")})
             except Exception:  # noqa: BLE001
                 continue
+    # One year of daily history for every candidate: how unusual today's move is for each of them.
+    noisy = []
+    if picked:
+        closes, _ = history([q["symbol"] for q in picked], period="1y")
+        for q in picked:
+            if q["symbol"] in closes.columns:
+                c = closes[q["symbol"]].dropna()
+                if len(c) > 41:
+                    q["_risk"] = risk_profile(c, len(c) - 1)
+        if not a.include_noisy:
+            noisy = [q["symbol"] for q in picked if (q.get("_risk") or {}).get("noisy")]
+            picked = [q for q in picked if not (q.get("_risk") or {}).get("noisy")]
     rows = []
     for q in picked:
         try:
@@ -553,7 +644,8 @@ def main() -> int:
     rows.sort(key=lambda r: (-r.get("score", -9), -(r.get("change_pct") or 0)))
     now = pfm.now_utc()
     doc = {"generated_at": pfm.iso(now), "date": pfm.et_date(now).isoformat(), "min_move": a.min_move,
-           "losers": a.losers, "min_mcap_m": a.min_mcap, "skipped_small": skipped, "rows": rows}
+           "losers": a.losers, "min_mcap_m": a.min_mcap, "skipped_small": skipped, "skipped_noisy": noisy,
+           "rows": rows}
     (ROOT / ".cache").mkdir(exist_ok=True)
     (ROOT / ".cache" / "movers.json").write_text(json.dumps(doc, indent=1, default=str))
     if a.save:
@@ -561,7 +653,9 @@ def main() -> int:
         d.mkdir(parents=True, exist_ok=True)
         (d / f"{doc['date']}{'-losers' if a.losers else ''}.json").write_text(json.dumps(doc, indent=1, default=str))
     print(f"{len(quotes)} movers >= {a.min_move}% ({'down' if a.losers else 'up'}); {len(rows)} analysed "
-          f"(mcap >= ${a.min_mcap:g}M); skipped small: {', '.join(skipped[:15])}")
+          f"(mcap >= ${a.min_mcap:g}M, >= ${a.min_dollar_vol:g}M traded); skipped small/illiquid: "
+          f"{', '.join(skipped[:15])}; skipped noisy (1y vol >= {NOISY_VOL:g}% or >= {NOISY_SPIKES} 15% days): "
+          f"{', '.join(noisy[:15]) or '-'}")
     for r in rows:
         mc = (r.get("market_cap") or 0) / 1e6
         rev = (r.get("revenue_ttm") or 0) / 1e6
@@ -569,10 +663,10 @@ def main() -> int:
               f"rev ${rev:,.0f}M growth {r.get('revenue_growth')} EV/S {r.get('ev_to_revenue')} | relvol {r.get('rel_volume')} "
               f"short {r.get('short_pct_float')} | 52w {r.get('low_52w')}-{r.get('high_52w')} | target {r.get('target_mean')} "
               f"({r.get('rating')}, {r.get('analysts')}) | {r.get('industry')}")
-        print(f"   tags: {', '.join(r.get('tags', []))}")
+        print(f"   tags: {', '.join(r.get('tags', []))} | {risk_line(r)}")
         for f in r.get("filings", [])[:4]:
             if "error" not in f:
-                print(f"   SEC {f['date']} {f['form']} items={f.get('items')} {f.get('desc') or ''}")
+                print(f"   SEC {f['date']} {f['form']} {'; '.join(f.get('events') or []) or f.get('desc') or ''}")
         for n in r.get("news", [])[:6]:
             print(f"   - {str(n.get('title'))[:150]}")
     return 0

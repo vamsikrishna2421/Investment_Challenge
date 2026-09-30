@@ -1,0 +1,562 @@
+{
+ "generated_at": "2026-09-30T20:22:16Z",
+ "date": "2026-09-30",
+ "min_move": 15.0,
+ "losers": true,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "COPL-WT",
+  "AMZE",
+  "AIXC",
+  "DKI",
+  "YMT",
+  "LESL",
+  "NEXR",
+  "CMMB",
+  "OXBR",
+  "AIB",
+  "KUST",
+  "GIFT",
+  "ONEN",
+  "DXST",
+  "NCT",
+  "LNAI",
+  "JAGU",
+  "JAGX"
+ ],
+ "skipped_noisy": [
+  "HVII",
+  "CVRX",
+  "SVRN",
+  "SDEV",
+  "SCTX",
+  "PYXS",
+  "BSEM",
+  "INDP"
+ ],
+ "rows": [
+  {
+   "symbol": "LQDA",
+   "name": "Liquidia Corporation",
+   "price": 30.26,
+   "change_pct": -57.19,
+   "volume": 22595651,
+   "market_cap": 2708538880,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "enterprise_value": 6226098688,
+   "revenue_ttm": 450907008,
+   "revenue_growth": 18.427,
+   "gross_margin": 0.92542,
+   "profit_margin": 0.30739,
+   "cash": 284180992,
+   "debt": 182896000,
+   "shares_out": 89508891,
+   "float_shares": 63513719,
+   "short_pct_float": 0.1716,
+   "avg_volume": 1394509,
+   "high_52w": 93.61,
+   "low_52w": 21.35,
+   "target_mean": 107.75,
+   "rating": "none",
+   "analysts": 8,
+   "ev_to_revenue": 13.808,
+   "forward_pe": 5.355752,
+   "rel_volume": 16.2,
+   "off_52w_high_pct": -67.7,
+   "target_upside_pct": 256.1,
+   "news": [
+    {
+     "title": "United Just Pulled The Ultimate Bull Move, As Its Chief Rival Collapsed",
+     "published": "2026-09-30T20:11:11Z",
+     "source": "Investor's Business Daily",
+     "via": "yahoo"
+    },
+    {
+     "title": "Stock Market Today: Nasdaq Up; Micron Holds Firm Ahead Of Earnings Report (Live Coverage)",
+     "published": "2026-09-30T19:43:12Z",
+     "source": "Investor's Business Daily",
+     "via": "yahoo"
+    },
+    {
+     "title": "Liquidia shares crater after court rules for United Therapeutics",
+     "published": "2026-09-30T18:23:27Z",
+     "source": "Investing.com",
+     "via": "yahoo"
+    },
+    {
+     "title": "Can LQDA's Yutrepia Outpace Intensifying PAH Competition?",
+     "published": "2026-09-23T15:14:00Z",
+     "source": "Zacks",
+     "via": "yahoo"
+    },
+    {
+     "title": "LQDA Loses 13.9% in a Month: Should Investors Avoid the Stock Now?",
+     "published": "2026-09-11T18:21:00Z",
+     "source": "Zacks",
+     "via": "yahoo"
+    },
+    {
+     "title": "Can a Potential Label Expansion of Yutrepia Boost LQDA's Portfolio?",
+     "published": "2026-09-10T17:38:00Z",
+     "source": "Zacks",
+     "via": "yahoo"
+    },
+    {
+     "title": "Does FDA Fast Track For YUTREPIA In SSc Raynaud\u2019s Change The Bull Case For Liquidia (LQDA)?",
+     "published": "2026-09-05T03:08:47Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Is Liquidia (LQDA) Still Undervalued As Fast Track News Tests Its Valuation?",
+     "published": "2026-09-04T21:07:38Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Liquidia Corp (LQDA) Shares Plunge 25% After Patent Dispute Cour - GuruFocus",
+     "published": "Wed, 30 Sep 2026 16:06:21 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "Liquidia plunges after court ruling in United Therapeutics patent fight (update) (LQDA:NASDAQ) - Seeking Alpha",
+     "published": "Wed, 30 Sep 2026 17:49:00 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 64.7,
+   "jump_sigma": -20.8,
+   "spike_days_1y": 1,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 3.3,
+   "tags": [
+    "earnings-guidance",
+    "clinical-regulatory"
+   ],
+   "score": 6
+  },
+  {
+   "symbol": "QNC",
+   "name": "Quantum eMotion Corp.",
+   "price": 1.48,
+   "change_pct": -15.43,
+   "volume": 1718495,
+   "market_cap": 324741120,
+   "exchange": "ASE",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": 350139328,
+   "revenue_ttm": 23232,
+   "gross_margin": 1.0,
+   "profit_margin": 0.0,
+   "cash": 34004956,
+   "debt": 159868,
+   "shares_out": 219419670,
+   "float_shares": 212448707,
+   "avg_volume": 869107,
+   "high_52w": 4.44,
+   "low_52w": 1.46,
+   "target_mean": 5.0,
+   "rating": "none",
+   "analysts": 1,
+   "ev_to_revenue": 15071.425,
+   "rel_volume": 2.0,
+   "off_52w_high_pct": -66.7,
+   "target_upside_pct": 237.8,
+   "news": [
+    {
+     "title": "Tantalus Systems Holding And 2 Other Canadian AI Stocks To Watch",
+     "published": "2026-09-24T10:14:45Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Docebo And 2 Other Canadian AI Stocks To Own",
+     "published": "2026-09-06T06:14:08Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "3 Canadian AI Stocks With Revenue Growth Up To 176% To Watch",
+     "published": "2026-09-04T22:15:13Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "AI Stocks To Watch As Business Spending Stays Strong in 2026",
+     "published": "2026-08-25T06:17:35Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Quantum eMotion (QNC) Acquires SKV and Jet Lab Technologies to Become Full-Stack Cybersecurity Provider",
+     "published": "2026-03-06T19:45:05Z",
+     "source": "Insider Monkey",
+     "via": "yahoo"
+    },
+    {
+     "title": "Quantum eMotion to Buy SKV Technology Assets",
+     "published": "2026-02-27T18:06:48Z",
+     "source": "MT Newswires",
+     "via": "yahoo"
+    },
+    {
+     "title": "Assessing Quantum eMotion\u2019s Valuation After NYSE American Uplisting And Quantum Cybersecurity Exposure",
+     "published": "2026-02-26T00:23:05Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Is Quantum eMotion (TSXV:QNC) Using Its NYSE American Uplisting To Recast Its US Growth Story?",
+     "published": "2026-02-24T18:04:47Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Quantum eMotion (QNC) Stock News, Feb 19-24, 2026 - Stock Titan",
+     "published": "Tue, 29 Sep 2026 20:32:28 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Robinhood Markets Expands A.I. Stock Trading - Baystreet.ca",
+     "published": "Wed, 30 Sep 2026 14:44:50 GMT",
+     "source": "Baystreet.ca",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-09-29",
+     "items": [],
+     "events": [],
+     "desc": "FORM 6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2106613/000110465926111438/tm2626471d1_6k.htm"
+    }
+   ],
+   "vol_1y": 91.5,
+   "jump_sigma": -2.9,
+   "spike_days_1y": 4,
+   "history_days": 150,
+   "noisy": false,
+   "tags": [
+    "sector-theme",
+    "earnings-guidance"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "GLAS",
+   "name": "Glass House Brands Inc. Subordi",
+   "price": 5.61,
+   "change_pct": -17.38,
+   "volume": 5521598,
+   "market_cap": 528700448,
+   "exchange": "NYQ",
+   "sector": "Healthcare",
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "enterprise_value": 786170624,
+   "revenue_ttm": 176976000,
+   "revenue_growth": -0.012,
+   "gross_margin": 0.31811002,
+   "profit_margin": -0.29503,
+   "cash": 18554000,
+   "debt": 72318000,
+   "shares_out": 87997984,
+   "float_shares": 73918166,
+   "avg_volume": 571952,
+   "high_52w": 13.93,
+   "low_52w": 5.15,
+   "target_mean": 16.0,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 4.442,
+   "forward_pe": 24.933334,
+   "rel_volume": 9.7,
+   "off_52w_high_pct": -59.7,
+   "target_upside_pct": 185.2,
+   "news": [
+    {
+     "title": "Glass House Brands Inc (GLAS) (Q2 2026) Earnings Call Highlights: Record Production and ...",
+     "published": "2026-08-14T05:01:00Z",
+     "source": "GuruFocus.com",
+     "via": "yahoo"
+    },
+    {
+     "title": "New Analyst Coverage Puts These 5 Stocks in the Spotlight",
+     "published": "2026-07-15T13:25:00Z",
+     "source": "Zacks",
+     "via": "yahoo"
+    },
+    {
+     "title": "UG Outperforms Industry in 6 Months: Buy, Sell or Hold the Stock?",
+     "published": "2026-07-08T14:10:00Z",
+     "source": "Zacks",
+     "via": "yahoo"
+    },
+    {
+     "title": "Should Glass House Brands\u2019 NYSE Debut and Medical Pivot Reshape the GLAS Investment Narrative?",
+     "published": "2026-07-04T06:11:14Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "SCHMID Sizzles on Possible Use of Glass Substrates by Chipmakers. How to Play SHMD Stock Here. - Barchart.com",
+     "published": "Wed, 30 Sep 2026 12:20:20 GMT",
+     "source": "Barchart.com",
+     "via": "google"
+    },
+    {
+     "title": "Glass House Brands (GLAS.A.U) Stock Falls 10.47%: Why Is the Cannabis Producer Under Pressure? - kalkine.ca",
+     "published": "Wed, 30 Sep 2026 17:53:00 GMT",
+     "source": "kalkine.ca",
+     "via": "google"
+    },
+    {
+     "title": "A maker of glass for buildings, cars and solar panels has a new owner: Apollo Funds. - Stock Titan",
+     "published": "Wed, 30 Sep 2026 03:28:59 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Glass House Brands Announces Planned Retirement of Chief Financial Officer - finance.yahoo.com",
+     "published": "Tue, 29 Sep 2026 11:35:00 GMT",
+     "source": "finance.yahoo.com",
+     "via": "google"
+    },
+    {
+     "title": "ETFs Investing in Nippon Sheet Glass Company, Limited Stocks - TradingView",
+     "published": "Tue, 29 Sep 2026 11:35:24 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "SCHMID Stock Rises as Nvidia, AMD, Intel Eye Glass Substrate Technology - Benzinga",
+     "published": "Mon, 28 Sep 2026 13:48:15 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-09-29",
+     "items": [],
+     "events": [],
+     "desc": "FORM 6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1848731/000110465926111597/tm2626459d1_6k.htm"
+    }
+   ],
+   "vol_1y": 83.5,
+   "jump_sigma": -3.6,
+   "spike_days_1y": 3,
+   "history_days": 249,
+   "noisy": false,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "RFL",
+   "name": "Rafael Holdings, Inc.",
+   "price": 1.32,
+   "change_pct": -34.98,
+   "volume": 2272014,
+   "market_cap": 68640000,
+   "exchange": "NYQ",
+   "sector": "Real Estate",
+   "industry": "Real Estate Services",
+   "enterprise_value": 81089992,
+   "revenue_ttm": 980000,
+   "revenue_growth": -0.506,
+   "gross_margin": 0.95102,
+   "profit_margin": 0.0,
+   "cash": 30497000,
+   "debt": 610000,
+   "shares_out": 51212833,
+   "float_shares": 31769918,
+   "short_pct_float": 0.0366,
+   "avg_volume": 147431,
+   "high_52w": 3.96,
+   "low_52w": 1.12,
+   "rating": "none",
+   "ev_to_revenue": 82.745,
+   "rel_volume": 15.4,
+   "off_52w_high_pct": -66.7,
+   "news": [
+    {
+     "title": "Rafael Holdings Shares Fall 25% After Trappsol Cyclo Phase 3 Trial Misses Primary Endpoint",
+     "published": "2026-09-30T13:49:22Z",
+     "source": "InvestorsHub",
+     "via": "yahoo"
+    },
+    {
+     "title": "Rafael Holdings stock tumbles 25% as drug trial misses goal",
+     "published": "2026-09-30T13:47:20Z",
+     "source": "Investing.com",
+     "via": "yahoo"
+    },
+    {
+     "title": "Israel said to eye US listing for major defense firms",
+     "published": "2026-06-23T16:10:28Z",
+     "source": "Investing.com",
+     "via": "yahoo"
+    },
+    {
+     "title": "Rafael Holdings Insider Ups Holding By 1,810% During Year",
+     "published": "2026-04-28T14:26:22Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "One Rafael Holdings Insider Raised Stake By 1,810% In Previous Year",
+     "published": "2025-11-19T13:58:29Z",
+     "source": "Simply Wall St.",
+     "via": "yahoo"
+    },
+    {
+     "title": "Why Is Rafael Stock Falling Wednesday? - Benzinga",
+     "published": "Wed, 30 Sep 2026 17:39:10 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "The trial drug missed its main goal. Separately, treatment was associated with 85% lower mortality risk. - Stock Titan",
+     "published": "Wed, 30 Sep 2026 11:00:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Rafael Holdings stock tumbles 25% as drug trial misses goal - Investing.com",
+     "published": "Wed, 30 Sep 2026 13:19:37 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "Why is Rafael stock crashing today? By Investing.com - Investing.com Canada",
+     "published": "Wed, 30 Sep 2026 19:36:35 GMT",
+     "source": "Investing.com Canada",
+     "via": "google"
+    },
+    {
+     "title": "12 Health Care Stocks Moving In Wednesday's Intraday Session - Benzinga",
+     "published": "Wed, 30 Sep 2026 17:06:01 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-09-30",
+     "items": [
+      "7.01",
+      "8.01",
+      "9.01"
+     ],
+     "events": [
+      "Reg FD disclosure",
+      "other events"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1713863/000121390026104876/ea0307125-8k_rafael.htm"
+    }
+   ],
+   "vol_1y": 73.7,
+   "jump_sigma": -9.3,
+   "spike_days_1y": 9,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 47.5,
+   "tags": [
+    "clinical-regulatory",
+    "sector-theme"
+   ],
+   "score": -1
+  },
+  {
+   "symbol": "IPEX",
+   "name": "Inflection Point Acquisition Co",
+   "price": 3.16,
+   "change_pct": -57.75,
+   "volume": 785206,
+   "market_cap": 37633628,
+   "exchange": "NGM",
+   "sector": "Financial Services",
+   "industry": "Shell Companies",
+   "enterprise_value": 14749463,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 61234,
+   "debt": 800000,
+   "shares_out": 10919375,
+   "float_shares": 2692093,
+   "short_pct_float": 0.0039,
+   "avg_volume": 53984,
+   "high_52w": 13.0177,
+   "low_52w": 2.68,
+   "rating": "none",
+   "rel_volume": 14.5,
+   "off_52w_high_pct": -75.7,
+   "news": [
+    {
+     "title": "A Canadian mine has an $850 million loan commitment; another $250 million awaits approval. - Stock Titan",
+     "published": "Mon, 28 Sep 2026 11:00:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Saudi Arabia signs a financing agreement for 10 trains and orders locomotives and freight railcars - Railway PRO",
+     "published": "Mon, 28 Sep 2026 09:18:42 GMT",
+     "source": "Railway PRO",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-09-28",
+     "items": [
+      "1.01",
+      "2.01",
+      "3.01",
+      "3.02",
+      "3.03",
+      "5.01",
+      "5.02",
+      "5.03",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "acquisition or sale completed",
+      "delisting notice",
+      "unregistered share sale",
+      "holders' rights modified",
+      "change in control",
+      "officer or director change",
+      "charter amendment (reverse splits are filed here)",
+      "Reg FD disclosure"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/2028355/000121390026103669/ea0306567-8k_inflection5.htm"
+    }
+   ],
+   "tags": [
+    "contract-order",
+    "red-flag",
+    "dilution"
+   ],
+   "score": -6
+  }
+ ]
+}

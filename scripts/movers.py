@@ -80,7 +80,7 @@ GENERIC = re.compile(
     r"moving average|(out|under)performs? (its )?(competitors|the market)|compared to competitors|trading day|"
     r"penny stocks|worth watching|time to buy\?|what'?s next\?|stock (price, )?news|"
     # investor-relations calendar items: dates of results, calls, conferences
-    r"\bto (announce|release|report|host|hold|present|participate)\b|announces? (the )?(date|dates|timing)\b|"
+    r"\bto (announce|release|report|host|hold|present|participate)\b|(announces?|sets?) (the )?(date|dates|timing)\b|"
     r"\bschedules?\b|conference call|webcast|webinar|fireside|investor day|will (report|release|announce|host)\b|"
     r"\bparticipate in\b|\bto ring\b|\brelease dates?\b|"
     # opinion polls a PR or research firm publishes as marketing (Stagwell's Harris Poll)
@@ -563,7 +563,7 @@ def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bo
 def follow_up() -> int:
     """How did earlier scans' names do since? Tests the idea on our own data."""
     import yfinance as yf  # type: ignore
-    files = sorted((ROOT / "research" / "movers").glob("*.json"))
+    files = sorted(f for f in (ROOT / "research" / "movers").glob("*.json") if not f.name.startswith("study-"))
     if not files:
         print("no saved scans yet")
         return 0
@@ -576,7 +576,8 @@ def follow_up() -> int:
         if not syms:
             continue
         data = yf.download(syms, period="10d", interval="1d", progress=False, auto_adjust=False)["Close"]
-        print(f"== {'lookback ' if doc.get('mode') == 'lookback' else ''}scan {doc['date']} ({len(syms)} names)")
+        kind = "lookback " if doc.get("mode") == "lookback" else "losers " if "losers" in f.name else ""
+        print(f"== {kind}scan {doc['date']} ({len(syms)} names)")
         for r in doc["rows"]:
             try:
                 ser = data[r["symbol"]].dropna()

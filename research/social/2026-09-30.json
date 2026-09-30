@@ -1,0 +1,241 @@
+{
+ "snapshots": [
+  {
+   "at": "2026-09-30T20:25:25Z",
+   "trending": [
+    {
+     "symbol": "MU",
+     "name": "Micron Technology Inc",
+     "exchange": "NASDAQ",
+     "score": 28.7468,
+     "watchers": 217990,
+     "why": "Microns strong quarterly results and above-expectation outlook, underpinned by AI-related memory demand, are driving attention. Traders are split between seeing the guidance as confirmation of a durable memory upcycle and viewing the muted share-price reaction as a sign that strong results were already priced in."
+    },
+    {
+     "symbol": "GOOGL",
+     "name": "Alphabet Inc Class A",
+     "exchange": "NASDAQ",
+     "score": 17.5383,
+     "watchers": 231973,
+     "why": "Googles Gemini 4/Argon model release and traders claims of strong benchmark results are fueling AI-related attention. Bulls see the launch as a competitive catalyst, while skeptics question whether it will support lasting gains amid sharply volatile trading."
+    },
+    {
+     "symbol": "APP",
+     "name": "Applovin Corp",
+     "exchange": "NASDAQ",
+     "score": 16.6247,
+     "watchers": 24574,
+     "why": "Bearish analyst commentary questioning AppLovins e-commerce adoption and whether its AXON ad platform is nearing a growth ceiling has fueled the selloff, alongside concerns about Unity competition and litigation. Bulls dispute the slowdown narrative and point to improving merchant adoption and strong fundamentals, while bears see growth and market-share risks;"
+    },
+    {
+     "symbol": "ASTS",
+     "name": "AST SpaceMobile Inc",
+     "exchange": "NASDAQ",
+     "score": 14.2354,
+     "watchers": 71340,
+     "why": "A newly adopted change-of-control severance policy has fueled buyout, merger, and strategic-investment speculation, though traders disagree on whether it signals anything beyond routine governance and no deal is confirmed. The community is also focused on the reported shipment of BlueBird 1416, while frustration over launch timing and rallies that quickly fade tempers the reaction."
+    },
+    {
+     "symbol": "LQDA",
+     "name": "Liquidia Corp",
+     "exchange": "NASDAQ",
+     "score": 13.1535,
+     "watchers": 4630,
+     "why": "A Delaware judge found that Liquidias Yutrepia infringes two valid United Therapeutics patent claims related to PH-ILD, triggering a steep selloff as traders weigh possible restrictions on the drug against Liquidias planned appeal and potential removal of the indication. The community is split between viewing the ruling as a serious threat to the business and calling the decline an overreaction, with some speculating about a settlement or rebound."
+    },
+    {
+     "symbol": "GOOG",
+     "name": "Alphabet Inc - Ordinary Shares - Class C",
+     "exchange": "NASDAQ",
+     "score": 12.8305,
+     "watchers": 312133,
+     "why": "Googles AI pushespecially Gemini 4 and new model announcementsis driving discussion, alongside Project Suncatchers orbital-computing ambitions. Traders are split between optimism about Googles models and infrastructure and concern that Metas Muse is gaining an edge, with the debate accompanying volatile price action."
+    },
+    {
+     "symbol": "CAPR",
+     "name": "Capricor Therapeutics Inc",
+     "exchange": "NASDAQ",
+     "score": 11.8869,
+     "watchers": 33433,
+     "why": "Positive 24-month HOPE-3 extension data for deramiocel, showing slower upper-limb decline in Duchenne muscular dystrophy patients, has drawn attention ahead of the FDA decision. Traders are broadly bullish on the treatment signal and discuss potential short covering, while others caution that open-label findings may not resolve the FDAs earlier statistical concerns, leaving approval uncertain."
+    },
+    {
+     "symbol": "ZETA",
+     "name": "Zeta Global Holdings Corp",
+     "exchange": "NYSE",
+     "score": 8.07358,
+     "watchers": 15421,
+     "why": "ZETAs sharp advance drew attention, but traders did not identify a confirmed company-specific catalyst; discussion centered on strong buying momentum, with speculation about analyst attention and partnerships. Bulls also pointed to upcoming Zeta Live announcements and the companys AI-driven growth story, while some questioned the moves durability."
+    },
+    {
+     "symbol": "GIS",
+     "name": "General Mills, Inc.",
+     "exchange": "NYSE",
+     "score": 7.8156,
+     "watchers": 7831,
+     "why": "GIS is drawing attention amid a steep selloff and weakness across packaged-food peers, with traders citing concerns about soft demand, input costs, private-label competition and GLP-1 drugs; some also speculate that the CEO change is weighing on sentiment. The community is split between seeing the decline as justified by sector headwinds and viewing the shares and dividend as oversold value, while some blame persistent selling or shorting."
+    },
+    {
+     "symbol": "CEG",
+     "name": "Constellation Energy Corporation",
+     "exchange": "NASDAQ",
+     "score": 7.46656,
+     "watchers": 12030,
+     "why": "FERCs five-month suspension of PJMs proposed capacity procurement has renewed uncertainty around how the grid will address rising AI-related power demand, weighing on CEG and other power producers. Traders are debating the weakness against the longer-term electricity-demand thesis and Constellations announced Amazon power agreement, with some viewing the dip as a buying opportunity."
+    },
+    {
+     "symbol": "XRPN",
+     "name": "Evernorth Holdings Inc.",
+     "exchange": "NASDAQ",
+     "score": 7.38763,
+     "watchers": 811,
+     "why": ""
+    },
+    {
+     "symbol": "IBRX",
+     "name": "ImmunityBio Inc",
+     "exchange": "NASDAQ",
+     "score": 7.33489,
+     "watchers": 30710,
+     "why": ""
+    },
+    {
+     "symbol": "SNPS",
+     "name": "Synopsys Inc",
+     "exchange": "NASDAQ",
+     "score": 7.11248,
+     "watchers": 7708,
+     "why": ""
+    },
+    {
+     "symbol": "TLT",
+     "name": "iShares 20+ Year Treasury Bond ETF",
+     "exchange": "NASDAQ",
+     "score": 6.78728,
+     "watchers": 31301,
+     "why": ""
+    },
+    {
+     "symbol": "SOXL",
+     "name": "Direxion Daily Semiconductor Bull 3X Shares",
+     "exchange": "NYSEArca",
+     "score": 6.70976,
+     "watchers": 40395,
+     "why": ""
+    },
+    {
+     "symbol": "MUU",
+     "name": "Direxion Daily MU Bull 2X Shares",
+     "exchange": "NASDAQ",
+     "score": 6.58675,
+     "watchers": 1998,
+     "why": ""
+    },
+    {
+     "symbol": "RUM",
+     "name": "RUM Group Inc.",
+     "exchange": "NASDAQ",
+     "score": 6.17858,
+     "watchers": 35324,
+     "why": ""
+    },
+    {
+     "symbol": "WBD",
+     "name": "Warner Bros Discovery Inc",
+     "exchange": "NASDAQ",
+     "score": 5.83689,
+     "watchers": 10088,
+     "why": ""
+    },
+    {
+     "symbol": "CRWV",
+     "name": "CoreWeave Inc",
+     "exchange": "NASDAQ",
+     "score": 5.82691,
+     "watchers": 49578,
+     "why": ""
+    },
+    {
+     "symbol": "SLS",
+     "name": "SELLAS Life Sciences Group Inc",
+     "exchange": "NASDAQ",
+     "score": 5.80426,
+     "watchers": 62139,
+     "why": ""
+    },
+    {
+     "symbol": "MCD",
+     "name": "McDonald's Corp",
+     "exchange": "NYSE",
+     "score": 5.69106,
+     "watchers": 42289,
+     "why": ""
+    },
+    {
+     "symbol": "RKLB",
+     "name": "Rocket Lab USA Inc",
+     "exchange": "NASDAQ",
+     "score": 5.50994,
+     "watchers": 68516,
+     "why": ""
+    },
+    {
+     "symbol": "TRLV",
+     "name": "Trulieve Cannabis Corp ",
+     "exchange": "NYSE",
+     "score": 5.4921,
+     "watchers": 7813,
+     "why": ""
+    },
+    {
+     "symbol": "MRK",
+     "name": "Merck & Co Inc",
+     "exchange": "NYSE",
+     "score": 5.48417,
+     "watchers": 26532,
+     "why": ""
+    },
+    {
+     "symbol": "SNDK",
+     "name": "Sandisk Corp",
+     "exchange": "NASDAQ",
+     "score": 5.46675,
+     "watchers": 36085,
+     "why": ""
+    },
+    {
+     "symbol": "AGNC",
+     "name": "AGNC Investment Corp",
+     "exchange": "NASDAQ",
+     "score": 5.39284,
+     "watchers": 12981,
+     "why": ""
+    },
+    {
+     "symbol": "CLF",
+     "name": "Cleveland-Cliffs Inc",
+     "exchange": "NYSE",
+     "score": 5.28585,
+     "watchers": 32811,
+     "why": ""
+    },
+    {
+     "symbol": "PSKY",
+     "name": "Paramount Skydance Corp. - Ordinary Shares - Class B",
+     "exchange": "NASDAQ",
+     "score": 5.21472,
+     "watchers": 26780,
+     "why": ""
+    },
+    {
+     "symbol": "CBRS",
+     "name": "Cerebras Systems Inc",
+     "exchange": "NASDAQ",
+     "score": 4.98742,
+     "watchers": 13597,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}

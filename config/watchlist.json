@@ -9,10 +9,12 @@
     "NKE",
     "TSLA",
     "TSLL",
-    "SMMT",
-    "BE",
     "CCL",
-    "JELD"
+    "JELD",
+    "GNRC",
+    "VICR",
+    "SEI",
+    "FEIM"
   ],
   "tickers": [
     "NVDA",
@@ -95,6 +97,10 @@
     "SMMT",
     "IOVA",
     "SDEV",
-    "JELD"
+    "JELD",
+    "GNRC",
+    "VICR",
+    "SEI",
+    "FEIM"
   ]
 }

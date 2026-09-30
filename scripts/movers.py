@@ -4,8 +4,10 @@ volume, pull the reason (headlines, SEC filings) and the numbers that say
 whether the move is a re-rating the market has not finished pricing.
 
   python scripts/movers.py [--min-move 15] [--min-mcap 100] [--losers] [--save]
-Writes .cache/movers.json; --save also writes research/movers/<date>.json so
-follow-through can be measured later (python scripts/movers.py --follow-up).
+  python scripts/movers.py --lookback 30 [--min-move 15] [--save]   # every jump in the last 30 sessions
+Writes .cache/movers.json (lookback: .cache/movers_lookback.json); --save also writes
+research/movers/<date>.json (lookback-<date>.json) so follow-through can be measured
+later (python scripts/movers.py --follow-up).
 
 The idea it serves: a large one-day move on material public news (guidance
 raise, big order relative to company size, refinancing that removes a default
@@ -41,8 +43,11 @@ TAGS = [
                 r"announcements)|not aware of any|unaware of any"),
     ("takeover-target", r"to be acquired|agrees? to be acquired|definitive (merger )?agreement to be acquired|"
                         r"take[- ]private|tender offer|buyout|acquired by|to acquire \w+ (for|in) \$|agrees to acquire"),
+    ("reverse-split", r"reverse (stock |share )?split"),
     ("dilution", r"public offering|registered direct|private placement|priced .*offering|at-the-market|"
-                 r"\bATM\b|warrants?\b|shelf"),
+                 r"\bATM\b|warrants?\b|shelf|strategic investment|closing of .{0,40}(offering|placement|financing)|"
+                 r"(prices|closes|announces) .{0,30}(financing|offering)|convertible (senior )?(notes|preferred)|"
+                 r"equity (line|purchase agreement)|\bELOC\b|standby equity"),
     ("refinancing", r"refinanc|debt|maturit|restructur|credit (facility|agreement)|secures \$|recapitaliz|"
                     r"chapter 11|bankruptcy|going concern"),
     ("clinical-regulatory", r"\bFDA\b|approv|phase [123i]|trial|topline|clinical|breakthrough (therapy|device)|"
@@ -52,10 +57,10 @@ TAGS = [
                           r"(first|second|third|fourth|q[1-4]|fiscal|quarterly|annual)\b[\w ,-]{0,25}\bresults|"
                           r"earnings|preliminary (revenue|results)|(revenue|sales|profit|bookings) "
                           r"(grows?|growth|jumps?|soars?|rises?|surges?|doubles?|triples?)"),
-    ("contract-order", r"contract|award(ed|s)?\b|purchase order|orders? (for|from|worth|valued)|"
+    ("contract-order", r"contract|awarded\b.{0,50}\b(order|task order|\$)|purchase order|orders? (for|from|worth|valued)|"
                        r"(wins|secures|lands|receives|signs)\b.{0,40}\b(order|deal|contract|agreement)|"
                        r"selected (by|as|to)|supply agreement|partners? with|partnership with|strategic "
-                       r"(partnership|agreement|alliance|investment)|agreement with|collaborat|deploy"),
+                       r"(partnership|agreement|alliance)|agreement with|collaborat|deploy"),
     ("product-news", r"launch(es|ed)?\b|unveil|introduc(es|ed)\b|integrat\w* (with|into)|expands? (into|to)\b|"
                      r"roll(s|ed)? ?out|teams? up|tie[- ]up|\blinks?\b.{0,60}\b(to|with)\b|now available|goes live"),
     ("analyst", r"upgrade|initiat\w* (coverage|at|with)|price target|(to|at|an?) outperform|overweight|buy rating|"
@@ -69,11 +74,16 @@ GENERIC = re.compile(
     r"here is why|\bwhy\b.{0,60}\b(stock|shares)\b|stock (quote|price|forecast|analysis)|\btrades? (up|down)|"
     r"overbought|oversold|technical|pre-?market|after[- ]hours|intraday|\btop (gainers|losers)|\bjoins\b.*\band other\b|"
     r"moving average|(out|under)performs? (its )?(competitors|the market)|compared to competitors|trading day|"
-    r"penny stocks|worth watching|time to buy\?|what'?s next\?|stock (price, )?news", re.I)
+    r"penny stocks|worth watching|time to buy\?|what'?s next\?|stock (price, )?news|"
+    # investor-relations calendar items: dates of results, calls, conferences
+    r"\bto (announce|release|report|host|hold|present|participate)\b|announces? (the )?(date|dates|timing)\b|"
+    r"\bschedules?\b|conference call|webcast|fireside|investor day|will (report|release|announce|host)\b|"
+    r"\bparticipate in\b|\bto ring\b", re.I)
 SUFFIX = re.compile(r"[,.]?\s+(inc|corp(oration)?|co|company|ltd|limited|plc|holdings?|group|n\.?v|s\.?a|"
                     r"class [a-c]|common stock|ordinary shares|adr)\b\.?", re.I)
+DEBT = re.compile(r"\b(senior|secured|unsecured) notes|notes due|term loan|credit facility|\bbonds?\b", re.I)
 CAPPED = {"takeover-target"}
-NEGATIVE = {"dilution", "no-news"}
+NEGATIVE = {"dilution", "no-news", "reverse-split"}
 
 
 def http(url: str, headers: dict | None = None, timeout: float = 15.0) -> bytes:
@@ -82,8 +92,9 @@ def http(url: str, headers: dict | None = None, timeout: float = 15.0) -> bytes:
         return r.read()
 
 
-def gnews(query: str, limit: int = 8) -> list[dict]:
-    q = urllib.parse.quote(f"{query} when:3d")
+def gnews(query: str, limit: int = 8, window: str = "when:3d") -> list[dict]:
+    """Google News RSS search; window is "when:3d" or "after:YYYY-MM-DD before:YYYY-MM-DD"."""
+    q = urllib.parse.quote(f"{query} {window}".strip())
     try:
         root = ET.fromstring(http(f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"))
     except Exception:  # noqa: BLE001
@@ -134,11 +145,14 @@ def sec_filings(sym: str, days: int = 4) -> list[dict]:
         return [{"error": str(e)[:120]}]
 
 
-def classify(news: list[dict], filings: list[dict], name: str = "", sym: str = "") -> list[str]:
+def classify(news: list[dict], filings: list[dict], name: str = "", sym: str = "", aliases: tuple = ()) -> list[str]:
     # The company's own name can trip theme words ("Stablecoin Development", "Nuclear ..."): drop it first.
-    core = SUFFIX.split(name or "")[0].strip()
-    first = core.split(" ")[0] if core else ""
-    names = sorted({w for w in (core, first if len(first) >= 4 else "") if w}, key=len, reverse=True)
+    names_set = set()
+    for nm in (name, *aliases):
+        core = SUFFIX.split(nm or "")[0].strip()
+        first = core.split(" ")[0] if core else ""
+        names_set |= {w for w in (core, first if len(first) >= 4 else "") if w}
+    names = sorted(names_set, key=len, reverse=True)
     tags = []
     for n in news:
         t = n.get("title") or ""
@@ -158,6 +172,8 @@ def classify(news: list[dict], filings: list[dict], name: str = "", sym: str = "
             continue
         for tag, pat in TAGS[1:]:
             if re.search(pat, t, re.I):
+                if tag == "dilution" and DEBT.search(t) and not re.search(r"convertible|exchangeable", t, re.I):
+                    tag = "refinancing"  # a notes or loan deal, not new shares
                 if tag not in tags:
                     tags.append(tag)
                 break
@@ -200,13 +216,9 @@ def score(row: dict) -> int:
     return s
 
 
-def enrich(q: dict) -> dict:
+def fundamentals(sym: str, row: dict) -> dict:
+    """Size, growth, valuation, short interest and analyst numbers from Yahoo, merged into row."""
     import yfinance as yf  # type: ignore
-    sym = q["symbol"]
-    row = {"symbol": sym, "name": q.get("shortName") or q.get("longName"),
-           "price": q.get("regularMarketPrice"), "change_pct": round(q.get("regularMarketChangePercent") or 0, 2),
-           "volume": q.get("regularMarketVolume"), "market_cap": q.get("marketCap"),
-           "exchange": q.get("exchange")}
     info = {}
     try:
         info = yf.Ticker(sym).get_info() or {}
@@ -229,6 +241,17 @@ def enrich(q: dict) -> dict:
         row["off_52w_high_pct"] = round((row["price"] / row["high_52w"] - 1) * 100, 1)
     if row.get("target_mean") and row.get("price"):
         row["target_upside_pct"] = round((row["target_mean"] / row["price"] - 1) * 100, 1)
+    return row
+
+
+def enrich(q: dict) -> dict:
+    import yfinance as yf  # type: ignore
+    sym = q["symbol"]
+    row = {"symbol": sym, "name": q.get("shortName") or q.get("longName"),
+           "price": q.get("regularMarketPrice"), "change_pct": round(q.get("regularMarketChangePercent") or 0, 2),
+           "volume": q.get("regularMarketVolume"), "market_cap": q.get("marketCap"),
+           "exchange": q.get("exchange")}
+    fundamentals(sym, row)
     news = []
     try:
         for n in (yf.Ticker(sym).news or [])[:8]:
@@ -260,6 +283,204 @@ def screen(min_move: float, losers: bool, size: int = 100) -> list[dict]:
     q = Q("and", [cond, Q("eq", ["region", "us"]), Q("gte", ["intradayprice", 1]), Q("gt", ["dayvolume", 300000])])
     r = yf.screen(q, sortField="percentchange", sortAsc=losers, size=size)
     return r.get("quotes", [])
+
+
+EXCHANGES = ["NMS", "NYQ", "NGM", "NCM", "ASE"]
+
+
+def derivative(sym: str) -> bool:
+    """Warrants, units and rights (5+ letter symbols ending W/WS/U/R)."""
+    return len(sym) > 4 and bool(re.search(r"(W|WS|U|R)$", sym[-2:]))
+
+
+def universe(min_mcap_m: float, min_avg_vol: int = 200_000) -> dict[str, dict]:
+    """Every US-listed common stock above the size and liquidity floor (Yahoo screener, ~3,300 names)."""
+    import yfinance as yf  # type: ignore
+    from yfinance import EquityQuery as Q  # type: ignore
+    q = Q("and", [Q("eq", ["region", "us"]), Q("gte", ["intradaymarketcap", min_mcap_m * 1e6]),
+                  Q("gte", ["intradayprice", 1]), Q("gt", ["avgdailyvol3m", min_avg_vol]),
+                  Q("is-in", ["exchange", *EXCHANGES])])
+    out: dict[str, dict] = {}
+    for off in range(0, 12000, 250):
+        qs = yf.screen(q, offset=off, size=250, sortField="intradaymarketcap", sortAsc=False).get("quotes", [])
+        for x in qs:
+            if x.get("quoteType") == "EQUITY" and not derivative(x["symbol"]):
+                out[x["symbol"]] = x
+        if len(qs) < 250:
+            break
+    return out
+
+
+def history(syms: list[str], period: str = "3mo", batch: int = 400):
+    """Daily closes and volumes (split-adjusted) for many symbols, as two DataFrames."""
+    import pandas as pd  # type: ignore
+    import yfinance as yf  # type: ignore
+    closes, vols = [], []
+    for i in range(0, len(syms), batch):
+        part = syms[i:i + batch]
+        try:
+            df = yf.download(part, period=period, interval="1d", progress=False, auto_adjust=False, threads=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  history batch {i // batch + 1} failed: {str(e)[:120]}", file=sys.stderr)
+            continue
+        if df is None or df.empty:
+            continue
+        c, v = df["Close"], df["Volume"]
+        if isinstance(c, pd.Series):
+            c, v = c.to_frame(part[0]), v.to_frame(part[0])
+        closes.append(c)
+        vols.append(v)
+    return pd.concat(closes, axis=1), pd.concat(vols, axis=1)
+
+
+def find_events(closes, vols, days: int, min_move: float, min_rel_vol: float = 2.0) -> list[dict]:
+    """Every close-to-close jump >= min_move% in the last `days` sessions on >= min_rel_vol x the prior
+    20-session volume; one row per stock (its biggest jump) with what the price has done since."""
+    out = []
+    for sym in closes.columns:
+        c = closes[sym].dropna()
+        if len(c) < days + 21:
+            continue  # recent listings: IPO pops are a different animal
+        v = vols[sym].reindex(c.index).fillna(0)
+        r = c.pct_change()
+        jumps = []
+        for i in range(len(c) - days, len(c)):
+            if r.iloc[i] >= min_move / 100:
+                base = v.iloc[i - 20:i].mean()
+                rv = float(v.iloc[i] / base) if base else 0.0
+                if rv >= min_rel_vol:
+                    jumps.append((i, float(r.iloc[i]), rv))
+        if not jumps:
+            continue
+        i, move, rv = max(jumps, key=lambda j: j[1])
+        pre, evc, now = float(c.iloc[i - 1]), float(c.iloc[i]), float(c.iloc[-1])
+        after = c.iloc[i:]
+        since, vs_pre = now / evc - 1, now / pre - 1
+        n_since = len(c) - 1 - i
+        if n_since == 0:
+            status = "new"
+        elif vs_pre <= 0:
+            status = "round-trip"  # gave back the whole jump: the market rejected it
+        elif since >= 0.15:
+            status = "extending"
+        elif since >= -0.10:
+            status = "holding"  # kept the jump, has not run yet: the "signal shown, rally not started" bucket
+        else:
+            status = "fading"
+        out.append({"symbol": sym, "event_date": c.index[i].date().isoformat(), "move_pct": round(move * 100, 1),
+                    "event_rel_volume": round(rv, 1), "pre_close": round(pre, 4), "event_close": round(evc, 4),
+                    "price": round(now, 4), "since_event_pct": round(since * 100, 1),
+                    "vs_pre_event_pct": round(vs_pre * 100, 1),
+                    "max_after_pct": round((float(after.max()) / evc - 1) * 100, 1),
+                    "min_after_pct": round((float(after.min()) / evc - 1) * 100, 1),
+                    "sessions_since": n_since, "run_up_before_pct": round((pre / float(c.iloc[i - 21]) - 1) * 100, 1),
+                    "jumps": [{"date": c.index[j].date().isoformat(), "move_pct": round(m * 100, 1),
+                               "rel_volume": round(x, 1)} for j, m, x in jumps], "status": status})
+    return out
+
+
+STATUS_ADJ = {"holding": 2, "new": 1, "extending": 1, "fading": -1, "round-trip": -3}
+
+
+def enrich_event(ev: dict, quote: dict) -> dict:
+    """Fundamentals, the news on the jump day (the catalyst) and the news since (offerings etc.)."""
+    import yfinance as yf  # type: ignore
+    sym = ev["symbol"]
+    row = dict(ev)
+    row.update({"name": quote.get("shortName") or quote.get("longName"), "market_cap": quote.get("marketCap"),
+                "exchange": quote.get("exchange")})
+    aliases = tuple(x for x in (quote.get("displayName"), quote.get("longName")) if x)
+    fundamentals(sym, row)
+    row["rel_volume"] = ev["event_rel_volume"]  # score() reads the jump day's volume, not today's
+    d = dt.date.fromisoformat(ev["event_date"])
+    win = f"after:{(d - dt.timedelta(days=2)).isoformat()} before:{(d + dt.timedelta(days=2)).isoformat()}"
+    core = SUFFIX.split(row.get("name") or sym)[0].strip()
+    news = gnews(f'"{core}"', 8, win) + gnews(f"{sym} stock", 6, win)
+    later = gnews(f'"{core}"', 8, f"after:{(d + dt.timedelta(days=1)).isoformat()}")
+    try:
+        for n in (yf.Ticker(sym).news or [])[:8]:
+            c = n.get("content") or n
+            later.append({"title": c.get("title"), "published": c.get("pubDate") or c.get("providerPublishTime"),
+                          "via": "yahoo"})
+    except Exception:  # noqa: BLE001
+        pass
+    row["news"] = _dedupe(news)[:10]
+    row["later_news"] = _dedupe(later)[:10]
+    row["tags"] = classify(row["news"], [], row.get("name") or "", sym, aliases)
+    row["later_tags"] = [t for t in classify(row["later_news"], [], row.get("name") or "", sym, aliases)
+                         if t != "no-clear-news"]
+    s = score(row) + STATUS_ADJ.get(row["status"], 0)
+    if {"dilution", "reverse-split"} & set(row["later_tags"]):
+        s -= 3  # sold stock into the move, or a reverse split: the classic post-spike traps
+    if len(row["jumps"]) >= 3:
+        s -= 1  # serial spiker
+    row["score"] = s
+    return row
+
+
+def _dedupe(news: list[dict]) -> list[dict]:
+    seen, out = set(), []
+    for n in news:
+        t = (n.get("title") or "").strip()
+        if t and t not in seen:
+            seen.add(t)
+            out.append(n)
+    return out
+
+
+def lookback(days: int, min_move: float, min_mcap_m: float, limit: int, save: bool) -> int:
+    from concurrent.futures import ThreadPoolExecutor
+    t0 = time.time()
+    uni = universe(min_mcap_m)
+    print(f"universe: {len(uni)} US stocks (mcap >= ${min_mcap_m:g}M, price >= $1, 3-month avg volume > 200K)")
+    closes, vols = history(sorted(uni))
+    events = find_events(closes, vols, days, min_move)
+    by_status: dict[str, int] = {}
+    for e in events:
+        by_status[e["status"]] = by_status.get(e["status"], 0) + 1
+    print(f"{len(events)} stocks jumped >= {min_move:g}% in one session (>= 2x volume) in the last {days} sessions: "
+          + ", ".join(f"{k} {v}" for k, v in sorted(by_status.items(), key=lambda kv: -kv[1]))
+          + f"  [{time.time() - t0:.0f}s]")
+    # Enrich the ones the market has not rejected first; round-trips only if there is room.
+    events.sort(key=lambda e: (e["status"] == "round-trip", -e["move_pct"] * min(e["event_rel_volume"], 10)))
+    pick = events[:limit]
+
+    def work(e):
+        try:
+            return enrich_event(e, uni.get(e["symbol"], {}))
+        except Exception as ex:  # noqa: BLE001
+            return {**e, "error": str(ex)[:200], "tags": [], "score": -9}
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        rows = list(pool.map(work, pick))
+    rows += [{**e, "tags": [], "score": None, "not_enriched": True} for e in events[limit:]]
+    order = {"holding": 0, "extending": 1, "new": 2, "fading": 3, "round-trip": 4}
+    rows.sort(key=lambda r: (r.get("score") is None, -(r.get("score") or 0), order.get(r["status"], 9)))
+    now = pfm.now_utc()
+    doc = {"generated_at": pfm.iso(now), "date": pfm.et_date(now).isoformat(), "mode": "lookback",
+           "lookback_sessions": days, "min_move": min_move, "min_mcap_m": min_mcap_m, "universe": len(uni),
+           "rows": rows}
+    (ROOT / ".cache").mkdir(exist_ok=True)
+    (ROOT / ".cache" / "movers_lookback.json").write_text(json.dumps(doc, indent=1, default=str))
+    if save:
+        d = ROOT / "research" / "movers"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"lookback-{doc['date']}.json").write_text(json.dumps(doc, indent=1, default=str))
+    for st in ("holding", "extending", "new", "fading", "round-trip"):
+        grp = [r for r in rows if r["status"] == st and r.get("score") is not None]
+        if not grp:
+            continue
+        print(f"\n=== {st.upper()} ({len(grp)} enriched)")
+        for r in grp:
+            mc = (r.get("market_cap") or 0) / 1e6
+            rev = (r.get("revenue_ttm") or 0) / 1e6
+            print(f"[{r['score']:+d}] {r['symbol']:6} +{r['move_pct']}% on {r['event_date']} (relvol {r['event_rel_volume']}) "
+                  f"-> since {r['since_event_pct']:+}% (vs pre-jump {r['vs_pre_event_pct']:+}%) | ${r['price']} "
+                  f"mcap ${mc:,.0f}M rev ${rev:,.0f}M g {r.get('revenue_growth')} | target {r.get('target_mean')} "
+                  f"| {','.join(r.get('tags', []))}{' | later: ' + ','.join(r['later_tags']) if r.get('later_tags') else ''}")
+            for n in r.get("news", [])[:3]:
+                print(f"      - {str(n.get('title'))[:140]}")
+    return 0
 
 
 def follow_up() -> int:
@@ -295,11 +516,16 @@ def main() -> int:
     ap.add_argument("--extra", default="", help="extra tickers to analyse, comma separated")
     ap.add_argument("--save", action="store_true")
     ap.add_argument("--follow-up", action="store_true")
+    ap.add_argument("--lookback", type=int, default=0,
+                    help="scan every jump in the last N sessions instead of today's movers")
+    ap.add_argument("--limit", type=int, default=150, help="lookback: how many events to research")
     a = ap.parse_args()
     if a.follow_up:
         return follow_up()
+    if a.lookback:
+        return lookback(a.lookback, a.min_move, a.min_mcap, a.limit, a.save)
     quotes = [q for q in screen(a.min_move, a.losers)
-              if q.get("quoteType", "EQUITY") == "EQUITY" and not re.search(r"(W|WS|U|R)$", q["symbol"][-2:] if len(q["symbol"]) > 4 else "")]
+              if q.get("quoteType", "EQUITY") == "EQUITY" and not derivative(q["symbol"])]
     picked = [q for q in quotes if (q.get("marketCap") or 0) >= a.min_mcap * 1e6]
     skipped = [q["symbol"] for q in quotes if q not in picked]
     extra = [x.strip().upper() for x in a.extra.split(",") if x.strip()]

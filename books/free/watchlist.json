@@ -12,8 +12,9 @@
     "QQQ",
     "BTC-USD",
     "ETH-USD",
-    "SOL-USD",
-    "JELD"
+    "JELD",
+    "GNRC",
+    "VICR"
   ],
   "tickers": [
     "AFRM",
@@ -103,7 +104,11 @@
     "WULF",
     "XOM",
     "XRP-USD",
-    "JELD"
+    "JELD",
+    "GNRC",
+    "VICR",
+    "SEI",
+    "FEIM"
   ],
   "options_watch": [
     "MU",
@@ -116,7 +121,9 @@
     "SPY",
     "QQQ",
     "IONQ",
-    "SNDK"
+    "SNDK",
+    "GNRC",
+    "VICR"
   ],
   "options_expiries": 2
 }

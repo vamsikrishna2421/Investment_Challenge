@@ -26,6 +26,7 @@ python3 scripts/sync.py --local --mode quotes          # direct fetch (~20 s): q
 python3 scripts/sync.py --local --mode news            # adds headlines, discovery, alerts (use at least hourly)
 python3 scripts/review.py                              # h1b: portfolio, alerts, focus, news
 python3 scripts/review.py --book free --brief          # free: portfolio and positions
+python3 scripts/wires.py                               # live catalyst feed (see 1c)
 ```
 `--tickers A,B,NKE261002C00036000` adds symbols (an option contract pulls its underlying's chain).
 Also dispatch the market-data workflow (GitHub MCP `actions_run_trigger`, workflow `market-data.yml`,
@@ -46,6 +47,24 @@ after the spike), valuation (EV/sales vs growth, analyst targets), and write ver
 Buy candidates need material news, a market cap of at least $100M, relative volume above 2, no takeover cap,
 and day-two confirmation (holds above the prior close through the first 30-60 minutes). Skip no-news spikes,
 de-SPACs and financings.
+
+To catch jumps from the last month that have not run yet (the "signal shown, rally not started" names):
+```bash
+python3 scripts/movers.py --lookback 30 --min-move 15 --save   # ~10 min: every >=15% day on >=2x volume in 30 sessions
+```
+It groups them by what the price did since: `holding` (kept the jump, has not run: the main list),
+`extending` (drift under way), `fading`, `round-trip` (gave it all back: the market rejected it).
+Run it on Sundays and whenever the daily scan is thin; deep-dive the top `holding` names like 1b.
+
+## 1c. Live catalyst feed (every run)
+
+`python3 scripts/wires.py [--hours 6]` pulls the newest company press releases from every wire (Stock Titan's
+100-item feed plus PR Newswire), Nasdaq trading halts and FDA press releases. Each release is tagged by type and
+shown with market cap, the dollar figure in the headline as a share of market cap, and the price reaction
+(regular and extended hours, relative volume). Order of reading: HOLDINGS / WATCHLIST (anything about what we own,
+especially offerings), HALTS (T1 = news pending), then CATALYSTS. NEW marks items first seen in this run.
+For a real candidate, open the release: a raised guide, an order or contract worth >=10% of annual revenue, a
+refinancing that removes a near-term maturity, an approval. Then apply the entry rules in 1b.
 
 ## 2. Decide
 

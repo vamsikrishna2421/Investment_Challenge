@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-30T16:23:19Z",
+ "as_of": "2026-09-30T16:41:40Z",
  "session": "regular",
  "start_capital": 1000.0,
  "deposits": 1000.0,
@@ -29,8 +29,8 @@
     "strike": 37.0
    },
    "expired": false,
-   "bid": 2.8,
-   "ask": 2.9,
+   "bid": 2.75,
+   "ask": 2.95,
    "qty": 1.0,
    "avg_cost": 2.9003,
    "cost_basis": 290.03,
@@ -44,7 +44,7 @@
    "price_source": "regular",
    "ext_price": null,
    "ext_change_pct": null,
-   "quote_time": "2026-09-30T16:23:19Z",
+   "quote_time": "2026-09-30T16:41:40Z",
    "stale_quote": false,
    "opened": "2026-09-30T13:57:18Z",
    "sell_locked_until": null,

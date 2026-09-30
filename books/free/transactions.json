@@ -8,6 +8,56 @@
       "net_cash": 1000.0,
       "settle_date": "2026-09-29",
       "note": "Paper capital funded. Unrestricted book opened Tue Sep 29, 5:45 PM ET; same finish line as the H-1B book (Mon Oct 5 close)."
+    },
+    {
+      "id": "T0001",
+      "type": "BUY",
+      "ts": "2026-09-30T13:57:18Z",
+      "ticker": "MUU261002C00037000",
+      "label": "MUU 10/2 $37 call",
+      "asset": "option",
+      "name": "Direxion Daily MU Bull 2X ETF",
+      "qty": 1.0,
+      "multiplier": 100,
+      "price": 2.9,
+      "quote_price": 2.9,
+      "quote_time": "2026-09-30T13:56:20Z",
+      "session": "regular",
+      "quote_source": "yahoo-option-chain",
+      "slippage_bps": 0.0,
+      "gross": 290.0,
+      "fees": 0.03,
+      "net_cash": -290.03,
+      "settle_date": "2026-10-01",
+      "rationale": "Micron report tonight: one MUU Oct 2 37 call per plan J0007/J0010; MU +0.3% at 9:56 (condition: flat or up)",
+      "tags": [
+        "earnings",
+        "options"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 58,
+        "cash_account": true,
+        "asset": "option",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 29.0
+      },
+      "option": {
+        "underlying": "MUU",
+        "expiry": "2026-10-02",
+        "type": "call",
+        "strike": 37.0
+      },
+      "quote_detail": {
+        "bid": 2.7,
+        "ask": 2.9,
+        "last": 2.65,
+        "iv": 2.1436,
+        "spot": 36.875,
+        "open_interest": 972,
+        "volume": 123
+      }
     }
   ]
 }

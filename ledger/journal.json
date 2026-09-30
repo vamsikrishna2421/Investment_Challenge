@@ -296,6 +296,18 @@
         "MU",
         "MUU"
       ]
+    },
+    {
+      "id": "J0023",
+      "ts": "2026-09-30T20:12:06Z",
+      "kind": "research",
+      "title": "VICR raises Q3 guidance again (+9.7% after hours); no chase; Micron after-hours check",
+      "body": "4:11 PM: Vicor 'Raises Q3 2026 Revenue Guidance'. This is its second raise in about a week; the Sep 22-23 raise, driven by patent-licensing royalties, sent the stock up 20% that day. After hours $317 (+9.7% from the $288.94 close). Market cap $13.3B, 93x trailing and 49x forward earnings. The 52-week range is $48.5-$382.7, so the move rides an extremely volatile stock. Royalty revenue is lumpy, and press coverage notes the stream has reversed before.\nNo after-hours buy. A thin after-hours print on a stock this volatile is exactly what our jump study says not to chase. Candidate for the post-close deep dive (dossier with peers) and Thursday's day-two test: hold above $317 through the first 30-60 minutes, no share sale filed.\nMicron at 4:11 PM: Yahoo shows MUU $37.01 (+0.5% after hours) and MU +0.4%. The first prints after the beat and raise (4:08 PM, -0.6%) have turned slightly positive. Still no add (J0022): the call starts at 4:30 PM.",
+      "tickers": [
+        "VICR",
+        "MU",
+        "MUU"
+      ]
     }
   ]
 }

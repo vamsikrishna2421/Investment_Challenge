@@ -62,13 +62,14 @@ NAME_STOP = {"the", "and", "inc", "corp", "group", "holdings", "company", "inter
 def names_company(title: str, name: str | None, ticker: str, aliases: tuple = ()) -> bool:
     """Does the headline name the company (ticker or the first distinctive word of its name)?"""
     t = title.lower()
+    squeezed = re.sub(r"[^a-z0-9&]", "", t)  # "Curiosity Stream" in a headline, "CuriosityStream Inc." on file
     if re.search(rf"(?<![a-z0-9]){re.escape(ticker.lower())}(?![a-z0-9])", t):
         return True
     for n in (name, *aliases):
         if not n:
             continue
         words = [w for w in re.findall(r"[a-z0-9&]+", movers.SUFFIX.sub("", n).lower()) if len(w) >= 3 and w not in NAME_STOP]
-        if words and words[0] in t:
+        if words and (words[0] in t or words[0] in squeezed):
             return True
     return not name  # no name on file: cannot tell, assume it is theirs
 

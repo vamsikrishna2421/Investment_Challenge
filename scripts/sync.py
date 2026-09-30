@@ -31,6 +31,17 @@ def remote_sha() -> str:
     return out.split()[0] if out.strip() else ""
 
 
+def pull_history() -> None:
+    """Refresh the equity curves from the market-data branch; the Actions job owns them."""
+    if subprocess.run(["git", "fetch", "--quiet", "origin", "market-data"], cwd=ROOT).returncode != 0:
+        return
+    for f in ("equity.jsonl", "equity_free.jsonl"):
+        r = subprocess.run(["git", "show", f"origin/market-data:data/{f}"], cwd=ROOT,
+                           capture_output=True, text=True)
+        if r.returncode == 0 and r.stdout.strip():
+            (CACHE / f).write_text(r.stdout)
+
+
 def fetch_local(mode: str, tickers: str) -> int:
     """Run the data pump here (needs internet access) into a scratch copy of the
     cache, then copy the fresh quotes/chains/news back. Equity history stays the
@@ -52,6 +63,7 @@ def fetch_local(mode: str, tickers: str) -> int:
               "portfolio.json", "portfolio_free.json"):
         if (tmp / f).exists():
             shutil.copy(tmp / f, CACHE / f)
+    pull_history()
     q = json.loads((CACHE / "quotes.json").read_text())
     print(f"local {mode}: generated_at={q['generated_at']} session={q['session']} quotes={len(q['quotes'])} "
           f"errors={list(q.get('errors', {}))} | {r.stdout.strip().splitlines()[-1][:160] if r.stdout.strip() else ''}")

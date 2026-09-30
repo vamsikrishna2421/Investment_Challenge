@@ -50,7 +50,7 @@ TAGS = [
                  r"equity (line|purchase agreement)|\bELOC\b|standby equity"),
     ("refinancing", r"refinanc|debt|maturit|restructur|credit (facility|agreement)|secures \$|recapitaliz|"
                     r"chapter 11|bankruptcy|going concern"),
-    ("clinical-regulatory", r"\bFDA\b|approv|phase [123i]|trial|topline|clinical|breakthrough (therapy|device)|"
+    ("clinical-regulatory", r"\bFDA\b|(?<!trump )(?<!job )(?<!presidential )approv|phase [123i]|\btrials?\b|topline|clinical|breakthrough (therapy|device)|"
                             r"clearance|\bEMA\b"),
     ("earnings-guidance", r"guidance|outlook|raises? (its |full[- ]year |annual )?(forecast|guidance|outlook)|"
                           r"record (revenue|quarter|results|sales|bookings|deposits)|\bbeats?\b|"
@@ -78,7 +78,9 @@ GENERIC = re.compile(
     # investor-relations calendar items: dates of results, calls, conferences
     r"\bto (announce|release|report|host|hold|present|participate)\b|announces? (the )?(date|dates|timing)\b|"
     r"\bschedules?\b|conference call|webcast|fireside|investor day|will (report|release|announce|host)\b|"
-    r"\bparticipate in\b|\bto ring\b", re.I)
+    r"\bparticipate in\b|\bto ring\b|\brelease dates?\b|"
+    # opinion polls a PR or research firm publishes as marketing (Stagwell's Harris Poll)
+    r"\bpoll\b", re.I)
 SUFFIX = re.compile(r"[,.]?\s+(inc|corp(oration)?|co|company|ltd|limited|plc|holdings?|group|n\.?v|s\.?a|"
                     r"class [a-c]|common stock|ordinary shares|adr)\b\.?", re.I)
 DEBT = re.compile(r"\b(senior|secured|unsecured) notes|notes due|term loan|credit facility|\bbonds?\b", re.I)

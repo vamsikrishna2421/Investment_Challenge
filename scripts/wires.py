@@ -22,6 +22,7 @@ import json
 import re
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -55,8 +56,13 @@ AMOUNT = re.compile(r"\$\s?(\d+(?:[.,]\d+)?)\s*(billion|million|bn|mm|[BM])\b", 
 
 def fetch(url: str, timeout: float = 20.0) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "gzip", "Accept": "*/*"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        data = r.read()
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = r.read()
+    except urllib.error.HTTPError as e:
+        if e.code not in (401, 403):
+            raise
+        data = b"<html>"  # refused by a bot filter (fda.gov answers urllib with 401): retry with curl below
     data = gzip.decompress(data) if data[:2] == b"\x1f\x8b" else data
     if data.lstrip()[:5].lower() == b"<html":
         # Bot wall (the halts page sits behind Incapsula): curl sometimes passes where urllib does not.

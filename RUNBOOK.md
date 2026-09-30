@@ -129,6 +129,15 @@ Uses that change decisions:
 - Expiring options: Robinhood force-closes at 3:30 PM ET on expiration day (`sellout_datetime`), so the books sell any
   contract expiring that day by the 3:25 PM run at the latest.
 
+## 1g. Prediction markets (read-only)
+
+The Robinhood connector has no prediction-market tools yet, so its event contracts can't be seen or traded
+through it. Kalshi's public API is readable without an account: `python3 scripts/kalshi.py [SERIES ...] [--save]`
+prints each "above X" ladder with the market's probability per rung and the implied median (payrolls KXPAYROLLS,
+unemployment KXU3, CPI KXCPI / KXCPIYOY, Fed KXFED). Use the implied median as the surprise benchmark for scheduled
+releases: surprise = actual - median, snapshot before the market closes (--save logs to research/kalshi/). Neither
+book trades prediction markets.
+
 ## 2. Decide
 
 * Read `ALERTS` first: new headlines since the last news run, movers (>=6% on the day or >=4% extended-hours)

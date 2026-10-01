@@ -1,0 +1,26 @@
+{
+ "forecasts": [
+  {
+   "id": "F0001",
+   "made_at": "2026-10-01T20:13:13Z",
+   "question": "September 2026 nonfarm payrolls (first print) above +100,000",
+   "p": 0.38,
+   "market": 0.485,
+   "source": "KXPAYROLLS Above 100,000 (bid 0.48 / ask 0.49, 4:14 PM ET Oct 1)",
+   "resolves": "2026-10-02",
+   "why": "Written first in J0030: center about +80K (weak 12-month base of 31K a month, payback risk after August's +162K, offset by ADP +90K, claims 197K, lower layoffs); surprise SD about 75-80K.",
+   "outcome": null
+  },
+  {
+   "id": "F0002",
+   "made_at": "2026-10-01T20:13:13Z",
+   "question": "September 2026 unemployment rate (U-3) above 4.1%, i.e. 4.2% or higher",
+   "p": 0.33,
+   "market": 0.395,
+   "source": "KXU3 Above 4.1% (bid 0.39 / ask 0.40, 4:14 PM ET Oct 1)",
+   "resolves": "2026-10-02",
+   "why": "Written first in J0030: August unrounded about 4.10%, needs about +0.05pp; monthly change SD about 0.12pp; low claims vs reversal of August's household jump.",
+   "outcome": null
+  }
+ ]
+}

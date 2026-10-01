@@ -150,6 +150,22 @@ def documents(filing_url: str) -> list[dict]:
             for it in idx.get("directory", {}).get("item", [])]
 
 
+def typed_exhibits(filing_url: str, kind: str = "EX-99") -> list[str]:
+    """Documents the filing index declares as this exhibit type, for file names that don't say so
+    (Accenture's press release is q4fy26earnings8-kexhibit.htm)."""
+    base = filing_url.rsplit("/", 1)[0]
+    idx = [d for d in documents(filing_url) if d["name"].endswith(("-index.htm", "-index.html"))]
+    if not idx:
+        return []
+    page = get(idx[0]["url"]).decode("utf-8", "ignore")
+    out = []
+    for row in re.findall(r"(?is)<tr[^>]*>(.*?)</tr>", page):
+        m = re.search(r'href="([^"]+?([^"/]+\.html?))"', row)
+        if m and re.search(rf">\s*{kind}", row):
+            out.append(f"{base}/{m.group(2)}")
+    return out
+
+
 def exhibit(sym: str, form: str = "8-K", n: int = 0, days: int = 120, max_chars: int = 12000) -> str:
     """Text of the press release (exhibit 99.x) in the ticker's n-th most recent filing of this form,
     or the filing's main document when there is no exhibit 99."""
@@ -159,7 +175,8 @@ def exhibit(sym: str, form: str = "8-K", n: int = 0, days: int = 120, max_chars:
     f = fl[n]
     docs = [d for d in documents(f["url"]) if d["name"].lower().endswith((".htm", ".html", ".txt"))]
     ex = [d for d in docs if re.search(r"ex-?_?99|exhibit_?99|dex99", d["name"], re.I)]
-    target = ex[0]["url"] if ex else f["url"]
+    ex_urls = [d["url"] for d in ex] or typed_exhibits(f["url"])
+    target = ex_urls[0] if ex_urls else f["url"]
     body = html_text(get(target).decode("utf-8", "ignore"))
     head = f"{sym} {f['form']} filed {f['date']} ({'; '.join(f['events'])})\nsource: {target}\n\n"
     return head + body[:max_chars] + ("\n[... truncated]" if len(body) > max_chars else "")

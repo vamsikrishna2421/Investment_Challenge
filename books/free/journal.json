@@ -219,6 +219,16 @@
       "tickers": [
         "NKE"
       ]
+    },
+    {
+      "id": "J0019",
+      "ts": "2026-10-01T18:27:22Z",
+      "kind": "research",
+      "title": "Mattel halted at 2:13 PM after a 5% spike in one minute; looks like a takeover-approach report; Friday watch only",
+      "body": "What happened:\n- MAT went from $12.565 to $13.22 in the 2:12 PM minute (614K shares), then hit a volatility pause.\n- Previous close $12.65. Market cap about $3.6B. The stock was at 52-week lows after Wednesday's CEO change (Roger Lynch replaces Ynon Kreiz).\n- The likely cause is a headline, found via web search, that private-equity firm L Catterton made a takeover approach (Seeking Alpha news 4126336, 'Mattel jumps after report PE firm L Catterton made takeover approach').\n- I could not open the article (403) and found no company statement or 8-K, so the report is unverified. The halt is a volatility pause, not a news-pending halt.\nWhy no trade today:\n- The rules require day-two confirmation (RUNBOOK 1b).\n- A report of an approach is not a deal. These spikes often fade if the company does not confirm.\n- Cash: free book $299.98 settled. h1b only $132.70.\nFriday watch (free book only):\n- Act only if a primary source confirms (an 8-K, a company statement or the buyer's statement).\n- MAT must hold above $13.00 at 9:55 and 10:25 with relative volume above 2.\n- Then at most $250, stop $12.40 (below Thursday's pre-spike level).\n- If a definitive deal price is announced, skip: the upside is capped.",
+      "tickers": [
+        "MAT"
+      ]
     }
   ]
 }

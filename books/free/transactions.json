@@ -109,6 +109,45 @@
         "volume": 4313,
         "quote_source": "broker read-only quote (synced chain had no bid/ask)"
       }
+    },
+    {
+      "id": "T0003",
+      "type": "BUY",
+      "ts": "2026-10-01T14:26:43Z",
+      "ticker": "ACN",
+      "label": "ACN",
+      "asset": "stock",
+      "name": "Accenture plc",
+      "qty": 1.8279,
+      "multiplier": 1,
+      "price": 224.2971,
+      "quote_price": 224.185,
+      "quote_time": "2026-10-01T14:25:39Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 409.99,
+      "fees": 0.0,
+      "net_cash": -409.99,
+      "settle_date": "2026-10-02",
+      "rationale": "J0014/J0016 alternate (VICR failed at 9:55): ACN $224.61 at 10:26 (bid $224.42 / ask $224.64, below the $226 skip). It was at least $215 at 9:55 ($223.00) and at 10:25. Open $215.98; low since 9:45 $221.00. Volume 11.2M. CTSH +10.9% and EPAM +8.8% are green; SPY -0.3%. The call puts FY27 organic growth at about 1-4%. Size $410 so the $205 stop loses about $36. Exit: half at today's 3:55 run; stop to entry on a close 3% or more above it; the rest at +10% ($247) or Monday's 3:40 PM liquidation.",
+      "tags": [
+        "earnings",
+        "gap",
+        "confirmation"
+      ],
+      "plan": {
+        "stop": 205.0,
+        "target": 247.0
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 64,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 52.9
+      }
     }
   ]
 }

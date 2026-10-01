@@ -143,6 +143,45 @@
         "day_trade": true,
         "good_faith_ok": true
       }
+    },
+    {
+      "id": "T0005",
+      "type": "BUY",
+      "ts": "2026-10-01T14:26:43Z",
+      "ticker": "UTHR",
+      "label": "UTHR",
+      "asset": "stock",
+      "name": "United Therapeutics Corporation",
+      "qty": 0.5227,
+      "multiplier": 1,
+      "price": 573.8968,
+      "quote_price": 573.61,
+      "quote_time": "2026-10-01T14:25:37Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 299.98,
+      "fees": 0.0,
+      "net_cash": -299.98,
+      "settle_date": "2026-10-02",
+      "rationale": "J0027 trigger met at 10:25: $574.18 (bid $573.36 / ask $574.98), above $541.89 at 9:55 ($573.93) and at 10:25, and at least $548. Day low $556.76, never below $535. LQDA -15%, not up 20%. Thesis: the Delaware ruling (claims 1 and 14 of the '327 patent valid and infringed), plus UTHR's plan to seek withdrawal of Yutrepia's approval under 271(e)(4)(A). Stop $527 per plan. The dossier's half-sale at $557 is below this entry, so it is replaced by a $630 target (about +10%) plus an exit on a Friday close below $541.89.",
+      "tags": [
+        "catalyst",
+        "day-two",
+        "legal"
+      ],
+      "plan": {
+        "stop": 527.0,
+        "target": 630.0
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 66,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 30.7
+      }
     }
   ]
 }

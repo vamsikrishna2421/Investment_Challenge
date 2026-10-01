@@ -198,6 +198,17 @@
         "VICR",
         "ACN"
       ]
+    },
+    {
+      "id": "J0017",
+      "ts": "2026-10-01T14:26:58Z",
+      "kind": "trade",
+      "title": "Bought ACN, 1.8279 shares at $224.30 ($410), the alternate after VICR failed; stop $205",
+      "body": "Trigger (dossier research/dossiers/ACN-2026-10-01.md; J0014/J0016):\n- $223.00 at 9:55 and $224.61 at 10:26, both at or above $215.\n- Ask $224.64, under the $226 skip line.\n- Open $215.98; low since 9:45 $221.00. Volume 11.2M.\n- CTSH +10.9% and EPAM +8.8% green; SPY -0.3%.\n- On the call, organic FY27 growth is about 1-4% (acquired growth 'slightly below 2%' of the 3-6% guide).\nSize: $410, about 53% of settled cash. A stop-out at $205 loses $35.30.\nExit:\n- Sell half at today's 3:55 run whatever the price.\n- If ACN closes 3% or more above $224.30 (at least $231.03), move the stop on the rest to $224.30.\n- Sell the rest at $247 (+10%) or at the Mon Oct 5 3:40 PM liquidation.\nWhy it is small and has rules: the dossier's base rate. Accenture's past gaps of 7% or more lost money from the open over the next two sessions, and the price is above peer-based fair value ($160-205). This is a momentum trade on confirmed strength, not a value call.\nCash after: $364.95 (settled $299.97). NKE calls at 3:55 are still subject to the implied-move check (J0015).",
+      "tickers": [
+        "ACN",
+        "VICR"
+      ]
     }
   ]
 }

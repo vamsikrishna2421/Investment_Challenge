@@ -375,6 +375,18 @@
         "MNKD",
         "ACN"
       ]
+    },
+    {
+      "id": "J0029",
+      "ts": "2026-10-01T14:26:58Z",
+      "kind": "trade",
+      "title": "Bought UTHR, 0.5227 shares at $573.90 ($300), on the day-two test; stop $527",
+      "body": "Trigger (J0027): UTHR was $573.93 at 9:55 and $574.18 at 10:25 (bid $573.36 / ask $574.98).\n- Both are above $541.89, and 10:25 is at or above $548.\n- Day low $556.76, never below $535. LQDA $25.65 (-15%), so the skip does not apply. Volume 465K by 10:25.\nUTHR filled first, so MNKD ($4.07) and ACN are not bought in this book. One entry per the plan.\nRisk:\n- Stop $527, -8.2% from the fill, about $24.50 if hit (2.5% of the book).\n- The dossier assumed a $548 entry and a -3.8% stop. The higher entry doubles that risk; I kept the planned stop rather than move it intraday.\nExit:\n- The dossier's half-sale at $557 is below this entry and no longer applies.\n- Sell half at $630 (about +10%; the analyst mean is $638).\n- Sell everything on a Friday close below $541.89 (the ruling-day close).\n- Otherwise sell at the Mon Oct 5 3:40 PM liquidation.\nBook after the trade: cash $132.70; holdings IOVA, MUU, UTHR.\nH-1B rules: personal account, own money, no pay, not trading for anyone else. UTHR is not on the OFAC NS-CMIC list.",
+      "tickers": [
+        "UTHR",
+        "MNKD",
+        "ACN"
+      ]
     }
   ]
 }

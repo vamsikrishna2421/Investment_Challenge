@@ -58,6 +58,57 @@
         "open_interest": 972,
         "volume": 123
       }
+    },
+    {
+      "id": "T0002",
+      "type": "SELL",
+      "ts": "2026-10-01T13:43:31Z",
+      "ticker": "MUU261002C00037000",
+      "label": "MUU 10/2 $37 call",
+      "asset": "option",
+      "name": "MUU 10/2 $37 call",
+      "qty": 1.0,
+      "multiplier": 100,
+      "price": 0.65,
+      "quote_price": 0.65,
+      "quote_time": "2026-10-01T13:43:20Z",
+      "session": "regular",
+      "quote_source": "yahoo-option-chain",
+      "slippage_bps": 0.0,
+      "gross": 65.0,
+      "fees": 0.03,
+      "net_cash": 64.97,
+      "settle_date": "2026-10-02",
+      "rationale": "Plan J0014: MUU opened $35.81, below $36.81, so sell the Oct 2 $37 call at the first regular run. Overnight time decay and the post-earnings volatility drop took it from $2.58 to a $0.775 mark. Filled at the Robinhood read-only bid ($0.65, ask $0.90, 13:43:20Z) because Yahoo's chain showed no bid or ask.",
+      "tags": [
+        "earnings",
+        "exit-rule"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 11,
+        "cash_account": true,
+        "asset": "option",
+        "day_trade": false,
+        "good_faith_ok": true
+      },
+      "option": {
+        "underlying": "MUU",
+        "expiry": "2026-10-02",
+        "type": "call",
+        "strike": 37.0
+      },
+      "quote_detail": {
+        "bid": 0.65,
+        "ask": 0.9,
+        "last": 2.55,
+        "iv": 0.0625,
+        "spot": 36.365,
+        "open_interest": 3278,
+        "volume": 4313,
+        "quote_source": "broker read-only quote (synced chain had no bid/ask)"
+      }
     }
   ]
 }

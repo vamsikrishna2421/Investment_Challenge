@@ -59,6 +59,9 @@ def main() -> int:
     ap.add_argument("--tags", default="")
     ap.add_argument("--stop", type=float)
     ap.add_argument("--target", type=float)
+    ap.add_argument("--broker-quote", default="",
+                    help="options only: BID,ASK,UTC-TIME from the broker's read-only quote, used when the "
+                         "synced chain shows no bid/ask (recorded in the transaction)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     if a.side != "expire" and a.usd is None and a.qty is None and not a.all:
@@ -118,6 +121,20 @@ def main() -> int:
         if age > oem["max_quote_age_sec"]:
             fail(f"option chain for {under} is {int(age)}s old (max {oem['max_quote_age_sec']}s); re-sync")
         bid, ask, last = oq.get("bid") or 0.0, oq.get("ask") or 0.0, oq.get("last") or 0.0
+        source = "option chain (yfinance)"
+        if a.broker_quote:
+            if bid > 0 and ask > 0:
+                fail(f"the synced chain has a live quote for {tk} (bid {bid}, ask {ask}); drop --broker-quote")
+            try:
+                b_, a_, t_ = a.broker_quote.split(",")
+                bid, ask, bq_time = float(b_), float(a_), pfm.parse_ts(t_)
+            except ValueError:
+                fail("--broker-quote takes BID,ASK,UTC-TIME (e.g. 0.90,1.15,2026-10-01T13:42:09Z)")
+            age = (now - bq_time).total_seconds()
+            if age > oem["max_quote_age_sec"] or age < -60:
+                fail(f"broker quote is {int(age)}s old (max {oem['max_quote_age_sec']}s)")
+            oq = {**oq, "time": t_}
+            source = "broker read-only quote (synced chain had no bid/ask)"
         if a.side == "buy":
             if ask <= 0:
                 fail(f"no ask for {tk} (bid {bid}, last {last})")
@@ -129,7 +146,7 @@ def main() -> int:
         ref, ref_time, bps = (ask if a.side == "buy" else bid), oq["time"], 0.0
         fee_per_unit = oem["fee_per_contract"]
         extra = {"bid": bid, "ask": ask, "last": last, "iv": oq.get("iv"), "spot": oq.get("spot"),
-                 "open_interest": oq.get("oi"), "volume": oq.get("volume")}
+                 "open_interest": oq.get("oi"), "volume": oq.get("volume"), "quote_source": source}
     elif asset == "crypto":
         cem = em["crypto"]
         q = quotes.get(tk)

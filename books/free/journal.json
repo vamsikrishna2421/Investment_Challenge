@@ -176,6 +176,17 @@
         "ACN",
         "NKE"
       ]
+    },
+    {
+      "id": "J0015",
+      "ts": "2026-10-01T13:43:50Z",
+      "kind": "trade",
+      "title": "Sold the MUU Oct 2 $37 call at $0.65 (paid $2.90): -$225; lesson for tonight's NKE calls",
+      "body": "Exit rule (J0014): MUU opened at $35.81, below $36.81, so the call is sold at the first regular run.\nFill: $0.65 at the bid.\n- Robinhood's read-only quote at 13:43:20Z was $0.65 bid / $0.90 ask, $0.775 mark, delta 0.37, theta -0.49 a day.\n- Yahoo's chain showed no bid or ask this morning. trade.py now accepts a broker quote in that case and records the source in the transaction.\nResult: -$225.06 on $290.03 (-78%). The book is all cash: $774.94 (-22.5% since the start).\nWhat happened: Micron beat and raised, but MU traded flat to down afterwards ($1,051-1,075 this morning against a $1,065 close).\n- The call needed a move, and it lost twice: the volatility premium collapsed after the report, and a two-day option loses most of its time value each day.\n- MUU at $36.5 is near the $37 strike, yet the call fell from $2.58 to about $0.78.\nLesson for tonight's NKE plan (one or two Oct 2 $36 calls at 3:55 PM, sold at Friday's open), which has the same structure:\n- Before buying, compare the options' implied move with Nike's past earnings moves (RUNBOOK 1d).\n- Buy only if the implied move is clearly below Nike's typical reaction. Otherwise skip or use a cheaper structure.\n- Re-check at the 12:40 run with live quotes.",
+      "tickers": [
+        "MUU",
+        "NKE"
+      ]
     }
   ]
 }

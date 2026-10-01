@@ -187,6 +187,17 @@
         "MUU",
         "NKE"
       ]
+    },
+    {
+      "id": "J0016",
+      "ts": "2026-10-01T13:57:12Z",
+      "kind": "research",
+      "title": "9:55 check: VICR fails (low $312 since 9:45, needed $317); ACN passes its first check, so ACN is the 10:25 candidate",
+      "body": "VICR (J0014 trigger): opened $330, hit $331, then fell to $312.00 after 9:45.\n- The rule needs the low since 9:45 at or above $317, so it fails. Last $319.91 at 9:56.\n- No VICR trade today. It gapped 14% on the guidance raise and gave back half within 30 minutes. That is the fade the day-two rule is built to avoid.\nACN, now active as the alternate:\n- 9:56: $223.00, at or above $215.\n- Open $215.98; low since 9:45 $220.00 (rule: at least $210 and no more than 3% below the open).\n- Volume 8.3M (rule: at least 1.0M).\n- Skip checks:\n  - High $226.50. The ask is the test at 10:25 (skip above $226).\n  - CTSH +10.2% and EPAM +7.2%, both green.\n  - SPY +0.1%.\n  - On the call, the CFO put acquired growth at 'slightly below 2%' of the 3-6% FY27 guide, so organic is about 1-4%. That is not the 1% or less that would trigger a skip (source: Investing.com call transcript, investing.com/news/transcripts/earnings-call-transcript-accenture-tops-q4-2026-forecasts-shares-jump-178-93CH-4927565).\nDecision at 10:25: buy if ACN is at least $215 with the ask at or below $226, and the low since 9:45 is still at least $210.\n- Size up to $450 from settled cash ($709.97), cut so the $205 stop loses at most $36. At a $223 entry that is about $448 (2.0 shares x $18 = $36).",
+      "tickers": [
+        "VICR",
+        "ACN"
+      ]
     }
   ]
 }

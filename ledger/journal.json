@@ -363,6 +363,18 @@
         "MNKD",
         "ACN"
       ]
+    },
+    {
+      "id": "J0028",
+      "ts": "2026-10-01T13:57:12Z",
+      "kind": "research",
+      "title": "9:55 check: UTHR passes its first check ($573.93; low $556.76, never below $535)",
+      "body": "UTHR (J0027 trigger):\n- 9:56: $573.93, above $541.89.\n- Open $557.53; day low $556.76, never below $535. Low since 9:45 $567.82. Volume 294K.\n- LQDA is $25.85 (-14.6%), so the 'LQDA up 20%' skip does not apply.\nMNKD: $4.18, low $3.83, 1.67M shares. It passes too but only matters if UTHR fails at 10:25.\nACN (third in line): $223.00, low since 9:45 $220.00.\nAt 10:25, UTHR at or above $548 and above $541.89 means buy $300 with the stop at $527.",
+      "tickers": [
+        "UTHR",
+        "MNKD",
+        "ACN"
+      ]
     }
   ]
 }

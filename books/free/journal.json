@@ -239,6 +239,16 @@
       "tickers": [
         "MAT"
       ]
+    },
+    {
+      "id": "J0021",
+      "ts": "2026-10-01T19:56:44Z",
+      "kind": "trade",
+      "title": "Sold half of ACN (0.9139 share) at $211.56 per plan: -$11.64; holding 0.914 share overnight with the $205 stop",
+      "body": "Exit rule (J0017): sell half at Thursday's 3:55 run whatever the price.\nFill: $211.56 ($211.67 last, 3:56 PM). Entry was $224.30.\n- Realized -$11.64 on the half.\n- The gap faded from a $227.58 high to about $211.7 (+15.4% on the day). That matches the dossier's warning: Accenture's big gaps have tended to fade from the open.\nOvernight hold (0.914 share, about $194):\n- Stop stays $205. ACN closes below entry, so the stop does not move up.\n- Sell at $247 (+10%) or at the Mon Oct 5 3:40 PM liquidation.\n- A further 3% fade is the likely risk if Friday's jobs report hits stocks. The worst case to the stop is about -$17.\nCash after: $558.28; $299.98 settled, the rest settles Friday.\nNo options held, so nothing expires.",
+      "tickers": [
+        "ACN"
+      ]
     }
   ]
 }

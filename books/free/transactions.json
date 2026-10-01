@@ -148,6 +148,41 @@
         "funded_with_settled_cash": true,
         "position_weight_pct": 52.9
       }
+    },
+    {
+      "id": "T0004",
+      "type": "SELL",
+      "ts": "2026-10-01T19:56:35Z",
+      "ticker": "ACN",
+      "label": "ACN",
+      "asset": "stock",
+      "name": "Accenture plc",
+      "qty": 0.9139,
+      "multiplier": 1,
+      "price": 211.5642,
+      "quote_price": 211.67,
+      "quote_time": "2026-10-01T19:56:08Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 193.35,
+      "fees": 0.02,
+      "net_cash": 193.33,
+      "settle_date": "2026-10-02",
+      "rationale": "J0017 exit plan: sell half at Thursday's 3:55 run whatever the price. ACN $211.67 at 3:56 PM (+15.4% on the day, but below the $224.30 entry). Its gap faded from the $227.58 high, in line with the dossier's base rate for big Accenture gaps. The rest (0.914 share) keeps the $205 stop. ACN closes below entry, so the stop does not move to entry; the rest goes at $247 or at Monday's 3:40 PM liquidation.",
+      "tags": [
+        "plan-exit",
+        "earnings"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 27,
+        "cash_account": true,
+        "asset": "stock",
+        "day_trade": true,
+        "good_faith_ok": true
+      }
     }
   ]
 }

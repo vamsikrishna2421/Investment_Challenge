@@ -321,7 +321,7 @@ def main() -> int:
             return telling(r)
         if "third-party" in r["tags"]:
             return False
-        return bool(set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-target", "dilution"}))
+        return bool(set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-interest", "takeover-target", "dilution"}))
 
     def telling(r):
         return (bool(set(r.get("items") or []) & SEC_TELLING) or r.get("form", "").startswith("424B")
@@ -420,7 +420,7 @@ def main() -> int:
         for r in sorted(warn_rows, key=lambda r: -r["at"].timestamp())[:15]:
             print("     " + line(r))
     mat = [r for r in rows if r["src"] not in ("halts", "sec") and not r["mine"] and r["listed"]
-           and (a.all or set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-target", "dilution"}))]
+           and (a.all or set(r["tags"]) & (FUNDAMENTAL | {"product-news", "takeover-interest", "takeover-target", "dilution"}))]
     if mat:
         print("\nCATALYSTS (listed stocks, ranked)")
         for r in sorted(mat, key=lambda r: (-r["rank"], r["at"]), reverse=False)[:25]:

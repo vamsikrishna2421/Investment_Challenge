@@ -45,6 +45,13 @@ REG = (r"(EMA|European Commission|CHMP|NMPA|Health Canada|PMDA|MHRA|TGA|ANVISA|r
 TAGS = [
     ("no-news", r"unusual (stock |share )?(trading|market|price)|no (material |new |corporate )*(news|developments|"
                 r"announcements)|not aware of any|unaware of any"),
+    # A reported approach, talks or interest: material but unconfirmed, and not capped like a signed deal.
+    ("takeover-interest", r"\b(takeover|buyout|acquisition|merger|sale) (interest|approach|talks|offer|bid|proposal|"
+                          r"speculation|report)|\b(eyes?|eyeing|weighs?|explores?|exploring|considers?|mulls?|in talks)\b"
+                          r".{0,40}\b(takeover|buyout|acquisition|bid|sale|deal)\b|\bexplor\w* (a |strategic )?"
+                          r"(sale|alternatives)\b|\breport(edly| of| that)\b.{0,40}\b(approach|takeover|bid|"
+                          r"interest(?! (income|rates?|expense|payments?)))\b|"
+                          r"\bapproach(es|ed)?\b.{0,40}\b(offer|acquisition|takeover|bid)\b|\bunsolicited\b|\btakeover of\b"),
     ("takeover-target", r"to be acquired|agrees? to be acquired|definitive (merger )?agreement to be acquired|"
                         r"take[- ]private|tender offer|buyout|acquired by|to acquire \w+ (for|in) \$|agrees to acquire"),
     ("reverse-split", r"reverse (stock |share )?split"),
@@ -138,6 +145,11 @@ def classify(news: list[dict], filings: list[dict], name: str = "", sym: str = "
         if n.get("via") == "google" and not (
                 (sym and re.search(rf"\b{re.escape(sym)}\b", t)) or any(re.search(re.escape(w), t, re.I) for w in names)):
             continue
+        # A headline that tags another company's ticker in parentheses is about that company
+        # ("SES S.A. (SGBAF) prices bonds" is not SES AI), unless it also tags this one.
+        tickers = {m.upper() for m in re.findall(r"\((?:[A-Z]+:\s*)?([A-Z]{1,5}(?:\.[A-Z])?)\)", t)}
+        if sym and tickers and sym.upper() not in tickers:
+            continue
         for w in names:
             t = re.sub(re.escape(w), " ", t, flags=re.I)
         if sym:
@@ -166,8 +178,8 @@ def score(row: dict) -> int:
     tags = set(row["tags"])
     if tags & {"earnings-guidance", "contract-order", "refinancing", "clinical-regulatory"}:
         s += 3
-    elif "product-news" in tags:
-        s += 1
+    elif tags & {"product-news", "takeover-interest"}:
+        s += 1  # a takeover report needs a primary-source confirmation before it counts as material news
     if tags & CAPPED:
         s -= 4
     if tags & NEGATIVE:

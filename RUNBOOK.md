@@ -60,7 +60,9 @@ guidance change %, order value / revenue, debt removed / market cap), check dilu
 after the spike), valuation (EV/sales vs growth, analyst targets), and write verdicts to the journal.
 Buy candidates need material news, a market cap of at least $100M, relative volume above 2, no takeover cap,
 and day-two confirmation (holds above the prior close through the first 30-60 minutes). Skip no-news spikes,
-de-SPACs and financings.
+de-SPACs and financings. A reported approach or takeover talks (tag `takeover-interest`, not capped) counts as
+material news only once a primary source confirms it: an 8-K, a company statement or the bidder's statement. Check
+the date of any search result before citing it; old takeover stories resurface in search.
 
 To catch jumps from the last month that have not run yet (the "signal shown, rally not started" names):
 ```bash

@@ -1,5 +1,5 @@
 {
-  "strategy": "Thu Oct 1: sell the MUU Oct 2 call at 9:40 (MUU below $36.81). At 10:25 buy VICR on confirmation ($450, limit $330, stop $289); ACN only if VICR fails ($215 test, stop $205). One or two NKE Oct 2 $36 calls at 3:55 PM if Nike holds $35.16, sold at Friday's open. Options under 60% of the book. Plan J0014.",
+  "strategy": "Thu Oct 1: holding ACN ($410 at $224.30, stop $205): sell half at the 3:55 run; move the stop on the rest to entry if it closes 3% or more above $224.30; sell the rest at $247 or at Monday's 3:40 PM liquidation. NKE earnings calls cancelled (implied move 9.3% vs Nike's 8.7% average reaction; J0018). MUU call sold at $0.65 (J0015).",
   "focus": [
     "MUU",
     "MU",

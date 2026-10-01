@@ -209,6 +209,16 @@
         "ACN",
         "VICR"
       ]
+    },
+    {
+      "id": "J0018",
+      "ts": "2026-10-01T16:42:21Z",
+      "kind": "research",
+      "title": "NKE earnings calls cancelled: the options price a 9.3% move, at or above Nike's usual reaction (8.7% average, 6.8% median)",
+      "body": "Check required by J0015 after the MUU call lost 78%: compare the implied move with Nike's past earnings moves before buying.\nOct 2 chain at 12:41 PM (NKE $35.87):\n- $36 call $1.57 / $1.59; $36 put $1.73 / $1.77.\n- The $35.5 straddle costs about $3.32, an implied move of 9.3% (implied volatility about 155%).\n- The $36 call breaks even at $37.59 at expiry, +4.8%.\nNike's last 15 reports (dossier NKE-2026-09-29/30): 8.7% average move, 6.8% median.\nVerdict: the options already price a move larger than Nike's typical reaction. A long call loses money unless we have a directional edge, and we don't: the thesis is only cheap stock, tariff refunds and low expectations.\n- After the report, implied volatility collapses toward about 40%, as the MUU call showed. A 5% move up would only roughly break even on the call.\n- Cheaper structures such as a call spread need a short leg, which this cash account cannot hold.\nDecision: no NKE trade. The $299.98 of settled cash stays as cash for the ACN plan and Friday.",
+      "tickers": [
+        "NKE"
+      ]
     }
   ]
 }

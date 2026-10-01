@@ -397,6 +397,16 @@
       "tickers": [
         "SPY"
       ]
+    },
+    {
+      "id": "J0031",
+      "ts": "2026-10-01T20:19:38Z",
+      "kind": "review",
+      "title": "Nike FQ1 guide cut; NKE -5.7% after hours; h1b does not trade it",
+      "body": "Numbers in free-book J0022: revenue $11.21B (1% miss); EPS $0.48 (beat); FY27 revenue down high-single digits; adjusted EPS $1.15-1.35. NKE $33.15 after hours (-5.7%), a new 52-week low.\nh1b: no position and no trade.\n- A long after a guidance cut is not a decisive reaction trade. The book can't short. Cash is $132.70.\n- Peers barely moved (ONON -0.6%, LULU -0.1%, DECK flat), so it does not spill over into our names.",
+      "tickers": [
+        "NKE"
+      ]
     }
   ]
 }

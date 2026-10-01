@@ -249,6 +249,16 @@
       "tickers": [
         "ACN"
       ]
+    },
+    {
+      "id": "J0022",
+      "ts": "2026-10-01T20:19:38Z",
+      "kind": "review",
+      "title": "Nike FQ1: revenue miss, FY27 guide cut to adjusted EPS $1.15-1.35; NKE $33.15 after hours (-5.7%). The skipped calls would be near zero; no trade",
+      "body": "Release (8-K exhibit 99.1, 4:15 PM ET; sec.gov/Archives/edgar/data/320187/000032018726000184/q1fy27exhibit991er.htm):\n- Revenue $11.21B (-4% reported, -5% currency-neutral) vs $11.32B consensus, a 1% miss.\n- EPS $0.48 vs $0.43 consensus. The beat comes from gross margin (+60bp to 42.8%) and 6% lower overhead.\n- Nike Direct -9% (digital -13%). Converse -28%. Greater China and EMEA down; North America up.\n- FY27 outlook: revenue down high-single digits; adjusted EPS $1.15-1.35, excluding about $0.15 of 'Pace' restructuring.\n  - Pace targets $2.5B of savings through FY31, with about $1.0B of charges.\n  - The dossier's forward consensus was $2.16; whatever the true FY27 consensus is, a $1.25 midpoint is a large cut.\nReaction at 4:19 PM: $33.15 after hours (-5.7% from the $35.15 close; bid $33.10 / ask $33.15), below the $35.16 52-week low. ONON -0.6%, LULU -0.1%, DECK flat.\nDecision, free book: no trade.\n- Options can't trade after hours.\n- At Friday's open, puts would be bought after the move, with volatility collapsing. That is the same structural problem J0015/J0018 identified.\nCheck on J0018: the cancelled plan was 1-2 Oct 2 $36 calls at about $1.58. With NKE at $33.15 they would be worth a few cents, a loss of about $155-315 avoided by the implied-move check.",
+      "tickers": [
+        "NKE"
+      ]
     }
   ]
 }

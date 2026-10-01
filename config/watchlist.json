@@ -1,20 +1,16 @@
 {
-  "strategy": "Thu Oct 1: hold MUU (stop $30.90, no add) and IOVA (stop $12.35; exit on any share offering). One entry at most, decided at 10:25: UTHR ($300, stop $527) on the day-two test, else MNKD ($350, stop $3.64), else ACN only on confirmation (at least $215 at 9:55 and 10:25, low since 9:45 at least $210; stop $205; up to $350). Plans in J0027; deep dives in research/dossiers.",
+  "strategy": "Fri Oct 2 (jobs report 8:30): hold MUU (stop $30.90, no add), IOVA (stop $12.35; trim a third at $17.57; exit on any offering) and UTHR (stop $527; sell half at $630; sell all on a Friday close below $541.89). No new money ($132.70 cash). Mon Oct 5: sell everything at 3:40 PM. Review J0032.",
   "focus": [
     "MUU",
     "MU",
     "IOVA",
     "UTHR",
-    "MNKD",
     "LQDA",
-    "ACN",
-    "CTSH",
-    "EPAM",
-    "VICR",
-    "NKE",
+    "MNKD",
+    "SPY",
+    "QQQ",
     "SOXL",
-    "NVDA",
-    "TSLA"
+    "NVDA"
   ],
   "tickers": [
     "NVDA",

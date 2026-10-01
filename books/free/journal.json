@@ -259,6 +259,30 @@
       "tickers": [
         "NKE"
       ]
+    },
+    {
+      "id": "J0023",
+      "ts": "2026-10-01T20:35:47Z",
+      "kind": "research",
+      "title": "Mattel deep dive: the Oct 1 source is a WSJ report (Authentic Brands, >$20 a share). No trade unless Mattel or Authentic confirms; then up to $250 with a $14.40 stop",
+      "body": "Dossier: research/dossiers/MAT-2026-10-01.md.\nThis supersedes J0020's 'no source found'.\n- The source: WSJ, Oct 1, citing people familiar. Authentic Brands approached Mattel and discussed an offer of 'more than $20 a share', around $6B or more.\n- I verified it through Reuters' rewrite, timestamped 2:22 PM ET Oct 1, 2026 (whtc.com copy): 'no formal sale process'; Mattel declined to comment.\n- The 2:12 PM spike lines up with the report.\nPer-share value:\n- As equity value, $6B is about $21 ($20 is the floor). This is the only reading consistent with '>$20' and the >58% premium.\n- As enterprise value it would be $13.2-14.7.\nPrice action: high $17.22 at 2:38 (the reopening print after the halts), close $15.04 (+18.8%), 35.6M shares. The fade toward $15 suggests the market puts the odds of a deal at roughly 25-35%.\nVerdict: no trade on an anonymous report. The CEO change (Kreiz leaving for Paramount/WBD, Sep 30 8-K) does not signal a sale.\nConditional plan, free book, stock only (dossier):\n- Confirmation required: a Mattel 8-K or press release, or an Authentic statement, saying a proposal or talks exist, with any named price at $20 or more. More anonymous stories do not count. A signed deal also means no trade, because the upside is capped.\n- Triggers:\n  - 9:55: MAT $15.00-16.50, no trade below $14.74 since the open, SPY not down more than 1.5% after the jobs report.\n  - 10:25: still $15.00-16.50, within 1% of the 9:55 price, at least 2.5M shares traded. Then buy up to $250 at the ask.\n- Stop: $14.40, or 12% below entry if that is higher. Exit at once on a denial, a rejection or a signed deal.\n- Exits: sell half at $18 and move the stop to entry; sell the rest at $19 or at Monday's 3:40 PM liquidation.\n- No entry after noon Monday.",
+      "tickers": [
+        "MAT"
+      ]
+    },
+    {
+      "id": "J0024",
+      "ts": "2026-10-01T20:35:47Z",
+      "kind": "review",
+      "title": "Thu Oct 1 review: -$220 (the MUU call), $752.32 (-24.8% since the start); Friday: hold the ACN half, MAT only on confirmation",
+      "body": "Result:\n- $752.32 at the close, -$220.15 on the day (from $972.47), -24.8% since the start.\n- Cash $558.28, of which $299.98 is settled. Position: ACN 0.914 share at $212.30 (-5.3% on cost), stop $205.\nTrades:\n- Sold the MUU Oct 2 $37 call at $0.65 (paid $2.90; -$225.06 realized; -$197.53 from Wednesday's mark). J0015.\n- Bought ACN, 1.8279 shares at $224.30 ($410), the alternate after VICR failed its 9:55 check (J0017).\n- Sold half of ACN at $211.56 per the 3:55 rule: -$11.64 (J0021).\nWhat worked:\n- The filters.\n  - VICR failed the 9:55 low check ($312 vs $317 needed) and closed at $308.59. A buy at about $320 would be down about 3.6%.\n  - The NKE implied-move check (J0018) cancelled calls that are now near zero (NKE $33.15 after hours).\n  - The half-sale limited the ACN fade.\nWhat didn't:\n- The MUU call: a two-day option bought before earnings lost 78% when the stock didn't move. The premium paid priced in a move that never came. Rule from now on: no earnings options unless the implied move is well below the stock's typical reaction (now in J0015/J0018).\n- ACN: I bought a +17% gap that faded to +15.8%. The dossier's base rate warned of this; the alternate slot should have required a lower entry or been skipped.\n- MAT: J0019 cited a 2024 story. Corrected in J0020; the real WSJ source is now verified (J0023).\nAfter-hours news on holdings: none for ACN.\nFriday Oct 2 plan:\n- 8:30 AM jobs report. My forecasts are in the h1b journal (J0030).\n- ACN: stop $205 at regular-session runs; sell at $247 or at Monday's 3:40 PM liquidation.\n- MAT: only on a primary-source confirmation (J0023 triggers), up to $250 from settled cash.\n- No options. Nothing expires; none planned.\n- Crypto: none without a clear trend.\n- Monday Oct 5: sell everything at the 3:40 PM run; no new buys after 3:30.",
+      "tickers": [
+        "MUU",
+        "ACN",
+        "NKE",
+        "VICR",
+        "MAT"
+      ]
     }
   ]
 }

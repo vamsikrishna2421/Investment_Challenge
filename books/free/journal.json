@@ -229,6 +229,16 @@
       "tickers": [
         "MAT"
       ]
+    },
+    {
+      "id": "J0020",
+      "ts": "2026-10-01T18:41:52Z",
+      "kind": "research",
+      "title": "Correction to J0019: the L Catterton story is from July 2024. Mattel's +23% today has no source I can find, so I'm skipping it as a no-news spike",
+      "body": "Correction: J0019 tied Mattel's spike to an 'L Catterton takeover approach' report. That report is from July 2024 (Reuters, 22 Jul 2024; then about $19.49 and a $6.5B value). The search engine returned it as if it were current; I did not check its date before writing.\nToday:\n- MAT $15.53 at 2:40 PM, +22.7% from $12.66, 11.2M shares, repeated volatility pauses (2:13, 2:38, 2:41).\n- No 8-K since Sep 30 (the CEO change). No company statement. No dated report found.\n- The only Mattel release today is the 11:00 AM waterpark announcement.\nVerdict: a no-news spike (RUNBOOK 1b), so skip. Removed from the Friday watch unless a primary source appears (an 8-K, a company statement or the bidder's statement).\nLesson, same as the UTHR correction in J0024: check the date and primary source of any search result before journaling a cause.",
+      "tickers": [
+        "MAT"
+      ]
     }
   ]
 }

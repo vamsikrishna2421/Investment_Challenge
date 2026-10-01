@@ -387,6 +387,16 @@
         "MNKD",
         "ACN"
       ]
+    },
+    {
+      "id": "J0030",
+      "ts": "2026-10-01T20:13:00Z",
+      "kind": "research",
+      "title": "Jobs report forecasts, written before looking at Kalshi: P(Sept payrolls > +100K) = 0.38; P(unemployment 4.2% or higher) = 0.33",
+      "body": "Written at 4:13 PM ET Thu Oct 1, before reading any prediction-market price. The Sep 30 Kalshi file was not opened. Report: Fri Oct 2, 8:30 AM ET.\nInputs (non-market sources):\n- Consensus: payrolls about +90K (Bloomberg survey; BofA 60K; some forecasts 100K); unemployment 4.1%; average hourly earnings +0.3% month on month.\n- August: +162K, a five-month high and far above the 31K a month average of the prior 12 months (BLS release, Sep 4). Unemployment 4.1% (unemployed 7.0M). The household survey added 569K jobs and 683K people to the labor force; that jump can reverse.\n- September ADP +90K vs 70K expected.\n- Initial claims 197K (lowest since July; the 4-week average 200K); continuing claims 1.701M (-11K).\n- Challenger layoffs fell in September.\n- Analysts flag September education seasonals as a source of volatility.\nPayrolls above +100K:\n- I center on about +80K. The 12-month trend is weak and August's beat invites payback, partly offset by firm ADP, claims and layoff data.\n- First-print surprises have a standard deviation of roughly 75-80K, so P(>100K) is about 0.40. I shade it to 0.38 because of the low 12-month base.\nUnemployment 4.2% or higher:\n- August's unrounded rate is about 4.10% (7.0M of about 170.7M), so 4.2% needs about +0.05pp.\n- The month-to-month change has a standard deviation of about 0.12pp, giving P of about 0.34. Low claims argue against a rise; reversal of the household jump argues for one. 0.33.\nNext: run kalshi.py, then record both forecasts with the market mid via forecasts.py add; score after the release.",
+      "tickers": [
+        "SPY"
+      ]
     }
   ]
 }

@@ -1,12 +1,15 @@
 {
-  "strategy": "Thursday: sell the MUU Oct 2 call at the first run on a gap down, otherwise by 11:55. Buy VICR on confirmation ($450: above $317 at 9:55 and 10:25, stop $289). One or two NKE Oct 2 36 calls at 3:55 PM if Nike holds $35.16, sold at Friday's open. Max 60% of the book in options.",
+  "strategy": "Thu Oct 1: sell the MUU Oct 2 call at 9:40 (MUU below $36.81). At 10:25 buy VICR on confirmation ($450, limit $330, stop $289); ACN only if VICR fails ($215 test, stop $205). One or two NKE Oct 2 $36 calls at 3:55 PM if Nike holds $35.16, sold at Friday's open. Options under 60% of the book. Plan J0014.",
   "focus": [
     "MUU",
     "MU",
-    "NKE",
     "VICR",
-    "MNKD",
+    "ACN",
+    "CTSH",
+    "EPAM",
+    "NKE",
     "UTHR",
+    "MNKD",
     "IOVA",
     "TSLA",
     "SOXL",

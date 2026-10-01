@@ -163,6 +163,19 @@
         "NKE",
         "VICR"
       ]
+    },
+    {
+      "id": "J0014",
+      "ts": "2026-10-01T12:43:35Z",
+      "kind": "plan",
+      "title": "Thu Oct 1 day plan: sell the MUU call at 9:40 (MUU below $36.81); VICR on confirmation at 10:25, ACN only if VICR fails; NKE calls at 3:55",
+      "body": "Pre-market at 8:42 AM ET: MUU $36.04 (-2.1%), VICR $328.50 (+13.7% from $288.94), ACN $215.20 (+17.4%), NKE $35.29 (-0.3%).\n1. MUU Oct 2 $37 call: sell at the 9:40 run if MUU opens below $36.81, which is likely. Otherwise sell by 11:55, or at $5.80.\n2. VICR at 10:25 (J0013).\n   - Buy if it is above $317 at 9:55 and at 10:25, the low since 9:45 is at least $317, and relative volume is at least 2.\n   - $450 with a $330 limit; skip above $340. Stop $289.\n   - Pay with settled cash ($709.97) so a stop can be sold the same day.\n3. ACN, only if VICR does not trigger. Same trigger and stop ($205) as the h1b plan (dossier research/dossiers/ACN-2026-10-01.md).\n   - Size up to $450, cut so a stop-out loses at most $36.\n   - Exit: sell half at Thursday's 3:55 run; raise the stop on the rest to entry if ACN closes 3% or more above it; sell the rest at +10% or at Monday's 3:40 PM liquidation.\n4. NKE earnings (after today's close): buy one or two Oct 2 $36 calls at the 3:55 run if NKE is at least $35.16 and made no new low in the final hour. Sell at Friday's open.\n   - Options stay under 60% of the book.\n   - Paid from settled cash only; MUU call proceeds settle Friday.\nNo crypto: no clear trend.",
+      "tickers": [
+        "MUU",
+        "VICR",
+        "ACN",
+        "NKE"
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "strategy": "Holding MUU (2x Micron) after Micron's beat and raise (no add; stop $30.90) and IOVA (stop $12.35; exit on any share offering). Thursday: at most one trade on the United Therapeutics patent win, only on the day-two test: UTHR on strength ($300, stop $527) or else MNKD ($350, stop $3.64). Deep dives in research/dossiers.",
+  "strategy": "Thu Oct 1: hold MUU (stop $30.90, no add) and IOVA (stop $12.35; exit on any share offering). One entry at most, decided at 10:25: UTHR ($300, stop $527) on the day-two test, else MNKD ($350, stop $3.64), else ACN only on confirmation (at least $215 at 9:55 and 10:25, low since 9:45 at least $210; stop $205; up to $350). Plans in J0027; deep dives in research/dossiers.",
   "focus": [
     "MUU",
     "MU",
@@ -7,13 +7,14 @@
     "UTHR",
     "MNKD",
     "LQDA",
+    "ACN",
+    "CTSH",
+    "EPAM",
     "VICR",
     "NKE",
     "SOXL",
     "NVDA",
-    "TSLA",
-    "GNRC",
-    "FEIM"
+    "TSLA"
   ],
   "tickers": [
     "NVDA",

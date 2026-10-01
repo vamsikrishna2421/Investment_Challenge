@@ -349,6 +349,20 @@
         "VICR",
         "UTHR"
       ]
+    },
+    {
+      "id": "J0027",
+      "ts": "2026-10-01T12:43:35Z",
+      "kind": "plan",
+      "title": "Thu Oct 1 day plan: hold MUU and IOVA; one entry at 10:25 at most (UTHR, then MNKD, then ACN)",
+      "body": "Pre-market at 8:42 AM ET, from the close:\n- MUU $36.04 (-2.1%); MU $1,057 (-0.8%). IOVA $14.85 (+0.2%).\n- UTHR $552.48 (+2.0%). MNKD $3.90 (flat). LQDA $25.50 (-15.7%), on price-target cuts (Needham) after UTHR's release; no new filing.\n- ACN $215.20 (+17.4%); peers CTSH +7.4%, EPAM +6.6%. SPY +0.4%.\nHoldings:\n- MUU: hold, stop $30.90, no add.\n- IOVA: hold, stop $12.35; trim a third at $17.57; exit on any share offering. Today's news is a chief medical officer appointment.\nOne new entry at most, decided at 10:25, in this order:\n1. UTHR, $300, stop $527 (J0024/J0025).\n   - Buy if it is above $541.89 at 9:55 and at 10:25, and at least $548 at 10:25.\n   - Skip if it trades below $535 first, or if LQDA is up more than 20% from $30.26.\n2. MNKD, $350, stop $3.64, only if UTHR does not trigger.\n   - Buy if it is above $3.90 at both checks, at least $3.95 at 10:25, with at least 1M shares traded.\n   - Skip if it trades below $3.80 first, on any 424B5, S-3 or 8-K Item 3.02 filing, or if LQDA is up 20%.\n3. ACN, only if neither triggers (dossier research/dossiers/ACN-2026-10-01.md, written before the 8:00 call).\n   - Buy if it is at least $215 at 9:55 and at 10:25 and no more than 1% below the 9:30 open.\n   - The low since 9:45 must be at least $210 and no more than 3% below the open.\n   - Volume at least 1.0M shares by 9:55 and 1.8M by 10:25.\n   - Skip if the ask is above $226, CTSH and EPAM are both red, SPY is down more than 1%, or the call puts FY27 organic growth at 1% or less.\n   - Size: up to $350, cut so a stop-out loses at most $28 (the full $350 fits up to about a $223 entry). Stop $205.\n   - Exit for this book: no same-day sale (avoids a day trade). Raise the stop to entry if ACN closes Thursday 3% or more above it. Sell at +10%. Anything left goes at the Mon Oct 5 3:40 PM liquidation.\n   - Base rate: Accenture's earlier gaps of 7% or more lost money from the open over the next two sessions (8 cases, average -0.65%, 2 up; my check of the dossier's count). That is why it is last and only on confirmation.\nH-1B rules: personal account, own money, no pay, no trading for others; none of these names is on the OFAC NS-CMIC list.\nNothing at the open: no entry before the 9:55 check.",
+      "tickers": [
+        "MUU",
+        "IOVA",
+        "UTHR",
+        "MNKD",
+        "ACN"
+      ]
     }
   ]
 }

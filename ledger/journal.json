@@ -336,6 +336,19 @@
         "MNKD",
         "LQDA"
       ]
+    },
+    {
+      "id": "J0026",
+      "ts": "2026-10-01T11:15:03Z",
+      "kind": "research",
+      "title": "7:10 AM: Accenture +15% pre-market on results and FY27 guide; alternate candidate, deep dive running; overnight gaps sized",
+      "body": "Overnight prices at 7:13 AM ET (Robinhood 24-hour market):\n- MUU $36.29 (-1.4% from $36.82); MU $1,060 (-0.5%).\n- IOVA $14.85 (+0.2%). Its 7:00 AM news is a new chief medical officer (Noah Berkowitz), not an offering.\n- UTHR $545 (+0.6%; bid $545.06, ask $549.69). MNKD $3.88 (-0.5%). LQDA $29.08 (-3.9%).\n- VICR $324.90 (+12.4%). NKE $35.27 (-0.4%).\nAccenture (ACN, about $115B) reported at 6:45 AM and is at $210.50 pre-market (+14.8% from $183.37), with a tight spread ($210.22 / $210.90).\n- Primary source: Business Wire release via stocktitan.net/news/ACN/accenture-reports-fourth-quarter-and-full-year-fiscal-2026-mprnvr5c9cip.html; 8-K Item 2.02.\n- Q4 revenue $18.7B (+7% in local currency), above its own guidance range. Bookings $22.2B (+5% local currency). GAAP EPS $3.29, 9% above last year's adjusted EPS. Record 141 quarterly clients with $100M+ bookings.\n- FY27 guide: revenue +3-6% in local currency; GAAP EPS $14.39-14.81 (+3-6% over adjusted $13.97). At least $9.5B to be returned to shareholders.\n- These numbers are modest. The +15% reads as relief: the stock had been de-rated on fears that AI would shrink IT services. At $210 it trades about 14.4x the guided EPS midpoint.\nReal candidate: material news, large cap, likely relative volume above 2, no deal cap. It is an alternate only:\n- h1b cash ($432.68) goes first to the ruling trade (UTHR or MNKD at 10:25, J0024/J0025).\n- In the free book, VICR comes first.\nA deep dive is running (research/dossiers/ACN-2026-10-01.md). No position until it is written (RUNBOOK 1d). The entry would need the gap to hold through the first 30-60 minutes; exact levels in the 8:40 day plan.\nFree-book MUU call: MUU is below $36.81 pre-market, so the plan is to sell the call at the 9:40 run unless MUU opens at or above $36.81.",
+      "tickers": [
+        "ACN",
+        "MUU",
+        "VICR",
+        "UTHR"
+      ]
     }
   ]
 }

@@ -1,0 +1,691 @@
+{
+ "generated_at": "2026-10-01T20:23:39Z",
+ "date": "2026-10-01",
+ "min_move": 15.0,
+ "losers": true,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "COLA",
+  "MI",
+  "STKH",
+  "VIVK",
+  "AMZE",
+  "NIVF",
+  "AIXC",
+  "SCNX",
+  "KPTI",
+  "ASGI-RI",
+  "PAVM",
+  "LGHL",
+  "SMJF",
+  "OPNW",
+  "AMOD",
+  "ALZN",
+  "OPTT",
+  "NEXR",
+  "LRHC",
+  "XLAB",
+  "OBAI",
+  "RETO",
+  "HOST",
+  "BKYI",
+  "APUS",
+  "DKI",
+  "BIYA",
+  "KITT",
+  "ENLV",
+  "NCI",
+  "PWCM",
+  "KAZR"
+ ],
+ "skipped_noisy": [
+  "WCT",
+  "VERI",
+  "SVRN",
+  "SEV",
+  "PUSA",
+  "GUTS",
+  "EMAT",
+  "INV"
+ ],
+ "rows": [
+  {
+   "symbol": "CTVA",
+   "name": "Corteva, Inc.",
+   "price": 12.57,
+   "change_pct": -83.81,
+   "volume": 87596860,
+   "market_cap": 8386653696,
+   "exchange": "NYQ",
+   "shares_out": 667196000,
+   "high_52w": 90.97,
+   "low_52w": 11.84,
+   "forward_pe": 3.047901,
+   "off_52w_high_pct": -86.2,
+   "news": [
+    {
+     "title": "Corteva\u2019s Market Cap Tumbles By Over $42B Today \u2013 CTVA Stock Hits Record Low - Yahoo Finance",
+     "published": "Thu, 01 Oct 2026 14:45:20 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "Why Is Corteva Stock Sinking Thursday? - Benzinga",
+     "published": "Thu, 01 Oct 2026 12:29:02 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Corteva stock adjusts following court clearance of Vylor Inc. separation - Seeking Alpha",
+     "published": "Thu, 01 Oct 2026 10:38:45 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "Corteva Stock Isn\u2019t Really Down 80%. It Spun Off Vylor. - Barron's",
+     "published": "Thu, 01 Oct 2026 14:19:03 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "Why is Corteva stock collapsing today? - Investing.com",
+     "published": "Thu, 01 Oct 2026 14:11:09 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "Corteva Falls as Vylor Spin-Off Resets Share Price - Quiver Quantitative",
+     "published": "Thu, 01 Oct 2026 14:50:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "8.01"
+     ],
+     "events": [
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1755672/000119312526409895/d116808d8k.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "8.01",
+      "9.01"
+     ],
+     "events": [
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1755672/000119312526409840/d35475d8k.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "8.01"
+     ],
+     "events": [
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1755672/000119312526409549/d23835d8k.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-09-30",
+     "items": [
+      "8.01",
+      "9.01"
+     ],
+     "events": [
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1755672/000119312526408740/d37534d8k.htm"
+    }
+   ],
+   "vol_1y": 25.6,
+   "jump_sigma": -112.7,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -1.5,
+   "tags": [
+    "clinical-regulatory"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "AGMB",
+   "name": "AgomAb Therapeutics NV",
+   "price": 8.65,
+   "change_pct": -22.07,
+   "volume": 528861,
+   "market_cap": 425994976,
+   "exchange": "NMS",
+   "shares_out": 49247975,
+   "high_52w": 17.82,
+   "low_52w": 8.56,
+   "forward_pe": -4.188862,
+   "off_52w_high_pct": -51.5,
+   "news": [
+    {
+     "title": "Agomab stock jumps on positive trial data - Yahoo Finance",
+     "published": "Thu, 01 Oct 2026 13:27:21 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "97% of evaluable patients in Agomab's Crohn's study were in clinical remission at week 48. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 10:30:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Agomab Therapeutics Experimental Drug Delivers Sustained Disease Control in Long-Term Crohn's Disease Trial - Benzinga",
+     "published": "Thu, 01 Oct 2026 18:31:03 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Agomab Reports Favorable 60-Week STENOVA OLE Results for Ontunisertib in Fibrostenosing Crohn\u2019s Disease, Supports Launch of NOV-ERA Phase 2b Study - Quiver Quantitative",
+     "published": "Thu, 01 Oct 2026 10:40:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "No surgeries during up to 60 weeks of treatment in AgomAb (AGMB)\u2019s Crohn\u2019s trial extension. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 10:42:56 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "12 Health Care Stocks Moving In Thursday's Intraday Session - Benzinga",
+     "published": "Thu, 01 Oct 2026 17:06:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "FORM 6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2020932/000110465926112564/tm2626748d1_6k.htm"
+    }
+   ],
+   "vol_1y": 91.6,
+   "jump_sigma": -4.3,
+   "spike_days_1y": 3,
+   "history_days": 162,
+   "noisy": false,
+   "shares_change_1y_pct": 0.0,
+   "tags": [
+    "clinical-regulatory"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "FHTX",
+   "name": "Foghorn Therapeutics Inc.",
+   "price": 2.92,
+   "change_pct": -18.21,
+   "volume": 13337995,
+   "market_cap": 173405120,
+   "exchange": "NGM",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 87525576,
+   "revenue_ttm": 36739000,
+   "revenue_growth": 1.127,
+   "gross_margin": -1.14568,
+   "profit_margin": -1.75778,
+   "cash": 167582000,
+   "debt": 43102000,
+   "shares_out": 59385315,
+   "float_shares": 28080940,
+   "short_pct_float": 0.061,
+   "avg_volume": 379520,
+   "high_52w": 7.61,
+   "low_52w": 1.7923,
+   "target_mean": 11.44444,
+   "rating": "strong_buy",
+   "analysts": 9,
+   "ev_to_revenue": 2.382,
+   "forward_pe": -2.663626,
+   "rel_volume": 35.1,
+   "off_52w_high_pct": -61.6,
+   "target_upside_pct": 291.9,
+   "news": [
+    {
+     "title": "FHTX Stock On Track For Record Low \u2014 Why Did Foghorn And Lilly Pull The Plug On Cancer Drug? - Stocktwits",
+     "published": "Thu, 01 Oct 2026 15:28:04 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "Why Is Foghorn Therapeutics Stock Tumbling Today? - Foghorn Therapeutics (NASDAQ:FHTX) - Benzinga",
+     "published": "Thu, 01 Oct 2026 16:17:42 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Foghorn Stock Craters as Lilly Scraps Cancer Deal, Forcing 40% Layoffs - Barron's",
+     "published": "Thu, 01 Oct 2026 17:38:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "FHTX Stock Slides As Traders Focus On Cash Runway And Charts - StocksToTrade",
+     "published": "Thu, 01 Oct 2026 13:19:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "FHTX Stock On Track For Record Low \u2014 Why Did Foghorn And Lilly Pull The Plug On Cancer Drug? - TradingView",
+     "published": "Thu, 01 Oct 2026 13:23:34 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "FHTX Stock Slides As Traders Eye Key Support Levels - timothysykes.com",
+     "published": "Thu, 01 Oct 2026 13:18:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "2.05",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "restructuring charges",
+      "Reg FD disclosure"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1822462/000162828026064102/fhtx-20260925.htm"
+    }
+   ],
+   "vol_1y": 74.9,
+   "jump_sigma": -4.3,
+   "spike_days_1y": 4,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 3.8,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 0
+  },
+  {
+   "symbol": "NKTR",
+   "name": "Nektar Therapeutics",
+   "price": 46.99,
+   "change_pct": -22.39,
+   "volume": 6110397,
+   "market_cap": 1604379264,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 1518780544,
+   "revenue_ttm": 54589000,
+   "revenue_growth": -0.093,
+   "gross_margin": 1.0,
+   "profit_margin": -2.87836,
+   "cash": 684340992,
+   "debt": 135934000,
+   "shares_out": 34142994,
+   "float_shares": 28451357,
+   "short_pct_float": 0.1852,
+   "avg_volume": 914390,
+   "high_52w": 109.0,
+   "low_52w": 33.4,
+   "target_mean": 141.4,
+   "rating": "strong_buy",
+   "analysts": 10,
+   "ev_to_revenue": 27.822,
+   "forward_pe": -4.6077666,
+   "rel_volume": 6.7,
+   "off_52w_high_pct": -56.9,
+   "target_upside_pct": 200.9,
+   "news": [
+    {
+     "title": "Why This Biotech Took A 21% Hit On Promising Alopecia Results - Investor's Business Daily",
+     "published": "Thu, 01 Oct 2026 18:29:00 GMT",
+     "source": "Investor's Business Daily",
+     "via": "google"
+    },
+    {
+     "title": "NKTR Stock Eyes Worst Day In Over 3 Years On Rezpeg Data: William Blair Still Sees A Durability Edge - Stocktwits",
+     "published": "Thu, 01 Oct 2026 19:46:35 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "NKTR Slides as Traders Appear to Sell Positive Trial Update - Quiver Quantitative",
+     "published": "Thu, 01 Oct 2026 14:50:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "This Biotech Had Good News for Hair Loss Sufferers. So Why Is the Stock Sinking? - Barron's",
+     "published": "Thu, 01 Oct 2026 16:23:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "Nektar Therapeutics (NKTR) Shares Drop After Rezpegaldesleukin T - GuruFocus",
+     "published": "Thu, 01 Oct 2026 18:23:02 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "Hair kept regrowing for six months after treatment stopped; 19% reached a lower hair-loss score. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 11:30:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "Reg FD disclosure"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/906709/000121390026105453/ea0307306-8k_nektar.htm"
+    },
+    {
+     "form": "SCHEDULE 13G/A",
+     "date": "2026-09-28",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/906709/000119312526403411/xslSCHEDULE_13G_X02/primary_doc.xml"
+    }
+   ],
+   "vol_1y": 76.1,
+   "jump_sigma": -5.3,
+   "spike_days_1y": 3,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 77.4,
+   "reverse_split": "2025-06-09 1-for-15",
+   "tags": [
+    "clinical-regulatory"
+   ],
+   "score": 0
+  },
+  {
+   "symbol": "LUCD",
+   "name": "Lucid Diagnostics Inc.",
+   "price": 0.6348,
+   "change_pct": -15.47,
+   "volume": 6709468,
+   "market_cap": 121214264,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Medical Devices",
+   "enterprise_value": 133839496,
+   "revenue_ttm": 5445000,
+   "revenue_growth": 0.267,
+   "gross_margin": -0.2169,
+   "profit_margin": 0.0,
+   "cash": 34472000,
+   "debt": 24909000,
+   "shares_out": 190948730,
+   "float_shares": 140761675,
+   "short_pct_float": 0.0864,
+   "avg_volume": 1224919,
+   "high_52w": 1.629,
+   "low_52w": 0.5,
+   "target_mean": 4.0,
+   "rating": "strong_buy",
+   "analysts": 5,
+   "ev_to_revenue": 24.58,
+   "forward_pe": -3.8472726,
+   "rel_volume": 5.5,
+   "off_52w_high_pct": -61.0,
+   "target_upside_pct": 530.1,
+   "news": [
+    {
+     "title": "Lucid Group, Inc. (CH2.F) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Wed, 30 Sep 2026 19:14:37 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Which stocks are experiencing notable movement on Thursday? - ChartMill",
+     "published": "Thu, 01 Oct 2026 16:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "12 Health Care Stocks Moving In Thursday's Intraday Session - Benzinga",
+     "published": "Thu, 01 Oct 2026 17:06:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "3 Key Reasons to Buy This Huge Turnaround Story That's Gaining Traction - The Motley Fool",
+     "published": "Thu, 01 Oct 2026 10:00:00 GMT",
+     "source": "The Motley Fool",
+     "via": "google"
+    },
+    {
+     "title": "Needham sees no reason for Lucid Diagnostics selloff today - TipRanks",
+     "published": "Thu, 01 Oct 2026 16:34:15 GMT",
+     "source": "TipRanks",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 62.3,
+   "jump_sigma": -4.3,
+   "spike_days_1y": 2,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 87.2,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -4
+  },
+  {
+   "symbol": "AGEN",
+   "name": "Agenus Inc.",
+   "price": 8.33,
+   "change_pct": -16.11,
+   "volume": 1944839,
+   "market_cap": 376198752,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 462247648,
+   "revenue_ttm": 132693000,
+   "revenue_growth": 0.344,
+   "gross_margin": 1.13608,
+   "profit_margin": 0.69342005,
+   "cash": 18738000,
+   "debt": 40708000,
+   "shares_out": 45161916,
+   "float_shares": 40231586,
+   "short_pct_float": 0.1524,
+   "avg_volume": 4267926,
+   "high_52w": 10.31,
+   "low_52w": 2.71,
+   "target_mean": 26.33333,
+   "rating": "strong_buy",
+   "analysts": 3,
+   "ev_to_revenue": 3.484,
+   "forward_pe": -75.72727,
+   "rel_volume": 0.5,
+   "off_52w_high_pct": -19.2,
+   "target_upside_pct": 216.1,
+   "news": [
+    {
+     "title": "Agenus: Pivot To Neoadjuvant Setting In CRC Sends Stock Soaring - But Caution Advised - Seeking Alpha",
+     "published": "Tue, 29 Sep 2026 15:38:55 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "Oil Prices Surge Nearly 10% \u2014 US Forces To Resume Maritime Blockade Against Iran On Tuesday - Stocktwits",
+     "published": "Thu, 01 Oct 2026 00:01:24 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "Apple stock falls 2% as Meta's AI shopping agen... - Pluang",
+     "published": "Tue, 29 Sep 2026 18:06:02 GMT",
+     "source": "Pluang",
+     "via": "google"
+    },
+    {
+     "title": "HOOD Stock Rises as Robinhood Rolls Out AI Trading Agents - The Market Periodical",
+     "published": "Wed, 30 Sep 2026 23:40:00 GMT",
+     "source": "The Market Periodical",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 104.1,
+   "jump_sigma": -2.7,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 41.3,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -4
+  },
+  {
+   "symbol": "ACRS",
+   "name": "Aclaris Therapeutics, Inc.",
+   "price": 4.41,
+   "change_pct": -16.16,
+   "volume": 5088707,
+   "market_cap": 649147136,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 684560192,
+   "revenue_ttm": 8219000,
+   "revenue_growth": -0.083,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 91556000,
+   "debt": 1850000,
+   "shares_out": 147198893,
+   "float_shares": 101169799,
+   "short_pct_float": 0.124,
+   "avg_volume": 2124084,
+   "high_52w": 6.6,
+   "low_52w": 1.74,
+   "target_mean": 10.18182,
+   "rating": "strong_buy",
+   "analysts": 11,
+   "ev_to_revenue": 83.29,
+   "forward_pe": -5.601636,
+   "rel_volume": 2.4,
+   "off_52w_high_pct": -33.2,
+   "target_upside_pct": 130.9,
+   "news": [],
+   "filings": [],
+   "vol_1y": 86.7,
+   "jump_sigma": -3.2,
+   "spike_days_1y": 3,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 28.9,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -4
+  },
+  {
+   "symbol": "IPEX",
+   "name": "Inflection Point Acquisition Co",
+   "price": 3.16,
+   "change_pct": -57.75,
+   "volume": 785206,
+   "market_cap": 37633628,
+   "exchange": "NGM",
+   "sector": "Financial Services",
+   "industry": "Shell Companies",
+   "enterprise_value": 14749463,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 61234,
+   "debt": 800000,
+   "shares_out": 10919375,
+   "float_shares": 2692093,
+   "short_pct_float": 0.0039,
+   "avg_volume": 64563,
+   "high_52w": 13.0177,
+   "low_52w": 2.68,
+   "rating": "none",
+   "rel_volume": 12.2,
+   "off_52w_high_pct": -75.7,
+   "news": [],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-09-28",
+     "items": [
+      "1.01",
+      "2.01",
+      "3.01",
+      "3.02",
+      "3.03",
+      "5.01",
+      "5.02",
+      "5.03",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "acquisition or sale completed",
+      "delisting notice",
+      "unregistered share sale",
+      "holders' rights modified",
+      "change in control",
+      "officer or director change",
+      "charter amendment (reverse splits are filed here)",
+      "Reg FD disclosure"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/2028355/000121390026103669/ea0306567-8k_inflection5.htm"
+    }
+   ],
+   "tags": [
+    "contract-order",
+    "red-flag",
+    "dilution"
+   ],
+   "score": -6
+  }
+ ]
+}

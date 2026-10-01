@@ -1,0 +1,233 @@
+{
+ "snapshots": [
+  {
+   "at": "2026-10-01T20:23:51Z",
+   "trending": [
+    {
+     "symbol": "NKE",
+     "name": "Nike Inc",
+     "exchange": "NYSE",
+     "score": 25.3221,
+     "watchers": 141011,
+     "why": "Nikes fiscal first-quarter results are driving attention, with traders weighing an EPS beat against a revenue miss and a sharp, volatile reaction. Views are split between concerns about weak demand, China, and management, and hopes that the stocks steep decline leaves room for a turnaround; guidance is a key focus."
+    },
+    {
+     "symbol": "BA",
+     "name": "Boeing Co",
+     "exchange": "NYSE",
+     "score": 14.7879,
+     "watchers": 197720,
+     "why": "Boeings engineering and technical workers ratified a new contract, easing strike concerns, while traders are also focused on the FAAs review of a 737 MAX software issue and uncertainty around MAX 10 certification. Optimism over the avoided strike and defense-contract wins is tempered by concern that regulatory scrutiny could delay certification."
+    },
+    {
+     "symbol": "XRPN",
+     "name": "Evernorth Holdings Inc.",
+     "exchange": "NASDAQ",
+     "score": 11.4218,
+     "watchers": 1155,
+     "why": "Evernorths shareholder approval of its business combination with Armada, paving the way for an XRP-treasury company to trade on Nasdaq, is driving attention amid a sharp rally. Traders are betting on exposure to Evernorths planned XRP holdings and a potentially tight float, while others warn of SPAC volatility, uncertain redemptions and warrant risks."
+    },
+    {
+     "symbol": "CTVA",
+     "name": "Corteva Inc",
+     "exchange": "NYSE",
+     "score": 11.1461,
+     "watchers": 2078,
+     "why": "Cortevas completed spin-off of its seed and genetics business into Vylor has driven intense attention as CTVA now represents the standalone crop-protection business, making its steep apparent drop partly a structural adjustment. Traders are debating whether post-spin selling has left CTVA undervalued or whether the remaining business warrants further repricing, with some buying the dip and others warning of more downside."
+    },
+    {
+     "symbol": "CBRS",
+     "name": "Cerebras Systems Inc",
+     "exchange": "NASDAQ",
+     "score": 10.9525,
+     "watchers": 13706,
+     "why": "CBRS is under pressure as traders focus on insider share unlocks and selling, while a report that OpenAIs latest ultrafast model tier uses Nvidia GPUs has raised questions about Cerebras role. Bulls argue this does not erase broader OpenAI commitments or inference demand; bears see the added share supply and competitive concerns as near-term headwinds."
+    },
+    {
+     "symbol": "ACN",
+     "name": "Accenture plc - Ordinary Shares - Class A",
+     "exchange": "NYSE",
+     "score": 9.26319,
+     "watchers": 8887,
+     "why": "Accentures quarterly earnings beat and record annual bookings sparked a sharp rally, with traders viewing the bookings as evidence that demand for consulting and AI-related services remains resilient. The reaction is divided: some see the results as easing fears that AI will undermine the business, while others cite modest growth guidance and ongoing AI-disruption concerns as reasons to take profits or remain bearish."
+    },
+    {
+     "symbol": "MAT",
+     "name": "Mattel, Inc.",
+     "exchange": "NASDAQ",
+     "score": 8.47063,
+     "watchers": 6712,
+     "why": "Mattel is surging on reports that Authentic Brands Group has discussed a takeover offer, though no deal is assured. Traders are split between anticipating a higher bid or bidding war and warning that the report could be stale or prompt a selloff."
+    },
+    {
+     "symbol": "AGEN",
+     "name": "Agenus Inc",
+     "exchange": "NASDAQ",
+     "score": 7.7709,
+     "watchers": 12765,
+     "why": "A sharp selloff has traders speculating about undisclosed bad news or concerns about upcoming BOT+BAL trial data, though no specific negative catalyst is confirmed. Some see the drop as a buying opportunity, while others point to possible dilution and warn of further weakness."
+    },
+    {
+     "symbol": "UMAC",
+     "name": "Unusual Machines Inc",
+     "exchange": "NYSEMkt",
+     "score": 7.35349,
+     "watchers": 12566,
+     "why": "UMACs sharp selloff is driving discussion, with traders speculating about an unconfirmed offering and questioning the move. Some also point to the Pentagons new Autonomous Warfare Command announcement, but no company-specific catalyst for the decline is confirmed."
+    },
+    {
+     "symbol": "RIG",
+     "name": "Transocean Ltd",
+     "exchange": "NYSE",
+     "score": 6.70883,
+     "watchers": 25061,
+     "why": "Transoceans planned Valaris merger moved closer to completion after the DOJ closed its antitrust review, prompting traders to discuss potential synergies and remaining approvals. Optimism about the deal and the companys offshore backlog contrasts with frustration over RIGs muted share performance and speculation that elevated short interest is weighing on the stock."
+    },
+    {
+     "symbol": "ONDS",
+     "name": "Ondas Inc",
+     "exchange": "NASDAQ",
+     "score": 6.42438,
+     "watchers": 37029,
+     "why": ""
+    },
+    {
+     "symbol": "NFLX",
+     "name": "Netflix Inc",
+     "exchange": "NASDAQ",
+     "score": 6.39019,
+     "watchers": 522000,
+     "why": ""
+    },
+    {
+     "symbol": "NVO",
+     "name": "Novo Nordisk A/S",
+     "exchange": "NYSE",
+     "score": 6.14927,
+     "watchers": 32170,
+     "why": ""
+    },
+    {
+     "symbol": "ZVRA",
+     "name": "Zevra Therapeutics Inc",
+     "exchange": "NASDAQ",
+     "score": 5.84897,
+     "watchers": 24237,
+     "why": ""
+    },
+    {
+     "symbol": "NVDA",
+     "name": "NVIDIA Corp",
+     "exchange": "NASDAQ",
+     "score": 5.64145,
+     "watchers": 669476,
+     "why": ""
+    },
+    {
+     "symbol": "RUN",
+     "name": "Sunrun Inc",
+     "exchange": "NASDAQ",
+     "score": 5.33507,
+     "watchers": 22978,
+     "why": ""
+    },
+    {
+     "symbol": "MGM",
+     "name": "MGM Resorts International",
+     "exchange": "NYSE",
+     "score": 4.97662,
+     "watchers": 27652,
+     "why": ""
+    },
+    {
+     "symbol": "PLTR",
+     "name": "Palantir Technologies Inc",
+     "exchange": "NASDAQ",
+     "score": 4.60897,
+     "watchers": 324961,
+     "why": ""
+    },
+    {
+     "symbol": "KORU",
+     "name": "Direxion Daily South Korea Bull 3X Shares",
+     "exchange": "NYSEArca",
+     "score": 4.57547,
+     "watchers": 3547,
+     "why": ""
+    },
+    {
+     "symbol": "TWST",
+     "name": "Twist Bioscience Corp",
+     "exchange": "NASDAQ",
+     "score": 4.53815,
+     "watchers": 4342,
+     "why": ""
+    },
+    {
+     "symbol": "JOBY",
+     "name": "Joby Aviation Inc",
+     "exchange": "NYSE",
+     "score": 4.39134,
+     "watchers": 29116,
+     "why": ""
+    },
+    {
+     "symbol": "INOD",
+     "name": "Innodata Inc",
+     "exchange": "NASDAQ",
+     "score": 4.28337,
+     "watchers": 11434,
+     "why": ""
+    },
+    {
+     "symbol": "TDOC",
+     "name": "Teladoc Health Inc",
+     "exchange": "NYSE",
+     "score": 4.1982,
+     "watchers": 40241,
+     "why": ""
+    },
+    {
+     "symbol": "JMIA",
+     "name": "Jumia Technologies Ag - ADR",
+     "exchange": "NYSE",
+     "score": 4.0537,
+     "watchers": 38571,
+     "why": ""
+    },
+    {
+     "symbol": "VICR",
+     "name": "Vicor Corp.",
+     "exchange": "NASDAQ",
+     "score": 4.05261,
+     "watchers": 2163,
+     "why": ""
+    },
+    {
+     "symbol": "DRAM",
+     "name": "Roundhill ETF Trust - Roundhill Memory ETF",
+     "exchange": "BATS",
+     "score": 4.04072,
+     "watchers": 14870,
+     "why": ""
+    },
+    {
+     "symbol": "MU",
+     "name": "Micron Technology Inc",
+     "exchange": "NASDAQ",
+     "score": 3.97622,
+     "watchers": 218544,
+     "why": ""
+    },
+    {
+     "symbol": "SATL",
+     "name": "Satellogic Inc - Ordinary Shares - Class A",
+     "exchange": "NASDAQ",
+     "score": 3.9253,
+     "watchers": 4757,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1152 @@
+{
+ "generated_at": "2026-10-01T20:22:16Z",
+ "date": "2026-10-01",
+ "min_move": 15.0,
+ "losers": false,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "SSM",
+  "NXL",
+  "RPGL",
+  "VEEA",
+  "MEDS",
+  "EJH",
+  "NCPL",
+  "CMCT",
+  "BTTC",
+  "MYND",
+  "ILLR",
+  "SCKT",
+  "ADBT",
+  "ATOS"
+ ],
+ "skipped_noisy": [
+  "SDEV",
+  "NAMM",
+  "BIRD",
+  "LONA",
+  "QTEX"
+ ],
+ "rows": [
+  {
+   "symbol": "SES",
+   "name": "SES AI Corporation",
+   "price": 0.8163,
+   "change_pct": 36.05,
+   "volume": 79120657,
+   "market_cap": 303081888,
+   "exchange": "NYQ",
+   "sector": "Consumer Cyclical",
+   "industry": "Auto Parts",
+   "enterprise_value": 66921440,
+   "revenue_ttm": 23463000,
+   "revenue_growth": 0.438,
+   "gross_margin": 0.27754,
+   "profit_margin": -2.89639,
+   "cash": 162998000,
+   "debt": 7145000,
+   "shares_out": 327406149,
+   "float_shares": 286774962,
+   "short_pct_float": 0.1603,
+   "avg_volume": 17403149,
+   "high_52w": 3.73,
+   "low_52w": 0.491,
+   "target_mean": 2.55,
+   "rating": "none",
+   "analysts": 2,
+   "ev_to_revenue": 2.852,
+   "forward_pe": -5.7032065,
+   "rel_volume": 4.5,
+   "off_52w_high_pct": -78.1,
+   "target_upside_pct": 212.4,
+   "news": [
+    {
+     "title": "SES AI Corporation (SES) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Tue, 29 Sep 2026 14:17:49 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Thursday's Intraday Session - Benzinga",
+     "published": "Thu, 01 Oct 2026 17:06:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Check out the stocks that are attracting the most attention and driving market activity. - ChartMill",
+     "published": "Thu, 01 Oct 2026 18:00:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "Top Lithium Stocks To Keep An Eye On - October 1st - MarketBeat",
+     "published": "Thu, 01 Oct 2026 19:22:14 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "With a 5.625% coupon, SES S.A. (SGBAF) prices bonds to refinance debt due in 2027. - Stock Titan",
+     "published": "Wed, 30 Sep 2026 12:00:36 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "T5D Forecast \u2014 Price Target \u2014 Prediction for 2027 - TradingView",
+     "published": "Tue, 29 Sep 2026 15:06:27 GMT",
+     "source": "TradingView",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 106.8,
+   "jump_sigma": 4.6,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.8,
+   "tags": [
+    "refinancing"
+   ],
+   "score": 7
+  },
+  {
+   "symbol": "ACN",
+   "name": "Accenture plc",
+   "price": 212.3,
+   "change_pct": 15.78,
+   "volume": 28761896,
+   "market_cap": 129915305984,
+   "exchange": "NYQ",
+   "sector": "Technology",
+   "industry": "Information Technology Services",
+   "enterprise_value": 112046178304,
+   "revenue_ttm": 73100591104,
+   "revenue_growth": 0.056,
+   "gross_margin": 0.32013,
+   "profit_margin": 0.10656,
+   "cash": 10171567104,
+   "debt": 8388769792,
+   "shares_out": 611942109,
+   "float_shares": 610969121,
+   "short_pct_float": 0.045300003,
+   "avg_volume": 6302785,
+   "high_52w": 291.09,
+   "low_52w": 118.15,
+   "target_mean": 193.02959,
+   "rating": "buy",
+   "analysts": 24,
+   "ev_to_revenue": 1.533,
+   "forward_pe": 14.477484,
+   "rel_volume": 4.6,
+   "off_52w_high_pct": -27.1,
+   "target_upside_pct": -9.1,
+   "news": [
+    {
+     "title": "Accenture stock surges as record bookings dispel AI fears - Yahoo Finance",
+     "published": "Thu, 01 Oct 2026 13:38:57 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "Accenture shares jump 21% after quarterly revenue beat, upbeat outlook (ACN:NYSE) - Seeking Alpha",
+     "published": "Thu, 01 Oct 2026 11:16:53 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "Accenture Stock Soars After Stronger-Than-Expected Earnings - Investopedia",
+     "published": "Thu, 01 Oct 2026 19:36:04 GMT",
+     "source": "Investopedia",
+     "via": "google"
+    },
+    {
+     "title": "Accenture Stock Is Having Its Best Day Ever. AI Isn\u2019t the Threat Everyone Thought. - Barron's",
+     "published": "Thu, 01 Oct 2026 18:38:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "ACN Stock Jumps After Accenture Posts Record $84.5B Annual Bookings, Q4 Earnings Beat - Yahoo Finance",
+     "published": "Thu, 01 Oct 2026 11:44:31 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "After Accenture Surges 17% in 1 Day, Here's What Comes Next for ACN Stock - Barchart.com",
+     "published": "Thu, 01 Oct 2026 19:50:48 GMT",
+     "source": "Barchart.com",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "2.02",
+      "9.01"
+     ],
+     "events": [
+      "results"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000037/acn-20261001.htm"
+    }
+   ],
+   "vol_1y": 46.1,
+   "jump_sigma": 5.0,
+   "spike_days_1y": 1,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.4,
+   "tags": [
+    "earnings-guidance",
+    "sector-theme"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "AISP",
+   "name": "Airship AI Holdings, Inc",
+   "price": 2.22,
+   "change_pct": 19.35,
+   "volume": 41439562,
+   "market_cap": 76455824,
+   "exchange": "NGM",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": 52342648,
+   "revenue_ttm": 18148514,
+   "revenue_growth": 0.921,
+   "gross_margin": 0.56169,
+   "profit_margin": 1.44603,
+   "cash": 12365685,
+   "debt": 650748,
+   "shares_out": 34439562,
+   "float_shares": 22094701,
+   "short_pct_float": 0.12189999,
+   "avg_volume": 307369,
+   "high_52w": 7.2,
+   "low_52w": 1.685,
+   "target_mean": 6.5,
+   "rating": "none",
+   "analysts": 1,
+   "ev_to_revenue": 2.884,
+   "forward_pe": 55.500004,
+   "rel_volume": 134.8,
+   "off_52w_high_pct": -69.2,
+   "target_upside_pct": 192.8,
+   "news": [
+    {
+     "title": "Airship AI Stock Skyrockets Thursday: What's Happening? - Benzinga",
+     "published": "Thu, 01 Oct 2026 18:59:47 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "A Homeland Security agency awarded $29 million for AI surveillance supporting public safety. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 13:00:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Thursday's session: gap up and gap down stocks - ChartMill",
+     "published": "Thu, 01 Oct 2026 14:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session - Benzinga",
+     "published": "Thu, 01 Oct 2026 17:06:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "A 735-share award for Timberland Bancorp (TSBK) director Robert A. Drugge vests over three years. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 17:49:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Airship AI secures $29M in DHS contracts for AI surveillance By Investing.com - Investing.com UK",
+     "published": "Thu, 01 Oct 2026 13:06:00 GMT",
+     "source": "Investing.com UK",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 79.1,
+   "jump_sigma": 3.6,
+   "spike_days_1y": 6,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 7.7,
+   "tags": [
+    "refinancing"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "MAT",
+   "name": "Mattel, Inc.",
+   "price": 15.04,
+   "change_pct": 18.8,
+   "volume": 35598289,
+   "market_cap": 4296927744,
+   "exchange": "NMS",
+   "sector": "Consumer Cyclical",
+   "industry": "Leisure",
+   "enterprise_value": 5839416832,
+   "revenue_ttm": 5489929216,
+   "revenue_growth": 0.105,
+   "gross_margin": 0.47605,
+   "profit_margin": 0.07785,
+   "cash": 523856000,
+   "debt": 2746310912,
+   "shares_out": 285700000,
+   "float_shares": 231436999,
+   "short_pct_float": 0.1433,
+   "avg_volume": 4422885,
+   "high_52w": 22.48,
+   "low_52w": 12.4,
+   "target_mean": 18.15385,
+   "rating": "buy",
+   "analysts": 13,
+   "ev_to_revenue": 1.064,
+   "forward_pe": 9.468767,
+   "rel_volume": 8.0,
+   "off_52w_high_pct": -33.1,
+   "target_upside_pct": 20.7,
+   "news": [
+    {
+     "title": "Mattel, Inc. (MAT) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Thu, 01 Oct 2026 14:47:28 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "MAT Stock Jumps 23% \u2014 Authentic Brands Reportedly Eyes $6B-Plus Takeover Of Mattel - Stocktwits",
+     "published": "Thu, 01 Oct 2026 19:42:58 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "Mattel plans a waterpark of about 100,000 square feet themed around Barbie, Hot Wheels and UNO - Stock Titan",
+     "published": "Thu, 01 Oct 2026 16:00:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Stock Traders Purchase High Volume of Put Options on Solstice Advanced Mat (NASDAQ:SOLS) - MarketBeat",
+     "published": "Thu, 01 Oct 2026 17:42:11 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "Mattel\u2019s Stock Surges on Report of Authentic Brands Interest - Barron's",
+     "published": "Thu, 01 Oct 2026 19:33:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "How a summer in Alaska paved Michael Malki's path to Arkansas baseball - Southwest Times Record",
+     "published": "Thu, 01 Oct 2026 15:52:00 GMT",
+     "source": "Southwest Times Record",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-09-30",
+     "items": [
+      "5.02",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "officer or director change",
+      "Reg FD disclosure"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/63276/000119312526408403/d158681d8k.htm"
+    }
+   ],
+   "vol_1y": 42.0,
+   "jump_sigma": 6.5,
+   "spike_days_1y": 1,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -6.2,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "QSI",
+   "name": "Quantum-Si Incorporated",
+   "price": 1.43,
+   "change_pct": 33.64,
+   "volume": 32355922,
+   "market_cap": 313003968,
+   "exchange": "NGM",
+   "sector": "Healthcare",
+   "industry": "Medical Devices",
+   "enterprise_value": 125717784,
+   "revenue_ttm": 1605000,
+   "revenue_growth": -0.418,
+   "gross_margin": 0.35016,
+   "profit_margin": 0.0,
+   "cash": 111741000,
+   "debt": 3253000,
+   "shares_out": 198946412,
+   "float_shares": 180222447,
+   "short_pct_float": 0.0732,
+   "avg_volume": 3006619,
+   "high_52w": 3.1,
+   "low_52w": 0.69,
+   "target_mean": 2.28333,
+   "rating": "buy",
+   "analysts": 3,
+   "ev_to_revenue": 78.329,
+   "forward_pe": -4.0857143,
+   "rel_volume": 10.8,
+   "off_52w_high_pct": -53.9,
+   "target_upside_pct": 59.7,
+   "news": [
+    {
+     "title": "QSI Stock Pops As Proteus Data Fuels Bullish Buzz - timothysykes.com",
+     "published": "Thu, 01 Oct 2026 13:18:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "QSI Stock Pops As Proteus Platform Outperforms And Roadmap Firms Up - StocksToTrade",
+     "published": "Thu, 01 Oct 2026 13:17:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "Which stocks are experiencing notable movement on Thursday? - ChartMill",
+     "published": "Thu, 01 Oct 2026 19:00:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "3 Biotech Stocks Put Traders Are Targeting Today - Schaeffer's Investment Research",
+     "published": "Thu, 01 Oct 2026 15:44:35 GMT",
+     "source": "Schaeffer's Investment Research",
+     "via": "google"
+    },
+    {
+     "title": "QSI Stock Pops As Proteus Data Boost Protein Sequencing Hopes - StocksToTrade",
+     "published": "Thu, 01 Oct 2026 12:32:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "QSI Stock Pops As Proteus Platform Milestones Fuel Momentum - timothysykes.com",
+     "published": "Thu, 01 Oct 2026 12:33:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-09-29",
+     "items": [
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "Reg FD disclosure"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1816431/000181643126000061/qsi-20260928.htm"
+    }
+   ],
+   "vol_1y": 88.2,
+   "jump_sigma": 5.2,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 8.0,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "QNC",
+   "name": "Quantum eMotion Corp.",
+   "price": 1.74,
+   "change_pct": 17.57,
+   "volume": 1409398,
+   "market_cap": 381790208,
+   "exchange": "ASE",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": 290896032,
+   "revenue_ttm": 23232,
+   "gross_margin": 1.0,
+   "profit_margin": 0.0,
+   "cash": 34004956,
+   "debt": 159868,
+   "shares_out": 219419670,
+   "float_shares": 212448707,
+   "avg_volume": 888744,
+   "high_52w": 4.44,
+   "low_52w": 1.46,
+   "target_mean": 5.0,
+   "rating": "none",
+   "analysts": 1,
+   "ev_to_revenue": 12521.351,
+   "rel_volume": 1.6,
+   "off_52w_high_pct": -60.8,
+   "target_upside_pct": 187.4,
+   "news": [
+    {
+     "title": "Market Movers | Winners: PACB, MNKD, CTNM | Losers: LQDA, GLAS, QNC - Trefis",
+     "published": "Thu, 01 Oct 2026 08:52:58 GMT",
+     "source": "Trefis",
+     "via": "google"
+    },
+    {
+     "title": "Quantum eMotion Corp. (TSXV:QNC) Stock Jumps 10.9% as Quantum Cybersecurity Trade Heats Up - kalkine.ca",
+     "published": "Thu, 01 Oct 2026 15:15:00 GMT",
+     "source": "kalkine.ca",
+     "via": "google"
+    },
+    {
+     "title": "Quantum eMotion (QNC) Stock News, Feb 19-24, 2026 - Stock Titan",
+     "published": "Tue, 29 Sep 2026 20:32:28 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "5 Stock Ideas On the Move - Baystreet.ca",
+     "published": "Thu, 01 Oct 2026 13:34:00 GMT",
+     "source": "Baystreet.ca",
+     "via": "google"
+    },
+    {
+     "title": "Quantum eMotion (TSXV:QNC) - Stock Analysis - simplywall.st",
+     "published": "Tue, 29 Sep 2026 07:00:00 GMT",
+     "source": "simplywall.st",
+     "via": "google"
+    },
+    {
+     "title": "QNC Forecast \u2014 Price Target \u2014 Prediction for 2027 - TradingView",
+     "published": "Tue, 29 Sep 2026 16:30:00 GMT",
+     "source": "TradingView",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-09-29",
+     "items": [],
+     "events": [],
+     "desc": "FORM 6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2106613/000110465926111438/tm2626471d1_6k.htm"
+    }
+   ],
+   "vol_1y": 93.6,
+   "jump_sigma": 2.7,
+   "spike_days_1y": 5,
+   "history_days": 151,
+   "noisy": false,
+   "tags": [
+    "analyst"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "DMRC",
+   "name": "Digimarc Corporation",
+   "price": 6.76,
+   "change_pct": 16.15,
+   "volume": 473492,
+   "market_cap": 152427536,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "enterprise_value": 126285736,
+   "revenue_ttm": 31501000,
+   "revenue_growth": -0.078,
+   "gross_margin": 0.75391,
+   "profit_margin": -0.99803,
+   "cash": 8755000,
+   "debt": 4779000,
+   "shares_out": 22548451,
+   "float_shares": 16416604,
+   "short_pct_float": 0.26479998,
+   "avg_volume": 145758,
+   "high_52w": 17.47,
+   "low_52w": 4.07,
+   "target_mean": 11.5,
+   "rating": "none",
+   "analysts": 2,
+   "ev_to_revenue": 4.009,
+   "forward_pe": -19.314287,
+   "rel_volume": 3.2,
+   "off_52w_high_pct": -61.3,
+   "target_upside_pct": 70.1,
+   "news": [
+    {
+     "title": "An investor buys Digimarc (DMRC) shares at $4.04 and reports an 18.5% stake. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 01:34:36 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "A 10% owner reports its common-stock stake in Digimarc (DMRC). - Stock Titan",
+     "published": "Wed, 30 Sep 2026 23:58:15 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Digimarc Raises $18.2 Million in Registered Direct Offering at $4.04; Grants Investor Rights - TradingView",
+     "published": "Wed, 30 Sep 2026 13:43:01 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "Digimarc Announces Registered Direct Offering of Common Stock - 01net.it",
+     "published": "Wed, 30 Sep 2026 16:15:00 GMT",
+     "source": "01net.it",
+     "via": "google"
+    },
+    {
+     "title": "Digimarc raises $18.2 million in registered direct offering - Investing.com India",
+     "published": "Wed, 30 Sep 2026 13:47:35 GMT",
+     "source": "Investing.com India",
+     "via": "google"
+    },
+    {
+     "title": "12 Information Technology Stocks Moving In Wednesday's Intraday Session - Benzinga",
+     "published": "Wed, 30 Sep 2026 17:06:00 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "SCHEDULE 13D/A",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/2119322/000119312526409540/xslSCHEDULE_13D_X02/primary_doc.xml"
+    },
+    {
+     "form": "3",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "3",
+     "url": "https://www.sec.gov/Archives/edgar/data/2119322/000119312526409455/xslF345X06/ownership.xml"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-09-30",
+     "items": [
+      "1.01",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "Reg FD disclosure"
+     ],
+     "desc": "FORM 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2119322/000143774926031541/desp20260924_8k.htm"
+    },
+    {
+     "form": "424B5",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "FORM 424B5",
+     "url": "https://www.sec.gov/Archives/edgar/data/2119322/000143774926031539/desp20260923_424b5.htm"
+    }
+   ],
+   "vol_1y": 89.4,
+   "jump_sigma": 2.7,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 3.3,
+   "tags": [
+    "dilution",
+    "contract-order"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "INSG",
+   "name": "Inseego Corp.",
+   "price": 4.37,
+   "change_pct": 19.4,
+   "volume": 2156711,
+   "market_cap": 71129208,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Communication Equipment",
+   "enterprise_value": 111918368,
+   "revenue_ttm": 172614000,
+   "revenue_growth": 0.094,
+   "gross_margin": 0.41098,
+   "profit_margin": -0.06415,
+   "cash": 1878000,
+   "debt": 53697000,
+   "shares_out": 16276707,
+   "float_shares": 14100527,
+   "short_pct_float": 0.1898,
+   "avg_volume": 318169,
+   "high_52w": 21.9,
+   "low_52w": 3.58,
+   "target_mean": 12.5,
+   "rating": "none",
+   "analysts": 4,
+   "ev_to_revenue": 0.648,
+   "forward_pe": -7.993853,
+   "rel_volume": 6.8,
+   "off_52w_high_pct": -80.0,
+   "target_upside_pct": 186.0,
+   "news": [
+    {
+     "title": "Nokia\u2019s wireless broadband business is now Inseego\u2019s, and Inseego expects revenue to roughly double. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 09:07:54 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session - Benzinga",
+     "published": "Thu, 01 Oct 2026 17:06:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Inseego Completes Acquisition of Nokia\u2019s Fixed Wireless Access Business to Expand Global Wireless Broadband Portfolio - Quiver Quantitative",
+     "published": "Thu, 01 Oct 2026 07:20:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Inseego completes acquisition of Nokia\u2019s FWA business By Investing.com - Investing.com UK",
+     "published": "Thu, 01 Oct 2026 07:22:00 GMT",
+     "source": "Investing.com UK",
+     "via": "google"
+    },
+    {
+     "title": "A 2% holding triggers a notice to Nexans within 15 days, then another at each 2% step. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 09:58:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Inseego's new CTO will lead efforts to accelerate AI in software development - Stock Titan",
+     "published": "Tue, 29 Sep 2026 20:05:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "3",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "3",
+     "url": "https://www.sec.gov/Archives/edgar/data/1022652/000119312526410686/xslF345X06/ownership.xml"
+    },
+    {
+     "form": "SCHEDULE 13D",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1022652/000119312526410680/xslSCHEDULE_13D_X02/primary_doc.xml"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "1.01",
+      "2.01",
+      "3.02",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "acquisition or sale completed",
+      "unregistered share sale",
+      "Reg FD disclosure"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1022652/000168316826007512/inseego_8k.htm"
+    }
+   ],
+   "vol_1y": 82.2,
+   "jump_sigma": 3.4,
+   "spike_days_1y": 4,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 8.0,
+   "tags": [
+    "sector-theme",
+    "activist-stake",
+    "contract-order",
+    "dilution"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "XRPN",
+   "name": "Armada Acquisition Corp. II",
+   "price": 23.43,
+   "change_pct": 42.87,
+   "volume": 2168462,
+   "market_cap": 740153728,
+   "exchange": "NGM",
+   "sector": "Financial Services",
+   "industry": "Shell Companies",
+   "enterprise_value": 518021504,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 54503,
+   "debt": 0,
+   "shares_out": 23710000,
+   "float_shares": 19139433,
+   "short_pct_float": 0.0029,
+   "avg_volume": 198876,
+   "high_52w": 23.99,
+   "low_52w": 10.1,
+   "rating": "none",
+   "rel_volume": 10.9,
+   "off_52w_high_pct": -2.3,
+   "news": [
+    {
+     "title": "Armada II holders approve Evernorth XRP deal; trading starts Oct. 8 (XRPN:NASDAQ) - Seeking Alpha",
+     "published": "Thu, 01 Oct 2026 13:44:49 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "473 Million XRP Is Headed for Nasdaq Next Week: Is the Bet Already Underwater? - Yahoo Finance",
+     "published": "Thu, 01 Oct 2026 12:38:15 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "Evernorth\u2019s XRP Treasury Vote Has Passed: Here\u2019s What It Means for XRP Holders - 24/7 Wall St.",
+     "published": "Thu, 01 Oct 2026 16:30:00 GMT",
+     "source": "24/7 Wall St.",
+     "via": "google"
+    },
+    {
+     "title": "Wall Street is getting its largest XRP-based stock, built by a Ripple founding team member - thestreet.com",
+     "published": "Thu, 01 Oct 2026 19:25:17 GMT",
+     "source": "thestreet.com",
+     "via": "google"
+    },
+    {
+     "title": "Evernorth\u2019s $1 Billion XRP Treasury Moves Closer to Nasdaq Listing - Altcoin Buzz",
+     "published": "Thu, 01 Oct 2026 12:30:52 GMT",
+     "source": "Altcoin Buzz",
+     "via": "google"
+    },
+    {
+     "title": "Is XRP a Buy Right Now? - The Motley Fool",
+     "published": "Thu, 01 Oct 2026 09:25:00 GMT",
+     "source": "The Motley Fool",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "425",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526409852/d32574d425.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "5.07"
+     ],
+     "events": [],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526409850/d32574d8k.htm"
+    }
+   ],
+   "vol_1y": 31.5,
+   "jump_sigma": 18.0,
+   "spike_days_1y": 2,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.0,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 0
+  },
+  {
+   "symbol": "RZAI",
+   "name": "Roze AI Inc. Common Shares",
+   "price": 26.31,
+   "change_pct": 20.25,
+   "volume": 869122,
+   "market_cap": 1463977472,
+   "exchange": "NGM",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "revenue_ttm": 2295237,
+   "gross_margin": 0.27061,
+   "profit_margin": -2.62729,
+   "shares_out": 55643389,
+   "avg_volume": 50433,
+   "high_52w": 35.55,
+   "low_52w": 19.243,
+   "rating": "none",
+   "rel_volume": 17.2,
+   "off_52w_high_pct": -26.0,
+   "news": [
+    {
+     "title": "symbol__ Stock Quote Price and Forecast - cnn.com",
+     "published": "Wed, 30 Sep 2026 20:15:45 GMT",
+     "source": "cnn.com",
+     "via": "google"
+    },
+    {
+     "title": "Why Is Roze AI Stock Surging Thursday? - Benzinga",
+     "published": "Thu, 01 Oct 2026 11:52:05 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Roze AI Inc. Common Shares (RZAI) stock price, news, quote and history - Yahoo Finance UK",
+     "published": "Tue, 29 Sep 2026 00:24:07 GMT",
+     "source": "Yahoo Finance UK",
+     "via": "google"
+    },
+    {
+     "title": "Roze AI: RZAI Stock Price Quote & News - Robinhood",
+     "published": "Wed, 30 Sep 2026 16:12:23 GMT",
+     "source": "Robinhood",
+     "via": "google"
+    },
+    {
+     "title": "Roze AI (RZAI) Stock Price, News & Analysis - MarketBeat",
+     "published": "Thu, 01 Oct 2026 06:35:36 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "Roze AI (RZAI) Stock Price, News & Analysis - Stock Titan",
+     "published": "Wed, 30 Sep 2026 20:06:10 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "F-1",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "REGISTRATION STATEMENT",
+     "url": "https://www.sec.gov/Archives/edgar/data/2075335/000121390026105222/ea0306952-f1_roze.htm"
+    },
+    {
+     "form": "EFFECT",
+     "date": "2026-09-28",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/2075335/999999999526003077/xslEFFECTX01/primary_doc.xml"
+    },
+    {
+     "form": "424B4",
+     "date": "2026-09-28",
+     "items": [],
+     "events": [],
+     "desc": "PROSPECTUS",
+     "url": "https://www.sec.gov/Archives/edgar/data/2075335/000121390026104150/ea0306875-424b4_roze.htm"
+    },
+    {
+     "form": "CERT",
+     "date": "2026-09-28",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/2075335/000135445726000918/RZAI_8A_Cert_0002075335.pdf"
+    },
+    {
+     "form": "8-A12B",
+     "date": "2026-09-28",
+     "items": [],
+     "events": [],
+     "desc": "FOR REGISTRATION OF CERTAIN CLASSES",
+     "url": "https://www.sec.gov/Archives/edgar/data/2075335/000121390026103850/ea0306854-8a12b_roze.htm"
+    }
+   ],
+   "tags": [
+    "dilution"
+   ],
+   "score": 0
+  },
+  {
+   "symbol": "OM",
+   "name": "Outset Medical, Inc.",
+   "price": 3.75,
+   "change_pct": 25.0,
+   "volume": 921768,
+   "market_cap": 70489368,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Medical Devices",
+   "enterprise_value": 13646492,
+   "revenue_ttm": 117803000,
+   "revenue_growth": 0.007,
+   "gross_margin": 0.41763002,
+   "profit_margin": -0.63064,
+   "cash": 147194000,
+   "debt": 104449000,
+   "shares_out": 18797164,
+   "float_shares": 14773067,
+   "short_pct_float": 0.064,
+   "avg_volume": 140441,
+   "high_52w": 16.159,
+   "low_52w": 2.841,
+   "target_mean": 7.66667,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 0.116,
+   "forward_pe": -1.6351768,
+   "rel_volume": 6.6,
+   "off_52w_high_pct": -76.8,
+   "target_upside_pct": 104.4,
+   "news": [
+    {
+     "title": "Saizeriya (TSE:7581) Stock May Be 49% Undervalued On Cash Flow - Yahoo Finance",
+     "published": "Thu, 01 Oct 2026 04:19:00 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "KeyBanc raises Synopsys stock price target on strong guidance - Investing.com",
+     "published": "Thu, 01 Oct 2026 14:50:12 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "KLAR Stock On Track To Hit February Highs \u2013 What Is The Google Connection? - Stocktwits",
+     "published": "Thu, 01 Oct 2026 02:29:37 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "I've Changed My Mind on Nebius Stock. The AI Supercycle Has Room for More Than Just Hyperscalers. - The Motley Fool",
+     "published": "Wed, 30 Sep 2026 15:16:00 GMT",
+     "source": "The Motley Fool",
+     "via": "google"
+    },
+    {
+     "title": "Indutrade (OM:INDT) Stock Could Be A Bargain On Cash Flow - simplywall.st",
+     "published": "Wed, 30 Sep 2026 18:44:09 GMT",
+     "source": "simplywall.st",
+     "via": "google"
+    },
+    {
+     "title": "Indutrade (OM:INDT) Stock May Be 20% Undervalued On Cash Flow Views - Yahoo Finance",
+     "published": "Wed, 30 Sep 2026 05:08:26 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 110.2,
+   "jump_sigma": 3.2,
+   "spike_days_1y": 8,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 4.3,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -2
+  },
+  {
+   "symbol": "WFCF",
+   "name": "Where Food Comes From, Inc.",
+   "price": 12.94,
+   "change_pct": 17.1,
+   "volume": 1902555,
+   "market_cap": 64436836,
+   "exchange": "NCM",
+   "sector": "Industrials",
+   "industry": "Specialty Business Services",
+   "enterprise_value": 52337276,
+   "revenue_ttm": 25033000,
+   "revenue_growth": 0.007,
+   "gross_margin": 0.38265,
+   "profit_margin": 0.05784,
+   "cash": 3417000,
+   "debt": 729000,
+   "shares_out": 4979663,
+   "float_shares": 1660917,
+   "short_pct_float": 0.0047999998,
+   "avg_volume": 6947,
+   "high_52w": 22.15,
+   "low_52w": 9.15,
+   "rating": "none",
+   "ev_to_revenue": 2.091,
+   "forward_pe": 26.408161,
+   "rel_volume": 273.9,
+   "off_52w_high_pct": -41.6,
+   "news": [
+    {
+     "title": "Where Food Comes From, Inc. SEC Filing (Oct 1, 2026) - Stock Titan",
+     "published": "Thu, 01 Oct 2026 11:12:07 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Thursday's Intraday Session - Benzinga",
+     "published": "Thu, 01 Oct 2026 17:06:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "EFFECT",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1360565/999999999526003115/xslEFFECTX01/primary_doc.xml"
+    }
+   ],
+   "vol_1y": 81.0,
+   "jump_sigma": 3.1,
+   "spike_days_1y": 4,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -2.2,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -3
+  }
+ ]
+}

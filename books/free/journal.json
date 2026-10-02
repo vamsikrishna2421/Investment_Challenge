@@ -345,6 +345,16 @@
       "tickers": [
         "ACN"
       ]
+    },
+    {
+      "id": "J0030",
+      "ts": "2026-10-02T14:42:16Z",
+      "kind": "review",
+      "title": "10:40 day-two check: nothing qualifies; MAT unconfirmed; book stays in cash",
+      "body": "10:41 day-two check: no candidate qualifies (details in h1b J0036). MAT $15.03 (-0.1%) is still unconfirmed, so the J0023 plan stays inactive.\nThe book stays in cash: $746.27, of which $558.28 is settled. No options; no forced trades.",
+      "tickers": [
+        "MAT"
+      ]
     }
   ]
 }

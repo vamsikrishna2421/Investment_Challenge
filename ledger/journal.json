@@ -468,6 +468,21 @@
         "ON",
         "SDEV"
       ]
+    },
+    {
+      "id": "J0036",
+      "ts": "2026-10-02T14:42:16Z",
+      "kind": "review",
+      "title": "10:40 day-two check: no Thursday mover qualifies (fails, no news or excluded); UTHR $548 nears the $541.89 Friday-close line",
+      "body": "Day-two check at 10:41 on Thursday's 15% movers (RUNBOOK 1b; screen in J0035). Price vs Thursday's close:\n- Below the prior close, so they fail day two (none had company news anyway):\n  - SES $0.80 (-1.4%)\n  - QSI $1.36 (-5.3%)\n  - QNC $1.64 (-6.0%)\n  - RZAI $19.57 (-25.8%)\n- MAT $15.03 (-0.1%; range $14.95-15.37): no confirmation from Mattel or Authentic; inactive.\n- Above the prior close but excluded by the screen:\n  - DMRC +0.6% (financing)\n  - XRPN +33.5% (de-SPAC)\n  - AISP +1.0% and INSG +4.7% (under $100M)\n- Not candidates:\n  - SDEV +91% at $7.00: noisy, no material news.\n  - SYNA $120.81: capped by onsemi's $123 cash deal.\nNo day-two entry today.\nHoldings at 10:41:\n- MUU $38.31 (-1.3%).\n- IOVA $14.13 (-0.7%; off the $14.75 high).\n- UTHR $548.04 (-4.1%; low $547.40): $6 above the $541.89 Friday-close line. The 3:55 PM run decides: below $541.89 there, sell all (J0032).",
+      "tickers": [
+        "SES",
+        "QSI",
+        "MAT",
+        "UTHR",
+        "MUU",
+        "IOVA"
+      ]
     }
   ]
 }

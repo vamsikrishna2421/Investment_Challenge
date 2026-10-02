@@ -311,6 +311,17 @@
         "ON",
         "SDEV"
       ]
+    },
+    {
+      "id": "J0027",
+      "ts": "2026-10-02T13:18:48Z",
+      "kind": "research",
+      "title": "Tesla Q3 deliveries 486,532 vs 461,974 consensus (+5.3%); TSLA +1.8% pre-market; no trade",
+      "body": "Release (8-K exhibit 99.1, about 9:00 AM; sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm):\n- Deliveries 486,532 (Model 3/Y 478,237). Production 464,391. Energy storage 13.7 GWh.\n- Against Tesla's company-compiled consensus of 461,974 (notateslaapp.com): +5.3%. Against Q2's 480,126: +1.3%. Against Q3 2025's 497,099: -2.1%.\n- Deliveries exceeded production by about 22K, so part of the beat is inventory drawdown, not new output.\nReaction: TSLA $360.59 pre-market (+1.8%); TSLL +3.6%.\nDecision, free book: no trade.\n- Options: J0025's reason holds. Calls bought after the release pay for volatility after the event.\n- Stock: a 1.8% move in a $1.4T company leaves nothing to capture in three sessions, and there is no dossier.\n- Q3 earnings are Oct 21, after the challenge ends.",
+      "tickers": [
+        "TSLA",
+        "TSLL"
+      ]
     }
   ]
 }

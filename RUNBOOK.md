@@ -149,7 +149,9 @@ questions by more than costs.
 * Read `ALERTS` first: new headlines since the last news run, movers (>=6% on the day or >=4% extended-hours)
   and discovery (trending, top gainers, most actives). This is the news-trading feed for both books.
 * Exit rules (both books): stop -15% (2x ETFs) / -12% (stocks) from entry, trim a third at +25% and move the
-  stop to breakeven, never average down. In extended hours, judge stops on news, not a thin print.
+  stop to breakeven, never average down. In extended hours, judge stops on news, not a thin print. In the regular session a stop is a
+  price level: once the stock trades at or below it, it is hit even if it bounces before the next run (review.py
+  flags `STOP TRADED` from the day low); sell at that run.
   Options (free book): size so a total loss is acceptable; take profits in thirds at +50%, +100% and on the
   catalyst; close before expiry unless deep in the money; never hold a contract through its expiration close.
   Crypto (free book): stop -8% from entry unless the journal plan says otherwise.

@@ -65,6 +65,10 @@ def main() -> int:
         flag = []
         if stop and p["price"] <= stop:
             flag.append("STOP HIT")
+        elif (stop and val["session"] == "regular" and q.get("day_low") is not None and q["day_low"] <= stop
+              and (last_buy.get(p["ticker"]) or {}).get("ts", "")[:10] < pfm.iso(now)[:10]):
+            # a stop is a price level: a regular-session trade through it today counts for a position held overnight
+            flag.append(f"STOP TRADED (low {q['day_low']:g})")
         if target and p["price"] >= target:
             flag.append("TARGET HIT")
         if p["unrealized_pct"] >= 25:

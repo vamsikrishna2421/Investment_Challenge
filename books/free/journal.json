@@ -335,6 +335,16 @@
         "EPAM",
         "MAT"
       ]
+    },
+    {
+      "id": "J0029",
+      "ts": "2026-10-02T13:58:13Z",
+      "kind": "trade",
+      "title": "Sold the ACN half at $205.70 on the $205 stop (traded $204.62 between runs); whole ACN trade -$28.66; book in cash",
+      "body": "Sold 0.914 ACN at $205.70 (T0005) on the $205 stop.\n- ACN traded down to $204.62 between the 9:40 and 9:55 runs. It was $205.70 at 9:55, but a resting stop would have filled. The stop is a price level.\n- J0028's wording (\"at or below $205 at the 9:55 run\") was wrong: it would let a stop that had been traded through survive on a bounce.\n  - RUNBOOK section 2 now says a regular-session trade through the stop counts.\n  - review.py flags STOP TRADED from the day low for positions held overnight.\nResult: -$17.02 on this half. The whole ACN trade lost $28.66: bought Oct 1 at $224.30 (J0017); first half sold at $211.56 (J0021).\n- What went wrong: I bought a +17% earnings gap in the alternate slot, and the gap faded on both days. The dossier's base rate for big Accenture gaps warned of this (J0024).\nBook: no positions. Cash $746.27, of which $558.28 is settled; the $187.99 from this sale settles Monday.\nNext: MAT only on confirmation (J0023). No options, no forced trades. Monday's 3:40 PM liquidation is unchanged.",
+      "tickers": [
+        "ACN"
+      ]
     }
   ]
 }

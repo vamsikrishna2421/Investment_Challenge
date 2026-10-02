@@ -183,6 +183,40 @@
         "day_trade": true,
         "good_faith_ok": true
       }
+    },
+    {
+      "id": "T0005",
+      "type": "SELL",
+      "ts": "2026-10-02T13:57:26Z",
+      "ticker": "ACN",
+      "label": "ACN",
+      "asset": "stock",
+      "name": "Accenture plc",
+      "qty": 0.914,
+      "multiplier": 1,
+      "price": 205.6971,
+      "quote_price": 205.8,
+      "quote_time": "2026-10-02T13:57:04Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 188.01,
+      "fees": 0.02,
+      "net_cash": 187.99,
+      "settle_date": "2026-10-05",
+      "rationale": "Stop $205 (J0024/J0026). ACN traded down to $204.62 in the regular session between the 9:40 and 9:55 runs; a resting stop would have filled. It is $205.70 at the 9:55 run, but the stop is a price level, not a check-time snapshot. The day-two fade matches the dossier's base rate for big Accenture gaps, and IT-services peers are down too (CTSH -1.8%, EPAM -3.4%).",
+      "tags": [
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 22,
+        "cash_account": true,
+        "asset": "stock",
+        "day_trade": false,
+        "good_faith_ok": true
+      }
     }
   ]
 }

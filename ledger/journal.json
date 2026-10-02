@@ -452,6 +452,22 @@
         "IOVA",
         "UTHR"
       ]
+    },
+    {
+      "id": "J0035",
+      "ts": "2026-10-02T12:47:52Z",
+      "kind": "plan",
+      "title": "Fri Oct 2 plan: hold MUU, IOVA and UTHR on their stops; no day-two candidate passes the screen; no new money",
+      "body": "Pre-market at 8:45, after the jobs report: SPY $770.50 (+0.85%), QQQ $750.40 (+1.1%), SOXL +7.3%.\nHoldings:\n- MUU $39.23 (+1.1%). Stop $30.90; no add.\n- IOVA $14.56 (+2.3%). Stop $12.35; trim a third at $17.57; exit on any share offering.\n- UTHR $575 (+0.6%). Stop $527; sell half at $630; sell everything on a Friday close below $541.89.\nDay-two screen of Thursday's 15% movers (RUNBOOK 1b; research/movers/2026-10-01.json), pre-market prices:\n- MAT $14.95 (-0.6%): the Authentic Brands report is still unconfirmed. Mattel won't comment on rumors; Authentic didn't respond. Not eligible.\n- SES $0.89 (+8.6%): no news from SES AI (the refinancing headline was SES S.A.); price under $1. Skip.\n- QSI $1.38 (-3.5%): promotional coverage of Proteus data; no company release. Skip.\n- QNC: relative volume 1.6. Skip.\n- DMRC: registered direct offering at $4.04 plus a new 13D holder; a financing. Skip.\n- XRPN: de-SPAC (Evernorth XRP treasury). Skip.\n- RZAI: IPO'd Sep 28; no news. Skip.\n- AISP, INSG, OM, WFCF: market cap under $100M. Skip.\n- CTVA (-83.8%): the Vylor spin-off adjusting the price, not a move.\nNo candidate for the 10:40 confirmation check.\nOvernight catalysts (wires --hours 16):\n- onsemi and Synaptics amended their merger (8-K exhibit 99.1, Oct 1): $123 cash per SYNA share, about $5.7B (was about $7B), immediately accretive for onsemi. It follows an unsolicited competing proposal.\n  - SYNA $121.59 pre-market: capped by the deal. Skip.\n  - ON $85.58 (+6.9%) already prices the change. No dossier; no chase.\n- SDEV +40% pre-market after +41% Thursday: skipped as noisy in the scan; no material news. Skip.\n- Nothing on MUU, MU, IOVA or UTHR.\nTesla Q3 deliveries are due around 9 AM (company consensus 461,974). Not held.\nCash $132.70: no new buys. Monday Oct 5: sell everything at the 3:40 PM run.",
+      "tickers": [
+        "MUU",
+        "IOVA",
+        "UTHR",
+        "MAT",
+        "SYNA",
+        "ON",
+        "SDEV"
+      ]
     }
   ]
 }

@@ -297,6 +297,20 @@
         "ACN",
         "MAT"
       ]
+    },
+    {
+      "id": "J0026",
+      "ts": "2026-10-02T12:47:52Z",
+      "kind": "plan",
+      "title": "Fri Oct 2 plan: hold the ACN half (stop $205); MAT still unconfirmed; no day-two candidates; no options",
+      "body": "Pre-market at 8:45: ACN $211.50 (-0.4%), MAT $14.95 (-0.6%), SPY +0.85%, QQQ +1.1%. BTC about $86.5K (+2.0% on the day), ETH +1.4%.\nACN half: stop $205 at regular-session runs. Sell at $247 or at Monday's 3:40 PM liquidation.\nMAT: no primary-source confirmation. Mattel won't comment on rumors; Authentic didn't respond. The J0023 plan stays inactive.\n- At 9:55 and 10:25, first check for a Mattel 8-K or press release, or an Authentic statement (sec.py MAT, wires).\n- Only then do the price triggers apply.\nDay-two screen: no candidate passes (details in h1b J0035).\n- SES and QSI: no company news.\n- QNC: relative volume 1.6.\n- DMRC: a financing.\n- XRPN: de-SPAC.\n- RZAI: new IPO.\n- AISP, INSG, OM, WFCF: under $100M.\nLosers scan: no put or inverse trade.\n- CTVA is the Vylor spin-off adjustment.\n- NKTR (-22%) and AGMB (-22%) fell on their own trial data. Puts bought after a 20% drop pay for volatility after the event (J0015/J0018).\nOvernight catalysts:\n- SYNA is capped at $123 cash (amended onsemi deal). A 1.2% spread to a mid-2027 close is not a trade for this challenge.\n- ON +6.9% pre-market: no chase without a dossier.\n- SDEV +40% pre-market: noisy; skip.\nNo options. Crypto: no position without a clear trend.\nCash $558.28, all settled. Monday Oct 5: sell everything at the 3:40 PM run; no new buys after 3:30.",
+      "tickers": [
+        "ACN",
+        "MAT",
+        "SYNA",
+        "ON",
+        "SDEV"
+      ]
     }
   ]
 }

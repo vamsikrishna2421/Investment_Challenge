@@ -483,6 +483,18 @@
         "MUU",
         "IOVA"
       ]
+    },
+    {
+      "id": "J0037",
+      "ts": "2026-10-02T19:57:19Z",
+      "kind": "trade",
+      "title": "Sold UTHR at $542.16 on the Friday-close rule (3:55 reading $541.72 < $541.89); -$16.61; MUU and IOVA held into the weekend",
+      "body": "Sold 0.5227 UTHR at $542.16 (T0006).\n- Rule (J0032, J0036): sell everything on a Friday close below $541.89, the Sep 30 ruling-day close, decided at the 3:55 PM run.\n- UTHR was $541.72 at 3:55:48. By the fill at 3:56 the quote had ticked back to $542.43; the fill was $542.16.\n- The stock spent the last two hours within $3 of the line (low $541.47), so the close could land on either side. I applied the rule at the stated check rather than reopening it over a 70-cent tick.\nResult: -$16.61. Bought Oct 1 at $573.90 on the day-two test (J0029), so -5.5%.\n- What went wrong: I entered a move already up 5% on the day, after a +12.6% ruling day. The ruling gain was fully given back within two sessions: $577 high Friday morning, about $542 at the close.\n- The planned $527 stop was 8% below the fill, double the dossier's risk (flagged in J0032).\nNo company news today. The Delaware remedies and final judgment are due about Oct 7, after the challenge ends.\nWeekend holdings, h1b:\n- MUU 8.2466 shares at $37.16 (stop $30.90). MU -2.1% today.\n- IOVA 17.7833 shares at $14.17 (stop $12.35).\n- Cash $416.07. The $283.37 from this sale settles Monday.\n- No after-hours trades.\nMonday Oct 5: sell everything at the 3:40 PM run; no new buys after 3:30.",
+      "tickers": [
+        "UTHR",
+        "MUU",
+        "IOVA"
+      ]
     }
   ]
 }

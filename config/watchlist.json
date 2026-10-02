@@ -1,15 +1,14 @@
 {
-  "strategy": "Fri Oct 2: weak jobs report (+29K) set off a rate-cut rally pre-market. Hold MUU (stop $30.90, no add), IOVA (stop $12.35; trim a third at $17.57; exit on any offering) and UTHR (stop $527; sell half at $630; sell all on a Friday close below $541.89). No day-two candidate passed the screen; no new money ($132.70 cash). Mon Oct 5: sell everything at 3:40 PM. Plan J0035.",
+  "strategy": "Weekend: hold MUU (stop $30.90) and IOVA (stop $12.35; trim a third at $17.57; exit on any offering). UTHR sold at $542.16 on the Friday-close rule (J0037). Cash $416.07 ($283.37 settles Monday). Mon Oct 5: sell everything at 3:40 PM.",
   "focus": [
     "MUU",
     "MU",
     "IOVA",
-    "UTHR",
-    "LQDA",
     "SPY",
     "QQQ",
     "SOXL",
-    "NVDA"
+    "NVDA",
+    "UTHR"
   ],
   "tickers": [
     "NVDA",

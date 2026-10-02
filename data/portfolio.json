@@ -1,20 +1,20 @@
 {
- "as_of": "2026-10-02T20:21:57Z",
+ "as_of": "2026-10-02T20:24:56Z",
  "session": "post",
  "start_capital": 1000.0,
  "deposits": 1000.0,
- "equity": 974.56,
+ "equity": 974.83,
  "cash": 416.07,
  "settled_cash": 132.7,
  "unsettled_cash": 283.37,
- "invested_value": 558.49,
- "net_profit": -25.44,
- "return_pct": -2.54,
+ "invested_value": 558.76,
+ "net_profit": -25.17,
+ "return_pct": -2.52,
  "goal_equity": 2000.0,
- "goal_progress_pct": -2.54,
+ "goal_progress_pct": -2.52,
  "realized_pnl": -33.93,
- "unrealized_pnl": 8.49,
- "day_pnl": -14.53,
+ "unrealized_pnl": 8.76,
+ "day_pnl": -14.27,
  "fees_paid": 0.04,
  "positions": [
   {
@@ -29,21 +29,21 @@
    "qty": 17.7833,
    "avg_cost": 14.0581,
    "cost_basis": 250.0,
-   "price": 14.215,
+   "price": 14.23,
    "prev_close": 14.23,
-   "market_value": 252.79,
-   "unrealized_pnl": 2.79,
-   "unrealized_pct": 1.12,
-   "day_pnl": -0.27,
-   "day_change_pct": -0.11,
+   "market_value": 253.06,
+   "unrealized_pnl": 3.06,
+   "unrealized_pct": 1.22,
+   "day_pnl": 0.0,
+   "day_change_pct": 0.0,
    "price_source": "extended",
-   "ext_price": 14.215,
-   "ext_change_pct": 0.0,
+   "ext_price": 14.23,
+   "ext_change_pct": 0.106,
    "quote_time": "2026-10-02T20:00:00Z",
    "stale_quote": false,
    "opened": "2026-09-29T15:05:27Z",
    "sell_locked_until": null,
-   "weight_pct": 25.94
+   "weight_pct": 25.96
   },
   {
    "ticker": "MUU",
@@ -71,7 +71,7 @@
    "stale_quote": false,
    "opened": "2026-09-29T13:42:25Z",
    "sell_locked_until": null,
-   "weight_pct": 31.37
+   "weight_pct": 31.36
   }
  ],
  "counts": {

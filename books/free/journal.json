@@ -322,6 +322,19 @@
         "TSLA",
         "TSLL"
       ]
+    },
+    {
+      "id": "J0028",
+      "ts": "2026-10-02T13:43:01Z",
+      "kind": "risk",
+      "title": "9:40: ACN $205.89, $0.89 above the $205 stop as IT-services peers fade; holding to the stop",
+      "body": "ACN at $205.89 at 9:42 (-3.1% on the day; low $205.57), $0.89 above the $205 stop.\nPeers are falling too: CTSH -1.9%, EPAM -3.1%. Thursday's IT-services sympathy move is unwinding.\nDecision: hold. The stop is $205 at regular-session runs (J0024/J0026); no early sale.\n- If ACN is at or below $205 at the 9:55 run, sell the 0.914 share at the bid.\n- A fill at $205 loses about $17.64 on this half. With the first half (-$11.64), the whole ACN trade would lose about $29.\nMAT $15.29 (+1.7%; range $15.05-15.37): inside the band, but still no confirmation from Mattel or Authentic, so no trade (J0023).\nStorage stocks fell on a Toshiba plan to double HDD capacity: STX -13%, WDC -9.5%. MU is -0.4%, so the h1b MUU position isn't affected.",
+      "tickers": [
+        "ACN",
+        "CTSH",
+        "EPAM",
+        "MAT"
+      ]
     }
   ]
 }

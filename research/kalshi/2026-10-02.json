@@ -311,6 +311,318 @@
      "median": 4.061428571428571
     }
    }
+  },
+  {
+   "at": "2026-10-02T12:19:44Z",
+   "series": {
+    "KXPAYROLLS": {
+     "rows": [
+      {
+       "label": "Above -25,000",
+       "strike": -25000.0,
+       "bid": 0.91,
+       "ask": 0.96,
+       "last": 0.94,
+       "p": 0.935,
+       "volume": 12538.77,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above -25000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 0",
+       "strike": 0.0,
+       "bid": 0.86,
+       "ask": 0.88,
+       "last": 0.88,
+       "p": 0.87,
+       "volume": 44084.65,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 0 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 10,000",
+       "strike": 10000.0,
+       "bid": 0.85,
+       "ask": 0.86,
+       "last": 0.86,
+       "p": 0.855,
+       "volume": 19816.95,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 10000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 20,000",
+       "strike": 20000.0,
+       "bid": 0.83,
+       "ask": 0.85,
+       "last": 0.86,
+       "p": 0.84,
+       "volume": 12522.08,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 20000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 30,000",
+       "strike": 30000.0,
+       "bid": 0.77,
+       "ask": 0.78,
+       "last": 0.78,
+       "p": 0.775,
+       "volume": 44375.78,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 30000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 40,000",
+       "strike": 40000.0,
+       "bid": 0.73,
+       "ask": 0.74,
+       "last": 0.74,
+       "p": 0.735,
+       "volume": 27769.27,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 40000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 50,000",
+       "strike": 50000.0,
+       "bid": 0.7,
+       "ask": 0.72,
+       "last": 0.71,
+       "p": 0.71,
+       "volume": 31962.93,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 50000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 60,000",
+       "strike": 60000.0,
+       "bid": 0.66,
+       "ask": 0.69,
+       "last": 0.69,
+       "p": 0.675,
+       "volume": 17710.76,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 60000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 70,000",
+       "strike": 70000.0,
+       "bid": 0.62,
+       "ask": 0.65,
+       "last": 0.62,
+       "p": 0.635,
+       "volume": 39963.14,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 70000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 80,000",
+       "strike": 80000.0,
+       "bid": 0.58,
+       "ask": 0.6,
+       "last": 0.57,
+       "p": 0.59,
+       "volume": 29131.33,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 80000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 90,000",
+       "strike": 90000.0,
+       "bid": 0.48,
+       "ask": 0.51,
+       "last": 0.52,
+       "p": 0.495,
+       "volume": 38733.5,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 90000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 100,000",
+       "strike": 100000.0,
+       "bid": 0.41,
+       "ask": 0.45,
+       "last": 0.43,
+       "p": 0.43,
+       "volume": 61349.34,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 100000 jobs be added in September 2026?"
+      },
+      {
+       "label": "Above 125,000",
+       "strike": 125000.0,
+       "bid": 0.26,
+       "ask": 0.28,
+       "last": 0.29,
+       "p": 0.27,
+       "volume": 40736.63,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will above 125000 jobs be added in September 2026?"
+      }
+     ],
+     "median": 89473.68421052632
+    },
+    "KXU3": {
+     "rows": [
+      {
+       "label": "Above 3.7%",
+       "strike": 3.7,
+       "bid": 0.99,
+       "ask": 1.0,
+       "last": 0.99,
+       "p": 0.995,
+       "volume": 4333.01,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 3.7% in September?"
+      },
+      {
+       "label": "Above 3.8%",
+       "strike": 3.8,
+       "bid": 0.99,
+       "ask": 1.0,
+       "last": 0.99,
+       "p": 0.995,
+       "volume": 51119.21,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 3.8% in September?"
+      },
+      {
+       "label": "Above 3.9%",
+       "strike": 3.9,
+       "bid": 0.94,
+       "ask": 0.95,
+       "last": 0.95,
+       "p": 0.945,
+       "volume": 206004.49,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 3.9% in September?"
+      },
+      {
+       "label": "Above 4.0%",
+       "strike": 4.0,
+       "bid": 0.7,
+       "ask": 0.74,
+       "last": 0.74,
+       "p": 0.72,
+       "volume": 75931.43,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.0% in September?"
+      },
+      {
+       "label": "Above 4.1%",
+       "strike": 4.1,
+       "bid": 0.33,
+       "ask": 0.36,
+       "last": 0.37,
+       "p": 0.345,
+       "volume": 34073.85,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.1% in September?"
+      },
+      {
+       "label": "Above 4.2%",
+       "strike": 4.2,
+       "bid": 0.06,
+       "ask": 0.08,
+       "last": 0.08,
+       "p": 0.07,
+       "volume": 85347.64,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.2% in September?"
+      },
+      {
+       "label": "Above 4.3%",
+       "strike": 4.3,
+       "bid": 0.0,
+       "ask": 0.02,
+       "last": 0.02,
+       "p": 0.01,
+       "volume": 13153.24,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.3% in September?"
+      },
+      {
+       "label": "Above 4.4%",
+       "strike": 4.4,
+       "bid": 0.0,
+       "ask": 0.01,
+       "last": 0.01,
+       "p": 0.005,
+       "volume": 10421.77,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.4% in September?"
+      },
+      {
+       "label": "Above 4.5%",
+       "strike": 4.5,
+       "bid": 0.0,
+       "ask": 0.03,
+       "last": 0.01,
+       "p": 0.015,
+       "volume": 4403.22,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.5% in September?"
+      },
+      {
+       "label": "Above 4.6%",
+       "strike": 4.6,
+       "bid": 0.0,
+       "ask": 0.02,
+       "last": 0.01,
+       "p": 0.01,
+       "volume": 7193.67,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.6% in September?"
+      },
+      {
+       "label": "Above 4.7%",
+       "strike": 4.7,
+       "bid": 0.0,
+       "ask": 0.01,
+       "last": 0.01,
+       "p": 0.005,
+       "volume": 44975.75,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.7% in September?"
+      },
+      {
+       "label": "Above 4.8%",
+       "strike": 4.8,
+       "bid": 0.0,
+       "ask": 0.01,
+       "last": 0.01,
+       "p": 0.005,
+       "volume": 288.66,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.8% in September?"
+      },
+      {
+       "label": "Above 4.9%",
+       "strike": 4.9,
+       "bid": 0.0,
+       "ask": 0.01,
+       "last": 0.01,
+       "p": 0.005,
+       "volume": 26.33,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 4.9% in September?"
+      },
+      {
+       "label": "Above 5.0%",
+       "strike": 5.0,
+       "bid": 0.0,
+       "ask": 0.01,
+       "last": 0.02,
+       "p": 0.005,
+       "volume": 148.7,
+       "close_time": "2026-10-02T12:29:00Z",
+       "title": "Will the unemployment rate (U-3) be above 5.0% in September?"
+      }
+     ],
+     "median": 4.058666666666666
+    }
+   }
   }
  ]
 }

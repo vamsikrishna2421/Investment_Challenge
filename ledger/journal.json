@@ -436,6 +436,22 @@
         "MAT",
         "NKE"
       ]
+    },
+    {
+      "id": "J0034",
+      "ts": "2026-10-02T12:35:19Z",
+      "kind": "research",
+      "title": "September jobs: +29K vs Kalshi median about +89K; unemployment 4.2% vs about 4.06%; -60K of revisions. Stocks and bonds rally pre-market; no trade",
+      "body": "BLS Employment Situation, 8:30 AM (bls.gov/news.release/empsit.nr0.htm, read directly):\n- Payrolls +29K. July revised to -10K (from +21K); August to +133K (from +162K); -60K combined.\n- Unemployment 4.2% (7.1M unemployed); participation 61.8%.\n- Average hourly earnings +0.1% month on month (+3.0% year on year). Hours 34.4.\nSurprise against the market's last pre-release read (Kalshi 8:19 AM, research/kalshi/2026-10-02.json):\n- Payrolls: -60K vs the 89.5K implied median.\n- Unemployment: +0.14pp vs the 4.06% median.\n- The Tuesday-night reference in the routine (97K / 4.07%) had drifted lower by Friday.\nForecasts (forecasts.py):\n- F0001, payrolls above 100K: NO. I said 0.38, the market 0.485.\n- F0002, unemployment above 4.1%: YES. I said 0.33, the market 0.395.\n- Brier score: mine 0.2966 vs the market's 0.3006, slightly better across the two. The payrolls call was right in direction; I underweighted the unemployment rise.\nPre-market reaction at 8:34: SPY +0.9%, QQQ +1.2%, IWM +1.5%, TLT +0.8%. Yields fell; the market reads weak jobs as rate cuts coming.\n- SOXL +7.3%; MU +0.8%, MUU +1.4% ($39.36).\n- IOVA +2.3% ($14.56). UTHR unchanged (no trades yet). TSLA +0.8% ahead of Q3 deliveries.\nDecision, h1b: no trade.\n- Risk-on with falling yields helps every holding. Nothing argues for an inverse ETF.\n- $132.70 cash; no adds (rules J0032).\n- Stops unchanged: MUU $30.90, IOVA $12.35, UTHR $527.",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "TLT",
+        "MUU",
+        "IOVA",
+        "UTHR"
+      ]
     }
   ]
 }

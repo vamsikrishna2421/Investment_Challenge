@@ -283,6 +283,20 @@
         "VICR",
         "MAT"
       ]
+    },
+    {
+      "id": "J0025",
+      "ts": "2026-10-02T12:35:19Z",
+      "kind": "research",
+      "title": "Jobs report: weak payrolls (+29K) set off a rate-cut rally; no option trades at the open",
+      "body": "Numbers and surprise are in h1b J0034: payrolls +29K vs a +89K Kalshi median, unemployment 4.2%, -60K of revisions, wages +0.1%.\nPre-market: SPY +0.9%, QQQ +1.2%, IWM +1.5%, TLT +0.8%, TSLA +0.8% (Q3 deliveries due around 9 AM).\nFree book decision: no SPY, QQQ, TSLA or TSLL options at the open.\n- Buying calls after a macro print pays for volatility after the event. The rally is already in the price, and we have no view on its follow-through (J0015/J0018 lesson).\n- No inverse trade: the reaction is risk-on, not risk-off.\nHoldings:\n- ACN $211.73 pre-market (-0.3%). Stop $205; sell at $247 or at Monday's 3:40 PM liquidation.\n- MAT $15.01: no primary-source confirmation, so the J0023 plan stays inactive.\nCash: $558.28, all settled.",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "TSLA",
+        "ACN",
+        "MAT"
+      ]
     }
   ]
 }

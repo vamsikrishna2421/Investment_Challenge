@@ -1,5 +1,5 @@
 {
-  "strategy": "Weekend: hold MUU (stop $30.90) and IOVA (stop $12.35; trim a third at $17.57; exit on any offering). UTHR sold at $542.16 on the Friday-close rule (J0037). Cash $416.07 ($283.37 settles Monday). Mon Oct 5: sell everything at 3:40 PM.",
+  "strategy": "Mon Oct 5, final session: hold MUU (stop $30.90) and IOVA (stop $12.35; exit on any offering); new money only on a primary-source catalyst before noon (none planned); no buys after 3:30 PM; sell everything at the 3:40 PM run. Review J0038.",
   "focus": [
     "MUU",
     "MU",
@@ -7,8 +7,7 @@
     "SPY",
     "QQQ",
     "SOXL",
-    "NVDA",
-    "UTHR"
+    "NVDA"
   ],
   "tickers": [
     "NVDA",

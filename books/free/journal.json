@@ -355,6 +355,17 @@
       "tickers": [
         "MAT"
       ]
+    },
+    {
+      "id": "J0031",
+      "ts": "2026-10-02T20:23:49Z",
+      "kind": "review",
+      "title": "Fri Oct 2 review: -$6.05 on the day, $746.27 (-25.4% since the start); ACN stopped at $205.70 (closed $198.90); all cash into Monday",
+      "body": "Result:\n- $746.27 after the close: -$6.05 on the day (from $752.32) and -25.4% since the start.\n- Benchmarks since the book started: SPY +0.72%, QQQ +1.60%.\n- All cash: $746.27, of which $558.28 is settled; the $187.99 from the ACN sale settles Monday.\nTrades: one.\n- Sold the ACN half, 0.914 share at $205.70, on the $205 stop (T0005, J0029): -$17.02. The whole ACN trade lost $28.66.\n- ACN closed at $198.90 (-6.3%), so the stop saved about $6.22 against holding to the close.\nWhat worked:\n- The stop. A level traded through between runs now counts as hit (RUNBOOK section 2; review.py STOP TRADED).\n- The no-chase decisions held up:\n  - No TSLA calls after the deliveries beat (TSLA +1.8% pre-market; no options at the open, J0025/J0027).\n  - No MAT without confirmation (MAT closed $15.27, +1.5%; still no statement from Mattel or Authentic).\n  - No SYNA, ON or SDEV.\nWhat didn't:\n- J0028's 'check at the 9:55 run' wording nearly let a traded-through stop survive. Fixed in the RUNBOOK the same morning.\n- The ACN entry itself: a +17% earnings gap bought in the alternate slot, faded on both following days.\nPost-close scan: nothing qualifies (see h1b J0038).\n- Losers FHTX and IART: no puts. A put bought after a 20-30% drop pays for volatility after the event (J0015/J0018 lesson).\nMonday Oct 5 plan, the final session:\n- Start in cash.\n- MAT only on a primary-source confirmation, before noon (J0023 triggers).\n- No options.\n- Crypto: weekend runs only on a clear trend. BTC $84.2K (-0.7% today), no trend.\n- No new buys after 3:30. 3:40 PM: sell anything held.\n- 4:20 PM: final report.",
+      "tickers": [
+        "ACN",
+        "MAT"
+      ]
     }
   ]
 }

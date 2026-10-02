@@ -1,0 +1,479 @@
+{
+ "generated_at": "2026-10-02T20:21:53Z",
+ "date": "2026-10-02",
+ "min_move": 15.0,
+ "losers": false,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "AMOD",
+  "FLUX",
+  "AIXI",
+  "ZNB",
+  "FNGR",
+  "PMI",
+  "SCKT",
+  "REBN",
+  "ICU",
+  "NIVF",
+  "SSM",
+  "DUO",
+  "SNES",
+  "CELU",
+  "AUID",
+  "NMCO-RI",
+  "NWTG",
+  "NCT"
+ ],
+ "skipped_noisy": [
+  "SDEV",
+  "QTEX",
+  "RPGL",
+  "CYCU",
+  "GOW",
+  "NAUT",
+  "NEOV"
+ ],
+ "rows": [
+  {
+   "symbol": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "price": 3.88,
+   "change_pct": 20.12,
+   "volume": 2205964,
+   "market_cap": 161591808,
+   "exchange": "NMS",
+   "sector": "Basic Materials",
+   "industry": "Specialty Chemicals",
+   "enterprise_value": 115161008,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 19450000,
+   "debt": 90000,
+   "shares_out": 41647371,
+   "float_shares": 22352560,
+   "short_pct_float": 0.0143,
+   "avg_volume": 744431,
+   "high_52w": 7.5,
+   "low_52w": 0.9,
+   "target_mean": 3.75,
+   "rating": "strong_buy",
+   "analysts": 2,
+   "forward_pe": -7.6078434,
+   "rel_volume": 3.0,
+   "off_52w_high_pct": -48.3,
+   "target_upside_pct": -3.4,
+   "news": [
+    {
+     "title": "A California minerals operation with more than 150 years of production history is now part of 5E - Stock Titan",
+     "published": "Fri, 02 Oct 2026 12:30:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "A 7,634-stock-unit grant at 5E Advanced Materials (FEAM) compensates Jonathan Siegler\u2019s board service. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 22:37:06 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "5E Advanced Materials Acquires Searles Valley Assets With $3.4M Cash, 8.3M Shares, $6.2M Note - TradingView",
+     "published": "Thu, 01 Oct 2026 20:53:01 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "5E Advanced Materials completes Searles Valley acquisition By Investing.com - Investing.com Canada",
+     "published": "Fri, 02 Oct 2026 13:33:23 GMT",
+     "source": "Investing.com Canada",
+     "via": "google"
+    },
+    {
+     "title": "$7M in bridge funding accompanies 5E Advanced Materials (FEAM)'s completed asset purchase. - Stock Titan",
+     "published": "Thu, 01 Oct 2026 20:47:13 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "5E Advanced Materials Q4 EPS beats estimates, narrows YoY loss - scanx.trade",
+     "published": "Wed, 30 Sep 2026 14:11:32 GMT",
+     "source": "scanx.trade",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "4",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "PRIMARY DOCUMENT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1888654/000188865426000003/xslF345X06/primary_doc.xml"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "1.01",
+      "2.01",
+      "2.02",
+      "2.03",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "acquisition or sale completed",
+      "results",
+      "new debt"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1888654/000119312526410775/feam-20261001.htm"
+    },
+    {
+     "form": "4",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "PRIMARY DOCUMENT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1888654/000116853426000009/xslF345X06/primarydocument.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "PRIMARY DOCUMENT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1888654/000202603326000009/xslF345X06/primarydocument.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "PRIMARY DOCUMENT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1888654/000202191326000010/xslF345X06/primarydocument.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-09-30",
+     "items": [],
+     "events": [],
+     "desc": "PRIMARY DOCUMENT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1888654/000182934026000009/xslF345X06/primarydocument.xml"
+    }
+   ],
+   "vol_1y": 116.6,
+   "jump_sigma": 2.5,
+   "spike_days_1y": 9,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 85.0,
+   "tags": [
+    "earnings-guidance",
+    "contract-order",
+    "refinancing"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "CABO",
+   "name": "Cable One, Inc.",
+   "price": 12.21,
+   "change_pct": 17.86,
+   "volume": 1380252,
+   "market_cap": 69278624,
+   "exchange": "NYQ",
+   "sector": "Communication Services",
+   "industry": "Telecom Services",
+   "enterprise_value": 2947273984,
+   "revenue_ttm": 1441633024,
+   "revenue_growth": -0.084,
+   "gross_margin": 0.73467004,
+   "profit_margin": -0.72827005,
+   "cash": 181852992,
+   "debt": 3070344960,
+   "shares_out": 5673925,
+   "float_shares": 4469975,
+   "short_pct_float": 0.19219999,
+   "avg_volume": 290142,
+   "high_52w": 180.74,
+   "low_52w": 9.9,
+   "target_mean": 44.25,
+   "rating": "hold",
+   "analysts": 4,
+   "ev_to_revenue": 2.044,
+   "forward_pe": 0.83975244,
+   "rel_volume": 4.8,
+   "off_52w_high_pct": -93.2,
+   "target_upside_pct": 262.4,
+   "news": [
+    {
+     "title": "Why Are Cable One (CABO) Shares Soaring Today - TradingView",
+     "published": "Fri, 02 Oct 2026 16:35:48 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "An expected Oct. 1 closing shifts for Cable One (CABO). Certain investor financing talks have concluded. - Stock Titan",
+     "published": "Fri, 02 Oct 2026 13:16:48 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "The Stock Market Has Done This Only Once Before in the Last 156 Years. What Happens Next Gets Ugly Fast. - 24/7 Wall St.",
+     "published": "Fri, 02 Oct 2026 15:54:00 GMT",
+     "source": "24/7 Wall St.",
+     "via": "google"
+    },
+    {
+     "title": "SpaceX (SPCX) Faces FAA Review On 76 Cape Canaveral Starship Launches - Yahoo! Finance Canada",
+     "published": "Fri, 02 Oct 2026 18:07:26 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Rare shark spotted off New England coast - ABC News - Breaking News, Latest News and Videos",
+     "published": "Fri, 02 Oct 2026 11:35:24 GMT",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "via": "google"
+    },
+    {
+     "title": "(CABO) Movement as an Input in Quant Signal Sets - news.stocktradersdaily.com",
+     "published": "Wed, 30 Sep 2026 15:58:01 GMT",
+     "source": "news.stocktradersdaily.com",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-02",
+     "items": [
+      "1.01",
+      "8.01"
+     ],
+     "events": [
+      "material agreement",
+      "other events"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1632127/000095015726001058/form8-k.htm"
+    }
+   ],
+   "vol_1y": 97.6,
+   "jump_sigma": 2.7,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.8,
+   "tags": [
+    "contract-order"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "XRPN",
+   "name": "Armada Acquisition Corp. II",
+   "price": 39.42,
+   "change_pct": 68.25,
+   "volume": 9123392,
+   "market_cap": 1245277696,
+   "exchange": "NGM",
+   "sector": "Financial Services",
+   "industry": "Shell Companies",
+   "enterprise_value": 740099200,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 54503,
+   "debt": 0,
+   "shares_out": 23710000,
+   "float_shares": 19139433,
+   "short_pct_float": 0.0029,
+   "avg_volume": 240185,
+   "high_52w": 52.82,
+   "low_52w": 10.1,
+   "rating": "none",
+   "rel_volume": 38.0,
+   "off_52w_high_pct": -25.4,
+   "news": [
+    {
+     "title": "Friday's session: gap up and gap down stocks - ChartMill",
+     "published": "Fri, 02 Oct 2026 14:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "Dow, S&P 500, Nasdaq Futures Rise Ahead Of Key Jobs Report: NKE, NFLX, BABA, XRPN Stocks In Focus - Yahoo Finance",
+     "published": "Fri, 02 Oct 2026 02:37:00 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "We Asked ChatGPT What Evernorth\u2019s $1 Billion Does to XRP by the End of 2026 - 24/7 Wall St.",
+     "published": "Fri, 02 Oct 2026 13:00:00 GMT",
+     "source": "24/7 Wall St.",
+     "via": "google"
+    },
+    {
+     "title": "Analyst sets XRPN stock price ahead of Evernorth\u2019s Nasdaq debut - Finbold",
+     "published": "Fri, 02 Oct 2026 11:52:20 GMT",
+     "source": "Finbold",
+     "via": "google"
+    },
+    {
+     "title": "Dow, S&P 500, Nasdaq Futures Rise Ahead Of Key Jobs Report: NKE, NFLX, BABA, XRPN Stocks In Focus - TradingView",
+     "published": "Fri, 02 Oct 2026 02:37:00 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "Evernorth: 473 Million XRP on the Nasdaq from October 8 - CryptoTicker",
+     "published": "Fri, 02 Oct 2026 09:26:34 GMT",
+     "source": "CryptoTicker",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "425",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526411024/d110692d425.htm"
+    },
+    {
+     "form": "425",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526409852/d32574d425.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-01",
+     "items": [
+      "5.07"
+     ],
+     "events": [],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526409850/d32574d8k.htm"
+    }
+   ],
+   "vol_1y": 47.6,
+   "jump_sigma": 17.4,
+   "spike_days_1y": 3,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.0,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 0
+  },
+  {
+   "symbol": "NNBR",
+   "name": "NN, Inc.",
+   "price": 4.51,
+   "change_pct": 24.24,
+   "volume": 14626184,
+   "market_cap": 372437824,
+   "exchange": "NMS",
+   "sector": "Industrials",
+   "industry": "Conglomerates",
+   "enterprise_value": 620246528,
+   "revenue_ttm": 455791008,
+   "revenue_growth": 0.193,
+   "gross_margin": 0.15115,
+   "profit_margin": -0.062119998,
+   "cash": 16450000,
+   "debt": 214800000,
+   "shares_out": 82580446,
+   "float_shares": 68452930,
+   "short_pct_float": 0.0511,
+   "avg_volume": 2208603,
+   "high_52w": 4.79,
+   "low_52w": 1.1,
+   "target_mean": 6.66667,
+   "rating": "strong_buy",
+   "analysts": 3,
+   "ev_to_revenue": 1.361,
+   "forward_pe": 22.931816,
+   "rel_volume": 6.6,
+   "off_52w_high_pct": -5.8,
+   "target_upside_pct": 47.8,
+   "news": [
+    {
+     "title": "NN, Inc. Announces $50 Million Net Private Placement of Common Stock and Pre-Funded Warrants - markets.businessinsider.com",
+     "published": "Fri, 02 Oct 2026 12:49:19 GMT",
+     "source": "markets.businessinsider.com",
+     "via": "google"
+    },
+    {
+     "title": "NN Shares Rise After Launching $50 Million Private Placement; Says Q3 Sales Highest in 8 Years - marketscreener.com",
+     "published": "Fri, 02 Oct 2026 19:00:14 GMT",
+     "source": "marketscreener.com",
+     "via": "google"
+    },
+    {
+     "title": "NN Inc. raises $50 million through private equity financing By Investing.com - Investing.com UK",
+     "published": "Fri, 02 Oct 2026 12:06:00 GMT",
+     "source": "Investing.com UK",
+     "via": "google"
+    },
+    {
+     "title": "A former director\u2019s affiliate proposes selling NN Inc (NNBR) shares through two brokers. - Stock Titan",
+     "published": "Tue, 29 Sep 2026 23:17:42 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "EVgo, Advanced Energy, NN, Blink Charging, and Ameresco Shares Are Soaring, What You Need To Know - TradingView",
+     "published": "Fri, 02 Oct 2026 14:50:43 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "12 Industrials Stocks Moving In Friday's Intraday Session - Benzinga",
+     "published": "Fri, 02 Oct 2026 17:05:55 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-09-30",
+     "items": [
+      "5.03",
+      "5.07",
+      "9.01"
+     ],
+     "events": [
+      "charter amendment (reverse splits are filed here)"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/918541/000091854126000100/nnbr-20260930.htm"
+    },
+    {
+     "form": "144",
+     "date": "2026-09-29",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/918541/000092189526002681/xsl144X01/primary_doc.xml"
+    }
+   ],
+   "vol_1y": 83.4,
+   "jump_sigma": 4.1,
+   "spike_days_1y": 4,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 53.6,
+   "tags": [
+    "dilution"
+   ],
+   "score": -1
+  }
+ ]
+}

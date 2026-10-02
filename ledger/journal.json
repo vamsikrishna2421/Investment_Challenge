@@ -495,6 +495,18 @@
         "MUU",
         "IOVA"
       ]
+    },
+    {
+      "id": "J0038",
+      "ts": "2026-10-02T20:23:49Z",
+      "kind": "review",
+      "title": "Fri Oct 2 review: -$28.1 on the day, $975.12 (-2.5% since the start); UTHR sold on the Friday-close rule; MUU and IOVA held for Monday's liquidation",
+      "body": "Result:\n- $975.12 after the close: -$28.13 on the day (from $1,003.25) and -2.5% since the start.\n- Benchmarks since the book started: SPY +0.54%, QQQ +1.80%. Today SPY +0.7%, QQQ +1.0%.\n- Cash $416.07, of which $132.70 is settled; the UTHR proceeds settle Monday.\n- Holdings:\n  - MUU $37.10 (-4.4% today; +2.0% on cost).\n  - IOVA $14.21 (-0.1%; +1.1% on cost).\nTrades: one.\n- Sold UTHR, 0.5227 share at $542.16, on the Friday-close rule (J0037): -$16.61.\n- UTHR closed at $541.70, below the $541.89 line, so the close confirmed the 3:55 reading. The fill was $0.46 better than the close.\nWhat worked:\n- Rules set in advance were followed without second-guessing: UTHR's close rule, and stops untouched on MUU and IOVA.\n- The day-two screen kept the book out of Thursday's movers. SES, QSI, QNC and RZAI all opened below Thursday's close; none qualified (J0036).\n- No chasing ON (+4.4% close), SYNA (deal-capped) or SDEV (+104%, noisy).\nWhat didn't:\n- The UTHR entry (J0029): bought at 10:25 Thursday, already +5% on the day after a +12.6% ruling day. The whole ruling gain unwound within two sessions.\n  - Lesson: for a legal-ruling or other one-off gap, the day-two test is not enough. Require an entry within about 3% of the prior close, or skip the trade.\n- MUU gave back a +2.2% pre-market gain to close -4.4%. Memory names sold off after the rate-cut rally faded (MU -2.1%).\nAfter-hours news on holdings (wires, last 3 hours): none for MUU, MU or IOVA.\nPost-close scan (research/movers/2026-10-02.json, 4 gainers; nothing to deep-dive):\n- FEAM: acquisition paid partly in stock; share count +85% in a year; volatility 117%.\n- CABO: under $100M.\n- XRPN: de-SPAC.\n- NNBR: $50M private placement (a financing).\n- Losers: FHTX (-31%, Lilly collaboration ended) and IART (-21%, guide cut on a flood). The h1b book can't short.\nMonday Oct 5 plan, the final session:\n- MUU: stop $30.90; no add.\n- IOVA: stop $12.35; exit on any share offering.\n- New money: only on a primary-source catalyst with a written verdict, entered before noon. None is planned; any new position would have under 6 hours.\n- 3:40 PM run: sell everything. No buys after 3:30.\n- 4:20 PM: final report.\nH-1B rules: personal account, own money, no pay, not trading for others.",
+      "tickers": [
+        "MUU",
+        "IOVA",
+        "UTHR"
+      ]
     }
   ]
 }

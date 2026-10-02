@@ -1,10 +1,7 @@
 {
-  "strategy": "Fri Oct 2: all cash after the ACN stop ($205.70; J0029). MAT only if Mattel or Authentic confirms the takeover approach: $15.00-16.50 at the checks, up to $250, stop $14.40 (J0023). No options, no crypto without a trend, no forced trades. Mon Oct 5: sell everything at 3:40 PM.",
+  "strategy": "Mon Oct 5, final session: start in cash ($746.27). MAT only on a Mattel or Authentic confirmation before noon (J0023). No options; crypto only on a clear trend. No buys after 3:30 PM; sell anything held at 3:40 PM. Review J0031.",
   "focus": [
-    "ACN",
     "MAT",
-    "CTSH",
-    "EPAM",
     "SPY",
     "QQQ",
     "BTC-USD",

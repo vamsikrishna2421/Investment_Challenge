@@ -1,0 +1,241 @@
+{
+ "snapshots": [
+  {
+   "at": "2026-10-02T20:22:46Z",
+   "trending": [
+    {
+     "symbol": "IBRX",
+     "name": "ImmunityBio Inc",
+     "exchange": "NASDAQ",
+     "score": 15.2463,
+     "watchers": 30836,
+     "why": "A sharp, high-volume breakout has traders debating institutional buying and a possible short squeeze, alongside speculation about a news leak or early FDA action on Anktivas bladder-cancer label expansion. No new announcement is confirmed, and some traders warn the rally could fade without one; the FDA decision on the papillary-disease expansion is expected by Jan. 6, 2027."
+    },
+    {
+     "symbol": "VST",
+     "name": "Vistra Corp",
+     "exchange": "NYSE",
+     "score": 11.4935,
+     "watchers": 16659,
+     "why": "Reports that the U.S. government plans to offer Vistra financing for nuclear-plant upgrades have renewed attention to the companys nuclear and AI-related power-demand prospects. Traders see the move as supportive of the long-term thesis, while others note it is a loan and question why the shares have not responded more strongly amid persistent selling and volatility."
+    },
+    {
+     "symbol": "SPCX",
+     "name": "SpaceX",
+     "exchange": "NASDAQ",
+     "score": 11.418,
+     "watchers": 106206,
+     "why": "SpaceXs burst of launch activityincluding three missions in roughly 13 hours and Starship reaching orbithas driven attention, with traders also pointing to the Google AI-computing prototype carried on a rideshare mission. Bulls celebrate the execution and momentum, while skeptics question the valuation and warn the sharp rally could pull back."
+    },
+    {
+     "symbol": "XRPN",
+     "name": "Evernorth Holdings Inc.",
+     "exchange": "NASDAQ",
+     "score": 10.4263,
+     "watchers": 1691,
+     "why": "Shareholder approval of Evernorths business combination with Armada II, ahead of a Nasdaq debut as an XRP treasury company, has driven a sharp rally; Evernorth expects to hold about 473 million XRP at closing. Traders are debating whether a potentially tight float and warrant pricing could sustain momentum or whether the SPAC premium leaves the shares vulnerable to profit-taking and a pullback."
+    },
+    {
+     "symbol": "WDC",
+     "name": "Western Digital Corp.",
+     "exchange": "NASDAQ",
+     "score": 10.0596,
+     "watchers": 21672,
+     "why": "Reports that Toshiba plans to expand hard-drive capacity for AI data centers have fueled a sharp WDC selloff amid concerns about added competition and pressure on pricing power. Many traders view the reaction as overdone, arguing the expansion is years away and AI storage demand remains strong, while others see a potential medium-term supply risk."
+    },
+    {
+     "symbol": "RIVN",
+     "name": "Rivian Automotive Inc",
+     "exchange": "NASDAQ",
+     "score": 9.91331,
+     "watchers": 88342,
+     "why": "Rivians record third-quarter deliveries topped analyst expectations, but the company reaffirmed rather than raised its annual outlook, and shares fell despite the beat. Traders are split between viewing the R2-driven volume ramp as progress and arguing that unchanged guidance and lingering profitability concerns limit the good news."
+    },
+    {
+     "symbol": "VSTM",
+     "name": "Verastem Inc",
+     "exchange": "NASDAQ",
+     "score": 8.51111,
+     "watchers": 24192,
+     "why": "Verastems new RAMP 201 analyses are drawing attention for reported activity in KRAS wild-type ovarian cancer patients and comparisons with conventional care, which traders say could broaden the treatment opportunity. The community is also watching for VS-7375 clinical data, while debating why positive developments have not translated into stronger share performance and pointing to short interest."
+    },
+    {
+     "symbol": "INTC",
+     "name": "Intel Corp",
+     "exchange": "NASDAQ",
+     "score": 8.02169,
+     "watchers": 209362,
+     "why": "Intels sharp intraday swings and weakness near the $120 level dominate the discussion, with many traders attributing the price action to Friday options expiration and alleged market-maker pinningclaims that remain speculation. Reactions are split between frustration over the stocks underperformance and bullish dip-buying, while traders also debate whether broader semiconductor strength can lift shares."
+    },
+    {
+     "symbol": "AMRN",
+     "name": "Amarin Corp - ADR",
+     "exchange": "NASDAQ",
+     "score": 7.47364,
+     "watchers": 30390,
+     "why": "AMRN is drawing attention as its shares sink toward multi-year lows, prompting widespread frustration over management, generic pressure on Vascepa and the lack of a clear near-term value catalyst. Traders debate whether the pending LR-EtEPA patent and EMT-2 results or international growth could change the outlook, while concerns about patent uncertainty and weak U.S. prospects dominate; buyout talk remains speculative."
+    },
+    {
+     "symbol": "APP",
+     "name": "Applovin Corp",
+     "exchange": "NASDAQ",
+     "score": 7.29638,
+     "watchers": 24926,
+     "why": "AppLovins steep selloff is being tied to analyst skepticism about the quality and monetization potential of its e-commerce pixel rollout, alongside the courts denial of its request to temporarily block Unitys ad-quality tool. Bulls argue the decline overstates the risks given the companys profitability and growth, while bears see competitive and legal uncertainty as reasons for continued pressure."
+    },
+    {
+     "symbol": "QBTS",
+     "name": "D-Wave Quantum Inc",
+     "exchange": "NYSE",
+     "score": 7.15606,
+     "watchers": 55844,
+     "why": ""
+    },
+    {
+     "symbol": "NUVB",
+     "name": "Nuvation Bio Inc - Ordinary Shares - Class A",
+     "exchange": "NYSE",
+     "score": 6.06518,
+     "watchers": 3506,
+     "why": ""
+    },
+    {
+     "symbol": "XLF",
+     "name": "Financial Select Sector SPDR Fund",
+     "exchange": "NYSEArca",
+     "score": 5.83402,
+     "watchers": 18481,
+     "why": ""
+    },
+    {
+     "symbol": "GME",
+     "name": "GameStop Corp",
+     "exchange": "NYSE",
+     "score": 5.56241,
+     "watchers": 308063,
+     "why": ""
+    },
+    {
+     "symbol": "CRMD",
+     "name": "CorMedix Inc",
+     "exchange": "NASDAQ",
+     "score": 5.45611,
+     "watchers": 23505,
+     "why": ""
+    },
+    {
+     "symbol": "SOUN",
+     "name": "SoundHound AI Inc",
+     "exchange": "NASDAQ",
+     "score": 5.4018,
+     "watchers": 58527,
+     "why": ""
+    },
+    {
+     "symbol": "STX",
+     "name": "Seagate Technology Holdings Plc",
+     "exchange": "NASDAQ",
+     "score": 5.32219,
+     "watchers": 14242,
+     "why": ""
+    },
+    {
+     "symbol": "MXL",
+     "name": "MaxLinear Inc",
+     "exchange": "NASDAQ",
+     "score": 5.26864,
+     "watchers": 3729,
+     "why": ""
+    },
+    {
+     "symbol": "SOFI",
+     "name": "SoFi Technologies Inc",
+     "exchange": "NASDAQ",
+     "score": 5.2532,
+     "watchers": 156709,
+     "why": ""
+    },
+    {
+     "symbol": "VG",
+     "name": "Venture Global Inc",
+     "exchange": "NYSE",
+     "score": 5.2181,
+     "watchers": 4746,
+     "why": ""
+    },
+    {
+     "symbol": "CLS",
+     "name": "Celestica, Inc.",
+     "exchange": "NYSE",
+     "score": 5.18823,
+     "watchers": 7661,
+     "why": ""
+    },
+    {
+     "symbol": "ZETA",
+     "name": "Zeta Global Holdings Corp",
+     "exchange": "NYSE",
+     "score": 5.13249,
+     "watchers": 15417,
+     "why": ""
+    },
+    {
+     "symbol": "SEDG",
+     "name": "Solaredge Technologies Inc",
+     "exchange": "NASDAQ",
+     "score": 4.93222,
+     "watchers": 18561,
+     "why": ""
+    },
+    {
+     "symbol": "CBRS",
+     "name": "Cerebras Systems Inc",
+     "exchange": "NASDAQ",
+     "score": 4.6014,
+     "watchers": 13748,
+     "why": ""
+    },
+    {
+     "symbol": "INFQ",
+     "name": "Infleqtion Inc.",
+     "exchange": "NYSE",
+     "score": 4.58186,
+     "watchers": 16946,
+     "why": ""
+    },
+    {
+     "symbol": "CTVA",
+     "name": "Corteva Inc",
+     "exchange": "NYSE",
+     "score": 4.21722,
+     "watchers": 2354,
+     "why": ""
+    },
+    {
+     "symbol": "VELO",
+     "name": "Velo3D Inc",
+     "exchange": "NASDAQ",
+     "score": 4.18545,
+     "watchers": 8645,
+     "why": ""
+    },
+    {
+     "symbol": "PENG",
+     "name": "Penguin Solutions Inc.",
+     "exchange": "NASDAQ",
+     "score": 4.16571,
+     "watchers": 3966,
+     "why": ""
+    },
+    {
+     "symbol": "RDW",
+     "name": "Redwire Corp",
+     "exchange": "NYSE",
+     "score": 4.13319,
+     "watchers": 24001,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}

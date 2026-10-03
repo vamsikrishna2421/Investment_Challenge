@@ -10,9 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "dashboard" / "index.html"
 OUT = ROOT / "site"
 
-DESC = ("Three $1,000 paper portfolios racing to double by the Oct 5 close: an H-1B book (stocks and ETFs), "
-        "an Unrestricted book (options and crypto too) and Vamsi's guided strategy. Live holdings, every trade "
-        "and the research journal.")
+DESC = ("Vamsi's guided strategy: one $1,000 paper portfolio trading high-volatility stocks at support and "
+        "resistance, aiming to double by the Oct 5 close. Live holdings, every trade, the radar and the journal.")
 FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E"
            "%3Crect width='32' height='32' rx='7' fill='%230f1b21'/%3E"
            "%3Cpath d='M6 23l7-7 5 4 8-10' fill='none' stroke='%23f0a414' stroke-width='3' "
@@ -32,7 +31,7 @@ def main() -> None:
         "<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n"
         f"<meta name=\"description\" content=\"{DESC}\">\n"
-        "<meta property=\"og:title\" content=\"H1B $1K Challenge\">\n"
+        "<meta property=\"og:title\" content=\"Vamsi's Guided Strategy\">\n"
         f"<meta property=\"og:description\" content=\"{DESC}\">\n"
         "<meta property=\"og:type\" content=\"website\">\n"
         "<meta name=\"theme-color\" content=\"#0f1b21\">\n"

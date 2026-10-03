@@ -1,28 +1,25 @@
 # Routine runbook
 
-Every scheduled run (and any manual check) follows these steps for ALL THREE books. Times are US Eastern.
-Round 2 trades one strategy in every book: Vamsi's support/resistance radar (section 2a).
+Every scheduled run (and any manual check) follows these steps. Times are US Eastern.
 
-Books (round 2: all three restarted Sat Oct 3 at $1,000 on Vamsi's instruction; round 1, Sep 28 - Oct 2, is
-archived in `archive/round1/` with its own README):
-* `h1b`: the original H-1B challenge (US stocks and ETFs, cash account). Ledger `ledger/`, config `config/`.
-* `free`: the Unrestricted book (stocks, ETFs, options, spot crypto; no visa limits; cash account, no margin
-  at $1,000). Ledger, journal, config and watchlist in `books/free/`. Opened Tue Sep 29, 5:45 PM ET.
-* `guided`: Vamsi's guided strategy (same instruments and cash-account limits as `free`). Ledger, journal,
-  config and watchlist in `books/guided/`. Opened Sat Oct 3 with $1,000. Trades only on Vamsi's instructions:
-  he says where to look and how to trade. Journal each instruction (kind `plan`, his words summarized, with the
-  tickers) before the trade it produces, then the trade itself. Apply the stops and exits he sets; where he sets
-  none, the section 2 exit rules apply. No trade in this book on my own initiative.
-All three end at the Mon Oct 5, 4:00 PM ET close with the same $2,000 target, unless Vamsi extends `guided`.
+One book: `guided`, Vamsi's guided strategy, $1,000 opened Sat Oct 3. Stocks, ETFs, listed options and spot
+crypto in a cash account (no margin at $1,000, so no short selling or naked option writing). Ledger, journal,
+config and watchlist in `books/guided/`; it is the scripts' default book, so no `--book` flag is needed.
+It trades only on Vamsi's instructions: he says where to look and how to trade. Journal each instruction (kind
+`plan`, his words summarized, with the tickers) before the trade it produces, then the trade itself. Apply the
+stops and exits he sets; where he sets none, the section 2 exit rules apply. No trade on my own initiative.
+His current instruction is the support/resistance radar (section 2a).
+It ends at the Mon Oct 5, 4:00 PM ET close with a $2,000 target, unless Vamsi extends it.
+The H-1B and Unrestricted books were dropped on Sat Oct 3 on Vamsi's instruction, before any round 2 trade:
+`archive/round1/` (Sep 28 - Oct 2 records) and `archive/round2-dropped/`.
 
-Dashboards (one page shows all three books: a three-card scoreboard, a shared race chart, per-book details):
-* Public: https://h1b-1k-challenge.vercel.app. Data: `data/snapshot.json`, `data/snapshot_free.json` and
-  `data/snapshot_guided.json` on the
-  `market-data` branch, rebuilt by the market-data workflow on every dispatch and on every push to `main` that
-  touches `ledger/`, `books/`, `config/` or `scripts/`.
-* Private: https://claude.ai/artifact/28rMDx9DZwFEfXBjxWKkcJ (db collections `snapshots` for h1b,
-  `snapshots_free` for free and `snapshots_guided` for guided; one doc per update, doc id = UTC timestamp, the
-  page shows the newest of each).
+Dashboards (one book: statement, goal track, chart against the S&P 500 and Nasdaq-100, holdings, trade log, radar,
+journal, account rules):
+* Public: https://h1b-1k-challenge.vercel.app. Data: `data/snapshot_guided.json` on the `market-data` branch,
+  rebuilt by the market-data workflow on every dispatch and on every push to `main` that touches `books/`,
+  `config/` or `scripts/`.
+* Private: https://claude.ai/artifact/28rMDx9DZwFEfXBjxWKkcJ (db collection `snapshots_guided`; one doc per update,
+  doc id = UTC timestamp, the page shows the newest).
 
 Page changes: edit `dashboard/index.html`, run `python3 scripts/build_site.py`, commit and push
 (Vercel serves the new `site/index.html` within ~10 min), and republish the artifact from the same path.
@@ -33,9 +30,7 @@ Page changes: edit `dashboard/index.html`, run `python3 scripts/build_site.py`, 
 cd /home/user/Investment_Challenge && git pull -q --rebase origin main
 python3 scripts/sync.py --local --mode quotes          # direct fetch (~20 s): quotes, crypto, option chains
 python3 scripts/sync.py --local --mode news            # adds headlines, discovery, alerts (use at least hourly)
-python3 scripts/review.py                              # h1b: portfolio, alerts, focus, news
-python3 scripts/review.py --book free --brief          # free: portfolio and positions
-python3 scripts/review.py --book guided --brief        # guided: portfolio and positions
+python3 scripts/review.py                              # portfolio, alerts, focus, news
 python3 scripts/levels.py check                        # radar triggers (section 2a)
 python3 scripts/wires.py                               # live catalyst feed (see 1c)
 ```
@@ -43,7 +38,7 @@ python3 scripts/wires.py                               # live catalyst feed (see
 Also dispatch the market-data workflow (GitHub MCP `actions_run_trigger`, workflow `market-data.yml`,
 ref `main`) at each :40 run so the public dashboard's equity history stays fresh; no need to wait for it.
 If the direct fetch fails, fall back to the dispatch plus `python3 scripts/sync.py --wait 200`.
-Option chains: `.cache/options.json` (nearest two expiries for `books/free/watchlist.json` `options_watch`).
+Option chains: `.cache/options.json` (nearest two expiries for `books/guided/watchlist.json` `options_watch`).
 
 ## 1b. Big-mover catalyst scan (post-close daily, and the 8:40 run)
 
@@ -52,7 +47,7 @@ Round 2: research only. The scan finds new high-volatility candidates for the ra
 
 ```bash
 python3 scripts/movers.py --min-move 15 --save          # today's big gainers, why they moved
-python3 scripts/movers.py --min-move 15 --losers --save # big losers (puts / inverse ideas, free book)
+python3 scripts/movers.py --min-move 15 --losers --save # big losers (puts / inverse ideas)
 python3 scripts/movers.py --follow-up                   # how earlier scans' names did since
 python3 scripts/sec.py TICKER --days 30                 # a company's filings, 8-K items decoded
 ```
@@ -115,7 +110,7 @@ flatter or hurt the numbers; dilution and financing; competition, customers, reg
 assumes (implied multiple vs the right peers; for cyclicals, peak vs mid-cycle earnings); what decides the stock and
 the next checkpoint; and the verdict for this challenge (trade or not, trigger, stop, size). For an earnings trade,
 also compare the options' implied move (at-the-money straddle / spot) with the stock's past earnings reactions.
-Journal a short summary in each book. No new position without a written verdict (exits and stops don't wait).
+Journal a short summary. No new position without a written verdict (exits and stops don't wait).
 The fair-value range is arithmetic on other companies' multiples, not a forecast; check the peer set and the
 earnings base before quoting it.
 
@@ -142,7 +137,7 @@ Uses that change decisions:
   Robinhood's ask is more than 5% above the ask in `.cache/options.json`, re-sync before trading, or skip.
 - Overnight prices (Robinhood's 24-hour market, `last_non_reg_trade_price`) at the 7:10 and 8:40 runs to size the gap
   on holdings before the pre-market opens.
-- Expiring options: Robinhood force-closes at 3:30 PM ET on expiration day (`sellout_datetime`), so the books sell any
+- Expiring options: Robinhood force-closes at 3:30 PM ET on expiration day (`sellout_datetime`), so the book sells any
   contract expiring that day by the 3:25 PM run at the latest.
 
 ## 1g. Prediction markets (read-only)
@@ -151,8 +146,8 @@ The Robinhood connector has no prediction-market tools yet, so its event contrac
 through it. Kalshi's public API is readable without an account: `python3 scripts/kalshi.py [SERIES ...] [--save]`
 prints each "above X" ladder with the market's probability per rung and the implied median (payrolls KXPAYROLLS,
 unemployment KXU3, CPI KXCPI / KXCPIYOY, Fed KXFED). Use the implied median as the surprise benchmark for scheduled
-releases: surprise = actual - median, snapshot before the market closes (--save logs to research/kalshi/). Neither
-book trades prediction markets.
+releases: surprise = actual - median, snapshot before the market closes (--save logs to research/kalshi/). The book
+does not trade prediction markets.
 Forecast record (`scripts/forecasts.py`): for each scheduled release, write my own probability from the inputs
 (claims, ADP, trend) before reading the market ladder, then log both with `add`; `resolve` after the release;
 `score` compares Brier scores. Nothing is traded on these forecasts unless mine beat the market's over 30+
@@ -161,22 +156,20 @@ questions by more than costs.
 ## 2. Decide
 
 * Read `ALERTS` first: new headlines since the last news run, movers (>=6% on the day or >=4% extended-hours)
-  and discovery (trending, top gainers, most actives). This is the news-trading feed for both books.
-* Exit rules (both books): stop -15% (2x ETFs) / -12% (stocks) from entry, trim a third at +25% and move the
+  and discovery (trending, top gainers, most actives). Read it for news on holdings and radar names.
+* Exit rules where Vamsi sets none: stop -15% (2x ETFs) / -12% (stocks) from entry, trim a third at +25% and move the
   stop to breakeven, never average down. In extended hours, judge stops on news, not a thin print. In the regular session a stop is a
   price level: once the stock trades at or below it, it is hit even if it bounces before the next run (review.py
   flags `STOP TRADED` from the day low); sell at that run.
-  Options (free book): size so a total loss is acceptable; take profits in thirds at +50%, +100% and on the
+  Options: size so a total loss is acceptable; take profits in thirds at +50%, +100% and on the
   catalyst; close before expiry unless deep in the money; never hold a contract through its expiration close.
-  Crypto (free book): stop -8% from entry unless the journal plan says otherwise.
-* Entries per the latest `plan` entry in each book's journal, plus news trades: act on material, fresh news
-  with confirmed volume; don't chase a spike that has already faded.
+  Crypto: stop -8% from entry unless the journal plan says otherwise.
+* Entries only per Vamsi's latest instruction (`plan` entries in the journal); today that is section 2a.
 * Hard rules enforced by `scripts/trade.py`: stocks 4:00 AM-8:00 PM ET (extended hours need a live print);
   options in the regular session at the ask (buy) / bid (sell); crypto 24/7; fresh quotes; cash only; no sale
-  of stock or options bought with unsettled proceeds before settlement (T+1). The h1b book cannot trade
-  options or crypto.
+  of stock or options bought with unsettled proceeds before settlement (T+1).
 
-## 2a. Round 2 strategy: support/resistance radar (Vamsi, Sat Oct 3; all three books)
+## 2a. Vamsi's strategy: support/resistance radar (Sat Oct 3)
 
 Vamsi's rules: trade high-volatility stocks; buy at support, sell at resistance, stop under support. Keep at
 least 20 names on the radar with support, resistance and stop levels ready; a name reaching its support is the
@@ -195,49 +188,46 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   through the stop this session), on a day with an offering or negative company news, or after 14:55 on the
   final day. On the final day buy only with settled cash: a stock bought with unsettled proceeds can't be sold
   before T+1, which would block the 15:40 liquidation.
-* Size: at most 4 radar positions per book, about $250 each (25% of $1,000; less when cash is short), and at
+* Size: at most 4 radar positions, about $250 each (25% of $1,000; less when cash is short), and at
   most 2 of them crypto-linked (`CRYPTO_LINKED` in `scripts/levels.py`: 13 of the first radar's 25 names move
   with bitcoin or ether, so four of them would be one bet; `check` tags them `[crypto]`). When more
   names trigger than slots, take the higher entry R:R first. One position per name, no averaging down, no
   re-entry in a name stopped out the same day.
-* Order: `trade.py [--book B] buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar
+* Order: `trade.py buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar
   --why "..."`, with the buy zone, stop, sell zone and entry R:R in the reason.
 * Exit: sell at the first run where the price is in the sell zone (TARGET HIT), where the stop has traded (STOP HIT
   or STOP TRADED: sell at that run), or at the 15:40 liquidation on the final day. These replace the section 2
   stock stop and trim for radar trades.
-* The three books run the same rules. Every radar name is US-listed common stock, so all of them are allowed in
-  the h1b book (OFAC NS-CMIC check: `config/blocklist.json`).
+* Every radar name is US-listed common stock; `trade.py` still blocks OFAC NS-CMIC names (`config/blocklist.json`).
 
 ## 3. Execute and log
 
 ```bash
-python3 scripts/trade.py buy IONX --usd 300 --why "..." --tags momentum --stop 24.1 --target 36        # h1b
-python3 scripts/trade.py --book free buy NKE261002C00038000 --qty 3 --why "..." --tags earnings           # 3 contracts
-python3 scripts/trade.py --book free buy BTC-USD --usd 200 --why "..." --stop 76000
-python3 scripts/trade.py --book free sell NKE261002C00038000 --all --why "..."
-python3 scripts/journal.py [--book free] --kind trade --title "..." --body "..." --tickers NKE
+python3 scripts/trade.py buy UMAC --usd 250 --stop 20.79 --target 25.96 --tags radar --why "..."
+python3 scripts/trade.py sell UMAC --all --why "..."
+python3 scripts/trade.py buy NKE261002C00038000 --qty 3 --why "..."      # 3 option contracts
+python3 scripts/trade.py buy BTC-USD --usd 200 --why "..." --stop 76000
+python3 scripts/journal.py --kind trade --title "..." --body "..." --tickers UMAC
 git add -A && git commit -m "..." && git push -q origin main
 ```
-Every order gets a journal entry in its own book. Also journal decisions not to trade when they matter.
+Every order gets a journal entry. Also journal decisions not to trade when they matter.
 
 ## 4. Publish
 
 ```bash
-python3 scripts/snapshot.py && python3 scripts/snapshot.py --book free && python3 scripts/snapshot.py --book guided
+python3 scripts/snapshot.py
 ```
-Then one `ArtifactData batch` with three `set` writes, each with the doc id its command printed: collection
-`snapshots` (`file_path: /home/user/Investment_Challenge/.cache/snapshot.json`), `snapshots_free`
-(`.cache/snapshot_free.json`) and `snapshots_guided` (`.cache/snapshot_guided.json`). Every routine run that
-reviews or snapshots the h1b and free books does the same for `guided` (`review.py --book guided --brief`).
-Update each book's watchlist `strategy` (the dashboard's game-plan line) and `focus` when the plan changes.
+Then one `ArtifactData set` with the doc id it printed: collection `snapshots_guided`,
+`file_path: /home/user/Investment_Challenge/.cache/snapshot_guided.json`.
+Update the watchlist `strategy` (the dashboard's game-plan line) and `focus` when the plan changes.
 
 ## Schedule
 
 * Weekdays: :10 runs 7:10 AM-7:10 PM, :40 runs 8:40 AM-7:40 PM, :25 and :55 runs 9:25 AM-3:55 PM,
   16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
-* Crypto watch (free book): weeknights 11:10 PM and weekends every 4 hours.
+* Crypto watch: weeknights 11:10 PM and weekends every 4 hours (only acts when the book holds crypto).
 * Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers.
-* Final day Mon Oct 5: liquidate everything in all three books at the 15:40 run (guided too, unless Vamsi has
-  extended it); the 16:20 run writes the final report for every book, then deletes the routines.
+* Final day Mon Oct 5 (unless Vamsi extends it): liquidate everything at the 15:40 run; the 16:20 run writes
+  the final report, then deletes the routines.
 
 Routine ids (for `delete_trigger` after the final report): see `config/schedule.json` `routine_ids`.

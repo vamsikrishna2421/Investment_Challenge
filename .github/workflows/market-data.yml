@@ -9,7 +9,7 @@ on:
     - cron: "7,22,37,52 10-23 * * 1-5"  # news + discovery + alerts every 15 min, 6 AM - 8 PM ET
   push:
     branches: [main]
-    paths: ["ledger/**", "config/**", "scripts/**", "books/**"]
+    paths: ["config/**", "scripts/**", "books/**"]
   workflow_dispatch:
     inputs:
       tickers:
@@ -62,11 +62,12 @@ jobs:
           EXTRA: ${{ inputs.tickers || '' }}
         run: python main/scripts/marketdata.py --root main --out md --mode "$MODE" --extra "$EXTRA"
 
-      - name: Build dashboard snapshots (all books)
+      - name: Build the dashboard snapshot
         run: |
-          python main/scripts/snapshot.py --cache md/data --out md/data/snapshot.json
-          python main/scripts/snapshot.py --book free --cache md/data --out md/data/snapshot_free.json
-          python main/scripts/snapshot.py --book guided --cache md/data --out md/data/snapshot_guided.json
+          python main/scripts/snapshot.py --cache md/data --out md/data/snapshot_guided.json
+          # files of the H-1B and Unrestricted books, dropped Sat Oct 3 (history stays in this branch's log)
+          rm -f md/data/snapshot.json md/data/snapshot_free.json md/data/portfolio.json md/data/portfolio_free.json \
+                md/data/equity.jsonl md/data/equity_free.jsonl
 
       - name: Commit data
         working-directory: md

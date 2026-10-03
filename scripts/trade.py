@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Record a paper trade against the latest synced quote, with cash-account
-checks. Appends to the book's ledger (default book: h1b, or $BOOK).
+checks. Appends to the book's ledger (default book: guided, or $BOOK).
 
   python scripts/trade.py buy  IONQ --usd 400 --why "..." [--stop 40 --target 60]
   python scripts/trade.py sell IONQ --all --why "..."
-  python scripts/trade.py --book free buy NKE261002C00036000 --qty 2 --why "..."   # 2 contracts
-  python scripts/trade.py --book free buy BTC-USD --usd 250 --why "..."
-  python scripts/trade.py --book free expire NKE261002C00036000 --why "expired"    # after expiry
+  python scripts/trade.py buy NKE261002C00036000 --qty 2 --why "..."   # 2 contracts
+  python scripts/trade.py buy BTC-USD --usd 250 --why "..."
+  python scripts/trade.py expire NKE261002C00036000 --why "expired"    # after expiry
 Add --dry-run to validate without writing.
 
 Fills: stocks/ETFs at the last trade plus slippage (extended hours need a live
@@ -48,7 +48,7 @@ def option_quote(tk: str, quotes: dict) -> dict | None:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--book", default=None, help="h1b (default), free or guided")
+    ap.add_argument("--book", default=None, help="guided (the only book)")
     ap.add_argument("side", choices=["buy", "sell", "expire"])
     ap.add_argument("ticker")
     g = ap.add_mutually_exclusive_group()

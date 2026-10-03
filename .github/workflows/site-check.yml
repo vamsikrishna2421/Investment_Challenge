@@ -18,7 +18,7 @@ jobs:
           curl -sS -o page.html -w "page status=%{http_code} type=%{content_type}\n" https://h1b-1k-challenge.vercel.app/
           sha1sum page.html site/index.html
           curl -sS -o /dev/null -D - -H "Origin: https://h1b-1k-challenge.vercel.app" \
-            "https://raw.githubusercontent.com/vamsikrishna2421/Investment_Challenge/market-data/data/snapshot.json" \
+            "https://raw.githubusercontent.com/vamsikrishna2421/Investment_Challenge/market-data/data/snapshot_guided.json" \
             | grep -iE "^HTTP|access-control-allow-origin|cache-control"
 
       - name: Browser render

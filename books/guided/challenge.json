@@ -92,7 +92,7 @@
     "blocked_lists": [
       "OFAC NS-CMIC (EO 14032) Chinese military-industrial complex securities"
     ],
-    "note": "Trades only on Vamsi's instructions: he says where to look and how to trade; Claude executes through trade.py, logs every order and applies the stops and exits he sets. Account limits are the same as the Unrestricted book: cash only, no margin (FINRA's $2,000 minimum), so no short selling or naked option writing."
+    "note": "Trades only on Vamsi's instructions: he says where to look and how to trade; Claude executes through trade.py, logs every order and applies the stops and exits he sets. Cash account, no margin (FINRA's $2,000 minimum), so no short selling or naked option writing. The only book since Sat Oct 3, when the H-1B and Unrestricted books were dropped."
   },
   "benchmarks": [
     "SPY",

@@ -13,11 +13,15 @@ import sys
 import time
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import portfolio as pfm  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / ".cache"
-FILES = ["quotes.json", "portfolio.json", "equity.jsonl", "scan.json", "news.json", "alerts.json",
-         "portfolio_free.json", "equity_free.jsonl", "portfolio_guided.json", "equity_guided.jsonl",
-         "options.json"]
+SHARED = ["quotes.json", "scan.json", "news.json", "alerts.json", "options.json"]
+BOOK_PORTFOLIOS = [b["portfolio"] for b in pfm.BOOKS.values()]
+BOOK_EQUITY = [b["equity"] for b in pfm.BOOKS.values()]
+FILES = SHARED + BOOK_PORTFOLIOS + BOOK_EQUITY
 
 
 def git(*args: str, check: bool = True) -> str:
@@ -36,7 +40,7 @@ def pull_history() -> None:
     """Refresh the equity curves from the market-data branch; the Actions job owns them."""
     if subprocess.run(["git", "fetch", "--quiet", "origin", "market-data"], cwd=ROOT).returncode != 0:
         return
-    for f in ("equity.jsonl", "equity_free.jsonl", "equity_guided.jsonl"):
+    for f in BOOK_EQUITY:
         r = subprocess.run(["git", "show", f"origin/market-data:data/{f}"], cwd=ROOT,
                            capture_output=True, text=True)
         if r.returncode == 0 and r.stdout.strip():
@@ -60,8 +64,7 @@ def fetch_local(mode: str, tickers: str) -> int:
         print(r.stdout[-800:], r.stderr[-1500:])
         return 1
     CACHE.mkdir(exist_ok=True)
-    for f in ("quotes.json", "options.json", "news.json", "alerts.json", "scan.json",
-              "portfolio.json", "portfolio_free.json"):
+    for f in SHARED + BOOK_PORTFOLIOS:
         if (tmp / f).exists():
             shutil.copy(tmp / f, CACHE / f)
     pull_history()

@@ -41,6 +41,14 @@
         "BMNR",
         "SBET"
       ]
+    },
+    {
+      "id": "J0003",
+      "ts": "2026-10-03T05:57:53Z",
+      "kind": "plan",
+      "title": "One book from now on: this one, $1,000 fresh",
+      "body": "Vamsi's instruction (Sat Oct 3): drop the H-1B and Unrestricted books; keep only this book, with a fresh $1,000, as the one we work on together.\nDone: both books archived before any round 2 trade (archive/round2-dropped; round 1 records in archive/round1). This book is unchanged: $1,000 cash, no trades, opened Sat Oct 3 05:33 UTC. The dashboard, routines and RUNBOOK now cover only this book.\nStrategy unchanged (J0002): the 25-name support/resistance radar, up to 4 positions of about $250, at most 2 crypto-linked. End date unchanged: Mon Oct 5, 4:00 PM ET close, liquidation at the 3:40 PM run, unless Vamsi extends it.",
+      "tickers": []
     }
   ]
 }

@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Build one dashboard snapshot document for a book (artifact collection
-`snapshots` for h1b, `snapshots_free` for free) from the ledger, journal and
-the latest synced market data.
+"""Build the dashboard snapshot document for the book (artifact collection
+`snapshots_guided`) from the ledger, journal, radar and the latest synced market data.
 
-  python scripts/snapshot.py [--book free] [--note "..."]
-Prints the doc id and writes .cache/snapshot.json (.cache/snapshot_free.json).
+  python scripts/snapshot.py [--note "..."]
+Prints the doc id and writes .cache/snapshot_guided.json.
 """
 from __future__ import annotations
 
@@ -157,24 +156,7 @@ def main() -> int:
     sched = json.loads(sched_path.read_text()) if sched_path.exists() else {}
     rules = cfg["rules"]
     c = val["counts"]
-    checks_h1b = {
-        "checks": [
-            {"id": "cash", "label": "Cash account only (no margin, no shorting)", "ok": True,
-             "detail": "Balance under the $2,000 FINRA margin minimum, so margin isn't available anyway."},
-            {"id": "instruments", "label": "Stocks and ETFs only", "ok": True,
-             "detail": "Includes leveraged and inverse ETFs. No options or other derivatives."},
-            {"id": "gfv", "label": "No good-faith violations (T+1 settlement)", "ok": c["gfv"] == 0,
-             "detail": f"{c['gfv']} violations. Shares bought with unsettled sale proceeds are not sold before those proceeds settle."},
-            {"id": "personal", "label": "Personal account, investor tax treatment", "ok": True,
-             "detail": "No trading for others, no pay, no trader-tax-status (IRC 475) election. Those, not trade count, are what would turn trading into unauthorized self-employment on H-1B."},
-            {"id": "activity", "label": "Activity tracked in the open", "ok": True,
-             "detail": f"{c['orders_total']} orders so far ({c['orders_today']} today), {c['day_trades_total']} day trades. No legal cap applies to trading your own account."},
-            {"id": "ofac", "label": "No OFAC-restricted (NS-CMIC) securities", "ok": True,
-             "detail": "Rule for anyone physically in the US, H-1B holders included."},
-        ],
-        "wash_sale_flags": c["wash_sale_flags"],
-    }
-    checks_free = {
+    compliance = {
         "checks": [
             {"id": "cash", "label": "Cash account, no margin", "ok": True,
              "detail": "FINRA requires $2,000 of equity for margin, so at $1,000 there is no borrowing and no short selling. Bearish bets use puts or inverse ETFs."},
@@ -191,7 +173,6 @@ def main() -> int:
         ],
         "wash_sale_flags": c["wash_sale_flags"],
     }
-    compliance = checks_h1b if book == "h1b" else checks_free
 
     doc_id = now.strftime("%Y%m%dT%H%M%SZ")
     snap = {

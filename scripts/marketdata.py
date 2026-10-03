@@ -2,11 +2,11 @@
 """Market-data pump. Runs inside GitHub Actions (the Claude container cannot
 reach quote hosts). Writes into the checked-out `market-data` branch:
 
-  data/quotes.json      latest quote per ticker (holdings + watchlists + benchmarks, both books;
+  data/quotes.json      latest quote per ticker (holdings + watchlist + radar + benchmarks;
                         held option contracts are marked from the option chains)
-  data/options.json     option chains (nearest expiries) for the free book's options_watch list
-  data/portfolio.json   H-1B book valuation; data/portfolio_free.json for the free book
-  data/equity.jsonl     one line per run: equity curve + benchmark prices (equity_free.jsonl)
+  data/options.json     option chains (nearest expiries) for the watchlist's options_watch list
+  data/portfolio_guided.json   the book's valuation (one file per book in pfm.BOOKS)
+  data/equity_guided.jsonl     one line per run: equity curve + benchmark prices
   data/scan.json        (mode=scan) Yahoo screeners + 3-month stats per ticker
 """
 from __future__ import annotations
@@ -353,7 +353,7 @@ def option_chains(unders: list, n_exp: int, need: dict, spots: dict, first_live:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", required=True, help="checkout of main (ledger/config)")
+    ap.add_argument("--root", required=True, help="checkout of main (books, config, scripts)")
     ap.add_argument("--out", required=True, help="checkout of market-data branch")
     ap.add_argument("--mode", default="quotes")
     ap.add_argument("--extra", default="")
@@ -374,7 +374,7 @@ def main() -> int:
         books[b] = {"cfg": json.loads(cp.read_text()),
                     "ledger": json.loads(pfm.book_path("ledger", b, root).read_text()),
                     "wl": json.loads(wlp.read_text()) if wlp.exists() else {}}
-    cfg = books["h1b"]["cfg"]
+    cfg = books[pfm.DEFAULT_BOOK]["cfg"]
     watch, focus, opt_watch, n_exp = [], [], [], 2
     for bd in books.values():
         watch += bd["wl"].get("tickers", [])
@@ -524,7 +524,7 @@ def main() -> int:
                 point[bm] = pfm.mark(quotes[bm])[0]
         with open(out / pfm.BOOKS[b]["equity"], "a") as fh:
             fh.write(json.dumps(point) + "\n")
-    val = vals["h1b"]
+    val = vals[pfm.DEFAULT_BOOK]
 
     if a.mode == "scan":
         scan = {"generated_at": pfm.iso(now), "screeners": dict(fast), "stats": {}}

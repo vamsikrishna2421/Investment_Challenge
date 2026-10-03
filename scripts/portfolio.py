@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Portfolio engine for the paper-trading challenge.
 
-Replays ledger/transactions.json in time order and derives:
+Replays a book's ledger (books/guided/transactions.json) in time order and derives:
   * cash, T+1 settled vs unsettled cash (cash-account rules)
   * FIFO lots per ticker, realized / unrealized P&L
   * compliance flags: day trades, good-faith violations, wash-sale candidates
@@ -91,26 +91,20 @@ def load_json(p) -> dict:
     return json.loads(Path(p).read_text())
 
 
-# Three paper books share the engine: "h1b" (the original H-1B challenge), "free" (no visa-driven
-# limits: options and crypto allowed) and "guided" (same limits as "free"; trades on Vamsi's direction).
+# One paper book: "guided", Vamsi's guided strategy (stocks, ETFs, options and spot crypto in a cash
+# account; trades on Vamsi's direction). The H-1B and Unrestricted books were dropped on Sat Oct 3 and
+# archived (archive/round1, archive/round2-dropped). The registry keeps the multi-book shape.
 BOOKS = {
-    "h1b": {"config": "config/challenge.json", "ledger": "ledger/transactions.json",
-            "journal": "ledger/journal.json", "watchlist": "config/watchlist.json",
-            "portfolio": "portfolio.json", "equity": "equity.jsonl",
-            "snapshot": "snapshot.json", "collection": "snapshots"},
-    "free": {"config": "books/free/challenge.json", "ledger": "books/free/transactions.json",
-             "journal": "books/free/journal.json", "watchlist": "books/free/watchlist.json",
-             "portfolio": "portfolio_free.json", "equity": "equity_free.jsonl",
-             "snapshot": "snapshot_free.json", "collection": "snapshots_free"},
     "guided": {"config": "books/guided/challenge.json", "ledger": "books/guided/transactions.json",
                "journal": "books/guided/journal.json", "watchlist": "books/guided/watchlist.json",
                "portfolio": "portfolio_guided.json", "equity": "equity_guided.jsonl",
                "snapshot": "snapshot_guided.json", "collection": "snapshots_guided"},
 }
+DEFAULT_BOOK = "guided"
 
 
 def current_book(book: str | None = None) -> str:
-    b = (book or os.environ.get("BOOK") or "h1b").lower()
+    b = (book or os.environ.get("BOOK") or DEFAULT_BOOK).lower()
     if b not in BOOKS:
         raise SystemExit(f"unknown book '{b}' (use one of {', '.join(BOOKS)})")
     return b

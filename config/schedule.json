@@ -1,5 +1,5 @@
 {
-  "cadence": "Every 15 minutes in the regular session, every 30 minutes 7 AM-8 PM ET, plus event checks at earnings and data releases Unrestricted book: crypto checks weeknights 11:10 PM and weekends every 4 hours.",
+  "cadence": "Every 15 minutes in the regular session, every 30 minutes 7 AM-8 PM ET; crypto checks weeknights 11:10 PM and weekends every 4 hours when the book holds crypto.",
   "routine_times_et": [
     "07:10",
     "08:10",
@@ -49,9 +49,6 @@
     "sunday": "trig_01UP6tgGRKSNcTyBQga8gBzR",
     "news_25": "trig_01FBFjnSuHHiXC8q2T1wDQuZ",
     "news_55": "trig_01FfZoRkGDkpTmQuvwDCBJRH",
-    "event_mu": "trig_01EgXd3Te2fQ3QsVvymMfWTc",
-    "event_nke": "trig_01TXagR3AQMgZUDDRJ1kyd6V",
-    "event_jobs": "trig_01NcyaqcARrMzyM1o63LzQYn",
     "crypto_weeknights": "trig_013vPVdbGuMGuKU6nqrSXBmq",
     "crypto_weekend": "trig_01UuYmwfGxt2f635geruEQZe"
   }

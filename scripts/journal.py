@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Append a research/decision entry to a book's journal (default book: h1b, or $BOOK).
+"""Append a research/decision entry to a book's journal (default book: guided, or $BOOK).
 
   python scripts/journal.py --kind plan --title "..." --body "..." [--tickers A,B]
-  python scripts/journal.py --book free --kind trade --title "..." --body "..."
+  python scripts/journal.py --kind trade --title "..." --body "..." --tickers IREN
   python scripts/journal.py --kind research --title "..." --body-file notes.md
 Kinds: plan, research, trade, review, risk, note
 """
@@ -26,7 +26,7 @@ def main() -> int:
     b.add_argument("--body")
     b.add_argument("--body-file")
     ap.add_argument("--tickers", default="")
-    ap.add_argument("--book", default=None, help="h1b (default), free or guided")
+    ap.add_argument("--book", default=None, help="guided (the only book)")
     a = ap.parse_args()
     PATH = pfm.book_path("journal", a.book)
     data = json.loads(PATH.read_text()) if PATH.exists() else {"entries": []}

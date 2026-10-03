@@ -1,12 +1,46 @@
 {
- "entries": [
-  {
-   "id": "J0001",
-   "ts": "2026-10-03T05:33:02Z",
-   "kind": "plan",
-   "title": "Fresh start: $1,000 cash; strategy set with Vamsi",
-   "body": "Round 1 is closed and archived in archive/round1/h1b/ (ledger, journal, config, watchlist). This book restarts at $1,000 cash with no positions.\nFinish line: the Mon Oct 5, 4:00 PM ET close unless Vamsi sets a new window.\nStrategy: Vamsi is setting it. No position until it is in place; every trade gets a journal entry that cites the rule it follows.",
-   "tickers": []
-  }
- ]
+  "entries": [
+    {
+      "id": "J0001",
+      "ts": "2026-10-03T05:33:02Z",
+      "kind": "plan",
+      "title": "Fresh start: $1,000 cash; strategy set with Vamsi",
+      "body": "Round 1 is closed and archived in archive/round1/h1b/ (ledger, journal, config, watchlist). This book restarts at $1,000 cash with no positions.\nFinish line: the Mon Oct 5, 4:00 PM ET close unless Vamsi sets a new window.\nStrategy: Vamsi is setting it. No position until it is in place; every trade gets a journal entry that cites the rule it follows.",
+      "tickers": []
+    },
+    {
+      "id": "J0002",
+      "ts": "2026-10-03T05:46:51Z",
+      "kind": "plan",
+      "title": "Round 2 strategy (Vamsi): buy support, sell resistance (25-name radar)",
+      "body": "Vamsi's instruction (Sat Oct 3): trade high-volatility stocks (his daily names: GPUS, IREN, BTDR); buy at support, sell at resistance, stop under support; keep at least 20 names on the radar with the levels ready; a name reaching its support is the trigger.\nRadar: 25 names from Friday's closes (config/radar.json; table in research/radar/2026-10-03.md). Levels are swing lows and highs tested at least twice in the last 120 sessions. Buy zone = support to support + 0.3 ATR; stop = 0.6 ATR under support; sell zone = resistance - 0.3 ATR to resistance. GPUS (R:R 1.2, about $7M traded a day) and BTDR (R:R 1.4) miss the filters and stay on as his names.\nRules (RUNBOOK 2a): buy at a regular-session run from 9:55 AM when a name is inside its buy zone, or touched it this session and held with entry R:R of at least 1.5. Never after it trades through its stop, on an offering or negative-news day, or after 2:55 PM Monday. Up to 4 positions of about $250, higher R:R first, settled cash only on Monday. Sell in the sell zone, at the stop, or at the 3:40 PM liquidation Monday (unless the window is extended).\nAt Friday's close HUT ($89.70) and UMAC ($22.33) sit inside their buy zones; ASTS, ONDS, GLXY, NNE, TEM, SMCI, MSTR, GPUS and CORZ are within 3% above theirs.\nH-1B rules unchanged: all 25 names are US-listed common stock and the NS-CMIC blocklist is clean; personal account, investor tax treatment.",
+      "tickers": [
+        "GPUS",
+        "IREN",
+        "BTDR",
+        "HUT",
+        "GLXY",
+        "UMAC",
+        "ASTS",
+        "ONDS",
+        "NNE",
+        "TEM",
+        "MSTR",
+        "SMCI",
+        "CORZ",
+        "CIFR",
+        "LUNR",
+        "WULF",
+        "HIMS",
+        "RIOT",
+        "MARA",
+        "APLD",
+        "QUBT",
+        "RKLB",
+        "HIVE",
+        "BMNR",
+        "SBET"
+      ]
+    }
+  ]
 }

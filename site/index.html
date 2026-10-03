@@ -204,6 +204,28 @@ tr:last-child td { border-bottom: 0; }
 .tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--ink-2); margin: 2px 4px 0 0; white-space: nowrap; }
 .why { font-size: 12px; color: var(--ink-2); min-width: 240px; max-width: 460px; }
 .empty { padding: 18px 4px; color: var(--muted); font-size: 13px; }
+.st { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; padding: 2px 7px; border-radius: 5px; white-space: nowrap; color: var(--ink-2); background: var(--surface-2); border: 1px solid var(--line); }
+.st.buy, .st.bounce { color: var(--gain); background: var(--gain-wash); border-color: transparent; }
+.st.near, .st.target { color: var(--accent); background: var(--accent-wash); border-color: transparent; }
+.st.broken { color: var(--loss); background: var(--loss-wash); border-color: transparent; }
+.flag { font-size: 12px; color: var(--accent); margin-top: 2px; white-space: nowrap; }
+.nw { white-space: nowrap; }
+@media (max-width: 640px) {
+table.lv, table.lv tbody { display: block; }
+table.lv thead { display: none; }
+table.lv tbody tr { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 0.7fr); grid-template-areas: "stock last status status" "buy stop sell rr"; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--grid); }
+table.lv tbody tr:last-child { border-bottom: 0; }
+table.lv td { display: block; padding: 0; border: 0; min-width: 0; }
+table.lv td.n { text-align: left; white-space: normal; }
+table.lv td:nth-child(1) { grid-area: stock; } table.lv td:nth-child(2) { grid-area: last; }
+table.lv td:nth-child(3) { grid-area: status; } table.lv td:nth-child(4) { grid-area: buy; }
+table.lv td:nth-child(5) { grid-area: stop; } table.lv td:nth-child(6) { grid-area: sell; }
+table.lv td:nth-child(7) { grid-area: rr; }
+table.lv td[data-l]::before { content: attr(data-l); display: block; font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+table.lv .nm { max-width: 100%; }
+table.lv .flag { white-space: normal; }
+table.lv .dk { display: none; }
+}
 .lock { font-size: 11px; color: var(--accent); white-space: nowrap; }
 /* Journal */
 .journal { display: flex; flex-direction: column; gap: 0; max-height: 640px; overflow-y: auto; }
@@ -339,6 +361,11 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <section class="card" aria-labelledby="h-tx">
 <div class="card-head"><h2 id="h-tx">Transaction log</h2><span class="hint" id="tx-hint">&nbsp;</span></div>
 <div class="table-scroll"><table id="trades"></table></div>
+</section>
+<section class="card" aria-labelledby="h-lv">
+<div class="card-head"><h2 id="h-lv">Support &amp; resistance radar</h2><span class="hint" id="lv-hint">&nbsp;</span></div>
+<div class="table-scroll"><table id="levels" class="lv"></table></div>
+<div class="note">Buy when a name trades into its buy zone (support), sell in the sell zone (resistance), exit if it trades through the stop. Levels are tested swing lows and highs from the last 120 sessions; R:R is the move to the sell zone divided by the risk to the stop, both from the top of the buy zone.</div>
 </section>
 <div class="grid-2 even">
 <section class="card" aria-labelledby="h-j">
@@ -717,6 +744,46 @@ if (s.compliance && s.compliance.wash_sale_flags) {
 box.appendChild(el("div", "note", s.compliance.wash_sale_flags + " wash-sale candidate(s): a loss sale with a repurchase within 30 days. The loss is deferred for taxes, not forbidden."));
 }
 }
+var ST_TEXT = { buy: "In buy zone", bounce: "Bounced off support", near: "Near support", wait: "Above zone",
+target: "At resistance", broken: "Support broken", "no quote": "No quote" };
+function renderLevels(s) {
+var t = $("levels"); t.textContent = "";
+var L = s.levels, rows = (L && L.names) || [];
+if (!rows.length) { $("lv-hint").textContent = ""; var r0 = el("tr"); var c0 = td(r0, "The radar appears after the first levels build.", "empty"); c0.colSpan = 7; t.appendChild(r0); return; }
+var hot = rows.filter(function (x) { return x.status === "buy" || x.status === "bounce"; }).length;
+var d = new Date(L.asof + "T12:00:00Z");
+$("lv-hint").textContent = rows.length + " names · levels from " + d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }) + " closes" + (hot ? " · " + hot + " at support" : "");
+var hr = el("tr"); ["Stock", "Last", "Status", "Buy zone", "Stop", "Sell zone", "R:R"].forEach(function (h, i) { th(hr, h, i === 1 || i >= 3); });
+var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
+var tb = el("tbody");
+rows.forEach(function (x) {
+var tr = el("tr");
+var c = el("td"); c.appendChild(el("span", "tk", x.ticker));
+if (x.held) c.appendChild(el("span", "tag", "Held"));
+if (x.name) c.appendChild(el("span", "nm", x.name));
+if (x.note) c.appendChild(el("div", "flag", "Below filter: " + x.note.replace(/reward:risk/g, "R:R")));
+tr.appendChild(c);
+td(tr, px(x.price), "n").setAttribute("data-l", "Last");
+var sc = el("td"); sc.appendChild(el("span", "st " + x.status.replace(" ", "-"), ST_TEXT[x.status] || x.status));
+if ((x.status === "near" || x.status === "wait") && x.to_zone_pct !== null && x.to_zone_pct !== undefined)
+sc.appendChild(el("div", "muted", pct(x.to_zone_pct) + " vs zone top"));
+tr.appendChild(sc);
+function zone(z, label) {
+var c = td(tr, null, "n"); c.setAttribute("data-l", label);
+c.appendChild(el("span", "nw", px(z[0]) + " –")); c.appendChild(document.createTextNode(" ")); c.appendChild(el("span", "nw", px(z[1])));
+}
+zone(x.buy_zone, "Buy zone");
+td(tr, px(x.stop), "n").setAttribute("data-l", "Stop");
+zone(x.sell_zone, "Sell zone");
+var rr = td(tr, x.reward_risk === null || x.reward_risk === undefined ? "—" : x.reward_risk.toFixed(1), "n");
+rr.setAttribute("data-l", "R:R");
+if (x.upside_pct !== null && x.upside_pct !== undefined) {
+var up = el("div", "muted", "+" + x.upside_pct.toFixed(0) + "%"); up.appendChild(el("span", "dk", " to sell")); rr.appendChild(up);
+}
+tb.appendChild(tr);
+});
+t.appendChild(tb);
+}
 function renderRadar(s) {
 var box = $("radar"); box.textContent = "";
 var r = s.radar || [];
@@ -739,7 +806,7 @@ $("equity").textContent = "—"; $("profit").textContent = "—"; $("profit-sub"
 $("journal").textContent = ""; $("journal").appendChild(el("div", "empty", "Loading this book…"));
 return;
 }
-renderStatement(s); renderCash(s); renderHoldings(s); renderTrades(s); renderJournal(s); renderChecks(s); renderRadar(s);
+renderStatement(s); renderCash(s); renderHoldings(s); renderTrades(s); renderLevels(s); renderJournal(s); renderChecks(s); renderRadar(s);
 }
 /* ---------- Chart: both books' % return in trading time ---------- */
 function tradingX(iso) {

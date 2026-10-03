@@ -1,0 +1,935 @@
+{
+ "generated_at": "2026-10-03T05:38:21Z",
+ "asof": "2026-10-02",
+ "method": "swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the\n3 bars on each side), clustered within half an ATR (min 1.5%) into zones. A level's strength is the\nnumber of swings in its zone; a support or resistance needs at least two (tested twice). Support is the\nnearest tested zone below the price, resistance the nearest tested zone above. The buy zone runs from\nsupport to support + 0.3 ATR, the sell zone from resistance - 0.3 ATR to resistance, and the stop sits\n0.6 ATR under support. Reward:risk = (sell-zone bottom - buy-zone top) / (buy-zone top - stop).\nThese are arithmetic on past prices, not forecasts.",
+ "names": [
+  {
+   "ticker": "GPUS",
+   "name": "Hyperscale Data, Inc.",
+   "exchange": "NYSE American",
+   "price": 0.17,
+   "asof": "2026-10-02",
+   "atr": 0.0121,
+   "atr_pct": 7.14,
+   "vol_1y": 157.9,
+   "dollar_vol_20d": 7129097,
+   "low_120": 0.16,
+   "high_120": 2.85,
+   "support": 0.16,
+   "support_strength": 5,
+   "support_2": null,
+   "buy_zone": [
+    0.16,
+    0.1636
+   ],
+   "stop": 0.1527,
+   "resistance": 0.18,
+   "resistance_strength": 5,
+   "sell_zone": [
+    0.1764,
+    0.18
+   ],
+   "vs_sma50_pct": -52.8,
+   "chg_120d_pct": -77.3,
+   "reward_risk": 1.16,
+   "to_zone_pct": 3.88,
+   "upside_to_target_pct": 7.8,
+   "risk_to_stop_pct": 6.7,
+   "note": "$vol 7.1M < 15M; reward:risk 1.16 < 1.5"
+  },
+  {
+   "ticker": "IREN",
+   "name": "IREN Limited",
+   "exchange": "NasdaqGS",
+   "price": 41.76,
+   "asof": "2026-10-02",
+   "atr": 2.5202,
+   "atr_pct": 6.03,
+   "vol_1y": 106.8,
+   "dollar_vol_20d": 1581293767,
+   "low_120": 28.93,
+   "high_120": 70.707,
+   "support": 39.4,
+   "support_strength": 2,
+   "support_2": 37.66,
+   "buy_zone": [
+    39.4,
+    40.156
+   ],
+   "stop": 37.8878,
+   "resistance": 45.1332,
+   "resistance_strength": 6,
+   "sell_zone": [
+    44.3772,
+    45.1332
+   ],
+   "vs_sma50_pct": 0.9,
+   "chg_120d_pct": -11.8,
+   "reward_risk": 1.86,
+   "to_zone_pct": 3.99,
+   "upside_to_target_pct": 10.5,
+   "risk_to_stop_pct": 5.6,
+   "note": ""
+  },
+  {
+   "ticker": "BTDR",
+   "name": "Bitdeer Technologies Group",
+   "exchange": "NasdaqCM",
+   "price": 11.02,
+   "asof": "2026-10-02",
+   "atr": 0.8474,
+   "atr_pct": 7.69,
+   "vol_1y": 108.0,
+   "dollar_vol_20d": 117098553,
+   "low_120": 8.44,
+   "high_120": 20.72,
+   "support": 10.3427,
+   "support_strength": 5,
+   "support_2": 8.5771,
+   "buy_zone": [
+    10.3427,
+    10.5969
+   ],
+   "stop": 9.8343,
+   "resistance": 11.9426,
+   "resistance_strength": 6,
+   "sell_zone": [
+    11.6884,
+    11.9426
+   ],
+   "vs_sma50_pct": 0.8,
+   "chg_120d_pct": -7.9,
+   "reward_risk": 1.43,
+   "to_zone_pct": 3.99,
+   "upside_to_target_pct": 10.3,
+   "risk_to_stop_pct": 7.2,
+   "note": "reward:risk 1.43 < 1.5"
+  },
+  {
+   "ticker": "HUT",
+   "name": "Hut 8 Corp.",
+   "exchange": "NasdaqGS",
+   "price": 89.63,
+   "asof": "2026-10-02",
+   "atr": 6.9024,
+   "atr_pct": 7.7,
+   "vol_1y": 106.7,
+   "dollar_vol_20d": 430126168,
+   "low_120": 68.05,
+   "high_120": 140.8,
+   "support": 87.9949,
+   "support_strength": 11,
+   "support_2": 75.6624,
+   "buy_zone": [
+    87.9949,
+    90.0656
+   ],
+   "stop": 83.8535,
+   "resistance": 102.8436,
+   "resistance_strength": 2,
+   "sell_zone": [
+    100.7729,
+    102.8436
+   ],
+   "vs_sma50_pct": -2.5,
+   "chg_120d_pct": 24.9,
+   "reward_risk": 1.72,
+   "to_zone_pct": -0.48,
+   "upside_to_target_pct": 11.9,
+   "risk_to_stop_pct": 6.9,
+   "note": ""
+  },
+  {
+   "ticker": "GLXY",
+   "name": "Galaxy Digital",
+   "exchange": "NasdaqGS",
+   "price": 23.06,
+   "asof": "2026-10-02",
+   "atr": 1.6059,
+   "atr_pct": 6.96,
+   "vol_1y": 92.4,
+   "dollar_vol_20d": 118018671,
+   "low_120": 18.22,
+   "high_120": 36.1,
+   "support": 22.5853,
+   "support_strength": 9,
+   "support_2": 20.01,
+   "buy_zone": [
+    22.5853,
+    23.0671
+   ],
+   "stop": 21.6217,
+   "resistance": 26.9526,
+   "resistance_strength": 8,
+   "sell_zone": [
+    26.4708,
+    26.9526
+   ],
+   "vs_sma50_pct": 0.2,
+   "chg_120d_pct": -2.8,
+   "reward_risk": 2.35,
+   "to_zone_pct": -0.03,
+   "upside_to_target_pct": 14.8,
+   "risk_to_stop_pct": 6.3,
+   "note": ""
+  },
+  {
+   "ticker": "UMAC",
+   "name": "Unusual Machines, Inc.",
+   "exchange": "NYSE American",
+   "price": 22.37,
+   "asof": "2026-10-02",
+   "atr": 1.7206,
+   "atr_pct": 7.69,
+   "vol_1y": 128.8,
+   "dollar_vol_20d": 61541047,
+   "low_120": 12.945,
+   "high_120": 34.926,
+   "support": 21.8222,
+   "support_strength": 6,
+   "support_2": 18.087,
+   "buy_zone": [
+    21.8222,
+    22.3383
+   ],
+   "stop": 20.7898,
+   "resistance": 26.4729,
+   "resistance_strength": 6,
+   "sell_zone": [
+    25.9568,
+    26.4729
+   ],
+   "vs_sma50_pct": -8.2,
+   "chg_120d_pct": 59.9,
+   "reward_risk": 2.34,
+   "to_zone_pct": 0.14,
+   "upside_to_target_pct": 16.2,
+   "risk_to_stop_pct": 6.9,
+   "note": ""
+  },
+  {
+   "ticker": "ASTS",
+   "name": "AST SpaceMobile, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 58.45,
+   "asof": "2026-10-02",
+   "atr": 3.9412,
+   "atr_pct": 6.74,
+   "vol_1y": 107.8,
+   "dollar_vol_20d": 622859238,
+   "low_120": 52.8,
+   "high_120": 133.86,
+   "support": 57.1277,
+   "support_strength": 3,
+   "support_2": 53.0587,
+   "buy_zone": [
+    57.1277,
+    58.3101
+   ],
+   "stop": 54.763,
+   "resistance": 65.3961,
+   "resistance_strength": 7,
+   "sell_zone": [
+    64.2137,
+    65.3961
+   ],
+   "vs_sma50_pct": -6.8,
+   "chg_120d_pct": -34.0,
+   "reward_risk": 1.66,
+   "to_zone_pct": 0.24,
+   "upside_to_target_pct": 10.1,
+   "risk_to_stop_pct": 6.1,
+   "note": ""
+  },
+  {
+   "ticker": "ONDS",
+   "name": "Ondas Inc.",
+   "exchange": "NasdaqCM",
+   "price": 7.24,
+   "asof": "2026-10-02",
+   "atr": 0.3704,
+   "atr_pct": 5.12,
+   "vol_1y": 109.5,
+   "dollar_vol_20d": 450469817,
+   "low_120": 6.22,
+   "high_120": 14.16,
+   "support": 7.1094,
+   "support_strength": 5,
+   "support_2": 6.77,
+   "buy_zone": [
+    7.1094,
+    7.2205
+   ],
+   "stop": 6.8871,
+   "resistance": 7.934,
+   "resistance_strength": 4,
+   "sell_zone": [
+    7.8229,
+    7.934
+   ],
+   "vs_sma50_pct": -9.5,
+   "chg_120d_pct": -23.0,
+   "reward_risk": 1.81,
+   "to_zone_pct": 0.27,
+   "upside_to_target_pct": 8.3,
+   "risk_to_stop_pct": 4.6,
+   "note": ""
+  },
+  {
+   "ticker": "NNE",
+   "name": "NANO Nuclear Energy Inc.",
+   "exchange": "NasdaqCM",
+   "price": 15.62,
+   "asof": "2026-10-02",
+   "atr": 0.9443,
+   "atr_pct": 6.05,
+   "vol_1y": 95.1,
+   "dollar_vol_20d": 32293070,
+   "low_120": 14.71,
+   "high_120": 31.59,
+   "support": 15.1853,
+   "support_strength": 4,
+   "support_2": null,
+   "buy_zone": [
+    15.1853,
+    15.4686
+   ],
+   "stop": 14.6187,
+   "resistance": 17.4127,
+   "resistance_strength": 3,
+   "sell_zone": [
+    17.1294,
+    17.4127
+   ],
+   "vs_sma50_pct": -10.7,
+   "chg_120d_pct": -33.6,
+   "reward_risk": 1.95,
+   "to_zone_pct": 0.98,
+   "upside_to_target_pct": 10.7,
+   "risk_to_stop_pct": 5.5,
+   "note": ""
+  },
+  {
+   "ticker": "TEM",
+   "name": "Tempus AI, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 76.63,
+   "asof": "2026-10-02",
+   "atr": 5.458,
+   "atr_pct": 7.12,
+   "vol_1y": 72.1,
+   "dollar_vol_20d": 519244709,
+   "low_120": 40.77,
+   "high_120": 89.09,
+   "support": 73.933,
+   "support_strength": 2,
+   "support_2": 63.0286,
+   "buy_zone": [
+    73.933,
+    75.5704
+   ],
+   "stop": 70.6582,
+   "resistance": 89.09,
+   "resistance_strength": 1,
+   "sell_zone": [
+    87.4526,
+    89.09
+   ],
+   "vs_sma50_pct": 22.5,
+   "chg_120d_pct": 54.7,
+   "reward_risk": 2.42,
+   "to_zone_pct": 1.4,
+   "upside_to_target_pct": 15.7,
+   "risk_to_stop_pct": 6.5,
+   "note": ""
+  },
+  {
+   "ticker": "MSTR",
+   "name": "Strategy Inc",
+   "exchange": "NasdaqGS",
+   "price": 160.01,
+   "asof": "2026-10-02",
+   "atr": 9.8871,
+   "atr_pct": 6.18,
+   "vol_1y": 80.6,
+   "dollar_vol_20d": 3400295046,
+   "low_120": 81.81,
+   "high_120": 197.0,
+   "support": 153.476,
+   "support_strength": 2,
+   "support_2": 144.92,
+   "buy_zone": [
+    153.476,
+    156.4421
+   ],
+   "stop": 147.5437,
+   "resistance": 172.8764,
+   "resistance_strength": 2,
+   "sell_zone": [
+    169.9103,
+    172.8764
+   ],
+   "vs_sma50_pct": 29.5,
+   "chg_120d_pct": 16.4,
+   "reward_risk": 1.51,
+   "to_zone_pct": 2.28,
+   "upside_to_target_pct": 8.6,
+   "risk_to_stop_pct": 5.7,
+   "note": ""
+  },
+  {
+   "ticker": "SMCI",
+   "name": "Super Micro Computer, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 43.69,
+   "asof": "2026-10-02",
+   "atr": 2.2429,
+   "atr_pct": 5.13,
+   "vol_1y": 95.3,
+   "dollar_vol_20d": 1551909355,
+   "low_120": 23.38,
+   "high_120": 51.4,
+   "support": 41.9044,
+   "support_strength": 2,
+   "support_2": 39.8286,
+   "buy_zone": [
+    41.9044,
+    42.5773
+   ],
+   "stop": 40.5587,
+   "resistance": 51.4,
+   "resistance_strength": 1,
+   "sell_zone": [
+    50.7271,
+    51.4
+   ],
+   "vs_sma50_pct": 19.6,
+   "chg_120d_pct": 60.6,
+   "reward_risk": 4.04,
+   "to_zone_pct": 2.61,
+   "upside_to_target_pct": 19.1,
+   "risk_to_stop_pct": 4.7,
+   "note": ""
+  },
+  {
+   "ticker": "CORZ",
+   "name": "Core Scientific, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 16.45,
+   "asof": "2026-10-02",
+   "atr": 0.9782,
+   "atr_pct": 5.95,
+   "vol_1y": 71.2,
+   "dollar_vol_20d": 194641539,
+   "low_120": 15.51,
+   "high_120": 30.46,
+   "support": 15.7078,
+   "support_strength": 3,
+   "support_2": null,
+   "buy_zone": [
+    15.7078,
+    16.0013
+   ],
+   "stop": 15.1209,
+   "resistance": 18.2647,
+   "resistance_strength": 3,
+   "sell_zone": [
+    17.9712,
+    18.2647
+   ],
+   "vs_sma50_pct": -11.5,
+   "chg_120d_pct": -11.9,
+   "reward_risk": 2.24,
+   "to_zone_pct": 2.8,
+   "upside_to_target_pct": 12.3,
+   "risk_to_stop_pct": 5.5,
+   "note": ""
+  },
+  {
+   "ticker": "CIFR",
+   "name": "Cipher Digital Inc.",
+   "exchange": "NasdaqGS",
+   "price": 15.71,
+   "asof": "2026-10-02",
+   "atr": 1.2791,
+   "atr_pct": 8.14,
+   "vol_1y": 112.1,
+   "dollar_vol_20d": 600455009,
+   "low_120": 14.18,
+   "high_120": 30.14,
+   "support": 14.873,
+   "support_strength": 3,
+   "support_2": 14.18,
+   "buy_zone": [
+    14.873,
+    15.2567
+   ],
+   "stop": 14.1055,
+   "resistance": 18.2766,
+   "resistance_strength": 15,
+   "sell_zone": [
+    17.8928,
+    18.2766
+   ],
+   "vs_sma50_pct": -10.7,
+   "chg_120d_pct": -14.9,
+   "reward_risk": 2.29,
+   "to_zone_pct": 2.97,
+   "upside_to_target_pct": 17.3,
+   "risk_to_stop_pct": 7.5,
+   "note": ""
+  },
+  {
+   "ticker": "LUNR",
+   "name": "Intuitive Machines, Inc.",
+   "exchange": "NasdaqGM",
+   "price": 14.71,
+   "asof": "2026-10-02",
+   "atr": 1.0351,
+   "atr_pct": 7.04,
+   "vol_1y": 110.8,
+   "dollar_vol_20d": 114375558,
+   "low_120": 11.29,
+   "high_120": 46.75,
+   "support": 13.9684,
+   "support_strength": 4,
+   "support_2": 12.7,
+   "buy_zone": [
+    13.9684,
+    14.2789
+   ],
+   "stop": 13.3473,
+   "resistance": 16.1473,
+   "resistance_strength": 2,
+   "sell_zone": [
+    15.8367,
+    16.1473
+   ],
+   "vs_sma50_pct": -3.7,
+   "chg_120d_pct": -37.9,
+   "reward_risk": 1.67,
+   "to_zone_pct": 3.02,
+   "upside_to_target_pct": 10.9,
+   "risk_to_stop_pct": 6.5,
+   "note": ""
+  },
+  {
+   "ticker": "WULF",
+   "name": "TeraWulf Inc.",
+   "exchange": "NasdaqCM",
+   "price": 15.49,
+   "asof": "2026-10-02",
+   "atr": 0.965,
+   "atr_pct": 6.23,
+   "vol_1y": 91.8,
+   "dollar_vol_20d": 445770961,
+   "low_120": 14.24,
+   "high_120": 29.84,
+   "support": 14.5079,
+   "support_strength": 5,
+   "support_2": null,
+   "buy_zone": [
+    14.5079,
+    14.7974
+   ],
+   "stop": 13.9289,
+   "resistance": 18.0558,
+   "resistance_strength": 3,
+   "sell_zone": [
+    17.7663,
+    18.0558
+   ],
+   "vs_sma50_pct": -5.7,
+   "chg_120d_pct": -26.1,
+   "reward_risk": 3.42,
+   "to_zone_pct": 4.68,
+   "upside_to_target_pct": 20.1,
+   "risk_to_stop_pct": 5.9,
+   "note": ""
+  },
+  {
+   "ticker": "HIMS",
+   "name": "Hims & Hers Health, Inc.",
+   "exchange": "NYSE",
+   "price": 29.0,
+   "asof": "2026-10-02",
+   "atr": 1.677,
+   "atr_pct": 5.78,
+   "vol_1y": 89.0,
+   "dollar_vol_20d": 275278865,
+   "low_120": 20.92,
+   "high_120": 39.05,
+   "support": 27.1191,
+   "support_strength": 4,
+   "support_2": 25.5005,
+   "buy_zone": [
+    27.1191,
+    27.6222
+   ],
+   "stop": 26.1129,
+   "resistance": 31.1395,
+   "resistance_strength": 9,
+   "sell_zone": [
+    30.6364,
+    31.1395
+   ],
+   "vs_sma50_pct": -1.0,
+   "chg_120d_pct": 35.8,
+   "reward_risk": 2.0,
+   "to_zone_pct": 4.99,
+   "upside_to_target_pct": 10.9,
+   "risk_to_stop_pct": 5.5,
+   "note": ""
+  },
+  {
+   "ticker": "RIOT",
+   "name": "Riot Platforms, Inc.",
+   "exchange": "NasdaqCM",
+   "price": 19.73,
+   "asof": "2026-10-02",
+   "atr": 1.4726,
+   "atr_pct": 7.46,
+   "vol_1y": 87.9,
+   "dollar_vol_20d": 353999994,
+   "low_120": 15.31,
+   "high_120": 30.32,
+   "support": 18.3494,
+   "support_strength": 8,
+   "support_2": 16.155,
+   "buy_zone": [
+    18.3494,
+    18.7911
+   ],
+   "stop": 17.4658,
+   "resistance": 22.2077,
+   "resistance_strength": 4,
+   "sell_zone": [
+    21.7659,
+    22.2077
+   ],
+   "vs_sma50_pct": -5.7,
+   "chg_120d_pct": 8.9,
+   "reward_risk": 2.24,
+   "to_zone_pct": 5.0,
+   "upside_to_target_pct": 15.8,
+   "risk_to_stop_pct": 7.1,
+   "note": ""
+  },
+  {
+   "ticker": "MARA",
+   "name": "MARA Holdings, Inc.",
+   "exchange": "NasdaqCM",
+   "price": 11.23,
+   "asof": "2026-10-02",
+   "atr": 0.8364,
+   "atr_pct": 7.45,
+   "vol_1y": 85.5,
+   "dollar_vol_20d": 540805122,
+   "low_120": 8.68,
+   "high_120": 16.43,
+   "support": 10.414,
+   "support_strength": 7,
+   "support_2": 8.68,
+   "buy_zone": [
+    10.414,
+    10.6649
+   ],
+   "stop": 9.9121,
+   "resistance": 12.0986,
+   "resistance_strength": 10,
+   "sell_zone": [
+    11.8476,
+    12.0986
+   ],
+   "vs_sma50_pct": -0.2,
+   "chg_120d_pct": 7.1,
+   "reward_risk": 1.57,
+   "to_zone_pct": 5.3,
+   "upside_to_target_pct": 11.1,
+   "risk_to_stop_pct": 7.1,
+   "note": ""
+  },
+  {
+   "ticker": "APLD",
+   "name": "Applied Digital Corporation",
+   "exchange": "NasdaqGS",
+   "price": 25.38,
+   "asof": "2026-10-02",
+   "atr": 1.6049,
+   "atr_pct": 6.32,
+   "vol_1y": 101.4,
+   "dollar_vol_20d": 424792307,
+   "low_120": 22.93,
+   "high_120": 50.725,
+   "support": 23.5533,
+   "support_strength": 5,
+   "support_2": null,
+   "buy_zone": [
+    23.5533,
+    24.0348
+   ],
+   "stop": 22.5904,
+   "resistance": 29.0728,
+   "resistance_strength": 3,
+   "sell_zone": [
+    28.5913,
+    29.0728
+   ],
+   "vs_sma50_pct": -6.8,
+   "chg_120d_pct": -19.4,
+   "reward_risk": 3.15,
+   "to_zone_pct": 5.6,
+   "upside_to_target_pct": 19.0,
+   "risk_to_stop_pct": 6.0,
+   "note": ""
+  },
+  {
+   "ticker": "QUBT",
+   "name": "Quantum Computing Inc.",
+   "exchange": "NasdaqCM",
+   "price": 8.18,
+   "asof": "2026-10-02",
+   "atr": 0.4142,
+   "atr_pct": 5.06,
+   "vol_1y": 91.3,
+   "dollar_vol_20d": 59535878,
+   "low_120": 7.3,
+   "high_120": 14.45,
+   "support": 7.6211,
+   "support_strength": 8,
+   "support_2": null,
+   "buy_zone": [
+    7.6211,
+    7.7453
+   ],
+   "stop": 7.3725,
+   "resistance": 8.9314,
+   "resistance_strength": 9,
+   "sell_zone": [
+    8.8072,
+    8.9314
+   ],
+   "vs_sma50_pct": -2.9,
+   "chg_120d_pct": 0.9,
+   "reward_risk": 2.85,
+   "to_zone_pct": 5.61,
+   "upside_to_target_pct": 13.7,
+   "risk_to_stop_pct": 4.8,
+   "note": ""
+  },
+  {
+   "ticker": "RKLB",
+   "name": "Rocket Lab Corporation",
+   "exchange": "NasdaqGS",
+   "price": 73.92,
+   "asof": "2026-10-02",
+   "atr": 4.1096,
+   "atr_pct": 5.56,
+   "vol_1y": 91.8,
+   "dollar_vol_20d": 1447228306,
+   "low_120": 58.2,
+   "high_120": 151.0,
+   "support": 68.3703,
+   "support_strength": 2,
+   "support_2": 64.51,
+   "buy_zone": [
+    68.3703,
+    69.6032
+   ],
+   "stop": 65.9045,
+   "resistance": 86.1821,
+   "resistance_strength": 2,
+   "sell_zone": [
+    84.9492,
+    86.1821
+   ],
+   "vs_sma50_pct": 6.0,
+   "chg_120d_pct": 2.4,
+   "reward_risk": 4.15,
+   "to_zone_pct": 6.2,
+   "upside_to_target_pct": 22.0,
+   "risk_to_stop_pct": 5.3,
+   "note": ""
+  },
+  {
+   "ticker": "HIVE",
+   "name": "HIVE Digital Technologies Ltd.",
+   "exchange": "NasdaqCM",
+   "price": 2.98,
+   "asof": "2026-10-02",
+   "atr": 0.18,
+   "atr_pct": 6.04,
+   "vol_1y": 98.5,
+   "dollar_vol_20d": 38077731,
+   "low_120": 2.06,
+   "high_120": 5.34,
+   "support": 2.711,
+   "support_strength": 9,
+   "support_2": 2.19,
+   "buy_zone": [
+    2.711,
+    2.765
+   ],
+   "stop": 2.603,
+   "resistance": 3.1157,
+   "resistance_strength": 5,
+   "sell_zone": [
+    3.0617,
+    3.1157
+   ],
+   "vs_sma50_pct": 0.9,
+   "chg_120d_pct": 23.1,
+   "reward_risk": 1.83,
+   "to_zone_pct": 7.78,
+   "upside_to_target_pct": 10.7,
+   "risk_to_stop_pct": 5.9,
+   "note": ""
+  },
+  {
+   "ticker": "BMNR",
+   "name": "Bitmine Immersion Technologies, Inc.",
+   "exchange": "NYSE",
+   "price": 26.27,
+   "asof": "2026-10-02",
+   "atr": 1.7061,
+   "atr_pct": 6.49,
+   "vol_1y": 91.7,
+   "dollar_vol_20d": 1020662079,
+   "low_120": 12.8,
+   "high_120": 28.86,
+   "support": 22.9554,
+   "support_strength": 4,
+   "support_2": 21.095,
+   "buy_zone": [
+    22.9554,
+    23.4672
+   ],
+   "stop": 21.9317,
+   "resistance": 26.8271,
+   "resistance_strength": 3,
+   "sell_zone": [
+    26.3153,
+    26.8271
+   ],
+   "vs_sma50_pct": 16.6,
+   "chg_120d_pct": 22.3,
+   "reward_risk": 1.85,
+   "to_zone_pct": 11.94,
+   "upside_to_target_pct": 12.1,
+   "risk_to_stop_pct": 6.5,
+   "note": ""
+  },
+  {
+   "ticker": "SBET",
+   "name": "Sharplink, Inc.",
+   "exchange": "NasdaqCM",
+   "price": 9.35,
+   "asof": "2026-10-02",
+   "atr": 0.6386,
+   "atr_pct": 6.83,
+   "vol_1y": 78.7,
+   "dollar_vol_20d": 79560046,
+   "low_120": 4.46,
+   "high_120": 10.4,
+   "support": 7.9227,
+   "support_strength": 4,
+   "support_2": 6.0871,
+   "buy_zone": [
+    7.9227,
+    8.1143
+   ],
+   "stop": 7.5396,
+   "resistance": 10.4,
+   "resistance_strength": 1,
+   "sell_zone": [
+    10.2084,
+    10.4
+   ],
+   "vs_sma50_pct": 18.5,
+   "chg_120d_pct": 31.0,
+   "reward_risk": 3.64,
+   "to_zone_pct": 15.23,
+   "upside_to_target_pct": 25.8,
+   "risk_to_stop_pct": 7.1,
+   "note": ""
+  }
+ ],
+ "dropped": [
+  {
+   "ticker": "CLSK",
+   "why": "reward:risk 0.72 < 1.5"
+  },
+  {
+   "ticker": "BTBT",
+   "why": "reward:risk 0.64 < 1.5"
+  },
+  {
+   "ticker": "NBIS",
+   "why": "reward:risk 0.94 < 1.5"
+  },
+  {
+   "ticker": "CRWV",
+   "why": "reward:risk 1.18 < 1.5"
+  },
+  {
+   "ticker": "SOUN",
+   "why": "no tested support below the price; reward:risk 1.01 < 1.5"
+  },
+  {
+   "ticker": "BBAI",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "IONQ",
+   "why": "reward:risk 1.26 < 1.5"
+  },
+  {
+   "ticker": "RGTI",
+   "why": "reward:risk 0.75 < 1.5"
+  },
+  {
+   "ticker": "QBTS",
+   "why": "no tested support below the price; reward:risk 0.2 < 1.5"
+  },
+  {
+   "ticker": "OKLO",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "SMR",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "LEU",
+   "why": "reward:risk 0.42 < 1.5"
+  },
+  {
+   "ticker": "RCAT",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "COIN",
+   "why": "reward:risk 1.02 < 1.5"
+  },
+  {
+   "ticker": "HOOD",
+   "why": "reward:risk 0.83 < 1.5"
+  },
+  {
+   "ticker": "CRCL",
+   "why": "reward:risk 1.4 < 1.5"
+  },
+  {
+   "ticker": "AFRM",
+   "why": "reward:risk 1.36 < 1.5"
+  },
+  {
+   "ticker": "UPST",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "SOFI",
+   "why": "ATR 3.77% < 4.0%"
+  }
+ ]
+}

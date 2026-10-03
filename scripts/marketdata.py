@@ -381,6 +381,9 @@ def main() -> int:
         focus += bd["wl"].get("focus", [])
         opt_watch += bd["wl"].get("options_watch", [])
         n_exp = max(n_exp, int(bd["wl"].get("options_expiries", 2)))
+    radar_path = root / "config" / "radar.json"
+    if radar_path.exists():  # support/resistance radar names always get quotes
+        watch += [r["ticker"] for r in json.loads(radar_path.read_text()).get("names", [])]
     watch, focus = list(dict.fromkeys(watch)), list(dict.fromkeys(focus))
     held_opts, need_exp = set(), {}
     held = set()

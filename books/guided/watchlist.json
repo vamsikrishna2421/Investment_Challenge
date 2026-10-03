@@ -1,11 +1,37 @@
 {
-  "strategy": "Awaiting Vamsi's first instructions. No position until he names the trade.",
+  "strategy": "Vamsi's support/resistance strategy: buy high-volatility stocks at tested support, sell at resistance, stop under support. 25-name radar from Friday's closes; up to 4 positions of about $250. HUT and UMAC open the week inside their buy zones.",
   "focus": [
     "SPY",
     "QQQ",
     "BTC-USD"
   ],
-  "tickers": [],
+  "tickers": [
+    "GPUS",
+    "IREN",
+    "BTDR",
+    "HUT",
+    "GLXY",
+    "UMAC",
+    "ASTS",
+    "ONDS",
+    "NNE",
+    "TEM",
+    "MSTR",
+    "SMCI",
+    "CORZ",
+    "CIFR",
+    "LUNR",
+    "WULF",
+    "HIMS",
+    "RIOT",
+    "MARA",
+    "APLD",
+    "QUBT",
+    "RKLB",
+    "HIVE",
+    "BMNR",
+    "SBET"
+  ],
   "options_watch": [],
   "options_expiries": 2
 }

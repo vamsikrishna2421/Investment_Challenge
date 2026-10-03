@@ -1,5 +1,5 @@
 {
-  "strategy": "Fresh start Sat Oct 3: $1,000 cash, no positions. Trades start once Vamsi's strategy is in place.",
+  "strategy": "Vamsi's support/resistance strategy: buy high-volatility stocks at tested support, sell at resistance, stop under support. 25-name radar from Friday's closes; up to 4 positions of about $250. HUT and UMAC open the week inside their buy zones.",
   "focus": [
     "SPY",
     "QQQ",

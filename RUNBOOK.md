@@ -1,6 +1,7 @@
 # Routine runbook
 
-Every scheduled run (and any manual check) follows these steps for BOTH books. Times are US Eastern.
+Every scheduled run (and any manual check) follows these steps for ALL THREE books. Times are US Eastern.
+Round 2 trades one strategy in every book: Vamsi's support/resistance radar (section 2a).
 
 Books (round 2: all three restarted Sat Oct 3 at $1,000 on Vamsi's instruction; round 1, Sep 28 - Oct 2, is
 archived in `archive/round1/` with its own README):
@@ -34,6 +35,8 @@ python3 scripts/sync.py --local --mode quotes          # direct fetch (~20 s): q
 python3 scripts/sync.py --local --mode news            # adds headlines, discovery, alerts (use at least hourly)
 python3 scripts/review.py                              # h1b: portfolio, alerts, focus, news
 python3 scripts/review.py --book free --brief          # free: portfolio and positions
+python3 scripts/review.py --book guided --brief        # guided: portfolio and positions
+python3 scripts/levels.py check                        # radar triggers (section 2a)
 python3 scripts/wires.py                               # live catalyst feed (see 1c)
 ```
 `--tickers A,B,NKE261002C00036000` adds symbols (an option contract pulls its underlying's chain).
@@ -43,6 +46,9 @@ If the direct fetch fails, fall back to the dispatch plus `python3 scripts/sync.
 Option chains: `.cache/options.json` (nearest two expiries for `books/free/watchlist.json` `options_watch`).
 
 ## 1b. Big-mover catalyst scan (post-close daily, and the 8:40 run)
+
+Round 2: research only. The scan finds new high-volatility candidates for the radar (add them to
+`CANDIDATES` in `scripts/levels.py`); it no longer produces entries or day-two triggers.
 
 ```bash
 python3 scripts/movers.py --min-move 15 --save          # today's big gainers, why they moved
@@ -170,6 +176,36 @@ questions by more than costs.
   of stock or options bought with unsettled proceeds before settlement (T+1). The h1b book cannot trade
   options or crypto.
 
+## 2a. Round 2 strategy: support/resistance radar (Vamsi, Sat Oct 3; all three books)
+
+Vamsi's rules: trade high-volatility stocks; buy at support, sell at resistance, stop under support. Keep at
+least 20 names on the radar with support, resistance and stop levels ready; a name reaching its support is the
+trigger. His names GPUS, IREN and BTDR stay on the radar even when they miss a filter (the page flags them).
+
+```bash
+python3 scripts/levels.py check            # every run after the sync: BUY ZONE, BOUNCE, NEAR, TARGET, BROKEN
+python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday review: rebuild the radar, commit it
+```
+* Radar: `config/radar.json` (one copy per day in `research/radar/`), from one year of daily bars. Filters: ATR at
+  least 4% of the price, 20-day dollar volume at least $15M, a support tested at least twice, R:R at least 1.5.
+  Method in the `scripts/levels.py` docstring; candidates in its `CANDIDATES` list. The dashboard shows the radar
+  with each name's live status.
+* Entry, at a regular-session run from 9:55 AM: a name whose status is BUY ZONE (inside the buy zone, above the
+  stop) or BOUNCE (touched the zone this session and held, entry R:R at least 1.5). Never on BROKEN (at or
+  through the stop this session), on a day with an offering or negative company news, or after 14:55 on the
+  final day. On the final day buy only with settled cash: a stock bought with unsettled proceeds can't be sold
+  before T+1, which would block the 15:40 liquidation.
+* Size: at most 4 radar positions per book, about $250 each (25% of $1,000; less when cash is short). When more
+  names trigger than slots, take the higher entry R:R first. One position per name, no averaging down, no
+  re-entry in a name stopped out the same day.
+* Order: `trade.py [--book B] buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar
+  --why "..."`, with the buy zone, stop, sell zone and entry R:R in the reason.
+* Exit: sell at the first run where the price is in the sell zone (TARGET HIT), where the stop has traded (STOP HIT
+  or STOP TRADED: sell at that run), or at the 15:40 liquidation on the final day. These replace the section 2
+  stock stop and trim for radar trades.
+* The three books run the same rules. Every radar name is US-listed common stock, so all of them are allowed in
+  the h1b book (OFAC NS-CMIC check: `config/blocklist.json`).
+
 ## 3. Execute and log
 
 ```bash
@@ -198,7 +234,7 @@ Update each book's watchlist `strategy` (the dashboard's game-plan line) and `fo
 * Weekdays: :10 runs 7:10 AM-7:10 PM, :40 runs 8:40 AM-7:40 PM, :25 and :55 runs 9:25 AM-3:55 PM,
   16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
 * Crypto watch (free book): weeknights 11:10 PM and weekends every 4 hours.
-* Sunday 7:00 PM review for Monday.
+* Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers.
 * Final day Mon Oct 5: liquidate everything in all three books at the 15:40 run (guided too, unless Vamsi has
   extended it); the 16:20 run writes the final report for every book, then deletes the routines.
 

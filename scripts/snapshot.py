@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import levels as lv  # noqa: E402
 import portfolio as pfm  # noqa: E402
 
 ROOT = pfm.ROOT
@@ -135,6 +136,22 @@ def main() -> int:
                           "change_pct": qq.get("change_pct"),
                           "ext_change_pct": qq.get("ext_change_pct")})
 
+    # Support/resistance radar (config/radar.json, shared by every book) against the latest quotes.
+    levels = None
+    if lv.RADAR.exists():
+        rd = json.loads(lv.RADAR.read_text())
+        held_tk = {p["ticker"] for p in val["positions"]}
+        rows = []
+        for r in rd["names"]:
+            c = lv.classify(r, quotes.get(r["ticker"]), rd["asof"])
+            rows.append({"ticker": r["ticker"], "name": r["name"], "price": c.get("price"), "status": c["status"],
+                         "to_zone_pct": c.get("to_zone_pct"), "rr_now": c.get("rr_now"),
+                         "buy_zone": r["buy_zone"], "stop": r["stop"], "sell_zone": r["sell_zone"],
+                         "reward_risk": r["reward_risk"], "upside_pct": r["upside_to_target_pct"],
+                         "atr_pct": r["atr_pct"], "note": r.get("note") or "", "held": r["ticker"] in held_tk})
+        rows.sort(key=lambda x: (lv.STATUS_ORDER.index(x["status"]), x.get("to_zone_pct") or 0))
+        levels = {"generated_at": rd["generated_at"], "asof": rd["asof"], "names": rows}
+
     sched_path = ROOT / "config" / "schedule.json"
     sched = json.loads(sched_path.read_text()) if sched_path.exists() else {}
     rules = cfg["rules"]
@@ -196,6 +213,7 @@ def main() -> int:
         "journal": journal,
         "compliance": compliance,
         "radar": radar,
+        "levels": levels,
         "strategy": watch.get("strategy", ""),
         "schedule": {"next_update": next_update(now, sched), "cadence": sched.get("cadence", "")},
         "note": a.note,

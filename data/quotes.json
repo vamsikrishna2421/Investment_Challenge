@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T00:10:26Z",
+ "generated_at": "2026-10-03T05:31:29Z",
  "session": "closed",
  "quotes": {
   "ACN": {
@@ -164,14 +164,14 @@
    "name": "Boeing Company (The)",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 193.76,
-   "ext_time": "2026-10-02T23:59:17Z",
+   "ext_price": 193.8,
+   "ext_time": "2026-10-02T23:59:50Z",
    "ext_volume": 814337,
    "ext_high": 193.9,
    "ext_low": 193.0549,
    "source": "yahoo-v8-chart",
    "change_pct": 0.666,
-   "ext_change_pct": 0.103
+   "ext_change_pct": 0.124
   },
   "BBAI": {
    "price": 2.65,
@@ -212,12 +212,12 @@
    "ext_change_pct": -0.668
   },
   "BTC-USD": {
-   "price": 84455.1,
-   "time": "2026-10-03T00:10:19Z",
+   "price": 84620.99,
+   "time": "2026-10-03T05:31:24Z",
    "prev_close": 84506.336,
-   "day_high": 84506.336,
-   "day_low": 84446.57,
-   "volume": 46472146944,
+   "day_high": 84713.72,
+   "day_low": 84434.45,
+   "volume": 39643025408,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -227,7 +227,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.061
+   "change_pct": 0.136
   },
   "BTDR": {
    "price": 11.02,
@@ -277,14 +277,14 @@
    "name": "Carnival Corporation Ltd.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 25.77,
-   "ext_time": "2026-10-02T23:58:12Z",
+   "ext_price": 25.78,
+   "ext_time": "2026-10-02T23:59:54Z",
    "ext_volume": 2475138,
    "ext_high": 25.8338,
    "ext_low": 25.7178,
    "source": "yahoo-v8-chart",
    "change_pct": 2.752,
-   "ext_change_pct": 0.039
+   "ext_change_pct": 0.078
   },
   "CIFR": {
    "price": 15.71,
@@ -401,12 +401,12 @@
    "ext_change_pct": 0.0
   },
   "DOGE-USD": {
-   "price": 0.09282,
-   "time": "2026-10-03T00:10:08Z",
+   "price": 0.09316,
+   "time": "2026-10-03T05:31:28Z",
    "prev_close": 0.092963725,
-   "day_high": 0.092963725,
-   "day_low": 0.09291066,
-   "volume": 1414494464,
+   "day_high": 0.09344803,
+   "day_low": 0.0928625,
+   "volume": 1243938048,
    "name": "Dogecoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -416,15 +416,15 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.155
+   "change_pct": 0.211
   },
   "ETH-USD": {
-   "price": 2665.19,
-   "time": "2026-10-03T00:10:20Z",
+   "price": 2677.69,
+   "time": "2026-10-03T05:31:22Z",
    "prev_close": 2668.2031,
-   "day_high": 2668.2031,
-   "day_low": 2665.817,
-   "volume": 19675396096,
+   "day_high": 2682.2974,
+   "day_low": 2665.54,
+   "volume": 17072095232,
    "name": "Ethereum USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -434,7 +434,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.113
+   "change_pct": 0.356
   },
   "FEIM": {
    "price": 86.03,
@@ -465,14 +465,14 @@
    "name": "Frontline Plc",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 52.37,
-   "ext_time": "2026-10-02T23:34:15Z",
+   "ext_price": 52.87,
+   "ext_time": "2026-10-02T23:59:08Z",
    "ext_volume": 228896,
    "ext_high": 52.95,
    "ext_low": 51.86,
    "source": "yahoo-v8-chart",
    "change_pct": 2.328,
-   "ext_change_pct": -0.702
+   "ext_change_pct": 0.246
   },
   "GME": {
    "price": 24.7,
@@ -485,7 +485,7 @@
    "exchange": "NYSE",
    "instrument": "EQUITY",
    "ext_price": 25.16,
-   "ext_time": "2026-10-02T23:59:46Z",
+   "ext_time": "2026-10-02T23:59:47Z",
    "ext_volume": 584613,
    "ext_high": 25.25,
    "ext_low": 24.6,
@@ -563,7 +563,7 @@
    "ext_price": 112.9,
    "ext_time": "2026-10-02T23:59:59Z",
    "ext_volume": 1328717,
-   "ext_high": 112.92,
+   "ext_high": 112.95,
    "ext_low": 110.8964,
    "source": "yahoo-v8-chart",
    "change_pct": 1.43,
@@ -968,23 +968,6 @@
    "change_pct": -4.381,
    "ext_change_pct": -0.889
   },
-  "MUU261002C00037000": {
-   "price": 0.2,
-   "time": "2026-10-02T19:57:42Z",
-   "bid": 0.15,
-   "ask": 0.25,
-   "last": 0.15,
-   "prev_close": 2.1,
-   "iv": 0.207,
-   "oi": 2467,
-   "volume": 2950,
-   "name": "MUU 10/2 $37 call",
-   "underlying": "MUU",
-   "instrument": "OPTION",
-   "source": "yahoo-option-chain",
-   "change_pct": -90.476,
-   "stale": true
-  },
   "NAT": {
    "price": 8.42,
    "time": "2026-10-02T20:00:02Z",
@@ -1033,14 +1016,14 @@
    "name": "Nike, Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 33.8545,
-   "ext_time": "2026-10-02T23:59:43Z",
+   "ext_price": 33.86,
+   "ext_time": "2026-10-02T23:59:53Z",
    "ext_volume": 4454258,
    "ext_high": 33.9,
    "ext_low": 33.4095,
    "source": "yahoo-v8-chart",
    "change_pct": -3.642,
-   "ext_change_pct": -0.046
+   "ext_change_pct": -0.03
   },
   "NNE": {
    "price": 15.62,
@@ -1129,7 +1112,7 @@
    "exchange": "NYSE",
    "instrument": "EQUITY",
    "ext_price": 35.97,
-   "ext_time": "2026-10-02T23:57:03Z",
+   "ext_time": "2026-10-02T23:59:00Z",
    "ext_volume": 639782,
    "ext_high": 36.11,
    "ext_low": 35.78,
@@ -1480,12 +1463,12 @@
    "ext_change_pct": -0.068
   },
   "SOL-USD": {
-   "price": 118.53,
-   "time": "2026-10-03T00:10:22Z",
+   "price": 119.59,
+   "time": "2026-10-03T05:31:26Z",
    "prev_close": 118.609146,
-   "day_high": 118.62058,
-   "day_low": 118.609146,
-   "volume": 4745053696,
+   "day_high": 119.482254,
+   "day_low": 118.563675,
+   "volume": 3704028160,
    "name": "Solana USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1495,7 +1478,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.067
+   "change_pct": 0.827
   },
   "SOUN": {
    "price": 5.84,
@@ -1859,12 +1842,12 @@
    "ext_change_pct": 0.171
   },
   "XRP-USD": {
-   "price": 1.4826,
-   "time": "2026-10-03T00:10:19Z",
+   "price": 1.4879,
+   "time": "2026-10-03T05:31:23Z",
    "prev_close": 1.4849464,
-   "day_high": 1.4849464,
-   "day_low": 1.4843831,
-   "volume": 4513033728,
+   "day_high": 1.4920716,
+   "day_low": 1.4832379,
+   "volume": 3974065664,
    "name": "XRP USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1874,11 +1857,9 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.158
+   "change_pct": 0.199
   }
  },
- "errors": {
-  "MUU261002C00037000": "no option chain row this run"
- },
- "fetch_seconds": 12.6
+ "errors": {},
+ "fetch_seconds": 1.5
 }

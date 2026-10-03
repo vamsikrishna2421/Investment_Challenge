@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-03T00:10:26Z",
+ "as_of": "2026-10-03T05:31:29Z",
  "session": "closed",
  "start_capital": 1000.0,
  "deposits": 1000.0,
@@ -76,7 +76,7 @@
  ],
  "counts": {
   "orders_total": 6,
-  "orders_today": 1,
+  "orders_today": 0,
   "day_trades_5d": 1,
   "day_trades_total": 1,
   "gfv": 0,

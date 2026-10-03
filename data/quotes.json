@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:31:29Z",
+ "generated_at": "2026-10-03T05:31:48Z",
  "session": "closed",
  "quotes": {
   "ACN": {
@@ -213,7 +213,7 @@
   },
   "BTC-USD": {
    "price": 84620.99,
-   "time": "2026-10-03T05:31:24Z",
+   "time": "2026-10-03T05:31:44Z",
    "prev_close": 84506.336,
    "day_high": 84713.72,
    "day_low": 84434.45,
@@ -419,8 +419,8 @@
    "change_pct": 0.211
   },
   "ETH-USD": {
-   "price": 2677.69,
-   "time": "2026-10-03T05:31:22Z",
+   "price": 2677.67,
+   "time": "2026-10-03T05:31:45Z",
    "prev_close": 2668.2031,
    "day_high": 2682.2974,
    "day_low": 2665.54,
@@ -434,7 +434,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.356
+   "change_pct": 0.355
   },
   "FEIM": {
    "price": 86.03,
@@ -1464,7 +1464,7 @@
   },
   "SOL-USD": {
    "price": 119.59,
-   "time": "2026-10-03T05:31:26Z",
+   "time": "2026-10-03T05:31:46Z",
    "prev_close": 118.609146,
    "day_high": 119.482254,
    "day_low": 118.563675,
@@ -1842,8 +1842,8 @@
    "ext_change_pct": 0.171
   },
   "XRP-USD": {
-   "price": 1.4879,
-   "time": "2026-10-03T05:31:23Z",
+   "price": 1.488,
+   "time": "2026-10-03T05:31:40Z",
    "prev_close": 1.4849464,
    "day_high": 1.4920716,
    "day_low": 1.4832379,
@@ -1857,9 +1857,9 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.199
+   "change_pct": 0.206
   }
  },
  "errors": {},
- "fetch_seconds": 1.5
+ "fetch_seconds": 1.6
 }

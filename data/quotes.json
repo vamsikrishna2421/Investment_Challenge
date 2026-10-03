@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:47:33Z",
+ "generated_at": "2026-10-03T05:49:26Z",
  "session": "closed",
  "quotes": {
   "AFRM": {
@@ -231,12 +231,12 @@
    "ext_change_pct": -0.04
   },
   "BTC-USD": {
-   "price": 84642.99,
-   "time": "2026-10-03T05:47:27Z",
+   "price": 84638.4,
+   "time": "2026-10-03T05:49:21Z",
    "prev_close": 84506.336,
    "day_high": 84713.72,
    "day_low": 84434.45,
-   "volume": 39192793088,
+   "volume": 39118295040,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -246,7 +246,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.162
+   "change_pct": 0.156
   },
   "BTDR": {
    "price": 11.02,
@@ -439,12 +439,12 @@
    "ext_change_pct": 0.0
   },
   "DOGE-USD": {
-   "price": 0.09306,
-   "time": "2026-10-03T05:47:12Z",
+   "price": 0.09308,
+   "time": "2026-10-03T05:49:13Z",
    "prev_close": 0.092963725,
    "day_high": 0.09344803,
    "day_low": 0.0928625,
-   "volume": 1230548352,
+   "volume": 1228542464,
    "name": "Dogecoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -454,15 +454,15 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.104
+   "change_pct": 0.125
   },
   "ETH-USD": {
-   "price": 2677.25,
-   "time": "2026-10-03T05:47:26Z",
+   "price": 2676.4,
+   "time": "2026-10-03T05:49:16Z",
    "prev_close": 2668.2031,
    "day_high": 2682.2974,
    "day_low": 2665.54,
-   "volume": 16885371904,
+   "volume": 16840785920,
    "name": "Ethereum USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -472,7 +472,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.339
+   "change_pct": 0.307
   },
   "FEIM": {
    "price": 86.03,
@@ -1577,12 +1577,12 @@
    "ext_change_pct": -0.068
   },
   "SOL-USD": {
-   "price": 119.6,
-   "time": "2026-10-03T05:47:19Z",
+   "price": 119.54,
+   "time": "2026-10-03T05:49:20Z",
    "prev_close": 118.609146,
    "day_high": 119.62012,
    "day_low": 118.563675,
-   "volume": 3629866240,
+   "volume": 3620937472,
    "name": "Solana USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1592,7 +1592,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.835
+   "change_pct": 0.785
   },
   "SOUN": {
    "price": 5.84,
@@ -1937,12 +1937,12 @@
    "ext_change_pct": 0.171
   },
   "XRP-USD": {
-   "price": 1.4872,
-   "time": "2026-10-03T05:47:27Z",
+   "price": 1.4853,
+   "time": "2026-10-03T05:49:20Z",
    "prev_close": 1.4849464,
    "day_high": 1.4920716,
    "day_low": 1.4832379,
-   "volume": 3943029760,
+   "volume": 3938152704,
    "name": "XRP USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1952,9 +1952,9 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.152
+   "change_pct": 0.024
   }
  },
  "errors": {},
- "fetch_seconds": 1.7
+ "fetch_seconds": 3.2
 }

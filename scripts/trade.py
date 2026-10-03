@@ -48,7 +48,7 @@ def option_quote(tk: str, quotes: dict) -> dict | None:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--book", default=None, help="h1b (default) or free")
+    ap.add_argument("--book", default=None, help="h1b (default), free or guided")
     ap.add_argument("side", choices=["buy", "sell", "expire"])
     ap.add_argument("ticker")
     g = ap.add_mutually_exclusive_group()

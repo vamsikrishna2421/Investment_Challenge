@@ -1,0 +1,108 @@
+{
+  "name": "Vamsi's guided strategy",
+  "book": "guided",
+  "short_name": "Vamsi's guided",
+  "start_capital": 1000.0,
+  "currency": "USD",
+  "accepted_utc": "2026-10-03T05:28:20Z",
+  "trading_start_utc": "2026-10-03T05:28:20Z",
+  "end_utc": "2026-10-05T20:00:00Z",
+  "goal_multiple": 2.0,
+  "account": {
+    "holder_profile": "US retail investor; every trade follows Vamsi's direction",
+    "type": "Individual cash account with options and crypto (no margin: FINRA requires $2,000 of equity)",
+    "broker_model": "US zero-commission broker with stocks, options and crypto in one account",
+    "margin": false,
+    "short_selling": false,
+    "options": true,
+    "crypto": true,
+    "settlement": "T+1 for stocks and options; crypto settles instantly"
+  },
+  "execution_model": {
+    "fill": "Latest trade price from Yahoo Finance at execution time (regular or extended-hours print), adjusted for slippage",
+    "slippage_bps_by_price": [
+      [
+        20,
+        5
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        0,
+        50
+      ]
+    ],
+    "commission": 0.0,
+    "sec_fee_per_million": 27.8,
+    "finra_taf_per_share": 0.000166,
+    "finra_taf_max": 8.3,
+    "sessions": "Stocks/ETFs: pre-market 4:00-9:30, regular 9:30-16:00, after-hours 16:00-20:00 ET. Options: regular session only. Crypto: 24/7.",
+    "max_quote_age_sec": 900,
+    "ext_slippage_bps_by_price": [
+      [
+        20,
+        25
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        0,
+        100
+      ]
+    ],
+    "sessions_allowed": [
+      "pre",
+      "regular",
+      "post"
+    ],
+    "options": {
+      "fill": "Ask to buy, bid to sell (Yahoo Finance option chain)",
+      "fee_per_contract": 0.03,
+      "sessions_allowed": [
+        "regular"
+      ],
+      "max_quote_age_sec": 1200
+    },
+    "crypto": {
+      "fill": "Last trade plus/minus the broker spread",
+      "spread_bps": 30,
+      "sessions_allowed": [
+        "always"
+      ],
+      "max_quote_age_sec": 900
+    }
+  },
+  "rules": {
+    "max_orders_per_day": 40,
+    "max_orders_total": 300,
+    "max_day_trades_rolling_5d": null,
+    "max_position_pct_at_entry": 100,
+    "allowed_instruments": [
+      "Common stock",
+      "ETF",
+      "Leveraged ETF",
+      "Inverse ETF",
+      "Listed options (buy calls and puts, covered calls, cash-secured puts)",
+      "Crypto (spot)"
+    ],
+    "blocked_lists": [
+      "OFAC NS-CMIC (EO 14032) Chinese military-industrial complex securities"
+    ],
+    "note": "Trades only on Vamsi's instructions: he says where to look and how to trade; Claude executes through trade.py, logs every order and applies the stops and exits he sets. Account limits are the same as the Unrestricted book: cash only, no margin (FINRA's $2,000 minimum), so no short selling or naked option writing."
+  },
+  "benchmarks": [
+    "SPY",
+    "QQQ",
+    "IWM"
+  ],
+  "benchmark_base": {
+    "SPY": 769.64,
+    "QQQ": 749.58,
+    "IWM": 281.52
+  },
+  "benchmark_base_note": "Regular-session closes on Fri Oct 2, 2026 (book opened Sat Oct 3)"
+}

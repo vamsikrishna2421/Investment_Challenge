@@ -16,7 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / ".cache"
 FILES = ["quotes.json", "portfolio.json", "equity.jsonl", "scan.json", "news.json", "alerts.json",
-         "portfolio_free.json", "equity_free.jsonl", "options.json"]
+         "portfolio_free.json", "equity_free.jsonl", "portfolio_guided.json", "equity_guided.jsonl",
+         "options.json"]
 
 
 def git(*args: str, check: bool = True) -> str:
@@ -35,7 +36,7 @@ def pull_history() -> None:
     """Refresh the equity curves from the market-data branch; the Actions job owns them."""
     if subprocess.run(["git", "fetch", "--quiet", "origin", "market-data"], cwd=ROOT).returncode != 0:
         return
-    for f in ("equity.jsonl", "equity_free.jsonl"):
+    for f in ("equity.jsonl", "equity_free.jsonl", "equity_guided.jsonl"):
         r = subprocess.run(["git", "show", f"origin/market-data:data/{f}"], cwd=ROOT,
                            capture_output=True, text=True)
         if r.returncode == 0 and r.stdout.strip():

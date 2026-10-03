@@ -1,0 +1,13 @@
+{
+ "transactions": [
+  {
+   "id": "T0000",
+   "type": "DEPOSIT",
+   "ts": "2026-10-03T05:28:20Z",
+   "amount": 1000.0,
+   "net_cash": 1000.0,
+   "settle_date": "2026-10-03",
+   "note": "Paper capital funded. Vamsi's guided strategy opened Sat Oct 3; trades follow Vamsi's instructions."
+  }
+ ]
+}

@@ -6,14 +6,21 @@ Books:
 * `h1b`: the original H-1B challenge (US stocks and ETFs, cash account). Ledger `ledger/`, config `config/`.
 * `free`: the Unrestricted book (stocks, ETFs, options, spot crypto; no visa limits; cash account, no margin
   at $1,000). Ledger, journal, config and watchlist in `books/free/`. Opened Tue Sep 29, 5:45 PM ET.
-Both end at the Mon Oct 5, 4:00 PM ET close with the same $2,000 target.
+* `guided`: Vamsi's guided strategy (same instruments and cash-account limits as `free`). Ledger, journal,
+  config and watchlist in `books/guided/`. Opened Sat Oct 3 with $1,000. Trades only on Vamsi's instructions:
+  he says where to look and how to trade. Journal each instruction (kind `plan`, his words summarized, with the
+  tickers) before the trade it produces, then the trade itself. Apply the stops and exits he sets; where he sets
+  none, the section 2 exit rules apply. No trade in this book on my own initiative.
+All three end at the Mon Oct 5, 4:00 PM ET close with the same $2,000 target, unless Vamsi extends `guided`.
 
-Dashboards (one page shows both books: a two-card scoreboard, a shared race chart, per-book details):
-* Public: https://h1b-1k-challenge.vercel.app. Data: `data/snapshot.json` and `data/snapshot_free.json` on the
+Dashboards (one page shows all three books: a three-card scoreboard, a shared race chart, per-book details):
+* Public: https://h1b-1k-challenge.vercel.app. Data: `data/snapshot.json`, `data/snapshot_free.json` and
+  `data/snapshot_guided.json` on the
   `market-data` branch, rebuilt by the market-data workflow on every dispatch and on every push to `main` that
   touches `ledger/`, `books/`, `config/` or `scripts/`.
-* Private: https://claude.ai/artifact/28rMDx9DZwFEfXBjxWKkcJ (db collections `snapshots` for h1b and
-  `snapshots_free` for free; one doc per update, doc id = UTC timestamp, the page shows the newest of each).
+* Private: https://claude.ai/artifact/28rMDx9DZwFEfXBjxWKkcJ (db collections `snapshots` for h1b,
+  `snapshots_free` for free and `snapshots_guided` for guided; one doc per update, doc id = UTC timestamp, the
+  page shows the newest of each).
 
 Page changes: edit `dashboard/index.html`, run `python3 scripts/build_site.py`, commit and push
 (Vercel serves the new `site/index.html` within ~10 min), and republish the artifact from the same path.
@@ -177,11 +184,12 @@ Every order gets a journal entry in its own book. Also journal decisions not to 
 ## 4. Publish
 
 ```bash
-python3 scripts/snapshot.py && python3 scripts/snapshot.py --book free
+python3 scripts/snapshot.py && python3 scripts/snapshot.py --book free && python3 scripts/snapshot.py --book guided
 ```
-Then one `ArtifactData batch` with two `set` writes: collection `snapshots`, doc id printed by the first
-command, `file_path: /home/user/Investment_Challenge/.cache/snapshot.json`; and collection `snapshots_free`,
-doc id printed by the second, `file_path: /home/user/Investment_Challenge/.cache/snapshot_free.json`.
+Then one `ArtifactData batch` with three `set` writes, each with the doc id its command printed: collection
+`snapshots` (`file_path: /home/user/Investment_Challenge/.cache/snapshot.json`), `snapshots_free`
+(`.cache/snapshot_free.json`) and `snapshots_guided` (`.cache/snapshot_guided.json`). Every routine run that
+reviews or snapshots the h1b and free books does the same for `guided` (`review.py --book guided --brief`).
 Update each book's watchlist `strategy` (the dashboard's game-plan line) and `focus` when the plan changes.
 
 ## Schedule
@@ -190,7 +198,8 @@ Update each book's watchlist `strategy` (the dashboard's game-plan line) and `fo
   16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
 * Crypto watch (free book): weeknights 11:10 PM and weekends every 4 hours.
 * Sunday 7:00 PM review for Monday.
-* Final day Mon Oct 5: liquidate everything in both books at the 15:40 run; the 16:20 run writes the final
+* Final day Mon Oct 5: liquidate everything in all three books at the 15:40 run (guided too, unless Vamsi has
+  extended it); the 16:20 run writes the final
   report for both books, then deletes the routines.
 
 Routine ids (for `delete_trigger` after the final report): see `config/schedule.json` `routine_ids`.

@@ -28,7 +28,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--news-hours", type=float, default=6)
     ap.add_argument("--tickers", default="")
-    ap.add_argument("--book", default=None, help="h1b (default) or free")
+    ap.add_argument("--book", default=None, help="h1b (default), free or guided")
     ap.add_argument("--brief", action="store_true", help="portfolio and positions only")
     a = ap.parse_args()
     book = pfm.current_book(a.book)

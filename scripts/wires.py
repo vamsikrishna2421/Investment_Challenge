@@ -239,7 +239,7 @@ def load_universe() -> dict:
 
 def held_and_watched() -> set[str]:
     out = set()
-    for book in ("h1b", "free"):
+    for book in pfm.BOOKS:
         try:
             lots = pfm.Portfolio(pfm.load_ledger(book), pfm.load_config(book)).lots
             out |= {pfm.parse_option(s)["underlying"] if pfm.asset_class(s) == "option" else s

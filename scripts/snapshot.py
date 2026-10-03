@@ -57,7 +57,7 @@ def main() -> int:
     ap.add_argument("--note", default="")
     ap.add_argument("--cache", default=str(CACHE), help="dir holding quotes.json and equity.jsonl")
     ap.add_argument("--out", default="", help="output path (default <cache>/snapshot[_free].json)")
-    ap.add_argument("--book", default=None, help="h1b (default) or free")
+    ap.add_argument("--book", default=None, help="h1b (default), free or guided")
     a = ap.parse_args()
     cache = Path(a.cache)
     book = pfm.current_book(a.book)
@@ -173,7 +173,7 @@ def main() -> int:
         ],
         "wash_sale_flags": c["wash_sale_flags"],
     }
-    compliance = checks_free if book == "free" else checks_h1b
+    compliance = checks_h1b if book == "h1b" else checks_free
 
     doc_id = now.strftime("%Y%m%dT%H%M%SZ")
     snap = {

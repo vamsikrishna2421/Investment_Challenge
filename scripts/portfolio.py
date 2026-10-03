@@ -91,8 +91,8 @@ def load_json(p) -> dict:
     return json.loads(Path(p).read_text())
 
 
-# Two paper books share the engine: "h1b" (the original H-1B challenge) and
-# "free" (no visa-driven limits: options and crypto allowed).
+# Three paper books share the engine: "h1b" (the original H-1B challenge), "free" (no visa-driven
+# limits: options and crypto allowed) and "guided" (same limits as "free"; trades on Vamsi's direction).
 BOOKS = {
     "h1b": {"config": "config/challenge.json", "ledger": "ledger/transactions.json",
             "journal": "ledger/journal.json", "watchlist": "config/watchlist.json",
@@ -102,6 +102,10 @@ BOOKS = {
              "journal": "books/free/journal.json", "watchlist": "books/free/watchlist.json",
              "portfolio": "portfolio_free.json", "equity": "equity_free.jsonl",
              "snapshot": "snapshot_free.json", "collection": "snapshots_free"},
+    "guided": {"config": "books/guided/challenge.json", "ledger": "books/guided/transactions.json",
+               "journal": "books/guided/journal.json", "watchlist": "books/guided/watchlist.json",
+               "portfolio": "portfolio_guided.json", "equity": "equity_guided.jsonl",
+               "snapshot": "snapshot_guided.json", "collection": "snapshots_guided"},
 }
 
 

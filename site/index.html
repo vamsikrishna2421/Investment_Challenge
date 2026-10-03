@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Two $1,000 paper portfolios racing to double by the Oct 5 close: an H-1B book (stocks and ETFs) and an Unrestricted book (options and crypto too). Live holdings, every trade and the research journal.">
+<meta name="description" content="Three $1,000 paper portfolios racing to double by the Oct 5 close: an H-1B book (stocks and ETFs), an Unrestricted book (options and crypto too) and Vamsi's guided strategy. Live holdings, every trade and the research journal.">
 <meta property="og:title" content="H1B $1K Challenge">
-<meta property="og:description" content="Two $1,000 paper portfolios racing to double by the Oct 5 close: an H-1B book (stocks and ETFs) and an Unrestricted book (options and crypto too). Live holdings, every trade and the research journal.">
+<meta property="og:description" content="Three $1,000 paper portfolios racing to double by the Oct 5 close: an H-1B book (stocks and ETFs), an Unrestricted book (options and crypto too) and Vamsi's guided strategy. Live holdings, every trade and the research journal.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0f1b21">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1b21'/%3E%3Cpath d='M6 23l7-7 5 4 8-10' fill='none' stroke='%23f0a414' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -15,9 +15,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: a brokerage top sheet for two books. A two-card scoreboard (H-1B vs Unrestricted) doubles as
-the tab control, one chart races both books against the S&P 500 and Nasdaq-100, and the selected
-book's statement, holdings, trade log, journal and rules sit below. */
+/* Layout: a brokerage top sheet for three books. A three-card scoreboard (H-1B, Unrestricted, Vamsi's
+guided) doubles as the tab control, one chart races the books against the S&P 500 and Nasdaq-100, and
+the selected book's statement, holdings, trade log, journal and rules sit below. */
 :root {
 --bg: #edf1f2;
 --surface: #ffffff;
@@ -37,6 +37,8 @@ book's statement, holdings, trade log, journal and rules sit below. */
 --s-h1b: #a86400;
 --s-free: #2a78d6;
 --s-free-wash: rgba(42, 120, 214, 0.14);
+--s-guided: #7a4fd0;
+--s-guided-wash: rgba(122, 79, 208, 0.14);
 --s-bench: #7d8b91;
 --grid: #e7edef;
 --axis: #c3ced2;
@@ -52,7 +54,7 @@ book's statement, holdings, trade log, journal and rules sit below. */
 --muted: #8697a0; --line: #24323a; --line-strong: #33444e; --accent: #f0a414; --accent-fill: #f0a414;
 --accent-wash: rgba(240, 164, 20, 0.14); --gain: #3ccb84; --loss: #ff6b5b;
 --gain-wash: rgba(60, 203, 132, 0.12); --loss-wash: rgba(255, 107, 91, 0.12);
---s-h1b: #c98500; --s-free: #3987e5; --s-free-wash: rgba(57, 135, 229, 0.16); --s-bench: #7f909a;
+--s-h1b: #c98500; --s-free: #3987e5; --s-free-wash: rgba(57, 135, 229, 0.16); --s-guided: #a283f0; --s-guided-wash: rgba(162, 131, 240, 0.16); --s-bench: #7f909a;
 --grid: #1d2930; --axis: #33444e; --future: rgba(230, 238, 240, 0.03); color-scheme: dark;
 }
 }
@@ -61,7 +63,7 @@ book's statement, holdings, trade log, journal and rules sit below. */
 --muted: #8697a0; --line: #24323a; --line-strong: #33444e; --accent: #f0a414; --accent-fill: #f0a414;
 --accent-wash: rgba(240, 164, 20, 0.14); --gain: #3ccb84; --loss: #ff6b5b;
 --gain-wash: rgba(60, 203, 132, 0.12); --loss-wash: rgba(255, 107, 91, 0.12);
---s-h1b: #c98500; --s-free: #3987e5; --s-free-wash: rgba(57, 135, 229, 0.16); --s-bench: #7f909a;
+--s-h1b: #c98500; --s-free: #3987e5; --s-free-wash: rgba(57, 135, 229, 0.16); --s-guided: #a283f0; --s-guided-wash: rgba(162, 131, 240, 0.16); --s-bench: #7f909a;
 --grid: #1d2930; --axis: #33444e; --future: rgba(230, 238, 240, 0.03); color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -92,12 +94,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .stat-mini .v { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 15px; font-weight: 500; }
 .stat-mini .s { font-size: 12px; color: var(--muted); }
 /* Scoreboard: one card per book, also the tab control for the details below */
-.scoreboard { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-@media (max-width: 760px) { .scoreboard { grid-template-columns: minmax(0, 1fr); } }
+.scoreboard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 900px) { .scoreboard { grid-template-columns: minmax(0, 1fr); } }
 .book-card { appearance: none; text-align: left; font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; cursor: pointer; display: flex; flex-direction: column; gap: 8px; min-width: 0; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
 .book-card:hover { border-color: var(--line-strong); }
 .book-card.h1b { --book: var(--s-h1b); }
 .book-card.free { --book: var(--s-free); }
+.book-card.guided { --book: var(--s-guided); }
 .book-card[aria-selected="true"] { border-color: var(--book); box-shadow: inset 0 0 0 1px var(--book); }
 .bc-head { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; flex-wrap: wrap; }
 .bc-title { display: inline-flex; align-items: center; gap: 8px; }
@@ -142,6 +145,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .track.free { background: var(--s-free-wash); }
 .track .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent-fill); border-radius: 7px; transition: width 0.6s ease; }
 .track.free .fill { background: var(--s-free); }
+.track.guided { background: var(--s-guided-wash); }
+.track.guided .fill { background: var(--s-guided); }
 .track .below { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--loss-wash); }
 .track-scale { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 .plan { font-size: 13px; color: var(--ink-2); background: var(--surface-2); border: 1px dashed var(--line-strong); border-radius: 8px; padding: 10px 12px; }
@@ -238,9 +243,9 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <div class="page">
 <header class="top">
 <div>
-<div class="eyebrow">Two paper portfolios · $1,000 each · same $2,000 target · same finish line</div>
+<div class="eyebrow">Three paper portfolios · $1,000 each · same $2,000 target · same finish line</div>
 <h1 class="wordmark">H1B <span class="k">$1K</span> Challenge</h1>
-<div class="window">H-1B book from Mon Sep 28, 8:35 PM ET · Unrestricted book from Tue Sep 29, 5:45 PM ET · both end at the Mon Oct 5, 4:00 PM ET close</div>
+<div class="window">H-1B book from Mon Sep 28, 8:35 PM ET · Unrestricted book from Tue Sep 29, 5:45 PM ET · Vamsi's guided strategy from Sat Oct 3 · all end at the Mon Oct 5, 4:00 PM ET close</div>
 </div>
 <div class="status">
 <span class="pill" id="mkt"><span class="dot"></span><span id="mkt-t">Market closed</span></span>
@@ -264,6 +269,13 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <div class="bc-track" aria-hidden="true"><div class="fill" id="tr-free"></div></div>
 <div class="bc-foot"><span id="gl-free">Goal $2,000</span><span id="bm-free">&nbsp;</span></div>
 </button>
+<button class="book-card guided" role="tab" id="tab-guided" aria-controls="book-panel" aria-selected="false" tabindex="-1" data-book="guided">
+<div class="bc-head"><span class="bc-title"><i aria-hidden="true"></i><span class="bc-name">Vamsi's guided</span></span><span class="bc-state" id="st-guided">View details</span></div>
+<div class="bc-rules">Stocks, ETFs, options &amp; crypto · every trade on Vamsi's call · opened Sat Oct 3</div>
+<div class="bc-figs"><span class="bc-eq" id="eq-guided">&mdash;</span><span class="bc-pl" id="pl-guided">&mdash;</span></div>
+<div class="bc-track" aria-hidden="true"><div class="fill" id="tr-guided"></div></div>
+<div class="bc-foot"><span id="gl-guided">Goal $2,000</span><span id="bm-guided">&nbsp;</span></div>
+</button>
 </section>
 <div class="lead" id="lead" hidden></div>
 <section class="card" aria-labelledby="h-chart">
@@ -271,11 +283,12 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <div class="legend" id="legend">
 <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-h1b)" stroke-width="2.5" stroke-linecap="round"/></svg>H-1B book</span>
 <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-free)" stroke-width="2.5" stroke-linecap="round"/></svg>Unrestricted book</span>
+<span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-guided)" stroke-width="2.5" stroke-linecap="round"/></svg>Vamsi's guided</span>
 <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-bench)" stroke-width="1.5"/></svg>S&amp;P 500 (SPY)</span>
 <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-bench)" stroke-width="1.5" stroke-dasharray="3 2.5"/></svg>Nasdaq-100 (QQQ)</span>
 </div>
 <div class="chart-wrap" id="chart-wrap">
-<svg id="chart" tabindex="0" role="img" aria-label="Return of the H-1B and Unrestricted books versus the S&amp;P 500 and Nasdaq-100 since the Monday Sep 28 close"></svg>
+<svg id="chart" tabindex="0" role="img" aria-label="Return of the H-1B, Unrestricted and Vamsi's guided books versus the S&amp;P 500 and Nasdaq-100 since each book opened"></svg>
 <div class="tooltip" id="tip" hidden></div>
 </div>
 <details class="data"><summary>Chart data by session</summary><div class="table-scroll"><table id="chart-table"></table></div></details>
@@ -345,7 +358,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 </div>
 <footer>
 <span>Prices: Yahoo Finance. Stocks and ETFs fill at the latest trade plus slippage (regular session 5/20/50 bps above $20, $5&ndash;$20 and under $5; extended hours 25/50/100 bps), $0 commission, SEC and FINRA TAF fees on sells, 4:00 AM&ndash;8:00 PM ET. Options (Unrestricted book only) fill at the ask to buy and the bid to sell from the live option chain, regular session only, $0.03 per contract in fees, and are valued at the bid/ask midpoint. Crypto (Unrestricted book only) trades 24/7 at the last price plus a 0.30% spread.</span>
-<span>Full ledgers and journals: <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/ledger/transactions.json" target="_blank" rel="noopener">H-1B ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/books/free/transactions.json" target="_blank" rel="noopener">Unrestricted ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge" target="_blank" rel="noopener">repository</a></span>
+<span>Full ledgers and journals: <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/ledger/transactions.json" target="_blank" rel="noopener">H-1B ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/books/free/transactions.json" target="_blank" rel="noopener">Unrestricted ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge/blob/main/books/guided/transactions.json" target="_blank" rel="noopener">Vamsi's guided ledger</a> · <a href="https://github.com/vamsikrishna2421/Investment_Challenge" target="_blank" rel="noopener">repository</a></span>
 <span>Paper trading with simulated money. Not investment advice.</span>
 </footer>
 </div>
@@ -371,9 +384,17 @@ desc: "No visa-driven limits: stocks, ETFs, listed options and spot crypto. Open
 cashHint: "T+1 stocks & options · crypto instant",
 rulesTitle: "Account rules",
 note: "No visa limits apply here. What remains applies to every US retail account holding $1,000: margin needs $2,000 of equity (FINRA), so there is no borrowing, no short selling and no naked option writing. Bearish views go through puts or inverse ETFs, and an option can lose at most the premium paid."
+},
+guided: {
+name: "Vamsi's guided", title: "Vamsi's guided strategy", collection: "snapshots_guided", file: "snapshot_guided.json", color: "var(--s-guided)",
+desc: "Every trade follows Vamsi's direction: he says where to look and how to trade, and each order is placed, logged and stopped out as he sets it. Stocks, ETFs, listed options and spot crypto. Opened Sat Oct 3 with $1,000.",
+cashHint: "T+1 stocks & options · crypto instant",
+rulesTitle: "Account rules",
+note: "Same account limits as the Unrestricted book: a $1,000 cash account has no margin (FINRA's $2,000 minimum), so there is no borrowing, no short selling and no naked option writing. Bearish views go through puts or inverse ETFs."
 }
 };
-var SNAPS = { h1b: null, free: null };
+var ORDER = ["h1b", "free", "guided"];
+var SNAPS = { h1b: null, free: null, guided: null };
 var CUR = "h1b";
 var chartState = null;
 function $(id) { return document.getElementById(id); }
@@ -431,9 +452,9 @@ if (m >= 960 && m < 1200) return "post";
 return "closed";
 }
 function newest() {
-var a = SNAPS.h1b, b = SNAPS.free;
-if (!a) return b; if (!b) return a;
-return Date.parse(a.as_of) >= Date.parse(b.as_of) ? a : b;
+var best = null;
+ORDER.forEach(function (b) { var s = SNAPS[b]; if (s && (!best || Date.parse(s.as_of) > Date.parse(best.as_of))) best = s; });
+return best;
 }
 function tick() {
 var now = new Date();
@@ -470,7 +491,7 @@ if (Math.abs(diff) < 0.005) return "Level with the S&P 500";
 return (diff > 0 ? "Ahead of" : "Behind") + " the S&P 500 by " + Math.abs(diff).toFixed(2) + " pts";
 }
 function renderScoreboard() {
-["h1b", "free"].forEach(function (b) {
+ORDER.forEach(function (b) {
 var s = SNAPS[b];
 var sel = b === CUR;
 var tab = $("tab-" + b);
@@ -490,13 +511,22 @@ $("gl-" + b).textContent = sm.equity >= sm.start_capital
 $("bm-" + b).textContent = benchText(s);
 });
 var lead = $("lead");
-if (SNAPS.h1b && SNAPS.free) {
-var a = SNAPS.h1b.summary.equity, f = SNAPS.free.summary.equity, d = f - a;
+function byEquity(x, y) { return SNAPS[y].summary.equity - SNAPS[x].summary.equity; }
+function traded(b) { return SNAPS[b].summary.counts && SNAPS[b].summary.counts.orders_total > 0; }
+var ranked = ORDER.filter(function (b) { return SNAPS[b]; }).sort(byEquity);
+var racing = ranked.filter(traded);
+if (ranked.length >= 2) {
 lead.textContent = "";
-var who = Math.abs(d) < 0.005 ? null : d > 0 ? "Unrestricted" : "H-1B";
-var strong = el("strong", null, who ? who + " leads by " + usd(Math.abs(d)) : "The books are level");
-lead.appendChild(strong);
-lead.appendChild(el("span", null, "Both finish at the Mon Oct 5, 4:00 PM ET close"));
+if (racing.length >= 2) {
+var d = SNAPS[racing[0]].summary.equity - SNAPS[racing[1]].summary.equity;
+lead.appendChild(el("strong", null, d < 0.005 ? BOOKS[racing[0]].name + " and " + BOOKS[racing[1]].name + " are level"
+: BOOKS[racing[0]].name + " leads " + BOOKS[racing[1]].name + " by " + usd(d)));
+}
+lead.appendChild(el("span", null, "Ranking: " + ranked.map(function (b) {
+return BOOKS[b].name + " " + usd(SNAPS[b].summary.equity) + (traded(b) ? "" : " (no trades yet)");
+}).join(" · ")));
+var ends = ranked.map(function (b) { return SNAPS[b].challenge && SNAPS[b].challenge.end_utc; });
+if (ends.every(function (e) { return e === ends[0]; })) lead.appendChild(el("span", null, "All finish at the Mon Oct 5, 4:00 PM ET close"));
 lead.hidden = false;
 } else lead.hidden = true;
 }
@@ -510,18 +540,18 @@ renderBook();
 if (focus) $("tab-" + b).focus();
 }
 (function wireTabs() {
-["h1b", "free"].forEach(function (b) {
+ORDER.forEach(function (b, i) {
 $("tab-" + b).addEventListener("click", function () { select(b); });
 $("tab-" + b).addEventListener("keydown", function (e) {
-if (e.key === "ArrowRight" || e.key === "ArrowLeft" || e.key === "ArrowDown" || e.key === "ArrowUp") {
-select(b === "h1b" ? "free" : "h1b", true); e.preventDefault();
-}
+var step = e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : e.key === "ArrowLeft" || e.key === "ArrowUp" ? -1 : 0;
+if (step) { select(ORDER[(i + step + ORDER.length) % ORDER.length], true); e.preventDefault(); }
 });
 });
 var h = (location.hash || "").replace("#", "");
 var saved = null;
 try { saved = localStorage.getItem("challenge-book"); } catch (e) { saved = null; }
-CUR = h === "unrestricted" || h === "free" ? "free" : h === "h1b" ? "h1b" : (saved === "free" ? "free" : "h1b");
+var fromHash = h === "unrestricted" ? "free" : h === "vamsi" ? "guided" : h;
+CUR = BOOKS[fromHash] ? fromHash : BOOKS[saved] ? saved : "h1b";
 })();
 /* ---------- Selected book ---------- */
 function renderStatement(s) {
@@ -537,7 +567,7 @@ var sub = $("profit-sub");
 sub.textContent = "";
 sub.appendChild(el("span", "delta-chip " + cls(sm.return_pct), arrow(sm.return_pct) + pct(sm.return_pct)));
 sub.appendChild(document.createTextNode(" return on $" + sm.deposits.toLocaleString("en-US")));
-$("goal-track").className = "track" + (CUR === "free" ? " free" : "");
+$("goal-track").className = "track" + (CUR === "h1b" ? "" : " " + CUR);
 $("goal-fill").style.width = Math.max(0, Math.min(100, sm.goal_progress_pct)) + "%";
 var below = sm.equity < sm.start_capital ? Math.min(100, (sm.start_capital - sm.equity) / sm.start_capital * 100) : 0;
 $("goal-below").style.width = below + "%";
@@ -562,7 +592,7 @@ var rows = [
 ["Settled cash", "Free to use with no settlement risk", usd(sm.settled_cash)],
 ["Unsettled proceeds", "From stock or option sales in the last business day", usd(sm.unsettled_cash)],
 ["Invested (market value)", null, usd(sm.invested_value)],
-["Fees paid", CUR === "free" ? "Option contract fees, SEC + FINRA TAF on stock sells" : "SEC + FINRA TAF on sells", usd(sm.fees_paid)],
+["Fees paid", CUR === "h1b" ? "SEC + FINRA TAF on sells" : "Option contract fees, SEC + FINRA TAF on stock sells", usd(sm.fees_paid)],
 ["Orders placed", "Today / total", sm.counts.orders_today + " / " + sm.counts.orders_total],
 ["Day trades", "Rolling 5 days, tracked (no cap in a cash account)", String(sm.counts.day_trades_5d)],
 ];
@@ -745,8 +775,8 @@ return best;
 }
 function drawChart() {
 var svg = $("chart");
-if (!SNAPS.h1b && !SNAPS.free) return;
-var H1 = series(SNAPS.h1b, true), FR = series(SNAPS.free, false);
+if (!SNAPS.h1b && !SNAPS.free && !SNAPS.guided) return;
+var H1 = series(SNAPS.h1b, true), FR = series(SNAPS.free, false), GD = series(SNAPS.guided, false);
 var W = svg.clientWidth || 600, H = svg.clientHeight || 300;
 var m = { l: 46, r: 16, t: 16, b: 26 };
 while (svg.firstChild) svg.removeChild(svg.firstChild);
@@ -755,6 +785,7 @@ var xMax = SESSIONS.length * SESSION_MIN;
 var vals = [0];
 H1.forEach(function (p) { [p.p, p.spy, p.qqq].forEach(function (v) { if (v !== null && v !== undefined && !isNaN(v)) vals.push(v); }); });
 FR.forEach(function (p) { vals.push(p.p); });
+GD.forEach(function (p) { vals.push(p.p); });
 var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
 var span = Math.max(hi - lo, 4), step = niceStep(span);
 lo = Math.floor((lo - span * 0.08) / step) * step; hi = Math.ceil((hi + span * 0.08) / step) * step;
@@ -791,13 +822,15 @@ path(H1, "qqq", "var(--s-bench)", 1.5, "4 3");
 path(H1, "spy", "var(--s-bench)", 1.5);
 var endH = path(H1, "p", "var(--s-h1b)", 2.5);
 var endF = path(FR, "p", "var(--s-free)", 2.5);
+var endG = path(GD, "p", "var(--s-guided)", 2.5);
 var labels = [];
 if (endH) labels.push({ p: endH, name: "H-1B", color: "var(--s-h1b)" });
 if (endF) labels.push({ p: endF, name: "Unrestricted", color: "var(--s-free)" });
-labels.forEach(function (L) { L.y = Y(L.p.p); });
-if (labels.length === 2 && Math.abs(labels[0].y - labels[1].y) < 16) {
-var up = labels[0].y <= labels[1].y ? labels[0] : labels[1], dn = up === labels[0] ? labels[1] : labels[0];
-var mid = (up.y + dn.y) / 2; up.ly = mid - 9; dn.ly = mid + 9;
+if (endG) labels.push({ p: endG, name: "Vamsi's guided", color: "var(--s-guided)" });
+labels.forEach(function (L) { L.y = Y(L.p.p); L.ly = L.y - 9; });
+labels.sort(function (a, b) { return a.ly - b.ly; });
+for (var li = 1; li < labels.length; li++) {
+if (labels[li].ly - labels[li - 1].ly < 16) labels[li].ly = labels[li - 1].ly + 16;
 }
 labels.forEach(function (L) {
 var ex = X(L.p.x), ey = L.y;
@@ -809,29 +842,30 @@ t.textContent = L.name + " " + pct(L.p.p); svg.appendChild(t);
 var cross = svgEl("line", { x1: 0, x2: 0, y1: m.t, y2: H - m.b, stroke: "var(--line-strong)", "stroke-width": 1, visibility: "hidden" });
 svg.appendChild(cross);
 var dots = {};
-[["h", "var(--s-h1b)"], ["f", "var(--s-free)"], ["spy", "var(--s-bench)"], ["qqq", "var(--s-bench)"]].forEach(function (sr) {
+[["h", "var(--s-h1b)"], ["f", "var(--s-free)"], ["g", "var(--s-guided)"], ["spy", "var(--s-bench)"], ["qqq", "var(--s-bench)"]].forEach(function (sr) {
 dots[sr[0]] = svgEl("circle", { r: 4, fill: sr[1], stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" }); svg.appendChild(dots[sr[0]]);
 });
-var anchor = H1.length >= FR.length ? H1 : FR;
-chartState = { H1: H1, FR: FR, anchor: anchor, X: X, Y: Y, W: W, H: H, cross: cross, dots: dots, idx: anchor.length - 1 };
-renderChartTable(H1, FR);
+var anchor = [H1, FR, GD].reduce(function (a, b) { return b.length > a.length ? b : a; });
+chartState = { H1: H1, FR: FR, GD: GD, anchor: anchor, X: X, Y: Y, W: W, H: H, cross: cross, dots: dots, idx: anchor.length - 1 };
+renderChartTable(H1, FR, GD);
 }
 function showTip(i) {
 var cs = chartState; if (!cs || !cs.anchor.length) return;
 i = Math.max(0, Math.min(cs.anchor.length - 1, i)); cs.idx = i;
 var a = cs.anchor[i], x = cs.X(a.x);
-var h = lastAtOrBefore(cs.H1, a.ms), f = lastAtOrBefore(cs.FR, a.ms);
+var h = lastAtOrBefore(cs.H1, a.ms), f = lastAtOrBefore(cs.FR, a.ms), g = lastAtOrBefore(cs.GD, a.ms);
 cs.cross.setAttribute("x1", x); cs.cross.setAttribute("x2", x); cs.cross.setAttribute("visibility", "visible");
 function dot(k, v) {
 var d = cs.dots[k];
 if (v === null || v === undefined || isNaN(v)) { d.setAttribute("visibility", "hidden"); return; }
 d.setAttribute("cx", x); d.setAttribute("cy", cs.Y(v)); d.setAttribute("visibility", "visible");
 }
-dot("h", h ? h.p : null); dot("f", f ? f.p : null); dot("spy", h ? h.spy : null); dot("qqq", h ? h.qqq : null);
+dot("h", h ? h.p : null); dot("f", f ? f.p : null); dot("g", g ? g.p : null); dot("spy", h ? h.spy : null); dot("qqq", h ? h.qqq : null);
 var tip = $("tip"); tip.textContent = "";
 tip.appendChild(el("div", "t", fmtShortET(a.t) + " ET"));
 [["H-1B book", "var(--s-h1b)", h ? pct(h.p) + " · " + usd(h.eq) : "—"],
 ["Unrestricted", "var(--s-free)", f ? pct(f.p) + " · " + usd(f.eq) : "not open yet"],
+["Vamsi's guided", "var(--s-guided)", g ? pct(g.p) + " · " + usd(g.eq) : "not open yet"],
 ["S&P 500", "var(--s-bench)", h ? pct(h.spy) : "—"],
 ["Nasdaq-100", "var(--s-bench)", h ? pct(h.qqq) : "—"]].forEach(function (r) {
 var row = el("div", "row"), l = el("span"), key = el("i"); key.style.background = r[1]; l.appendChild(key); l.appendChild(document.createTextNode(r[0]));
@@ -866,16 +900,17 @@ if (e.key === "ArrowRight") { showTip(chartState.idx + 1); e.preventDefault(); }
 });
 if (window.ResizeObserver) new ResizeObserver(function () { drawChart(); }).observe($("chart-wrap"));
 })();
-function renderChartTable(H1, FR) {
+function renderChartTable(H1, FR, GD) {
 var t = $("chart-table"); t.textContent = "";
-var hr = el("tr"); ["Session end", "H-1B book", "H-1B return", "Unrestricted", "Unrestricted return", "S&P 500", "Nasdaq-100"].forEach(function (h, i) { th(hr, h, i > 0); });
+var hr = el("tr"); ["Session end", "H-1B book", "H-1B return", "Unrestricted", "Unrestricted return", "Vamsi's guided", "Guided return", "S&P 500", "Nasdaq-100"].forEach(function (h, i) { th(hr, h, i > 0); });
 var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
 var tb = el("tbody"), byDay = {};
 H1.forEach(function (p) { var k = Math.min(SESSIONS.length - 1, Math.floor(Math.max(0, p.x - 0.001) / SESSION_MIN)); byDay[k] = p; });
 Object.keys(byDay).sort().forEach(function (k) {
-var p = byDay[k], f = lastAtOrBefore(FR, p.ms), tr = el("tr");
+var p = byDay[k], f = lastAtOrBefore(FR, p.ms), g = lastAtOrBefore(GD, p.ms), tr = el("tr");
 td(tr, fmtShortET(p.t), "num"); td(tr, usd(p.eq), "n"); td(tr, pct(p.p), "n " + cls(p.p));
 td(tr, f ? usd(f.eq) : "—", "n"); td(tr, f ? pct(f.p) : "—", "n " + (f ? cls(f.p) : ""));
+td(tr, g ? usd(g.eq) : "—", "n"); td(tr, g ? pct(g.p) : "—", "n " + (g ? cls(g.p) : ""));
 td(tr, pct(p.spy), "n"); td(tr, pct(p.qqq), "n");
 tb.appendChild(tr);
 });
@@ -900,10 +935,10 @@ setInterval(function () { drawChart(); }, 60000);
 GitHub Actions job rebuilds in the public repo. */
 function pollPublic() {
 var stamp = Math.floor(Date.now() / 60000);
-["h1b", "free"].forEach(function (b) {
+ORDER.forEach(function (b) {
 fetch(DATA_BASE + BOOKS[b].file + "?t=" + stamp, { cache: "no-store" })
 .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-.then(function (s) { accept(b, s); if (SNAPS.h1b || SNAPS.free) setBanner(newest() && newest().note || ""); })
+.then(function (s) { accept(b, s); if (newest()) setBanner(newest().note || ""); })
 .catch(function (e) { if (!SNAPS[b] && b === "h1b") setBanner("Couldn't load portfolio data (" + e.message + "). Retrying every minute."); });
 });
 }
@@ -919,7 +954,7 @@ if (!window.claude || !window.claude.use) { startPublic(); return; }
 try { db = await window.claude.use("db"); } catch (e) { db = null; }
 if (!db) { startPublic(); return; }
 setBanner("Loading the latest portfolio snapshots…");
-["h1b", "free"].forEach(function (b) {
+ORDER.forEach(function (b) {
 db.collection(BOOKS[b].collection).orderBy("id", "desc").limit(1).onSnapshot(function (q) {
 var d = q.docs[0];
 if (d && d.exists) accept(b, d.data());

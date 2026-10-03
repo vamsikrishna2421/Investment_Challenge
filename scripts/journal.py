@@ -26,7 +26,7 @@ def main() -> int:
     b.add_argument("--body")
     b.add_argument("--body-file")
     ap.add_argument("--tickers", default="")
-    ap.add_argument("--book", default=None, help="h1b (default) or free")
+    ap.add_argument("--book", default=None, help="h1b (default), free or guided")
     a = ap.parse_args()
     PATH = pfm.book_path("journal", a.book)
     data = json.loads(PATH.read_text()) if PATH.exists() else {"entries": []}

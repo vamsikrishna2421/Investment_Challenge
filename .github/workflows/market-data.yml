@@ -62,10 +62,11 @@ jobs:
           EXTRA: ${{ inputs.tickers || '' }}
         run: python main/scripts/marketdata.py --root main --out md --mode "$MODE" --extra "$EXTRA"
 
-      - name: Build dashboard snapshots (both books)
+      - name: Build dashboard snapshots (all books)
         run: |
           python main/scripts/snapshot.py --cache md/data --out md/data/snapshot.json
           python main/scripts/snapshot.py --book free --cache md/data --out md/data/snapshot_free.json
+          python main/scripts/snapshot.py --book guided --cache md/data --out md/data/snapshot_guided.json
 
       - name: Commit data
         working-directory: md

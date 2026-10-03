@@ -199,7 +199,6 @@ Update each book's watchlist `strategy` (the dashboard's game-plan line) and `fo
 * Crypto watch (free book): weeknights 11:10 PM and weekends every 4 hours.
 * Sunday 7:00 PM review for Monday.
 * Final day Mon Oct 5: liquidate everything in all three books at the 15:40 run (guided too, unless Vamsi has
-  extended it); the 16:20 run writes the final
-  report for both books, then deletes the routines.
+  extended it); the 16:20 run writes the final report for every book, then deletes the routines.
 
 Routine ids (for `delete_trigger` after the final report): see `config/schedule.json` `routine_ids`.

@@ -65,6 +65,14 @@
         "CRSP",
         "AXTI"
       ]
+    },
+    {
+      "id": "J0005",
+      "ts": "2026-10-03T06:10:08Z",
+      "kind": "research",
+      "title": "Backtest: buying the radar's support has no measurable edge (61 stocks, 5 years)",
+      "body": "Question from Vamsi: can I read levels, candles, trends and volume well enough? Test: scripts/sr_backtest.py rebuilds the radar's levels each day from the data available at that close (no look-ahead) for all 61 radar candidates over 5 years, then trades the next session. Costs are included, and a stop and target hit on the same day count as the stop.\nLive rule (buy the touch of the buy zone; sell at the sell zone, the stop, or after 10 sessions): 2,560 trades, average +0.02R [-0.05, +0.10], +0.13% a trade, 34% winners, stop hit 63%. Random entries on the same stocks with the same stop and target distances: +0.01R. The level adds nothing measurable.\nOne-session version (sold at that day's close, the Monday-only case): 5,127 trades, -0.05R [-0.07, -0.03], -0.34% a trade.\nRejection candle at the zone, buy the next open: 994 trades, -0.02R; more winners (48%), smaller wins.\nFilters (above the 200-day, rising 50-day, support tested 3+ times, quiet or heavy volume on the touch): no subset's interval excludes zero. Best hint: heavy volume on the touch (1.5x the 20-day average), +0.11R (n=387) and +0.20R with the candle (n=94), both inside noise.\nBy year (touch, 10 sessions): 2022 -0.28R, 2023 +0.17R, 2024 +0.25R, 2025 +0.03R, 2026 -0.10R. The result follows the market, not the levels.\nLimits: one way of drawing levels (daily swing points); today's list of popular volatile stocks (survivorship); daily bars can't see intraday reclaims. Full output: research/backtests/sr-2026-10-03.md.",
+      "tickers": []
     }
   ]
 }

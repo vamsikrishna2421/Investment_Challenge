@@ -199,6 +199,11 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   or STOP TRADED: sell at that run), or at the 15:40 liquidation on the final day. These replace the section 2
   stock stop and trim for radar trades.
 * Every radar name is US-listed common stock; `trade.py` still blocks OFAC NS-CMIC names (`config/blocklist.json`).
+* Backtest (`python3 scripts/sr_backtest.py --save`; `research/backtests/sr-2026-10-03.md`): over 5 years on the 61
+  candidates, buying the touch averaged +0.02R a trade (random entries with the same stop and target: +0.01R) and
+  -0.34% a trade when sold the same day; candle, trend and volume filters added nothing measurable, and results
+  followed the market year by year. The radar sets where the stop and target sit; it is not a forecast. Any new
+  level rule gets the same test (beat random entries with the same stop and target, after costs) before it trades.
 
 ## 3. Execute and log
 

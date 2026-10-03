@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:59:34Z",
+ "generated_at": "2026-10-03T06:03:44Z",
  "session": "closed",
  "quotes": {
   "APLD": {
@@ -40,6 +40,25 @@
    "change_pct": 2.472,
    "ext_change_pct": 0.034
   },
+  "AXTI": {
+   "price": 85.87,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 81.81,
+   "day_high": 87.55,
+   "day_low": 80.71,
+   "volume": 7315566,
+   "name": "AXT Inc",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 85.88,
+   "ext_time": "2026-10-02T23:59:56Z",
+   "ext_volume": 729,
+   "ext_high": 86.6,
+   "ext_low": 85.43,
+   "source": "yahoo-v8-chart",
+   "change_pct": 4.963,
+   "ext_change_pct": 0.012
+  },
   "BMNR": {
    "price": 26.27,
    "time": "2026-10-02T20:00:02Z",
@@ -60,12 +79,12 @@
    "ext_change_pct": -0.04
   },
   "BTC-USD": {
-   "price": 84614.75,
-   "time": "2026-10-03T05:59:27Z",
+   "price": 84648.57,
+   "time": "2026-10-03T06:03:38Z",
    "prev_close": 84506.336,
    "day_high": 84713.72,
    "day_low": 84434.45,
-   "volume": 38937440256,
+   "volume": 38874996736,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -75,7 +94,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.128
+   "change_pct": 0.168
   },
   "BTDR": {
    "price": 11.02,
@@ -133,6 +152,63 @@
    "source": "yahoo-v8-chart",
    "change_pct": 0.612,
    "ext_change_pct": 0.122
+  },
+  "CRSP": {
+   "price": 55.43,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 55.44,
+   "day_high": 57.58,
+   "day_low": 54.1,
+   "volume": 1126027,
+   "name": "CRISPR Therapeutics AG",
+   "exchange": "NasdaqGM",
+   "instrument": "EQUITY",
+   "ext_price": 55.43,
+   "ext_time": "2026-10-02T23:50:14Z",
+   "ext_volume": 0,
+   "ext_high": 55.59,
+   "ext_low": 54.43,
+   "source": "yahoo-v8-chart",
+   "change_pct": -0.018,
+   "ext_change_pct": 0.0
+  },
+  "DELL": {
+   "price": 562.52,
+   "time": "2026-10-02T20:03:24Z",
+   "prev_close": 541.74,
+   "day_high": 568.0,
+   "day_low": 548.04,
+   "volume": 5366986,
+   "name": "Dell Technologies Inc.",
+   "exchange": "NYSE",
+   "instrument": "EQUITY",
+   "ext_price": 562.99,
+   "ext_time": "2026-10-02T23:59:37Z",
+   "ext_volume": 5294109,
+   "ext_high": 563.68,
+   "ext_low": 557.44,
+   "source": "yahoo-v8-chart",
+   "change_pct": 3.836,
+   "ext_change_pct": 0.084
+  },
+  "DUOL": {
+   "price": 144.27,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 146.57,
+   "day_high": 147.57,
+   "day_low": 143.48,
+   "volume": 776441,
+   "name": "Duolingo, Inc.",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 143.94,
+   "ext_time": "2026-10-02T23:53:59Z",
+   "ext_volume": 0,
+   "ext_high": 144.4999,
+   "ext_low": 141.3176,
+   "source": "yahoo-v8-chart",
+   "change_pct": -1.569,
+   "ext_change_pct": -0.229
   },
   "GLXY": {
    "price": 23.06,
@@ -362,6 +438,25 @@
    "change_pct": 1.685,
    "ext_change_pct": 0.689
   },
+  "POET": {
+   "price": 7.79,
+   "time": "2026-10-02T20:00:00Z",
+   "prev_close": 7.64,
+   "day_high": 8.2,
+   "day_low": 7.66,
+   "volume": 8397490,
+   "name": "POET Technologies Inc.",
+   "exchange": "NasdaqCM",
+   "instrument": "EQUITY",
+   "ext_price": 7.86,
+   "ext_time": "2026-10-02T23:59:58Z",
+   "ext_volume": 276686,
+   "ext_high": 7.9,
+   "ext_low": 7.75,
+   "source": "yahoo-v8-chart",
+   "change_pct": 1.963,
+   "ext_change_pct": 0.899
+  },
   "QQQ": {
    "price": 749.58,
    "time": "2026-10-02T20:00:00Z",
@@ -476,6 +571,44 @@
    "change_pct": 4.222,
    "ext_change_pct": -0.246
   },
+  "SMTC": {
+   "price": 194.88,
+   "time": "2026-10-02T20:00:00Z",
+   "prev_close": 186.59,
+   "day_high": 201.97,
+   "day_low": 191.07,
+   "volume": 4908624,
+   "name": "Semtech Corporation",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 195.31,
+   "ext_time": "2026-10-02T23:53:57Z",
+   "ext_volume": 331119,
+   "ext_high": 199.01,
+   "ext_low": 194.33,
+   "source": "yahoo-v8-chart",
+   "change_pct": 4.443,
+   "ext_change_pct": 0.221
+  },
+  "SNAP": {
+   "price": 5.58,
+   "time": "2026-10-02T20:03:19Z",
+   "prev_close": 5.65,
+   "day_high": 5.79,
+   "day_low": 5.47,
+   "volume": 29539030,
+   "name": "Snap Inc.",
+   "exchange": "NYSE",
+   "instrument": "EQUITY",
+   "ext_price": 5.58,
+   "ext_time": "2026-10-02T23:57:05Z",
+   "ext_volume": 29079873,
+   "ext_high": 5.65,
+   "ext_low": 5.57,
+   "source": "yahoo-v8-chart",
+   "change_pct": -1.239,
+   "ext_change_pct": 0.0
+  },
   "SPY": {
    "price": 769.64,
    "time": "2026-10-02T20:00:00Z",
@@ -554,5 +687,5 @@
   }
  },
  "errors": {},
- "fetch_seconds": 0.6
+ "fetch_seconds": 0.7
 }

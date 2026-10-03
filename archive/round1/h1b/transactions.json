@@ -1,0 +1,221 @@
+{
+  "transactions": [
+    {
+      "id": "T0000",
+      "type": "DEPOSIT",
+      "ts": "2026-09-29T00:35:00Z",
+      "amount": 1000.0,
+      "net_cash": 1000.0,
+      "settle_date": "2026-09-28",
+      "note": "Paper capital funded. Challenge accepted Mon Sep 28, 8:35 PM ET."
+    },
+    {
+      "id": "T0001",
+      "type": "BUY",
+      "ts": "2026-09-29T13:42:25Z",
+      "ticker": "IONX",
+      "name": "Defiance Daily Target 2X Long I",
+      "qty": 10.3718,
+      "price": 28.9245,
+      "quote_price": 28.91,
+      "quote_time": "2026-09-29T13:41:28Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 300.0,
+      "fees": 0.0,
+      "net_cash": -300.0,
+      "settle_date": "2026-09-30",
+      "rationale": "Quantum momentum: IonQ holding above Monday's close after BofA's Buy initiation and a raised 2026 revenue guide. 2x exposure via IONX.",
+      "tags": [
+        "momentum",
+        "quantum"
+      ],
+      "plan": {
+        "stop": 24.6,
+        "target": 36.15
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 57,
+        "cash_account": true,
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 30.0
+      }
+    },
+    {
+      "id": "T0002",
+      "type": "BUY",
+      "ts": "2026-09-29T13:42:25Z",
+      "ticker": "MUU",
+      "name": "Direxion Daily MU Bull 2X ETF",
+      "qty": 8.2466,
+      "price": 36.3782,
+      "quote_price": 36.36,
+      "quote_time": "2026-09-29T13:41:48Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 300.0,
+      "fees": 0.0,
+      "net_cash": -300.0,
+      "settle_date": "2026-09-30",
+      "rationale": "Run-up into Micron's Wednesday report (guide: $50B revenue, $31 EPS); chips bouncing, SOXL +3.6%. 2x Micron via MUU; hold-through decision Wednesday 3:55 PM.",
+      "tags": [
+        "catalyst",
+        "earnings",
+        "semis"
+      ],
+      "plan": {
+        "stop": 30.9,
+        "target": 45.45
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 37,
+        "cash_account": true,
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 30.0
+      }
+    },
+    {
+      "id": "T0003",
+      "type": "BUY",
+      "ts": "2026-09-29T15:05:27Z",
+      "ticker": "IOVA",
+      "name": "Iovance Biotherapeutics, Inc.",
+      "qty": 17.7833,
+      "price": 14.0581,
+      "quote_price": 14.03,
+      "quote_time": "2026-09-29T15:04:41Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 20.0,
+      "gross": 250.0,
+      "fees": 0.0,
+      "net_cash": -250.0,
+      "settle_date": "2026-09-30",
+      "rationale": "News trade: Iovance raised 2026 revenue guidance to $410-420M; stock at a 2-year high on 27M shares by 11 AM and holding its gains since the open.",
+      "tags": [
+        "news",
+        "biotech",
+        "guidance"
+      ],
+      "plan": {
+        "stop": 12.35,
+        "target": 17.5
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 46,
+        "cash_account": true,
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 25.1
+      }
+    },
+    {
+      "id": "T0004",
+      "type": "SELL",
+      "ts": "2026-09-29T19:57:12Z",
+      "ticker": "IONX",
+      "name": "Defiance Daily Target 2X Long I",
+      "qty": 10.3718,
+      "price": 27.2564,
+      "quote_price": 27.27,
+      "quote_time": "2026-09-29T19:56:32Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 282.7,
+      "fees": 0.02,
+      "net_cash": 282.68,
+      "settle_date": "2026-09-30",
+      "rationale": "Overnight decision at 3:56 PM: IonQ closed out the day weak ($43.75, -1.9%), below Monday's close, so the entry thesis (IonQ holding above Monday's close after BofA's initiation) failed. No near-term catalyst; a 2x ETF on a fading momentum name is poor overnight risk. Cutting at -5.7% to free capital for Micron's Wednesday report.",
+      "tags": [
+        "exit",
+        "thesis-broken"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 40,
+        "cash_account": true,
+        "day_trade": true,
+        "good_faith_ok": true
+      }
+    },
+    {
+      "id": "T0005",
+      "type": "BUY",
+      "ts": "2026-10-01T14:26:43Z",
+      "ticker": "UTHR",
+      "label": "UTHR",
+      "asset": "stock",
+      "name": "United Therapeutics Corporation",
+      "qty": 0.5227,
+      "multiplier": 1,
+      "price": 573.8968,
+      "quote_price": 573.61,
+      "quote_time": "2026-10-01T14:25:37Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 299.98,
+      "fees": 0.0,
+      "net_cash": -299.98,
+      "settle_date": "2026-10-02",
+      "rationale": "J0027 trigger met at 10:25: $574.18 (bid $573.36 / ask $574.98), above $541.89 at 9:55 ($573.93) and at 10:25, and at least $548. Day low $556.76, never below $535. LQDA -15%, not up 20%. Thesis: the Delaware ruling (claims 1 and 14 of the '327 patent valid and infringed), plus UTHR's plan to seek withdrawal of Yutrepia's approval under 271(e)(4)(A). Stop $527 per plan. The dossier's half-sale at $557 is below this entry, so it is replaced by a $630 target (about +10%) plus an exit on a Friday close below $541.89.",
+      "tags": [
+        "catalyst",
+        "day-two",
+        "legal"
+      ],
+      "plan": {
+        "stop": 527.0,
+        "target": 630.0
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 66,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 30.7
+      }
+    },
+    {
+      "id": "T0006",
+      "type": "SELL",
+      "ts": "2026-10-02T19:56:48Z",
+      "ticker": "UTHR",
+      "label": "UTHR",
+      "asset": "stock",
+      "name": "United Therapeutics Corporation",
+      "qty": 0.5227,
+      "multiplier": 1,
+      "price": 542.1588,
+      "quote_price": 542.43,
+      "quote_time": "2026-10-02T19:56:26Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 283.39,
+      "fees": 0.02,
+      "net_cash": 283.37,
+      "settle_date": "2026-10-05",
+      "rationale": "J0032 rule: sell everything on a Friday close below $541.89 (Sep 30 ruling-day close), decided at the 3:55 PM run (J0036). UTHR $541.72 at 3:55 PM, below the line: the ruling gain has been given back fully (high $577.02 today, -5.2% on the day). No new company news; the Delaware final judgment and remedies are due about Oct 7, after the challenge ends.",
+      "tags": [
+        "plan-exit"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 22,
+        "cash_account": true,
+        "asset": "stock",
+        "day_trade": false,
+        "good_faith_ok": true
+      }
+    }
+  ]
+}

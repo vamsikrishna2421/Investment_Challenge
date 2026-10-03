@@ -2,7 +2,7 @@
  "entries": [
   {
    "id": "J0001",
-   "ts": "2026-10-03T05:28:20Z",
+   "ts": "2026-10-03T05:33:02Z",
    "kind": "plan",
    "title": "Opened: $1,000, trades only on Vamsi's direction",
    "body": "Start: $1,000 paper cash, Sat Oct 3. Default finish: the Mon Oct 5, 4:00 PM ET close, the same line as the other two books; Vamsi can extend it.\nInstruments: stocks, ETFs (leveraged and inverse included), listed options (regular session; buy at the ask, sell at the bid) and spot crypto (24/7). Cash account: no margin, no short selling, no naked option writing.\nProcess: Vamsi says where to look and how to trade. Each instruction is journaled with the trade it produced, and the stops and exits he sets are enforced at every routine run.",

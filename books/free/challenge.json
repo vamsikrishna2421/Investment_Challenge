@@ -4,8 +4,8 @@
   "short_name": "Unrestricted",
   "start_capital": 1000.0,
   "currency": "USD",
-  "accepted_utc": "2026-09-29T21:45:00Z",
-  "trading_start_utc": "2026-09-29T21:45:00Z",
+  "accepted_utc": "2026-10-03T05:33:02Z",
+  "trading_start_utc": "2026-10-03T05:33:02Z",
   "end_utc": "2026-10-05T20:00:00Z",
   "goal_multiple": 2.0,
   "account": {
@@ -100,9 +100,10 @@
     "IWM"
   ],
   "benchmark_base": {
-    "SPY": 764.2,
-    "QQQ": 737.93,
-    "IWM": 279.01
+    "SPY": 769.64,
+    "QQQ": 749.58,
+    "IWM": 281.52
   },
-  "benchmark_base_note": "Regular-session closes on Tue Sep 29, 2026 (book opened after that close)"
+  "benchmark_base_note": "Regular-session closes on Fri Oct 2, 2026 (books restarted Sat Oct 3)",
+  "round": 2
 }

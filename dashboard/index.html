@@ -247,7 +247,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     <div>
       <div class="eyebrow">Three paper portfolios · $1,000 each · same $2,000 target · same finish line</div>
       <h1 class="wordmark">H1B <span class="k">$1K</span> Challenge</h1>
-      <div class="window">H-1B book from Mon Sep 28, 8:35 PM ET · Unrestricted book from Tue Sep 29, 5:45 PM ET · Vamsi's guided strategy from Sat Oct 3 · all end at the Mon Oct 5, 4:00 PM ET close</div>
+      <div class="window">All three books restarted Sat Oct 3 with $1,000 each · strategy set with Vamsi · all end at the Mon Oct 5, 4:00 PM ET close · round 1 (Sep 28 &ndash; Oct 2) archived</div>
     </div>
     <div class="status">
       <span class="pill" id="mkt"><span class="dot"></span><span id="mkt-t">Market closed</span></span>
@@ -268,14 +268,14 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     </button>
     <button class="book-card free" role="tab" id="tab-free" aria-controls="book-panel" aria-selected="false" tabindex="-1" data-book="free">
       <div class="bc-head"><span class="bc-title"><i aria-hidden="true"></i><span class="bc-name">Unrestricted</span></span><span class="bc-state" id="st-free">View details</span></div>
-      <div class="bc-rules">Stocks, ETFs, options &amp; crypto · no visa limits · a day less to reach $2,000</div>
+      <div class="bc-rules">Stocks, ETFs, options &amp; crypto · no visa limits</div>
       <div class="bc-figs"><span class="bc-eq" id="eq-free">&mdash;</span><span class="bc-pl" id="pl-free">&mdash;</span></div>
       <div class="bc-track" aria-hidden="true"><div class="fill" id="tr-free"></div></div>
       <div class="bc-foot"><span id="gl-free">Goal $2,000</span><span id="bm-free">&nbsp;</span></div>
     </button>
     <button class="book-card guided" role="tab" id="tab-guided" aria-controls="book-panel" aria-selected="false" tabindex="-1" data-book="guided">
       <div class="bc-head"><span class="bc-title"><i aria-hidden="true"></i><span class="bc-name">Vamsi's guided</span></span><span class="bc-state" id="st-guided">View details</span></div>
-      <div class="bc-rules">Stocks, ETFs, options &amp; crypto · every trade on Vamsi's call · opened Sat Oct 3</div>
+      <div class="bc-rules">Stocks, ETFs, options &amp; crypto · every trade on Vamsi's call</div>
       <div class="bc-figs"><span class="bc-eq" id="eq-guided">&mdash;</span><span class="bc-pl" id="pl-guided">&mdash;</span></div>
       <div class="bc-track" aria-hidden="true"><div class="fill" id="tr-guided"></div></div>
       <div class="bc-foot"><span id="gl-guided">Goal $2,000</span><span id="bm-guided">&nbsp;</span></div>
@@ -284,7 +284,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   <div class="lead" id="lead" hidden></div>
 
   <section class="card" aria-labelledby="h-chart">
-    <div class="card-head"><h2 id="h-chart">Return since each book opened</h2><span class="hint">Trading hours only · Sep 29 &ndash; Oct 5 · crypto moves overnight show at the next open</span></div>
+    <div class="card-head"><h2 id="h-chart">Return since each book opened</h2><span class="hint">Trading hours only · Mon Oct 5 · weekend crypto moves show at the open</span></div>
     <div class="legend" id="legend">
       <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-h1b)" stroke-width="2.5" stroke-linecap="round"/></svg>H-1B book</span>
       <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-free)" stroke-width="2.5" stroke-linecap="round"/></svg>Unrestricted book</span>
@@ -381,21 +381,21 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 (function () {
   "use strict";
   var END_UTC = Date.parse("2026-10-05T20:00:00Z");
-  var SESSIONS = ["2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-05"];
-  var DAY_NAMES = ["Tue 29", "Wed 30", "Thu 1", "Fri 2", "Mon 5"];
+  var SESSIONS = ["2026-10-05"];
+  var DAY_NAMES = ["Mon Oct 5"];
   var SESSION_MIN = 390;
   var DATA_BASE = "https://raw.githubusercontent.com/vamsikrishna2421/Investment_Challenge/market-data/data/";
   var BOOKS = {
     h1b: {
       name: "H-1B", title: "H-1B book", collection: "snapshots", file: "snapshot.json", color: "var(--s-h1b)",
-      desc: "US stocks and ETFs in an individual cash account, run under the rules for an Indian citizen on an H-1B visa. Opened Mon Sep 28, 8:35 PM ET.",
+      desc: "US stocks and ETFs in an individual cash account, run under the rules for an Indian citizen on an H-1B visa. Restarted Sat Oct 3 with $1,000; round 1 (Sep 28 – Oct 2) is archived.",
       cashHint: "T+1 settlement",
       rulesTitle: "H-1B & cash-account guardrails",
       note: "An H-1B holder may invest in US securities, and no law caps how often you trade your own account, including pre-market and after-hours sessions. What the visa bars is unauthorized employment, so the lines not to cross are trading for other people, being paid for it, or running it as a business (for example electing trader tax status). Gains are short-term capital gains, taxed as ordinary income for a US tax resident; as an NRI for Indian tax purposes, US trading gains aren't taxed in India."
     },
     free: {
       name: "Unrestricted", title: "Unrestricted book", collection: "snapshots_free", file: "snapshot_free.json", color: "var(--s-free)",
-      desc: "No visa-driven limits: stocks, ETFs, listed options and spot crypto. Opened Tue Sep 29, 5:45 PM ET, a trading day after the H-1B book, with the same $2,000 target and finish line.",
+      desc: "No visa-driven limits: stocks, ETFs, listed options and spot crypto. Restarted Sat Oct 3 with $1,000; round 1 (Sep 29 – Oct 2) is archived.",
       cashHint: "T+1 stocks & options · crypto instant",
       rulesTitle: "Account rules",
       note: "No visa limits apply here. What remains applies to every US retail account holding $1,000: margin needs $2,000 of equity (FINRA), so there is no borrowing, no short selling and no naked option writing. Bearish views go through puts or inverse ETFs, and an option can lose at most the premium paid."

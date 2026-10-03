@@ -2,7 +2,8 @@
 
 Every scheduled run (and any manual check) follows these steps for BOTH books. Times are US Eastern.
 
-Books:
+Books (round 2: all three restarted Sat Oct 3 at $1,000 on Vamsi's instruction; round 1, Sep 28 - Oct 2, is
+archived in `archive/round1/` with its own README):
 * `h1b`: the original H-1B challenge (US stocks and ETFs, cash account). Ledger `ledger/`, config `config/`.
 * `free`: the Unrestricted book (stocks, ETFs, options, spot crypto; no visa limits; cash account, no margin
   at $1,000). Ledger, journal, config and watchlist in `books/free/`. Opened Tue Sep 29, 5:45 PM ET.

@@ -1,15 +1,15 @@
 {
-  "name": "Vamsi's guided strategy",
-  "book": "guided",
-  "short_name": "Vamsi's guided",
+  "name": "Unrestricted $1K Challenge",
+  "book": "free",
+  "short_name": "Unrestricted",
   "start_capital": 1000.0,
   "currency": "USD",
-  "accepted_utc": "2026-10-03T05:33:02Z",
-  "trading_start_utc": "2026-10-03T05:33:02Z",
+  "accepted_utc": "2026-09-29T21:45:00Z",
+  "trading_start_utc": "2026-09-29T21:45:00Z",
   "end_utc": "2026-10-05T20:00:00Z",
   "goal_multiple": 2.0,
   "account": {
-    "holder_profile": "US retail investor; every trade follows Vamsi's direction",
+    "holder_profile": "US retail investor with no visa limits",
     "type": "Individual cash account with options and crypto (no margin: FINRA requires $2,000 of equity)",
     "broker_model": "US zero-commission broker with stocks, options and crypto in one account",
     "margin": false,
@@ -92,7 +92,7 @@
     "blocked_lists": [
       "OFAC NS-CMIC (EO 14032) Chinese military-industrial complex securities"
     ],
-    "note": "Trades only on Vamsi's instructions: he says where to look and how to trade; Claude executes through trade.py, logs every order and applies the stops and exits he sets. Account limits are the same as the Unrestricted book: cash only, no margin (FINRA's $2,000 minimum), so no short selling or naked option writing."
+    "note": "No visa-driven limits. What remains applies to every US retail account at $1,000: no margin (FINRA's $2,000 minimum), so no short selling or naked option writing; bearish bets go through puts or inverse ETFs. Order caps are a runaway-loop fuse only."
   },
   "benchmarks": [
     "SPY",
@@ -100,10 +100,9 @@
     "IWM"
   ],
   "benchmark_base": {
-    "SPY": 769.64,
-    "QQQ": 749.58,
-    "IWM": 281.52
+    "SPY": 764.2,
+    "QQQ": 737.93,
+    "IWM": 279.01
   },
-  "benchmark_base_note": "Regular-session closes on Fri Oct 2, 2026 (books restarted Sat Oct 3)",
-  "round": 2
+  "benchmark_base_note": "Regular-session closes on Tue Sep 29, 2026 (book opened after that close)"
 }

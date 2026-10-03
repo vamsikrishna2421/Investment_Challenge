@@ -1,9 +1,13 @@
 {
-  "strategy": "Fresh start Sat Oct 3: $1,000 cash, no positions. Trades start once Vamsi's strategy is in place.",
+  "strategy": "Mon Oct 5, final session: hold MUU (stop $30.90) and IOVA (stop $12.35; exit on any offering); new money only on a primary-source catalyst before noon (none planned); no buys after 3:30 PM; sell everything at the 3:40 PM run. Review J0038.",
   "focus": [
+    "MUU",
+    "MU",
+    "IOVA",
     "SPY",
     "QQQ",
-    "IWM"
+    "SOXL",
+    "NVDA"
   ],
   "tickers": [
     "NVDA",

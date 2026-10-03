@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:34:34Z",
+ "generated_at": "2026-10-03T05:47:33Z",
  "session": "closed",
  "quotes": {
   "AFRM": {
@@ -77,6 +77,25 @@
    "source": "yahoo-v8-chart",
    "change_pct": 5.629,
    "ext_change_pct": -0.047
+  },
+  "APLD": {
+   "price": 25.38,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 24.16,
+   "day_high": 26.85,
+   "day_low": 24.82,
+   "volume": 26266974,
+   "name": "Applied Digital Corporation",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 25.4916,
+   "ext_time": "2026-10-02T23:59:53Z",
+   "ext_volume": 1030570,
+   "ext_high": 25.65,
+   "ext_low": 25.35,
+   "source": "yahoo-v8-chart",
+   "change_pct": 5.05,
+   "ext_change_pct": 0.44
   },
   "APP": {
    "price": 268.22,
@@ -192,13 +211,32 @@
    "change_pct": 4.168,
    "ext_change_pct": -0.668
   },
+  "BMNR": {
+   "price": 26.27,
+   "time": "2026-10-02T20:00:02Z",
+   "prev_close": 26.73,
+   "day_high": 28.2,
+   "day_low": 25.92,
+   "volume": 36663736,
+   "name": "BitMine Immersion Technologies,",
+   "exchange": "NYSE",
+   "instrument": "EQUITY",
+   "ext_price": 26.2595,
+   "ext_time": "2026-10-02T23:59:15Z",
+   "ext_volume": 1516690,
+   "ext_high": 26.35,
+   "ext_low": 26.17,
+   "source": "yahoo-v8-chart",
+   "change_pct": -1.721,
+   "ext_change_pct": -0.04
+  },
   "BTC-USD": {
-   "price": 84628.98,
-   "time": "2026-10-03T05:34:14Z",
+   "price": 84642.99,
+   "time": "2026-10-03T05:47:27Z",
    "prev_close": 84506.336,
    "day_high": 84713.72,
    "day_low": 84434.45,
-   "volume": 39565680640,
+   "volume": 39192793088,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -208,7 +246,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.145
+   "change_pct": 0.162
   },
   "BTDR": {
    "price": 11.02,
@@ -324,6 +362,25 @@
    "change_pct": -3.323,
    "ext_change_pct": 0.131
   },
+  "CORZ": {
+   "price": 16.45,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 16.35,
+   "day_high": 17.13,
+   "day_low": 16.25,
+   "volume": 10112257,
+   "name": "Core Scientific, Inc.",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 16.47,
+   "ext_time": "2026-10-02T23:52:53Z",
+   "ext_volume": 7427,
+   "ext_high": 16.55,
+   "ext_low": 16.3,
+   "source": "yahoo-v8-chart",
+   "change_pct": 0.612,
+   "ext_change_pct": 0.122
+  },
   "CRWV": {
    "price": 89.62,
    "time": "2026-10-02T20:00:01Z",
@@ -382,12 +439,12 @@
    "ext_change_pct": 0.0
   },
   "DOGE-USD": {
-   "price": 0.09316,
-   "time": "2026-10-03T05:34:03Z",
+   "price": 0.09306,
+   "time": "2026-10-03T05:47:12Z",
    "prev_close": 0.092963725,
    "day_high": 0.09344803,
    "day_low": 0.0928625,
-   "volume": 1242061952,
+   "volume": 1230548352,
    "name": "Dogecoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -397,15 +454,15 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.211
+   "change_pct": 0.104
   },
   "ETH-USD": {
-   "price": 2677.42,
-   "time": "2026-10-03T05:34:11Z",
+   "price": 2677.25,
+   "time": "2026-10-03T05:47:26Z",
    "prev_close": 2668.2031,
    "day_high": 2682.2974,
    "day_low": 2665.54,
-   "volume": 17021178880,
+   "volume": 16885371904,
    "name": "Ethereum USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -415,7 +472,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.345
+   "change_pct": 0.339
   },
   "FEIM": {
    "price": 86.03,
@@ -455,6 +512,25 @@
    "change_pct": 2.328,
    "ext_change_pct": 0.246
   },
+  "GLXY": {
+   "price": 23.06,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 23.02,
+   "day_high": 24.55,
+   "day_low": 22.88,
+   "volume": 4967278,
+   "name": "Galaxy Digital Inc.",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 23.4,
+   "ext_time": "2026-10-02T23:56:44Z",
+   "ext_volume": 0,
+   "ext_high": 23.41,
+   "ext_low": 23.0,
+   "source": "yahoo-v8-chart",
+   "change_pct": 0.174,
+   "ext_change_pct": 1.474
+  },
   "GME": {
    "price": 24.7,
    "time": "2026-10-02T20:00:02Z",
@@ -492,6 +568,25 @@
    "source": "yahoo-v8-chart",
    "change_pct": 4.276,
    "ext_change_pct": 0.065
+  },
+  "GPUS": {
+   "price": 0.1698,
+   "time": "2026-10-02T20:00:00Z",
+   "prev_close": 0.1644,
+   "day_high": 0.1725,
+   "day_low": 0.1672,
+   "volume": 29881404,
+   "name": "Hyperscale Data, Inc.",
+   "exchange": "NYSE American",
+   "instrument": "EQUITY",
+   "ext_price": 0.1682,
+   "ext_time": "2026-10-02T23:59:52Z",
+   "ext_volume": 26484,
+   "ext_high": 0.1708,
+   "ext_low": 0.1663,
+   "source": "yahoo-v8-chart",
+   "change_pct": 3.285,
+   "ext_change_pct": -0.942
   },
   "GUSH": {
    "price": 42.89,
@@ -531,6 +626,25 @@
    "change_pct": -1.024,
    "ext_change_pct": 0.069
   },
+  "HIVE": {
+   "price": 2.975,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 2.92,
+   "day_high": 3.1,
+   "day_low": 2.9,
+   "volume": 9505221,
+   "name": "HIVE Digital Technologies Ltd",
+   "exchange": "NasdaqCM",
+   "instrument": "EQUITY",
+   "ext_price": 2.9618,
+   "ext_time": "2026-10-02T23:59:16Z",
+   "ext_volume": 38591,
+   "ext_high": 2.99,
+   "ext_low": 2.92,
+   "source": "yahoo-v8-chart",
+   "change_pct": 1.884,
+   "ext_change_pct": -0.444
+  },
   "HOOD": {
    "price": 112.74,
    "time": "2026-10-02T20:00:00Z",
@@ -549,6 +663,25 @@
    "source": "yahoo-v8-chart",
    "change_pct": 1.43,
    "ext_change_pct": 0.142
+  },
+  "HUT": {
+   "price": 89.63,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 86.36,
+   "day_high": 92.99,
+   "day_low": 88.1,
+   "volume": 4614061,
+   "name": "Hut 8 Corp.",
+   "exchange": "NasdaqGS",
+   "instrument": "EQUITY",
+   "ext_price": 89.7,
+   "ext_time": "2026-10-02T23:59:33Z",
+   "ext_volume": 0,
+   "ext_high": 89.88,
+   "ext_low": 88.87,
+   "source": "yahoo-v8-chart",
+   "change_pct": 3.786,
+   "ext_change_pct": 0.078
   },
   "INTC": {
    "price": 119.33,
@@ -1291,6 +1424,25 @@
    "change_pct": -0.178,
    "ext_change_pct": 0.146
   },
+  "SBET": {
+   "price": 9.35,
+   "time": "2026-10-02T20:00:01Z",
+   "prev_close": 9.58,
+   "day_high": 10.228,
+   "day_low": 9.23,
+   "volume": 8381697,
+   "name": "SharpLink, Inc.",
+   "exchange": "NasdaqCM",
+   "instrument": "EQUITY",
+   "ext_price": 9.34,
+   "ext_time": "2026-10-02T23:59:31Z",
+   "ext_volume": 209638,
+   "ext_high": 9.38,
+   "ext_low": 9.31,
+   "source": "yahoo-v8-chart",
+   "change_pct": -2.401,
+   "ext_change_pct": -0.107
+  },
   "SDEV": {
    "price": 7.48,
    "time": "2026-10-02T20:00:00Z",
@@ -1425,12 +1577,12 @@
    "ext_change_pct": -0.068
   },
   "SOL-USD": {
-   "price": 119.61,
-   "time": "2026-10-03T05:34:09Z",
+   "price": 119.6,
+   "time": "2026-10-03T05:47:19Z",
    "prev_close": 118.609146,
-   "day_high": 119.54013,
+   "day_high": 119.62012,
    "day_low": 118.563675,
-   "volume": 3688674560,
+   "volume": 3629866240,
    "name": "Solana USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1440,7 +1592,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.844
+   "change_pct": 0.835
   },
   "SOUN": {
    "price": 5.84,
@@ -1785,12 +1937,12 @@
    "ext_change_pct": 0.171
   },
   "XRP-USD": {
-   "price": 1.4874,
-   "time": "2026-10-03T05:34:10Z",
+   "price": 1.4872,
+   "time": "2026-10-03T05:47:27Z",
    "prev_close": 1.4849464,
    "day_high": 1.4920716,
    "day_low": 1.4832379,
-   "volume": 3967370752,
+   "volume": 3943029760,
    "name": "XRP USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1800,7 +1952,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.165
+   "change_pct": 0.152
   }
  },
  "errors": {},

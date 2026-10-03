@@ -49,6 +49,22 @@
       "title": "One book from now on: this one, $1,000 fresh",
       "body": "Vamsi's instruction (Sat Oct 3): drop the H-1B and Unrestricted books; keep only this book, with a fresh $1,000, as the one we work on together.\nDone: both books archived before any round 2 trade (archive/round2-dropped; round 1 records in archive/round1). This book is unchanged: $1,000 cash, no trades, opened Sat Oct 3 05:33 UTC. The dashboard, routines and RUNBOOK now cover only this book.\nStrategy unchanged (J0002): the 25-name support/resistance radar, up to 4 positions of about $250, at most 2 crypto-linked. End date unchanged: Mon Oct 5, 4:00 PM ET close, liquidation at the 3:40 PM run, unless Vamsi extends it.",
       "tickers": []
+    },
+    {
+      "id": "J0004",
+      "ts": "2026-10-03T06:03:20Z",
+      "kind": "plan",
+      "title": "Radar: 7 high-volatility names added from Vamsi's watch list (32 names)",
+      "body": "Vamsi's instruction (Sat Oct 3): pick the high-volatility stocks from his watch list. Screened with the radar filters on Friday's closes: daily range (ATR) at least 4% of the price, at least $15M traded a day, a support tested at least twice, R:R at least 1.5.\nAdded (pass every filter), buy zone / stop / sell zone: SNAP 5.53-5.61 / 5.37 / 5.98-6.06; POET 7.65-7.78 / 7.41 / 8.45-8.57; SMTC 187.80-191.28 / 180.82 / 214.64-218.12; DUOL 139.11-141.07 / 135.18 / 150.98-152.94; DELL 517.98-526.09 / 501.76 / 587.40-595.51; CRSP 50.83-51.75 / 49.00 / 58.96-59.88; AXTI 74.80-76.81 / 70.77 / 89.21-91.22. Ten more of his names were already on the radar.\nKept as daily candidates (high volatility, one filter failed today; each joins the radar on a day it passes): AEHR, ORCL, NOW, PATH and BULL (R:R under 1.5), GRAB (no tested support), BKKT and ALMU (under $15M a day), META and HIMX (daily range just under 4%).\nRadar now 32 names. At Friday's close SNAP, HUT and UMAC sit inside their buy zones; entry rules unchanged (J0002).",
+      "tickers": [
+        "SNAP",
+        "POET",
+        "SMTC",
+        "DUOL",
+        "DELL",
+        "CRSP",
+        "AXTI"
+      ]
     }
   ]
 }

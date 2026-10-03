@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:38:21Z",
+ "generated_at": "2026-10-03T06:02:55Z",
  "asof": "2026-10-02",
  "method": "swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the\n3 bars on each side), clustered within half an ATR (min 1.5%) into zones. A level's strength is the\nnumber of swings in its zone; a support or resistance needs at least two (tested twice). Support is the\nnearest tested zone below the price, resistance the nearest tested zone above. The buy zone runs from\nsupport to support + 0.3 ATR, the sell zone from resistance - 0.3 ATR to resistance, and the stop sits\n0.6 ATR under support. Reward:risk = (sell-zone bottom - buy-zone top) / (buy-zone top - stop).\nThese are arithmetic on past prices, not forecasts.",
  "names": [
@@ -106,6 +106,40 @@
    "note": "reward:risk 1.43 < 1.5"
   },
   {
+   "ticker": "SNAP",
+   "name": "Snap Inc.",
+   "exchange": "NYSE",
+   "price": 5.58,
+   "asof": "2026-10-02",
+   "atr": 0.2626,
+   "atr_pct": 4.71,
+   "vol_1y": 57.3,
+   "dollar_vol_20d": 180581501,
+   "low_120": 4.27,
+   "high_120": 6.355,
+   "support": 5.5317,
+   "support_strength": 2,
+   "support_2": 5.2095,
+   "buy_zone": [
+    5.5317,
+    5.6105
+   ],
+   "stop": 5.3742,
+   "resistance": 6.0552,
+   "resistance_strength": 9,
+   "sell_zone": [
+    5.9764,
+    6.0552
+   ],
+   "vs_sma50_pct": 4.2,
+   "chg_120d_pct": -0.4,
+   "reward_risk": 1.55,
+   "to_zone_pct": -0.54,
+   "upside_to_target_pct": 6.5,
+   "risk_to_stop_pct": 4.2,
+   "note": ""
+  },
+  {
    "ticker": "HUT",
    "name": "Hut 8 Corp.",
    "exchange": "NasdaqGS",
@@ -205,6 +239,40 @@
    "to_zone_pct": 0.14,
    "upside_to_target_pct": 16.2,
    "risk_to_stop_pct": 6.9,
+   "note": ""
+  },
+  {
+   "ticker": "POET",
+   "name": "POET Technologies Inc.",
+   "exchange": "NasdaqCM",
+   "price": 7.79,
+   "asof": "2026-10-02",
+   "atr": 0.4136,
+   "atr_pct": 5.31,
+   "vol_1y": 144.3,
+   "dollar_vol_20d": 65765320,
+   "low_120": 6.28,
+   "high_120": 20.81,
+   "support": 7.6546,
+   "support_strength": 2,
+   "support_2": 7.1798,
+   "buy_zone": [
+    7.6546,
+    7.7787
+   ],
+   "stop": 7.4065,
+   "resistance": 8.5743,
+   "resistance_strength": 4,
+   "sell_zone": [
+    8.4502,
+    8.5743
+   ],
+   "vs_sma50_pct": -1.1,
+   "chg_120d_pct": 16.1,
+   "reward_risk": 1.8,
+   "to_zone_pct": 0.15,
+   "upside_to_target_pct": 8.6,
+   "risk_to_stop_pct": 4.8,
    "note": ""
   },
   {
@@ -341,6 +409,74 @@
    "to_zone_pct": 1.4,
    "upside_to_target_pct": 15.7,
    "risk_to_stop_pct": 6.5,
+   "note": ""
+  },
+  {
+   "ticker": "SMTC",
+   "name": "Semtech Corporation",
+   "exchange": "NasdaqGS",
+   "price": 194.88,
+   "asof": "2026-10-02",
+   "atr": 11.6221,
+   "atr_pct": 5.96,
+   "vol_1y": 76.7,
+   "dollar_vol_20d": 605402964,
+   "low_120": 88.76,
+   "high_120": 201.99,
+   "support": 187.7957,
+   "support_strength": 2,
+   "support_2": 174.2704,
+   "buy_zone": [
+    187.7957,
+    191.2823
+   ],
+   "stop": 180.8224,
+   "resistance": 218.1243,
+   "resistance_strength": 0,
+   "sell_zone": [
+    214.6377,
+    218.1243
+   ],
+   "vs_sma50_pct": 33.5,
+   "chg_120d_pct": 116.2,
+   "reward_risk": 2.23,
+   "to_zone_pct": 1.88,
+   "upside_to_target_pct": 12.2,
+   "risk_to_stop_pct": 5.5,
+   "note": ""
+  },
+  {
+   "ticker": "DUOL",
+   "name": "Duolingo, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 144.27,
+   "asof": "2026-10-02",
+   "atr": 6.5403,
+   "atr_pct": 4.53,
+   "vol_1y": 65.4,
+   "dollar_vol_20d": 160719392,
+   "low_120": 90.98,
+   "high_120": 167.38,
+   "support": 139.1064,
+   "support_strength": 9,
+   "support_2": 116.0503,
+   "buy_zone": [
+    139.1064,
+    141.0684
+   ],
+   "stop": 135.1822,
+   "resistance": 152.9388,
+   "resistance_strength": 3,
+   "sell_zone": [
+    150.9767,
+    152.9388
+   ],
+   "vs_sma50_pct": 1.3,
+   "chg_120d_pct": 57.7,
+   "reward_risk": 1.68,
+   "to_zone_pct": 2.27,
+   "upside_to_target_pct": 7.0,
+   "risk_to_stop_pct": 4.2,
    "note": ""
   },
   {
@@ -752,6 +888,74 @@
    "note": ""
   },
   {
+   "ticker": "DELL",
+   "name": "Dell Technologies Inc.",
+   "exchange": "NYSE",
+   "price": 562.52,
+   "asof": "2026-10-02",
+   "atr": 27.0343,
+   "atr_pct": 4.81,
+   "vol_1y": 72.2,
+   "dollar_vol_20d": 4700150510,
+   "low_120": 177.0,
+   "high_120": 595.51,
+   "support": 517.9816,
+   "support_strength": 4,
+   "support_2": 485.7,
+   "buy_zone": [
+    517.9816,
+    526.0918
+   ],
+   "stop": 501.761,
+   "resistance": 595.51,
+   "resistance_strength": 1,
+   "sell_zone": [
+    587.3997,
+    595.51
+   ],
+   "vs_sma50_pct": 15.0,
+   "chg_120d_pct": 204.9,
+   "reward_risk": 2.52,
+   "to_zone_pct": 6.92,
+   "upside_to_target_pct": 11.7,
+   "risk_to_stop_pct": 4.6,
+   "note": ""
+  },
+  {
+   "ticker": "CRSP",
+   "name": "CRISPR Therapeutics AG",
+   "exchange": "NasdaqGM",
+   "price": 55.43,
+   "asof": "2026-10-02",
+   "atr": 3.0554,
+   "atr_pct": 5.51,
+   "vol_1y": 58.5,
+   "dollar_vol_20d": 89572603,
+   "low_120": 45.89,
+   "high_120": 63.45,
+   "support": 50.8307,
+   "support_strength": 7,
+   "support_2": 46.3332,
+   "buy_zone": [
+    50.8307,
+    51.7473
+   ],
+   "stop": 48.9974,
+   "resistance": 59.875,
+   "resistance_strength": 3,
+   "sell_zone": [
+    58.9584,
+    59.875
+   ],
+   "vs_sma50_pct": 1.9,
+   "chg_120d_pct": -2.5,
+   "reward_risk": 2.62,
+   "to_zone_pct": 7.12,
+   "upside_to_target_pct": 13.9,
+   "risk_to_stop_pct": 5.3,
+   "note": ""
+  },
+  {
    "ticker": "HIVE",
    "name": "HIVE Digital Technologies Ltd.",
    "exchange": "NasdaqCM",
@@ -783,6 +987,40 @@
    "to_zone_pct": 7.78,
    "upside_to_target_pct": 10.7,
    "risk_to_stop_pct": 5.9,
+   "note": ""
+  },
+  {
+   "ticker": "AXTI",
+   "name": "AXT, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 85.87,
+   "asof": "2026-10-02",
+   "atr": 6.71,
+   "atr_pct": 7.81,
+   "vol_1y": 151.1,
+   "dollar_vol_20d": 638607314,
+   "low_120": 36.73,
+   "high_120": 143.16,
+   "support": 74.7997,
+   "support_strength": 2,
+   "support_2": 69.6,
+   "buy_zone": [
+    74.7997,
+    76.8127
+   ],
+   "stop": 70.7737,
+   "resistance": 91.2191,
+   "resistance_strength": 3,
+   "sell_zone": [
+    89.2061,
+    91.2191
+   ],
+   "vs_sma50_pct": 25.9,
+   "chg_120d_pct": 27.6,
+   "reward_risk": 2.05,
+   "to_zone_pct": 11.79,
+   "upside_to_target_pct": 16.1,
+   "risk_to_stop_pct": 7.9,
    "note": ""
   },
   {
@@ -930,6 +1168,46 @@
   {
    "ticker": "SOFI",
    "why": "ATR 3.77% < 4.0%"
+  },
+  {
+   "ticker": "AEHR",
+   "why": "reward:risk 0.67 < 1.5"
+  },
+  {
+   "ticker": "HIMX",
+   "why": "ATR 3.82% < 4.0%; $vol 14.8M < 15M"
+  },
+  {
+   "ticker": "ORCL",
+   "why": "reward:risk 1.16 < 1.5"
+  },
+  {
+   "ticker": "NOW",
+   "why": "reward:risk 1.4 < 1.5"
+  },
+  {
+   "ticker": "PATH",
+   "why": "reward:risk 0.95 < 1.5"
+  },
+  {
+   "ticker": "META",
+   "why": "ATR 3.97% < 4.0%"
+  },
+  {
+   "ticker": "GRAB",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "BULL",
+   "why": "reward:risk 1.43 < 1.5"
+  },
+  {
+   "ticker": "BKKT",
+   "why": "$vol 11.1M < 15M"
+  },
+  {
+   "ticker": "ALMU",
+   "why": "$vol 8.2M < 15M; reward:risk 1.21 < 1.5"
   }
  ]
 }

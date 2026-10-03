@@ -47,12 +47,16 @@ CANDIDATES = [
     "RKLB", "ASTS", "LUNR", "RCAT", "ONDS", "UMAC",
     "COIN", "MSTR", "HOOD", "BMNR", "SBET", "CRCL",
     "AFRM", "UPST", "SOFI", "HIMS", "TEM",
+    # Added Sat Oct 3 from Vamsi's watch list (the high-volatility ones; each joins the radar on a day it passes
+    # the filters): semis and hardware, software, consumer internet, biotech, brokers and crypto platforms.
+    "AXTI", "SMTC", "POET", "AEHR", "HIMX", "DELL", "ORCL", "NOW", "PATH", "META", "SNAP", "DUOL", "GRAB",
+    "CRSP", "BULL", "BKKT", "ALMU",
 ]
 MUST_KEEP = {"GPUS", "IREN", "BTDR"}
 # Names that trade mostly on bitcoin or ether (miners, hosts that still mine, treasuries, exchanges):
 # one factor, so at most 2 of a book's 4 radar positions (RUNBOOK 2a).
 CRYPTO_LINKED = {"IREN", "BTDR", "CIFR", "WULF", "MARA", "RIOT", "CLSK", "HUT", "CORZ", "BITF", "HIVE", "BTBT",
-                 "GLXY", "COIN", "MSTR", "BMNR", "SBET", "CRCL"}
+                 "GLXY", "COIN", "MSTR", "BMNR", "SBET", "CRCL", "BKKT"}
 
 PIVOT_K = 3
 LOOKBACK = 120

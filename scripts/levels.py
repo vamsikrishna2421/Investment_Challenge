@@ -49,6 +49,10 @@ CANDIDATES = [
     "AFRM", "UPST", "SOFI", "HIMS", "TEM",
 ]
 MUST_KEEP = {"GPUS", "IREN", "BTDR"}
+# Names that trade mostly on bitcoin or ether (miners, hosts that still mine, treasuries, exchanges):
+# one factor, so at most 2 of a book's 4 radar positions (RUNBOOK 2a).
+CRYPTO_LINKED = {"IREN", "BTDR", "CIFR", "WULF", "MARA", "RIOT", "CLSK", "HUT", "CORZ", "BITF", "HIVE", "BTBT",
+                 "GLXY", "COIN", "MSTR", "BMNR", "SBET", "CRCL"}
 
 PIVOT_K = 3
 LOOKBACK = 120
@@ -297,6 +301,8 @@ def check(a) -> int:
                 f"R:R now {c['rr_now'] if c['rr_now'] is not None else '-'} ({c['to_zone_pct']:+.1f}% vs zone top)")
         if c["day_low"] is not None:
             line += f" low {fmt(c['day_low'])}"
+        if r["ticker"] in CRYPTO_LINKED:
+            line += " [crypto]"
         hits[c["status"]].append(line)
     print(f"radar {radar['generated_at']} (closes of {radar['asof']}); quotes {qdoc['generated_at']}")
     for k in STATUS_ORDER:

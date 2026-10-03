@@ -148,7 +148,8 @@ def main() -> int:
                          "to_zone_pct": c.get("to_zone_pct"), "rr_now": c.get("rr_now"),
                          "buy_zone": r["buy_zone"], "stop": r["stop"], "sell_zone": r["sell_zone"],
                          "reward_risk": r["reward_risk"], "upside_pct": r["upside_to_target_pct"],
-                         "atr_pct": r["atr_pct"], "note": r.get("note") or "", "held": r["ticker"] in held_tk})
+                         "atr_pct": r["atr_pct"], "note": r.get("note") or "", "held": r["ticker"] in held_tk,
+                         "crypto": r["ticker"] in lv.CRYPTO_LINKED})
         rows.sort(key=lambda x: (lv.STATUS_ORDER.index(x["status"]), x.get("to_zone_pct") or 0))
         levels = {"generated_at": rd["generated_at"], "asof": rd["asof"], "names": rows}
 

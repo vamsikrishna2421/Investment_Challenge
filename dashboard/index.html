@@ -377,7 +377,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     <section class="card" aria-labelledby="h-lv">
       <div class="card-head"><h2 id="h-lv">Support &amp; resistance radar</h2><span class="hint" id="lv-hint">&nbsp;</span></div>
       <div class="table-scroll"><table id="levels" class="lv"></table></div>
-      <div class="note">Buy when a name trades into its buy zone (support), sell in the sell zone (resistance), exit if it trades through the stop. Levels are tested swing lows and highs from the last 120 sessions; R:R is the move to the sell zone divided by the risk to the stop, both from the top of the buy zone.</div>
+      <div class="note">Buy when a name trades into its buy zone (support), sell in the sell zone (resistance), exit if it trades through the stop. Levels are tested swing lows and highs from the last 120 sessions; R:R is the move to the sell zone divided by the risk to the stop, both from the top of the buy zone. Up to 4 positions per book, at most 2 tagged Crypto (they move together with bitcoin and ether).</div>
     </section>
 
     <div class="grid-2 even">
@@ -796,8 +796,13 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     rows.forEach(function (x) {
       var tr = el("tr");
       var c = el("td"); c.appendChild(el("span", "tk", x.ticker));
-      if (x.held) c.appendChild(el("span", "tag", "Held"));
       if (x.name) c.appendChild(el("span", "nm", x.name));
+      if (x.held || x.crypto) {
+        var tg = el("div");
+        if (x.held) tg.appendChild(el("span", "tag", "Held"));
+        if (x.crypto) { var ct = el("span", "tag", "Crypto"); ct.title = "Trades mostly on bitcoin or ether: at most 2 of a book's 4 radar positions"; tg.appendChild(ct); }
+        c.appendChild(tg);
+      }
       if (x.note) c.appendChild(el("div", "flag", "Below filter: " + x.note.replace(/reward:risk/g, "R:R")));
       tr.appendChild(c);
       td(tr, px(x.price), "n").setAttribute("data-l", "Last");

@@ -195,7 +195,9 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   through the stop this session), on a day with an offering or negative company news, or after 14:55 on the
   final day. On the final day buy only with settled cash: a stock bought with unsettled proceeds can't be sold
   before T+1, which would block the 15:40 liquidation.
-* Size: at most 4 radar positions per book, about $250 each (25% of $1,000; less when cash is short). When more
+* Size: at most 4 radar positions per book, about $250 each (25% of $1,000; less when cash is short), and at
+  most 2 of them crypto-linked (`CRYPTO_LINKED` in `scripts/levels.py`: 13 of the first radar's 25 names move
+  with bitcoin or ether, so four of them would be one bet; `check` tags them `[crypto]`). When more
   names trigger than slots, take the higher entry R:R first. One position per name, no averaging down, no
   re-entry in a name stopped out the same day.
 * Order: `trade.py [--book B] buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar

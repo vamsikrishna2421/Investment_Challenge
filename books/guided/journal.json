@@ -73,6 +73,30 @@
       "title": "Backtest: buying the radar's support has no measurable edge (61 stocks, 5 years)",
       "body": "Question from Vamsi: can I read levels, candles, trends and volume well enough? Test: scripts/sr_backtest.py rebuilds the radar's levels each day from the data available at that close (no look-ahead) for all 61 radar candidates over 5 years, then trades the next session. Costs are included, and a stop and target hit on the same day count as the stop.\nLive rule (buy the touch of the buy zone; sell at the sell zone, the stop, or after 10 sessions): 2,560 trades, average +0.02R [-0.05, +0.10], +0.13% a trade, 34% winners, stop hit 63%. Random entries on the same stocks with the same stop and target distances: +0.01R. The level adds nothing measurable.\nOne-session version (sold at that day's close, the Monday-only case): 5,127 trades, -0.05R [-0.07, -0.03], -0.34% a trade.\nRejection candle at the zone, buy the next open: 994 trades, -0.02R; more winners (48%), smaller wins.\nFilters (above the 200-day, rising 50-day, support tested 3+ times, quiet or heavy volume on the touch): no subset's interval excludes zero. Best hint: heavy volume on the touch (1.5x the 20-day average), +0.11R (n=387) and +0.20R with the candle (n=94), both inside noise.\nBy year (touch, 10 sessions): 2022 -0.28R, 2023 +0.17R, 2024 +0.25R, 2025 +0.03R, 2026 -0.10R. The result follows the market, not the levels.\nLimits: one way of drawing levels (daily swing points); today's list of popular volatile stocks (survivorship); daily bars can't see intraday reclaims. Full output: research/backtests/sr-2026-10-03.md.",
       "tickers": []
+    },
+    {
+      "id": "J0006",
+      "ts": "2026-10-04T23:08:33Z",
+      "kind": "plan",
+      "title": "Monday Oct 5 plan (final session): radar entries from 9:55, liquidation at 3:40",
+      "body": "Weekend: S&P futures +0.1%, Nasdaq-100 +0.3%, Russell +0.2% at Sunday's open; bitcoin $86,440 (+2.0% since Friday), ether $2,730 (+1.6%); oil $91 flat; VIX 15.3 at Friday's close. Radar rebuilt (32 names, same Friday closes; no change).\nWeekend news on radar names: NNE's Friday 8-K (item 3.02) is its Oct 1 acquisition of NRC-licensed fuel-processing assets ($9.5M cash plus $4M of restricted shares at closing in 90-120 days, about 0.5% of an $839M market cap). Not an offering; NNE stays eligible. Nothing on the others.\nIn the buy zone at Friday's close (buy zone / stop / sell zone, entry R:R now): UMAC 21.82-22.34 / 20.79 / 25.96-26.47, 2.4; SNAP 5.53-5.61 / 5.37 / 5.98-6.06, 1.9; HUT 87.99-90.07 / 83.85 / 100.77-102.84, 1.9 (crypto).\nWithin 3% above the zone (zone-top R:R): SMCI 41.90-42.58 / 40.56 / 50.73-51.40, 4.0; TEM 73.93-75.57 / 70.66 / 87.45-89.09, 2.4; GLXY 22.59-23.07 / 21.62 / 26.47-26.95, 2.4 (crypto); SMTC 187.80-191.28 / 180.82 / 214.64-218.12, 2.2; CORZ 15.71-16.00 / 15.12 / 17.97-18.26, 2.2 (crypto); NNE 15.19-15.47 / 14.62 / 17.13-17.41, 1.9; ONDS 7.11-7.22 / 6.89 / 7.82-7.93, 1.8; POET 7.65-7.78 / 7.41 / 8.45-8.57, 1.8; ASTS 57.13-58.31 / 54.76 / 64.21-65.40, 1.7; DUOL 139.11-141.07 / 135.18 / 150.98-152.94, 1.7; MSTR 153.48-156.44 / 147.54 / 169.91-172.88, 1.5 (crypto); GPUS 0.1600-0.1636 / 0.1527 / 0.1764-0.1800, 1.2 (flagged).\nOrder: at each regular-session run from 9:55, buy BUY ZONE or BOUNCE names by entry R:R, highest first, up to 4 positions of about $250 with settled cash, at most 2 of HUT, GLXY, CORZ and MSTR; none on BROKEN; no new entries after 2:55 PM. Stop = radar stop, target = sell-zone bottom.\nExit: sell zone, stop traded, or the 3:40 PM liquidation of everything (window ends at the 4:00 PM close unless Vamsi extends it).\nExpectation from the backtest (J0005): buying the touch and selling at the same day's close averaged -0.34% a trade after costs, no better than random entries.",
+      "tickers": [
+        "SNAP",
+        "HUT",
+        "UMAC",
+        "SMCI",
+        "TEM",
+        "GLXY",
+        "SMTC",
+        "CORZ",
+        "NNE",
+        "ONDS",
+        "POET",
+        "ASTS",
+        "DUOL",
+        "MSTR",
+        "GPUS"
+      ]
     }
   ]
 }

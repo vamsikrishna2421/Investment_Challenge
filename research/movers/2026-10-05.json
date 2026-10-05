@@ -1,0 +1,1691 @@
+{
+ "generated_at": "2026-10-05T20:23:14Z",
+ "date": "2026-10-05",
+ "min_move": 15.0,
+ "losers": false,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "MI",
+  "WQEY",
+  "VEEA",
+  "APUS",
+  "SGLY",
+  "BCAT-RI",
+  "SCKT",
+  "GNLN",
+  "JAGX",
+  "RETO",
+  "CMCT",
+  "PAII-WT",
+  "PMI",
+  "CTNT",
+  "BBDO",
+  "LHSW",
+  "PUR"
+ ],
+ "skipped_noisy": [
+  "PDSB",
+  "BEAT",
+  "QTEX",
+  "SVRN",
+  "AIFA",
+  "LONA"
+ ],
+ "rows": [
+  {
+   "symbol": "PCVX",
+   "name": "Vaxcyte, Inc.",
+   "price": 73.82,
+   "change_pct": 30.7,
+   "volume": 14774035,
+   "market_cap": 10984805376,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 7033128960,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 1486838016,
+   "debt": 115445000,
+   "shares_out": 148805278,
+   "float_shares": 136436583,
+   "short_pct_float": 0.109,
+   "avg_volume": 1154593,
+   "high_52w": 90.75,
+   "low_52w": 39.87,
+   "target_mean": 108.66667,
+   "rating": "strong_buy",
+   "analysts": 9,
+   "forward_pe": -10.228428,
+   "rel_volume": 12.8,
+   "off_52w_high_pct": -18.7,
+   "target_upside_pct": 47.2,
+   "news": [
+    {
+     "title": "PCVX Stock Jumps As Traders Brace For OPUS-1 Catalyst - timothysykes.com",
+     "published": "Mon, 05 Oct 2026 11:48:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "PCVX Stock Hits Fresh 52-Week High On Late-Stage Win In Adult Pneumonia Vaccine Race: Jefferies Says It Hit \u2018Blue-Sky\u2019 Case - Stocktwits",
+     "published": "Mon, 05 Oct 2026 18:31:42 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "Small Biotech Squares Up To Pfizer, Merck In $7 Billion Market - Investor's Business Daily",
+     "published": "Mon, 05 Oct 2026 13:59:00 GMT",
+     "source": "Investor's Business Daily",
+     "via": "google"
+    },
+    {
+     "title": "Vaxcyte Stock Spikes 27% as Lead Vaccine Candidate Takes Aim at Pfizer and Merck - Barron's",
+     "published": "Mon, 05 Oct 2026 16:52:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "Stocks making the biggest moves midday: Microsoft, SpaceX, Vaxcyte, Banco Bradesco, DraftKings & more - CNBC",
+     "published": "Mon, 05 Oct 2026 17:13:38 GMT",
+     "source": "CNBC",
+     "via": "google"
+    },
+    {
+     "title": "Vaxcyte, Inc. (PCVX) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Sun, 04 Oct 2026 21:01:13 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "144",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1649094/000196922326001059/xsl144X01/primary_doc.xml"
+    },
+    {
+     "form": "144",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1649094/000196922326001058/xsl144X01/primary_doc.xml"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-05",
+     "items": [
+      "7.01",
+      "8.01",
+      "9.01"
+     ],
+     "events": [
+      "Reg FD disclosure",
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1649094/000119312526413168/d21202d8k.htm"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1649094/000181379826000021/xslF345X06/wk-form4_1790971547.xml"
+    },
+    {
+     "form": "144",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1649094/000196922326001049/xsl144X01/primary_doc.xml"
+    }
+   ],
+   "vol_1y": 44.0,
+   "jump_sigma": 9.7,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 11.8,
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "INTT",
+   "name": "inTest Corporation",
+   "price": 15.04,
+   "change_pct": 22.28,
+   "volume": 385789,
+   "market_cap": 192899824,
+   "exchange": "ASE",
+   "sector": "Technology",
+   "industry": "Semiconductor Equipment & Materials",
+   "enterprise_value": 149401552,
+   "revenue_ttm": 128257000,
+   "revenue_growth": 0.255,
+   "gross_margin": 0.42763,
+   "profit_margin": 0.0075,
+   "cash": 22102000,
+   "debt": 14786000,
+   "shares_out": 12825786,
+   "float_shares": 11766940,
+   "short_pct_float": 0.0418,
+   "avg_volume": 138993,
+   "high_52w": 20.0,
+   "low_52w": 7.07,
+   "target_mean": 19.66667,
+   "rating": "strong_buy",
+   "analysts": 3,
+   "ev_to_revenue": 1.165,
+   "forward_pe": 22.673481,
+   "rel_volume": 2.8,
+   "off_52w_high_pct": -24.8,
+   "target_upside_pct": 30.8,
+   "news": [
+    {
+     "title": "Chipmaking orders are expected to set a record at InTest; revenue is forecast to grow over 30%. - stocktitan.net",
+     "published": "Mon, 05 Oct 2026 11:00:00 GMT",
+     "source": "stocktitan.net",
+     "via": "google"
+    },
+    {
+     "title": "InTest Expects Q3 2026 Revenue at $35 Million High End - Quiver Quantitative",
+     "published": "Mon, 05 Oct 2026 12:40:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Revenue growth above 30% expected as InTest (INTT) forecasts record Q3 orders - stocktitan.net",
+     "published": "Mon, 05 Oct 2026 12:39:54 GMT",
+     "source": "stocktitan.net",
+     "via": "google"
+    },
+    {
+     "title": "12 Information Technology Stocks Moving In Monday's Intraday Session - Benzinga",
+     "published": "Mon, 05 Oct 2026 17:05:56 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-05",
+     "items": [
+      "2.02",
+      "9.01"
+     ],
+     "events": [
+      "results"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1036262/000103626226000057/intt-20261005.htm"
+    }
+   ],
+   "vol_1y": 69.2,
+   "jump_sigma": 4.6,
+   "spike_days_1y": 1,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.6,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "SBS",
+   "name": "Companhia de saneamento Basico ",
+   "price": 6.26,
+   "change_pct": 16.36,
+   "volume": 28101094,
+   "market_cap": 22013874176,
+   "exchange": "NYQ",
+   "sector": "Utilities",
+   "industry": "Utilities - Regulated Water",
+   "enterprise_value": 53309190144,
+   "revenue_ttm": 40875065344,
+   "revenue_growth": 0.139,
+   "gross_margin": 0.35729998,
+   "profit_margin": 0.1967,
+   "cash": 17440886784,
+   "debt": 51657801728,
+   "shares_out": 3516593233,
+   "float_shares": 2354643345,
+   "short_pct_float": 0.0058999998,
+   "avg_volume": 8059445,
+   "high_52w": 7.158,
+   "low_52w": 4.426,
+   "target_mean": 6.736,
+   "rating": "none",
+   "analysts": 5,
+   "ev_to_revenue": 1.304,
+   "forward_pe": 14.490741,
+   "rel_volume": 3.5,
+   "off_52w_high_pct": -12.5,
+   "target_upside_pct": 7.6,
+   "news": [
+    {
+     "title": "Companhia de Saneamento Basico do Estado de Sao Paulo - SABESP Stock (SBS) Moved Up by 17.84% on Oct 5: A Full Analysis - TradingKey",
+     "published": "Mon, 05 Oct 2026 18:15:23 GMT",
+     "source": "TradingKey",
+     "via": "google"
+    },
+    {
+     "title": "Companhia de saneamento Basico Do Estado De Sao Paulo - Sabesp (NYSE:SBS) Shares Gap Up - What's Next? - MarketBeat",
+     "published": "Mon, 05 Oct 2026 15:24:21 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "SBS stock reports 13.9 percent revenue growth in Q2 2026 - AD HOC NEWS",
+     "published": "Mon, 05 Oct 2026 08:42:27 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    },
+    {
+     "title": "Approved July 30, Sabesp (SBS) share-capital increase has not yet taken effect. - stocktitan.net",
+     "published": "Fri, 02 Oct 2026 21:07:21 GMT",
+     "source": "stocktitan.net",
+     "via": "google"
+    },
+    {
+     "title": "Wall Street Indexes Close Higher Ahead of Key Week - news.sbs.co.kr",
+     "published": "Mon, 05 Oct 2026 00:03:00 GMT",
+     "source": "news.sbs.co.kr",
+     "via": "google"
+    },
+    {
+     "title": "Jaguar Health Announces a Special Stock Dividend - Knoxville News Sentinel",
+     "published": "Sat, 03 Oct 2026 07:51:49 GMT",
+     "source": "Knoxville News Sentinel",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1170858/000129281426004840/sbs20261002_6k.htm"
+    }
+   ],
+   "vol_1y": 34.2,
+   "jump_sigma": 7.0,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 413.2,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "PTC",
+   "name": "PTC Inc.",
+   "price": 192.26,
+   "change_pct": 33.49,
+   "volume": 29485281,
+   "market_cap": 20861413376,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "enterprise_value": 16884397056,
+   "revenue_ttm": 2953971968,
+   "revenue_growth": -0.068,
+   "gross_margin": 0.84501,
+   "profit_margin": 0.41429,
+   "cash": 351454016,
+   "debt": 1607693952,
+   "shares_out": 108506261,
+   "float_shares": 107908392,
+   "short_pct_float": 0.0921,
+   "avg_volume": 1498337,
+   "high_52w": 206.82,
+   "low_52w": 108.5,
+   "target_mean": 174.21053,
+   "rating": "buy",
+   "analysts": 19,
+   "ev_to_revenue": 5.716,
+   "forward_pe": 21.50213,
+   "rel_volume": 19.7,
+   "off_52w_high_pct": -7.0,
+   "target_upside_pct": -9.4,
+   "news": [
+    {
+     "title": "PTC Stock Soars on $22.6 Billion Schneider Electric Deal. It\u2019s a Win for Software. - Barron's",
+     "published": "Mon, 05 Oct 2026 15:44:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "Schneider Electric to Buy PTC in French Industrial Giant\u2019s Largest-Ever Acquisition - Morningstar",
+     "published": "Mon, 05 Oct 2026 18:04:23 GMT",
+     "source": "Morningstar",
+     "via": "google"
+    },
+    {
+     "title": "PTC Soars 33% on $22.6 Billion All-Cash Schneider Electric Buyout: \u201cCertain and Compelling Value\u201d - finance.yahoo.com",
+     "published": "Mon, 05 Oct 2026 18:43:37 GMT",
+     "source": "finance.yahoo.com",
+     "via": "google"
+    },
+    {
+     "title": "Why is PTC stock surging today? - Investing.com",
+     "published": "Mon, 05 Oct 2026 16:16:57 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "PTC Stock Alert: Halper Sadeh LLC is Investigating Whether PTC Inc. is Obtaining a Fair Price for its Shareholders - Business Wire",
+     "published": "Mon, 05 Oct 2026 09:25:00 GMT",
+     "source": "Business Wire",
+     "via": "google"
+    },
+    {
+     "title": "Schneider Electric to buy US software firm PTC in $22.6 billion deal - Euronext Markets",
+     "published": "Mon, 05 Oct 2026 14:54:22 GMT",
+     "source": "Euronext Markets",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "DEFA14A",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/857005/000119312526413128/d174191ddefa14a.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-05",
+     "items": [
+      "1.01",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "Reg FD disclosure"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191d8k.htm"
+    }
+   ],
+   "vol_1y": 36.8,
+   "jump_sigma": 12.5,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -3.6,
+   "tags": [
+    "takeover-target",
+    "contract-order"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "XP",
+   "name": "XP Inc.",
+   "price": 28.15,
+   "change_pct": 30.93,
+   "volume": 47785171,
+   "market_cap": 14284519424,
+   "exchange": "NMS",
+   "sector": "Financial Services",
+   "industry": "Capital Markets",
+   "enterprise_value": -116972896256,
+   "revenue_ttm": 18630881280,
+   "revenue_growth": 0.106,
+   "gross_margin": 0.69201,
+   "profit_margin": 0.28538,
+   "cash": 287425691648,
+   "debt": 159541297152,
+   "shares_out": 405690510,
+   "float_shares": 403301878,
+   "short_pct_float": 0.044,
+   "avg_volume": 6142842,
+   "high_52w": 29.0,
+   "low_52w": 14.8,
+   "target_mean": 24.567152,
+   "rating": "strong_buy",
+   "analysts": 12,
+   "ev_to_revenue": -6.278,
+   "forward_pe": 12.0698395,
+   "rel_volume": 7.8,
+   "off_52w_high_pct": -2.9,
+   "target_upside_pct": -12.7,
+   "news": [
+    {
+     "title": "Intel, XP Inc., PTC, RXO, Vaxcyte, Western Digital, Cerebras, and More Stocks That Explain Today\u2019s Market - Barron's",
+     "published": "Mon, 05 Oct 2026 18:31:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "Why is XP stock surging 15% today? - Investing.com",
+     "published": "Mon, 05 Oct 2026 16:15:46 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "11 Financials Stocks Moving In Monday's Pre-Market Session - Benzinga",
+     "published": "Mon, 05 Oct 2026 12:05:39 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "XP Soars 33% as Brazilian Stocks Rally on Election Result: \u201cThe Market Wants Change\u201d - tikr.com",
+     "published": "Mon, 05 Oct 2026 17:33:09 GMT",
+     "source": "tikr.com",
+     "via": "google"
+    },
+    {
+     "title": "XP Jumps as Brazil Election Sparks Broad Financial Rally - Quiver Quantitative",
+     "published": "Mon, 05 Oct 2026 14:51:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Monday's session: gap up and gap down stocks - ChartMill",
+     "published": "Mon, 05 Oct 2026 14:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 46.5,
+   "jump_sigma": 9.2,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -1.9,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "RXO",
+   "name": "RXO, Inc.",
+   "price": 28.65,
+   "change_pct": 22.54,
+   "volume": 20267257,
+   "market_cap": 4725133312,
+   "exchange": "NYQ",
+   "sector": "Industrials",
+   "industry": "Trucking",
+   "enterprise_value": 4568972800,
+   "revenue_ttm": 6088999936,
+   "revenue_growth": 0.25,
+   "gross_margin": 0.14912,
+   "profit_margin": -0.017239999,
+   "cash": 15000000,
+   "debt": 728000000,
+   "shares_out": 164926128,
+   "float_shares": 135343328,
+   "short_pct_float": 0.2566,
+   "avg_volume": 1809528,
+   "high_52w": 29.9,
+   "low_52w": 10.425,
+   "target_mean": 24.41667,
+   "rating": "hold",
+   "analysts": 18,
+   "ev_to_revenue": 0.75,
+   "forward_pe": 45.9938,
+   "rel_volume": 11.2,
+   "off_52w_high_pct": -4.2,
+   "target_upside_pct": -14.8,
+   "news": [
+    {
+     "title": "C.H. Robinson acquiring RXO in $5.8 billion stock and cash transaction - Commercial Carrier Journal",
+     "published": "Mon, 05 Oct 2026 19:03:34 GMT",
+     "source": "Commercial Carrier Journal",
+     "via": "google"
+    },
+    {
+     "title": "RXO Stock Soars on C.H. Robinson Buyout. Why the Buyer Is Today\u2019s Worst S&P 500 Performer. - Barron's",
+     "published": "Mon, 05 Oct 2026 17:37:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "C.H. Robinson to Buy RXO for About $5.3 Billion - WSJ",
+     "published": "Mon, 05 Oct 2026 14:12:00 GMT",
+     "source": "WSJ",
+     "via": "google"
+    },
+    {
+     "title": "Why RXO Stock Soared Today - finance.yahoo.com",
+     "published": "Mon, 05 Oct 2026 15:48:00 GMT",
+     "source": "finance.yahoo.com",
+     "via": "google"
+    },
+    {
+     "title": "RXO shares soar as C.H. Robinson announces $5.8B cash and stock buyout - Investing.com",
+     "published": "Mon, 05 Oct 2026 13:19:19 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "C.H. Robinson to buy RXO for $5.8 billion in truck broking expansion - CNBC",
+     "published": "Mon, 05 Oct 2026 13:37:20 GMT",
+     "source": "CNBC",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "425",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/1929561/000119312526413836/d129843d425.htm"
+    },
+    {
+     "form": "425",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/1929561/000119312526413723/d344313d425.htm"
+    },
+    {
+     "form": "425",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/1929561/000119312526413211/d115124d425.htm"
+    },
+    {
+     "form": "425",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/1929561/000114036126038549/ef20083265_425.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-05",
+     "items": [
+      "1.01",
+      "8.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1929561/000114036126038548/ef20083265_8k.htm"
+    }
+   ],
+   "vol_1y": 74.5,
+   "jump_sigma": 4.3,
+   "spike_days_1y": 3,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.5,
+   "tags": [
+    "takeover-target",
+    "contract-order"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "PAGS",
+   "name": "PagSeguro Digital Ltd.",
+   "price": 10.95,
+   "change_pct": 21.4,
+   "volume": 17997771,
+   "market_cap": 3018323712,
+   "exchange": "NYQ",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": 2875050240,
+   "revenue_ttm": 19803666432,
+   "revenue_growth": -0.002,
+   "gross_margin": 0.51472,
+   "profit_margin": 0.10862,
+   "cash": 1386558976,
+   "debt": 1775282048,
+   "shares_out": 155186514,
+   "float_shares": 140513316,
+   "short_pct_float": 0.1279,
+   "avg_volume": 2944481,
+   "high_52w": 12.32,
+   "low_52w": 8.42,
+   "target_mean": 11.719679,
+   "rating": "buy",
+   "analysts": 15,
+   "ev_to_revenue": 0.145,
+   "forward_pe": 5.9718084,
+   "rel_volume": 6.1,
+   "off_52w_high_pct": -11.1,
+   "target_upside_pct": 7.0,
+   "news": [
+    {
+     "title": "Brazilian fintech stocks surge as Bolsonaro's lead puts Brazil on track to shift right (XP:NASDAQ) - Seeking Alpha",
+     "published": "Mon, 05 Oct 2026 15:16:03 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "Why PagSeguro Digital Stock Soared Today - theglobeandmail.com",
+     "published": "Mon, 05 Oct 2026 16:42:33 GMT",
+     "source": "theglobeandmail.com",
+     "via": "google"
+    },
+    {
+     "title": "Why PagSeguro Digital Stock Soared Today - The Motley Fool",
+     "published": "Mon, 05 Oct 2026 16:39:06 GMT",
+     "source": "The Motley Fool",
+     "via": "google"
+    },
+    {
+     "title": "11 Financials Stocks Moving In Monday's Pre-Market Session - Benzinga",
+     "published": "Mon, 05 Oct 2026 12:05:39 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Brazilian fintech stocks surge as Bolsonaro's lead puts Brazil on track to shift right - tradingview.com",
+     "published": "Mon, 05 Oct 2026 15:16:03 GMT",
+     "source": "tradingview.com",
+     "via": "google"
+    },
+    {
+     "title": "PagSeguro Digital stock jumps 22.34 percent on Brazil vote - AD HOC NEWS",
+     "published": "Mon, 05 Oct 2026 18:37:01 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 43.3,
+   "jump_sigma": 7.1,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.3,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "BBD",
+   "name": "Banco Bradesco Sa",
+   "price": 4.33,
+   "change_pct": 18.75,
+   "volume": 127306004,
+   "market_cap": 45851136000,
+   "exchange": "NYQ",
+   "sector": "Financial Services",
+   "industry": "Banks - Regional",
+   "enterprise_value": 598401089536,
+   "revenue_ttm": 93278076928,
+   "revenue_growth": 0.072,
+   "gross_margin": 0.0,
+   "profit_margin": 0.26071,
+   "cash": 280313430016,
+   "debt": 838676250624,
+   "shares_out": 5286599523,
+   "float_shares": 7475818960,
+   "short_pct_float": 0.003,
+   "avg_volume": 29902237,
+   "high_52w": 4.4,
+   "low_52w": 2.98,
+   "target_mean": 4.298,
+   "rating": "none",
+   "analysts": 5,
+   "ev_to_revenue": 6.415,
+   "forward_pe": 7.9579496,
+   "rel_volume": 4.3,
+   "off_52w_high_pct": -1.6,
+   "target_upside_pct": -0.7,
+   "news": [
+    {
+     "title": "Stocks making the biggest moves midday: Microsoft, SpaceX, Vaxcyte, Banco Bradesco, DraftKings & more - CNBC",
+     "published": "Mon, 05 Oct 2026 17:13:38 GMT",
+     "source": "CNBC",
+     "via": "google"
+    },
+    {
+     "title": "BBD Stock Pops As Banco Bradesco Insiders Load Up Shares - timothysykes.com",
+     "published": "Mon, 05 Oct 2026 12:32:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "BBD Stock Pops As Banco Bradesco Insiders Go On Buying Spree - StocksToTrade",
+     "published": "Mon, 05 Oct 2026 13:18:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "Insider Stock Purchases: October 05, 2026 - Quiver Quantitative",
+     "published": "Mon, 05 Oct 2026 18:45:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "A director at Bank Bradesco (BBD) reports 11 indirect purchases totaling 345,000 preferred shares. - stocktitan.net",
+     "published": "Mon, 05 Oct 2026 16:13:25 GMT",
+     "source": "stocktitan.net",
+     "via": "google"
+    },
+    {
+     "title": "Banco Bradesco SA Stock (BBD) Moved Up by 19.16% on Oct 5: A Full Analysis - TradingKey",
+     "published": "Mon, 05 Oct 2026 16:15:26 GMT",
+     "source": "TradingKey",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "4",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426004852/xslF345X06/ownership.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426004850/xslF345X06/ownership.xml"
+    },
+    {
+     "form": "6-K",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426004846/bbd20261002_6k.htm"
+    },
+    {
+     "form": "6-K",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426004764/bbd20260930_6k1.htm"
+    },
+    {
+     "form": "6-K",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426004762/bbd20260930_6k.htm"
+    }
+   ],
+   "vol_1y": 34.8,
+   "jump_sigma": 7.8,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 7.9,
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "SAIQ",
+   "name": "WISeSat.Space Holdings Corp.",
+   "price": 6.67,
+   "change_pct": 260.54,
+   "volume": 60216444,
+   "market_cap": 198585840,
+   "exchange": "NCM",
+   "shares_out": 29772989,
+   "high_52w": 12.95,
+   "low_52w": 1.76,
+   "off_52w_high_pct": -48.5,
+   "news": [
+    {
+     "title": "WISeSat.Space Holdings Corp. (SAIQ) Stock Forum & Discussion - Yahoo! Finance Canada",
+     "published": "Mon, 05 Oct 2026 14:07:32 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "SAIQ: WISeSat.Space Holdings Corp Latest Stock Price, Analysis, News and Trading Ideas - Stocktwits",
+     "published": "Mon, 05 Oct 2026 17:34:20 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "SAIQ Stock Debuts On Nasdaq After Columbus Deal - timothysykes.com",
+     "published": "Mon, 05 Oct 2026 12:32:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "WISeSat.Space Holdings Corp. (SAIQ) Stock Price | Live Quotes & Charts | NASDAQ - StocksToTrade",
+     "published": "Mon, 05 Oct 2026 15:24:02 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "New Space Stock WISeSat.Space (Nasdaq: SAIQ) Gains as It Brings Cybersecurity to Space - investorideas.com",
+     "published": "Mon, 05 Oct 2026 15:40:00 GMT",
+     "source": "investorideas.com",
+     "via": "google"
+    },
+    {
+     "title": "What's Going On With WISeSat.Space Stock Today? - Benzinga",
+     "published": "Mon, 05 Oct 2026 12:32:17 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "REPORT OF FOREIGN PRIVATE ISSUER",
+     "url": "https://www.sec.gov/Archives/edgar/data/2101411/000121390026106117/ea0307504-6k_wisesat.htm"
+    },
+    {
+     "form": "6-K",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "REPORT OF FOREIGN PRIVATE ISSUER",
+     "url": "https://www.sec.gov/Archives/edgar/data/2101411/000121390026105923/ea0307430-6k_wisesat.htm"
+    },
+    {
+     "form": "CERT",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/2101411/000135445726000938/2101411_8A_Cert_SAIQ.pdf"
+    },
+    {
+     "form": "8-A12B",
+     "date": "2026-10-01",
+     "items": [],
+     "events": [],
+     "desc": "FOR REGISTRATION OF CERTAIN CLASSES",
+     "url": "https://www.sec.gov/Archives/edgar/data/2101411/000121390026105818/ea0307301-8a12b_wisesat.htm"
+    }
+   ],
+   "vol_1y": 114.3,
+   "jump_sigma": 17.8,
+   "spike_days_1y": 4,
+   "history_days": 249,
+   "noisy": false,
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "PICS",
+   "name": "PicS N.V.",
+   "price": 11.62,
+   "change_pct": 27.83,
+   "volume": 1740807,
+   "market_cap": 1505807232,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": -1897396608,
+   "revenue_ttm": 13379350528,
+   "revenue_growth": 0.67,
+   "gross_margin": 0.83586997,
+   "profit_margin": 0.099709995,
+   "cash": 6526830080,
+   "debt": 3457229056,
+   "shares_out": 43135919,
+   "float_shares": 33208433,
+   "short_pct_float": 0.0431,
+   "avg_volume": 422442,
+   "high_52w": 19.95,
+   "low_52w": 8.08,
+   "target_mean": 19.758093,
+   "rating": "strong_buy",
+   "analysts": 9,
+   "ev_to_revenue": -0.142,
+   "forward_pe": 3.7655919,
+   "rel_volume": 4.1,
+   "off_52w_high_pct": -41.8,
+   "target_upside_pct": 70.0,
+   "news": [
+    {
+     "title": "Justin Timberlake, Jessica Biel Share Never-Before-Seen Photos on 14th Wedding Anniversary - E! News",
+     "published": "Mon, 05 Oct 2026 13:18:45 GMT",
+     "source": "E! News",
+     "via": "google"
+    },
+    {
+     "title": "Blake Shelton Shares Romantic Pics with Wife Gwen Stefani to Celebrate Her 57th Birthday: \u2018I Love You Pretty Girl\u2019 - People.com",
+     "published": "Mon, 05 Oct 2026 15:43:48 GMT",
+     "source": "People.com",
+     "via": "google"
+    },
+    {
+     "title": "Justin Bieber shares rare pics of son Jack \u2013 and he's growing up fast - USA Today",
+     "published": "Mon, 05 Oct 2026 03:09:00 GMT",
+     "source": "USA Today",
+     "via": "google"
+    },
+    {
+     "title": "PicPay stock has lost half its value since its Nasdaq debut in January - Startup Fortune",
+     "published": "Sun, 04 Oct 2026 14:37:50 GMT",
+     "source": "Startup Fortune",
+     "via": "google"
+    },
+    {
+     "title": "Victim\u2019s mother shares photos of alleged attack by Hammond officer; police chief disputes claim - WWLTV.com",
+     "published": "Sat, 03 Oct 2026 02:27:00 GMT",
+     "source": "WWLTV.com",
+     "via": "google"
+    },
+    {
+     "title": "Actor Mohsin Khan shares dreamy wedding picture with Tamanna - Indulge Express",
+     "published": "Mon, 05 Oct 2026 02:51:02 GMT",
+     "source": "Indulge Express",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 78.3,
+   "jump_sigma": 5.0,
+   "spike_days_1y": 3,
+   "history_days": 170,
+   "noisy": false,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "AGBK",
+   "name": "AGI Inc",
+   "price": 6.74,
+   "change_pct": 23.44,
+   "volume": 785433,
+   "market_cap": 1759579264,
+   "exchange": "NYQ",
+   "sector": "Financial Services",
+   "industry": "Banks - Regional",
+   "enterprise_value": 17646637056,
+   "revenue_ttm": 3488354048,
+   "revenue_growth": -0.152,
+   "gross_margin": 0.63654,
+   "profit_margin": 0.23275,
+   "cash": 2944293888,
+   "debt": 19716593664,
+   "shares_out": 58606471,
+   "float_shares": 21658268,
+   "short_pct_float": 0.0403,
+   "avg_volume": 248873,
+   "high_52w": 12.21,
+   "low_52w": 5.28,
+   "target_mean": 12.663124,
+   "rating": "strong_buy",
+   "analysts": 11,
+   "ev_to_revenue": 5.059,
+   "forward_pe": 3.8322313,
+   "rel_volume": 3.2,
+   "off_52w_high_pct": -44.8,
+   "target_upside_pct": 87.9,
+   "news": [
+    {
+     "title": "AGI (NYSE:AGBK) Reaches New 12-Month Low - Time to Sell? - MarketBeat",
+     "published": "Mon, 05 Oct 2026 14:03:32 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "How Does Agi (NYSE:AGBK) Fit the S&P 500 Banking Context? - Kalkine Media",
+     "published": "Mon, 05 Oct 2026 14:32:00 GMT",
+     "source": "Kalkine Media",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2081206/000129281426004827/agbk20261001_6k.htm"
+    }
+   ],
+   "vol_1y": 53.5,
+   "jump_sigma": 6.2,
+   "spike_days_1y": 0,
+   "history_days": 161,
+   "noisy": false,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "STNE",
+   "name": "StoneCo Ltd.",
+   "price": 11.54,
+   "change_pct": 20.84,
+   "volume": 29371939,
+   "market_cap": 2661073664,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "enterprise_value": 11009893376,
+   "revenue_ttm": 13586661376,
+   "revenue_growth": 0.016,
+   "gross_margin": 0.71558,
+   "profit_margin": 0.24714,
+   "cash": 8196646912,
+   "debt": 16962031616,
+   "shares_out": 216544468,
+   "float_shares": 203320781,
+   "short_pct_float": 0.0887,
+   "avg_volume": 4984939,
+   "high_52w": 19.64,
+   "low_52w": 8.95,
+   "target_mean": 15.472144,
+   "rating": "buy",
+   "analysts": 17,
+   "ev_to_revenue": 0.81,
+   "forward_pe": 5.059459,
+   "rel_volume": 5.9,
+   "off_52w_high_pct": -41.2,
+   "target_upside_pct": 34.1,
+   "news": [
+    {
+     "title": "Why StoneCoStock Soared Today - The Motley Fool",
+     "published": "Mon, 05 Oct 2026 16:08:00 GMT",
+     "source": "The Motley Fool",
+     "via": "google"
+    },
+    {
+     "title": "StoneCo Ltd. (STNE) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Sat, 03 Oct 2026 16:10:12 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "11 Financials Stocks Moving In Monday's Pre-Market Session - Benzinga",
+     "published": "Mon, 05 Oct 2026 12:05:39 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "StoneCo (NASDAQ:STNE) Shares Gap Up - What's Next? - MarketBeat",
+     "published": "Mon, 05 Oct 2026 15:24:21 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "Monday's session: gap up and gap down stocks - ChartMill",
+     "published": "Mon, 05 Oct 2026 14:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "Brazilian fintech stocks surge as Bolsonaro's lead puts Brazil on track to shift right (XP:NASDAQ) - Seeking Alpha",
+     "published": "Mon, 05 Oct 2026 15:16:03 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 53.2,
+   "jump_sigma": 5.7,
+   "spike_days_1y": 2,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -7.0,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "NVAX",
+   "name": "Novavax, Inc.",
+   "price": 12.56,
+   "change_pct": 20.08,
+   "volume": 28395465,
+   "market_cap": 2071718400,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 1303311232,
+   "revenue_ttm": 413796000,
+   "revenue_growth": -0.763,
+   "gross_margin": -0.02558,
+   "profit_margin": -0.59868,
+   "cash": 719340032,
+   "debt": 297319008,
+   "shares_out": 164945726,
+   "float_shares": 142577436,
+   "short_pct_float": 0.3043,
+   "avg_volume": 4452118,
+   "high_52w": 13.385,
+   "low_52w": 6.2,
+   "target_mean": 14.00222,
+   "rating": "buy",
+   "analysts": 9,
+   "ev_to_revenue": 3.15,
+   "forward_pe": -20.459024,
+   "rel_volume": 6.4,
+   "off_52w_high_pct": -6.2,
+   "target_upside_pct": 11.5,
+   "news": [
+    {
+     "title": "Novavax, Inc. (NVAX) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Sat, 03 Oct 2026 18:54:41 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Novavax Soars 22% as Sanofi Carries Nuvaxovid Into Vaccination Season; Moderna Climbs 8%, BioNTech Ticks Up - 24/7 Wall St.",
+     "published": "Mon, 05 Oct 2026 19:02:00 GMT",
+     "source": "24/7 Wall St.",
+     "via": "google"
+    },
+    {
+     "title": "Novavax Stock Price Forecast. Should You Buy NVAX? - StockInvest.us",
+     "published": "Fri, 02 Oct 2026 22:21:58 GMT",
+     "source": "StockInvest.us",
+     "via": "google"
+    },
+    {
+     "title": "Novavax, Inc. (NVAX) stock price, news, quote and history - Yahoo Finance Australia",
+     "published": "Sat, 03 Oct 2026 14:07:52 GMT",
+     "source": "Yahoo Finance Australia",
+     "via": "google"
+    },
+    {
+     "title": "Novavax, Inc. (NVAX) stock price, news, quote and history - Yahoo Finance UK",
+     "published": "Sat, 03 Oct 2026 04:20:24 GMT",
+     "source": "Yahoo Finance UK",
+     "via": "google"
+    },
+    {
+     "title": "Novavax Inc. stock underperforms Friday when compared to competitors - MarketWatch",
+     "published": "Fri, 02 Oct 2026 21:29:00 GMT",
+     "source": "MarketWatch",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 62.8,
+   "jump_sigma": 4.6,
+   "spike_days_1y": 3,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 1.2,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "INTR",
+   "name": "Inter & Co. Inc.",
+   "price": 6.56,
+   "change_pct": 19.71,
+   "volume": 27221461,
+   "market_cap": 2896328448,
+   "exchange": "NMS",
+   "sector": "Financial Services",
+   "industry": "Banks - Regional",
+   "enterprise_value": 16559935488,
+   "revenue_ttm": 6661834752,
+   "revenue_growth": 0.238,
+   "gross_margin": 0.0,
+   "profit_margin": 0.22915001,
+   "cash": 6268523008,
+   "debt": 20300652544,
+   "shares_out": 325792797,
+   "float_shares": 246209988,
+   "short_pct_float": 0.042600002,
+   "avg_volume": 4799256,
+   "high_52w": 10.36,
+   "low_52w": 4.97,
+   "target_mean": 8.5678,
+   "rating": "none",
+   "analysts": 10,
+   "ev_to_revenue": 2.486,
+   "forward_pe": 7.113039,
+   "rel_volume": 5.7,
+   "off_52w_high_pct": -36.7,
+   "target_upside_pct": 30.6,
+   "news": [
+    {
+     "title": "Why is Herm\u00e8s International stock sliding today? - Investing.com",
+     "published": "Mon, 05 Oct 2026 18:35:06 GMT",
+     "source": "Investing.com",
+     "via": "google"
+    },
+    {
+     "title": "Logitech International S.A. (LOGI) stock price, news, quote and history - Yahoo Finance Australia",
+     "published": "Mon, 05 Oct 2026 16:41:27 GMT",
+     "source": "Yahoo Finance Australia",
+     "via": "google"
+    },
+    {
+     "title": "David Marriott sold 3,500 shares. Analysts rate Marriott International stock Moderate Buy - AD HOC NEWS",
+     "published": "Mon, 05 Oct 2026 13:58:08 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    },
+    {
+     "title": "DA Davidson raises target for Standex International stock to USD 350.00 - AD HOC NEWS",
+     "published": "Mon, 05 Oct 2026 05:46:34 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    },
+    {
+     "title": "Babcock International Group PLC (BCKIF) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Sun, 04 Oct 2026 14:17:28 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Service Corporation International stock gained 0.84 percent on October 2 - AD HOC NEWS",
+     "published": "Mon, 05 Oct 2026 13:24:45 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 49.6,
+   "jump_sigma": 5.8,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.3,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "RXRX",
+   "name": "Recursion Pharmaceuticals, Inc.",
+   "price": 4.78,
+   "change_pct": 16.02,
+   "volume": 66744539,
+   "market_cap": 2563375872,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 1726564736,
+   "revenue_ttm": 54856000,
+   "revenue_growth": -0.601,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 545683008,
+   "debt": 66638000,
+   "shares_out": 535342170,
+   "float_shares": 518468185,
+   "short_pct_float": 0.3495,
+   "avg_volume": 19166140,
+   "high_52w": 7.18,
+   "low_52w": 2.77,
+   "target_mean": 7.21667,
+   "rating": "buy",
+   "analysts": 6,
+   "ev_to_revenue": 31.474,
+   "forward_pe": -5.2999816,
+   "rel_volume": 3.5,
+   "off_52w_high_pct": -33.4,
+   "target_upside_pct": 51.0,
+   "news": [
+    {
+     "title": "symbol__ Stock Quote Price and Forecast - CNN",
+     "published": "Sat, 03 Oct 2026 08:03:20 GMT",
+     "source": "CNN",
+     "via": "google"
+    },
+    {
+     "title": "RXRX Stock Rises As Tempus AI Deal Extends To 2029 - StocksToTrade",
+     "published": "Mon, 05 Oct 2026 16:35:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "Recursion Pharmaceuticals Shares Jump as AI Partnership Momentum and Short-Covering Appear to Lift Sentiment - Quiver Quantitative",
+     "published": "Mon, 05 Oct 2026 17:36:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "RXRX Rises As Tempus AI Deal Locks In $42M - timothysykes.com",
+     "published": "Mon, 05 Oct 2026 16:33:00 GMT",
+     "source": "timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "RXRX - Advanced AI And ML Will Transform Biotech Drug Discovery - Simply Wall Street",
+     "published": "Sat, 03 Oct 2026 19:31:49 GMT",
+     "source": "Simply Wall Street",
+     "via": "google"
+    },
+    {
+     "title": "A $0-per-share award brings Zavain Dar's direct Recursion (RXRX) holdings to 245,371 shares. - stocktitan.net",
+     "published": "Fri, 02 Oct 2026 22:18:09 GMT",
+     "source": "stocktitan.net",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "4",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000116/xslF345X06/wk-form4_1790979462.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000115/xslF345X06/wk-form4_1790979423.xml"
+    }
+   ],
+   "vol_1y": 73.4,
+   "jump_sigma": 3.2,
+   "spike_days_1y": 2,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 21.6,
+   "tags": [
+    "sector-theme"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "ITUB",
+   "name": "Itau Unibanco Banco Holding SA",
+   "price": 9.92,
+   "change_pct": 15.48,
+   "volume": 113255611,
+   "market_cap": 109336969216,
+   "exchange": "NYQ",
+   "sector": "Financial Services",
+   "industry": "Banks - Regional",
+   "enterprise_value": 736653869056,
+   "revenue_ttm": 143713992704,
+   "revenue_growth": 0.175,
+   "gross_margin": 0.0,
+   "profit_margin": 0.32584,
+   "cash": 484164993024,
+   "debt": 1115894054912,
+   "shares_out": 5404129565,
+   "float_shares": 5850079289,
+   "short_pct_float": 0.0043,
+   "avg_volume": 22163475,
+   "high_52w": 10.19,
+   "low_52w": 6.543689,
+   "target_mean": 8.875,
+   "rating": "none",
+   "analysts": 8,
+   "ev_to_revenue": 5.126,
+   "forward_pe": 10.040587,
+   "rel_volume": 5.1,
+   "off_52w_high_pct": -2.6,
+   "target_upside_pct": -10.5,
+   "news": [
+    {
+     "title": "Stocks making the biggest moves premarket: DraftKings, Itau Unibanco, PTC & more - CNBC",
+     "published": "Mon, 05 Oct 2026 11:45:09 GMT",
+     "source": "CNBC",
+     "via": "google"
+    },
+    {
+     "title": "ITUB Stock Grinds Higher As Charts Flash Steady Momentum - StocksToTrade",
+     "published": "Mon, 05 Oct 2026 13:18:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "Ita\u00fa Unibanco Holding S.A. (ITUB3.SA) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Mon, 05 Oct 2026 14:52:08 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Itau Unibanco Holding SA Stock (ITUB) Moved Up by 17.40% on Oct 5: What Signal Does It Send? - TradingKey",
+     "published": "Mon, 05 Oct 2026 14:15:27 GMT",
+     "source": "TradingKey",
+     "via": "google"
+    },
+    {
+     "title": "Traders Purchase Large Volume of Call Options on Itau Unibanco (NYSE:ITUB) - MarketBeat",
+     "published": "Mon, 05 Oct 2026 15:30:06 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "Which stocks are most active on Monday? - ChartMill",
+     "published": "Mon, 05 Oct 2026 18:00:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "6-K",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000243/a6-k_itubx10022026.htm"
+    },
+    {
+     "form": "6-K",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000240/pdfcvm-englishversion.htm"
+    },
+    {
+     "form": "6-K",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "6-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000238/a6-k_itubx10022026.htm"
+    }
+   ],
+   "vol_1y": 32.2,
+   "jump_sigma": 7.1,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 8.5,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "DNA",
+   "name": "Ginkgo Bioworks Holdings, Inc.",
+   "price": 14.98,
+   "change_pct": 21.3,
+   "volume": 7509438,
+   "market_cap": 1008757376,
+   "exchange": "NYQ",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 933602432,
+   "revenue_ttm": 132421000,
+   "revenue_growth": -0.485,
+   "gross_margin": 0.68042,
+   "profit_margin": -2.19605,
+   "cash": 302163008,
+   "debt": 404112992,
+   "shares_out": 55383808,
+   "float_shares": 49877596,
+   "short_pct_float": 0.1336,
+   "avg_volume": 1395892,
+   "high_52w": 17.58,
+   "low_52w": 5.37,
+   "target_mean": 7.0,
+   "rating": "none",
+   "analysts": 2,
+   "ev_to_revenue": 7.05,
+   "forward_pe": -5.165517,
+   "rel_volume": 5.4,
+   "off_52w_high_pct": -14.8,
+   "target_upside_pct": -53.3,
+   "news": [
+    {
+     "title": "Officer Steven P. Coen proposes selling 2,403 Ginkgo Bioworks (NYSE: DNA) shares. - stocktitan.net",
+     "published": "Mon, 05 Oct 2026 18:04:48 GMT",
+     "source": "stocktitan.net",
+     "via": "google"
+    },
+    {
+     "title": "This Small-Cap Stock Announced a Deal With Eli Lilly. Then Its Shares Doubled - theglobeandmail.com",
+     "published": "Mon, 05 Oct 2026 16:10:46 GMT",
+     "source": "theglobeandmail.com",
+     "via": "google"
+    },
+    {
+     "title": "This Small-Cap Stock Announced a Deal With Eli Lilly. Then Its Shares Doubled - The Motley Fool",
+     "published": "Mon, 05 Oct 2026 15:52:24 GMT",
+     "source": "The Motley Fool",
+     "via": "google"
+    },
+    {
+     "title": "DNA Oct 2026 10.000 put (DNA261016P00010000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Sun, 04 Oct 2026 16:29:14 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Cathie Wood\u2019s ARKG Is Crushing Her Other ETFs: 2 Biotech Bets Have Surged Nearly 6X This Year - tradingview.com",
+     "published": "Mon, 05 Oct 2026 06:44:00 GMT",
+     "source": "tradingview.com",
+     "via": "google"
+    },
+    {
+     "title": "3 Cash-Burning Stocks with Questionable Fundamentals - FinancialContent",
+     "published": "Mon, 05 Oct 2026 04:40:00 GMT",
+     "source": "FinancialContent",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "144",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1830214/000195917326007259/xsl144X01/primary_doc.xml"
+    }
+   ],
+   "vol_1y": 97.6,
+   "jump_sigma": 3.1,
+   "spike_days_1y": 7,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 10.0,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "BCYC",
+   "name": "Bicycle Therapeutics plc",
+   "price": 4.01,
+   "change_pct": 18.64,
+   "volume": 1838911,
+   "market_cap": 280671424,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": -258815104,
+   "revenue_ttm": 61205000,
+   "revenue_growth": -0.785,
+   "gross_margin": -2.0889301,
+   "profit_margin": 0.0,
+   "cash": 510052000,
+   "debt": 14661000,
+   "shares_out": 50554927,
+   "float_shares": 7779008,
+   "short_pct_float": 0.0853,
+   "avg_volume": 361989,
+   "high_52w": 9.159,
+   "low_52w": 3.33,
+   "target_mean": 9.5,
+   "rating": "none",
+   "analysts": 6,
+   "ev_to_revenue": -4.229,
+   "forward_pe": -1.8032603,
+   "rel_volume": 5.1,
+   "off_52w_high_pct": -56.2,
+   "target_upside_pct": 136.9,
+   "news": [
+    {
+     "title": "BCYC261218C00007000 interactive stock chart | BCYC Dec 2026 7.000 call stock - Yahoo Finance Australia",
+     "published": "Sat, 03 Oct 2026 23:58:56 GMT",
+     "source": "Yahoo Finance Australia",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "144",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1761612/000197248126000290/xsl144X01/primary_doc.xml"
+    }
+   ],
+   "vol_1y": 51.3,
+   "jump_sigma": 5.3,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.7,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 1
+  }
+ ]
+}

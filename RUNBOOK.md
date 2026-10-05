@@ -222,8 +222,10 @@ python3 scripts/clues.py postmortem --save --journal  # 16:20 run: today's big m
   1+ ATR mover with its clues and why it was missed; the 16:20 post-mortem goes to the journal.
 * Clues are alerts, not trade rules. Radar entries (2a) stay as they are until a clue beats random entries in the
   5-year backtest (`research/backtests/clues-*.md`). A breakout watch is never a radar buy; it goes to Vamsi.
-* Screen fix from the first post-mortem (Oct 5): a tested zone within 0.1 ATR of the price counts as support
-  (`levels.py`); the strict "below the price" test had hidden GRAB's three-touch support at 3.075.
+* Screen fix from the first post-mortem (Oct 5): a tested zone within 0.1 ATR of the price counts as support when
+  two of its swings are lows (`levels.py`); the strict "below the price" test had hidden GRAB's support at 3.075
+  (lows of 3.07 twice). A zone at the price built from highs (INTR, STNE after Oct 5's spikes) stays resistance.
+* Open positions keep the stop and target recorded at entry; the nightly radar rebuild does not move them.
 
 ## 3. Execute and log
 

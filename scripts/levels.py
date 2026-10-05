@@ -14,9 +14,9 @@ sell at resistance, stop below support).
 Levels: swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the
 3 bars on each side), clustered within half an ATR (min 1.5%) into zones. A level's strength is the
 number of swings in its zone; a support or resistance needs at least two (tested twice). Support is the
-nearest tested zone at or below the price (a zone within 0.1 ATR of the price counts: the price is sitting
-on it), resistance the nearest tested zone more than 0.1 ATR above. The buy zone runs from
-support to support + 0.3 ATR, the sell zone from resistance - 0.3 ATR to resistance, and the stop sits
+nearest tested zone below the price (a zone within 0.1 ATR of the price counts when two of its swings are
+lows: the price is sitting on support), resistance the nearest tested zone more than 0.1 ATR above. The buy
+zone runs from support to support + 0.3 ATR, the sell zone from resistance - 0.3 ATR to resistance, and the stop sits
 0.6 ATR under support. Reward:risk = (sell-zone bottom - buy-zone top) / (buy-zone top - stop).
 These are arithmetic on past prices, not forecasts.
 """
@@ -52,6 +52,8 @@ CANDIDATES = [
     # the filters): semis and hardware, software, consumer internet, biotech, brokers and crypto platforms.
     "AXTI", "SMTC", "POET", "AEHR", "HIMX", "DELL", "ORCL", "NOW", "PATH", "META", "SNAP", "DUOL", "GRAB",
     "CRSP", "BULL", "BKKT", "ALMU",
+    # Added Mon Oct 5 from the day's 15%+ movers that pass the filters (one Brazil fintech; AI and genomics biotech).
+    "STNE", "RXRX", "DNA", "PCVX", "GRAL",
 ]
 MUST_KEEP = {"GPUS", "IREN", "BTDR"}
 # Names that trade mostly on bitcoin or ether (miners, hosts that still mine, treasuries, exchanges):
@@ -147,9 +149,12 @@ def analyse(b: dict) -> dict | None:
     tol = max(0.5 * a, 0.015 * price)
     lows, highs = pivots(win)
     zs = zones(lows + highs, tol, n)
-    # A zone within 0.1 ATR of the price is support the price is sitting on (GRAB, Oct 2: a three-touch zone at
-    # 3.075 against a 3.08 close was skipped by a strict "below" test). Before Oct 5 it was skipped.
-    below = [z for z in zs if z["level"] <= price + 0.1 * a]
+    # A zone within 0.1 ATR of the price is support the price is sitting on when at least two of its swings are
+    # lows (GRAB, Oct 2: lows at 3.07 twice against a 3.08 close; the strict "below" test used before Oct 5
+    # skipped it). A zone at the price built from highs is old resistance the price has run into, not support.
+    def n_lows(z: dict) -> int:
+        return sum(1 for _, p in lows if z["lo"] <= p <= z["hi"])
+    below = [z for z in zs if z["level"] < price - 0.1 * a or (z["level"] <= price + 0.1 * a and n_lows(z) >= 2)]
     above = [z for z in zs if z["level"] > price + 0.1 * a]
     sup = next((z for z in sorted(below, key=lambda z: -z["level"]) if z["strength"] >= 2), None)
     res = next((z for z in sorted(above, key=lambda z: z["level"]) if z["strength"] >= 2), None)

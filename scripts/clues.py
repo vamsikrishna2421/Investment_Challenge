@@ -10,7 +10,7 @@ big move, check whether it left clues beforehand and why the routines missed the
 
 Universe: the radar (config/radar.json) plus the candidates in scripts/levels.py.
 Clues, from daily bars through the last completed session before the one being judged (no look-ahead):
-  SUP   within 0.5 ATR above a support tested at least twice (a zone at the price counts)
+  SUP   within 0.5 ATR above a support tested at least twice (a zone at the price counts if two swings are lows)
   COIL  the last 5 sessions' average range at most 75% of the 14-day ATR, or the last session the narrowest of 7
   ACC   up-day volume at least 1.5x down-day volume over the last 10 sessions
   HL    higher lows: the last 5 sessions' low above the 5 before
@@ -43,17 +43,32 @@ ACC_MIN = 1.5
 GAP_ATR = 0.5
 
 
+def radar_in_force() -> dict:
+    """The radar the routines traded on today: the newest build from closes before today's session (the 16:20
+    rebuild writes tomorrow's radar, so a post-mortem after it must read the one before)."""
+    today = today_et()
+    best = None
+    for p in (ROOT / "research" / "radar").glob("*.json"):
+        try:
+            d = json.loads(p.read_text())
+        except Exception:  # noqa: BLE001
+            continue
+        if (d.get("asof") or "9999") < today and (best is None or d.get("generated_at", "") > best.get("generated_at", "")):
+            best = d
+    if best is None and lv.RADAR.exists():
+        best = json.loads(lv.RADAR.read_text())
+    return best or {}
+
+
 def universe() -> list[tuple[str, bool]]:
-    radar = json.loads(lv.RADAR.read_text()) if lv.RADAR.exists() else {}
-    names = [x["ticker"] for x in radar.get("names", [])]
+    names = [x["ticker"] for x in radar_in_force().get("names", [])]
     out = [(s, True) for s in names]
     out += [(s, False) for s in lv.CANDIDATES if s not in names]
     return out
 
 
 def radar_map() -> dict:
-    radar = json.loads(lv.RADAR.read_text()) if lv.RADAR.exists() else {}
-    return {x["ticker"]: x for x in radar.get("names", [])}
+    return {x["ticker"]: x for x in radar_in_force().get("names", [])}
 
 
 def held() -> set[str]:
@@ -83,7 +98,10 @@ def features(rows: list[dict]) -> dict | None:
     win = rows[-lv.LOOKBACK:]
     lows, highs = lv.pivots(win)
     zs = [z for z in lv.zones(lows + highs, max(0.5 * a, 0.015 * px), len(win)) if z["strength"] >= 2]
-    sup = max((z for z in zs if z["level"] <= px + 0.1 * a), key=lambda z: z["level"], default=None)
+    def n_lows(z: dict) -> int:
+        return sum(1 for _, p in lows if z["lo"] <= p <= z["hi"])
+    sup = max((z for z in zs if z["level"] < px - 0.1 * a or (z["level"] <= px + 0.1 * a and n_lows(z) >= 2)),
+              key=lambda z: z["level"], default=None)
     res = min((z for z in zs if z["level"] > px + 0.1 * a), key=lambda z: z["level"], default=None)
     rng = [r["h"] - r["l"] for r in rows]
     coil = sum(rng[-5:]) / 5 / a

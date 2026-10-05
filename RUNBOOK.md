@@ -206,6 +206,25 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   followed the market year by year. The radar sets where the stop and target sit; it is not a forecast. Any new
   level rule gets the same test (beat random entries with the same stop and target, after costs) before it trades.
 
+## 2b. Clue scan (Vamsi, Mon Oct 5)
+
+Vamsi's instruction: when a watched name moves a lot, check whether it showed clues before the move and why the
+routines missed them, then watch for those clues ahead of the next move.
+
+```bash
+python3 scripts/clues.py scan --save                  # 8:40 run: bounce setups, breakout watches, pre-market moves
+python3 scripts/clues.py movers                       # any run: radar and candidate names moving 1+ ATR today
+python3 scripts/clues.py postmortem --save --journal  # 16:20 run: today's big movers, their clues, why missed
+```
+* Clues and scoring are in the `scripts/clues.py` docstring: SUP, COIL, ACC, HL, RES and GAP, from bars through the
+  last completed session; bounce score = SUP + COIL + ACC + HL. The universe is the radar plus its candidates.
+* The 8:40 day plan lists the scan's bounce setups (score 3+) and breakout watches; every status line names any
+  1+ ATR mover with its clues and why it was missed; the 16:20 post-mortem goes to the journal.
+* Clues are alerts, not trade rules. Radar entries (2a) stay as they are until a clue beats random entries in the
+  5-year backtest (`research/backtests/clues-*.md`). A breakout watch is never a radar buy; it goes to Vamsi.
+* Screen fix from the first post-mortem (Oct 5): a tested zone within 0.1 ATR of the price counts as support
+  (`levels.py`); the strict "below the price" test had hidden GRAB's three-touch support at 3.075.
+
 ## 3. Execute and log
 
 ```bash
@@ -233,6 +252,8 @@ Update the watchlist `strategy` (the dashboard's game-plan line) and `focus` whe
   16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
 * Crypto watch: weeknights 11:10 PM and weekends every 4 hours (only acts when the book holds crypto).
 * Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers.
+* Clue scan (2b): `clues.py scan` at the 8:40 run, `clues.py movers` in every market-hours run, and
+  `clues.py postmortem` at the 16:20 run.
 * Final day Wed Nov 4 (unless Vamsi extends it again): liquidate everything at the 15:40 run; the 16:20 run writes
   the final report, then deletes the routines.
 

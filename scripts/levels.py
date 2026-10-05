@@ -14,7 +14,8 @@ sell at resistance, stop below support).
 Levels: swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the
 3 bars on each side), clustered within half an ATR (min 1.5%) into zones. A level's strength is the
 number of swings in its zone; a support or resistance needs at least two (tested twice). Support is the
-nearest tested zone below the price, resistance the nearest tested zone above. The buy zone runs from
+nearest tested zone at or below the price (a zone within 0.1 ATR of the price counts: the price is sitting
+on it), resistance the nearest tested zone more than 0.1 ATR above. The buy zone runs from
 support to support + 0.3 ATR, the sell zone from resistance - 0.3 ATR to resistance, and the stop sits
 0.6 ATR under support. Reward:risk = (sell-zone bottom - buy-zone top) / (buy-zone top - stop).
 These are arithmetic on past prices, not forecasts.
@@ -146,7 +147,9 @@ def analyse(b: dict) -> dict | None:
     tol = max(0.5 * a, 0.015 * price)
     lows, highs = pivots(win)
     zs = zones(lows + highs, tol, n)
-    below = [z for z in zs if z["level"] < price - 0.1 * a]
+    # A zone within 0.1 ATR of the price is support the price is sitting on (GRAB, Oct 2: a three-touch zone at
+    # 3.075 against a 3.08 close was skipped by a strict "below" test). Before Oct 5 it was skipped.
+    below = [z for z in zs if z["level"] <= price + 0.1 * a]
     above = [z for z in zs if z["level"] > price + 0.1 * a]
     sup = next((z for z in sorted(below, key=lambda z: -z["level"]) if z["strength"] >= 2), None)
     res = next((z for z in sorted(above, key=lambda z: z["level"]) if z["strength"] >= 2), None)

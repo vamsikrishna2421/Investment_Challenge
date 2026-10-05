@@ -222,6 +222,11 @@ python3 scripts/clues.py postmortem --save --journal  # 16:20 run: today's big m
   1+ ATR mover with its clues and why it was missed; the 16:20 post-mortem goes to the journal.
 * Clues are alerts, not trade rules. Radar entries (2a) stay as they are until a clue beats random entries in the
   5-year backtest (`research/backtests/clues-*.md`). A breakout watch is never a radar buy; it goes to Vamsi.
+* First test (`python3 scripts/clue_backtest.py --save`, `research/backtests/clues-2026-10-05.md`; 66 candidates,
+  5 years, 37,553 name-days): no clue or score raised the odds of a 1+ ATR up-move the next session (base 8.1%;
+  score 3+ 7.9%, SUP+HL 8.1%, breakout watch 6.3%). ACC raised moves both ways (up 10.6%, down 7.2% vs 5.4%),
+  COIL lowered them (5.8% / 3.2%), SUP cut big drops (4.0%). Buying the next open and selling the close lost
+  0.1-0.4% after costs in every group. So the scan describes setups; it does not forecast them.
 * Screen fix from the first post-mortem (Oct 5): a tested zone within 0.1 ATR of the price counts as support when
   two of its swings are lows (`levels.py`); the strict "below the price" test had hidden GRAB's support at 3.075
   (lows of 3.07 twice). A zone at the price built from highs (INTR, STNE after Oct 5's spikes) stays resistance.

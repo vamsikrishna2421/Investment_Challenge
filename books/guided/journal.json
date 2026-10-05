@@ -173,6 +173,14 @@
         "QUBT",
         "LUNR"
       ]
+    },
+    {
+      "id": "J0012",
+      "ts": "2026-10-05T20:44:03Z",
+      "kind": "research",
+      "title": "Clue backtest: none of the clues predicted next-day up-moves over 5 years",
+      "body": "Test of the morning scan's clues (clues.py) before they are trusted: 66 candidates, 5 years of daily bars, 37,553 name-days on which the radar's volatility and liquidity filters passed (research/backtests/clues-2026-10-05.md; script scripts/clue_backtest.py, errors clustered by date).\nBase rate: the next session closed 1+ ATR higher on 8.1% of name-days and 1+ ATR lower on 5.4%.\n- Score 3+ (the scan alert): 7.9% up, 5.0% down. SUP + HL: 8.1% up, 4.5% down. Breakout watch (RES + COIL): 6.3% up. No lift.\n- ACC (up-day volume 1.5x down-day): 10.6% up and 7.2% down: bigger moves both ways, not a direction.\n- COIL (tight range): 5.8% up, 3.2% down: quiet days tend to stay quiet the next day.\n- SUP (at tested support): 7.6% up, 4.0% down: fewer sharp drops, no extra upside.\n- Buying the next open and selling that close lost 0.13-0.40% after costs in every group (score 4, 262 name-days: +0.34% +/- 0.67, not significant). Five-day returns were +1.3% for all name-days (these stocks rose over the period) and +1.8% for score 3+ or SUP + HL, inside the noise (+/- 0.7-0.8).\nConclusion: Monday's anecdote (2 of 13 clue names moved, 1 of 48 others) does not hold over 989 sessions. The morning scan stays a description of setups for Vamsi, not a forecast or a trade rule; the radar's entry rules are unchanged.",
+      "tickers": []
     }
   ]
 }

@@ -17,8 +17,10 @@ Clues, from daily bars through the last completed session before the one being j
   RES   within 0.5 ATR under a resistance tested at least twice (breakout watch; the radar does not buy these)
   GAP   (scan, movers) today's pre-market or opening move is at least 0.5 ATR
 Bounce score = SUP + COIL + ACC + HL. The scan lists bounce scores of 3+ and RES + COIL breakout watches.
-These describe past prices. Whether any of them comes before big moves more often than chance is tested in
-research/backtests/clues-*.md; until a clue passes that test it is an alert for Vamsi, not a trade rule.
+These describe past prices. Whether any of them comes before big moves more often than chance is tested by
+scripts/clue_backtest.py. First run (research/backtests/clues-2026-10-05.md, 5 years of the candidates): none
+did for next-session up-moves; ACC came before bigger moves both ways, COIL before quieter days. Until a clue
+passes that test it is an alert for Vamsi, not a trade rule.
 """
 from __future__ import annotations
 

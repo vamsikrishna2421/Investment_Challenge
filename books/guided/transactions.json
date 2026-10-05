@@ -1,13 +1,163 @@
 {
- "transactions": [
-  {
-   "id": "T0000",
-   "type": "DEPOSIT",
-   "ts": "2026-10-03T05:33:02Z",
-   "amount": 1000.0,
-   "net_cash": 1000.0,
-   "settle_date": "2026-10-03",
-   "note": "Paper capital funded. Vamsi's guided strategy opened Sat Oct 3; trades follow Vamsi's instructions."
-  }
- ]
+  "transactions": [
+    {
+      "id": "T0000",
+      "type": "DEPOSIT",
+      "ts": "2026-10-03T05:33:02Z",
+      "amount": 1000.0,
+      "net_cash": 1000.0,
+      "settle_date": "2026-10-03",
+      "note": "Paper capital funded. Vamsi's guided strategy opened Sat Oct 3; trades follow Vamsi's instructions."
+    },
+    {
+      "id": "T0001",
+      "type": "BUY",
+      "ts": "2026-10-05T13:56:42Z",
+      "ticker": "POET",
+      "label": "POET",
+      "asset": "stock",
+      "name": "POET Technologies Inc.",
+      "qty": 33.0464,
+      "multiplier": 1,
+      "price": 7.5651,
+      "quote_price": 7.55,
+      "quote_time": "2026-10-05T13:56:06Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 20.0,
+      "gross": 250.0,
+      "fees": 0.0,
+      "net_cash": -250.0,
+      "settle_date": "2026-10-06",
+      "rationale": "Radar BUY ZONE at the 9:55 run: 7.55, below the 7.65-7.78 buy zone after a 3% opening drop (low 7.49), above the 7.41 stop; sell zone 8.45-8.57. Entry R:R 6.3, the highest on the radar. No news.",
+      "tags": [
+        "radar"
+      ],
+      "plan": {
+        "stop": 7.41,
+        "target": 8.45
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 36,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 25.0
+      }
+    },
+    {
+      "id": "T0002",
+      "type": "BUY",
+      "ts": "2026-10-05T13:56:42Z",
+      "ticker": "HUT",
+      "label": "HUT",
+      "asset": "stock",
+      "name": "Hut 8 Corp.",
+      "qty": 2.894,
+      "multiplier": 1,
+      "price": 86.3832,
+      "quote_price": 86.34,
+      "quote_time": "2026-10-05T13:56:02Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 249.99,
+      "fees": 0.0,
+      "net_cash": -249.99,
+      "settle_date": "2026-10-06",
+      "rationale": "Radar BUY ZONE at the 9:55 run: 86.34, below the 87.99-90.07 buy zone after a 4% opening drop with the bitcoin miners (low 84.80), above the 83.85 stop; sell zone 100.77-102.84. Entry R:R 5.8. Crypto slot 1 of 2. No company news; bitcoin -0.7%.",
+      "tags": [
+        "radar",
+        "crypto"
+      ],
+      "plan": {
+        "stop": 83.85,
+        "target": 100.77
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 40,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 25.0
+      }
+    },
+    {
+      "id": "T0003",
+      "type": "BUY",
+      "ts": "2026-10-05T13:56:42Z",
+      "ticker": "CIFR",
+      "label": "CIFR",
+      "asset": "stock",
+      "name": "Cipher Digital Inc.",
+      "qty": 16.5979,
+      "multiplier": 1,
+      "price": 15.0621,
+      "quote_price": 15.032,
+      "quote_time": "2026-10-05T13:56:06Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 20.0,
+      "gross": 250.0,
+      "fees": 0.0,
+      "net_cash": -250.0,
+      "settle_date": "2026-10-06",
+      "rationale": "Radar BUY ZONE at the 9:55 run: 15.03 inside the 14.87-15.26 buy zone (low 14.96), stop 14.11, sell zone 17.89-18.28. Entry R:R 3.1. Crypto slot 2 of 2, so CORZ (2.3) and GLXY (2.1) are skipped. No news.",
+      "tags": [
+        "radar",
+        "crypto"
+      ],
+      "plan": {
+        "stop": 14.11,
+        "target": 17.89
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 36,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 25.0
+      }
+    },
+    {
+      "id": "T0004",
+      "type": "BUY",
+      "ts": "2026-10-05T13:56:49Z",
+      "ticker": "UMAC",
+      "label": "UMAC",
+      "asset": "stock",
+      "name": "Unusual Machines, Inc.",
+      "qty": 11.2455,
+      "multiplier": 1,
+      "price": 22.2311,
+      "quote_price": 22.22,
+      "quote_time": "2026-10-05T13:56:04Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 250.0,
+      "fees": 0.0,
+      "net_cash": -250.0,
+      "settle_date": "2026-10-06",
+      "rationale": "Radar BUY ZONE at the 9:55 run: 22.22 inside the 21.82-22.34 buy zone (low 21.88), stop 20.79, sell zone 25.96-26.47. Entry R:R 2.6, fourth slot; LUNR (2.35), SMTC (2.0), ASTS (1.9) and NNE (1.9) ranked lower. No news.",
+      "tags": [
+        "radar"
+      ],
+      "plan": {
+        "stop": 20.79,
+        "target": 25.96
+      },
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 45,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true,
+        "position_weight_pct": 25.0
+      }
+    }
+  ]
 }

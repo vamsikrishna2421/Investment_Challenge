@@ -119,6 +119,19 @@
         "ONDS",
         "WULF"
       ]
+    },
+    {
+      "id": "J0008",
+      "ts": "2026-10-05T13:57:00Z",
+      "kind": "trade",
+      "title": "Bought POET, HUT, CIFR and UMAC at the 9:55 run (radar BUY ZONE, $250 each)",
+      "body": "Per Vamsi's radar rules (J0002, J0007), the four highest entry R:R names in their buy zones at 9:56 AM, at most 2 crypto-linked:\nT0001 POET 33.0464 @ 7.5651 (quote 7.55; buy zone 7.65-7.78, opened -3%, low 7.49). Stop 7.41 (-2.0%), target 8.45 (+11.7%), entry R:R 6.3.\nT0002 HUT 2.894 @ 86.3832 (quote 86.34; buy zone 87.99-90.07, -4% at the open with the miners, low 84.80). Stop 83.85 (-2.9%), target 100.77 (+16.7%), R:R 5.8. Crypto 1 of 2.\nT0003 CIFR 16.5979 @ 15.0621 (buy zone 14.87-15.26, low 14.96). Stop 14.11 (-6.3%), target 17.89 (+18.8%), R:R 3.1. Crypto 2 of 2; CORZ and GLXY skipped.\nT0004 UMAC 11.2455 @ 22.2311 (buy zone 21.82-22.34, low 21.88). Stop 20.79 (-6.5%), target 25.96 (+16.8%), R:R 2.6.\nPassed over: LUNR (2.35), SMTC (bounce, 2.0), ASTS (1.9), NNE (bounce, 1.9). No news or filings on any of the four this morning; bitcoin -0.7%.\nCash $0.01 after the buys, so no further entries today. Exits: sell zone, a stop traded at or below its level, or the 3:40 PM liquidation. POET and HUT sit below their zones, 2-3% above their stops, so a further slide stops them out quickly.",
+      "tickers": [
+        "POET",
+        "HUT",
+        "CIFR",
+        "UMAC"
+      ]
     }
   ]
 }

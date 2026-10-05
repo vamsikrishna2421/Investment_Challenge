@@ -97,6 +97,28 @@
         "MSTR",
         "GPUS"
       ]
+    },
+    {
+      "id": "J0007",
+      "ts": "2026-10-05T12:42:25Z",
+      "kind": "plan",
+      "title": "Day plan, Mon Oct 5 (8:41 AM pre-market)",
+      "body": "Pre-market at 8:41 AM; no positions, $1,000 settled cash. Overnight news on radar names: ONDS won a $56M order (+4.1% pre-market; now above its zone) and WULF expanded contracted power at its Muskie campus to 1 GW (+3.0%). No offerings or negative news on any radar name.\nIn the buy zone (price; buy zone / stop / sell zone; entry R:R now): SNAP 5.56; 5.53-5.61 / 5.37 / 5.98-6.06; 2.2. HUT 89.60; 87.99-90.07 / 83.85 / 100.77-102.84; 1.9 (crypto).\nWithin 0.5% above: ASTS 58.39 (57.13-58.31 / 54.76 / 64.21-65.40), UMAC 22.38 (21.82-22.34 / 20.79 / 25.96-26.47), POET 7.81 (7.65-7.78 / 7.41 / 8.45-8.57).\nWithin 1-3% above: TEM 76.37, SMTC 193.37, GLXY 23.40 (crypto), NNE 15.74, DUOL 144.00, SMCI 43.50, CIFR 15.68 (crypto).\nOrder: from the 9:55 run, buy names showing BUY ZONE or BOUNCE by entry R:R at that run, highest first, about $250 each, up to 4 positions and at most 2 crypto-linked. On the pre-market prices that means SNAP first, then HUT; UMAC, ASTS and POET join if they dip into their zones; SMCI (zone-top R:R 4.0), TEM and SMTC (2.4 and 2.2) take precedence if they reach theirs. Stops and targets per the radar; no new buys after 2:55 PM; everything sold at the 3:40 PM run.",
+      "tickers": [
+        "SNAP",
+        "HUT",
+        "UMAC",
+        "ASTS",
+        "POET",
+        "TEM",
+        "SMTC",
+        "GLXY",
+        "NNE",
+        "SMCI",
+        "CIFR",
+        "ONDS",
+        "WULF"
+      ]
     }
   ]
 }

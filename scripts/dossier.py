@@ -286,7 +286,7 @@ def build(sym: str, peers_override: list[str] | None = None) -> str:
           "- Competition, customers, regulation:",
           "- What the current price assumes (implied multiple vs peers):",
           "- What decides the stock, and the next checkpoint:",
-          "- Verdict for this challenge (ends Mon Oct 5 close): trade or not, trigger, stop, size:"]
+          "- Verdict for this challenge (ends Wed Nov 4 close): trade or not, trigger, stop, size:"]
     return "\n".join(L) + "\n"
 
 

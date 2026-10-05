@@ -234,7 +234,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     <div>
       <div class="eyebrow">One paper portfolio · $1,000 · $2,000 target · every trade on Vamsi's strategy</div>
       <h1 class="wordmark">Vamsi's guided <span class="k">$1K</span></h1>
-      <div class="window">Opened Sat Oct 3 with $1,000 · high-volatility stocks bought at support, sold at resistance · ends at the Mon Oct 5, 4:00 PM ET close · earlier books archived</div>
+      <div class="window">Opened Sat Oct 3 with $1,000 · high-volatility stocks bought at support, sold at resistance · ends at the Wed Nov 4, 4:00 PM ET close (extended Oct 5) · earlier books archived</div>
     </div>
     <div class="status">
       <span class="pill" id="mkt"><span class="dot"></span><span id="mkt-t">Market closed</span></span>
@@ -269,7 +269,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     </section>
 
     <section class="goal" aria-label="Progress to the 2x goal">
-      <div class="goal-head"><span>Goal: <strong>double to $2,000</strong> by the Oct 5 close</span><span id="goal-pct" class="num">&mdash;</span></div>
+      <div class="goal-head"><span>Goal: <strong>double to $2,000</strong> by the Nov 4 close</span><span id="goal-pct" class="num">&mdash;</span></div>
       <div class="track" role="img" id="goal-track" aria-label="Progress to goal"><div class="below" id="goal-below"></div><div class="fill" id="goal-fill"></div></div>
       <div class="track-scale"><span>$1,000 start</span><span>$1,500</span><span>$2,000 goal</span></div>
       <div class="plan" id="plan" hidden></div>
@@ -283,7 +283,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     </section>
 
     <section class="card" aria-labelledby="h-chart">
-      <div class="card-head"><h2 id="h-chart">Return since the book opened</h2><span class="hint">Trading hours only · Mon Oct 5</span></div>
+      <div class="card-head"><h2 id="h-chart">Return since the book opened</h2><span class="hint" id="chart-hint">Trading hours only</span></div>
       <div class="legend" id="legend">
         <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-guided)" stroke-width="2.5" stroke-linecap="round"/></svg>Vamsi's guided</span>
         <span><svg viewBox="0 0 18 6" aria-hidden="true"><line x1="1" y1="3" x2="17" y2="3" stroke="var(--s-bench)" stroke-width="1.5"/></svg>S&amp;P 500 (SPY)</span>
@@ -346,9 +346,10 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 <script>
 (function () {
   "use strict";
-  var END_UTC = Date.parse("2026-10-05T20:00:00Z");
-  var SESSIONS = ["2026-10-05"];
-  var DAY_NAMES = ["Mon Oct 5"];
+  var FIRST_SESSION = "2026-10-05";
+  var END_UTC = Date.parse("2026-11-04T21:00:00Z");
+  var HOLIDAYS = ["2026-11-26", "2026-12-25", "2027-01-01"];
+  var SESSIONS = [FIRST_SESSION], DAY_NAMES = ["Mon Oct 5"];
   var SESSION_MIN = 390;
   var DATA_BASE = "https://raw.githubusercontent.com/vamsikrishna2421/Investment_Challenge/market-data/data/";
   var BOOKS = {
@@ -409,6 +410,31 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
     var p = {}; etParts.formatToParts(new Date(iso)).forEach(function (x) { p[x.type] = x.value; });
     var h = +p.hour, ap = h >= 12 ? "PM" : "AM", h12 = h % 12 || 12;
     return p.weekday + " " + (+p.month) + "/" + (+p.day) + " " + h12 + ":" + p.minute + " " + ap;
+  }
+
+  /* US Eastern offset for a date: daylight time from the 2nd Sunday of March to the 1st Sunday of November. */
+  function etOffsetH(ds) {
+    var y = +ds.slice(0, 4), d = Date.parse(ds + "T12:00:00Z");
+    function nthSunday(m, n) { var w = new Date(Date.UTC(y, m, 1)).getUTCDay(); return Date.UTC(y, m, 1 + (7 - w) % 7 + 7 * (n - 1)); }
+    return d >= nthSunday(2, 2) && d < nthSunday(10, 1) ? 4 : 5;
+  }
+  function sessionOpen(ds) { return Date.parse(ds + "T09:30:00Z") + etOffsetH(ds) * 3600000; }
+  function sessionClose(ds) { return Date.parse(ds + "T16:00:00Z") + etOffsetH(ds) * 3600000; }
+  function etDate(ms) { var ds = new Date(ms).toISOString().slice(0, 10); return new Date(ms - etOffsetH(ds) * 3600000).toISOString().slice(0, 10); }
+  /* Trading sessions from the first one through today (or the last data point), capped at the window's end. */
+  function computeSessions(lastIso) {
+    var endDs = etDate(END_UTC), stop = etDate(Date.now());
+    if (lastIso) { var l = etDate(Date.parse(lastIso)); if (l > stop) stop = l; }
+    if (stop > endDs) stop = endDs;
+    var out = [], d = new Date(FIRST_SESSION + "T12:00:00Z");
+    for (var guard = 0; guard < 800; guard++) {
+      var ds = d.toISOString().slice(0, 10); if (ds > stop) break;
+      var wd = d.getUTCDay(); if (wd !== 0 && wd !== 6 && HOLIDAYS.indexOf(ds) < 0) out.push(ds);
+      d.setUTCDate(d.getUTCDate() + 1);
+    }
+    if (!out.length) out.push(FIRST_SESSION);
+    SESSIONS = out;
+    DAY_NAMES = out.map(function (ds) { return new Date(ds + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }); });
   }
 
   function sessionNow(now) {
@@ -705,7 +731,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   function tradingX(iso) {
     var t = Date.parse(iso);
     for (var i = 0; i < SESSIONS.length; i++) {
-      var o = Date.parse(SESSIONS[i] + "T13:30:00Z"), c = Date.parse(SESSIONS[i] + "T20:00:00Z");
+      var o = sessionOpen(SESSIONS[i]), c = sessionClose(SESSIONS[i]);
       if (t <= o) return i * SESSION_MIN;
       if (t < c) return i * SESSION_MIN + (t - o) / 60000;
     }
@@ -759,13 +785,22 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
       svg.appendChild(svgEl("line", { x1: m.l, x2: W - m.r, y1: y, y2: y, stroke: Math.abs(v) < 1e-9 ? "var(--axis)" : "var(--grid)", "stroke-width": 1 }));
       var lab = svgEl("text", { x: m.l - 8, y: y + 4, "text-anchor": "end" }); lab.textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(step < 1 ? 1 : 0) + "%"; svg.appendChild(lab);
     }
+    var few = SESSIONS.length <= 5, perDay = (W - m.l - m.r) / SESSIONS.length, wk = 0;
     for (var i = 0; i <= SESSIONS.length; i++) {
       var xx = X(i * SESSION_MIN);
-      svg.appendChild(svgEl("line", { x1: xx, x2: xx, y1: m.t, y2: H - m.b, stroke: "var(--grid)", "stroke-width": 1 }));
-      if (i < SESSIONS.length) {
+      var weekStart = i === 0 || (i < SESSIONS.length && new Date(SESSIONS[i] + "T12:00:00Z").getUTCDay() <= new Date(SESSIONS[i - 1] + "T12:00:00Z").getUTCDay());
+      if (few || weekStart || i === SESSIONS.length) svg.appendChild(svgEl("line", { x1: xx, x2: xx, y1: m.t, y2: H - m.b, stroke: "var(--grid)", "stroke-width": 1 }));
+      if (i === SESSIONS.length) continue;
+      if (few) {
         var tl = svgEl("text", { x: X(i * SESSION_MIN + SESSION_MIN / 2), y: H - 8, "text-anchor": "middle" }); tl.textContent = DAY_NAMES[i]; svg.appendChild(tl);
+      } else if (weekStart) {
+        if (wk++ % Math.max(1, Math.ceil(48 / (perDay * 5))) === 0) {
+          var tw = svgEl("text", { x: xx + 3, y: H - 8, "text-anchor": "start" }); tw.textContent = DAY_NAMES[i].replace(/^\w+, /, ""); svg.appendChild(tw);
+        }
       }
     }
+    var hint = $("chart-hint");
+    if (hint) hint.textContent = "Trading hours only · " + (SESSIONS.length === 1 ? DAY_NAMES[0] : DAY_NAMES[0].replace(/^\w+, /, "") + " – " + DAY_NAMES[SESSIONS.length - 1].replace(/^\w+, /, ""));
     function path(pts, key, stroke, width, dash) {
       var d = "", started = false, last = null;
       pts.forEach(function (p) {
@@ -864,6 +899,9 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
 
   function renderAll() {
     var n = newest();
+    if (n && n.challenge && n.challenge.end_utc) END_UTC = Date.parse(n.challenge.end_utc);
+    var cur = SNAPS[CUR], et = cur && cur.equity && cur.equity.t;
+    computeSessions(et && et.length ? et[et.length - 1] : null);
     setBanner(n && n.note ? n.note : "");
     renderBook(); drawChart(); tick();
   }
@@ -877,7 +915,7 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   renderBook();
   tick();
   setInterval(tick, 1000);
-  setInterval(function () { drawChart(); }, 60000);
+  setInterval(function () { var cur = SNAPS[CUR], et = cur && cur.equity && cur.equity.t; computeSessions(et && et.length ? et[et.length - 1] : null); drawChart(); }, 60000);
 
   /* Public copy (e.g. Vercel): no claude.ai runtime, so read the snapshots that the
      GitHub Actions job rebuilds in the public repo. */

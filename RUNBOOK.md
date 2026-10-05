@@ -9,7 +9,8 @@ It trades only on Vamsi's instructions: he says where to look and how to trade. 
 `plan`, his words summarized, with the tickers) before the trade it produces, then the trade itself. Apply the
 stops and exits he sets; where he sets none, the section 2 exit rules apply. No trade on my own initiative.
 His current instruction is the support/resistance radar (section 2a).
-It ends at the Mon Oct 5, 4:00 PM ET close with a $2,000 target, unless Vamsi extends it.
+It ends at the Wed Nov 4, 2026, 4:00 PM ET close with a $2,000 target (Vamsi extended the original Mon Oct 5
+end by 30 days on Oct 5).
 The H-1B and Unrestricted books were dropped on Sat Oct 3 on Vamsi's instruction, before any round 2 trade:
 `archive/round1/` (Sep 28 - Oct 2 records) and `archive/round2-dropped/`.
 
@@ -186,8 +187,8 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
 * Entry, at a regular-session run from 9:55 AM: a name whose status is BUY ZONE (inside the buy zone, above the
   stop) or BOUNCE (touched the zone this session and held, entry R:R at least 1.5). Never on BROKEN (at or
   through the stop this session), on a day with an offering or negative company news, or after 14:55 on the
-  final day. On the final day buy only with settled cash: a stock bought with unsettled proceeds can't be sold
-  before T+1, which would block the 15:40 liquidation.
+  final day (Wed Nov 4). Buy only with settled cash, every day: a stock bought with unsettled proceeds can't be
+  sold before T+1, which would block its stop (and the 15:40 liquidation on the final day).
 * Size: at most 4 radar positions, about $250 each (25% of $1,000; less when cash is short), and at
   most 2 of them crypto-linked (`CRYPTO_LINKED` in `scripts/levels.py`: 13 of the first radar's 25 names move
   with bitcoin or ether, so four of them would be one bet; `check` tags them `[crypto]`). When more
@@ -196,7 +197,7 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
 * Order: `trade.py buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar
   --why "..."`, with the buy zone, stop, sell zone and entry R:R in the reason.
 * Exit: sell at the first run where the price is in the sell zone (TARGET HIT), where the stop has traded (STOP HIT
-  or STOP TRADED: sell at that run), or at the 15:40 liquidation on the final day. These replace the section 2
+  or STOP TRADED: sell at that run), or at the 15:40 liquidation on the final day (Wed Nov 4); positions are held overnight until one of those. These replace the section 2
   stock stop and trim for radar trades.
 * Every radar name is US-listed common stock; `trade.py` still blocks OFAC NS-CMIC names (`config/blocklist.json`).
 * Backtest (`python3 scripts/sr_backtest.py --save`; `research/backtests/sr-2026-10-03.md`): over 5 years on the 61
@@ -232,7 +233,7 @@ Update the watchlist `strategy` (the dashboard's game-plan line) and `focus` whe
   16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
 * Crypto watch: weeknights 11:10 PM and weekends every 4 hours (only acts when the book holds crypto).
 * Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers.
-* Final day Mon Oct 5 (unless Vamsi extends it): liquidate everything at the 15:40 run; the 16:20 run writes
+* Final day Wed Nov 4 (unless Vamsi extends it again): liquidate everything at the 15:40 run; the 16:20 run writes
   the final report, then deletes the routines.
 
 Routine ids (for `delete_trigger` after the final report): see `config/schedule.json` `routine_ids`.

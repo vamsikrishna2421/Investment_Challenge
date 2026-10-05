@@ -1,8 +1,9 @@
 # Vamsi's Guided Strategy ($1K paper challenge)
 
-One paper portfolio: $1,000 of paper cash opened Sat Oct 3, 2026, goal $2,000 by the Mon Oct 5, 2026 close
-(Vamsi can extend it). Every trade follows Vamsi's direction. His current strategy: high-volatility stocks,
-bought at tested support and sold at resistance, with a stop under support (`RUNBOOK.md` section 2a).
+One paper portfolio: $1,000 of paper cash opened Sat Oct 3, 2026, goal $2,000 by the Wed Nov 4, 2026 close
+(Vamsi extended the original Oct 5 end by 30 days). Every trade follows Vamsi's direction. His current strategy:
+high-volatility stocks, bought at tested support and sold at resistance, with a stop under support
+(`RUNBOOK.md` section 2a).
 
 The earlier books (an H-1B book in US stocks and ETFs and an Unrestricted book) ran Sep 28 - Oct 2 and were
 dropped on Sat Oct 3; their records are in `archive/`.

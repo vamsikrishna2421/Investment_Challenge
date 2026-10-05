@@ -132,6 +132,19 @@
         "CIFR",
         "UMAC"
       ]
+    },
+    {
+      "id": "J0009",
+      "ts": "2026-10-05T19:20:49Z",
+      "kind": "plan",
+      "title": "Window extended 30 days: $2,000 target by the Wed Nov 4 close (Vamsi, Mon Oct 5)",
+      "body": "Vamsi's instruction (Mon Oct 5, about 3:15 PM ET): extend the trading window by 30 days; the target stays $2,000, now by the Wed Nov 4, 2026, 4:00 PM ET close. He also approved a morning clue scan.\nWhat changes: no 3:40 PM liquidation today. POET, HUT, CIFR and UMAC stay open overnight under the radar rules: sold at the sell zone or when the stop trades. Buys use settled cash only, every day, so a stop can always be sold (a stock bought with unsettled proceeds can't be sold before T+1). The radar is rebuilt from each day's closes at the 4:20 PM review. Final day Wed Nov 4: no new buys after 2:55 PM, everything sold at the 3:40 PM run.\nMorning clue scan (8:40 AM, from Tue Oct 6): radar and candidate names showing pre-move clues (a tested support right under the price, a tightening range, up-day volume outweighing down-day volume, higher lows, a tested resistance overhead, a pre-market move with the sector). Big intraday movers are logged with the clues they showed beforehand and why they were missed. A clue changes a trading rule only after it beats random entries in the 5-year backtest.\nThe math: $1,011 to $2,000 is +98% in 22 sessions, +3.2% a session compounded. The support rule's 5-year backtest edge is about zero (J0005), so at 4 positions of 25% the likely 30-day result sits near the starting value; reaching $2,000 at these rules takes an unusually good run. Bigger positions, options or more trades a day raise both the upside and the risk of a deep loss; each is a strategy change for Vamsi to make.",
+      "tickers": [
+        "POET",
+        "HUT",
+        "CIFR",
+        "UMAC"
+      ]
     }
   ]
 }

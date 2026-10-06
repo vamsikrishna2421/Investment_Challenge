@@ -9,7 +9,8 @@ sell at resistance, stop below support).
       Compares the latest synced quotes (.cache/quotes.json) with config/radar.json:
       BUY ZONE (price at support, above the stop), BOUNCE (touched the zone after the radar's bars and
       held, entry reward:risk >= 1.5), NEAR (within --near % of the zone), TARGET (at the sell zone)
-      and BROKEN (at or under the stop, or traded through it: support failed, no buy). Each line shows
+      and BROKEN (at or under the stop, or traded through it: support failed, no buy); HALTED (a zero-volume
+      session in the last 5: no buy). Each line shows
       the day's move against the prior close, also in ATR; BUY ZONE and BOUNCE list the deepest dip first.
 
 Levels: swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the
@@ -65,6 +66,17 @@ CRYPTO_LINKED = {"IREN", "BTDR", "CIFR", "WULF", "MARA", "RIOT", "CLSK", "HUT", 
 PIVOT_K = 3
 LOOKBACK = 120
 MIN_ATR_PCT = 4.0
+STOP_ATR = 0.6  # the stop sits this many ATR under support
+MAX_SIZE_PCT = 25.0  # a position is at most this % of equity ...
+RISK_PCT = 1.5  # ... and loses at most this % of equity at its stop (replay test, Oct 6: RUNBOOK 2d)
+
+
+def size_pct(entry: float, stop: float) -> float:
+    """Position size in % of equity: 25%, cut so the stop loses at most RISK_PCT of equity (a stop 8% under the
+    entry gets 18.75%; GPUS's 9-10% stops in the replay lost 2.3-2.5% of equity at full size)."""
+    if entry <= stop:
+        return 0.0
+    return round(min(MAX_SIZE_PCT, RISK_PCT / ((entry - stop) / entry)), 1)
 MIN_DOLLAR_VOL = 15e6
 
 
@@ -138,7 +150,7 @@ def zones(points: list[tuple[int, float]], tol: float, n: int) -> list[dict]:
     return out
 
 
-def analyse(b: dict) -> dict | None:
+def analyse(b: dict, stop_atr: float | None = None) -> dict | None:
     rows = b["rows"]
     if len(rows) < 60:
         return None
@@ -165,7 +177,7 @@ def analyse(b: dict) -> dict | None:
     lo120 = min(r["l"] for r in win)
     support = sup["level"] if sup else lo120
     resistance = res["level"] if res else max(hi120, price + 2 * a)
-    stop = support - 0.6 * a
+    stop = support - (STOP_ATR if stop_atr is None else stop_atr) * a
     zone_top = support + 0.3 * a
     sell_lo = resistance - 0.3 * a
     dv = sum(r["c"] * r["v"] for r in rows[-20:]) / min(20, len(rows))
@@ -186,6 +198,7 @@ def analyse(b: dict) -> dict | None:
         "sell_zone": [round(sell_lo, 4), round(resistance, 4)],
         "vs_sma50_pct": round((price / sma50 - 1) * 100, 1), "chg_120d_pct": round(chg120, 1) if chg120 is not None else None,
         "reward_risk": round(rr, 2) if rr else None,
+        "halted": any(not r["v"] for r in rows[-5:]),
         "to_zone_pct": round((price / zone_top - 1) * 100, 2),
         "upside_to_target_pct": round((sell_lo / zone_top - 1) * 100, 1),
         "risk_to_stop_pct": round((1 - stop / zone_top) * 100, 1),
@@ -222,6 +235,8 @@ def build(a) -> int:
             why.append("no tested support below the price")
         if r["reward_risk"] is None or r["reward_risk"] < 1.5:
             why.append(f"reward:risk {r['reward_risk']} < 1.5")
+        if r["halted"]:
+            why.append("a zero-volume session in the last 5 (halted): no entry")
         if why and r["ticker"] not in MUST_KEEP:
             dropped.append((r["ticker"], "; ".join(why)))
             continue
@@ -262,9 +277,9 @@ def build(a) -> int:
     return 0
 
 
-STATUS_ORDER = ["buy", "bounce", "near", "wait", "target", "broken", "no quote"]
+STATUS_ORDER = ["buy", "bounce", "near", "wait", "target", "broken", "halted", "no quote"]
 STATUS_TEXT = {"buy": "BUY ZONE", "bounce": "BOUNCE", "near": "NEAR", "wait": "WAIT", "target": "TARGET",
-               "broken": "BROKEN", "no quote": "NO QUOTE"}
+               "broken": "BROKEN", "halted": "HALTED", "no quote": "NO QUOTE"}
 
 
 def classify(r: dict, q: dict | None, asof: str, near: float = 3.0) -> dict:
@@ -274,9 +289,13 @@ def classify(r: dict, q: dict | None, asof: str, near: float = 3.0) -> dict:
     near    within `near` % above the zone
     target  at or above the sell-zone bottom
     broken  at or under the stop, or a later session traded through it: support failed, no buy
+    halted  a zero-volume session in the radar's last 5 (a trading halt): its levels are flat halt prints, no buy
+            (GPUS reopened Aug 25 after 6 halted sessions at 0.45 and fell 19% in 5 minutes; the replay bought it)
     The day's low counts only for a session after the radar's last bar (asof)."""
     if not q or q.get("price") is None:
         return {"status": "no quote"}
+    if r.get("halted"):
+        return {"status": "halted", "price": pfm.mark(q)[0], "day_low": None, "to_zone_pct": 0.0, "rr_now": None}
     px = pfm.mark(q)[0]
     lo, hi = r["buy_zone"]
     stop, sell_lo = r["stop"], r["sell_zone"][0]
@@ -320,6 +339,8 @@ def check(a) -> int:
             day = (c["price"] / q["prev_close"] - 1) * 100
             dip = day / (r["atr"] / c["price"] * 100)
             line += f" day {day:+.1f}% ({dip:+.2f} ATR)"
+        if c["status"] in ("buy", "bounce") and c["price"]:
+            line += f" size {size_pct(c['price'], r['stop'])}% of equity"
         if r["ticker"] in CRYPTO_LINKED:
             line += " [crypto]"
         hits[c["status"]].append((dip if dip is not None else 0.0, line))

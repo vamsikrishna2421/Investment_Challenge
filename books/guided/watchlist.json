@@ -1,5 +1,5 @@
 {
-  "strategy": "Tue Oct 6: holding POET, HUT, CIFR and UMAC to their targets (8.45, 100.77, 17.89, 25.96) or stops (7.41, 83.85, 14.11, 20.79). No settled cash, so no new buys until an exit's proceeds settle (T+1). Radar 33 names; in the buy zone tonight: QUBT and LUNR (plus held UMAC and HUT). Clue scan at 8:40 AM.",
+  "strategy": "Tue Oct 6: holding POET, HUT, CIFR and UMAC to their targets (8.45, 100.77, 17.89, 25.96) or stops (7.41, 83.85, 14.11, 20.79). No settled cash, so no new buys until an exit's proceeds settle (T+1). Radar 33 names. New buys from today: 25% of equity, cut so a stop loses at most 1.5% of equity; no orders in halted stocks (replay practice, J0018-J0019). Clue scan at 8:40 AM.",
   "focus": [
     "SPY",
     "QQQ",

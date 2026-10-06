@@ -193,7 +193,9 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   an auditor or accounting problem. Sector-wide moves, analyst notes and recap headlines do not cancel an entry:
   a stock that falls too far on minor news is the dip Vamsi wants to buy (Oct 5). Buy only with settled cash, every day: a stock bought with unsettled proceeds can't be
   sold before T+1, which would block its stop (and the 15:40 liquidation on the final day).
-* Size: at most 4 radar positions, about $250 each (25% of $1,000; less when cash is short), and at
+* Size: at most 4 radar positions, each 25% of equity (about $250), cut so that its stop loses at most 1.5% of
+  equity: `levels.py check` and `orders.py plan` print the size (a stop 10% under the entry gets 15%; from Oct 6,
+  2d). Less when settled cash is short. At
   most 2 of them crypto-linked (`CRYPTO_LINKED` in `scripts/levels.py`: 13 of the first radar's 25 names move
   with bitcoin or ether, so four of them would be one bet; `check` tags them `[crypto]`). When more
   names trigger than slots or cash, take the deepest dip first: the price's distance below the prior close in
@@ -260,8 +262,8 @@ python3 scripts/orders.py plan --place [--skip A,B]     # 8:40 run: DAY buy limi
 python3 scripts/orders.py list                          # open orders; cancel with: orders.py cancel ID --why "..."
 ```
 * Model in the `scripts/orders.py` docstring, limited to what a Robinhood cash account supports. Buy limits are DAY
-  orders at support, the bottom of the buy zone (Vamsi, Oct 5), about 25% of equity each and reserved from
-  settled cash; at most 4 positions plus open orders, at most 2 crypto-linked; radar names within 8% of support
+  orders at support, the bottom of the buy zone (Vamsi, Oct 5), sized as in 2a (25% of equity, at most 1.5% of
+  equity lost at the stop) and reserved from settled cash; at most 4 positions plus open orders, at most 2 crypto-linked; radar names within 8% of support
   with R:R 1.5+ measured from support, higher R:R first. A fill needs a 1-minute bar 1 cent through the limit; a
   gap down fills at the open, which can be under the stop.
 * Bitcoin gate (Vamsi, Oct 5: no blind dip-buying in crypto-linked names): `plan` prints it; crypto-linked names
@@ -279,6 +281,40 @@ python3 scripts/orders.py list                          # open orders; cancel wi
   +/- 0.5). Resting orders trade more often, not better. A limit at support fills on deeper dips that often keep
   going: its 0.6-ATR stop was hit within 3 sessions 62% of the time (49% at the zone top); a stop 1.0 or 1.5 ATR
   under support cut that to 39% and 20% (+0.08% and +0.21% a trade, still inside the noise) at more risk a share.
+
+## 2d. Replay practice (Vamsi, Mon Oct 5)
+
+Vamsi's instruction: practice the rules on past sessions as if live, without looking at what happened next;
+learn from the bad cases and refine the strategy.
+
+```bash
+python3 scripts/replay.py --grid --days 30 --save        # last 30 sessions, 5-minute bars, every rule variant, trade by trade
+python3 scripts/replay.py --grid --windows --days 22 --step 22 --bars 1h --save   # 2.8 years, 33 separate 22-session windows
+python3 scripts/replay.py --days 700 --bars 1h --analyze # trade returns by entry context, +/- 95%
+python3 scripts/replay.py --grid --set stops|times|sizing ...                     # other variant sets
+```
+* Each session uses only what was known then: the radar from the prior closes, the 8:40 orders, the bitcoin gate
+  at 8:40, fills and stops bar by bar, targets and dip-first entries at the runs, T+1 settlement. No news filter.
+  Method and caveats in the `scripts/replay.py` docstring; reports in `research/replay/`.
+* Results (Oct 6; `research/replay/*-2026-10-05-*`): the last 30 sessions (Aug 24-Oct 5) lost 6.4% under the
+  Oct 6 rules (S&P 500 +1.2%): 14 closed trades, 13 stopped, 1 target (RKLB +21.6%, bought at the open on a
+  0.83-ATR gap down). Over 2.8 years in 33 separate 22-session windows the same rules made a median +4.8% (mean
+  +1.9%), from -30% to +28%, and beat the S&P 500 in 17. No variant doubled $1,000 in any 22-session window.
+* What failed in the bad cases: support limits filled while the price fell through support (9 of 14 never rose
+  0.5 ATR above the entry); 4 gapped through the stop overnight (RCAT, RGTI and SMR together on Sep 10: one
+  speculative-tech bet, not three); GPUS lost 9-10% twice at full size because its stop sat 9-10% under the entry;
+  GPUS also got an order at a "support" made of flat prints from a 6-session trading halt (Aug 17-24).
+* Changes adopted Oct 6: (1) size from the stop: a position loses at most 1.5% of equity at its stop (2a); it cut
+  the worst 22-session window from -30% to -21% and raised the mean of the hourly windows from +1.9% to +3.4%
+  (median unchanged at +4.8%). (2) No entry in a name with a zero-volume session in the last 5 (`levels.py`
+  marks it HALTED; `orders.py plan` skips it).
+* Tested and rejected (worse or not better across the 5-minute and hourly windows): limits at the zone top; a
+  3-session time exit (worse in every test); no bitcoin gate; ranking by R:R; buying every 0.5-ATR opening gap
+  down and selling at the prior close; cancelling unfilled limits at 10:00; no entries after 10:30; stops 0.8-1.5
+  ATR under support; GPUS, IREN and BTDR only with a tested support. Results swing with the start date: the best
+  of 15 variants on the last 60 sessions (+7.8% median across its 31 overlapping windows) was ordinary over 2.8 years.
+* Rule for future changes: a new rule trades only after it beats the live rules on the mean and the worst window
+  of the separate hourly 22-session windows without losing on the 5-minute windows. One window proves nothing.
 
 ## 3. Execute and log
 
@@ -306,7 +342,8 @@ Update the watchlist `strategy` (the dashboard's game-plan line) and `focus` whe
 * Weekdays: :10 runs 7:10 AM-7:10 PM, :40 runs 8:40 AM-7:40 PM, :25 and :55 runs 9:25 AM-3:55 PM,
   16:20 post-close review, plus one-shot checks at scheduled catalysts (earnings, jobs report).
 * Crypto watch: weeknights 11:10 PM and weekends every 4 hours (only acts when the book holds crypto).
-* Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers.
+* Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers;
+  replay the last 30 sessions (`replay.py --grid --days 30 --refresh --save`, 2d) and journal the week's bad cases.
 * Clue scan (2b): `clues.py scan` at the 8:40 run, `clues.py movers` in every market-hours run, and
   `clues.py postmortem` at the 16:20 run.
 * Resting orders (2c): `orders.py fill` first in every run after the sync; `orders.py plan --place` at the 8:40 run.

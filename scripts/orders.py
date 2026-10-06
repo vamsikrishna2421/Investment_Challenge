@@ -319,7 +319,7 @@ def cmd_plan(a) -> int:
         tk = r["ticker"]
         q = quotes.get(tk) or {}
         px = pfm.mark(q)[0] if q else None
-        if tk in taken or tk in skip or px is None or px <= r["stop"]:
+        if tk in taken or tk in skip or px is None or px <= r["stop"] or r.get("halted"):
             continue
         lo = r["buy_zone"][0]
         dist = (px / lo - 1) * 100
@@ -335,14 +335,16 @@ def cmd_plan(a) -> int:
     rows.sort(key=lambda x: -x["rr"])
     print(gate["why"])
     print(f"resting-order plan {pfm.iso(now)}: {slots} free slots, ${free:.2f} settled cash free, "
-          f"${size:.2f} per order (25% of equity); limits at support, the bottom of the buy zone")
+          f"up to ${size:.2f} per order (25% of equity, less when the stop is over {lv.RISK_PCT / lv.MAX_SIZE_PCT * 100:.0f}% "
+          f"under the limit: at most {lv.RISK_PCT}% of equity lost at a stop); limits at support, the bottom of the buy zone")
     picks = []
     for x in rows:
         if len(picks) >= max(slots, 0):
             break
         if x["crypto"] and (crypto >= MAX_CRYPTO or not gate["ok"]):
             continue
-        usd = min(size, free - sum(p["usd"] for p in picks))
+        usd = min(size, round(val["equity"] * lv.size_pct(x["limit"], x["stop"]) / 100, 2),
+                  free - sum(p["usd"] for p in picks))
         if usd < 25:
             break
         picks.append({**x, "usd": round(usd, 2)})
@@ -350,7 +352,8 @@ def cmd_plan(a) -> int:
     chosen = {p["ticker"] for p in picks}
     for x in rows:
         print(f"  {'PLACE' if x['ticker'] in chosen else '     '} {x['ticker']:6} {x['price']:>9.4g} limit {x['limit']} "
-              f"({x['dist']:+.1f}% above, {x['dip_atr']} ATR) stop {x['stop']} target {x['target']} R:R {x['rr']}"
+              f"({x['dist']:+.1f}% above, {x['dip_atr']} ATR) stop {x['stop']} target {x['target']} R:R {x['rr']} "
+              f"size {lv.size_pct(x['limit'], x['stop'])}%"
               f"{' [crypto]' if x['crypto'] else ''}")
     if not picks:
         print("  no order to place (no free slot or settled cash)" if rows else "  no radar name near its support")

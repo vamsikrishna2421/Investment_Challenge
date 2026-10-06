@@ -1,0 +1,547 @@
+[
+ {
+  "title": "Live rules (Oct 6): entries all day",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "on",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 0.0
+  },
+  "summary": {
+   "final": 2791.87,
+   "ret_pct": 179.19,
+   "trades": 368,
+   "wins": 70,
+   "win_rate": 19.0,
+   "avg_win": 32.06,
+   "avg_loss": -5.76,
+   "avg_trade": 1.44,
+   "profit_factor": 1.33,
+   "max_drawdown_pct": -44.67,
+   "realized": 1546.29,
+   "unrealized": 245.58,
+   "by_exit": {
+    "target": 70,
+    "stop": 298
+   },
+   "fill_rate": "231/599"
+  },
+  "lessons": [
+   "stopped the session it was bought: 54 trades, 0 won, average -3.99%, total $-524.56",
+   "stopped on a later session: 244 trades, 0 won, average -6.15%, total $-4201.29",
+   "stopped at the open (gapped through the stop): 153 trades, 0 won, average -6.29%, total $-2572.48",
+   "never rose 0.5 ATR above the entry: 158 trades, 0 won, average -5.27%, total $-2415.62",
+   "crypto-linked: 62 trades, 18 won, average +4.42%, total $+653.98",
+   "bought at the open after a gap down of 0.5+ ATR: 37 trades, 11 won, average +7.02%, total $+586.59",
+   "bought on a dip of 0.5+ ATR (any time): 153 trades, 27 won, average +1.48%, total $+419.80",
+   "bought less than 0.25 ATR under the prior close: 115 trades, 25 won, average +2.03%, total $+1074.32",
+   "resting limit fills: 230 trades, 37 won, average +0.95%, total $+773.13",
+   "run entries inside the buy zone: 113 trades, 25 won, average +2.86%, total $+588.45",
+   "run entries on a bounce (touched the zone, back above it): 25 trades, 8 won, average -0.54%, total $+184.71",
+   "support tested 3+ times: 243 trades, 48 won, average +2.08%, total $+1308.15",
+   "support tested twice: 120 trades, 21 won, average +0.13%, total $+177.49",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 5 trades, 1 won, average +1.72%, total $+60.65"
+  ],
+  "sessions": [
+   "2023-12-19",
+   "2026-10-05",
+   700
+  ],
+  "bench": {
+   "SPY": 64.17,
+   "QQQ": 85.76
+  },
+  "open": [
+   {
+    "ticker": "SMCI",
+    "entry": 36.535,
+    "day": "2026-08-31",
+    "stop": 35.0098,
+    "target": 50.6039,
+    "last": 43.19,
+    "ret_pct": 18.22
+   },
+   {
+    "ticker": "AXTI",
+    "entry": 73.1265,
+    "day": "2026-09-28",
+    "stop": 71.0373,
+    "target": 89.3364,
+    "last": 86.66,
+    "ret_pct": 18.51
+   },
+   {
+    "ticker": "NOW",
+    "entry": 130.6653,
+    "day": "2026-09-29",
+    "stop": 127.1179,
+    "target": 146.8987,
+    "last": 136.08,
+    "ret_pct": 4.14
+   },
+   {
+    "ticker": "RIOT",
+    "entry": 19.1783,
+    "day": "2026-10-01",
+    "stop": 18.3894,
+    "target": 21.7816,
+    "last": 19.32,
+    "ret_pct": 0.74
+   }
+  ]
+ },
+ {
+  "title": "Entries until 10:30: limits cancelled then, no later run buys",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "on",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 630,
+   "entry_from": 0,
+   "risk_pct": 0.0
+  },
+  "summary": {
+   "final": 1389.82,
+   "ret_pct": 38.98,
+   "trades": 300,
+   "wins": 49,
+   "win_rate": 16.3,
+   "avg_win": 32.52,
+   "avg_loss": -5.67,
+   "avg_trade": 0.57,
+   "profit_factor": 1.08,
+   "max_drawdown_pct": -50.98,
+   "realized": 239.69,
+   "unrealized": 150.13,
+   "by_exit": {
+    "target": 49,
+    "stop": 251
+   },
+   "fill_rate": "250/899"
+  },
+  "lessons": [
+   "stopped the session it was bought: 68 trades, 0 won, average -4.16%, total $-645.97",
+   "stopped on a later session: 183 trades, 0 won, average -6.23%, total $-2488.76",
+   "stopped at the open (gapped through the stop): 119 trades, 0 won, average -6.56%, total $-1621.85",
+   "never rose 0.5 ATR above the entry: 130 trades, 0 won, average -5.08%, total $-1424.44",
+   "crypto-linked: 42 trades, 11 won, average +5.03%, total $+379.35",
+   "bought at the open after a gap down of 0.5+ ATR: 35 trades, 7 won, average +4.51%, total $+206.60",
+   "bought on a dip of 0.5+ ATR (any time): 91 trades, 17 won, average +2.46%, total $+343.58",
+   "bought less than 0.25 ATR under the prior close: 115 trades, 18 won, average -0.12%, total $+171.39",
+   "resting limit fills: 247 trades, 35 won, average -0.34%, total $-65.32",
+   "run entries inside the buy zone: 42 trades, 10 won, average +6.39%, total $+375.20",
+   "run entries on a bounce (touched the zone, back above it): 11 trades, 4 won, average -1.31%, total $-70.19",
+   "support tested 3+ times: 200 trades, 31 won, average +0.23%, total $-49.75",
+   "support tested twice: 95 trades, 18 won, average +1.88%, total $+408.60",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 5 trades, 0 won, average -10.82%, total $-119.16"
+  ],
+  "sessions": [
+   "2023-12-19",
+   "2026-10-05",
+   700
+  ],
+  "bench": {
+   "SPY": 64.17,
+   "QQQ": 85.76
+  },
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.02,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.71,
+    "ret_pct": 22.38
+   },
+   {
+    "ticker": "SMCI",
+    "entry": 36.535,
+    "day": "2026-08-31",
+    "stop": 35.0098,
+    "target": 50.6039,
+    "last": 43.19,
+    "ret_pct": 18.22
+   },
+   {
+    "ticker": "NOW",
+    "entry": 130.47,
+    "day": "2026-09-11",
+    "stop": 126.557,
+    "target": 147.6412,
+    "last": 136.08,
+    "ret_pct": 4.3
+   }
+  ]
+ },
+ {
+  "title": "Entries until 11:00",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "on",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 660,
+   "entry_from": 0,
+   "risk_pct": 0.0
+  },
+  "summary": {
+   "final": 1254.76,
+   "ret_pct": 25.48,
+   "trades": 315,
+   "wins": 50,
+   "win_rate": 15.9,
+   "avg_win": 32.7,
+   "avg_loss": -5.59,
+   "avg_trade": 0.49,
+   "profit_factor": 1.04,
+   "max_drawdown_pct": -46.93,
+   "realized": 120.7,
+   "unrealized": 134.06,
+   "by_exit": {
+    "target": 50,
+    "stop": 265
+   },
+   "fill_rate": "268/864"
+  },
+  "lessons": [
+   "stopped the session it was bought: 68 trades, 0 won, average -3.96%, total $-641.83",
+   "stopped on a later session: 197 trades, 0 won, average -6.15%, total $-2741.35",
+   "stopped at the open (gapped through the stop): 126 trades, 0 won, average -6.54%, total $-1796.23",
+   "never rose 0.5 ATR above the entry: 143 trades, 0 won, average -5.15%, total $-1694.36",
+   "crypto-linked: 46 trades, 13 won, average +5.77%, total $+488.75",
+   "bought at the open after a gap down of 0.5+ ATR: 34 trades, 6 won, average +4.73%, total $+244.05",
+   "bought on a dip of 0.5+ ATR (any time): 106 trades, 18 won, average +2.58%, total $+475.05",
+   "bought less than 0.25 ATR under the prior close: 112 trades, 16 won, average -0.97%, total $-172.22",
+   "resting limit fills: 265 trades, 38 won, average -0.48%, total $-287.92",
+   "run entries inside the buy zone: 43 trades, 9 won, average +6.58%, total $+475.35",
+   "run entries on a bounce (touched the zone, back above it): 7 trades, 3 won, average -0.04%, total $-66.73",
+   "support tested 3+ times: 212 trades, 35 won, average +0.49%, total $+65.58",
+   "support tested twice: 100 trades, 15 won, average +0.95%, total $+147.04",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 3 trades, 0 won, average -14.61%, total $-91.92"
+  ],
+  "sessions": [
+   "2023-12-19",
+   "2026-10-05",
+   700
+  ],
+  "bench": {
+   "SPY": 64.17,
+   "QQQ": 85.76
+  },
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.02,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.71,
+    "ret_pct": 22.38
+   },
+   {
+    "ticker": "SMCI",
+    "entry": 36.535,
+    "day": "2026-08-31",
+    "stop": 35.0098,
+    "target": 50.6039,
+    "last": 43.19,
+    "ret_pct": 18.22
+   },
+   {
+    "ticker": "NOW",
+    "entry": 130.47,
+    "day": "2026-09-11",
+    "stop": 126.557,
+    "target": 147.6412,
+    "last": 136.08,
+    "ret_pct": 4.3
+   }
+  ]
+ },
+ {
+  "title": "Entries until 10:30, run entries only (no resting limits)",
+  "options": {
+   "limit": "none",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "on",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 630,
+   "entry_from": 0,
+   "risk_pct": 0.0
+  },
+  "summary": {
+   "final": 1935.89,
+   "ret_pct": 93.59,
+   "trades": 371,
+   "wins": 97,
+   "win_rate": 26.1,
+   "avg_win": 25.78,
+   "avg_loss": -7.04,
+   "avg_trade": 1.54,
+   "profit_factor": 1.17,
+   "max_drawdown_pct": -54.47,
+   "realized": 1119.18,
+   "unrealized": -183.29,
+   "by_exit": {
+    "target": 97,
+    "stop": 274
+   },
+   "fill_rate": null
+  },
+  "lessons": [
+   "stopped the session it was bought: 34 trades, 0 won, average -4.42%, total $-504.08",
+   "stopped on a later session: 240 trades, 0 won, average -7.42%, total $-6224.19",
+   "stopped at the open (gapped through the stop): 150 trades, 0 won, average -7.63%, total $-4007.96",
+   "never rose 0.5 ATR above the entry: 146 trades, 0 won, average -6.72%, total $-3535.15",
+   "crypto-linked: 53 trades, 17 won, average +2.46%, total $+451.78",
+   "bought at the open after a gap down of 0.5+ ATR: 55 trades, 14 won, average -0.10%, total $+116.01",
+   "bought on a dip of 0.5+ ATR (any time): 151 trades, 33 won, average +0.88%, total $+482.36",
+   "bought less than 0.25 ATR under the prior close: 139 trades, 41 won, average +1.87%, total $+156.54",
+   "run entries inside the buy zone: 274 trades, 60 won, average +0.42%, total $+180.48",
+   "run entries on a bounce (touched the zone, back above it): 97 trades, 37 won, average +4.71%, total $+938.70",
+   "support tested 3+ times: 242 trades, 69 won, average +1.38%, total $+719.61",
+   "support tested twice: 120 trades, 27 won, average +0.59%, total $+267.41",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 9 trades, 1 won, average +18.42%, total $+132.16"
+  ],
+  "sessions": [
+   "2023-12-19",
+   "2026-10-05",
+   700
+  ],
+  "bench": {
+   "SPY": 64.17,
+   "QQQ": 85.76
+  },
+  "open": [
+   {
+    "ticker": "SBET",
+    "entry": 13.0249,
+    "day": "2025-06-16",
+    "stop": -10.2363,
+    "target": 116.7186,
+    "last": 9.59,
+    "ret_pct": -26.37
+   },
+   {
+    "ticker": "GPUS",
+    "entry": 0.1818,
+    "day": "2026-09-11",
+    "stop": 0.1473,
+    "target": 0.4407,
+    "last": 0.16,
+    "ret_pct": -11.99
+   },
+   {
+    "ticker": "NOW",
+    "entry": 132.3061,
+    "day": "2026-09-29",
+    "stop": 127.1179,
+    "target": 146.8987,
+    "last": 136.08,
+    "ret_pct": 2.85
+   },
+   {
+    "ticker": "RIOT",
+    "entry": 19.1783,
+    "day": "2026-10-01",
+    "stop": 18.3894,
+    "target": 21.7816,
+    "last": 19.32,
+    "ret_pct": 0.74
+   }
+  ]
+ },
+ {
+  "title": "Entries until 10:30, limits only (no run buys)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 630,
+   "entry_from": 0,
+   "risk_pct": 0.0
+  },
+  "summary": {
+   "final": 1265.61,
+   "ret_pct": 26.56,
+   "trades": 287,
+   "wins": 45,
+   "win_rate": 15.7,
+   "avg_win": 30.94,
+   "avg_loss": -5.43,
+   "avg_trade": 0.28,
+   "profit_factor": 1.05,
+   "max_drawdown_pct": -58.41,
+   "realized": 134.56,
+   "unrealized": 131.05,
+   "by_exit": {
+    "target": 45,
+    "stop": 242
+   },
+   "fill_rate": "290/1021"
+  },
+  "lessons": [
+   "stopped the session it was bought: 75 trades, 0 won, average -3.99%, total $-596.04",
+   "stopped on a later session: 167 trades, 0 won, average -6.07%, total $-2019.65",
+   "stopped at the open (gapped through the stop): 107 trades, 0 won, average -6.38%, total $-1350.03",
+   "never rose 0.5 ATR above the entry: 132 trades, 0 won, average -4.93%, total $-1300.65",
+   "crypto-linked: 43 trades, 9 won, average +2.51%, total $+139.41",
+   "bought at the open after a gap down of 0.5+ ATR: 27 trades, 3 won, average -1.10%, total $-103.42",
+   "bought on a dip of 0.5+ ATR (any time): 73 trades, 17 won, average +2.55%, total $+320.05",
+   "bought less than 0.25 ATR under the prior close: 119 trades, 17 won, average +0.05%, total $+75.24",
+   "resting limit fills: 287 trades, 45 won, average +0.28%, total $+134.56",
+   "support tested 3+ times: 196 trades, 30 won, average -0.45%, total $-177.22",
+   "support tested twice: 85 trades, 15 won, average +2.51%, total $+386.35",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 6 trades, 0 won, average -7.59%, total $-74.57"
+  ],
+  "sessions": [
+   "2023-12-19",
+   "2026-10-05",
+   700
+  ],
+  "bench": {
+   "SPY": 64.17,
+   "QQQ": 85.76
+  },
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.02,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.71,
+    "ret_pct": 22.38
+   },
+   {
+    "ticker": "SMCI",
+    "entry": 36.535,
+    "day": "2026-08-31",
+    "stop": 35.0098,
+    "target": 50.6039,
+    "last": 43.19,
+    "ret_pct": 18.22
+   },
+   {
+    "ticker": "NOW",
+    "entry": 130.47,
+    "day": "2026-09-11",
+    "stop": 126.557,
+    "target": 147.6412,
+    "last": 136.08,
+    "ret_pct": 4.3
+   }
+  ]
+ },
+ {
+  "title": "No entries before 10:30 (the reverse)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "on",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 630,
+   "risk_pct": 0.0
+  },
+  "summary": {
+   "final": 1123.13,
+   "ret_pct": 12.31,
+   "trades": 373,
+   "wins": 58,
+   "win_rate": 15.5,
+   "avg_win": 29.43,
+   "avg_loss": -5.07,
+   "avg_trade": 0.3,
+   "profit_factor": 1.02,
+   "max_drawdown_pct": -52.02,
+   "realized": 65.19,
+   "unrealized": 57.94,
+   "by_exit": {
+    "target": 58,
+    "stop": 315
+   },
+   "fill_rate": "296/908"
+  },
+  "lessons": [
+   "stopped the session it was bought: 57 trades, 0 won, average -2.46%, total $-299.11",
+   "stopped on a later session: 258 trades, 0 won, average -5.64%, total $-2991.22",
+   "stopped at the open (gapped through the stop): 167 trades, 0 won, average -5.57%, total $-1941.10",
+   "never rose 0.5 ATR above the entry: 188 trades, 0 won, average -4.69%, total $-1781.06",
+   "crypto-linked: 47 trades, 6 won, average -0.29%, total $-59.57",
+   "bought on a dip of 0.5+ ATR (any time): 167 trades, 26 won, average +1.26%, total $+364.36",
+   "bought less than 0.25 ATR under the prior close: 88 trades, 14 won, average -0.49%, total $-148.71",
+   "resting limit fills: 294 trades, 37 won, average +0.07%, total $-67.25",
+   "run entries inside the buy zone: 57 trades, 13 won, average +1.26%, total $+41.86",
+   "run entries on a bounce (touched the zone, back above it): 22 trades, 8 won, average +0.82%, total $+90.58",
+   "support tested 3+ times: 241 trades, 38 won, average -0.25%, total $-333.78",
+   "support tested twice: 127 trades, 19 won, average +1.33%, total $+392.54",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 5 trades, 1 won, average +0.84%, total $+6.43"
+  ],
+  "sessions": [
+   "2023-12-19",
+   "2026-10-05",
+   700
+  ],
+  "bench": {
+   "SPY": 64.17,
+   "QQQ": 85.76
+  },
+  "open": [
+   {
+    "ticker": "SMCI",
+    "entry": 35.945,
+    "day": "2026-09-01",
+    "stop": 35.0087,
+    "target": 50.6033,
+    "last": 43.19,
+    "ret_pct": 20.16
+   },
+   {
+    "ticker": "WULF",
+    "entry": 14.43,
+    "day": "2026-10-01",
+    "stop": 13.9454,
+    "target": 17.754,
+    "last": 14.79,
+    "ret_pct": 2.49
+   }
+  ]
+ }
+]

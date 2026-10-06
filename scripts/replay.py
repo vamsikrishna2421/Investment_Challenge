@@ -55,7 +55,8 @@ SLOTS, SIZE, MAX_CRYPTO, NEAR, TICK, GAP_ATR = 4, 0.25, 2, 8.0, 0.01, 0.5
 RUN_BARS = set(range(590, 960, 15))  # bars starting 9:50, 10:05, ...: they end at the :55, :10, :25, :40 runs
 LAST_BAR = 955
 DEFAULTS = {"limit": "support", "stop_atr": 0.6, "btc_gate": "on", "rank": "dip", "runs": "on", "max_hold": 0,
-            "entry": "radar", "limit_until": 960, "tested_only": "off", "entry_until": 960, "entry_from": 0, "risk_pct": lv.RISK_PCT}
+            "entry": "radar", "limit_until": 960, "tested_only": "off", "entry_until": 960, "entry_from": 0, "risk_pct": lv.RISK_PCT,
+            "protect": "none", "protect_at": 1.0, "protect_trail": 1.0}
 GRID = [
     ("Live rules: limits at support, stop 0.6 ATR under it", {}),
     ("Limits at the zone top", {"limit": "top"}),
@@ -90,6 +91,18 @@ SIZING = [
     ("Risk 2% of equity to the stop, at most 25%", {"risk_pct": 2.0}),
 ]
 STOPS = [(f"Stop {x} ATR under support{' (live)' if x == 0.6 else ''}", {"stop_atr": x}) for x in (0.6, 0.8, 1.0, 1.2, 1.5)]
+# Protecting open gains (Vamsi, Oct 6: plan the exits so the book doesn't give back its gains): once a position's best
+# price since entry is protect_at ATR over the entry, its resting stop rises to the entry (be) or to protect_trail ATR
+# under that best price (trail), never lower than before; it works from the next bar.
+EXITS = [
+    ("Live rules: hold to the target or the plan stop", {}),
+    ("Stop to break-even after +0.5 ATR", {"protect": "be", "protect_at": 0.5}),
+    ("Stop to break-even after +1 ATR", {"protect": "be", "protect_at": 1.0}),
+    ("Trail 0.75 ATR under the high after +0.5 ATR", {"protect": "trail", "protect_at": 0.5, "protect_trail": 0.75}),
+    ("Trail 0.5 ATR under the high after +1 ATR", {"protect": "trail", "protect_at": 1.0, "protect_trail": 0.5}),
+    ("Trail 1 ATR under the high after +1 ATR", {"protect": "trail", "protect_at": 1.0, "protect_trail": 1.0}),
+    ("Trail 1.5 ATR under the high after +1.5 ATR", {"protect": "trail", "protect_at": 1.5, "protect_trail": 1.5}),
+]
 
 
 def by_day(r: dict) -> dict:
@@ -380,9 +393,14 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 if b[3] <= p["stop"]:
                     base = b[1] if b[1] < p["stop"] else p["stop"]
                     p["lo"] = min(p["lo"], b[3])
-                    book.sell(s, base * (1 - sb.slip(base)), day, m, "stop", settle[day])
+                    book.sell(s, base * (1 - sb.slip(base)), day, m, "protect" if p.get("protected") else "stop",
+                              settle[day])
                     continue
                 p["hi"], p["lo"] = max(p["hi"], b[2]), min(p["lo"], b[3])
+                if o["protect"] != "none" and p["hi"] - p["entry"] >= o["protect_at"] * p["atr"]:
+                    new = p["entry"] if o["protect"] == "be" else p["hi"] - o["protect_trail"] * p["atr"]
+                    if new > p["stop"]:
+                        p["stop"], p["protected"] = new, True
                 if o["max_hold"] and m == last_bar and n - p["n"] >= o["max_hold"] - 1:
                     book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "time", settle[day])
             if m not in runs_at:
@@ -629,7 +647,7 @@ def main() -> int:
     ap.add_argument("--step", type=int, default=1, help="with --windows: sessions between window ends")
     ap.add_argument("--analyze", action="store_true", help="trade returns by entry context")
     ap.add_argument("--grid", action="store_true")
-    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing"], default="rules",
+    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits"], default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
                     help="size each position so the stop loses at most this % of equity (0: 25%% of equity)")
@@ -649,6 +667,8 @@ def main() -> int:
         GRID = TIMES
     if a.set == "sizing":
         GRID = SIZING
+    if a.set == "exits":
+        GRID = EXITS
     if a.grid and a.windows:
         return windows(data, a)
     if a.grid:

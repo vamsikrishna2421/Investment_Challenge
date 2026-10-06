@@ -65,6 +65,19 @@ START_VALUE, START_UTC = 1000.0, "2026-10-06T13:30:00Z"
 MAX_POS, MIN_STRENGTH, MIN_RR, MAX_USD, NEAR = 3, 3, 2.5, 300.0, 8.0
 DAY_LOSS, KILL_VALUE, MAX_CRYPTO, SPY_MIN, MAX_RET5 = 30.0, 900.0, 1, -0.35, 0.43
 OPEN_STATES = {"new", "queued", "confirmed", "unconfirmed", "partially_filled"}
+# Odds that a buy limit k ATR under the price fills by the close, by the check time (ET minutes), from 61 radar
+# candidates' hourly bars over ~2 years (Oct 6, research/backtests/fill-odds-2026-10-06.md): all checks, and checks
+# with the price 0.4+ ATR above the prior close (names up on the day dip back more often).
+ODDS_K = (0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0)
+ODDS = {570: (1, .65, .37, .19, .10, .05, .02, .01), 630: (1, .52, .22, .09, .03, .01, .01, 0),
+        690: (1, .44, .15, .05, .02, .01, 0, 0), 750: (1, .37, .11, .03, .01, .01, 0, 0),
+        810: (1, .29, .07, .02, .01, 0, 0, 0), 870: (1, .20, .03, .01, 0, 0, 0, 0), 960: (1, 0, 0, 0, 0, 0, 0, 0)}
+ODDS_UP = {570: (1, .73, .49, .31, .19, .11, .06, .02), 630: (1, .61, .31, .14, .07, .03, .02, .01),
+           690: (1, .51, .22, .08, .03, .02, .01, 0), 750: (1, .44, .16, .06, .03, .01, .01, 0),
+           810: (1, .36, .11, .04, .02, .01, 0, 0), 870: (1, .26, .06, .02, .01, 0, 0, 0), 960: (1, 0, 0, 0, 0, 0, 0, 0)}
+# Vamsi, Oct 6: an open buy very unlikely to fill (odds under SWAP_BELOW) is cancelled for a waiting name that likely
+# will (SWAP_TO or better), from 9:45 to 15:00; with no such name it stays and is watched.
+SWAP_BELOW, SWAP_TO, SWAP_WINDOW = 0.15, 0.30, (9 * 60 + 45, 15 * 60)
 RULES = ("Real money, Robinhood agentic account (Vamsi, Oct 6): DAY buy limits at tested support (3+ touches, R:R 2.5+), "
          "skipping names up over the prior 5 sessions and weak S&P days; whole shares, at most 1.5% of the account "
          "lost at a stop and $300 an order; 3 positions; no new orders after a $30 losing day or below $900; a stop "
@@ -191,6 +204,45 @@ def ret5(sym: str) -> float | None:
     return (rows[-1]["c"] - rows[-6]["c"]) / lv.atr(rows)
 
 
+def fill_odds(k: float, minute: int, up: bool) -> float:
+    """Odds that a buy limit k ATR under the price fills by the close (interpolated in k and in time)."""
+    table = ODDS_UP if up else ODDS
+    ms = sorted(table)
+    minute = min(max(minute, ms[0]), ms[-1])
+    lo, hi = max(m for m in ms if m <= minute), min(m for m in ms if m >= minute)
+
+    def at(row: tuple) -> float:
+        if k <= 0:
+            return 1.0
+        if k > ODDS_K[-1]:
+            return 0.0
+        i = next(i for i in range(1, len(ODDS_K)) if k <= ODDS_K[i])
+        f = (k - ODDS_K[i - 1]) / (ODDS_K[i] - ODDS_K[i - 1])
+        return row[i - 1] + f * (row[i] - row[i - 1])
+
+    a, b = at(table[lo]), at(table[hi])
+    return a if hi == lo else a + (minute - lo) / (hi - lo) * (b - a)
+
+
+def odds_of(sym: str, px: float | None, limit: float, radar: dict, q: dict, minute: int) -> tuple[float, float] | None:
+    r, qq = radar.get(sym), q.get(sym) or {}
+    if not r or not r.get("atr") or px is None:
+        return None
+    k = max(0.0, (px - limit) / r["atr"])
+    up = bool(qq.get("prev_close")) and px >= qq["prev_close"] + 0.4 * r["atr"]
+    return fill_odds(k, minute, up), k
+
+
+def entry_action(x: dict, qty: int, extra: str = "") -> dict:
+    return {"do": "place", "kind": "entry", "symbol": x["symbol"], "side": "buy", "type": "limit",
+            "limit_price": f"{x['limit']:g}", "quantity": str(qty), "time_in_force": "gfd",
+            "stop": x["stop"], "target": x["target"],
+            "why": (f"radar support {x['limit']} tested {x['strength']}x, stop {x['stop']}, sell zone from "
+                    f"{x['target']}, R:R {x['rr']}; {x['dist']:+.1f}% above support at {x['price']:.4g}; "
+                    f"{x['ret5']:+.2f} ATR over 5 sessions; ${qty * x['limit']:.2f} risks "
+                    f"${qty * (x['limit'] - x['stop']):.2f}{extra}")}
+
+
 def entry_candidates(s: dict, a: dict, skip: set[str]) -> tuple[list[dict], list[str]]:
     radar = json.loads(lv.RADAR.read_text())
     q = quotes()
@@ -275,10 +327,19 @@ def cmd_run(a_) -> int:
     print(f"  {gate['why']}")
     print(f"  {slots} free slots, ${free:.2f} cash after open buy orders; candidates (support {MIN_STRENGTH}+ touches, "
           f"R:R {MIN_RR}+, within {NEAR:.0f}% of support, not up {MAX_RET5} ATR over 5 sessions):")
+    radar = {r["ticker"]: r for r in json.loads(lv.RADAR.read_text())["names"]}
+    minute = et.hour * 60 + et.minute
     for x in rows:
+        o = odds_of(x["symbol"], x["price"], x["limit"], radar, q, minute)
+        x["odds"], x["k"] = o if o else (None, None)
         print(f"    {x['symbol']:6} {x['price']:>9.4g} limit {x['limit']} stop {x['stop']} target {x['target']} "
               f"R:R {x['rr']} tested {x['strength']}x 5-session {x['ret5']:+.2f} ATR {x['dist']:+.1f}% above"
-              f"{' [crypto]' if x['crypto'] else ''}")
+              + (f", {x['k']:.2f} ATR to the limit, {x['odds']:.0%} fill odds" if o else "")
+              + f"{' [crypto]' if x['crypto'] else ''}")
+    for o in buys:
+        r = odds_of(o["symbol"], price_of(q.get(o["symbol"])), float(o["price"]), radar, q, minute)
+        if r:
+            print(f"  open buy {o['symbol']} limit {float(o['price']):g}: {r[1]:.2f} ATR to the limit, {r[0]:.0%} fill odds")
     for w in why_not:
         print("    skipped", w)
     if not blocked:
@@ -293,16 +354,38 @@ def cmd_run(a_) -> int:
             if qty < 1:
                 print(f"    {x['symbol']}: ${usd:.2f} buys no whole share at {x['limit']}")
                 continue
-            acts.append({"do": "place", "kind": "entry", "symbol": x["symbol"], "side": "buy", "type": "limit",
-                         "limit_price": f"{x['limit']:g}", "quantity": str(qty), "time_in_force": "gfd",
-                         "stop": x["stop"], "target": x["target"],
-                         "why": (f"radar support {x['limit']} tested {x['strength']}x, stop {x['stop']}, sell zone from "
-                                 f"{x['target']}, R:R {x['rr']}; {x['dist']:+.1f}% above support at {x['price']:.4g}; "
-                                 f"{x['ret5']:+.2f} ATR over 5 sessions; ${qty * x['limit']:.2f} risks "
-                                 f"${qty * (x['limit'] - x['stop']):.2f}")})
+            acts.append(entry_action(x, qty))
             slots -= 1
             free -= qty * x["limit"]
             crypto += x["crypto"]
+    if not blocked and SWAP_WINDOW[0] <= minute <= SWAP_WINDOW[1]:
+        chosen = {x["symbol"] for x in acts if x.get("kind") == "entry"}
+        pool = [x for x in rows if x["symbol"] not in chosen and (x.get("odds") or 0) >= SWAP_TO]
+        weak = []
+        for o in buys:
+            r = odds_of(o["symbol"], price_of(q.get(o["symbol"])), float(o["price"]), radar, q, minute)
+            if r and r[0] < SWAP_BELOW:
+                weak.append((r[0], r[1], o))
+        for p_o, k_o, o in sorted(weak, key=lambda w: w[0]):
+            res = float(o["price"]) * float(o["quantity"])
+            c_after = crypto - (o["symbol"] in lv.CRYPTO_LINKED)
+            pick = next((x for x in pool if not (x["crypto"] and (c_after >= MAX_CRYPTO or not gate["ok"]))), None)
+            if pick is None:
+                print(f"  KEEP {o['symbol']}: {p_o:.0%} fill odds, but no waiting name has {SWAP_TO:.0%}+")
+                continue
+            usd = min(value * lv.MAX_SIZE_PCT / 100,
+                      value * lv.RISK_PCT / 100 / ((pick["limit"] - pick["stop"]) / pick["limit"]), MAX_USD, free + res)
+            qty = math.floor(usd / pick["limit"])
+            if qty < 1:
+                continue
+            acts.append({"do": "cancel", "order_id": o["id"], "symbol": o["symbol"],
+                         "why": (f"very unlikely to fill: {k_o:.2f} ATR above the limit {float(o['price']):g} at "
+                                 f"{et:%H:%M}, {p_o:.0%} odds by the close; replaced by {pick['symbol']} "
+                                 f"({pick['odds']:.0%}) (Vamsi, Oct 6)")})
+            acts.append(entry_action(pick, qty, f"; {pick['odds']:.0%} fill odds, replaces {o['symbol']} ({p_o:.0%})"))
+            pool.remove(pick)
+            free += res - qty * pick["limit"]
+            crypto = c_after + pick["crypto"]
     save_state(s)
     print(f"ACTIONS ({len(acts)}): review_equity_order, then place_equity_order (market_hours regular_hours, a fresh "
           f"ref_id each), then record each one with real.py record")

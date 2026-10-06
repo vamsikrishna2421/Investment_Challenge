@@ -342,6 +342,10 @@ Rules (`scripts/real.py`; stricter than the paper book because the money is real
   the 5 sessions before; crypto-linked at most 1 and only while the bitcoin gate (2c) is open; higher R:R first;
   new orders only 7:00-15:30 ET on business days. No new orders while SPY is down 0.35%+ on the day; open buy
   limits are cancelled then.
+* Unlikely orders (Vamsi, Oct 6): from 9:45 to 15:00, an open buy whose odds of filling by the close are under
+  15% (from its distance to the limit in ATR and the time of day; `research/backtests/fill-odds-2026-10-06.md`)
+  is cancelled for the best waiting name with 30%+ odds that passes every entry rule; with none, it stays and is
+  watched. `real.py run` prints each order's odds and lists the swap (cancel, then the new buy).
 * Size: whole shares; at most 25% of the account value, cut so the stop loses at most 1.5% of it, at most $300 an
   order, never more than the cash.
 * Limits: 3 positions plus open buy orders; no new orders after a $30 loss on the day; none below $900 account

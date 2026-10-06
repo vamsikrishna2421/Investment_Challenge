@@ -332,6 +332,16 @@
         "CIFR",
         "UMAC"
       ]
+    },
+    {
+      "id": "J0029",
+      "ts": "2026-10-06T15:47:27Z",
+      "kind": "note",
+      "title": "TEM in its buy zone after a 9.9% no-news drop; no free slot (11:46)",
+      "body": "TEM 75.30 (-9.9%, -1.35 ATR; opened 84.97, high 87.99, low 75.15) is in its radar buy zone 74.59-76.24 (support held 3 times; stop 71.28; sell zone 87.44-89.09; R:R now 3.0). No company news today: no 8-K, nothing on the wires; the last filing is an S-4/A on Oct 2. The group is selling while SPY is +0.8%: DNA -14.6%, TXG -14.3%, GRAL -9.1%, XBI -1.7%. Not bought: the book holds 4 positions (CIFR, HUT, POET, UMAC, all green) with $0.01 cash, the 4-position cap. Reference for this type (research/backtests/news-dips-2026-10-06.md, no-news 1+ ATR dips with the low at support, 704 cases): +1.18% over 3 sessions and +2.16% over 5 against a +0.24% baseline; the median lowest low over the next 5 sessions is -5.9% from the dip close (dip-recovery report), near the 71.28 stop.",
+      "tickers": [
+        "TEM"
+      ]
     }
   ]
 }

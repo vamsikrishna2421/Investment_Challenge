@@ -319,6 +319,19 @@
         "CIFR",
         "UMAC"
       ]
+    },
+    {
+      "id": "J0028",
+      "ts": "2026-10-06T14:59:17Z",
+      "kind": "research",
+      "title": "Nearer targets: better in the last 60 sessions, worse over 2.8 years (replay, Oct 6)",
+      "body": "Vamsi's point (Oct 6): the targets are too high; exit at the first target when the gain is meaningful and re-enter at the next support test. Tested in the replay (scripts/replay.py --set targets): the target is the lower of the sell-zone bottom and either the first resistance above the entry (any touches, 0.5+ ATR up) or entry + 1, 1.5, 2 or 3 ATR; re-entry after a target exit allowed as before.\n- Last 30 sessions, 5-minute bars (research/replay/replay-2026-10-05-30-5m-targets.md): live +3.2% (17 trades, 18% winners); first resistance +4.1%, +1 ATR +3.9%, +1.5 ATR +4.7%, +2 ATR +5.6% (32% winners, profit factor 1.3), +3 ATR -0.1%.\n- 5-minute windows (8 overlapping 22-session windows of the last 60 sessions; windows-2026-10-05-22-5m-targets.md): live mean +4.9%, worst -5.2%; +2 ATR +6.0% and -3.4%; first resistance +5.3% and -4.2%.\n- 33 separate 22-session windows over 2.8 years, hourly bars (windows-2026-10-05-22-1h-targets.md): live median +4.8%, mean +3.4%, worst -20.9%, best +41.5%. First resistance mean +0.7%; +1 ATR -0.1% (best window only +13.9%); +1.5 ATR +2.7% (worst -18.8%); +2 ATR +1.7%; +3 ATR +3.1% (worst -18.3%, best +43.3%).\nVerdict: no change (the 2d gate needs a better mean and worst window on the 2.8 years). Nearer targets helped in the recent choppy months, but over 2.8 years the trades that ran to the far targets paid for the stops; capping them at +1 ATR cut the best window from +41.5% to +13.9%. Closest alternative: +3 ATR (mean 3.1% against 3.4%, worst window -18.3% against -20.9%), a draw rather than a gain. Re-run at the Sunday replay as more choppy sessions come in.",
+      "tickers": [
+        "POET",
+        "HUT",
+        "CIFR",
+        "UMAC"
+      ]
     }
   ]
 }

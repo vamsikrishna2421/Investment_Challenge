@@ -1,0 +1,632 @@
+{
+ "generated_at": "2026-10-06T20:23:05Z",
+ "date": "2026-10-06",
+ "min_move": 15.0,
+ "losers": false,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "NMCO-RI",
+  "BCAT-RI",
+  "OLB",
+  "MOBX",
+  "XHLD",
+  "VCIG",
+  "APUS",
+  "IPDN",
+  "SMXT",
+  "OLOX",
+  "ASGI-RI",
+  "FRGT",
+  "PMI",
+  "AIXI",
+  "DLXY",
+  "FFR",
+  "BESS",
+  "JAGX",
+  "MODD",
+  "JUNS",
+  "RMSG",
+  "PUR",
+  "MWYN",
+  "BFRG",
+  "VWAV"
+ ],
+ "skipped_noisy": [
+  "AIFA",
+  "XHG",
+  "CNXU"
+ ],
+ "rows": [
+  {
+   "symbol": "OPCH",
+   "name": "Option Care Health, Inc.",
+   "price": 31.0,
+   "change_pct": 32.65,
+   "volume": 65043852,
+   "market_cap": 4643342848,
+   "exchange": "NMS",
+   "sector": "Healthcare",
+   "industry": "Medical Care Facilities",
+   "enterprise_value": 4571779072,
+   "revenue_ttm": 5693515776,
+   "revenue_growth": 0.019,
+   "gross_margin": 0.19058001,
+   "profit_margin": 0.03681,
+   "cash": 196780992,
+   "debt": 1268078976,
+   "shares_out": 149785243,
+   "float_shares": 147706224,
+   "short_pct_float": 0.1126,
+   "avg_volume": 2191401,
+   "high_52w": 36.8,
+   "low_52w": 18.01,
+   "target_mean": 30.205,
+   "rating": "none",
+   "analysts": 10,
+   "ev_to_revenue": 0.803,
+   "forward_pe": 14.883382,
+   "rel_volume": 29.7,
+   "off_52w_high_pct": -15.8,
+   "target_upside_pct": -2.6,
+   "news": [
+    {
+     "title": "Is Option Care Health (OPCH) Stock Undervalued Right Now? - Yahoo Finance",
+     "published": "Tue, 06 Oct 2026 12:40:04 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "OPCH Stock Alert: Halper Sadeh LLC is Investigating Whether Option Care Health, Inc. is Obtaining a Fair Price for its Shareholders - Business Wire",
+     "published": "Tue, 06 Oct 2026 15:23:00 GMT",
+     "source": "Business Wire",
+     "via": "google"
+    },
+    {
+     "title": "Why Option Care Health (OPCH) Stock Is Trading Up Today - TradingView",
+     "published": "Tue, 06 Oct 2026 14:15:59 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "OPCH shares jump 34% as CD&R, McKesson agree to $5.8B takeover (OPCH:NASDAQ) - Seeking Alpha",
+     "published": "Tue, 06 Oct 2026 12:33:30 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "Report of Possible $5 Billion Takeover Bid Sends Option Care Health Stock Surging - Barron's",
+     "published": "Tue, 06 Oct 2026 13:53:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "Option Care Stock Trades Below McKesson's Deal Price \u2014 Here's the Spread - Benzinga",
+     "published": "Tue, 06 Oct 2026 19:24:07 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "DEFA14A",
+     "date": "2026-10-06",
+     "items": [],
+     "events": [],
+     "desc": "DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1014739/000110465926113905/tm2627097d1_8k.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-06",
+     "items": [
+      "1.01",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "Reg FD disclosure"
+     ],
+     "desc": "FORM 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1014739/000110465926113904/tm2627097d1_8k.htm"
+    }
+   ],
+   "vol_1y": 43.9,
+   "jump_sigma": 10.2,
+   "spike_days_1y": 1,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -3.6,
+   "tags": [
+    "takeover-interest",
+    "contract-order"
+   ],
+   "score": 8
+  },
+  {
+   "symbol": "HTZ",
+   "name": "Hertz Global Holdings, Inc",
+   "price": 2.06,
+   "change_pct": 15.08,
+   "volume": 42118613,
+   "market_cap": 734289856,
+   "exchange": "NMS",
+   "sector": "Industrials",
+   "industry": "Rental & Leasing Services",
+   "enterprise_value": 21090048000,
+   "revenue_ttm": 8906000384,
+   "revenue_growth": 0.097,
+   "gross_margin": 0.16315001,
+   "profit_margin": -0.03133,
+   "cash": 635000000,
+   "debt": 21087000576,
+   "shares_out": 356451393,
+   "float_shares": 170565556,
+   "short_pct_float": 0.6707,
+   "avg_volume": 28123962,
+   "high_52w": 8.18,
+   "low_52w": 1.45,
+   "target_mean": 2.21667,
+   "rating": "none",
+   "analysts": 6,
+   "ev_to_revenue": 2.368,
+   "forward_pe": -23.083818,
+   "rel_volume": 1.5,
+   "off_52w_high_pct": -74.8,
+   "target_upside_pct": 7.6,
+   "news": [
+    {
+     "title": "Hertz Global Holdings, Inc. (HTZ) stock price, news, quote and history - Yahoo Finance Singapore",
+     "published": "Mon, 05 Oct 2026 23:10:16 GMT",
+     "source": "Yahoo Finance Singapore",
+     "via": "google"
+    },
+    {
+     "title": "HTZ Stock Plummets To Record Lows, Drops For The Ninth Session: Sees Highest Ever Short Interest - Stocktwits",
+     "published": "Tue, 06 Oct 2026 01:49:27 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    },
+    {
+     "title": "HTZ Stock Firms Up As Q3 2026 Earnings Date Nears - StocksToTrade",
+     "published": "Tue, 06 Oct 2026 16:33:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    },
+    {
+     "title": "HTZ Stock Firms Up As Q3 2026 Earnings Date Nears - www.timothysykes.com",
+     "published": "Tue, 06 Oct 2026 16:32:00 GMT",
+     "source": "www.timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "Hertz Rebounds 16% From a Record Low; Avis Climbs 5%, Ryder Ticks Up - 24/7 Wall St.",
+     "published": "Tue, 06 Oct 2026 18:04:00 GMT",
+     "source": "24/7 Wall St.",
+     "via": "google"
+    },
+    {
+     "title": "Hertz plans to report Q3 results at 8 a.m. ET Nov. 5; its call follows at 9. - Stock Titan",
+     "published": "Mon, 05 Oct 2026 20:09:10 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "SCHEDULE 13D/A",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000090514826004357/xslSCHEDULE_13D_X02/primary_doc.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000200876926000005/xslF345X06/wk-form4_1791232407.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000209124726000008/xslF345X06/wk-form4_1791232295.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000207555426000004/xslF345X06/wk-form4_1791232242.xml"
+    },
+    {
+     "form": "3",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 3",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000165785326000067/xslF345X06/wk-form3_1790971936.xml"
+    },
+    {
+     "form": "3",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 3",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000165785326000065/xslF345X06/wk-form3_1790971895.xml"
+    },
+    {
+     "form": "3",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 3",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000165785326000063/xslF345X06/wk-form3_1790971840.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000188689726000008/xslF345X06/wk-form4_1790971752.xml"
+    },
+    {
+     "form": "4",
+     "date": "2026-10-02",
+     "items": [],
+     "events": [],
+     "desc": "FORM 4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1657853/000119470226000010/xslF345X06/wk-form4_1790971650.xml"
+    }
+   ],
+   "vol_1y": 100.5,
+   "jump_sigma": 2.2,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 1.4,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 3
+  },
+  {
+   "symbol": "ITG",
+   "name": "ITG, Inc.",
+   "price": 8.23,
+   "change_pct": 17.91,
+   "volume": 1131597,
+   "market_cap": 1018978304,
+   "exchange": "NMS",
+   "sector": "Industrials",
+   "industry": "Engineering & Construction",
+   "enterprise_value": 1210935808,
+   "revenue_ttm": 1375619968,
+   "revenue_growth": 0.384,
+   "gross_margin": 0.17517,
+   "profit_margin": -0.0133299995,
+   "cash": 2486000,
+   "debt": 875278976,
+   "shares_out": 48444533,
+   "float_shares": 22424974,
+   "short_pct_float": 0.0254,
+   "avg_volume": 383703,
+   "high_52w": 19.26,
+   "low_52w": 6.55,
+   "target_mean": 17.22222,
+   "rating": "strong_buy",
+   "analysts": 9,
+   "ev_to_revenue": 0.88,
+   "forward_pe": 8.465075,
+   "rel_volume": 2.9,
+   "off_52w_high_pct": -57.3,
+   "target_upside_pct": 109.3,
+   "news": [
+    {
+     "title": "Top ITG (ITG) Competitors 2026 - MarketBeat",
+     "published": "Mon, 05 Oct 2026 10:10:00 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "GE Vernova, Marvell among market cap stock movers on Tuesday By Investing.com - Investing.com South Africa",
+     "published": "Tue, 06 Oct 2026 18:13:56 GMT",
+     "source": "Investing.com South Africa",
+     "via": "google"
+    },
+    {
+     "title": "Truist Cuts Price Target on ITG to $14 From $17, Keeps Buy Rating - marketscreener.com",
+     "published": "Mon, 05 Oct 2026 12:06:47 GMT",
+     "source": "marketscreener.com",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 117.1,
+   "jump_sigma": 2.2,
+   "spike_days_1y": 3,
+   "history_days": 66,
+   "noisy": false,
+   "tags": [
+    "analyst"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "CABO",
+   "name": "Cable One, Inc.",
+   "price": 12.97,
+   "change_pct": 15.29,
+   "volume": 419110,
+   "market_cap": 73590808,
+   "exchange": "NYQ",
+   "sector": "Communication Services",
+   "industry": "Telecom Services",
+   "enterprise_value": 2952323584,
+   "revenue_ttm": 1441633024,
+   "revenue_growth": -0.084,
+   "gross_margin": 0.73467004,
+   "profit_margin": -0.72827005,
+   "cash": 181852992,
+   "debt": 3070344960,
+   "shares_out": 5673925,
+   "float_shares": 4469975,
+   "short_pct_float": 0.19219999,
+   "avg_volume": 313778,
+   "high_52w": 180.0,
+   "low_52w": 9.9,
+   "target_mean": 44.25,
+   "rating": "hold",
+   "analysts": 4,
+   "ev_to_revenue": 2.048,
+   "forward_pe": 0.892022,
+   "rel_volume": 1.3,
+   "off_52w_high_pct": -92.8,
+   "target_upside_pct": 241.2,
+   "news": [
+    {
+     "title": "Why Cable One (CABO) Shares Are Sliding Today - Yahoo Finance",
+     "published": "Mon, 05 Oct 2026 23:15:00 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "Cable One, Inc. (NYSE:CABO) Stock Has Consensus Price Target of $80.00 - MarketBeat",
+     "published": "Tue, 06 Oct 2026 08:16:24 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "Stock Splits Calendar for: - Yahoo Finance",
+     "published": "Tue, 06 Oct 2026 17:17:07 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "Is a stock market correction coming? Most Americans think so - USA Today",
+     "published": "Sun, 04 Oct 2026 10:02:00 GMT",
+     "source": "USA Today",
+     "via": "google"
+    },
+    {
+     "title": "Top Cape and Islands golfers earn Week 5 lineup honors - Cape Cod Times",
+     "published": "Mon, 05 Oct 2026 10:03:00 GMT",
+     "source": "Cape Cod Times",
+     "via": "google"
+    },
+    {
+     "title": "ASTS Stock Rises Overnight: CEO Says BlueBirds 8, 9 And 10 Are Fully Deployed \u2014 With 3 More Satellites Already At Cape - Stocktwits",
+     "published": "Sun, 04 Oct 2026 16:40:16 GMT",
+     "source": "Stocktwits",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-02",
+     "items": [
+      "1.01",
+      "8.01"
+     ],
+     "events": [
+      "material agreement",
+      "other events"
+     ],
+     "desc": "CURRENT REPORT",
+     "url": "https://www.sec.gov/Archives/edgar/data/1632127/000095015726001058/form8-k.htm"
+    }
+   ],
+   "vol_1y": 99.4,
+   "jump_sigma": 2.3,
+   "spike_days_1y": 6,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.8,
+   "tags": [
+    "analyst",
+    "contract-order"
+   ],
+   "score": -1
+  },
+  {
+   "symbol": "OFS",
+   "name": "OFS Capital Corporation",
+   "price": 4.16,
+   "change_pct": 16.85,
+   "volume": 584679,
+   "market_cap": 55736008,
+   "exchange": "NMS",
+   "sector": "Financial Services",
+   "industry": "Asset Management",
+   "enterprise_value": 227207152,
+   "revenue_ttm": 35661000,
+   "revenue_growth": -0.347,
+   "gross_margin": 1.0,
+   "profit_margin": -0.62242,
+   "cash": 3982000,
+   "debt": 183492000,
+   "shares_out": 13398078,
+   "short_pct_float": 0.051799998,
+   "avg_volume": 60887,
+   "high_52w": 7.65,
+   "low_52w": 2.72,
+   "target_mean": 4.5,
+   "rating": "none",
+   "analysts": 1,
+   "ev_to_revenue": 6.371,
+   "forward_pe": 10.4,
+   "rel_volume": 9.6,
+   "off_52w_high_pct": -45.6,
+   "target_upside_pct": 8.2,
+   "news": [
+    {
+     "title": "An investor bought a 57% interest in a fund, but OFS Capital kept control. - Stock Titan",
+     "published": "Tue, 06 Oct 2026 12:00:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Jio Platforms IPO To Be Without OFS, May List Among Top 3 Stocks at Rs 12 Lakh Cr Valuation - HDFC Sky",
+     "published": "Tue, 06 Oct 2026 09:50:56 GMT",
+     "source": "HDFC Sky",
+     "via": "google"
+    },
+    {
+     "title": "Jio Platforms IPO set to be India's largest, may list among top 3 stocks - Rediff",
+     "published": "Tue, 06 Oct 2026 13:04:36 GMT",
+     "source": "Rediff",
+     "via": "google"
+    },
+    {
+     "title": "Jio Platforms IPO likely to have no OFS, may list among top 3 stocks at \u20b912 lakh crore valuation - Upstox",
+     "published": "Tue, 06 Oct 2026 09:54:25 GMT",
+     "source": "Upstox",
+     "via": "google"
+    },
+    {
+     "title": "More cash-out than capital raise: OFS gains ground in IPO market - BusinessLine",
+     "published": "Sun, 04 Oct 2026 13:43:54 GMT",
+     "source": "BusinessLine",
+     "via": "google"
+    },
+    {
+     "title": "News by CNBC TV18 on TradingView, 2026-10-05 \u2014 cnbctv:27c06025d094b:0 - TradingView",
+     "published": "Mon, 05 Oct 2026 04:22:00 GMT",
+     "source": "TradingView",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-06",
+     "items": [
+      "8.01"
+     ],
+     "events": [
+      "other events"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1487918/000148791826000087/ofs-20261005.htm"
+    }
+   ],
+   "vol_1y": 56.1,
+   "jump_sigma": 4.4,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.0,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -2
+  },
+  {
+   "symbol": "STDN",
+   "name": "Standard Nuclear, Inc.",
+   "price": 15.19,
+   "change_pct": 16.76,
+   "volume": 1286738,
+   "market_cap": 2440631040,
+   "exchange": "NYQ",
+   "sector": "Basic Materials",
+   "industry": "Specialty Chemicals",
+   "enterprise_value": 2149540096,
+   "revenue_ttm": 7538793,
+   "revenue_growth": 7.565,
+   "gross_margin": -0.57745,
+   "profit_margin": -2.22316,
+   "cash": 102185336,
+   "debt": 0,
+   "shares_out": 149095234,
+   "float_shares": 51907534,
+   "avg_volume": 932785,
+   "high_52w": 17.34,
+   "low_52w": 7.05,
+   "target_mean": 17.55556,
+   "rating": "none",
+   "analysts": 9,
+   "ev_to_revenue": 285.131,
+   "forward_pe": -237.04744,
+   "rel_volume": 1.4,
+   "off_52w_high_pct": -12.4,
+   "target_upside_pct": 15.6,
+   "news": [
+    {
+     "title": "Standard Nuclear (NYSE:STDN) Shares Climb 12.1% - Time to Buy? - MarketBeat",
+     "published": "Tue, 06 Oct 2026 18:58:23 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "Standard Nuclear started with Buy rating at Needham on early operating advantage (STDN:NYSE) - Seeking Alpha",
+     "published": "Tue, 06 Oct 2026 18:46:37 GMT",
+     "source": "Seeking Alpha",
+     "via": "google"
+    },
+    {
+     "title": "STDN Price Today: Standard Nuclear, Inc. Stock Price, Quote & Chart | MEXC - MEXC",
+     "published": "Mon, 05 Oct 2026 23:42:55 GMT",
+     "source": "MEXC",
+     "via": "google"
+    },
+    {
+     "title": "Needham initiates Standard Nuclear stock with buy on fuel advantage By Investing.com - Investing.com Nigeria",
+     "published": "Tue, 06 Oct 2026 10:11:47 GMT",
+     "source": "Investing.com Nigeria",
+     "via": "google"
+    },
+    {
+     "title": "This Lockheed Martin Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Tuesday - Benzinga",
+     "published": "Tue, 06 Oct 2026 11:49:08 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "October 2026's Leading Growth Stocks With Insider Backing - Simply Wall Street",
+     "published": "Tue, 06 Oct 2026 11:37:08 GMT",
+     "source": "Simply Wall Street",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 119.9,
+   "jump_sigma": 2.1,
+   "spike_days_1y": 3,
+   "history_days": 56,
+   "noisy": false,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": -2
+  }
+ ]
+}

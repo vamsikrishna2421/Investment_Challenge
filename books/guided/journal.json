@@ -342,6 +342,42 @@
       "tickers": [
         "TEM"
       ]
+    },
+    {
+      "id": "J0030",
+      "ts": "2026-10-06T20:22:24Z",
+      "kind": "research",
+      "title": "Mover post-mortem 2026-10-06: LEU +9%, OKLO +7%, ASTS +8%, NBIS +7%, NNE +6%",
+      "body": "Big moves today (at least one daily range, ATR) among the radar and its candidates, with the clues each showed at the prior close and why the routines did not catch it (clues.py postmortem; method in the script docstring).\nLEU +8.8% (1.7 ATR): clues at the prior close RES (score 0); candidate, not on the radar: R:R 0.45 < 1.5.\nOKLO +7.2% (1.3 ATR): clues at the prior close COIL (score 1); candidate, not on the radar: no tested support.\nASTS +8.0% (1.2 ATR): clues at the prior close SUP COIL (score 2); on the radar; low 60.06 stayed above the buy zone top 57.84, so no entry.\nNBIS +7.4% (1.1 ATR): clues at the prior close SUP HL (score 2); candidate, not on the radar: R:R 0.91 < 1.5.\nNNE +6.3% (1.0 ATR): clues at the prior close SUP (score 1); on the radar; low 16 stayed above the buy zone top 15.34, so no entry.\nDown: TEM -13.8%, DNA -17.2%, AEHR -11.7%, PCVX -9.7%, GRAL -10.9%, CRSP -5.8%.\nBase rate today: 2 of 23 names with 2+ clues (or a breakout watch) moved up 1.0+ ATR; 3 of 43 without did. One session is an anecdote; the 5-year clue backtest decides which clues count.",
+      "tickers": [
+        "LEU",
+        "OKLO",
+        "ASTS",
+        "NBIS",
+        "NNE",
+        "TEM",
+        "DNA",
+        "AEHR",
+        "PCVX",
+        "GRAL",
+        "CRSP"
+      ]
+    },
+    {
+      "id": "J0031",
+      "ts": "2026-10-06T20:25:10Z",
+      "kind": "review",
+      "title": "Day review Tue Oct 6: +$10.94, +2.98% since the start; genomics sell-off, no trades",
+      "body": "Second day of the extended window. Equity $1,029.82 at 4:21 PM: +2.98% since the start (day +$10.94), against +1.30% for the S&P 500 and +1.41% for the Nasdaq-100. Progress to $2,000: 3.0% of the way; +94.2% still needed in 21 sessions.\nNo trades or fills today (four positions, $0.01 settled cash, no free slot). Holdings against their levels:\n- POET 33.05 sh @ 7.565: closed 7.71 (-1.3% on the day, +1.9% open). High 8.19 at the open on the reported China ban on data-center import parts (Stocktwits), 3.1% short of the 8.45 target, then faded; low 7.64 against the 7.41 stop. The rebuilt radar puts resistance at 8.01-8.14, which today's high cleared: under the nearer-target idea (J0028) this trade would have sold near 8.01; the rules keep 8.45.\n- HUT 2.894 sh @ 86.38: closed 92.22 (+3.3%, +6.8% open); low 88.63, high 93.79; stop 83.85, target 100.77. News: the US$1.07 billion revolver (Simply Wall St).\n- CIFR 16.60 sh @ 15.06: closed 15.50 (+0.1%, +2.9% open); low 15.22; stop 14.11, target 17.89. Dropped from the rebuilt radar (R:R 0.77 under its new resistance); the position keeps its entry stop and target.\n- UMAC 11.25 sh @ 22.23: closed 22.36 (+2.4%, +0.6% open); low 22.00; stop 20.79, target 25.96.\nNo after-hours news on the holdings (wires, last 3 hours).\nThe day's dips: genomics sold off as a group while the S&P 500 and Nasdaq-100 set records: TWST -18.6%, TXG -17.5%, DNA -17.2%, TEM -13.8%, GRAL -10.9%. Reported causes: ARK Invest's 21st straight session of TWST sales and insider sales there (Investing.com), profit-taking in names up 50-200% in four months; no 8-K from TEM, DNA or GRAL. TEM closed 71.98 under the 74.59-76.24 support it held in the morning (J0029), so the rebuilt radar now has its sell zone at 71.99-73.93 (old support turned resistance) and its next support at 53.25-55.19. PCVX (-9.7%) filed two preliminary 424B5 supplements (shares and convertible notes); the final terms are not out, so it stays skipped until they are.\nRadar rebuilt from today's closes: 40 names. Dropped: CIFR, WULF, CLSK, APLD, GLXY, IONQ, RGTI, OKLO, LEU, HOOD, SBET, CRCL, ORCL, PATH, DUOL (R:R under 1.5); SOUN, BBAI, QBTS, UPST, GRAB (no tested support below); SOFI, HIMX, NOW, META (ATR under 4%); BKKT, ALMU (dollar volume). In the buy zone tonight: CRSP (54.04-55.10, held 14 times, stop 51.90, sell 61.88, R:R 3.7), RCAT (6.32-6.41, stop 6.14, R:R 9.1), UMAC (held), GPUS and BTDR (R:R under 2).\n15%+ movers checked for the candidate list: none added. OPCH +32.6% (CD&R and McKesson bid at a 37% premium: a deal, ATR 3.7%), STDN +16.8% (Needham initiation; listed too recently for levels), ITG +17.9% ($6.4M daily dollar volume), HTZ +15.1% (rebound from a record low with 67% of the float short; its support is that record low, not a tested floor), CABO and OFS (micro-caps).\nPost-mortem (J0030): 2 of 23 names with 2+ clues moved up 1+ ATR today, 3 of 43 without.\nWednesday: no free slot or settled cash, so exits only, at the stops and targets above. If a slot frees, the resting-order plan (orders.py plan) ranks RCAT 6.32 (R:R 10.2), CORZ 15.71, RIOT 18.30, QUBT 7.66, SMR 7.58 and CRSP 54.04 (in its zone now, R:R 3.7). Clue scan and day plan at 8:40 AM.",
+      "tickers": [
+        "POET",
+        "HUT",
+        "CIFR",
+        "UMAC",
+        "TEM",
+        "CRSP",
+        "PCVX"
+      ]
     }
   ]
 }

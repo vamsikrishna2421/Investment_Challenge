@@ -43,13 +43,13 @@
     "19:40"
   ],
   "routine_ids": {
-    "hourly_40": "trig_01VigsmdBpympkkojgEeH6tK",
-    "risk_10": "trig_01HEBqoXepMr79PjCFJwBVMM",
-    "post_close": "trig_013ggEan5tXBAq61oQ7oCRpu",
-    "sunday": "trig_01UP6tgGRKSNcTyBQga8gBzR",
-    "news_25": "trig_01FBFjnSuHHiXC8q2T1wDQuZ",
-    "news_55": "trig_01FfZoRkGDkpTmQuvwDCBJRH",
-    "crypto_weeknights": "trig_013vPVdbGuMGuKU6nqrSXBmq",
-    "crypto_weekend": "trig_01UuYmwfGxt2f635geruEQZe"
+    "hourly_40": "trig_01Km7d9GD1W8oE45bmJ86AbK",
+    "risk_10": "trig_01PN5N53R1FFJpgoS5LmerJS",
+    "post_close": "trig_018PFBWE5uEamZWfsq8FX91C",
+    "sunday": "trig_01B4ASUfXT6mbr9zUuCw5yie",
+    "news_25": "trig_0136BJ8HduCxRN1EjyrkKJzN",
+    "news_55": "trig_01G5MNNzPwiUKjEkA9nwgtEk",
+    "crypto_weeknights": "trig_018dVj2nr9no5RTGVj3nMm17",
+    "crypto_weekend": "trig_01QWjsXLymKDrx6sFQH7ZeGY"
   }
 }

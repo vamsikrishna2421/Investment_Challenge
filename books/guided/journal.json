@@ -288,6 +288,16 @@
       "title": "Intraday dips of 3-10%: rarely back by the close; pay over days, not hours; skip market-wide down days (test, Oct 6)",
       "body": "Vamsi's point (Oct 6): a dip is a fall of 3-4% or more at any time of the session, often recovered by the close, invisible on daily bars. Test (scripts/intraday_dip_backtest.py; research/backtests/intraday-dips-2026-10-06.md): 61 radar candidates, hourly bars, ~2 years, 39,536 sessions; a buy limit X% under the open fills when the price trades through it; no stop.\n- Frequency: a 4% dip under the open happens in 32% of sessions for these names (3%: 44%, 5%: 23%, 10%: 5%).\n- Same day: the dip rarely closes back at the open (12% for 4% dips, 3% for 10% dips). From the fill to the close: -0.58% for 4% dips, -0.44% for 10% (buying every open: -0.34%).\n- Over 3 sessions: +0.50% for 4% dips, +0.79% for 7%, +1.20% (95% range +/-1.44) for 10%; buying any open +0.46%. Deeper dips lean better; only 10% dips under the prior close stand out a little (+0.24% to the close, 52% up, +1.42% over 3 sessions).\n- Market-wide down days (SPY down 1%+): 4% dips lost 2.59% by the close (22% up) and 1.51% by the next close. On other days: -0.20% to the close, +0.76% over 3 sessions.\n- No difference with or without company news (+0.27% and +0.58% over 3 sessions), or inside the support band or not (+0.63%, +0.56%). Dips filled after 12:30 did best over 3 sessions (+1.13%) against the first hour (+0.31%).\nVerdict: the dip that closes back where it started is the exception, not the pattern; buying intraday dips earns over days, about as much as buying any open, except that dips on a falling market keep falling. Candidate rule for the Sunday replay (2d): no paper dip buys while SPY is down 1%+ on the day (the real book already stops new orders at -0.35%).",
       "tickers": []
+    },
+    {
+      "id": "J0025",
+      "ts": "2026-10-06T14:18:04Z",
+      "kind": "research",
+      "title": "PCVX support ladder after the trial-data gap and the offering (Vamsi, Oct 6)",
+      "body": "Vamsi asked for every PCVX support level. Price 65.65 at 10:16 (low 64.23), ATR 4.58 (7%). From daily swing points (1 and 3 years), weekly lows (5 years), moving averages and a 6-month volume profile (hourly bars):\n1. 61.50-65.00: the ceiling of the 8 months before the data (7 swing highs, last Sep 17). Broken on Monday, now the first support; today's low touched its top.\n2. The stock offering's price once announced (not priced yet).\n3. 57.30-59.70, the strongest: the middle of the pre-data range, radar support 58.27 (held 19 times), 9 swing highs and lows, the 20- and 50-day averages (59.00, 58.92), the heaviest traded volume of the last 6 months (57.5-61.0). The radar buy zone 58.27-59.64 sits here.\n4. 56.35-57.00: Monday's gap fully filled (Friday's close 56.48, high 57.00) and the single heaviest volume node.\n5. 54.60-55.80: September's lows (54.59-55.08) and the 100- and 200-day averages (55.78, 55.29); the radar stop 55.52. Under it the trial rally is fully erased.\n6. 50.50-53.20: July's lows (7 touches).\n7. 43.80-47.20: June's lows (7 touches), radar second support 47.16.\n8. 39.90-42.60: December 2025's lows (6 touches).\nOverhead: Monday's low 71.60, close 73.82, volume-weighted average about 77.2.",
+      "tickers": [
+        "PCVX"
+      ]
     }
   ]
 }

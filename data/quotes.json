@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T04:24:57Z",
+ "generated_at": "2026-10-06T04:34:28Z",
  "session": "closed",
  "quotes": {
   "AFRM": {
@@ -79,12 +79,12 @@
    "ext_change_pct": -0.006
   },
   "BTC-USD": {
-   "price": 85593.13,
-   "time": "2026-10-06T04:24:49Z",
+   "price": 85544.34,
+   "time": "2026-10-06T04:34:20Z",
    "prev_close": 85750.58,
    "day_high": 86054.39,
    "day_low": 85368.43,
-   "volume": 27711043584,
+   "volume": 27444709376,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -94,7 +94,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -0.184
+   "change_pct": -0.241
   },
   "BTDR": {
    "price": 10.93,
@@ -706,5 +706,5 @@
   }
  },
  "errors": {},
- "fetch_seconds": 1.1
+ "fetch_seconds": 0.7
 }

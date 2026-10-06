@@ -10,7 +10,7 @@ private dashboard's snapshot (.cache/snapshot_real.json, collection snapshots_re
 goes into the public repo or site.
 
   python scripts/real.py run [--skip A,B]      # sync with account.json, then the actions to take, in order
-  python scripts/real.py record order --id ID --symbol X --kind entry|stop|exit --qty Q --price P
+  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit --qty Q --price P
                                 [--stop S --target T --why "..."]      # after each order placed
   python scripts/real.py record cancel --id ID [--why "..."]           # after each order cancelled
   python scripts/real.py record note --title "..." --body "..."        # a private journal entry
@@ -153,7 +153,7 @@ def sync(s: dict, a: dict) -> list[str]:
         rec["state"] = o["state"]
         filled = float(o.get("cumulative_quantity") or 0)
         avg = float(o["average_price"]) if o.get("average_price") else None
-        if rec["kind"] == "entry" and o["state"] in ("filled", "partially_filled", "cancelled") and filled > 0 and avg:
+        if rec["kind"] in ("entry", "manual") and o["state"] in ("filled", "partially_filled", "cancelled") and filled > 0 and avg:
             p = s["plans"].setdefault(o["symbol"], {"symbol": o["symbol"], "qty": 0.0, "entry": avg, "stop": rec["stop"],
                                                    "target": rec["target"], "why": rec.get("why", ""),
                                                    "opened": o.get("last_transaction_at") or pfm.iso(now),
@@ -302,28 +302,36 @@ def cmd_run(a_) -> int:
             acts.append({"do": "place", "kind": "stop", "symbol": sym, "side": "sell", "type": "stop_market",
                          "stop_price": f"{p['stop']:g}", "quantity": f"{p['qty']:g}", "time_in_force": "gtc",
                          "why": f"plan stop for the {p['qty']:g} shares bought at {p['entry']:.4g}"})
-    blocked = []
+    hard = []  # these also cancel Vamsi's own orders (kind manual); the S&P gate and the hours do not
     if value < KILL_VALUE:
-        blocked.append(f"account value ${value:.2f} is under ${KILL_VALUE:.0f}: no new orders; tell Vamsi")
+        hard.append(f"account value ${value:.2f} is under ${KILL_VALUE:.0f}: no new orders; tell Vamsi")
     if day_pnl <= -DAY_LOSS:
-        blocked.append(f"down ${-day_pnl:.2f} today: no new orders until tomorrow")
+        hard.append(f"down ${-day_pnl:.2f} today: no new orders until tomorrow")
+    if final_day and et.hour * 60 + et.minute > 14 * 60 + 55:
+        hard.append("final day after 14:55: no new orders")
+    blocked = list(hard)
     if spy_day is not None and spy_day <= SPY_MIN:
         blocked.append(f"SPY {spy_day:+.2f}% on the day: no dip buys (S&P gate)")
-    if final_day and et.hour * 60 + et.minute > 14 * 60 + 55:
-        blocked.append("final day after 14:55: no new orders")
     if et.hour < 7 or (et.hour * 60 + et.minute) > 15 * 60 + 30 or not pfm.is_business_day(et.date()):
         blocked.append("outside 7:00-15:30 ET on a business day: no new orders")
     buys = open_orders(a, "buy", "entry", s)
-    for o in buys if blocked else []:
-        acts.append({"do": "cancel", "order_id": o["id"], "symbol": o["symbol"], "why": blocked[0]})
+    manual = open_orders(a, "buy", "manual", s)
+    skip = {x.strip().upper() for x in a_.skip.split(",") if x.strip()}
+    cancelled = set()
+    for o, why in ([(o, blocked[0]) for o in buys] if blocked else []) + ([(o, hard[0]) for o in manual] if hard else []) \
+            + [(o, f"{o['symbol']}: an offering or material company news today") for o in buys + manual
+               if o["symbol"] in skip]:
+        if o["id"] not in cancelled:
+            cancelled.add(o["id"])
+            acts.append({"do": "cancel", "order_id": o["id"], "symbol": o["symbol"], "why": why})
     for b in blocked:
         print("  NO NEW ORDERS:", b)
-    skip = {x.strip().upper() for x in a_.skip.split(",") if x.strip()}
     rows, why_not = entry_candidates(s, a, skip)
     gate = od.btc_gate()
-    slots = MAX_POS - len(s["plans"]) - len(buys)
-    crypto = sum(1 for t in list(s["plans"]) + [o["symbol"] for o in buys] if t in lv.CRYPTO_LINKED)
-    free = cash - sum(float(o.get("price") or 0) * float(o.get("quantity") or 0) for o in buys)
+    held = buys + manual
+    slots = MAX_POS - len(s["plans"]) - len(held)
+    crypto = sum(1 for t in list(s["plans"]) + [o["symbol"] for o in held] if t in lv.CRYPTO_LINKED)
+    free = cash - sum(float(o.get("price") or 0) * float(o.get("quantity") or 0) for o in held)
     print(f"  {gate['why']}")
     print(f"  {slots} free slots, ${free:.2f} cash after open buy orders; candidates (support {MIN_STRENGTH}+ touches, "
           f"R:R {MIN_RR}+, within {NEAR:.0f}% of support, not up {MAX_RET5} ATR over 5 sessions):")
@@ -336,10 +344,11 @@ def cmd_run(a_) -> int:
               f"R:R {x['rr']} tested {x['strength']}x 5-session {x['ret5']:+.2f} ATR {x['dist']:+.1f}% above"
               + (f", {x['k']:.2f} ATR to the limit, {x['odds']:.0%} fill odds" if o else "")
               + f"{' [crypto]' if x['crypto'] else ''}")
-    for o in buys:
+    for o in held:
         r = odds_of(o["symbol"], price_of(q.get(o["symbol"])), float(o["price"]), radar, q, minute)
+        tag = " (Vamsi's order: kept by the swap rule and the S&P gate)" if o in manual else ""
         if r:
-            print(f"  open buy {o['symbol']} limit {float(o['price']):g}: {r[1]:.2f} ATR to the limit, {r[0]:.0%} fill odds")
+            print(f"  open buy {o['symbol']} limit {float(o['price']):g}: {r[1]:.2f} ATR to the limit, {r[0]:.0%} fill odds{tag}")
     for w in why_not:
         print("    skipped", w)
     if not blocked:
@@ -402,9 +411,9 @@ def cmd_record(a_) -> int:
         s["orders"][a_.id] = rec
         if a_.kind == "stop" and rec["symbol"] in s["plans"]:
             s["plans"][rec["symbol"]]["stop_order_id"] = a_.id
-        verb = {"entry": "Buy limit", "stop": "Stop order", "exit": "Sell"}[a_.kind]
+        verb = {"entry": "Buy limit", "manual": "Buy limit (Vamsi's order)", "stop": "Stop order", "exit": "Sell"}[a_.kind]
         note(s, "trade", f"{verb} placed: {rec['symbol']} {a_.qty:g} at {a_.price}",
-             f"{verb} {rec['symbol']} {a_.qty:g} at {a_.price}" + (f", stop {a_.stop}, target {a_.target}" if a_.kind == "entry" else "")
+             f"{verb} {rec['symbol']} {a_.qty:g} at {a_.price}" + (f", stop {a_.stop}, target {a_.target}" if a_.kind in ("entry", "manual") else "")
              + f". {a_.why}", [rec["symbol"]])
     elif a_.what == "cancel":
         rec = s["orders"].get(a_.id)

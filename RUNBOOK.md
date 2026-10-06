@@ -370,6 +370,8 @@ Rules (`scripts/real.py`; stricter than the paper book because the money is real
 * Vamsi's own orders (`real.py record order --kind manual`, e.g. CRSP 10 at 51 GTC, Oct 6): placed as he says, even
   past the size and risk caps; a fill gets its stop like any entry. The swap rule, the S&P gate and the trading
   hours never cancel them; the $900 floor, the $30 day loss, the final day and company news (`--skip`) do.
+* Pause (`real.py record pause --until YYYY-MM-DD --why "..."`, `--off` to resume): no entries of the real book's
+  own; stops, exits and Vamsi's orders carry on (Oct 6: paused for the day after he cleared room for CRSP).
 * Equity orders in the agentic account only. A position or order the real book did not place: leave it alone and
   tell Vamsi.
 * Records: plans, orders and a private journal in `.secrets/real_book.json` (git-ignored, on this session's

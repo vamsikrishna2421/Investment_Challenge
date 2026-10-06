@@ -14,6 +14,7 @@ goes into the public repo or site.
                                 [--stop S --target T --why "..."]      # after each order placed
   python scripts/real.py record cancel --id ID [--why "..."]           # after each order cancelled
   python scripts/real.py record note --title "..." --body "..."        # a private journal entry
+  python scripts/real.py record pause --until YYYY-MM-DD --why "..."    # no new entries of its own (Vamsi); --off resumes
   python scripts/real.py snapshot | status
 
 Rules (RUNBOOK 2e), stricter than the paper book because the money is real:
@@ -314,6 +315,9 @@ def cmd_run(a_) -> int:
         blocked.append(f"SPY {spy_day:+.2f}% on the day: no dip buys (S&P gate)")
     if et.hour < 7 or (et.hour * 60 + et.minute) > 15 * 60 + 30 or not pfm.is_business_day(et.date()):
         blocked.append("outside 7:00-15:30 ET on a business day: no new orders")
+    pause = s.get("pause") or {}
+    if pause.get("until") and et.date().isoformat() <= pause["until"]:
+        blocked.append(f"Vamsi paused the real book's own entries through {pause['until']}: {pause.get('why', '')}")
     buys = open_orders(a, "buy", "entry", s)
     manual = open_orders(a, "buy", "manual", s)
     skip = {x.strip().upper() for x in a_.skip.split(",") if x.strip()}
@@ -415,6 +419,13 @@ def cmd_record(a_) -> int:
         note(s, "trade", f"{verb} placed: {rec['symbol']} {a_.qty:g} at {a_.price}",
              f"{verb} {rec['symbol']} {a_.qty:g} at {a_.price}" + (f", stop {a_.stop}, target {a_.target}" if a_.kind in ("entry", "manual") else "")
              + f". {a_.why}", [rec["symbol"]])
+    elif a_.what == "pause":
+        if a_.off:
+            s.pop("pause", None)
+            note(s, "plan", "Entries resumed", a_.why or "Vamsi resumed the real book's own entries.")
+        else:
+            s["pause"] = {"until": a_.until, "why": a_.why}
+            note(s, "plan", f"Entries paused through {a_.until}", a_.why)
     elif a_.what == "cancel":
         rec = s["orders"].get(a_.id)
         if rec:
@@ -500,7 +511,9 @@ def main() -> int:
     r = sub.add_parser("run")
     r.add_argument("--skip", default="")
     rec = sub.add_parser("record")
-    rec.add_argument("what", choices=["order", "cancel", "note"])
+    rec.add_argument("what", choices=["order", "cancel", "note", "pause"])
+    rec.add_argument("--until", default="")
+    rec.add_argument("--off", action="store_true")
     rec.add_argument("--id", default="")
     rec.add_argument("--symbol", default="")
     rec.add_argument("--kind", default=None)

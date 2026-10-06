@@ -235,6 +235,10 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   the open 12% of the time; a limit 4% under the open lost 0.6% by the close and made 0.5% over 3 sessions (any
   open: 0.5%); on days SPY fell 1%+ it lost 2.6% by the close. Candidate rule for the replay: no dip buys while SPY
   is down 1%+.
+* Recovery and channel tests (Oct 6; `research/backtests/dip-recovery-2026-10-06.md`, `channels-2026-10-06.md`): a
+  1+ ATR dip closed back at its pre-dip close within 10 sessions 46% of the time (offering dips 30%), usually after
+  a further 6% drop; proper channels (both edges tested 3+ times) did no better than loose ones or random entries
+  with the same stop and target.
 * Trade review: when a position closes, journal a `review` entry: the entry's context (dip against the prior
   close in ATR, gap, sector, news), the best and worst price while held, the exit, and whether a rule should
   change. One trade changes nothing; a rule changes when the reviews and a backtest agree.

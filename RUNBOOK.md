@@ -225,6 +225,11 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   dip later did not pay: down 0.5+ ATR at 10:30 averaged -0.1 to +0.2% over 2 years, and at 9:55 about 0% over the
   last 60 sessions (+0.8% +/- 1.25 inside the buy zone, 90 trades). Deep dips rarely got back to the prior close the
   same day (4-21%). The edge, where there is one, sits at the open.
+* News-dip test (`python3 scripts/news_dip_backtest.py --save`, `research/backtests/news-dips-2026-10-06.md`; 66
+  candidates, 4 years, 3,127 closes 1+ ATR under the prior close): after 3 sessions, dips with an offering or
+  registration filed fell a further 1.1% (42% up), dips with no company filing rose 0.7%, dips on results 1.4%;
+  no-news dips whose low reached support rose 1.2% against 0.4% for the rest. Dilution is the cause to skip; a
+  blanket no-news filter would skip the earnings dips that recovered best.
 * Trade review: when a position closes, journal a `review` entry: the entry's context (dip against the prior
   close in ATR, gap, sector, news), the best and worst price while held, the exit, and whether a rule should
   change. One trade changes nothing; a rule changes when the reviews and a backtest agree.

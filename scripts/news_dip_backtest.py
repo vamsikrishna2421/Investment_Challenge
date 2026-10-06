@@ -3,7 +3,8 @@
 fundamental reason, find the support where they reverse, and buy the reversal.)
 Events: radar candidates' sessions that closed 1+ ATR (14-day, to the prior close) under the prior close, over the
 last --years. Company news: an SEC filing of a news form (8-K, 6-K, an offering prospectus or registration, 10-Q,
-10-K, 20-F, 40-F) dated from the session before to the session after the dip (an 8-K can follow its press release
+10-K, 20-F, 40-F; split into offerings, results and other) dated from the session before to the
+session after the dip (an 8-K can follow its press release
 by days, so the window trades a little look-ahead for coverage). At support: the dip's low inside the band from the
 radar stop to 0.5 ATR above the radar support, levels as of the prior close (support tested twice or more).
 Market-wide: SPY closed down 1%+ the same session. Entries: the dip's close; the next open; and "confirmed", the
@@ -34,28 +35,45 @@ NEWS_FORMS = ("8-K", "6-K", "424B", "S-1", "S-3", "F-1", "F-3", "10-Q", "10-K", 
 CACHE = ROOT / ".cache" / "sec_news"
 
 
-def news_dates(sym: str, start: str) -> set[str] | None:
-    """Dates of the ticker's news-form SEC filings since start (cached a day); None without EDGAR access."""
-    f = CACHE / f"{sym}.json"
+OFFERING = ("424B", "S-1", "S-3", "F-1", "F-3")
+RESULTS = ("10-Q", "10-K", "20-F", "40-F")
+
+
+def kind(form: str, items: str) -> str:
+    if form.startswith(OFFERING):
+        return "offering"
+    if form.startswith(RESULTS) or "2.02" in (items or ""):
+        return "results"
+    return "other"
+
+
+def news_dates(sym: str, start: str) -> dict[str, list[str]] | None:
+    """{date: kinds} of the ticker's news-form SEC filings since start (cached a day); None without EDGAR access."""
+    f = CACHE / f"{sym}.v2.json"
     if f.exists() and time.time() - f.stat().st_mtime < 86400:
-        return set(json.loads(f.read_text()))
+        return json.loads(f.read_text())
     if not sec.enabled():
         return None
     cik = sec.tickers()["by_ticker"].get(sym.upper().replace("-", ".")) or sec.tickers()["by_ticker"].get(sym.upper())
     if not cik:
         return None
+    out: dict[str, set] = {}
 
-    def take(rec: dict) -> list[str]:
-        return [d for fm, d in zip(rec.get("form", []), rec.get("filingDate", [])) if fm.startswith(NEWS_FORMS)]
+    def take(rec: dict) -> None:
+        items = rec.get("items") or [""] * len(rec.get("form", []))
+        for fm, d, it in zip(rec.get("form", []), rec.get("filingDate", []), items):
+            if fm.startswith(NEWS_FORMS):
+                out.setdefault(d, set()).add(kind(fm, it))
 
     sub = json.loads(sec.get(f"https://data.sec.gov/submissions/CIK{cik:010d}.json"))
-    dates = take(sub.get("filings", {}).get("recent", {}))
+    take(sub.get("filings", {}).get("recent", {}))
     for page in sub.get("filings", {}).get("files", []):
         if page.get("filingTo", "") >= start:
-            dates += take(json.loads(sec.get("https://data.sec.gov/submissions/" + page["name"])))
+            take(json.loads(sec.get("https://data.sec.gov/submissions/" + page["name"])))
+    res = {d: sorted(k) for d, k in out.items()}
     CACHE.mkdir(parents=True, exist_ok=True)
-    f.write_text(json.dumps(sorted(set(dates))))
-    return set(dates)
+    f.write_text(json.dumps(res))
+    return res
 
 
 def ret(e: float, x: float) -> float:
@@ -92,6 +110,7 @@ def events(sym: str, years: float, spy: dict[str, float]) -> tuple[list[dict], l
         e = rows[i]["c"]
         ev = {"sym": sym, "date": dates[i], "drop": drop, "pct": (e / prev - 1) * 100,
               "news": any(d in news for d in dates[i - 1:i + 2]), "at_sup": at_sup,
+              "kinds": sorted({k for d in dates[i - 1:i + 2] for k in news.get(d, [])}),
               "spy": spy.get(dates[i]), "d1": ret(e, rows[i + 1]["c"]), "d3": ret(e, rows[i + 3]["c"]),
               "d5": ret(e, rows[i + 5]["c"]), "o3": ret(rows[i + 1]["o"], rows[i + 3]["c"])}
         if rows[i + 1]["c"] > e:
@@ -132,6 +151,9 @@ def main() -> int:
         ("All dips 1+ ATR", ev),
         ("with company news", [e for e in ev if e["news"]]),
         ("without company news", nn),
+        ("news: an offering or registration", [e for e in ev if "offering" in e["kinds"]]),
+        ("news: results (10-Q/10-K, earnings 8-K)", [e for e in ev if "results" in e["kinds"] and "offering" not in e["kinds"]]),
+        ("news: other 8-K/6-K only", [e for e in ev if e["kinds"] == ["other"]]),
         ("Big dips 2+ ATR, with news", [e for e in ev if e["news"] and e["drop"] <= -2]),
         ("Big dips 2+ ATR, without news", [e for e in nn if e["drop"] <= -2]),
         ("No news, low at support", [e for e in nn if e["at_sup"]]),

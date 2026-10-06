@@ -272,6 +272,14 @@
         "CIFR",
         "UMAC"
       ]
+    },
+    {
+      "id": "J0023",
+      "ts": "2026-10-06T14:07:28Z",
+      "kind": "research",
+      "title": "Dips with and without company news: offerings keep falling, other dips recover (test, Oct 6)",
+      "body": "Vamsi's question (J0022): do dips without a fundamental reason recover, and dips with one not? Test (scripts/news_dip_backtest.py; research/backtests/news-dips-2026-10-06.md): 66 radar candidates, last 4 years, 3,127 sessions that closed 1+ ATR under the prior close; company news = an SEC filing (8-K, 6-K, offering, 10-Q/10-K) from the day before to the day after. Returns after slippage, 95% ranges clustered by date; baseline +0.24% over 3 sessions from any close.\n- All dips: +0.65% after 3 sessions (49% up), +1.65% after 5. A small recovery effect, a coin flip trade by trade.\n- No company news: +0.68% (3 sessions). Company news: +0.58%. No difference overall.\n- By kind of news: offerings and registrations -1.07% (42% up; buying the next open -1.92%); results +1.37% (+2.51% after 5 sessions); other 8-Ks +0.66%. The fundamental dip that keeps falling is dilution; earnings dips recovered at least as well as dips with no news.\n- Support: no-news dips whose low reached the radar support +1.18% after 3 sessions (+2.16% after 5) against +0.44% for the rest.\n- Market-wide (SPY down 1%+) against stock-specific no-news dips: +0.90% and +0.55%, no clear difference. Dips of 2+ ATR: +1.54% without news, +1.09% with (wide ranges).\n- Waiting for an up close before buying: no gain on no-news dips (+0.41% against +0.68% at the dip's close); on news dips +1.61% against +0.58%, mostly by skipping offering dips that kept falling.\nVerdict: half of the idea holds. The cause that matters is dilution (already a skip in 2a), and buying at support adds about 0.7 points over 3 sessions (2a already buys only there). A blanket no-news filter would have skipped the earnings dips that recovered best. No rule change: none of these beat the live rules in the 2d replay yet. Caveat: SEC filings are a crude record of a dip's cause (analyst notes, peer results and sector news file nothing).",
+      "tickers": []
     }
   ]
 }

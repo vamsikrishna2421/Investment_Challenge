@@ -306,6 +306,19 @@
       "title": "Dip recovery times and channel quality (tests, Oct 6)",
       "body": "Vamsi's questions (Oct 6): how many days do dips take to recover and how much comes back; and is proper channel trading (buy the bottom, sell the top) better?\nRecovery (scripts/dip_recovery.py; research/backtests/dip-recovery-2026-10-06.md; 3,066 closes 1+ ATR under the prior close, median drop -8.7%, 4 years): back at the pre-dip close 6% of the time the next day, 31% within 5 sessions, 46% within 10, 60% within 20. Half the drop came back in a median 3 sessions (73% got there within 20). By the 10th session the median dip had won back only 11% of its drop, and the next 5 sessions' lows went a median 6.2% under the dip's close first. Dips of 2-3 ATR won back 34% by day 10; 3+ ATR crashes (median -19%) 0%, with 18% back within 10 sessions. Offering dips: 30% back within 10 sessions, a further 9.7% lower first, and the median drop grew (-23% of it by day 10). For PCVX (an offering dip from 73.82) those base rates say: about 30% odds of seeing 73.82 again within 10 sessions and 42% within 20, with a typical further fall of about 10% first, to around 59 (the 57.30-59.70 support zone).\nChannels (scripts/channel_backtest.py; research/backtests/channels-2026-10-06.md; 2,959 radar touch trades over 5 years, 10-session time exit): all trades 33% winners, target hit 23%, stopped 63%, average -0.003R, the same as random entries with the same stop and target. Proper channels (support and resistance tested 3+ times each) +0.26% a trade, -0.034R against random -0.046R; 4+ touches each +0.025R against +0.010R; channels 5+ ATR wide worse (-0.159R, target hit 3%). The number of touches does not make the bottom of a channel a better entry.\nVerdict: no switch to channel trading (the radar already is one, and channel quality made no difference). What the tests support: skip offering dips, skip dips while the whole market falls (to replay), expect the price to go about 6% lower before a dip recovers, and give recoveries days, not hours.",
       "tickers": []
+    },
+    {
+      "id": "J0027",
+      "ts": "2026-10-06T14:54:59Z",
+      "kind": "research",
+      "title": "Protecting open gains: break-even and trailing stops lose to holding for the target (replay, Oct 6)",
+      "body": "Vamsi's point (Oct 6, after the book slipped from +4.9% at 9:55 to +2.25% at 10:44): plan the exits so the book doesn't give back its gains. Tested in the replay (scripts/replay.py --set exits): once a position's best price is 0.5-1.5 ATR over the entry, its stop rises to the entry (break-even) or trails 0.5-1.5 ATR under the best price.\n- Last 30 sessions, 5-minute bars (research/replay/replay-2026-10-05-30-5m-exits.md): live rules +3.2%; tight trails did better (0.75 ATR after +0.5: +6.6%; 0.5 ATR after +1: +5.8%), a 1-ATR trail worse (-3.5%), break-even stops +2.8% and +0.6%.\n- 33 separate 22-session windows over 2.8 years, hourly bars (windows-2026-10-05-22-1h-exits.md): live rules median +4.8%, mean +3.4%, worst -20.9%. Every variant had a lower mean (+0.8% to +2.8%); break-even after +0.5 ATR had the best worst window (-18.4%) but a mean of +2.8% and a median of +1.2%; the tight trails that led over 30 sessions fell to means of +0.8% and +2.0%.\n- 5-minute windows (8 overlapping, windows-2026-10-05-22-5m-exits.md): live mean +4.9%, every variant lower (-0.5% to +3.9%).\nVerdict: no change (the 2d gate needs a better mean and worst window). With 18-33% of trades winning, the targets pay for the stops; stops raised on open gains sell the winners early, on these stocks' normal 5-7% daily swings, and the trades they free up do worse. Today's give-back was open profit moving with the stocks; no position came near its stop or target.",
+      "tickers": [
+        "POET",
+        "HUT",
+        "CIFR",
+        "UMAC"
+      ]
     }
   ]
 }

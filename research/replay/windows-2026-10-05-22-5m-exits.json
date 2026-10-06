@@ -1,0 +1,392 @@
+{
+ "spy": {
+  "2026-08-14": 2.85,
+  "2026-08-21": 2.45,
+  "2026-08-28": 5.47,
+  "2026-09-04": 0.05,
+  "2026-09-14": -1.5,
+  "2026-09-21": 0.58,
+  "2026-09-28": -0.06,
+  "2026-10-05": 1.26
+ },
+ "rules": [
+  {
+   "title": "Live rules: hold to the target or the plan stop",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "none",
+    "protect_at": 1.0,
+    "protect_trail": 1.0
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     5.74
+    ],
+    [
+     "2026-08-21",
+     6.3
+    ],
+    [
+     "2026-08-28",
+     5.09
+    ],
+    [
+     "2026-09-04",
+     9.79
+    ],
+    [
+     "2026-09-14",
+     -5.16
+    ],
+    [
+     "2026-09-21",
+     4.86
+    ],
+    [
+     "2026-09-28",
+     8.11
+    ],
+    [
+     "2026-10-05",
+     4.7
+    ]
+   ]
+  },
+  {
+   "title": "Stop to break-even after +0.5 ATR",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "be",
+    "protect_at": 0.5,
+    "protect_trail": 1.0
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     -3.27
+    ],
+    [
+     "2026-08-21",
+     4.92
+    ],
+    [
+     "2026-08-28",
+     6.85
+    ],
+    [
+     "2026-09-04",
+     6.69
+    ],
+    [
+     "2026-09-14",
+     0.29
+    ],
+    [
+     "2026-09-21",
+     9.01
+    ],
+    [
+     "2026-09-28",
+     5.55
+    ],
+    [
+     "2026-10-05",
+     1.31
+    ]
+   ]
+  },
+  {
+   "title": "Stop to break-even after +1 ATR",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "be",
+    "protect_at": 1.0,
+    "protect_trail": 1.0
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     4.44
+    ],
+    [
+     "2026-08-21",
+     4.62
+    ],
+    [
+     "2026-08-28",
+     7.42
+    ],
+    [
+     "2026-09-04",
+     8.77
+    ],
+    [
+     "2026-09-14",
+     -5.55
+    ],
+    [
+     "2026-09-21",
+     3.27
+    ],
+    [
+     "2026-09-28",
+     5.25
+    ],
+    [
+     "2026-10-05",
+     0.06
+    ]
+   ]
+  },
+  {
+   "title": "Trail 0.75 ATR under the high after +0.5 ATR",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "trail",
+    "protect_at": 0.5,
+    "protect_trail": 0.75
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     -4.92
+    ],
+    [
+     "2026-08-21",
+     3.36
+    ],
+    [
+     "2026-08-28",
+     -0.04
+    ],
+    [
+     "2026-09-04",
+     0.09
+    ],
+    [
+     "2026-09-14",
+     -0.22
+    ],
+    [
+     "2026-09-21",
+     10.24
+    ],
+    [
+     "2026-09-28",
+     9.37
+    ],
+    [
+     "2026-10-05",
+     6.03
+    ]
+   ]
+  },
+  {
+   "title": "Trail 0.5 ATR under the high after +1 ATR",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "trail",
+    "protect_at": 1.0,
+    "protect_trail": 0.5
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     0.21
+    ],
+    [
+     "2026-08-21",
+     4.59
+    ],
+    [
+     "2026-08-28",
+     1.53
+    ],
+    [
+     "2026-09-04",
+     2.19
+    ],
+    [
+     "2026-09-14",
+     -3.74
+    ],
+    [
+     "2026-09-21",
+     6.06
+    ],
+    [
+     "2026-09-28",
+     8.43
+    ],
+    [
+     "2026-10-05",
+     5.79
+    ]
+   ]
+  },
+  {
+   "title": "Trail 1 ATR under the high after +1 ATR",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "trail",
+    "protect_at": 1.0,
+    "protect_trail": 1.0
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     -4.69
+    ],
+    [
+     "2026-08-21",
+     0.56
+    ],
+    [
+     "2026-08-28",
+     -1.01
+    ],
+    [
+     "2026-09-04",
+     -0.37
+    ],
+    [
+     "2026-09-14",
+     -3.47
+    ],
+    [
+     "2026-09-21",
+     1.27
+    ],
+    [
+     "2026-09-28",
+     -0.53
+    ],
+    [
+     "2026-10-05",
+     4.18
+    ]
+   ]
+  },
+  {
+   "title": "Trail 1.5 ATR under the high after +1.5 ATR",
+   "options": {
+    "limit": "support",
+    "stop_atr": 0.6,
+    "btc_gate": "on",
+    "rank": "dip",
+    "runs": "on",
+    "max_hold": 0,
+    "entry": "radar",
+    "limit_until": 960,
+    "tested_only": "off",
+    "entry_until": 960,
+    "entry_from": 0,
+    "risk_pct": 1.5,
+    "protect": "trail",
+    "protect_at": 1.5,
+    "protect_trail": 1.5
+   },
+   "returns": [
+    [
+     "2026-08-14",
+     3.08
+    ],
+    [
+     "2026-08-21",
+     3.98
+    ],
+    [
+     "2026-08-28",
+     2.04
+    ],
+    [
+     "2026-09-04",
+     -2.97
+    ],
+    [
+     "2026-09-14",
+     -4.33
+    ],
+    [
+     "2026-09-21",
+     6.52
+    ],
+    [
+     "2026-09-28",
+     6.44
+    ],
+    [
+     "2026-10-05",
+     3.6
+    ]
+   ]
+  }
+ ]
+}

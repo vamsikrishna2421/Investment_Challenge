@@ -331,6 +331,9 @@ python3 scripts/replay.py --grid --set stops|times|sizing ...                   
   down and selling at the prior close; cancelling unfilled limits at 10:00; no entries after 10:30; stops 0.8-1.5
   ATR under support; GPUS, IREN and BTDR only with a tested support. Results swing with the start date: the best
   of 15 variants on the last 60 sessions (+7.8% median across its 31 overlapping windows) was ordinary over 2.8 years.
+* Exit test (Oct 6, `--set exits`): moving the stop to break-even or trailing it 0.5-1.5 ATR under the best price
+  once a position gains 0.5-1.5 ATR lowered the mean of the 33 hourly windows from +3.4% to +0.8-2.8%; the tight
+  trails that led over the last 30 sessions did not hold up. Positions keep the plan stop and the target.
 * Rule for future changes: a new rule trades only after it beats the live rules on the mean and the worst window
   of the separate hourly 22-session windows without losing on the 5-minute windows. One window proves nothing.
 

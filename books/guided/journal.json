@@ -249,6 +249,16 @@
       "title": "Day plan Tue Oct 6: four positions held, no free slot for resting orders",
       "body": "Pre-market 8:43 ET: S&P 500 (SPY) 778.5, +0.5% against Monday's close; Nasdaq-100 (QQQ) +0.6%; bitcoin 86,243, +0.5% on the day and +1.7% over 3 days, above its 20-day average (83,366): the bitcoin gate is open.\nHoldings (equity $1,030.95, +3.1%): CIFR 15.68 (stop 14.11, target 17.89), HUT 90.55 (83.85 / 100.77), POET 7.92 (7.41 / 8.45), UMAC 21.95 (20.79 / 25.96). Their stops are resting orders; targets are run checks.\nNo resting buy orders today: the four positions fill the four slots and settled cash is $0.01. Entries resume when an exit frees a slot and its proceeds settle (T+1). First in line if a slot opens: RCAT, 6.39 pre-market inside its buy zone 6.32-6.43 (limit at support 6.32, stop 6.10, sell zone from 8.08, R:R 5.8 from support).\nNews: PCVX filed a share offering (424B5) overnight after Monday's +30.7%: no entry in PCVX today. No offering or material company news on the holdings.\nClue scan (alerts, not radar buys): bounce setups AEHR (support, accumulation, higher lows), SMTC (support, coil, higher lows), SMCI (coil, accumulation, higher lows, near resistance), AXTI (coil, accumulation, higher lows); breakout watch BULL (coiled under resistance 7.56). Pre-market movers: PCVX +28.7% (offering), DNA +23.3%, STNE +20.5%, RXRX +14.3%, TEM +10.2%, GRAL +9.2%.",
       "tickers": []
+    },
+    {
+      "id": "J0021",
+      "ts": "2026-10-06T13:45:52Z",
+      "kind": "plan",
+      "title": "PCVX: where the offering sell-off is most likely to reverse (Vamsi, Oct 6)",
+      "body": "Vamsi's instruction (Tue Oct 6, 9:45 AM): for PCVX, find the bottom where it will reverse.\nSituation: Vaxcyte reported positive Phase 3 topline data for VAX-31 (OPUS-1, adults) on Mon Oct 5. The stock gapped from 56.48 to 87.21, hit 90.75 and closed 73.82 (+30.7%). That night it filed preliminary prospectuses for a stock offering (with pre-funded warrants) and concurrent convertible senior notes due 2032, amounts and price blank: not priced yet. Today 66.73 at 9:45 (-9.6%, low 65.70). Convertible buyers short the stock to hedge, and the stock offering usually prices at or below the pricing day's close.\nWhere a reversal is most likely (levels, not a forecast):\n1. The stock offering's price, once announced (likely tonight). After pricing, a stock usually trades around the offering price for days, with the underwriters' stabilizing bid under it.\n2. 58.27-59.64, the radar buy zone: the top of the three-week range before the data (support held 19 times), stop 55.52, sell zone 89.38-90.75 (Monday's high), R:R 7.2. It nearly fills Monday's gap (Friday's close 56.48).\n3. Below that, support at 47.16.\nPlan: no entry today or on the pricing day (offering, RUNBOOK 2a). From the session after, an entry if a slot is free and PCVX trades in 58.27-59.64 (BUY ZONE) or touches it and holds (BOUNCE). The post-close run reads the pricing and updates this plan.",
+      "tickers": [
+        "PCVX"
+      ]
     }
   ]
 }

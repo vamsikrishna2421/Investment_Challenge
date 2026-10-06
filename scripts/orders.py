@@ -9,8 +9,9 @@ when the price gets there, and the book doesn't miss the dips that happen betwee
   python scripts/orders.py fill                          every run, right after the sync
 
 Model (what a Robinhood cash account supports, so the paper record carries over to a real one):
-  buy limit   a DAY order, regular session only, placed for about 25% of equity and reserved from settled
-              cash. It fills when a 1-minute bar trades at least 1 cent through the limit: at the limit, or at
+  buy limit   a DAY order at support (the bottom of the buy zone, Vamsi Oct 5), regular session only, for
+              about 25% of equity and reserved from settled cash. Crypto-linked names only while bitcoin's gate
+              is open (btc_gate). It fills when a 1-minute bar trades at least 1 cent through the limit: at the limit, or at
               the bar's open when the bar opens below it (a gap fills at the open, which can be under the stop).
   stop        each position's plan stop is a resting stop-market sell, regular session only: it fills when a
               1-minute bar trades at or below the stop, at the stop or the bar's open if lower, less the
@@ -280,12 +281,31 @@ def cmd_list(a) -> int:
     return 0
 
 
+def btc_gate() -> dict:
+    """Bitcoin sentiment for crypto-linked names (Vamsi, Oct 5: don't chase miner dips without checking bitcoin):
+    open when bitcoin is above its 20-day average, down less than 2% on the day and less than 5% over 3 days."""
+    try:
+        r = md.yahoo_chart("BTC-USD", "3mo", "1d", False)
+        closes = [c for c in ((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or [] if c]
+        px = float(md.quote("BTC-USD")["price"])
+    except Exception as e:  # noqa: BLE001
+        return {"ok": False, "why": f"no bitcoin data ({str(e)[:60]}): crypto-linked dips blocked"}
+    sma20 = sum(closes[-21:-1]) / 20
+    d1 = (px / closes[-2] - 1) * 100
+    d3 = (px / closes[-4] - 1) * 100
+    ok = px > sma20 and d1 > -2 and d3 > -5
+    return {"ok": ok, "price": round(px), "sma20": round(sma20), "d1": round(d1, 2), "d3": round(d3, 2),
+            "why": (f"bitcoin {px:,.0f} vs 20-day {sma20:,.0f}, {d1:+.1f}% on the day, {d3:+.1f}% over 3 days: "
+                    + ("crypto-linked dips allowed" if ok else "crypto-linked dips blocked"))}
+
+
 def cmd_plan(a) -> int:
     cfg, ledger, qdoc, pf, val, now = state(a.book)
     doc = load(a.book)
     quotes = qdoc["quotes"]
     radar = json.loads(lv.RADAR.read_text())
     skip = {s.strip().upper() for s in a.skip.split(",") if s.strip()}
+    gate = btc_gate()
     held = {p["ticker"] for p in val["positions"]}
     open_buys = [o for o in doc["orders"] if o["status"] == "open" and o["side"] == "buy"]
     taken = held | {o["ticker"] for o in open_buys}
@@ -299,47 +319,47 @@ def cmd_plan(a) -> int:
         tk = r["ticker"]
         q = quotes.get(tk) or {}
         px = pfm.mark(q)[0] if q else None
-        if tk in taken or tk in skip or px is None:
+        if tk in taken or tk in skip or px is None or px <= r["stop"]:
             continue
-        lo, top = r["buy_zone"]
-        if px <= r["stop"]:
+        lo = r["buy_zone"][0]
+        dist = (px / lo - 1) * 100
+        if dist > NEAR_PCT + 3:
             continue
-        dist = (px / top - 1) * 100
-        if dist > NEAR_PCT:
-            continue
-        rr = (r["sell_zone"][0] - top) / (top - r["stop"]) if top > r["stop"] else 0
+        rr = (r["sell_zone"][0] - lo) / (lo - r["stop"]) if lo > r["stop"] else 0
         if rr < 1.5:
             continue
-        rows.append({"ticker": tk, "price": px, "limit": round(top, 2 if top >= 1 else 4), "stop": r["stop"],
+        atr = r.get("atr") or 0
+        rows.append({"ticker": tk, "price": px, "limit": round(lo, 2 if lo >= 1 else 4), "stop": r["stop"],
                      "target": r["sell_zone"][0], "rr": round(rr, 2), "dist": round(dist, 2),
-                     "crypto": tk in lv.CRYPTO_LINKED})
+                     "dip_atr": round((px - lo) / atr, 2) if atr else None, "crypto": tk in lv.CRYPTO_LINKED})
     rows.sort(key=lambda x: -x["rr"])
+    print(gate["why"])
     print(f"resting-order plan {pfm.iso(now)}: {slots} free slots, ${free:.2f} settled cash free, "
-          f"${size:.2f} per order (25% of equity)")
+          f"${size:.2f} per order (25% of equity); limits at support, the bottom of the buy zone")
     picks = []
     for x in rows:
         if len(picks) >= max(slots, 0):
             break
-        if x["crypto"] and crypto >= MAX_CRYPTO:
+        if x["crypto"] and (crypto >= MAX_CRYPTO or not gate["ok"]):
             continue
         usd = min(size, free - sum(p["usd"] for p in picks))
         if usd < 25:
             break
         picks.append({**x, "usd": round(usd, 2)})
         crypto += x["crypto"]
+    chosen = {p["ticker"] for p in picks}
     for x in rows:
-        mark = "PLACE" if x in [{k: v for k, v in p.items() if k != "usd"} for p in picks] else "     "
-        print(f"  {mark} {x['ticker']:6} {x['price']:>9.4g} limit {x['limit']} ({x['dist']:+.1f}% away) "
-              f"stop {x['stop']} target {x['target']} R:R {x['rr']}{' [crypto]' if x['crypto'] else ''}")
+        print(f"  {'PLACE' if x['ticker'] in chosen else '     '} {x['ticker']:6} {x['price']:>9.4g} limit {x['limit']} "
+              f"({x['dist']:+.1f}% above, {x['dip_atr']} ATR) stop {x['stop']} target {x['target']} R:R {x['rr']}"
+              f"{' [crypto]' if x['crypto'] else ''}")
     if not picks:
-        print("  no order to place (no free slot or settled cash)" if rows else "  no radar name within 5% of its zone")
+        print("  no order to place (no free slot or settled cash)" if rows else "  no radar name near its support")
     if a.place:
         for p in picks:
             ns = argparse.Namespace(book=a.book, ticker=p["ticker"], limit=p["limit"], usd=p["usd"], stop=p["stop"],
                                     target=p["target"], tags="radar,resting",
-                                    why=(f"radar buy zone top {p['limit']} (stop {p['stop']}, sell zone from "
-                                         f"{p['target']}, R:R {p['rr']}); placed {p['dist']:+.1f}% above it"),
-                                    dry_run=False)
+                                    why=(f"radar support {p['limit']} (stop {p['stop']}, sell zone from {p['target']}, "
+                                         f"R:R {p['rr']}); placed {p['dist']:+.1f}% above it"), dry_run=False)
             cmd_place(ns)
     return 0
 

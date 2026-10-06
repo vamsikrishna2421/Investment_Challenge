@@ -185,7 +185,8 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   Method in the `scripts/levels.py` docstring; candidates in its `CANDIDATES` list. The dashboard shows the radar
   with each name's live status.
 * Entry, at a regular-session run from 9:55 AM: a name whose status is BUY ZONE (inside the buy zone, above the
-  stop) or BOUNCE (touched the zone this session and held, entry R:R at least 1.5). Never on BROKEN (at or
+  stop) or BOUNCE (touched the zone this session and held, entry R:R at least 1.5); crypto-linked names only while
+  the bitcoin gate is open (2c). Never on BROKEN (at or
   through the stop this session), on a day with an offering or material negative company news, or after 14:55
   on the final day (Wed Nov 4). Material means the company's own news that changes the business: an offering or
   other dilution, a guidance cut, a failed trial or rejection, a regulatory or legal hit, a delisting notice,
@@ -259,9 +260,13 @@ python3 scripts/orders.py plan --place [--skip A,B]     # 8:40 run: DAY buy limi
 python3 scripts/orders.py list                          # open orders; cancel with: orders.py cancel ID --why "..."
 ```
 * Model in the `scripts/orders.py` docstring, limited to what a Robinhood cash account supports. Buy limits are DAY
-  orders at the buy-zone top, about 25% of equity each and reserved from settled cash; at most 4 positions plus
-  open orders, at most 2 crypto-linked; radar names within 5% of their zone with R:R 1.5+, higher R:R first. A
-  fill needs a 1-minute bar 1 cent through the limit; a gap down fills at the open, which can be under the stop.
+  orders at support, the bottom of the buy zone (Vamsi, Oct 5), about 25% of equity each and reserved from
+  settled cash; at most 4 positions plus open orders, at most 2 crypto-linked; radar names within 8% of support
+  with R:R 1.5+ measured from support, higher R:R first. A fill needs a 1-minute bar 1 cent through the limit; a
+  gap down fills at the open, which can be under the stop.
+* Bitcoin gate (Vamsi, Oct 5: no blind dip-buying in crypto-linked names): `plan` prints it; crypto-linked names
+  get orders, and market buys at runs, only while bitcoin is above its 20-day average, down less than 2% on the
+  day and less than 5% over 3 days.
 * Every position's plan stop is a resting stop order: `orders.py fill` sells at the minute the stop trades (at
   the stop, or at a lower open, less slippage). Targets stay a run check (TARGET HIT: sell at the run with
   `trade.py`), because Robinhood holds shares for one sell order at a time.
@@ -271,7 +276,9 @@ python3 scripts/orders.py list                          # open orders; cancel wi
 * Test (`python3 scripts/limit_backtest.py --save`, `research/backtests/limits-2026-10-06.md`; 2 years of hourly
   bars, 5,832 days with a radar name within 5% of its zone): a limit at the zone top filled 63% of the time, a limit
   at support 42%, a run entry inside the zone 34%; per trade, 3 sessions later: -0.04%, -0.12% and -0.25% (all
-  +/- 0.5). Resting orders trade more often, not better; the zone top is used because it fills most.
+  +/- 0.5). Resting orders trade more often, not better. A limit at support fills on deeper dips that often keep
+  going: its 0.6-ATR stop was hit within 3 sessions 62% of the time (49% at the zone top); a stop 1.0 or 1.5 ATR
+  under support cut that to 39% and 20% (+0.08% and +0.21% a trade, still inside the noise) at more risk a share.
 
 ## 3. Execute and log
 

@@ -61,7 +61,13 @@ def events(sym: str, daily: list[dict], h1: dict) -> list[dict]:
         close, c3 = daily[i]["c"], daily[i + 3]["c"]
         later = [(None, r["o"], r["h"], r["l"], r["c"]) for r in daily[i + 1:i + 4]]
         rows = sorted(bars)
-        for name, lim in (("zone top", Z), ("support", S)):
+        atr = a["atr"]
+        variants = [("zone top", Z, X), ("support", S, X),
+                    ("support, stop 1.0 ATR under", S, S - 1.0 * atr), ("support, stop 1.5 ATR under", S, S - 1.5 * atr)]
+        if (prev - S) >= 0.5 * atr:
+            variants.append(("support 0.5+ ATR under the prior close", S, X))
+            variants.append(("support 0.5+ ATR under, stop 1.0 ATR", S, S - 1.0 * atr))
+        for name, lim, stopv in variants:
             k = next((j for j, b in enumerate(rows) if b[3] <= lim - TICK), None)
             if k is None:
                 out.append({"date": d, "rule": name, "filled": 0.0})
@@ -70,9 +76,9 @@ def events(sym: str, daily: list[dict], h1: dict) -> list[dict]:
             e = b[1] if b[1] <= lim - TICK else lim
             rec = {"date": d, "rule": name, "filled": 1.0, "entry_vs_prev": (e / prev - 1) * 100,
                    "gap": k == 0 and b[0] == 570 and b[1] <= lim - TICK}
-            sx = stop_exit(X, rows[k:])
+            sx = stop_exit(stopv, rows[k:])
             r0 = (sx if sx else close * (1 - sb.slip(close))) / e - 1
-            sx3 = sx or stop_exit(X, later)
+            sx3 = sx or stop_exit(stopv, later)
             r3 = (sx3 if sx3 else c3 * (1 - sb.slip(c3))) / e - 1
             rec.update(day=r0 * 100, day3=r3 * 100, stopped=1.0 if sx3 else 0.0)
             out.append(rec)
@@ -109,7 +115,9 @@ def main() -> int:
          "| Entry rule | Name-days | Filled | Entry vs prior close | Return to that close % | Return 3 sessions later % | Stopped within 3 sessions |",
          "|---|---:|---:|---:|---:|---:|---:|"]
     res = {}
-    groups = [(rule, [r for r in rows if r["rule"] == rule]) for rule in ("zone top", "support", "run 10:30")]
+    groups = [(rule, [r for r in rows if r["rule"] == rule]) for rule in
+              ("zone top", "support", "run 10:30", "support, stop 1.0 ATR under", "support, stop 1.5 ATR under",
+               "support 0.5+ ATR under the prior close", "support 0.5+ ATR under, stop 1.0 ATR")]
     for rule in ("zone top", "support"):
         g = [r for r in rows if r["rule"] == rule]
         groups.append((f"{rule}: filled at the open (gap into the zone)", [r for r in g if r.get("gap")]))

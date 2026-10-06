@@ -227,7 +227,7 @@ def cmd_run(a_) -> int:
     spy = q.get("SPY") or {}
     spy_px = price_of(spy)
     spy_day = (spy_px / spy["prev_close"] - 1) * 100 if spy_px and spy.get("prev_close") else None
-    end = pfm.parse_ts(pfm.load_json(pfm.book_path("challenge"))["end_utc"]).astimezone(pfm.ET)
+    end = pfm.parse_ts(pfm.load_config()["end_utc"]).astimezone(pfm.ET)
     final_day = et.date() == end.date()
     print(f"real book {masked()} {pfm.iso(now)}: value ${value:.2f}, cash ${cash:.2f}, day {day_pnl:+.2f}, "
           f"SPY {spy_day:+.2f}% on the day" if spy_day is not None else
@@ -369,7 +369,7 @@ def cmd_snapshot(a_) -> int:
     eq = {"t": [h["t"] for h in hist], "equity": [h["value"] for h in hist],
           "SPY": [round((h["SPY"] / base_spy - 1) * 100, 3) if h.get("SPY") and base_spy else None for h in hist],
           "QQQ": [round((h["QQQ"] / base_qqq - 1) * 100, 3) if h.get("QQQ") and base_qqq else None for h in hist]}
-    challenge = pfm.load_json(pfm.book_path("challenge"))
+    challenge = pfm.load_config()
     snap = {"id": now.strftime("%Y%m%dT%H%M%SZ"), "book": "real", "as_of": pfm.iso(now),
             "quotes_generated_at": json.loads((ROOT / ".cache" / "quotes.json").read_text()).get("generated_at"),
             "session": pfm.market_session(now),

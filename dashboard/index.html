@@ -541,8 +541,10 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
   function renderHoldings(s) {
     var t = $("holdings"); t.textContent = "";
     var pos = s.positions || [];
-    $("hold-hint").textContent = pos.length ? pos.length + " open · " + usd(s.summary.invested_value) : "All cash";
-    if (!pos.length) { var tr0 = el("tr"); var c = td(tr0, "No open positions. Cash is waiting for the next entry.", "empty"); c.colSpan = 8; t.appendChild(tr0); return; }
+    var ords = (s.orders || []).filter(function (o) { return o.status === "open"; });
+    $("hold-hint").textContent = (pos.length ? pos.length + " open · " + usd(s.summary.invested_value) : "All cash") +
+      (ords.length ? " · " + ords.length + " resting buy order" + (ords.length > 1 ? "s" : "") : "");
+    if (!pos.length && !ords.length) { var tr0 = el("tr"); var c = td(tr0, "No open positions. Cash is waiting for the next entry.", "empty"); c.colSpan = 8; t.appendChild(tr0); return; }
     var hr = el("tr"); ["Position", "Quantity", "Avg cost", "Last", "Day", "Value", "Unrealized", "Plan"].forEach(function (h, i) { th(hr, h, i > 0 && i < 7); });
     var thead = el("thead"); thead.appendChild(hr); t.appendChild(thead);
     var tb = el("tbody");
@@ -567,6 +569,21 @@ footer { font-size: 12px; color: var(--muted); display: flex; flex-direction: co
       if (p.target) plan.push("Target " + px(p.target));
       var pc = td(tr, plan.join(" · ") || "—", "why");
       if (p.thesis) pc.appendChild(el("div", "muted", p.thesis));
+      tb.appendChild(tr);
+    });
+    ords.forEach(function (o) {
+      var tr = el("tr");
+      var c0 = el("td"); c0.appendChild(el("span", "tk", o.ticker)); c0.appendChild(el("span", "nm", "Resting buy order (" + (o.tif || "day").toUpperCase() + ")"));
+      tr.appendChild(c0);
+      td(tr, "—", "n"); td(tr, "—", "n");
+      var lc = td(tr, px(o.limit), "n"); lc.appendChild(el("div", "muted", "limit"));
+      td(tr, "—", "n");
+      var vc = td(tr, usd(o.usd), "n"); vc.appendChild(el("div", "muted", "reserved"));
+      td(tr, "—", "n");
+      var plan = [];
+      if (o.stop) plan.push("Stop " + px(o.stop));
+      if (o.target) plan.push("Target " + px(o.target));
+      td(tr, "Fills if the price trades through " + px(o.limit) + (plan.length ? " · " + plan.join(" · ") : ""), "why");
       tb.appendChild(tr);
     });
     t.appendChild(tb);

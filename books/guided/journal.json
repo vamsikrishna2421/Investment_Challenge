@@ -209,6 +209,14 @@
         "LUNR",
         "WULF"
       ]
+    },
+    {
+      "id": "J0016",
+      "ts": "2026-10-06T04:34:05Z",
+      "kind": "plan",
+      "title": "Resting buy orders at support (Vamsi, Oct 5); stops become resting orders",
+      "body": "Vamsi's instruction (Mon Oct 5, night): set buys at the support price so they fill by themselves when the price touches it, so the book doesn't miss the big dips that happen between runs.\nHow it works from Tue Oct 6 (RUNBOOK 2c, scripts/orders.py), modeled on what a Robinhood cash account supports:\n- At the 8:40 run, for each free slot with settled cash: a DAY buy limit at the buy-zone top of a radar name within 5% of its zone (R:R 1.5+, higher R:R first, at most 2 crypto-linked), about 25% of equity, reserved from settled cash. It fills when a 1-minute bar trades 1 cent through the limit, at the limit, or at the open when the stock gaps below it. Cancelled before the open if the pre-market price is at or under the stop, or when an offering or material company news appears.\n- Every position's plan stop is now a resting stop order: it sells at the minute the stop trades (at the stop, or a lower open), instead of at the next run.\n- Targets stay a run check, because a broker holds shares for one sell order at a time.\nTest first (scripts/limit_backtest.py; research/backtests/limits-2026-10-06.md; 2 years of hourly bars, 5,832 days with a radar name within 5% of its zone): a limit at the zone top filled 63% of the time, a limit at support 42%, a run entry inside the zone 34%. Per trade, 3 sessions later: -0.04%, -0.12% and -0.25% (all +/- 0.5). Resting orders catch more dips and trade more often; they don't make each trade better. On Monday they would have bought POET, HUT, CIFR and UMAC at 9:30-9:36 on the first touch of the zone, 1-4% above the 9:56 prices actually paid.",
+      "tickers": []
     }
   ]
 }

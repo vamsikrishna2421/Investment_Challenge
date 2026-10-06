@@ -201,8 +201,9 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   re-entry in a name stopped out the same day.
 * Order: `trade.py buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar
   --why "..."`, with the buy zone, stop, sell zone and entry R:R in the reason.
-* Exit: sell at the first run where the price is in the sell zone (TARGET HIT), where the stop has traded (STOP HIT
-  or STOP TRADED: sell at that run), or at the 15:40 liquidation on the final day (Wed Nov 4); positions are held overnight until one of those. These replace the section 2
+* Exit: sell at the first run where the price is in the sell zone (TARGET HIT), at the plan stop (a resting stop
+  order since Oct 6: `orders.py fill` sells at the minute it trades, section 2c), or at the 15:40 liquidation on
+  the final day (Wed Nov 4, after cancelling open orders); positions are held overnight until one of those. These replace the section 2
   stock stop and trim for radar trades.
 * Every radar name is US-listed common stock; `trade.py` still blocks OFAC NS-CMIC names (`config/blocklist.json`).
 * Backtest (`python3 scripts/sr_backtest.py --save`; `research/backtests/sr-2026-10-03.md`): over 5 years on the 61
@@ -247,6 +248,31 @@ python3 scripts/clues.py postmortem --save --journal  # 16:20 run: today's big m
   (lows of 3.07 twice). A zone at the price built from highs (INTR, STNE after Oct 5's spikes) stays resistance.
 * Open positions keep the stop and target recorded at entry; the nightly radar rebuild does not move them.
 
+## 2c. Resting orders (Vamsi, Mon Oct 5)
+
+Vamsi's instruction: put buys at the support price so they fill by themselves when the price gets there, and the
+book doesn't miss the dips that happen between runs.
+
+```bash
+python3 scripts/orders.py fill                          # every run, right after the sync: limit fills, stops, expiry
+python3 scripts/orders.py plan --place [--skip A,B]     # 8:40 run: DAY buy limits for the free slots
+python3 scripts/orders.py list                          # open orders; cancel with: orders.py cancel ID --why "..."
+```
+* Model in the `scripts/orders.py` docstring, limited to what a Robinhood cash account supports. Buy limits are DAY
+  orders at the buy-zone top, about 25% of equity each and reserved from settled cash; at most 4 positions plus
+  open orders, at most 2 crypto-linked; radar names within 5% of their zone with R:R 1.5+, higher R:R first. A
+  fill needs a 1-minute bar 1 cent through the limit; a gap down fills at the open, which can be under the stop.
+* Every position's plan stop is a resting stop order: `orders.py fill` sells at the minute the stop trades (at
+  the stop, or at a lower open, less slippage). Targets stay a run check (TARGET HIT: sell at the run with
+  `trade.py`), because Robinhood holds shares for one sell order at a time.
+* `--skip` names with an offering or material company news (2a); cancel an open order when such news appears
+  before it fills. `fill` cancels a buy before the open when the pre-market price is at or under its stop.
+* Market buys at runs (2a) still apply to names inside their zones when slots and settled cash remain.
+* Test (`python3 scripts/limit_backtest.py --save`, `research/backtests/limits-2026-10-06.md`; 2 years of hourly
+  bars, 5,832 days with a radar name within 5% of its zone): a limit at the zone top filled 63% of the time, a limit
+  at support 42%, a run entry inside the zone 34%; per trade, 3 sessions later: -0.04%, -0.12% and -0.25% (all
+  +/- 0.5). Resting orders trade more often, not better; the zone top is used because it fills most.
+
 ## 3. Execute and log
 
 ```bash
@@ -276,6 +302,7 @@ Update the watchlist `strategy` (the dashboard's game-plan line) and `focus` whe
 * Sunday 7:00 PM review for Monday: rebuild the radar (`levels.py build --save`) and journal Monday's triggers.
 * Clue scan (2b): `clues.py scan` at the 8:40 run, `clues.py movers` in every market-hours run, and
   `clues.py postmortem` at the 16:20 run.
+* Resting orders (2c): `orders.py fill` first in every run after the sync; `orders.py plan --place` at the 8:40 run.
 * Final day Wed Nov 4 (unless Vamsi extends it again): liquidate everything at the 15:40 run; the 16:20 run writes
   the final report, then deletes the routines.
 

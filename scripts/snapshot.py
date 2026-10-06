@@ -152,6 +152,15 @@ def main() -> int:
         rows.sort(key=lambda x: (lv.STATUS_ORDER.index(x["status"]), x.get("to_zone_pct") or 0))
         levels = {"generated_at": rd["generated_at"], "asof": rd["asof"], "names": rows}
 
+    def resting_orders(bk: str) -> list:
+        op = pfm.book_path("ledger", bk).parent / "orders.json"
+        if not op.exists():
+            return []
+        od = json.loads(op.read_text()).get("orders", [])
+        keep = [o for o in od if o["status"] == "open"] + [o for o in od if o["status"] != "open"][-5:]
+        return [{k: o.get(k) for k in ("id", "ticker", "side", "type", "tif", "limit", "usd", "stop", "target",
+                                       "placed", "status", "closed", "fill", "note")} for o in keep]
+
     sched_path = ROOT / "config" / "schedule.json"
     sched = json.loads(sched_path.read_text()) if sched_path.exists() else {}
     rules = cfg["rules"]
@@ -197,6 +206,7 @@ def main() -> int:
         "radar": radar,
         "levels": levels,
         "strategy": watch.get("strategy", ""),
+        "orders": resting_orders(book),
         "schedule": {"next_update": next_update(now, sched), "cadence": sched.get("cadence", "")},
         "note": a.note,
     }

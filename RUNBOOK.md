@@ -13,6 +13,9 @@ It ends at the Wed Nov 4, 2026, 4:00 PM ET close with a $2,000 target (Vamsi ext
 end by 30 days on Oct 5).
 The H-1B and Unrestricted books were dropped on Sat Oct 3 on Vamsi's instruction, before any round 2 trade:
 `archive/round1/` (Sep 28 - Oct 2 records) and `archive/round2-dropped/`.
+Real book (from Tue Oct 6): Vamsi's Robinhood account nicknamed Agentic, $1,000 of real money, which the agent
+trades without asking under section 2e (`scripts/real.py`). Its records stay private; the repo, the journal and
+the site never show them.
 
 Dashboards (one book: statement, goal track, chart against the S&P 500 and Nasdaq-100, holdings, trade log, radar,
 journal, account rules):
@@ -124,14 +127,15 @@ as a crowding gauge: most stock-picking accounts have negative skill on average 
 filing or release behind it is a pump-risk flag, never a buy reason. X accounts in `config/x_accounts.json` are read
 only when `.secrets/x_bearer` holds a paid X API token ($0.005 per post read): `python3 scripts/social.py --x`.
 
-## 1f. Robinhood connector (read-only)
+## 1f. Robinhood connector
 
-The user connected Robinhood for information only: no real trading. Use its read tools (quotes, option chains and
-quotes with Greeks, fundamentals, financials, earnings calendar and results, analyst ratings, historicals, scanner
-previews, SEC filings) to cross-check prices and paper fills. Never call order, cancel, exercise, watchlist, alert or
-scan-editing tools; they are denied in `.claude/settings.json`. Never read or publish the user's own account data
-(accounts, positions, orders, P&L) unless the user asks, and never put it in the repo or on the dashboards: both are
-public.
+Read tools (quotes, option chains and quotes with Greeks, fundamentals, financials, earnings calendar and results,
+analyst ratings, historicals, scanner previews, SEC filings) inform decisions and cross-check prices and paper
+fills. Real orders only in the agentic account (the one account `get_accounts` marks as tradable by the agent) and
+only under section 2e: stock orders through `review_equity_order`, `place_equity_order` and `cancel_equity_order`.
+Never call option, crypto, exercise, watchlist, alert or scan-editing tools; they are denied in
+`.claude/settings.json`. Never read the user's other account unless the user asks. Never publish account data
+(accounts, positions, orders, P&L): not in the repo, the journal or the dashboards, which are public.
 Uses that change decisions:
 - Before any option paper trade: `get_option_instruments` (chain_symbol, expiration_dates, type) then `get_option_quotes`
   for the contract. Check bid/ask and sizes, IV, delta, theta, break-even and Robinhood's chance of profit. If
@@ -316,6 +320,41 @@ python3 scripts/replay.py --grid --set stops|times|sizing ...                   
 * Rule for future changes: a new rule trades only after it beats the live rules on the mean and the worst window
   of the separate hourly 22-session windows without losing on the 5-minute windows. One window proves nothing.
 
+## 2e. Real book: Robinhood agentic account (Vamsi, Tue Oct 6)
+
+Vamsi funded a Robinhood limited margin account (nickname Agentic, $1,000, never borrows) and authorized the agent
+to trade it without asking (Oct 6). Every weekday run, right after `wires.py` (the 16:20 run: right after
+`orders.py fill`):
+
+1. Read the account: `get_portfolio`, `get_equity_positions` and `get_equity_orders` (today's and open orders)
+   into `.cache/real/account.json` (format in the `scripts/real.py` docstring).
+2. `python3 scripts/real.py run --skip <names with an offering or material news>`: syncs fills into the plans (a
+   buy fill opens a plan with its stop and target; a stop or exit fill closes it with a trade review), then prints
+   the actions in order: stops and exits first, then cancels, then entries.
+3. Each action: `review_equity_order` (an alert that blocks the order, such as a halt or buying power: skip it and
+   say so), then `place_equity_order` (a fresh `ref_id`, `market_hours` regular_hours) or `cancel_equity_order`;
+   then `python3 scripts/real.py record order --id ID --symbol X --kind entry|stop|exit --qty Q --price P
+   [--stop S --target T --why "..."]` or `real.py record cancel --id ID --why "..."`.
+
+Rules (`scripts/real.py`; stricter than the paper book because the money is real):
+* Entries: DAY buy limits at support (the bottom of the buy zone) for radar names with support tested 3+ times,
+  R:R 2.5+ from support, within 8% above support, not HALTED, no offering or material news, not up 0.43+ ATR over
+  the 5 sessions before; crypto-linked at most 1 and only while the bitcoin gate (2c) is open; higher R:R first;
+  new orders only 7:00-15:30 ET on business days. No new orders while SPY is down 0.35%+ on the day; open buy
+  limits are cancelled then.
+* Size: whole shares; at most 25% of the account value, cut so the stop loses at most 1.5% of it, at most $300 an
+  order, never more than the cash.
+* Limits: 3 positions plus open buy orders; no new orders after a $30 loss on the day; none below $900 account
+  value (tell Vamsi).
+* Exits: a GTC stop-market sell at the plan stop right after a fill; at a run with the price at or above the
+  target (the sell-zone bottom), cancel the stop and sell with a limit at the bid. Final day (Wed Nov 4): no new
+  orders after 14:55; everything sold at the 15:40 run.
+* Equity orders in the agentic account only. A position or order the real book did not place: leave it alone and
+  tell Vamsi.
+* Records: plans, orders and a private journal in `.secrets/real_book.json` (git-ignored, on this session's
+  machine only; `real.py status` prints them). Never in the repo, the public journal, `snapshot_guided.json` or
+  the site. The routine's reply names real fills and orders.
+
 ## 3. Execute and log
 
 ```bash
@@ -347,6 +386,7 @@ Update the watchlist `strategy` (the dashboard's game-plan line) and `focus` whe
 * Clue scan (2b): `clues.py scan` at the 8:40 run, `clues.py movers` in every market-hours run, and
   `clues.py postmortem` at the 16:20 run.
 * Resting orders (2c): `orders.py fill` first in every run after the sync; `orders.py plan --place` at the 8:40 run.
+* Real book (2e): every weekday run right after `wires.py`; the 16:20 run right after `orders.py fill`.
 * Final day Wed Nov 4 (unless Vamsi extends it again): liquidate everything at the 15:40 run; the 16:20 run writes
   the final report, then deletes the routines.
 

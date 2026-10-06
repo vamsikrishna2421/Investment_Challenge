@@ -195,6 +195,7 @@ def analyse(b: dict, stop_atr: float | None = None) -> dict | None:
         "support_2": round(s2, 4) if s2 else None,
         "buy_zone": [round(support, 4), round(zone_top, 4)], "stop": round(stop, 4),
         "resistance": round(resistance, 4), "resistance_strength": res["strength"] if res else 0,
+        "resistance_1": round(min(z["level"] for z in above), 4) if above else None,
         "sell_zone": [round(sell_lo, 4), round(resistance, 4)],
         "vs_sma50_pct": round((price / sma50 - 1) * 100, 1), "chg_120d_pct": round(chg120, 1) if chg120 is not None else None,
         "reward_risk": round(rr, 2) if rr else None,

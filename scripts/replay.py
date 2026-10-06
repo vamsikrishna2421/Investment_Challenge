@@ -56,7 +56,7 @@ RUN_BARS = set(range(590, 960, 15))  # bars starting 9:50, 10:05, ...: they end 
 LAST_BAR = 955
 DEFAULTS = {"limit": "support", "stop_atr": 0.6, "btc_gate": "on", "rank": "dip", "runs": "on", "max_hold": 0,
             "entry": "radar", "limit_until": 960, "tested_only": "off", "entry_until": 960, "entry_from": 0, "risk_pct": lv.RISK_PCT,
-            "protect": "none", "protect_at": 1.0, "protect_trail": 1.0}
+            "protect": "none", "protect_at": 1.0, "protect_trail": 1.0, "target_atr": 0.0, "target_first": "off"}
 GRID = [
     ("Live rules: limits at support, stop 0.6 ATR under it", {}),
     ("Limits at the zone top", {"limit": "top"}),
@@ -102,6 +102,17 @@ EXITS = [
     ("Trail 0.5 ATR under the high after +1 ATR", {"protect": "trail", "protect_at": 1.0, "protect_trail": 0.5}),
     ("Trail 1 ATR under the high after +1 ATR", {"protect": "trail", "protect_at": 1.0, "protect_trail": 1.0}),
     ("Trail 1.5 ATR under the high after +1.5 ATR", {"protect": "trail", "protect_at": 1.5, "protect_trail": 1.5}),
+]
+# Nearer targets (Vamsi, Oct 6: exit at the first target when the gain is already meaningful, re-enter at the next
+# support test): the target is the lower of the sell-zone bottom and the alternative, fixed at the entry; re-entry
+# after a target exit is allowed as before (only a stop blocks the name for the day).
+TARGETS = [
+    ("Live rules: target at the bottom of the sell zone", {}),
+    ("First resistance above the entry (any touches, 0.5+ ATR up)", {"target_first": "on"}),
+    ("Entry + 1 ATR", {"target_atr": 1.0}),
+    ("Entry + 1.5 ATR", {"target_atr": 1.5}),
+    ("Entry + 2 ATR", {"target_atr": 2.0}),
+    ("Entry + 3 ATR", {"target_atr": 3.0}),
 ]
 
 
@@ -207,6 +218,7 @@ def _radar_for(data: dict, idx: dict, names: list[str], day: str, stop_atr: floa
             continue
         S, Z = r["buy_zone"]
         radar[s] = {"S": S, "Z": Z, "stop": S - stop_atr * r["atr"], "target": r["sell_zone"][0], "atr": r["atr"],
+                    "res1": r.get("resistance_1"),
                     "strength": r["support_strength"], "crypto": s in lv.CRYPTO_LINKED}
     return radar, elig
 
@@ -299,7 +311,13 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
             first = bars[s].get(570)
             i = idx[s][day]
             back = data["daily"][s][i - 6]["c"] if i >= 6 else prev[s]
-            return {"status": status, "stop": r["stop"], "target": r["target"], "atr": r["atr"], "rr": round(rr, 2),
+            tgt = r["target"]
+            if r.get("exit_rule", "plan") == "plan":
+                if o["target_atr"]:
+                    tgt = min(tgt, px + o["target_atr"] * r["atr"])
+                if o["target_first"] == "on" and r.get("res1") and r["res1"] >= px + 0.5 * r["atr"]:
+                    tgt = min(tgt, r["res1"])
+            return {"status": status, "stop": r["stop"], "target": tgt, "atr": r["atr"], "rr": round(rr, 2),
                     "spy_day": round((spy[m] / spy_prev - 1) * 100, 2) if spy_prev and m in spy else None,
                     "prior5_atr": round((prev[s] - back) / r["atr"], 2),
                     "dist_atr": round((prev[s] - r.get("S", prev[s])) / r["atr"], 2),
@@ -647,7 +665,7 @@ def main() -> int:
     ap.add_argument("--step", type=int, default=1, help="with --windows: sessions between window ends")
     ap.add_argument("--analyze", action="store_true", help="trade returns by entry context")
     ap.add_argument("--grid", action="store_true")
-    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits"], default="rules",
+    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets"], default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
                     help="size each position so the stop loses at most this % of equity (0: 25%% of equity)")
@@ -669,6 +687,8 @@ def main() -> int:
         GRID = SIZING
     if a.set == "exits":
         GRID = EXITS
+    if a.set == "targets":
+        GRID = TARGETS
     if a.grid and a.windows:
         return windows(data, a)
     if a.grid:

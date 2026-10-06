@@ -1,0 +1,383 @@
+{
+ "names": 66,
+ "tests": {
+  "9:55": {
+   "groups": {
+    "all eligible": {
+     "n": 3547,
+     "dates": 60,
+     "close": -0.32,
+     "close_se": 0.243,
+     "neutral": -0.132,
+     "neutral_se": 0.217,
+     "hit": 0.234,
+     "hit_se": 0.021,
+     "median": -0.012,
+     "win": 0.496
+    },
+    "up 0.25+ ATR": {
+     "n": 1032,
+     "dates": 58,
+     "close": 0.217,
+     "close_se": 0.288,
+     "neutral": 0.217,
+     "neutral_se": 0.288,
+     "hit": 0.0,
+     "hit_se": 0.0,
+     "median": 0.118,
+     "win": 0.515
+    },
+    "flat (within 0.25 ATR)": {
+     "n": 1465,
+     "dates": 60,
+     "close": -0.408,
+     "close_se": 0.257,
+     "neutral": -0.308,
+     "neutral_se": 0.192,
+     "hit": 0.377,
+     "hit_se": 0.021,
+     "median": 0.008,
+     "win": 0.504
+    },
+    "down 0.25-0.5 ATR": {
+     "n": 568,
+     "dates": 57,
+     "close": -0.99,
+     "close_se": 0.391,
+     "neutral": -0.625,
+     "neutral_se": 0.376,
+     "hit": 0.356,
+     "hit_se": 0.046,
+     "median": -0.367,
+     "win": 0.465
+    },
+    "down 0.5-0.75 ATR": {
+     "n": 286,
+     "dates": 44,
+     "close": -0.862,
+     "close_se": 0.37,
+     "neutral": -0.03,
+     "neutral_se": 0.594,
+     "hit": 0.21,
+     "hit_se": 0.073,
+     "median": -0.453,
+     "win": 0.434
+    },
+    "down 0.75-1 ATR": {
+     "n": 118,
+     "dates": 31,
+     "close": -0.372,
+     "close_se": 0.643,
+     "neutral": -0.014,
+     "neutral_se": 0.655,
+     "hit": 0.102,
+     "hit_se": 0.037,
+     "median": -0.364,
+     "win": 0.458
+    },
+    "down 1+ ATR": {
+     "n": 78,
+     "dates": 29,
+     "close": 1.175,
+     "close_se": 1.183,
+     "neutral": 1.591,
+     "neutral_se": 1.125,
+     "hit": 0.038,
+     "hit_se": 0.025,
+     "median": 1.502,
+     "win": 0.641
+    },
+    "radar buy zone, all": {
+     "n": 297,
+     "dates": 59,
+     "close": -0.299,
+     "close_se": 0.344,
+     "neutral": 0.042,
+     "neutral_se": 0.311,
+     "hit": 0.374,
+     "hit_se": 0.043,
+     "median": 0.203,
+     "win": 0.539
+    },
+    "radar buy zone, dipped 0.5+ ATR": {
+     "n": 90,
+     "dates": 31,
+     "close": 0.268,
+     "close_se": 0.605,
+     "neutral": 0.791,
+     "neutral_se": 0.636,
+     "hit": 0.178,
+     "hit_se": 0.066,
+     "median": 0.551,
+     "win": 0.544
+    },
+    "radar buy zone, dipped less": {
+     "n": 207,
+     "dates": 57,
+     "close": -0.545,
+     "close_se": 0.332,
+     "neutral": -0.284,
+     "neutral_se": 0.294,
+     "hit": 0.459,
+     "hit_se": 0.048,
+     "median": 0.165,
+     "win": 0.536
+    }
+   },
+   "from": "2026-07-13",
+   "to": "2026-10-05"
+  },
+  "10:30": {
+   "groups": {
+    "all eligible": {
+     "n": 30015,
+     "dates": 729,
+     "close": -0.313,
+     "close_se": 0.087,
+     "neutral": -0.29,
+     "neutral_se": 0.076,
+     "hit": 0.217,
+     "hit_se": 0.006,
+     "median": -0.068,
+     "win": 0.484
+    },
+    "up 0.25+ ATR": {
+     "n": 8973,
+     "dates": 691,
+     "close": -0.224,
+     "close_se": 0.124,
+     "neutral": -0.224,
+     "neutral_se": 0.124,
+     "hit": 0.0,
+     "hit_se": 0.0,
+     "median": -0.332,
+     "win": 0.454
+    },
+    "flat (within 0.25 ATR)": {
+     "n": 12434,
+     "dates": 729,
+     "close": -0.336,
+     "close_se": 0.097,
+     "neutral": -0.369,
+     "neutral_se": 0.072,
+     "hit": 0.372,
+     "hit_se": 0.007,
+     "median": 0.042,
+     "win": 0.514
+    },
+    "down 0.25-0.5 ATR": {
+     "n": 4446,
+     "dates": 646,
+     "close": -0.506,
+     "close_se": 0.113,
+     "neutral": -0.407,
+     "neutral_se": 0.098,
+     "hit": 0.317,
+     "hit_se": 0.013,
+     "median": -0.21,
+     "win": 0.476
+    },
+    "down 0.5-0.75 ATR": {
+     "n": 2358,
+     "dates": 493,
+     "close": -0.347,
+     "close_se": 0.146,
+     "neutral": -0.139,
+     "neutral_se": 0.149,
+     "hit": 0.161,
+     "hit_se": 0.015,
+     "median": -0.276,
+     "win": 0.462
+    },
+    "down 0.75-1 ATR": {
+     "n": 991,
+     "dates": 333,
+     "close": -0.23,
+     "close_se": 0.208,
+     "neutral": -0.134,
+     "neutral_se": 0.212,
+     "hit": 0.075,
+     "hit_se": 0.011,
+     "median": -0.373,
+     "win": 0.444
+    },
+    "down 1+ ATR": {
+     "n": 813,
+     "dates": 300,
+     "close": 0.117,
+     "close_se": 0.322,
+     "neutral": 0.204,
+     "neutral_se": 0.324,
+     "hit": 0.031,
+     "hit_se": 0.007,
+     "median": 0.082,
+     "win": 0.507
+    },
+    "radar buy zone, all": {
+     "n": 2174,
+     "dates": 616,
+     "close": -0.324,
+     "close_se": 0.12,
+     "neutral": -0.301,
+     "neutral_se": 0.101,
+     "hit": 0.305,
+     "hit_se": 0.013,
+     "median": -0.022,
+     "win": 0.493
+    },
+    "radar buy zone, dipped 0.5+ ATR": {
+     "n": 710,
+     "dates": 292,
+     "close": -0.205,
+     "close_se": 0.179,
+     "neutral": -0.06,
+     "neutral_se": 0.179,
+     "hit": 0.099,
+     "hit_se": 0.014,
+     "median": -0.205,
+     "win": 0.466
+    },
+    "radar buy zone, dipped less": {
+     "n": 1464,
+     "dates": 576,
+     "close": -0.381,
+     "close_se": 0.135,
+     "neutral": -0.417,
+     "neutral_se": 0.104,
+     "hit": 0.405,
+     "hit_se": 0.016,
+     "median": 0.026,
+     "win": 0.506
+    }
+   },
+   "from": "2023-11-06",
+   "to": "2026-10-05"
+  },
+  "open": {
+   "groups": {
+    "all eligible": {
+     "n": 37800,
+     "dates": 994,
+     "close": -0.318,
+     "close_se": 0.105,
+     "neutral": -0.324,
+     "neutral_se": 0.084,
+     "hit": 0.305,
+     "hit_se": 0.008,
+     "median": 0.077,
+     "win": 0.517
+    },
+    "up 0.25+ ATR": {
+     "n": 7967,
+     "dates": 818,
+     "close": -0.452,
+     "close_se": 0.193,
+     "neutral": -0.452,
+     "neutral_se": 0.193,
+     "hit": 0.0,
+     "hit_se": 0.0,
+     "median": -0.726,
+     "win": 0.432
+    },
+    "flat (within 0.25 ATR)": {
+     "n": 23499,
+     "dates": 988,
+     "close": -0.353,
+     "close_se": 0.11,
+     "neutral": -0.371,
+     "neutral_se": 0.077,
+     "hit": 0.368,
+     "hit_se": 0.008,
+     "median": 0.094,
+     "win": 0.53
+    },
+    "down 0.25-0.5 ATR": {
+     "n": 4349,
+     "dates": 649,
+     "close": -0.345,
+     "close_se": 0.198,
+     "neutral": -0.304,
+     "neutral_se": 0.15,
+     "hit": 0.509,
+     "hit_se": 0.017,
+     "median": 1.09,
+     "win": 0.58
+    },
+    "down 0.5-0.75 ATR": {
+     "n": 1238,
+     "dates": 330,
+     "close": 0.613,
+     "close_se": 0.302,
+     "neutral": 0.532,
+     "neutral_se": 0.251,
+     "hit": 0.394,
+     "hit_se": 0.028,
+     "median": 0.96,
+     "win": 0.569
+    },
+    "down 0.75-1 ATR": {
+     "n": 354,
+     "dates": 151,
+     "close": 0.686,
+     "close_se": 0.625,
+     "neutral": 0.834,
+     "neutral_se": 0.523,
+     "hit": 0.291,
+     "hit_se": 0.04,
+     "median": 0.909,
+     "win": 0.576
+    },
+    "down 1+ ATR": {
+     "n": 393,
+     "dates": 207,
+     "close": 0.918,
+     "close_se": 0.989,
+     "neutral": 1.128,
+     "neutral_se": 0.991,
+     "hit": 0.17,
+     "hit_se": 0.04,
+     "median": 0.658,
+     "win": 0.562
+    },
+    "radar buy zone, all": {
+     "n": 2353,
+     "dates": 778,
+     "close": -0.227,
+     "close_se": 0.153,
+     "neutral": -0.161,
+     "neutral_se": 0.113,
+     "hit": 0.468,
+     "hit_se": 0.013,
+     "median": 0.291,
+     "win": 0.574
+    },
+    "radar buy zone, dipped 0.5+ ATR": {
+     "n": 293,
+     "dates": 149,
+     "close": 0.221,
+     "close_se": 0.443,
+     "neutral": 0.407,
+     "neutral_se": 0.41,
+     "hit": 0.314,
+     "hit_se": 0.033,
+     "median": 0.676,
+     "win": 0.556
+    },
+    "radar buy zone, dipped less": {
+     "n": 2060,
+     "dates": 758,
+     "close": -0.291,
+     "close_se": 0.151,
+     "neutral": -0.241,
+     "neutral_se": 0.104,
+     "hit": 0.49,
+     "hit_se": 0.014,
+     "median": 0.273,
+     "win": 0.577
+    }
+   },
+   "from": "2022-10-18",
+   "to": "2026-10-05"
+  }
+ }
+}

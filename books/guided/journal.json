@@ -181,6 +181,34 @@
       "title": "Clue backtest: none of the clues predicted next-day up-moves over 5 years",
       "body": "Test of the morning scan's clues (clues.py) before they are trusted: 66 candidates, 5 years of daily bars, 37,553 name-days on which the radar's volatility and liquidity filters passed (research/backtests/clues-2026-10-05.md; script scripts/clue_backtest.py, errors clustered by date).\nBase rate: the next session closed 1+ ATR higher on 8.1% of name-days and 1+ ATR lower on 5.4%.\n- Score 3+ (the scan alert): 7.9% up, 5.0% down. SUP + HL: 8.1% up, 4.5% down. Breakout watch (RES + COIL): 6.3% up. No lift.\n- ACC (up-day volume 1.5x down-day): 10.6% up and 7.2% down: bigger moves both ways, not a direction.\n- COIL (tight range): 5.8% up, 3.2% down: quiet days tend to stay quiet the next day.\n- SUP (at tested support): 7.6% up, 4.0% down: fewer sharp drops, no extra upside.\n- Buying the next open and selling that close lost 0.13-0.40% after costs in every group (score 4, 262 name-days: +0.34% +/- 0.67, not significant). Five-day returns were +1.3% for all name-days (these stocks rose over the period) and +1.8% for score 3+ or SUP + HL, inside the noise (+/- 0.7-0.8).\nConclusion: Monday's anecdote (2 of 13 clue names moved, 1 of 48 others) does not hold over 989 sessions. The morning scan stays a description of setups for Vamsi, not a forecast or a trade rule; the radar's entry rules are unchanged.",
       "tickers": []
+    },
+    {
+      "id": "J0013",
+      "ts": "2026-10-06T04:24:22Z",
+      "kind": "plan",
+      "title": "Vamsi's direction (Oct 5): buy the day's deepest dips in the buy zone; read the news behind sudden moves; review every trade",
+      "body": "Vamsi's instruction (Mon Oct 5, evening), summarized: buying stocks that dipped hard in the opening hours, inside their buy zones near support with good R:R, and selling into the recovery is the skill to build; the opening fear often fades and many stocks settle less negative. When a stock moves suddenly, read the news behind it at once and judge how big it really is: stocks that fall too far on simple news recover. Review every bad trade, find the mistake and fix the strategy; consistent small gains matter more than one big day.\nApplied from Tue Oct 6:\n- Entry order: when more radar names are in BUY ZONE or BOUNCE than slots or settled cash allow, the deepest dip against the prior close (in ATR units) goes first, then the higher R:R. levels.py check now prints each name's move on the day and sorts the buy lists that way.\n- News rule: only an offering or other dilution, or material company news (guidance cut, failed trial or rejection, regulatory or legal hit, delisting notice, accounting problem) cancels an entry. Sector-wide moves, analyst notes and recap headlines do not; a drop on minor news into the buy zone is a candidate.\n- Trade reviews: every closed position gets a review entry (entry context, best and worst price held, exit, whether a rule should change); the first, provisional one is UMAC's.\nTested the same night (opening-dip backtest, next entry): the edge from buying the dip sits at the open, not at 9:55.",
+      "tickers": []
+    },
+    {
+      "id": "J0014",
+      "ts": "2026-10-06T04:24:22Z",
+      "kind": "research",
+      "title": "Opening-dip backtest: gap-downs bought at the open recovered; dips bought at 9:55 or 10:30 did not",
+      "body": "Test of Vamsi's dip-buying idea on the 66 radar candidates (scripts/dip_backtest.py; research/backtests/dip-2026-10-06.md). Entry against the prior close, exit at the prior close if the price gets back there that day, otherwise at the close; returns per trade after slippage, 95% intervals clustered by date; only days on which the radar's filters pass.\n- At the open, 4 years (37,800 trades): a gap down of 0.5-0.75 ATR averaged +0.53% +/- 0.49 (57% winners); 0.75-1 ATR +0.83% +/- 1.03; 1+ ATR +1.13% +/- 1.94. All open entries averaged -0.32% +/- 0.16 and gap-ups -0.45%. Big gap-downs recover part of the drop during the day.\n- At 10:30, 2 years (30,015): down 0.5-0.75 ATR -0.14% +/- 0.29; 0.75-1 ATR -0.13%; 1+ ATR +0.20% +/- 0.64. A stock still deep in the red after the first hour has no recovery edge.\n- At 9:55, last 60 sessions (3,547): down 0.5-0.75 ATR -0.03% +/- 1.16; 1+ ATR +1.59% +/- 2.21 (78 trades). Inside the radar's buy zone, a 0.5+ ATR dip averaged +0.79% +/- 1.25 (90 trades) against -0.28% for smaller dips: the same direction in all three tests (open +0.41 vs -0.24; 10:30 -0.06 vs -0.42), none significant alone.\n- Getting back to the prior close is rare after a deep dip: 4-21% of the time for dips of 0.5+ ATR.\nReading: the market does over-react at the open, but the recovery starts in the first minutes. Monday's three winners were 0.5 ATR dips bought at 9:55, the bucket that averages about zero: a good day, not yet a demonstrated edge. The dip-first ordering costs nothing and points the right way in every test, so it is now the entry order; an entry at the open needs a run near 9:31, which the schedule does not have.",
+      "tickers": []
+    },
+    {
+      "id": "J0015",
+      "ts": "2026-10-06T04:24:22Z",
+      "kind": "review",
+      "title": "Trade review (open position): UMAC bought without a dip, faded 1.1% on day 1",
+      "body": "UMAC 11.2455 sh bought at 9:56 AM Mon Oct 5 at 22.23 (quote 22.18): buy zone 21.82-22.34 (bought near the top), stop 20.79 (-6.5%), target 25.96 (+16.8%), entry R:R 2.6, fourth of four by R:R.\nContext: prior close 22.39. Drone stocks rallied overnight (Stocktwits) and UMAC touched 22.79 before the open, but it opened flat (22.31) and was only -0.9% (-0.12 ATR) at 9:55, while POET, HUT and CIFR were 2.9-4.1% (about 0.5 ATR) below their prior closes.\nPath: up to 22.70 at 10:20 (+2.1%), then a slow fade all afternoon to 21.61 at 3:30 PM (-2.8%), close 21.99 (-1.1% from entry, -1.8% on the day) while the market rose.\nMistake? No rule was broken, and -1.1% is 0.14 ATR for a stock that moves 7.8% a day: noise so far. The trade is judged at its stop or target, the rule over many trades. The one difference from the winners: UMAC was bought without a dip. Under the dip-first order adopted tonight, LUNR (in its buy zone, -0.58 ATR at 9:55) would have taken this slot; LUNR rose 1.3% from 9:55 to the close while UMAC fell 1.6%. The same morning's counter-example: WULF, the deepest dip in the group (-0.64 ATR), ended 0.6% lower. Stays open: stop 20.79, target 25.96.",
+      "tickers": [
+        "UMAC",
+        "LUNR",
+        "WULF"
+      ]
     }
   ]
 }

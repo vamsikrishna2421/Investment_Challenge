@@ -9,7 +9,8 @@ sell at resistance, stop below support).
       Compares the latest synced quotes (.cache/quotes.json) with config/radar.json:
       BUY ZONE (price at support, above the stop), BOUNCE (touched the zone after the radar's bars and
       held, entry reward:risk >= 1.5), NEAR (within --near % of the zone), TARGET (at the sell zone)
-      and BROKEN (at or under the stop, or traded through it: support failed, no buy).
+      and BROKEN (at or under the stop, or traded through it: support failed, no buy). Each line shows
+      the day's move against the prior close, also in ATR; BUY ZONE and BOUNCE list the deepest dip first.
 
 Levels: swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the
 3 bars on each side), clustered within half an ATR (min 1.5%) into zones. A level's strength is the
@@ -313,9 +314,15 @@ def check(a) -> int:
                 f"R:R now {c['rr_now'] if c['rr_now'] is not None else '-'} ({c['to_zone_pct']:+.1f}% vs zone top)")
         if c["day_low"] is not None:
             line += f" low {fmt(c['day_low'])}"
+        q = quotes.get(r["ticker"]) or {}
+        dip = None
+        if q.get("prev_close") and c["price"] and r.get("atr"):
+            day = (c["price"] / q["prev_close"] - 1) * 100
+            dip = day / (r["atr"] / c["price"] * 100)
+            line += f" day {day:+.1f}% ({dip:+.2f} ATR)"
         if r["ticker"] in CRYPTO_LINKED:
             line += " [crypto]"
-        hits[c["status"]].append(line)
+        hits[c["status"]].append((dip if dip is not None else 0.0, line))
     print(f"radar {radar['generated_at']} (closes of {radar['asof']}); quotes {qdoc['generated_at']}")
     for k in STATUS_ORDER:
         if k == "no quote":
@@ -325,8 +332,8 @@ def check(a) -> int:
         if k == "wait" and not a.all:
             print(f"WAIT: {len(hits[k])}")
             continue
-        print(f"{STATUS_TEXT[k]}: {len(hits[k])}")
-        for h in hits[k]:
+        print(f"{STATUS_TEXT[k]}: {len(hits[k])}" + (" (deepest dip first: the entry order, RUNBOOK 2a)" if k in ("buy", "bounce") else ""))
+        for _, h in sorted(hits[k], key=lambda x: x[0]) if k in ("buy", "bounce") else hits[k]:
             print("  " + h)
     return 0
 

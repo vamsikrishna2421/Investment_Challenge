@@ -186,13 +186,18 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   with each name's live status.
 * Entry, at a regular-session run from 9:55 AM: a name whose status is BUY ZONE (inside the buy zone, above the
   stop) or BOUNCE (touched the zone this session and held, entry R:R at least 1.5). Never on BROKEN (at or
-  through the stop this session), on a day with an offering or negative company news, or after 14:55 on the
-  final day (Wed Nov 4). Buy only with settled cash, every day: a stock bought with unsettled proceeds can't be
+  through the stop this session), on a day with an offering or material negative company news, or after 14:55
+  on the final day (Wed Nov 4). Material means the company's own news that changes the business: an offering or
+  other dilution, a guidance cut, a failed trial or rejection, a regulatory or legal hit, a delisting notice,
+  an auditor or accounting problem. Sector-wide moves, analyst notes and recap headlines do not cancel an entry:
+  a stock that falls too far on minor news is the dip Vamsi wants to buy (Oct 5). Buy only with settled cash, every day: a stock bought with unsettled proceeds can't be
   sold before T+1, which would block its stop (and the 15:40 liquidation on the final day).
 * Size: at most 4 radar positions, about $250 each (25% of $1,000; less when cash is short), and at
   most 2 of them crypto-linked (`CRYPTO_LINKED` in `scripts/levels.py`: 13 of the first radar's 25 names move
   with bitcoin or ether, so four of them would be one bet; `check` tags them `[crypto]`). When more
-  names trigger than slots, take the higher entry R:R first. One position per name, no averaging down, no
+  names trigger than slots or cash, take the deepest dip first: the price's distance below the prior close in
+  ATR units, as `levels.py check` prints and sorts it (Vamsi, Oct 5: buy the stocks that dipped most on the day,
+  for the recovery); equal dips go to the higher entry R:R. One position per name, no averaging down, no
   re-entry in a name stopped out the same day.
 * Order: `trade.py buy TICKER --usd 250 --stop <radar stop> --target <sell-zone bottom> --tags radar
   --why "..."`, with the buy zone, stop, sell zone and entry R:R in the reason.
@@ -205,6 +210,16 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   -0.34% a trade when sold the same day; candle, trend and volume filters added nothing measurable, and results
   followed the market year by year. The radar sets where the stop and target sit; it is not a forecast. Any new
   level rule gets the same test (beat random entries with the same stop and target, after costs) before it trades.
+
+* Opening-dip test (`python3 scripts/dip_backtest.py --save`, `research/backtests/dip-2026-10-06.md`; 66 candidates,
+  returns after costs, sell at the prior close if reached, else the close): buying at the open after a gap down of
+  0.5+ ATR averaged +0.5 to +1.1% a trade over 4 years (57% winners) against -0.3% for all open entries. Buying the
+  dip later did not pay: down 0.5+ ATR at 10:30 averaged -0.1 to +0.2% over 2 years, and at 9:55 about 0% over the
+  last 60 sessions (+0.8% +/- 1.25 inside the buy zone, 90 trades). Deep dips rarely got back to the prior close the
+  same day (4-21%). The edge, where there is one, sits at the open.
+* Trade review: when a position closes, journal a `review` entry: the entry's context (dip against the prior
+  close in ATR, gap, sector, news), the best and worst price while held, the exit, and whether a rule should
+  change. One trade changes nothing; a rule changes when the reviews and a backtest agree.
 
 ## 2b. Clue scan (Vamsi, Mon Oct 5)
 

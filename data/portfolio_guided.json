@@ -1,20 +1,20 @@
 {
- "as_of": "2026-10-06T20:21:50Z",
+ "as_of": "2026-10-06T20:26:24Z",
  "session": "post",
  "start_capital": 1000.0,
  "deposits": 1000.0,
- "equity": 1031.11,
+ "equity": 1030.79,
  "cash": 0.01,
  "settled_cash": 0.01,
  "unsettled_cash": 0,
- "invested_value": 1031.1,
- "net_profit": 31.11,
- "return_pct": 3.11,
+ "invested_value": 1030.78,
+ "net_profit": 30.79,
+ "return_pct": 3.08,
  "goal_equity": 2000.0,
- "goal_progress_pct": 3.11,
+ "goal_progress_pct": 3.08,
  "realized_pnl": 0.0,
- "unrealized_pnl": 31.11,
- "day_pnl": 12.24,
+ "unrealized_pnl": 30.78,
+ "day_pnl": 11.91,
  "fees_paid": 0.0,
  "positions": [
   {
@@ -29,21 +29,21 @@
    "qty": 16.5979,
    "avg_cost": 15.0621,
    "cost_basis": 250.0,
-   "price": 15.54,
+   "price": 15.51,
    "prev_close": 15.48,
-   "market_value": 257.93,
-   "unrealized_pnl": 7.93,
-   "unrealized_pct": 3.17,
-   "day_pnl": 1.0,
-   "day_change_pct": 0.39,
+   "market_value": 257.43,
+   "unrealized_pnl": 7.43,
+   "unrealized_pct": 2.97,
+   "day_pnl": 0.5,
+   "day_change_pct": 0.19,
    "price_source": "extended",
-   "ext_price": 15.54,
-   "ext_change_pct": 0.258,
+   "ext_price": 15.51,
+   "ext_change_pct": 0.065,
    "quote_time": "2026-10-06T20:00:00Z",
    "stale_quote": false,
    "opened": "2026-10-05T13:56:42Z",
    "sell_locked_until": null,
-   "weight_pct": 25.01
+   "weight_pct": 24.97
   },
   {
    "ticker": "HUT",
@@ -71,7 +71,7 @@
    "stale_quote": false,
    "opened": "2026-10-05T13:56:42Z",
    "sell_locked_until": null,
-   "weight_pct": 25.88
+   "weight_pct": 25.89
   },
   {
    "ticker": "POET",
@@ -85,21 +85,21 @@
    "qty": 33.0464,
    "avg_cost": 7.5651,
    "cost_basis": 250.0,
-   "price": 7.7498,
+   "price": 7.755,
    "prev_close": 7.81,
-   "market_value": 256.1,
-   "unrealized_pnl": 6.1,
-   "unrealized_pct": 2.44,
-   "day_pnl": -1.99,
-   "day_change_pct": -0.77,
+   "market_value": 256.27,
+   "unrealized_pnl": 6.27,
+   "unrealized_pct": 2.51,
+   "day_pnl": -1.82,
+   "day_change_pct": -0.7,
    "price_source": "extended",
-   "ext_price": 7.7498,
-   "ext_change_pct": 0.516,
+   "ext_price": 7.755,
+   "ext_change_pct": 0.584,
    "quote_time": "2026-10-06T20:00:00Z",
    "stale_quote": false,
    "opened": "2026-10-05T13:56:42Z",
    "sell_locked_until": null,
-   "weight_pct": 24.84
+   "weight_pct": 24.86
   },
   {
    "ticker": "UMAC",
@@ -127,7 +127,7 @@
    "stale_quote": false,
    "opened": "2026-10-05T13:56:49Z",
    "sell_locked_until": null,
-   "weight_pct": 24.27
+   "weight_pct": 24.28
   }
  ],
  "counts": {

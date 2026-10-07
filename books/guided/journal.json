@@ -378,6 +378,27 @@
         "CRSP",
         "PCVX"
       ]
+    },
+    {
+      "id": "J0032",
+      "ts": "2026-10-07T12:44:38Z",
+      "kind": "plan",
+      "title": "Day plan Wed Oct 7: book full, no resting orders; bitcoin gate shut; crypto miners gap down 2-4%",
+      "body": "Pre-market 8:40 ET. The book is full: four positions (CIFR, HUT, POET, UMAC) and $0.01 cash, so orders.py plan placed no resting orders. Equity $1,002 on pre-market prices (-$16.84 on the day).\n\nHoldings before the open (gap against the Oct 6 close; stop / target):\n- CIFR 15.02 (-3.1%); stop 14.11, target 17.89\n- HUT 88.75 (-3.8%); stop 83.85, target 100.77\n- POET 7.56 (-1.9%); stop 7.41, target 8.45 (closest to its stop, 2.0% away)\n- UMAC 21.95 (-1.8%); stop 20.79, target 25.96\n\nBitcoin 83,488, -2.4% on the day and -3.5% over 3 days: the bitcoin gate is shut, so crypto-linked dips stay out today (the book already holds two crypto-linked names, the cap).\n\nRadar names in their buy zones (deepest dip first, the order they would be bought in at runs if a slot frees; zone, stop):\n1. CRSP 53.20 (-1.5%); zone 54.04-55.10, stop 51.90, sell from 61.88\n2. COIN 180.14 (-3.0%); zone 182.48-185.73, stop 175.99 [crypto, gate shut]\n3. GPUS 0.157 (-3.1%); zone 0.160-0.163, stop 0.153\n4. RIOT 18.46 (-2.5%); zone 18.30-18.72, stop 17.46 [crypto, gate shut]\n5. QUBT 7.72 (-1.8%); zone 7.66-7.79, stop 7.39\n6. BTDR 10.51 (-3.7%); zone 10.72-10.97, stop 10.22 [crypto, gate shut]\n7. BTBT 1.48 (-2.6%); zone 1.48-1.52, stop 1.41 [crypto, gate shut]\n8. RCAT 6.22 (-1.9%); zone 6.32-6.41, stop 6.14, R:R 23.6 now\n9. SMCI 42.55 (-2.1%); zone 41.90-42.56, stop 40.59\n10. HUT 88.75 (-3.8%); held\n11. RKLB 73.27 (-2.4%); zone 74.73-75.99, stop 72.21 (1.5% above its stop)\n12. UMAC 21.95 (-1.8%); held\nNear: IREN, ONDS, MARA, SNAP, SMR, CORZ, HIVE, MSTR, LUNR. Broken: BULL (-29% pre-market, no release on the wires). PCVX stays skipped until its offering prices.\n\nWires (16 hours): no offering or negative company news on holdings or radar names. TEM announced a multi-year collaboration with Moderna and Merck (not held here); ONDS reported $165M of new orders (radar, near its zone).\n\nClue scan (alerts for Vamsi, not radar buys):\n- Bounce setups: AXTI (radar; coil, accumulation, higher low; support 74.8, resistance 91.22; about 80 pre-market, -4.9%) and META (candidate; coil, accumulation, higher low; support 686.6 x3).\n- Breakout watch: QBTS (resistance 16.02 tested 4 times, coil 0.74; 15.79 close).\n\nPlan: hold the four positions to their targets or stops. Resting stops are watched each run; no new buys while the book is full and cash is $0.01.",
+      "tickers": [
+        "CIFR",
+        "HUT",
+        "POET",
+        "UMAC",
+        "CRSP",
+        "COIN",
+        "RIOT",
+        "RCAT",
+        "RKLB",
+        "AXTI",
+        "META",
+        "QBTS"
+      ]
     }
   ]
 }

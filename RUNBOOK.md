@@ -371,7 +371,9 @@ to trade it without asking (Oct 6). Every weekday run, right after `wires.py` (t
 Rules (`scripts/real.py`; stricter than the paper book because the money is real):
 * Entries: DAY buy limits at support (the bottom of the buy zone) for radar names with support tested 3+ times,
   R:R 2.5+ from support, within 8% above support, not HALTED, no offering or material news, not up 0.43+ ATR over
-  the 5 sessions before; crypto-linked at most 1 and only while the bitcoin gate (2c) is open; higher R:R first;
+  the 5 sessions before; not BROKEN (traded through its stop today) and not stopped out the same day (the paper
+  book's rules, 2a: `real.py` lacked both until Oct 7 and its swap rule offered such a name); crypto-linked at most 1
+  and only while the bitcoin gate (2c) is open; higher R:R first;
   new orders only 7:00-15:30 ET on business days. No new orders while SPY is down 0.35%+ on the day; open buy
   limits are cancelled then.
 * Unlikely orders (Vamsi, Oct 6): from 9:45 to 15:00, an open buy whose odds of filling by the close are under

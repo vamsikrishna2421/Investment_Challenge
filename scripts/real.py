@@ -254,12 +254,23 @@ def entry_candidates(s: dict, a: dict, skip: set[str]) -> tuple[list[dict], list
     radar = json.loads(lv.RADAR.read_text())
     q = quotes()
     taken = set(s["plans"]) | {o["symbol"] for o in open_orders(a, "buy")}
+    # the paper book's entry rules hold here too, since this book's are meant to be stricter (2a, 2e): no re-entry
+    # in a name stopped out the same day, no buy in a name that traded through its stop today (BROKEN)
+    today = now_utc().astimezone(pfm.ET).date()
+    stopped = {c["symbol"] for c in s["closed"] if c.get("why_exit") == "stop" and c.get("closed")
+               and pfm.et_date(pfm.parse_ts(c["closed"])) == today}
     rows, why_not = [], []
     for r in radar["names"]:
         tk = r["ticker"]
         px = price_of(q.get(tk))
         lim = tick(r["buy_zone"][0])
         if tk in taken or tk in skip or px is None or r.get("halted"):
+            continue
+        if tk in stopped:
+            why_not.append(f"{tk}: stopped out today (no same-day re-entry)")
+            continue
+        if lv.classify(r, q.get(tk), radar["asof"])["status"] == "broken":
+            why_not.append(f"{tk}: traded through its stop today (BROKEN)")
             continue
         rr = (r["sell_zone"][0] - lim) / (lim - r["stop"]) if lim > r["stop"] else 0
         if r["support_strength"] < MIN_STRENGTH or rr < MIN_RR or px <= r["stop"] or (px / lim - 1) * 100 > NEAR:

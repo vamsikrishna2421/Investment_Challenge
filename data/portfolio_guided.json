@@ -1,20 +1,20 @@
 {
- "as_of": "2026-10-07T22:41:48Z",
+ "as_of": "2026-10-07T23:34:57Z",
  "session": "post",
  "start_capital": 1000.0,
  "deposits": 1000.0,
- "equity": 979.79,
+ "equity": 980.95,
  "cash": 478.03,
  "settled_cash": 0.01,
  "unsettled_cash": 478.02,
- "invested_value": 501.76,
- "net_profit": -20.21,
- "return_pct": -2.02,
+ "invested_value": 502.92,
+ "net_profit": -19.05,
+ "return_pct": -1.9,
  "goal_equity": 2000.0,
- "goal_progress_pct": -2.02,
+ "goal_progress_pct": -1.9,
  "realized_pnl": -21.98,
- "unrealized_pnl": 1.77,
- "day_pnl": -22.39,
+ "unrealized_pnl": 2.93,
+ "day_pnl": -21.23,
  "fees_paid": 0.04,
  "positions": [
   {
@@ -29,21 +29,21 @@
    "qty": 16.5979,
    "avg_cost": 15.0621,
    "cost_basis": 250.0,
-   "price": 14.66,
+   "price": 14.73,
    "prev_close": 15.5,
-   "market_value": 243.33,
-   "unrealized_pnl": -6.67,
-   "unrealized_pct": -2.67,
-   "day_pnl": -13.94,
-   "day_change_pct": -5.42,
+   "market_value": 244.49,
+   "unrealized_pnl": -5.51,
+   "unrealized_pct": -2.21,
+   "day_pnl": -12.78,
+   "day_change_pct": -4.97,
    "price_source": "extended",
-   "ext_price": 14.66,
-   "ext_change_pct": 0.687,
+   "ext_price": 14.73,
+   "ext_change_pct": 1.168,
    "quote_time": "2026-10-07T20:00:01Z",
    "stale_quote": false,
    "opened": "2026-10-05T13:56:42Z",
    "sell_locked_until": null,
-   "weight_pct": 24.83
+   "weight_pct": 24.92
   },
   {
    "ticker": "HUT",
@@ -71,7 +71,7 @@
    "stale_quote": false,
    "opened": "2026-10-05T13:56:42Z",
    "sell_locked_until": null,
-   "weight_pct": 26.38
+   "weight_pct": 26.34
   }
  ],
  "counts": {

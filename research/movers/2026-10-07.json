@@ -1,0 +1,274 @@
+{
+ "generated_at": "2026-10-07T20:25:51Z",
+ "date": "2026-10-07",
+ "min_move": 15.0,
+ "losers": false,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "NMCO-RI",
+  "SXTC",
+  "SBFM",
+  "BIYA",
+  "TOPP",
+  "NCPL",
+  "BBCI",
+  "GIPR",
+  "IRIX",
+  "SMXT",
+  "MI",
+  "LGCL",
+  "MNDR",
+  "DKI",
+  "ELOG",
+  "LBGJ",
+  "ICU",
+  "JVA",
+  "SHPH",
+  "WETO",
+  "NXTC"
+ ],
+ "skipped_noisy": [
+  "PFAI",
+  "CPHI",
+  "FFR",
+  "CD",
+  "CANG"
+ ],
+ "rows": [
+  {
+   "symbol": "XRPN",
+   "name": "Armada Acquisition Corp. II",
+   "price": 25.01,
+   "change_pct": 30.26,
+   "volume": 3392714,
+   "market_cap": 790065920,
+   "exchange": "NGM",
+   "sector": "Financial Services",
+   "industry": "Shell Companies",
+   "enterprise_value": 606473472,
+   "gross_margin": 0.0,
+   "profit_margin": 0.0,
+   "cash": 54503,
+   "debt": 0,
+   "shares_out": 23710000,
+   "float_shares": 19139433,
+   "short_pct_float": 0.0029,
+   "avg_volume": 470164,
+   "high_52w": 53.0,
+   "low_52w": 10.1,
+   "rating": "none",
+   "rel_volume": 7.2,
+   "off_52w_high_pct": -52.8,
+   "news": [
+    {
+     "title": "Bitcoin, XRP, and Ethereum Drop as Cryptos Face Perfect Storm. Coinbase Falls. - Barron's",
+     "published": "Wed, 07 Oct 2026 17:46:00 GMT",
+     "source": "Barron's",
+     "via": "google"
+    },
+    {
+     "title": "XRPN Nov 2026 12.500 call (XRPN261120C00012500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Wed, 07 Oct 2026 12:06:13 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "XRP treasury SPAC drops 50% in a day ahead of Evernorth\u2019s Nasdaq debut - CryptoSlate",
+     "published": "Wed, 07 Oct 2026 15:30:44 GMT",
+     "source": "CryptoSlate",
+     "via": "google"
+    },
+    {
+     "title": "XRP Price Prediction: XRPN Debut Slips to October 12 - CryptoTicker",
+     "published": "Wed, 07 Oct 2026 15:16:07 GMT",
+     "source": "CryptoTicker",
+     "via": "google"
+    },
+    {
+     "title": "Evernorth Nasdaq Listing Hits Administrative Delay, XRPN Now Expected Oct. 12 - Yellow.com",
+     "published": "Wed, 07 Oct 2026 11:42:06 GMT",
+     "source": "Yellow.com",
+     "via": "google"
+    },
+    {
+     "title": "XRP Price Prediction: Can Nasdaq\u2019s New XRP Treasury Vehicle Push XRP Higher Before RTX Launch? - StreetInsider",
+     "published": "Wed, 07 Oct 2026 17:51:34 GMT",
+     "source": "StreetInsider",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "425",
+     "date": "2026-10-05",
+     "items": [],
+     "events": [],
+     "desc": "425",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526414097/d341866d425.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-05",
+     "items": [
+      "1.01",
+      "3.03",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "holders' rights modified"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/2044009/000119312526414087/d341866d8k.htm"
+    }
+   ],
+   "vol_1y": 100.0,
+   "jump_sigma": 4.2,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.0,
+   "tags": [
+    "sector-theme",
+    "contract-order"
+   ],
+   "score": 4
+  },
+  {
+   "symbol": "BSP",
+   "name": "Bending Spoons S.p.A.",
+   "price": 41.07,
+   "change_pct": 24.19,
+   "volume": 8794214,
+   "market_cap": 26088458240,
+   "exchange": "NMS",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "enterprise_value": 24000786432,
+   "revenue_ttm": 2041833984,
+   "revenue_growth": 1.263,
+   "gross_margin": 0.66762,
+   "profit_margin": 0.12302,
+   "cash": 830147008,
+   "debt": 4961794048,
+   "shares_out": 324978625,
+   "float_shares": 229873988,
+   "avg_volume": 2268579,
+   "high_52w": 58.94,
+   "low_52w": 30.11,
+   "target_mean": 47.66667,
+   "rating": "buy",
+   "analysts": 12,
+   "ev_to_revenue": 11.755,
+   "forward_pe": 21.39787,
+   "rel_volume": 3.9,
+   "off_52w_high_pct": -30.3,
+   "target_upside_pct": 16.1,
+   "news": [
+    {
+     "title": "Why Bending Spoons (BSP) Stock Is Up Today - Quiver Quantitative",
+     "published": "Wed, 07 Oct 2026 18:32:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Who's Buying or Selling Glencore PLC (BSP:GLEN34) Stock Today? - GuruFocus",
+     "published": "Tue, 06 Oct 2026 22:05:36 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "BSP Oct 2026 40.000 call (BSP261016C00040000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Mon, 05 Oct 2026 22:21:20 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Glencore PLC (BSP:GLEN34) Stock Holders - Institutional & Insider Ownership - GuruFocus",
+     "published": "Tue, 06 Oct 2026 22:24:40 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "Glencore PLC (BSP:GLEN34) Stock Price & 30 Year Financial Data - GuruFocus",
+     "published": "Tue, 06 Oct 2026 22:05:06 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "Option Care Health Inc (BSP:O2PC34) Stock Forecast, Price Targets and Analysts Predictions - GuruFocus",
+     "published": "Tue, 06 Oct 2026 21:46:38 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 81.0,
+   "jump_sigma": 4.2,
+   "spike_days_1y": 3,
+   "history_days": 67,
+   "noisy": false,
+   "tags": [
+    "no-clear-news"
+   ],
+   "score": 1
+  },
+  {
+   "symbol": "HRTX",
+   "name": "Heron Therapeutics, Inc.",
+   "price": 0.3843,
+   "change_pct": 15.86,
+   "volume": 3629662,
+   "market_cap": 72960240,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Biotechnology",
+   "enterprise_value": 169714016,
+   "revenue_ttm": 151178000,
+   "revenue_growth": 0.013,
+   "gross_margin": 0.61935,
+   "profit_margin": -0.22522,
+   "cash": 42664000,
+   "debt": 148354000,
+   "shares_out": 189852307,
+   "float_shares": 146524213,
+   "short_pct_float": 0.291,
+   "avg_volume": 2579714,
+   "high_52w": 1.58,
+   "low_52w": 0.26,
+   "target_mean": 7.0,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 1.123,
+   "forward_pe": -3.4936364,
+   "rel_volume": 1.4,
+   "off_52w_high_pct": -75.7,
+   "target_upside_pct": 1721.5,
+   "news": [
+    {
+     "title": "Heron Therapeutics stock faces a guidance reset after Q2 loss - AD HOC NEWS",
+     "published": "Wed, 07 Oct 2026 05:12:51 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    },
+    {
+     "title": "Heron Therapeutics stock fell 2.33 percent on October 2 - AD HOC NEWS",
+     "published": "Mon, 05 Oct 2026 09:58:00 GMT",
+     "source": "AD HOC NEWS",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 100.0,
+   "jump_sigma": 2.4,
+   "spike_days_1y": 5,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 2.9,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": -2
+  }
+ ]
+}

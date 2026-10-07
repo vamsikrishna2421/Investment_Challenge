@@ -56,6 +56,9 @@ CANDIDATES = [
     "CRSP", "BULL", "BKKT", "ALMU",
     # Added Mon Oct 5 from the day's 15%+ movers that pass the filters (one Brazil fintech; AI and genomics biotech).
     "STNE", "RXRX", "DNA", "PCVX", "GRAL",
+    # Added Wed Oct 7 from the day's 15%+ movers that pass the filters (an app-software maker, ATR 6.3%); XRPN
+    # passed too but is a shell company awaiting its merger, priced by the deal rather than by its levels.
+    "BSP",
 ]
 MUST_KEEP = {"GPUS", "IREN", "BTDR"}
 # Names that trade mostly on bitcoin or ether (miners, hosts that still mine, treasuries, exchanges):

@@ -445,6 +445,37 @@
         "UMAC",
         "TEM"
       ]
+    },
+    {
+      "id": "J0037",
+      "ts": "2026-10-07T20:22:38Z",
+      "kind": "research",
+      "title": "Mover post-mortem 2026-10-07: no big up-moves",
+      "body": "Big moves today (at least one daily range, ATR) among the radar and its candidates, with the clues each showed at the prior close and why the routines did not catch it (clues.py postmortem; method in the script docstring).\nDown: BULL -19.1%, HIMX -5.1%, MSTR -6.8%, IREN -6.3%, RXRX -7.8%.\nBase rate today: 0 of 21 names with 2+ clues (or a breakout watch) moved up 1.0+ ATR; 0 of 45 without did. One session is an anecdote; the 5-year clue backtest decides which clues count.",
+      "tickers": [
+        "BULL",
+        "HIMX",
+        "MSTR",
+        "IREN",
+        "RXRX"
+      ]
+    },
+    {
+      "id": "J0038",
+      "ts": "2026-10-07T20:25:20Z",
+      "kind": "review",
+      "title": "Day review Wed Oct 7: -$23.77 (-2.4%), equity $978.41; POET and UMAC stopped at the open, no buys until cash settles",
+      "body": "P&L: equity $978.41 at the close, -$23.77 on the day (-2.4%), -$21.59 (-2.16%) since the $1,000 start; S&P 500 +0.96% and Nasdaq-100 +1.06% over the same days, Russell 2000 -1.35%. Progress to $2,000: 48.9%; the target needs +104% in the 20 sessions left (Oct 8 to Nov 4).\n\nTrades: two stops filled in the first minutes, both reviewed (J0033, J0034).\n- POET: bought 7.5651 Oct 5 (stop 7.41), stopped 7.3952 at 9:37 (T0005), -$5.63. The open gapped under the stop; the 1% gap allowance adopted today (J0036) sizes for exactly this.\n- UMAC: bought 22.2311 Oct 5 (stop 20.79), stopped 20.7796 at 9:36 (T0006), -$16.35. The one entry taken without a dip lost the most.\nHeld overnight: CIFR 14.63 (entry 15.06, stop 14.11, target 17.89, -2.9%) and HUT 89.00 (entry 86.38, stop 83.85, target 100.77, +3.0%). Both left the rebuilt radar (CIFR no tested support below the price, HUT R:R 0.82) and keep their entry stops and targets (2a). No news against either after the close (wires, 3h); HUT had two Buy reiterations (Canaccord $130, Needham $138).\n\nMarket: S&P -0.24%, Nasdaq-100 -0.25%; the 10-year yield printed its highest since 2002 and the Fed minutes pointed to another hike; bitcoin -2.4% to 83.5k, under its 20-day average, so the bitcoin gate stayed shut; crypto miners and nuclear names fell 5-7%.\n\nNo buys today: the only cash was the POET and UMAC proceeds, unsettled until Thu Oct 8 (T+1, J0035).\n\nMovers: none of 66 names rose 1+ ATR; the five that fell 1+ ATR were BULL (-3.9 ATR, through its stop), HIMX (-1.4, under the range and volume filters), MSTR, IREN and RXRX (J0037). The 15%+ movers scan failed twice on a Yahoo rate limit (HTTP 401), then ran: three movers. BSP (app software, ATR 6.3%) passes the filters and joins the candidates; XRPN passed too but is a shell company awaiting its merger, and HRTX ($73M) fails liquidity. The follow-up on earlier movers ran.\n\nRadar rebuilt from today's closes: 34 names, BSP included (research/radar/2026-10-07.md). In the buy zone at the close: APLD 23.91 (23.55-24.02, stop 22.63, sell 28.66), ONDS 7.18 (7.11-7.22, stop 6.88), UMAC 21.91 (21.82-22.30, stop 20.86), GPUS 0.157, and crypto-linked CORZ 15.96, HIVE 2.76, MARA 10.36, RIOT 18.52. Near: POET 7.42 (zone top 7.31), LUNR 14.40, BTDR 10.40.\n\nNext session (Thu Oct 8): $478.03 settles, two slots free. The 8:40 run places resting limits at support with orders.py plan --place, non-crypto first while the bitcoin gate is shut: APLD 23.55 (stop 22.63, target 28.66, R:R 5.5), UMAC 21.82 (stop 20.86, target 25.99, R:R 4.3), POET 7.17 (stop 6.91, target 8.30, R:R 4.3), ONDS 7.11 (stop 6.88, target 7.82, R:R 3.1); CORZ 15.71 and RIOT 18.20 only if the gate opens. Each sized from its stop plus the 1% gap allowance. PCVX stays skipped until its offering prices.",
+      "tickers": [
+        "POET",
+        "UMAC",
+        "CIFR",
+        "HUT",
+        "APLD",
+        "ONDS",
+        "CORZ",
+        "RIOT"
+      ]
     }
   ]
 }

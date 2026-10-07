@@ -1,5 +1,5 @@
 {
-  "strategy": "Wed Oct 7: holding POET, HUT, CIFR and UMAC to their targets (8.45, 100.77, 17.89, 25.96) or stops (7.41, 83.85, 14.11, 20.79); CIFR left the rebuilt radar (R:R 0.77) but keeps its entry stop and target. No settled cash, so no new buys until an exit's proceeds settle (T+1). Radar 40 names; resting-order candidates if a slot frees: RCAT 6.32, CORZ 15.71, RIOT 18.30, QUBT 7.66, SMR 7.58, CRSP 54.04. PCVX skipped until its offering prices. New buys: 25% of equity, cut so a stop loses at most 1.5% of equity; no orders in halted stocks. Clue scan at 8:40 AM.",
+  "strategy": "Thu Oct 8: holding HUT and CIFR to their targets (100.77, 17.89) or stops (83.85, 14.11); both left the rebuilt radar (HUT R:R 0.82, CIFR no tested support below) and keep their entry stops and targets. POET and UMAC stopped at the Oct 7 open. $478.03 settles Oct 8: two slots free. Radar 34 names (BSP added); resting limits at support, non-crypto first while the bitcoin gate is shut: APLD 23.55, UMAC 21.82, POET 7.17, ONDS 7.11 (CORZ 15.71, RIOT 18.20 if the gate opens). PCVX skipped until its offering prices. New buys: 25% of equity, cut so a stop plus a 1% gap allowance loses at most 1.5% of equity; no orders in halted or BROKEN names. Clue scan at 8:40 AM.",
   "focus": [
     "SPY",
     "QQQ",

@@ -335,8 +335,9 @@ def cmd_plan(a) -> int:
     rows.sort(key=lambda x: -x["rr"])
     print(gate["why"])
     print(f"resting-order plan {pfm.iso(now)}: {slots} free slots, ${free:.2f} settled cash free, "
-          f"up to ${size:.2f} per order (25% of equity, less when the stop is over {lv.RISK_PCT / lv.MAX_SIZE_PCT * 100:.0f}% "
-          f"under the limit: at most {lv.RISK_PCT}% of equity lost at a stop); limits at support, the bottom of the buy zone")
+          f"up to ${size:.2f} per order (25% of equity, less when the stop is over "
+          f"{lv.RISK_PCT / lv.MAX_SIZE_PCT * 100 - lv.GAP_PCT:g}% under the limit: at most {lv.RISK_PCT}% of equity lost "
+          f"at a stop plus a {lv.GAP_PCT:g}% gap); limits at support, the bottom of the buy zone")
     picks = []
     for x in rows:
         if len(picks) >= max(slots, 0):

@@ -158,6 +158,78 @@
         "funded_with_settled_cash": true,
         "position_weight_pct": 25.0
       }
+    },
+    {
+      "id": "T0005",
+      "type": "SELL",
+      "ts": "2026-10-07T13:37:00Z",
+      "ticker": "POET",
+      "label": "POET",
+      "asset": "stock",
+      "name": "POET Technologies Inc.",
+      "qty": 33.0464,
+      "multiplier": 1,
+      "price": 7.3952,
+      "quote_price": 7.41,
+      "quote_time": "2026-10-07T13:37:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 20.0,
+      "gross": 244.38,
+      "fees": 0.02,
+      "net_cash": 244.36,
+      "settle_date": "2026-10-08",
+      "rationale": "Resting stop 7.41 triggered at 09:37 ET (traded through)",
+      "tags": [
+        "radar",
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "order_type": "stop",
+        "stop": 7.41,
+        "day_trade": false,
+        "good_faith_ok": true,
+        "cash_account": true,
+        "asset": "stock"
+      }
+    },
+    {
+      "id": "T0006",
+      "type": "SELL",
+      "ts": "2026-10-07T13:36:00Z",
+      "ticker": "UMAC",
+      "label": "UMAC",
+      "asset": "stock",
+      "name": "Unusual Machines, Inc.",
+      "qty": 11.2455,
+      "multiplier": 1,
+      "price": 20.7796,
+      "quote_price": 20.79,
+      "quote_time": "2026-10-07T13:36:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 5.0,
+      "gross": 233.68,
+      "fees": 0.02,
+      "net_cash": 233.66,
+      "settle_date": "2026-10-08",
+      "rationale": "Resting stop 20.79 triggered at 09:36 ET (traded through)",
+      "tags": [
+        "radar",
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "order_type": "stop",
+        "stop": 20.79,
+        "day_trade": false,
+        "good_faith_ok": true,
+        "cash_account": true,
+        "asset": "stock"
+      }
     }
   ]
 }

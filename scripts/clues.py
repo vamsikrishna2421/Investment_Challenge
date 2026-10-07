@@ -150,7 +150,7 @@ def load(sym_onradar: tuple[str, bool]) -> dict | None:
         q = md.quote(sym)
     except Exception:  # noqa: BLE001
         q = {}
-    prev = q.get("prev_close") or f["close"]
+    prev = pfm.ref_close(q) or f["close"]
     last = q.get("price")
     pre = q.get("ext_price") if pfm.market_session(pfm.now_utc()) == "pre" else None
     out = {"ticker": sym, "radar": on_radar, "crypto": sym in lv.CRYPTO_LINKED, **f, "prev_close": prev,

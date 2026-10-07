@@ -1,0 +1,6547 @@
+[
+ {
+  "title": "Real-book rules, no S&P gate, limits from the open",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 1019.37,
+   "ret_pct": 1.94,
+   "trades": 20,
+   "wins": 3,
+   "win_rate": 15.0,
+   "avg_win": 20.29,
+   "avg_loss": -4.3,
+   "avg_trade": -0.61,
+   "profit_factor": 0.81,
+   "max_drawdown_pct": -9.2,
+   "realized": -33.46,
+   "unrealized": 52.83,
+   "by_exit": {
+    "target": 3,
+    "stop": 17
+   },
+   "fill_rate": "21/57"
+  },
+  "lessons": [
+   "stopped the session it was bought: 4 trades, 0 won, average -2.20%, total $-20.87",
+   "stopped on a later session: 13 trades, 0 won, average -4.95%, total $-155.17",
+   "stopped at the open (gapped through the stop): 8 trades, 0 won, average -5.28%, total $-99.99",
+   "never rose 0.5 ATR above the entry: 11 trades, 0 won, average -4.48%, total $-115.52",
+   "crypto-linked: 2 trades, 0 won, average -4.64%, total $-23.04",
+   "bought at the open after a gap down of 0.5+ ATR: 5 trades, 0 won, average -2.15%, total $-26.04",
+   "bought on a dip of 0.5+ ATR (any time): 10 trades, 2 won, average +0.78%, total $+12.63",
+   "bought less than 0.25 ATR under the prior close: 5 trades, 0 won, average -4.59%, total $-58.39",
+   "resting limit fills: 20 trades, 3 won, average -0.61%, total $-33.46",
+   "support tested 3+ times: 20 trades, 3 won, average -0.61%, total $-33.46"
+  ],
+  "sessions": [
+   "2026-07-15",
+   "2026-10-06",
+   59
+  ],
+  "equity": [
+   {
+    "day": "2026-07-15",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-16",
+    "equity": 989.48,
+    "positions": [
+     "IONQ",
+     "POET",
+     "QBTS"
+    ]
+   },
+   {
+    "day": "2026-07-17",
+    "equity": 967.67,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 963.87,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 972.82,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 955.75,
+    "positions": [
+     "IONQ",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 953.19,
+    "positions": [
+     "HIVE",
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 927.9,
+    "positions": []
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 930.57,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 908.04,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 908.62,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 926.78,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 913.08,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 937.74,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 977.29,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 967.99,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 982.07,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 993.84,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 997.05,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1003.04,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1000.82,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1005.27,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1016.64,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1013.4,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 981.34,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 972.8,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 964.76,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1007.29,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 988.47,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1018.27,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 1007.45,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1018.32,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1023.03,
+    "positions": [
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1025.97,
+    "positions": [
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1010.81,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1024.13,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1048.94,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1048.12,
+    "positions": [
+     "HIMX",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1066.51,
+    "positions": [
+     "HIMX",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1039.14,
+    "positions": [
+     "HIMX",
+     "RCAT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1027.62,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1045.6,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1020.96,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1013.76,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1010.55,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1022.28,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1033.53,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1057.41,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1059.14,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1042.5,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1056.46,
+    "positions": [
+     "HIMX",
+     "QUBT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1059.28,
+    "positions": [
+     "HIMX",
+     "QUBT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1030.36,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1026.46,
+    "positions": [
+     "BTBT",
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1022.8,
+    "positions": [
+     "BTBT",
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1022.69,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1031.53,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1016.72,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1019.37,
+    "positions": [
+     "HIMX"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 7.84,
+    "day": "2026-07-16",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.31872,
+    "target": 11.395,
+    "atr": 0.8743,
+    "rr": 6.82,
+    "spy_day": -0.41,
+    "prior5_atr": -0.27,
+    "dist_atr": 0.49,
+    "dip_atr": -0.49,
+    "gap_atr": -0.38,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.3041,
+    "exit_day": "2026-07-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.84,
+    "pnl": -15.44,
+    "best_atr": 0.49,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 17.29,
+    "day": "2026-07-16",
+    "minute": 715,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 16.33176,
+    "target": 21.3127,
+    "atr": 1.5964,
+    "rr": 4.2,
+    "spy_day": -0.16,
+    "prior5_atr": -1.48,
+    "dist_atr": 0.61,
+    "dip_atr": -0.61,
+    "gap_atr": -0.17,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "QBTS",
+    "exit": 16.2991,
+    "exit_day": "2026-07-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.74,
+    "pnl": -14.35,
+    "best_atr": 0.06,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": -0.12,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -15.64,
+    "best_atr": 0.25,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 35.14,
+    "day": "2026-07-16",
+    "minute": 785,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 33.0126,
+    "target": 48.1298,
+    "atr": 3.54,
+    "rr": 6.11,
+    "spy_day": -0.28,
+    "prior5_atr": -2.14,
+    "dist_atr": 0.67,
+    "dip_atr": -0.67,
+    "gap_atr": -0.14,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "IONQ",
+    "exit": 32.9961,
+    "exit_day": "2026-07-24",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -6.11,
+    "pnl": -15.14,
+    "best_atr": 0.33,
+    "worst_atr": -0.65
+   },
+   {
+    "entry": 3.0999999046325684,
+    "day": "2026-07-23",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 2.96548,
+    "target": 5.2648,
+    "atr": 0.2507,
+    "rr": 13.88,
+    "spy_day": -0.81,
+    "prior5_atr": -0.04,
+    "dist_atr": 0.3,
+    "dip_atr": -0.36,
+    "gap_atr": -0.36,
+    "btc_d1": -0.87,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIVE",
+    "exit": 2.9507,
+    "exit_day": "2026-07-24",
+    "exit_minute": 940,
+    "why": "stop",
+    "ret_pct": -4.83,
+    "pnl": -11.54,
+    "best_atr": 0.8,
+    "worst_atr": -0.56
+   },
+   {
+    "entry": 94.56,
+    "day": "2026-07-27",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.7143,
+    "target": 117.8121,
+    "atr": 6.415,
+    "rr": 6.05,
+    "spy_day": -0.13,
+    "prior5_atr": -0.79,
+    "dist_atr": 0.05,
+    "dip_atr": -0.05,
+    "gap_atr": 0.33,
+    "btc_d1": -0.46,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.6689,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.12,
+    "pnl": -9.57,
+    "best_atr": 0.2,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 12.069999694824219,
+    "day": "2026-07-28",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.13,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -10.28,
+    "best_atr": 0.11,
+    "worst_atr": -0.58
+   },
+   {
+    "entry": 110.52999877929688,
+    "day": "2026-07-30",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 0.82,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.79,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -2.11,
+    "pnl": -4.8,
+    "best_atr": 0.1,
+    "worst_atr": -0.37
+   },
+   {
+    "entry": 53.02000045776367,
+    "day": "2026-07-29",
+    "minute": 620,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 51.744960000000006,
+    "target": 58.3156,
+    "atr": 2.1914,
+    "rr": 4.0,
+    "spy_day": -0.72,
+    "prior5_atr": -1.57,
+    "dist_atr": 0.7,
+    "dip_atr": -0.72,
+    "gap_atr": -0.05,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "PCVX",
+    "exit": 58.8356,
+    "exit_day": "2026-08-06",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 10.96,
+    "pnl": 24.88,
+    "best_atr": 2.7,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 76.2699966430664,
+    "day": "2026-08-11",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.54096000000001,
+    "target": 149.2017,
+    "atr": 5.9944,
+    "rr": 19.47,
+    "spy_day": 0.06,
+    "prior5_atr": 1.6,
+    "dist_atr": 0.15,
+    "dip_atr": -0.63,
+    "gap_atr": -0.63,
+    "btc_d1": 0.65,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.5032,
+    "exit_day": "2026-08-11",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -1.01,
+    "pnl": -2.53,
+    "best_atr": 0.44,
+    "worst_atr": -0.14
+   },
+   {
+    "entry": 79.14,
+    "day": "2026-08-12",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.45126,
+    "target": 149.1562,
+    "atr": 6.1459,
+    "rr": 18.98,
+    "spy_day": 0.33,
+    "prior5_atr": 0.9,
+    "dist_atr": 0.14,
+    "dip_atr": -0.14,
+    "gap_atr": 0.02,
+    "btc_d1": 0.98,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.4135,
+    "exit_day": "2026-08-19",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -4.72,
+    "pnl": -11.83,
+    "best_atr": 1.04,
+    "worst_atr": -0.7
+   },
+   {
+    "entry": 69.88,
+    "day": "2026-07-29",
+    "minute": 610,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 67.81363999999999,
+    "target": 85.7508,
+    "atr": 3.4481,
+    "rr": 7.68,
+    "spy_day": -0.74,
+    "prior5_atr": -0.67,
+    "dist_atr": 0.73,
+    "dip_atr": -0.73,
+    "gap_atr": -0.41,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "AFRM",
+    "exit": 85.8471,
+    "exit_day": "2026-08-28",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 22.84,
+    "pnl": 51.85,
+    "best_atr": 5.96,
+    "worst_atr": -0.08
+   },
+   {
+    "entry": 58.029998779296875,
+    "day": "2026-09-01",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 54.520379999999996,
+    "target": 88.658,
+    "atr": 8.5457,
+    "rr": 5.65,
+    "spy_day": -0.67,
+    "prior5_atr": -0.56,
+    "dist_atr": 0.11,
+    "dip_atr": -0.3,
+    "gap_atr": -0.3,
+    "btc_d1": -0.62,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "AXTI",
+    "exit": 54.4931,
+    "exit_day": "2026-09-03",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.11,
+    "pnl": -10.93,
+    "best_atr": 0.22,
+    "worst_atr": -0.47
+   },
+   {
+    "entry": 93.67,
+    "day": "2026-08-20",
+    "minute": 900,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.92518000000001,
+    "target": 118.3615,
+    "atr": 4.5827,
+    "rr": 9.0,
+    "spy_day": -0.73,
+    "prior5_atr": 0.19,
+    "dist_atr": 0.46,
+    "dip_atr": -0.46,
+    "gap_atr": 1.11,
+    "btc_d1": 3.76,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 119.0404,
+    "exit_day": "2026-09-03",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 27.08,
+    "pnl": 65.85,
+    "best_atr": 6.23,
+    "worst_atr": -0.0
+   },
+   {
+    "entry": 8.47,
+    "day": "2026-09-04",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.102279999999999,
+    "target": 10.5202,
+    "atr": 0.6152,
+    "rr": 5.58,
+    "spy_day": -0.09,
+    "prior5_atr": -1.2,
+    "dist_atr": 0.11,
+    "dip_atr": -0.11,
+    "gap_atr": -0.07,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "RCAT",
+    "exit": 8.0861,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.54,
+    "pnl": -11.91,
+    "best_atr": 0.71,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 15.630000114440918,
+    "day": "2026-09-09",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.24,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.18,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.09,
+    "pnl": -13.58,
+    "best_atr": 0.3,
+    "worst_atr": -0.77
+   },
+   {
+    "entry": 7.71999979019165,
+    "day": "2026-09-14",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.63966,
+    "target": 8.8202,
+    "atr": 0.3724,
+    "rr": 4.36,
+    "spy_day": -0.73,
+    "prior5_atr": 0.08,
+    "dist_atr": 0.34,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": 1.17,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 7.6244,
+    "exit_day": "2026-09-14",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -1.25,
+    "pnl": -3.26,
+    "best_atr": 0.0,
+    "worst_atr": -0.24
+   },
+   {
+    "entry": 8.859999656677246,
+    "day": "2026-09-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.702259999999999,
+    "target": 14.3353,
+    "atr": 0.3824,
+    "rr": 23.73,
+    "spy_day": -0.41,
+    "prior5_atr": 2.93,
+    "dist_atr": 0.49,
+    "dip_atr": -0.68,
+    "gap_atr": -0.68,
+    "btc_d1": -1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 8.6849,
+    "exit_day": "2026-09-28",
+    "exit_minute": 640,
+    "why": "stop",
+    "ret_pct": -1.98,
+    "pnl": -5.17,
+    "best_atr": 1.12,
+    "worst_atr": -0.42
+   },
+   {
+    "entry": 1.67,
+    "day": "2026-09-29",
+    "minute": 730,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6037400000000002,
+    "target": 2.3546,
+    "atr": 0.1181,
+    "rr": 10.33,
+    "spy_day": -0.34,
+    "prior5_atr": -1.19,
+    "dist_atr": 0.05,
+    "dip_atr": -0.08,
+    "gap_atr": 0.25,
+    "btc_d1": 0.98,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 11,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.5957,
+    "exit_day": "2026-10-01",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -4.46,
+    "pnl": -11.5,
+    "best_atr": 0.51,
+    "worst_atr": -0.59
+   },
+   {
+    "entry": 15.48,
+    "day": "2026-09-18",
+    "minute": 595,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 14.99194,
+    "target": 27.679,
+    "atr": 0.8216,
+    "rr": 24.99,
+    "spy_day": -0.38,
+    "prior5_atr": 1.01,
+    "dist_atr": 0.61,
+    "dip_atr": -0.62,
+    "gap_atr": 0.32,
+    "btc_d1": 2.08,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.962,
+    "exit_day": "2026-10-05",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.35,
+    "pnl": -8.57,
+    "best_atr": 2.65,
+    "worst_atr": -0.75
+   }
+  ],
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.06,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.85,
+    "ret_pct": 23.13
+   }
+  ],
+  "bench": {
+   "SPY": 3.63,
+   "QQQ": 5.55
+  },
+  "start": 1000.0,
+  "orders_placed": 57,
+  "orders_filled": 21
+ },
+ {
+  "title": "Real-book rules + S&P gate 0.35% (live real book)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 1070.0,
+   "ret_pct": 7.0,
+   "trades": 11,
+   "wins": 2,
+   "win_rate": 18.2,
+   "avg_win": 22.21,
+   "avg_loss": -4.49,
+   "avg_trade": 0.37,
+   "profit_factor": 1.07,
+   "max_drawdown_pct": -9.15,
+   "realized": 6.99,
+   "unrealized": 63.01,
+   "by_exit": {
+    "target": 2,
+    "stop": 9
+   },
+   "fill_rate": "13/79"
+  },
+  "lessons": [
+   "stopped the session it was bought: 3 trades, 0 won, average -2.83%, total $-20.74",
+   "stopped on a later session: 6 trades, 0 won, average -5.31%, total $-81.21",
+   "stopped at the open (gapped through the stop): 3 trades, 0 won, average -5.20%, total $-39.65",
+   "never rose 0.5 ATR above the entry: 7 trades, 0 won, average -4.39%, total $-77.73",
+   "crypto-linked: 2 trades, 1 won, average +8.52%, total $+42.20",
+   "bought at the open after a gap down of 0.5+ ATR: 2 trades, 0 won, average -3.26%, total $-15.92",
+   "bought on a dip of 0.5+ ATR (any time): 4 trades, 0 won, average -4.04%, total $-40.14",
+   "bought less than 0.25 ATR under the prior close: 4 trades, 2 won, average +8.28%, total $+80.04",
+   "resting limit fills: 11 trades, 2 won, average +0.37%, total $+6.99",
+   "support tested 3+ times: 11 trades, 2 won, average +0.37%, total $+6.99"
+  ],
+  "sessions": [
+   "2026-07-15",
+   "2026-10-06",
+   59
+  ],
+  "equity": [
+   {
+    "day": "2026-07-15",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-16",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-17",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 988.47,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 983.93,
+    "positions": []
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 980.51,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 982.44,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 958.22,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 958.22,
+    "positions": []
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 964.72,
+    "positions": [
+     "AFRM"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 958.75,
+    "positions": [
+     "AFRM"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 987.19,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 1023.55,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 1006.37,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 1021.85,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 1046.12,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 1038.51,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1048.41,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1048.06,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1057.63,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1090.1,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1074.9,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 1022.05,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 1024.38,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 1006.65,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1015.2,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 990.39,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1003.31,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 994.18,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1003.34,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1009.75,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1011.34,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1005.18,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1018.51,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1048.07,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1043.18,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1064.98,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1057.21,
+    "positions": [
+     "HIMX",
+     "MARA",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1034.62,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1072.07,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1049.62,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1042.06,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1038.68,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1051.01,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1057.96,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1069.69,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1071.68,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1063.13,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1059.95,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1067.82,
+    "positions": [
+     "BTBT",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1046.17,
+    "positions": [
+     "BTBT",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1047.54,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1051.44,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1060.97,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1087.11,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1063.98,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1070.0,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": -0.12,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -16.07,
+    "best_atr": 0.25,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 29.18000030517578,
+    "day": "2026-07-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 28.6244,
+    "target": 37.6653,
+    "atr": 2.4745,
+    "rr": 5.09,
+    "spy_day": 0.15,
+    "prior5_atr": 1.39,
+    "dist_atr": -0.09,
+    "dip_atr": -0.29,
+    "gap_atr": -0.29,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 28.6101,
+    "exit_day": "2026-07-24",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -1.96,
+    "pnl": -4.82,
+    "best_atr": 0.0,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 94.37,
+    "day": "2026-07-24",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.57806000000001,
+    "target": 117.8402,
+    "atr": 6.3214,
+    "rr": 6.19,
+    "spy_day": 0.02,
+    "prior5_atr": -0.7,
+    "dist_atr": 1.14,
+    "dip_atr": -1.14,
+    "gap_atr": -0.28,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.5328,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.07,
+    "pnl": -10.02,
+    "best_atr": 0.8,
+    "worst_atr": -0.72
+   },
+   {
+    "entry": 12.069999694824219,
+    "day": "2026-07-28",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.13,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -10.86,
+    "best_atr": 0.11,
+    "worst_atr": -0.58
+   },
+   {
+    "entry": 110.52999877929688,
+    "day": "2026-07-30",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 0.82,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.79,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -2.11,
+    "pnl": -5.06,
+    "best_atr": 0.1,
+    "worst_atr": -0.37
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -14.2,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 69.88,
+    "day": "2026-07-30",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 67.85221999999999,
+    "target": 85.7701,
+    "atr": 3.3838,
+    "rr": 7.84,
+    "spy_day": 0.81,
+    "prior5_atr": -1.12,
+    "dist_atr": 0.07,
+    "dip_atr": -0.07,
+    "gap_atr": 0.24,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "AFRM",
+    "exit": 85.8471,
+    "exit_day": "2026-08-28",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 22.84,
+    "pnl": 54.72,
+    "best_atr": 6.08,
+    "worst_atr": -0.01
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.35,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -15.34,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 15.630000114440918,
+    "day": "2026-09-09",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.24,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.18,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.09,
+    "pnl": -13.56,
+    "best_atr": 0.3,
+    "worst_atr": -0.77
+   },
+   {
+    "entry": 10.010000228881836,
+    "day": "2026-09-02",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 9.67514,
+    "target": 12.1601,
+    "atr": 0.9321,
+    "rr": 3.48,
+    "spy_day": 0.08,
+    "prior5_atr": -1.72,
+    "dist_atr": -0.0,
+    "dip_atr": -0.24,
+    "gap_atr": -0.24,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "MARA",
+    "exit": 12.1706,
+    "exit_day": "2026-09-11",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 21.58,
+    "pnl": 54.22,
+    "best_atr": 2.55,
+    "worst_atr": -0.02
+   },
+   {
+    "entry": 1.75,
+    "day": "2026-09-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6793,
+    "target": 2.3549,
+    "atr": 0.117,
+    "rr": 8.56,
+    "spy_day": 0.3,
+    "prior5_atr": 2.22,
+    "dist_atr": 0.35,
+    "dip_atr": -0.34,
+    "gap_atr": 0.09,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.6709,
+    "exit_day": "2026-09-29",
+    "exit_minute": 725,
+    "why": "stop",
+    "ret_pct": -4.53,
+    "pnl": -12.02,
+    "best_atr": 0.38,
+    "worst_atr": -0.68
+   }
+  ],
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.06,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.85,
+    "ret_pct": 23.13
+   },
+   {
+    "ticker": "WULF",
+    "entry": 14.55,
+    "day": "2026-09-30",
+    "stop": 13.936,
+    "target": 17.7637,
+    "last": 14.97,
+    "ret_pct": 2.89
+   }
+  ],
+  "bench": {
+   "SPY": 3.63,
+   "QQQ": 5.55
+  },
+  "start": 1000.0,
+  "orders_placed": 79,
+  "orders_filled": 13
+ },
+ {
+  "title": "Real-book rules + entries from 9:45",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 585,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 944.93,
+   "ret_pct": -5.51,
+   "trades": 24,
+   "wins": 3,
+   "win_rate": 12.5,
+   "avg_win": 20.29,
+   "avg_loss": -3.97,
+   "avg_trade": -0.93,
+   "profit_factor": 0.71,
+   "max_drawdown_pct": -8.65,
+   "realized": -58.81,
+   "unrealized": 3.74,
+   "by_exit": {
+    "target": 3,
+    "stop": 21
+   },
+   "fill_rate": "25/75"
+  },
+  "lessons": [
+   "stopped the session it was bought: 5 trades, 0 won, average -1.87%, total $-22.03",
+   "stopped on a later session: 16 trades, 0 won, average -4.62%, total $-178.55",
+   "stopped at the open (gapped through the stop): 9 trades, 0 won, average -4.33%, total $-93.65",
+   "never rose 0.5 ATR above the entry: 14 trades, 0 won, average -4.01%, total $-136.16",
+   "crypto-linked: 3 trades, 0 won, average -4.23%, total $-30.57",
+   "bought on a dip of 0.5+ ATR (any time): 14 trades, 2 won, average -0.58%, total $-23.15",
+   "bought less than 0.25 ATR under the prior close: 5 trades, 0 won, average -4.75%, total $-57.93",
+   "resting limit fills: 24 trades, 3 won, average -0.93%, total $-58.81",
+   "support tested 3+ times: 24 trades, 3 won, average -0.93%, total $-58.81"
+  ],
+  "sessions": [
+   "2026-07-15",
+   "2026-10-06",
+   59
+  ],
+  "equity": [
+   {
+    "day": "2026-07-15",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-16",
+    "equity": 991.04,
+    "positions": [
+     "IONQ",
+     "POET",
+     "QBTS"
+    ]
+   },
+   {
+    "day": "2026-07-17",
+    "equity": 969.16,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 965.35,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 974.3,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 957.22,
+    "positions": [
+     "IONQ",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 953.09,
+    "positions": [
+     "HIVE",
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 927.88,
+    "positions": []
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 930.55,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 913.5,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 914.08,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 933.17,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 919.38,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 930.48,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 943.61,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 948.32,
+    "positions": [
+     "AFRM",
+     "PCVX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 967.42,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 974.07,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 964.89,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 967.15,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 964.45,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 981.69,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1001.18,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 983.45,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 949.39,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 954.04,
+    "positions": [
+     "AFRM",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 945.31,
+    "positions": [
+     "AFRM",
+     "HOOD",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 984.38,
+    "positions": [
+     "AFRM",
+     "HOOD",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 956.42,
+    "positions": [
+     "AFRM",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 986.0,
+    "positions": [
+     "AFRM",
+     "HOOD",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 964.95,
+    "positions": [
+     "AFRM",
+     "HOOD",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 972.44,
+    "positions": [
+     "AFRM",
+     "HOOD",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 972.53,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 973.93,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 971.21,
+    "positions": [
+     "AXTI",
+     "HOOD",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 977.75,
+    "positions": [
+     "AXTI",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1000.83,
+    "positions": []
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1000.24,
+    "positions": [
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1007.05,
+    "positions": [
+     "RCAT",
+     "RXRX"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 975.14,
+    "positions": [
+     "RCAT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 967.29,
+    "positions": []
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 967.29,
+    "positions": []
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 967.29,
+    "positions": []
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 967.29,
+    "positions": []
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 967.18,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 987.72,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 984.5,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1008.53,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1005.95,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 983.02,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1010.87,
+    "positions": [
+     "QUBT",
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1009.23,
+    "positions": [
+     "QUBT",
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 989.33,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 993.78,
+    "positions": [
+     "BTBT",
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 985.76,
+    "positions": [
+     "BTBT",
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 949.08,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 949.66,
+    "positions": [
+     "RGTI",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 939.11,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 944.93,
+    "positions": [
+     "UMAC"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 7.784999847412109,
+    "day": "2026-07-16",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.31872,
+    "target": 11.395,
+    "atr": 0.8743,
+    "rr": 6.82,
+    "spy_day": -0.5,
+    "prior5_atr": -0.27,
+    "dist_atr": 0.49,
+    "dip_atr": -0.55,
+    "gap_atr": -0.38,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.3041,
+    "exit_day": "2026-07-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.19,
+    "pnl": -13.96,
+    "best_atr": 0.55,
+    "worst_atr": -0.57
+   },
+   {
+    "entry": 17.29,
+    "day": "2026-07-16",
+    "minute": 715,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 16.33176,
+    "target": 21.3127,
+    "atr": 1.5964,
+    "rr": 4.2,
+    "spy_day": -0.16,
+    "prior5_atr": -1.48,
+    "dist_atr": 0.61,
+    "dip_atr": -0.61,
+    "gap_atr": -0.17,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "QBTS",
+    "exit": 16.2991,
+    "exit_day": "2026-07-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.74,
+    "pnl": -14.35,
+    "best_atr": 0.06,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 745,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": 0.21,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -15.66,
+    "best_atr": 0.01,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 35.14,
+    "day": "2026-07-16",
+    "minute": 785,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 33.0126,
+    "target": 48.1298,
+    "atr": 3.54,
+    "rr": 6.11,
+    "spy_day": -0.28,
+    "prior5_atr": -2.14,
+    "dist_atr": 0.67,
+    "dip_atr": -0.67,
+    "gap_atr": -0.14,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "IONQ",
+    "exit": 32.9961,
+    "exit_day": "2026-07-24",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -6.11,
+    "pnl": -15.14,
+    "best_atr": 0.33,
+    "worst_atr": -0.65
+   },
+   {
+    "entry": 3.12,
+    "day": "2026-07-23",
+    "minute": 685,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 2.96548,
+    "target": 5.2648,
+    "atr": 0.2507,
+    "rr": 13.88,
+    "spy_day": -1.54,
+    "prior5_atr": -0.04,
+    "dist_atr": 0.3,
+    "dip_atr": -0.28,
+    "gap_atr": -0.36,
+    "btc_d1": -0.87,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIVE",
+    "exit": 2.9507,
+    "exit_day": "2026-07-24",
+    "exit_minute": 940,
+    "why": "stop",
+    "ret_pct": -5.44,
+    "pnl": -13.02,
+    "best_atr": 0.34,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 94.56,
+    "day": "2026-07-27",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.7143,
+    "target": 117.8121,
+    "atr": 6.415,
+    "rr": 6.05,
+    "spy_day": -0.13,
+    "prior5_atr": -0.79,
+    "dist_atr": 0.05,
+    "dip_atr": -0.05,
+    "gap_atr": 0.33,
+    "btc_d1": -0.46,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.6689,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.12,
+    "pnl": -9.57,
+    "best_atr": 0.2,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 11.779999732971191,
+    "day": "2026-07-28",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.21,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -1.05,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -2.07,
+    "pnl": -4.81,
+    "best_atr": 0.06,
+    "worst_atr": -0.26
+   },
+   {
+    "entry": 110.12999725341797,
+    "day": "2026-07-30",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 1.09,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.85,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -1.76,
+    "pnl": -4.01,
+    "best_atr": 0.0,
+    "worst_atr": -0.31
+   },
+   {
+    "entry": 53.02000045776367,
+    "day": "2026-07-29",
+    "minute": 620,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 51.744960000000006,
+    "target": 58.3156,
+    "atr": 2.1914,
+    "rr": 4.0,
+    "spy_day": -0.72,
+    "prior5_atr": -1.57,
+    "dist_atr": 0.7,
+    "dip_atr": -0.72,
+    "gap_atr": -0.05,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "PCVX",
+    "exit": 58.8356,
+    "exit_day": "2026-08-06",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 10.96,
+    "pnl": 25.03,
+    "best_atr": 2.7,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 76.26000213623047,
+    "day": "2026-08-11",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.54096000000001,
+    "target": 149.2017,
+    "atr": 5.9944,
+    "rr": 19.47,
+    "spy_day": -0.02,
+    "prior5_atr": 1.6,
+    "dist_atr": 0.15,
+    "dip_atr": -0.63,
+    "gap_atr": -0.63,
+    "btc_d1": 0.65,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.5032,
+    "exit_day": "2026-08-11",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -1.0,
+    "pnl": -2.41,
+    "best_atr": 0.0,
+    "worst_atr": -0.13
+   },
+   {
+    "entry": 93.27539825439453,
+    "day": "2026-08-18",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 91.69942,
+    "target": 118.3964,
+    "atr": 4.4663,
+    "rr": 8.96,
+    "spy_day": -0.55,
+    "prior5_atr": 0.39,
+    "dist_atr": 0.42,
+    "dip_atr": -0.67,
+    "gap_atr": -0.59,
+    "btc_d1": -0.34,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 91.6536,
+    "exit_day": "2026-08-18",
+    "exit_minute": 955,
+    "why": "stop",
+    "ret_pct": -1.75,
+    "pnl": -4.29,
+    "best_atr": 0.18,
+    "worst_atr": -0.41
+   },
+   {
+    "entry": 11.404999732971191,
+    "day": "2026-08-19",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.11164,
+    "target": 14.6529,
+    "atr": 1.1921,
+    "rr": 3.93,
+    "spy_day": 0.14,
+    "prior5_atr": 0.18,
+    "dist_atr": -0.08,
+    "dip_atr": -0.27,
+    "gap_atr": -0.04,
+    "btc_d1": -0.34,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 12,
+    "exit_rule": "plan",
+    "ticker": "CLSK",
+    "exit": 11.0894,
+    "exit_day": "2026-08-19",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -2.78,
+    "pnl": -6.51,
+    "best_atr": 0.0,
+    "worst_atr": -0.28
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -13.09,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 69.88,
+    "day": "2026-07-29",
+    "minute": 610,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 67.81363999999999,
+    "target": 85.7508,
+    "atr": 3.4481,
+    "rr": 7.68,
+    "spy_day": -0.74,
+    "prior5_atr": -0.67,
+    "dist_atr": 0.73,
+    "dip_atr": -0.73,
+    "gap_atr": -0.41,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "AFRM",
+    "exit": 85.8471,
+    "exit_day": "2026-08-28",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 22.84,
+    "pnl": 52.16,
+    "best_atr": 5.96,
+    "worst_atr": -0.08
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.39,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -14.81,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 8.325499534606934,
+    "day": "2026-09-01",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.09908,
+    "target": 10.6151,
+    "atr": 0.7477,
+    "rr": 4.58,
+    "spy_day": -0.63,
+    "prior5_atr": -0.45,
+    "dist_atr": 0.06,
+    "dip_atr": -0.35,
+    "gap_atr": -0.35,
+    "btc_d1": -0.62,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "RCAT",
+    "exit": 8.0829,
+    "exit_day": "2026-09-02",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -2.92,
+    "pnl": -7.12,
+    "best_atr": 0.03,
+    "worst_atr": -0.37
+   },
+   {
+    "entry": 55.20000076293945,
+    "day": "2026-09-01",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 54.520379999999996,
+    "target": 88.658,
+    "atr": 8.5457,
+    "rr": 5.65,
+    "spy_day": -0.63,
+    "prior5_atr": -0.56,
+    "dist_atr": 0.11,
+    "dip_atr": -0.63,
+    "gap_atr": -0.3,
+    "btc_d1": -0.62,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "AXTI",
+    "exit": 54.4931,
+    "exit_day": "2026-09-03",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -1.29,
+    "pnl": -2.2,
+    "best_atr": 0.55,
+    "worst_atr": -0.14
+   },
+   {
+    "entry": 93.67,
+    "day": "2026-08-20",
+    "minute": 900,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.92518000000001,
+    "target": 118.3615,
+    "atr": 4.5827,
+    "rr": 9.0,
+    "spy_day": -0.73,
+    "prior5_atr": 0.19,
+    "dist_atr": 0.46,
+    "dip_atr": -0.46,
+    "gap_atr": 1.11,
+    "btc_d1": 3.76,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 119.0404,
+    "exit_day": "2026-09-03",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 27.08,
+    "pnl": 64.58,
+    "best_atr": 6.23,
+    "worst_atr": -0.0
+   },
+   {
+    "entry": 3.48,
+    "day": "2026-09-08",
+    "minute": 665,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 3.34366,
+    "target": 4.0004,
+    "atr": 0.2199,
+    "rr": 3.82,
+    "spy_day": -0.33,
+    "prior5_atr": 1.32,
+    "dist_atr": 0.7,
+    "dip_atr": -0.68,
+    "gap_atr": -0.23,
+    "btc_d1": -0.9,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RXRX",
+    "exit": 3.3269,
+    "exit_day": "2026-09-09",
+    "exit_minute": 620,
+    "why": "stop",
+    "ret_pct": -4.41,
+    "pnl": -11.03,
+    "best_atr": 0.23,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 8.389900207519531,
+    "day": "2026-09-04",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.102279999999999,
+    "target": 10.5202,
+    "atr": 0.6152,
+    "rr": 5.58,
+    "spy_day": -0.08,
+    "prior5_atr": -1.2,
+    "dist_atr": 0.11,
+    "dip_atr": -0.24,
+    "gap_atr": -0.07,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "RCAT",
+    "exit": 8.0861,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.63,
+    "pnl": -9.08,
+    "best_atr": 0.84,
+    "worst_atr": -0.5
+   },
+   {
+    "entry": 15.670000076293945,
+    "day": "2026-09-09",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.27,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.14,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.33,
+    "pnl": -13.43,
+    "best_atr": 0.27,
+    "worst_atr": -0.81
+   },
+   {
+    "entry": 8.93,
+    "day": "2026-09-24",
+    "minute": 590,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.702259999999999,
+    "target": 14.3353,
+    "atr": 0.3824,
+    "rr": 23.73,
+    "spy_day": -0.38,
+    "prior5_atr": 2.93,
+    "dist_atr": 0.49,
+    "dip_atr": -0.5,
+    "gap_atr": -0.68,
+    "btc_d1": -1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 8.6849,
+    "exit_day": "2026-09-28",
+    "exit_minute": 640,
+    "why": "stop",
+    "ret_pct": -2.75,
+    "pnl": -6.77,
+    "best_atr": 0.94,
+    "worst_atr": -0.6
+   },
+   {
+    "entry": 1.67,
+    "day": "2026-09-29",
+    "minute": 730,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6037400000000002,
+    "target": 2.3546,
+    "atr": 0.1181,
+    "rr": 10.33,
+    "spy_day": -0.34,
+    "prior5_atr": -1.19,
+    "dist_atr": 0.05,
+    "dip_atr": -0.08,
+    "gap_atr": 0.25,
+    "btc_d1": 0.98,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 11,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.5957,
+    "exit_day": "2026-10-01",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -4.46,
+    "pnl": -11.04,
+    "best_atr": 0.51,
+    "worst_atr": -0.59
+   },
+   {
+    "entry": 15.48,
+    "day": "2026-09-18",
+    "minute": 595,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 14.99194,
+    "target": 27.679,
+    "atr": 0.8216,
+    "rr": 24.99,
+    "spy_day": -0.38,
+    "prior5_atr": 1.01,
+    "dist_atr": 0.61,
+    "dip_atr": -0.62,
+    "gap_atr": 0.32,
+    "btc_d1": 2.08,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.962,
+    "exit_day": "2026-10-05",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.35,
+    "pnl": -8.28,
+    "best_atr": 2.65,
+    "worst_atr": -0.75
+   }
+  ],
+  "open": [
+   {
+    "ticker": "UMAC",
+    "entry": 22.02,
+    "day": "2026-09-16",
+    "stop": 20.9767,
+    "target": 26.1202,
+    "last": 22.36,
+    "ret_pct": 1.54
+   }
+  ],
+  "bench": {
+   "SPY": 3.63,
+   "QQQ": 5.55
+  },
+  "start": 1000.0,
+  "orders_placed": 75,
+  "orders_filled": 25
+ },
+ {
+  "title": "Real-book rules + S&P gate + entries from 9:45",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 585,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 899.59,
+   "ret_pct": -10.04,
+   "trades": 18,
+   "wins": 1,
+   "win_rate": 5.6,
+   "avg_win": 18.96,
+   "avg_loss": -3.78,
+   "avg_trade": -2.52,
+   "profit_factor": 0.27,
+   "max_drawdown_pct": -11.65,
+   "realized": -110.49,
+   "unrealized": 10.08,
+   "by_exit": {
+    "target": 1,
+    "stop": 17
+   },
+   "fill_rate": "20/108"
+  },
+  "lessons": [
+   "stopped the session it was bought: 6 trades, 0 won, average -1.01%, total $-14.61",
+   "stopped on a later session: 11 trades, 0 won, average -5.30%, total $-137.76",
+   "stopped at the open (gapped through the stop): 5 trades, 0 won, average -5.19%, total $-62.26",
+   "never rose 0.5 ATR above the entry: 11 trades, 0 won, average -3.19%, total $-83.26",
+   "crypto-linked: 3 trades, 1 won, average +2.68%, total $+16.72",
+   "bought on a dip of 0.5+ ATR (any time): 8 trades, 0 won, average -1.96%, total $-38.01",
+   "bought less than 0.25 ATR under the prior close: 6 trades, 1 won, average -0.98%, total $-15.61",
+   "resting limit fills: 18 trades, 1 won, average -2.52%, total $-110.49",
+   "support tested 3+ times: 18 trades, 1 won, average -2.52%, total $-110.49"
+  ],
+  "sessions": [
+   "2026-07-15",
+   "2026-10-06",
+   59
+  ],
+  "equity": [
+   {
+    "day": "2026-07-15",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-16",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-17",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 988.47,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 983.93,
+    "positions": []
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 985.19,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 987.12,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 968.66,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 968.66,
+    "positions": []
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 964.41,
+    "positions": []
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 964.41,
+    "positions": []
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 964.41,
+    "positions": []
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 964.41,
+    "positions": []
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 956.22,
+    "positions": [
+     "ONDS",
+     "POET",
+     "QUBT"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 954.88,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 976.11,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 971.16,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 981.22,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 990.32,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 968.28,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 997.01,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 985.21,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 959.61,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 954.11,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 937.33,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 936.74,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 917.71,
+    "positions": []
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 923.37,
+    "positions": [
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 922.83,
+    "positions": [
+     "BTBT",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 935.27,
+    "positions": [
+     "BTBT",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 892.04,
+    "positions": [
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 893.68,
+    "positions": [
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 883.53,
+    "positions": [
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 886.42,
+    "positions": [
+     "MARA",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 908.17,
+    "positions": [
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 901.37,
+    "positions": [
+     "MARA",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 921.4,
+    "positions": [
+     "MARA",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 901.73,
+    "positions": [
+     "MARA",
+     "RCAT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 883.97,
+    "positions": [
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 899.94,
+    "positions": []
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 899.94,
+    "positions": []
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 899.94,
+    "positions": []
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 899.84,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 918.95,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 911.79,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 922.73,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 920.48,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 906.79,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 919.46,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 922.0,
+    "positions": [
+     "BTBT",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 910.57,
+    "positions": [
+     "BTBT",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 919.35,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 914.65,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 892.72,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 907.86,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 891.34,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 899.59,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 745,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": 0.21,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -16.07,
+    "best_atr": 0.01,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 28.59000015258789,
+    "day": "2026-07-24",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 28.6244,
+    "target": 37.6653,
+    "atr": 2.4745,
+    "rr": 5.09,
+    "spy_day": 0.22,
+    "prior5_atr": 1.39,
+    "dist_atr": -0.09,
+    "dip_atr": -0.53,
+    "gap_atr": -0.29,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 28.5757,
+    "exit_day": "2026-07-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -0.06,
+    "pnl": -0.14,
+    "best_atr": 0.0,
+    "worst_atr": -0.11
+   },
+   {
+    "entry": 94.37,
+    "day": "2026-07-24",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.57806000000001,
+    "target": 117.8402,
+    "atr": 6.3214,
+    "rr": 6.19,
+    "spy_day": 0.02,
+    "prior5_atr": -0.7,
+    "dist_atr": 1.14,
+    "dip_atr": -1.14,
+    "gap_atr": -0.28,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.5328,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.07,
+    "pnl": -10.02,
+    "best_atr": 0.8,
+    "worst_atr": -0.72
+   },
+   {
+    "entry": 11.779999732971191,
+    "day": "2026-07-28",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.21,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -1.05,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -2.07,
+    "pnl": -5.1,
+    "best_atr": 0.06,
+    "worst_atr": -0.26
+   },
+   {
+    "entry": 110.12999725341797,
+    "day": "2026-07-30",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 1.09,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.85,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -1.76,
+    "pnl": -4.25,
+    "best_atr": 0.0,
+    "worst_atr": -0.31
+   },
+   {
+    "entry": 9.06,
+    "day": "2026-08-05",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.73208,
+    "target": 11.2432,
+    "atr": 0.5442,
+    "rr": 6.66,
+    "spy_day": 0.53,
+    "prior5_atr": 2.77,
+    "dist_atr": 0.31,
+    "dip_atr": -0.31,
+    "gap_atr": -0.2,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 8.473,
+    "exit_day": "2026-08-06",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.49,
+    "pnl": -15.64,
+    "best_atr": 0.2,
+    "worst_atr": -1.08
+   },
+   {
+    "entry": 76.26000213623047,
+    "day": "2026-08-11",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.54096000000001,
+    "target": 149.2017,
+    "atr": 5.9944,
+    "rr": 19.47,
+    "spy_day": -0.02,
+    "prior5_atr": 1.6,
+    "dist_atr": 0.15,
+    "dip_atr": -0.63,
+    "gap_atr": -0.63,
+    "btc_d1": 0.65,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.5032,
+    "exit_day": "2026-08-11",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -1.0,
+    "pnl": -2.43,
+    "best_atr": 0.0,
+    "worst_atr": -0.13
+   },
+   {
+    "entry": 8.93,
+    "day": "2026-08-05",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.48268,
+    "target": 11.4615,
+    "atr": 0.7482,
+    "rr": 5.66,
+    "spy_day": 0.53,
+    "prior5_atr": 1.34,
+    "dist_atr": -0.1,
+    "dip_atr": 0.09,
+    "gap_atr": 0.17,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 10,
+    "exit_rule": "plan",
+    "ticker": "ONDS",
+    "exit": 8.4657,
+    "exit_day": "2026-08-20",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -5.21,
+    "pnl": -12.56,
+    "best_atr": 1.42,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 34.869998931884766,
+    "day": "2026-08-24",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 34.66854,
+    "target": 50.6354,
+    "atr": 2.5486,
+    "rr": 9.43,
+    "spy_day": -0.34,
+    "prior5_atr": -1.02,
+    "dist_atr": 0.41,
+    "dip_atr": -0.93,
+    "gap_atr": -0.28,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "SMCI",
+    "exit": 34.6512,
+    "exit_day": "2026-08-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -0.64,
+    "pnl": -1.49,
+    "best_atr": 0.0,
+    "worst_atr": -0.09
+   },
+   {
+    "entry": 3.235300064086914,
+    "day": "2026-08-24",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 3.29068,
+    "target": 4.0106,
+    "atr": 0.1857,
+    "rr": 5.59,
+    "spy_day": -0.34,
+    "prior5_atr": 1.83,
+    "dist_atr": 0.53,
+    "dip_atr": -1.43,
+    "gap_atr": -0.48,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RXRX",
+    "exit": 3.2191,
+    "exit_day": "2026-08-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -0.51,
+    "pnl": -1.2,
+    "best_atr": 0.0,
+    "worst_atr": -0.08
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -13.38,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.39,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -14.22,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 1.51,
+    "day": "2026-08-26",
+    "minute": 640,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.42102,
+    "target": 2.1411,
+    "atr": 0.1428,
+    "rr": 7.09,
+    "spy_day": -0.07,
+    "prior5_atr": 0.91,
+    "dist_atr": 0.51,
+    "dip_atr": -0.49,
+    "gap_atr": -0.35,
+    "btc_d1": -0.12,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 23,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.4139,
+    "exit_day": "2026-08-28",
+    "exit_minute": 875,
+    "why": "stop",
+    "ret_pct": -6.38,
+    "pnl": -14.73,
+    "best_atr": 1.09,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 7.01,
+    "day": "2026-08-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 6.71306,
+    "target": 8.6373,
+    "atr": 0.4929,
+    "rr": 5.48,
+    "spy_day": 0.39,
+    "prior5_atr": -0.08,
+    "dist_atr": -0.02,
+    "dip_atr": 0.02,
+    "gap_atr": 0.1,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 24,
+    "exit_rule": "plan",
+    "ticker": "SOUN",
+    "exit": 6.6996,
+    "exit_day": "2026-09-03",
+    "exit_minute": 670,
+    "why": "stop",
+    "ret_pct": -4.44,
+    "pnl": -10.18,
+    "best_atr": 0.77,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 8.389900207519531,
+    "day": "2026-09-04",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.102279999999999,
+    "target": 10.5202,
+    "atr": 0.6152,
+    "rr": 5.58,
+    "spy_day": -0.08,
+    "prior5_atr": -1.2,
+    "dist_atr": 0.11,
+    "dip_atr": -0.24,
+    "gap_atr": -0.07,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "RCAT",
+    "exit": 8.0861,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.63,
+    "pnl": -8.24,
+    "best_atr": 0.84,
+    "worst_atr": -0.5
+   },
+   {
+    "entry": 15.670000076293945,
+    "day": "2026-09-09",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.27,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.14,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.34,
+    "pnl": -12.29,
+    "best_atr": 0.27,
+    "worst_atr": -0.81
+   },
+   {
+    "entry": 10.23,
+    "day": "2026-09-02",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 9.67514,
+    "target": 12.1601,
+    "atr": 0.9321,
+    "rr": 3.48,
+    "spy_day": 0.04,
+    "prior5_atr": -1.72,
+    "dist_atr": -0.0,
+    "dip_atr": 0.0,
+    "gap_atr": -0.24,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "MARA",
+    "exit": 12.1706,
+    "exit_day": "2026-09-11",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 18.96,
+    "pnl": 41.88,
+    "best_atr": 2.31,
+    "worst_atr": -0.2
+   },
+   {
+    "entry": 1.75,
+    "day": "2026-09-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6793,
+    "target": 2.3549,
+    "atr": 0.117,
+    "rr": 8.56,
+    "spy_day": 0.3,
+    "prior5_atr": 2.22,
+    "dist_atr": 0.35,
+    "dip_atr": -0.34,
+    "gap_atr": 0.09,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.6709,
+    "exit_day": "2026-09-29",
+    "exit_minute": 725,
+    "why": "stop",
+    "ret_pct": -4.54,
+    "pnl": -10.43,
+    "best_atr": 0.38,
+    "worst_atr": -0.68
+   }
+  ],
+  "open": [
+   {
+    "ticker": "UMAC",
+    "entry": 22.02,
+    "day": "2026-09-16",
+    "stop": 20.9767,
+    "target": 26.1202,
+    "last": 22.36,
+    "ret_pct": 1.54
+   },
+   {
+    "ticker": "WULF",
+    "entry": 14.55,
+    "day": "2026-10-01",
+    "stop": 13.9454,
+    "target": 17.754,
+    "last": 14.97,
+    "ret_pct": 2.89
+   }
+  ],
+  "bench": {
+   "SPY": 3.63,
+   "QQQ": 5.55
+  },
+  "start": 1000.0,
+  "orders_placed": 108,
+  "orders_filled": 20
+ },
+ {
+  "title": "Real-book rules + 1% gap allowance",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 1027.72,
+   "ret_pct": 2.77,
+   "trades": 20,
+   "wins": 3,
+   "win_rate": 15.0,
+   "avg_win": 20.29,
+   "avg_loss": -4.3,
+   "avg_trade": -0.61,
+   "profit_factor": 0.85,
+   "max_drawdown_pct": -8.55,
+   "realized": -25.44,
+   "unrealized": 53.16,
+   "by_exit": {
+    "target": 3,
+    "stop": 17
+   },
+   "fill_rate": "21/57"
+  },
+  "lessons": [
+   "stopped the session it was bought: 4 trades, 0 won, average -2.20%, total $-21.01",
+   "stopped on a later session: 13 trades, 0 won, average -4.95%, total $-148.03",
+   "stopped at the open (gapped through the stop): 8 trades, 0 won, average -5.28%, total $-94.73",
+   "never rose 0.5 ATR above the entry: 11 trades, 0 won, average -4.48%, total $-108.09",
+   "crypto-linked: 2 trades, 0 won, average -4.64%, total $-23.19",
+   "bought at the open after a gap down of 0.5+ ATR: 5 trades, 0 won, average -2.15%, total $-26.22",
+   "bought on a dip of 0.5+ ATR (any time): 10 trades, 2 won, average +0.78%, total $+16.27",
+   "bought less than 0.25 ATR under the prior close: 5 trades, 0 won, average -4.59%, total $-58.82",
+   "resting limit fills: 20 trades, 3 won, average -0.61%, total $-25.44",
+   "support tested 3+ times: 20 trades, 3 won, average -0.61%, total $-25.44"
+  ],
+  "sessions": [
+   "2026-07-15",
+   "2026-10-06",
+   59
+  ],
+  "equity": [
+   {
+    "day": "2026-07-15",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-16",
+    "equity": 990.6,
+    "positions": [
+     "IONQ",
+     "POET",
+     "QBTS"
+    ]
+   },
+   {
+    "day": "2026-07-17",
+    "equity": 971.24,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 967.97,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 975.65,
+    "positions": [
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 960.36,
+    "positions": [
+     "IONQ",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 958.82,
+    "positions": [
+     "HIVE",
+     "IONQ"
+    ]
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 934.51,
+    "positions": []
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 937.2,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 914.51,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 915.09,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 933.39,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 919.59,
+    "positions": [
+     "AFRM",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 944.42,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 984.26,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 974.88,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "PCVX"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 989.07,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 1000.92,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 1004.16,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1010.19,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1007.95,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1012.44,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1023.88,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1020.62,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 988.34,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "RKLB"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 979.74,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 971.63,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1014.47,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 995.51,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1025.53,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 1014.63,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1025.57,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1030.32,
+    "positions": [
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1033.28,
+    "positions": [
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1018.63,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1031.78,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1057.56,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1056.73,
+    "positions": [
+     "HIMX",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1075.26,
+    "positions": [
+     "HIMX",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1047.67,
+    "positions": [
+     "HIMX",
+     "RCAT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1036.06,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1054.17,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1029.34,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1022.1,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1018.86,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1030.68,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1042.01,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1066.08,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1067.82,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1051.05,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1065.13,
+    "positions": [
+     "HIMX",
+     "QUBT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1067.96,
+    "positions": [
+     "HIMX",
+     "QUBT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1038.82,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1034.88,
+    "positions": [
+     "BTBT",
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1031.2,
+    "positions": [
+     "BTBT",
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1031.07,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1039.97,
+    "positions": [
+     "HIMX",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1025.06,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1027.72,
+    "positions": [
+     "HIMX"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 7.84,
+    "day": "2026-07-16",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.31872,
+    "target": 11.395,
+    "atr": 0.8743,
+    "rr": 6.82,
+    "spy_day": -0.41,
+    "prior5_atr": -0.27,
+    "dist_atr": 0.49,
+    "dip_atr": -0.49,
+    "gap_atr": -0.38,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.3041,
+    "exit_day": "2026-07-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.85,
+    "pnl": -13.43,
+    "best_atr": 0.49,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 17.29,
+    "day": "2026-07-16",
+    "minute": 715,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 16.33176,
+    "target": 21.3127,
+    "atr": 1.5964,
+    "rr": 4.2,
+    "spy_day": -0.16,
+    "prior5_atr": -1.48,
+    "dist_atr": 0.61,
+    "dip_atr": -0.61,
+    "gap_atr": -0.17,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "QBTS",
+    "exit": 16.2991,
+    "exit_day": "2026-07-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.74,
+    "pnl": -13.16,
+    "best_atr": 0.06,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": -0.12,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -14.32,
+    "best_atr": 0.25,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 35.14,
+    "day": "2026-07-16",
+    "minute": 785,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 33.0126,
+    "target": 48.1298,
+    "atr": 3.54,
+    "rr": 6.11,
+    "spy_day": -0.28,
+    "prior5_atr": -2.14,
+    "dist_atr": 0.67,
+    "dip_atr": -0.67,
+    "gap_atr": -0.14,
+    "btc_d1": -0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "IONQ",
+    "exit": 32.9961,
+    "exit_day": "2026-07-24",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -6.11,
+    "pnl": -12.99,
+    "best_atr": 0.33,
+    "worst_atr": -0.65
+   },
+   {
+    "entry": 3.0999999046325684,
+    "day": "2026-07-23",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 2.96548,
+    "target": 5.2648,
+    "atr": 0.2507,
+    "rr": 13.88,
+    "spy_day": -0.81,
+    "prior5_atr": -0.04,
+    "dist_atr": 0.3,
+    "dip_atr": -0.36,
+    "gap_atr": -0.36,
+    "btc_d1": -0.87,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIVE",
+    "exit": 2.9507,
+    "exit_day": "2026-07-24",
+    "exit_minute": 940,
+    "why": "stop",
+    "ret_pct": -4.83,
+    "pnl": -11.6,
+    "best_atr": 0.8,
+    "worst_atr": -0.56
+   },
+   {
+    "entry": 94.56,
+    "day": "2026-07-27",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.7143,
+    "target": 117.8121,
+    "atr": 6.415,
+    "rr": 6.05,
+    "spy_day": -0.13,
+    "prior5_atr": -0.79,
+    "dist_atr": 0.05,
+    "dip_atr": -0.05,
+    "gap_atr": 0.33,
+    "btc_d1": -0.46,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.6689,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.12,
+    "pnl": -9.63,
+    "best_atr": 0.2,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 12.069999694824219,
+    "day": "2026-07-28",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.13,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -10.36,
+    "best_atr": 0.11,
+    "worst_atr": -0.58
+   },
+   {
+    "entry": 110.52999877929688,
+    "day": "2026-07-30",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 0.82,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.79,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -2.11,
+    "pnl": -4.83,
+    "best_atr": 0.1,
+    "worst_atr": -0.37
+   },
+   {
+    "entry": 53.02000045776367,
+    "day": "2026-07-29",
+    "minute": 620,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 51.744960000000006,
+    "target": 58.3156,
+    "atr": 2.1914,
+    "rr": 4.0,
+    "spy_day": -0.72,
+    "prior5_atr": -1.57,
+    "dist_atr": 0.7,
+    "dip_atr": -0.72,
+    "gap_atr": -0.05,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "PCVX",
+    "exit": 58.8356,
+    "exit_day": "2026-08-06",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 10.96,
+    "pnl": 25.06,
+    "best_atr": 2.7,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 76.2699966430664,
+    "day": "2026-08-11",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.54096000000001,
+    "target": 149.2017,
+    "atr": 5.9944,
+    "rr": 19.47,
+    "spy_day": 0.06,
+    "prior5_atr": 1.6,
+    "dist_atr": 0.15,
+    "dip_atr": -0.63,
+    "gap_atr": -0.63,
+    "btc_d1": 0.65,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.5032,
+    "exit_day": "2026-08-11",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -1.01,
+    "pnl": -2.54,
+    "best_atr": 0.44,
+    "worst_atr": -0.14
+   },
+   {
+    "entry": 79.14,
+    "day": "2026-08-12",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.45126,
+    "target": 149.1562,
+    "atr": 6.1459,
+    "rr": 18.98,
+    "spy_day": 0.33,
+    "prior5_atr": 0.9,
+    "dist_atr": 0.14,
+    "dip_atr": -0.14,
+    "gap_atr": 0.02,
+    "btc_d1": 0.98,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.4135,
+    "exit_day": "2026-08-19",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -4.72,
+    "pnl": -11.91,
+    "best_atr": 1.04,
+    "worst_atr": -0.7
+   },
+   {
+    "entry": 69.88,
+    "day": "2026-07-29",
+    "minute": 610,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 67.81363999999999,
+    "target": 85.7508,
+    "atr": 3.4481,
+    "rr": 7.68,
+    "spy_day": -0.74,
+    "prior5_atr": -0.67,
+    "dist_atr": 0.73,
+    "dip_atr": -0.73,
+    "gap_atr": -0.41,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "AFRM",
+    "exit": 85.8471,
+    "exit_day": "2026-08-28",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 22.84,
+    "pnl": 52.22,
+    "best_atr": 5.96,
+    "worst_atr": -0.08
+   },
+   {
+    "entry": 58.029998779296875,
+    "day": "2026-09-01",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 54.520379999999996,
+    "target": 88.658,
+    "atr": 8.5457,
+    "rr": 5.65,
+    "spy_day": -0.67,
+    "prior5_atr": -0.56,
+    "dist_atr": 0.11,
+    "dip_atr": -0.3,
+    "gap_atr": -0.3,
+    "btc_d1": -0.62,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "AXTI",
+    "exit": 54.4931,
+    "exit_day": "2026-09-03",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.11,
+    "pnl": -9.86,
+    "best_atr": 0.22,
+    "worst_atr": -0.47
+   },
+   {
+    "entry": 93.67,
+    "day": "2026-08-20",
+    "minute": 900,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.92518000000001,
+    "target": 118.3615,
+    "atr": 4.5827,
+    "rr": 9.0,
+    "spy_day": -0.73,
+    "prior5_atr": 0.19,
+    "dist_atr": 0.46,
+    "dip_atr": -0.46,
+    "gap_atr": 1.11,
+    "btc_d1": 3.76,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 119.0404,
+    "exit_day": "2026-09-03",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 27.08,
+    "pnl": 66.32,
+    "best_atr": 6.23,
+    "worst_atr": -0.0
+   },
+   {
+    "entry": 8.47,
+    "day": "2026-09-04",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.102279999999999,
+    "target": 10.5202,
+    "atr": 0.6152,
+    "rr": 5.58,
+    "spy_day": -0.09,
+    "prior5_atr": -1.2,
+    "dist_atr": 0.11,
+    "dip_atr": -0.11,
+    "gap_atr": -0.07,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "RCAT",
+    "exit": 8.0861,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.54,
+    "pnl": -12.0,
+    "best_atr": 0.71,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 15.630000114440918,
+    "day": "2026-09-09",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.24,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.18,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.09,
+    "pnl": -13.69,
+    "best_atr": 0.3,
+    "worst_atr": -0.77
+   },
+   {
+    "entry": 7.71999979019165,
+    "day": "2026-09-14",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.63966,
+    "target": 8.8202,
+    "atr": 0.3724,
+    "rr": 4.36,
+    "spy_day": -0.73,
+    "prior5_atr": 0.08,
+    "dist_atr": 0.34,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": 1.17,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 7.6244,
+    "exit_day": "2026-09-14",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -1.25,
+    "pnl": -3.28,
+    "best_atr": 0.0,
+    "worst_atr": -0.24
+   },
+   {
+    "entry": 8.859999656677246,
+    "day": "2026-09-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.702259999999999,
+    "target": 14.3353,
+    "atr": 0.3824,
+    "rr": 23.73,
+    "spy_day": -0.41,
+    "prior5_atr": 2.93,
+    "dist_atr": 0.49,
+    "dip_atr": -0.68,
+    "gap_atr": -0.68,
+    "btc_d1": -1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 8.6849,
+    "exit_day": "2026-09-28",
+    "exit_minute": 640,
+    "why": "stop",
+    "ret_pct": -1.98,
+    "pnl": -5.21,
+    "best_atr": 1.12,
+    "worst_atr": -0.42
+   },
+   {
+    "entry": 1.67,
+    "day": "2026-09-29",
+    "minute": 730,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6037400000000002,
+    "target": 2.3546,
+    "atr": 0.1181,
+    "rr": 10.33,
+    "spy_day": -0.34,
+    "prior5_atr": -1.19,
+    "dist_atr": 0.05,
+    "dip_atr": -0.08,
+    "gap_atr": 0.25,
+    "btc_d1": 0.98,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 11,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.5957,
+    "exit_day": "2026-10-01",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -4.46,
+    "pnl": -11.59,
+    "best_atr": 0.51,
+    "worst_atr": -0.59
+   },
+   {
+    "entry": 15.48,
+    "day": "2026-09-18",
+    "minute": 595,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 14.99194,
+    "target": 27.679,
+    "atr": 0.8216,
+    "rr": 24.99,
+    "spy_day": -0.38,
+    "prior5_atr": 1.01,
+    "dist_atr": 0.61,
+    "dip_atr": -0.62,
+    "gap_atr": 0.32,
+    "btc_d1": 2.08,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.962,
+    "exit_day": "2026-10-05",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.35,
+    "pnl": -8.64,
+    "best_atr": 2.65,
+    "worst_atr": -0.75
+   }
+  ],
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.06,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.85,
+    "ret_pct": 23.13
+   }
+  ],
+  "bench": {
+   "SPY": 3.63,
+   "QQQ": 5.55
+  },
+  "start": 1000.0,
+  "orders_placed": 57,
+  "orders_filled": 21
+ },
+ {
+  "title": "Real-book rules + S&P gate + 9:45 + 1% gap allowance",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 585,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 902.91,
+   "ret_pct": -9.71,
+   "trades": 18,
+   "wins": 1,
+   "win_rate": 5.6,
+   "avg_win": 18.96,
+   "avg_loss": -3.78,
+   "avg_trade": -2.52,
+   "profit_factor": 0.27,
+   "max_drawdown_pct": -11.18,
+   "realized": -107.2,
+   "unrealized": 10.11,
+   "by_exit": {
+    "target": 1,
+    "stop": 17
+   },
+   "fill_rate": "20/108"
+  },
+  "lessons": [
+   "stopped the session it was bought: 6 trades, 0 won, average -1.01%, total $-14.63",
+   "stopped on a later session: 11 trades, 0 won, average -5.30%, total $-131.95",
+   "stopped at the open (gapped through the stop): 5 trades, 0 won, average -5.19%, total $-61.00",
+   "never rose 0.5 ATR above the entry: 11 trades, 0 won, average -3.19%, total $-80.00",
+   "crypto-linked: 3 trades, 1 won, average +2.68%, total $+16.06",
+   "bought on a dip of 0.5+ ATR (any time): 8 trades, 0 won, average -1.96%, total $-37.33",
+   "bought less than 0.25 ATR under the prior close: 6 trades, 1 won, average -0.98%, total $-16.21",
+   "resting limit fills: 18 trades, 1 won, average -2.52%, total $-107.20",
+   "support tested 3+ times: 18 trades, 1 won, average -2.52%, total $-107.20"
+  ],
+  "sessions": [
+   "2026-07-15",
+   "2026-10-06",
+   59
+  ],
+  "equity": [
+   {
+    "day": "2026-07-15",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-16",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-17",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 989.47,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 985.32,
+    "positions": []
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 986.59,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 988.52,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 970.04,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 970.04,
+    "positions": []
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 965.78,
+    "positions": []
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 965.78,
+    "positions": []
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 965.78,
+    "positions": []
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 965.78,
+    "positions": []
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 957.68,
+    "positions": [
+     "ONDS",
+     "POET",
+     "QUBT"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 955.62,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 976.25,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 971.85,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 981.87,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 990.51,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 968.42,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 996.08,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 984.56,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 960.43,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 954.99,
+    "positions": [
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 938.49,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 937.93,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 919.78,
+    "positions": []
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 924.83,
+    "positions": [
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 924.27,
+    "positions": [
+     "BTBT",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 936.01,
+    "positions": [
+     "BTBT",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 897.99,
+    "positions": [
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 899.63,
+    "positions": [
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 889.46,
+    "positions": [
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 892.04,
+    "positions": [
+     "MARA",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 912.33,
+    "positions": [
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 905.9,
+    "positions": [
+     "MARA",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 925.29,
+    "positions": [
+     "MARA",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 905.41,
+    "positions": [
+     "MARA",
+     "RCAT",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 888.25,
+    "positions": [
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 903.27,
+    "positions": []
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 903.27,
+    "positions": []
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 903.27,
+    "positions": []
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 903.17,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 922.34,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 915.16,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 926.14,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 923.88,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 910.14,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 922.86,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 925.4,
+    "positions": [
+     "BTBT",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 913.93,
+    "positions": [
+     "BTBT",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 922.75,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 918.03,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 896.02,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 911.22,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 894.64,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 902.91,
+    "positions": [
+     "UMAC",
+     "WULF"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 745,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": 0.21,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -14.68,
+    "best_atr": 0.01,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 28.59000015258789,
+    "day": "2026-07-24",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 28.6244,
+    "target": 37.6653,
+    "atr": 2.4745,
+    "rr": 5.09,
+    "spy_day": 0.22,
+    "prior5_atr": 1.39,
+    "dist_atr": -0.09,
+    "dip_atr": -0.53,
+    "gap_atr": -0.29,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 28.5757,
+    "exit_day": "2026-07-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -0.06,
+    "pnl": -0.14,
+    "best_atr": 0.0,
+    "worst_atr": -0.11
+   },
+   {
+    "entry": 94.37,
+    "day": "2026-07-24",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.57806000000001,
+    "target": 117.8402,
+    "atr": 6.3214,
+    "rr": 6.19,
+    "spy_day": 0.02,
+    "prior5_atr": -0.7,
+    "dist_atr": 1.14,
+    "dip_atr": -1.14,
+    "gap_atr": -0.28,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.5328,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.07,
+    "pnl": -10.04,
+    "best_atr": 0.8,
+    "worst_atr": -0.72
+   },
+   {
+    "entry": 11.779999732971191,
+    "day": "2026-07-28",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.21,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -1.05,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -2.07,
+    "pnl": -5.11,
+    "best_atr": 0.06,
+    "worst_atr": -0.26
+   },
+   {
+    "entry": 110.12999725341797,
+    "day": "2026-07-30",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 1.09,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.85,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -1.76,
+    "pnl": -4.26,
+    "best_atr": 0.0,
+    "worst_atr": -0.31
+   },
+   {
+    "entry": 9.06,
+    "day": "2026-08-05",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.73208,
+    "target": 11.2432,
+    "atr": 0.5442,
+    "rr": 6.66,
+    "spy_day": 0.53,
+    "prior5_atr": 2.77,
+    "dist_atr": 0.31,
+    "dip_atr": -0.31,
+    "gap_atr": -0.2,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "QUBT",
+    "exit": 8.473,
+    "exit_day": "2026-08-06",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.49,
+    "pnl": -15.66,
+    "best_atr": 0.2,
+    "worst_atr": -1.08
+   },
+   {
+    "entry": 76.26000213623047,
+    "day": "2026-08-11",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 75.54096000000001,
+    "target": 149.2017,
+    "atr": 5.9944,
+    "rr": 19.47,
+    "spy_day": -0.02,
+    "prior5_atr": 1.6,
+    "dist_atr": 0.15,
+    "dip_atr": -0.63,
+    "gap_atr": -0.63,
+    "btc_d1": 0.65,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RKLB",
+    "exit": 75.5032,
+    "exit_day": "2026-08-11",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -1.0,
+    "pnl": -2.43,
+    "best_atr": 0.0,
+    "worst_atr": -0.13
+   },
+   {
+    "entry": 8.93,
+    "day": "2026-08-05",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.48268,
+    "target": 11.4615,
+    "atr": 0.7482,
+    "rr": 5.66,
+    "spy_day": 0.53,
+    "prior5_atr": 1.34,
+    "dist_atr": -0.1,
+    "dip_atr": 0.09,
+    "gap_atr": 0.17,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 10,
+    "exit_rule": "plan",
+    "ticker": "ONDS",
+    "exit": 8.4657,
+    "exit_day": "2026-08-20",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -5.21,
+    "pnl": -12.55,
+    "best_atr": 1.42,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 34.869998931884766,
+    "day": "2026-08-24",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 34.66854,
+    "target": 50.6354,
+    "atr": 2.5486,
+    "rr": 9.43,
+    "spy_day": -0.34,
+    "prior5_atr": -1.02,
+    "dist_atr": 0.41,
+    "dip_atr": -0.93,
+    "gap_atr": -0.28,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "SMCI",
+    "exit": 34.6512,
+    "exit_day": "2026-08-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -0.64,
+    "pnl": -1.49,
+    "best_atr": 0.0,
+    "worst_atr": -0.09
+   },
+   {
+    "entry": 3.235300064086914,
+    "day": "2026-08-24",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 3.29068,
+    "target": 4.0106,
+    "atr": 0.1857,
+    "rr": 5.59,
+    "spy_day": -0.34,
+    "prior5_atr": 1.83,
+    "dist_atr": 0.53,
+    "dip_atr": -1.43,
+    "gap_atr": -0.48,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RXRX",
+    "exit": 3.2191,
+    "exit_day": "2026-08-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -0.51,
+    "pnl": -1.2,
+    "best_atr": 0.0,
+    "worst_atr": -0.08
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -12.66,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.39,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -12.22,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 1.51,
+    "day": "2026-08-26",
+    "minute": 640,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.42102,
+    "target": 2.1411,
+    "atr": 0.1428,
+    "rr": 7.09,
+    "spy_day": -0.07,
+    "prior5_atr": 0.91,
+    "dist_atr": 0.51,
+    "dip_atr": -0.49,
+    "gap_atr": -0.35,
+    "btc_d1": -0.12,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 23,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.4139,
+    "exit_day": "2026-08-28",
+    "exit_minute": 875,
+    "why": "stop",
+    "ret_pct": -6.38,
+    "pnl": -12.85,
+    "best_atr": 1.09,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 7.01,
+    "day": "2026-08-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 6.71306,
+    "target": 8.6373,
+    "atr": 0.4929,
+    "rr": 5.48,
+    "spy_day": 0.39,
+    "prior5_atr": -0.08,
+    "dist_atr": -0.02,
+    "dip_atr": 0.02,
+    "gap_atr": 0.1,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 24,
+    "exit_rule": "plan",
+    "ticker": "SOUN",
+    "exit": 6.6996,
+    "exit_day": "2026-09-03",
+    "exit_minute": 670,
+    "why": "stop",
+    "ret_pct": -4.44,
+    "pnl": -10.2,
+    "best_atr": 0.77,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 8.389900207519531,
+    "day": "2026-09-04",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 8.102279999999999,
+    "target": 10.5202,
+    "atr": 0.6152,
+    "rr": 5.58,
+    "spy_day": -0.08,
+    "prior5_atr": -1.2,
+    "dist_atr": 0.11,
+    "dip_atr": -0.24,
+    "gap_atr": -0.07,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "RCAT",
+    "exit": 8.0861,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.63,
+    "pnl": -8.28,
+    "best_atr": 0.84,
+    "worst_atr": -0.5
+   },
+   {
+    "entry": 15.670000076293945,
+    "day": "2026-09-09",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.27,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.14,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.34,
+    "pnl": -12.34,
+    "best_atr": 0.27,
+    "worst_atr": -0.81
+   },
+   {
+    "entry": 10.23,
+    "day": "2026-09-02",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 9.67514,
+    "target": 12.1601,
+    "atr": 0.9321,
+    "rr": 3.48,
+    "spy_day": 0.04,
+    "prior5_atr": -1.72,
+    "dist_atr": -0.0,
+    "dip_atr": 0.0,
+    "gap_atr": -0.24,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "MARA",
+    "exit": 12.1706,
+    "exit_day": "2026-09-11",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 18.96,
+    "pnl": 39.38,
+    "best_atr": 2.31,
+    "worst_atr": -0.2
+   },
+   {
+    "entry": 1.75,
+    "day": "2026-09-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6793,
+    "target": 2.3549,
+    "atr": 0.117,
+    "rr": 8.56,
+    "spy_day": 0.3,
+    "prior5_atr": 2.22,
+    "dist_atr": 0.35,
+    "dip_atr": -0.34,
+    "gap_atr": 0.09,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.6709,
+    "exit_day": "2026-09-29",
+    "exit_minute": 725,
+    "why": "stop",
+    "ret_pct": -4.54,
+    "pnl": -10.47,
+    "best_atr": 0.38,
+    "worst_atr": -0.68
+   }
+  ],
+  "open": [
+   {
+    "ticker": "UMAC",
+    "entry": 22.02,
+    "day": "2026-09-16",
+    "stop": 20.9767,
+    "target": 26.1202,
+    "last": 22.36,
+    "ret_pct": 1.54
+   },
+   {
+    "ticker": "WULF",
+    "entry": 14.55,
+    "day": "2026-10-01",
+    "stop": 13.9454,
+    "target": 17.754,
+    "last": 14.97,
+    "ret_pct": 2.89
+   }
+  ],
+  "bench": {
+   "SPY": 3.63,
+   "QQQ": 5.55
+  },
+  "start": 1000.0,
+  "orders_placed": 108,
+  "orders_filled": 20
+ }
+]

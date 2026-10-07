@@ -196,6 +196,21 @@ def mark(q: dict) -> tuple[float | None, str | None, str]:
     return (float(px) if px is not None else None), t, "regular"
 
 
+def ref_close(q: dict) -> float | None:
+    """The close today's move is measured from. Before the open, Yahoo's previousClose is the close of the session
+    before the last one (two sessions back) while price is the last close, so a pre-market print compared with
+    prev_close showed a two-day move (Oct 7: TEM -15.9% 'pre-market' was -2.2% on the night). When the newest print
+    is from a later ET day than the regular price, the regular price is the reference."""
+    t, et_ = q.get("time"), q.get("ext_time")
+    if q.get("price") and t and et_ and et_ > t:
+        try:
+            if et_date(parse_ts(t)) < et_date(parse_ts(et_)):
+                return float(q["price"])
+        except (TypeError, ValueError):
+            pass
+    return q.get("prev_close")
+
+
 def sell_fees(qty: float, gross: float, cfg: dict) -> float:
     em = cfg["execution_model"]
     sec = ceil_cents(gross * em["sec_fee_per_million"] / 1_000_000)

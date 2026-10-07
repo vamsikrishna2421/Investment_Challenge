@@ -68,15 +68,19 @@ LOOKBACK = 120
 MIN_ATR_PCT = 4.0
 STOP_ATR = 0.6  # the stop sits this many ATR under support
 MAX_SIZE_PCT = 25.0  # a position is at most this % of equity ...
-RISK_PCT = 1.5  # ... and loses at most this % of equity at its stop (replay test, Oct 6: RUNBOOK 2d)
+RISK_PCT = 1.5  # ... and loses at most this % of equity at its stop (replay test, Oct 6: RUNBOOK 2d) ...
+GAP_PCT = 1.0  # ... counting a gap allowance: half the replay's stops gapped through at the open and filled on
+# average 1.06% under their price (median 0.2%, 90th percentile 2.9%; 700 sessions, Oct 7); a 1% allowance did
+# better than the plain stop distance in all four paper-rule samples and three of four real-book ones, with smaller
+# drawdowns (research/replay/*-lessons.md, *-realbook.md, research/backtests/lessons-2026-10-07.md)
 
 
 def size_pct(entry: float, stop: float) -> float:
-    """Position size in % of equity: 25%, cut so the stop loses at most RISK_PCT of equity (a stop 8% under the
-    entry gets 18.75%; GPUS's 9-10% stops in the replay lost 2.3-2.5% of equity at full size)."""
+    """Position size in % of equity: 25%, cut so the stop plus a GAP_PCT gap loses at most RISK_PCT of equity (a
+    stop 8% under the entry gets 16.7%; GPUS's 9-10% stops in the replay lost 2.3-2.5% of equity at full size)."""
     if entry <= stop:
         return 0.0
-    return round(min(MAX_SIZE_PCT, RISK_PCT / ((entry - stop) / entry)), 1)
+    return round(min(MAX_SIZE_PCT, RISK_PCT / ((entry - stop) / entry + GAP_PCT / 100)), 1)
 MIN_DOLLAR_VOL = 15e6
 
 
@@ -336,8 +340,9 @@ def check(a) -> int:
             line += f" low {fmt(c['day_low'])}"
         q = quotes.get(r["ticker"]) or {}
         dip = None
-        if q.get("prev_close") and c["price"] and r.get("atr"):
-            day = (c["price"] / q["prev_close"] - 1) * 100
+        ref = pfm.ref_close(q)
+        if ref and c["price"] and r.get("atr"):
+            day = (c["price"] / ref - 1) * 100
             dip = day / (r["atr"] / c["price"] * 100)
             line += f" day {day:+.1f}% ({dip:+.2f} ATR)"
         if c["status"] in ("buy", "bounce") and c["price"]:

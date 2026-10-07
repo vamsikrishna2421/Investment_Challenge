@@ -1,0 +1,509 @@
+[
+ {
+  "title": "Real-book rules, no S&P gate, limits from the open",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 973.94,
+   "ret_pct": -2.61,
+   "trades": 260,
+   "wins": 40,
+   "win_rate": 15.4,
+   "avg_win": 28.05,
+   "avg_loss": -5.25,
+   "avg_trade": -0.13,
+   "profit_factor": 0.99,
+   "max_drawdown_pct": -42.48,
+   "realized": -33.17,
+   "unrealized": 7.11,
+   "by_exit": {
+    "target": 40,
+    "stop": 220
+   },
+   "fill_rate": "261/695"
+  },
+  "lessons": [
+   "stopped the session it was bought: 63 trades, 0 won, average -3.77%, total $-530.43",
+   "stopped on a later session: 157 trades, 0 won, average -5.85%, total $-1838.70",
+   "stopped at the open (gapped through the stop): 97 trades, 0 won, average -6.19%, total $-1166.21",
+   "never rose 0.5 ATR above the entry: 125 trades, 0 won, average -4.87%, total $-1283.85",
+   "crypto-linked: 43 trades, 8 won, average +1.01%, total $+87.55",
+   "bought at the open after a gap down of 0.5+ ATR: 24 trades, 2 won, average -0.77%, total $-59.57",
+   "bought on a dip of 0.5+ ATR (any time): 86 trades, 16 won, average +1.77%, total $+300.51",
+   "bought less than 0.25 ATR under the prior close: 85 trades, 13 won, average -0.78%, total $-112.68",
+   "resting limit fills: 260 trades, 40 won, average -0.13%, total $-33.17",
+   "support tested 3+ times: 260 trades, 40 won, average -0.13%, total $-33.17"
+  ],
+  "sessions": [
+   "2023-12-20",
+   "2026-10-06",
+   700
+  ],
+  "bench": {
+   "SPY": 64.07,
+   "QQQ": 85.66
+  },
+  "open": [
+   {
+    "ticker": "WULF",
+    "entry": 14.55,
+    "day": "2026-09-30",
+    "stop": 13.936,
+    "target": 17.7637,
+    "last": 14.97,
+    "ret_pct": 2.89
+   }
+  ]
+ },
+ {
+  "title": "Real-book rules + S&P gate 0.35% (live real book)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 1200.42,
+   "ret_pct": 20.04,
+   "trades": 212,
+   "wins": 39,
+   "win_rate": 18.4,
+   "avg_win": 25.01,
+   "avg_loss": -5.43,
+   "avg_trade": 0.17,
+   "profit_factor": 1.06,
+   "max_drawdown_pct": -30.42,
+   "realized": 125.21,
+   "unrealized": 75.21,
+   "by_exit": {
+    "target": 39,
+    "stop": 173
+   },
+   "fill_rate": "213/918"
+  },
+  "lessons": [
+   "stopped the session it was bought: 45 trades, 0 won, average -4.09%, total $-426.29",
+   "stopped on a later session: 128 trades, 0 won, average -5.91%, total $-1650.84",
+   "stopped at the open (gapped through the stop): 77 trades, 0 won, average -6.30%, total $-1023.72",
+   "never rose 0.5 ATR above the entry: 92 trades, 0 won, average -5.12%, total $-1073.54",
+   "crypto-linked: 37 trades, 8 won, average +1.00%, total $+108.84",
+   "bought at the open after a gap down of 0.5+ ATR: 14 trades, 1 won, average -2.10%, total $-82.84",
+   "bought on a dip of 0.5+ ATR (any time): 47 trades, 9 won, average +1.31%, total $+80.82",
+   "bought less than 0.25 ATR under the prior close: 95 trades, 21 won, average +1.15%, total $+319.12",
+   "resting limit fills: 212 trades, 39 won, average +0.17%, total $+125.21",
+   "support tested 3+ times: 212 trades, 39 won, average +0.17%, total $+125.21"
+  ],
+  "sessions": [
+   "2023-12-20",
+   "2026-10-06",
+   700
+  ],
+  "bench": {
+   "SPY": 64.07,
+   "QQQ": 85.66
+  },
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.06,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 14.85,
+    "ret_pct": 23.13
+   }
+  ]
+ },
+ {
+  "title": "Real-book rules + entries from 9:45",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 585,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 793.08,
+   "ret_pct": -20.69,
+   "trades": 266,
+   "wins": 33,
+   "win_rate": 12.4,
+   "avg_win": 26.79,
+   "avg_loss": -4.53,
+   "avg_trade": -0.65,
+   "profit_factor": 0.88,
+   "max_drawdown_pct": -53.96,
+   "realized": -214.34,
+   "unrealized": 7.42,
+   "by_exit": {
+    "target": 33,
+    "stop": 233
+   },
+   "fill_rate": "267/836"
+  },
+  "lessons": [
+   "stopped the session it was bought: 63 trades, 0 won, average -2.03%, total $-222.71",
+   "stopped on a later session: 170 trades, 0 won, average -5.46%, total $-1536.48",
+   "stopped at the open (gapped through the stop): 106 trades, 0 won, average -5.41%, total $-972.30",
+   "never rose 0.5 ATR above the entry: 139 trades, 0 won, average -4.12%, total $-944.46",
+   "crypto-linked: 40 trades, 6 won, average -0.58%, total $-34.22",
+   "bought on a dip of 0.5+ ATR (any time): 117 trades, 12 won, average +0.65%, total $+83.13",
+   "bought less than 0.25 ATR under the prior close: 66 trades, 10 won, average -2.28%, total $-217.58",
+   "resting limit fills: 266 trades, 33 won, average -0.65%, total $-214.34",
+   "support tested 3+ times: 266 trades, 33 won, average -0.65%, total $-214.34"
+  ],
+  "sessions": [
+   "2023-12-20",
+   "2026-10-06",
+   700
+  ],
+  "bench": {
+   "SPY": 64.07,
+   "QQQ": 85.66
+  },
+  "open": [
+   {
+    "ticker": "WULF",
+    "entry": 14.43,
+    "day": "2026-10-01",
+    "stop": 13.9454,
+    "target": 17.754,
+    "last": 14.97,
+    "ret_pct": 3.74
+   }
+  ]
+ },
+ {
+  "title": "Real-book rules + S&P gate + entries from 9:45",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 585,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 0.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 943.6,
+   "ret_pct": -5.64,
+   "trades": 195,
+   "wins": 30,
+   "win_rate": 15.4,
+   "avg_win": 23.21,
+   "avg_loss": -4.71,
+   "avg_trade": -0.41,
+   "profit_factor": 0.95,
+   "max_drawdown_pct": -31.62,
+   "realized": -78.4,
+   "unrealized": 22.0,
+   "by_exit": {
+    "target": 30,
+    "stop": 165
+   },
+   "fill_rate": "197/1137"
+  },
+  "lessons": [
+   "stopped the session it was bought: 40 trades, 0 won, average -2.03%, total $-165.46",
+   "stopped on a later session: 125 trades, 0 won, average -5.57%, total $-1352.70",
+   "stopped at the open (gapped through the stop): 73 trades, 0 won, average -5.53%, total $-796.34",
+   "never rose 0.5 ATR above the entry: 93 trades, 0 won, average -4.29%, total $-753.92",
+   "crypto-linked: 32 trades, 7 won, average +1.17%, total $+98.00",
+   "bought on a dip of 0.5+ ATR (any time): 68 trades, 7 won, average +0.02%, total $-45.57",
+   "bought less than 0.25 ATR under the prior close: 69 trades, 12 won, average -1.51%, total $-164.74",
+   "resting limit fills: 195 trades, 30 won, average -0.41%, total $-78.40",
+   "support tested 3+ times: 195 trades, 30 won, average -0.41%, total $-78.40"
+  ],
+  "sessions": [
+   "2023-12-20",
+   "2026-10-06",
+   700
+  ],
+  "bench": {
+   "SPY": 64.07,
+   "QQQ": 85.66
+  },
+  "open": [
+   {
+    "ticker": "NOW",
+    "entry": 130.45,
+    "day": "2026-09-29",
+    "stop": 127.1179,
+    "target": 146.8987,
+    "last": 137.97,
+    "ret_pct": 5.76
+   },
+   {
+    "ticker": "WULF",
+    "entry": 14.43,
+    "day": "2026-10-01",
+    "stop": 13.9454,
+    "target": 17.754,
+    "last": 14.97,
+    "ret_pct": 3.74
+   }
+  ]
+ },
+ {
+  "title": "Real-book rules + 1% gap allowance",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 1040.36,
+   "ret_pct": 4.04,
+   "trades": 260,
+   "wins": 40,
+   "win_rate": 15.4,
+   "avg_win": 28.05,
+   "avg_loss": -5.26,
+   "avg_trade": -0.13,
+   "profit_factor": 1.01,
+   "max_drawdown_pct": -38.24,
+   "realized": 32.8,
+   "unrealized": 7.56,
+   "by_exit": {
+    "target": 40,
+    "stop": 220
+   },
+   "fill_rate": "261/695"
+  },
+  "lessons": [
+   "stopped the session it was bought: 63 trades, 0 won, average -3.77%, total $-530.09",
+   "stopped on a later session: 157 trades, 0 won, average -5.85%, total $-1819.65",
+   "stopped at the open (gapped through the stop): 97 trades, 0 won, average -6.19%, total $-1152.49",
+   "never rose 0.5 ATR above the entry: 125 trades, 0 won, average -4.87%, total $-1266.46",
+   "crypto-linked: 43 trades, 8 won, average +1.01%, total $+110.07",
+   "bought at the open after a gap down of 0.5+ ATR: 24 trades, 2 won, average -0.77%, total $-56.68",
+   "bought on a dip of 0.5+ ATR (any time): 86 trades, 16 won, average +1.77%, total $+315.39",
+   "bought less than 0.25 ATR under the prior close: 85 trades, 13 won, average -0.78%, total $-86.12",
+   "resting limit fills: 260 trades, 40 won, average -0.13%, total $+32.80",
+   "support tested 3+ times: 260 trades, 40 won, average -0.13%, total $+32.80"
+  ],
+  "sessions": [
+   "2023-12-20",
+   "2026-10-06",
+   700
+  ],
+  "bench": {
+   "SPY": 64.07,
+   "QQQ": 85.66
+  },
+  "open": [
+   {
+    "ticker": "WULF",
+    "entry": 14.55,
+    "day": "2026-09-30",
+    "stop": 13.936,
+    "target": 17.7637,
+    "last": 14.97,
+    "ret_pct": 2.89
+   }
+  ]
+ },
+ {
+  "title": "Real-book rules + S&P gate + 9:45 + 1% gap allowance",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 585,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3
+  },
+  "summary": {
+   "final": 1003.05,
+   "ret_pct": 0.3,
+   "trades": 195,
+   "wins": 30,
+   "win_rate": 15.4,
+   "avg_win": 23.21,
+   "avg_loss": -4.71,
+   "avg_trade": -0.41,
+   "profit_factor": 0.99,
+   "max_drawdown_pct": -26.92,
+   "realized": -20.37,
+   "unrealized": 23.42,
+   "by_exit": {
+    "target": 30,
+    "stop": 165
+   },
+   "fill_rate": "197/1137"
+  },
+  "lessons": [
+   "stopped the session it was bought: 40 trades, 0 won, average -2.03%, total $-164.22",
+   "stopped on a later session: 125 trades, 0 won, average -5.57%, total $-1322.71",
+   "stopped at the open (gapped through the stop): 73 trades, 0 won, average -5.53%, total $-779.48",
+   "never rose 0.5 ATR above the entry: 93 trades, 0 won, average -4.29%, total $-738.32",
+   "crypto-linked: 32 trades, 7 won, average +1.17%, total $+115.92",
+   "bought on a dip of 0.5+ ATR (any time): 68 trades, 7 won, average +0.02%, total $-43.92",
+   "bought less than 0.25 ATR under the prior close: 69 trades, 12 won, average -1.51%, total $-151.20",
+   "resting limit fills: 195 trades, 30 won, average -0.41%, total $-20.37",
+   "support tested 3+ times: 195 trades, 30 won, average -0.41%, total $-20.37"
+  ],
+  "sessions": [
+   "2023-12-20",
+   "2026-10-06",
+   700
+  ],
+  "bench": {
+   "SPY": 64.07,
+   "QQQ": 85.66
+  },
+  "open": [
+   {
+    "ticker": "NOW",
+    "entry": 130.45,
+    "day": "2026-09-29",
+    "stop": 127.1179,
+    "target": 146.8987,
+    "last": 137.97,
+    "ret_pct": 5.76
+   },
+   {
+    "ticker": "WULF",
+    "entry": 14.43,
+    "day": "2026-10-01",
+    "stop": 13.9454,
+    "target": 17.754,
+    "last": 14.97,
+    "ret_pct": 3.74
+   }
+  ]
+ }
+]

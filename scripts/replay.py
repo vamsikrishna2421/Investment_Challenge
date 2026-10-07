@@ -56,7 +56,9 @@ RUN_BARS = set(range(590, 960, 15))  # bars starting 9:50, 10:05, ...: they end 
 LAST_BAR = 955
 DEFAULTS = {"limit": "support", "stop_atr": 0.6, "btc_gate": "on", "rank": "dip", "runs": "on", "max_hold": 0,
             "entry": "radar", "limit_until": 960, "tested_only": "off", "entry_until": 960, "entry_from": 0, "risk_pct": lv.RISK_PCT,
-            "protect": "none", "protect_at": 1.0, "protect_trail": 1.0, "target_atr": 0.0, "target_first": "off"}
+            "protect": "none", "protect_at": 1.0, "protect_trail": 1.0, "target_atr": 0.0, "target_first": "off",
+            "gap_pct": 0.0, "min_stop_atr": 0.0, "max_drop_atr": 0.0, "min_dip_atr": 0.0, "spy_gate": 0.0,
+            "gap_stop": "open", "min_strength": 0, "min_rr": 1.5, "slots": SLOTS}
 GRID = [
     ("Live rules: limits at support, stop 0.6 ATR under it", {}),
     ("Limits at the zone top", {"limit": "top"}),
@@ -113,6 +115,42 @@ TARGETS = [
     ("Entry + 1.5 ATR", {"target_atr": 1.5}),
     ("Entry + 2 ATR", {"target_atr": 2.0}),
     ("Entry + 3 ATR", {"target_atr": 3.0}),
+]
+
+# The lessons of Oct 7 (two stops gapped at the open, a resting buy filled on a red open before the S&P gate could
+# act, a stop 0.4 ATR under the entry): each variant changes one thing against the live rules.
+#   entry_from    no limit fills or run buys before that minute (585 = 9:45; on hourly bars the first hour)
+#   spy_gate      no limit fills or run buys while SPY is down that % on the day; open buy limits are cancelled then
+#   gap_pct       size on the stop distance plus this % of the price (an allowance for a gap through the stop)
+#   min_stop_atr  no entry closer than this many ATR above its stop
+#   max_drop_atr  no entry while the stock is down more than this many ATR from the prior close
+#   min_dip_atr   entries only this many ATR or more under the prior close (0: off)
+#   gap_stop      wait: a stop gapped through at the open sells at the 9:55 run (hourly: the first bar's close)
+#                 if the price is still at or under it, otherwise the stop rests again
+LESSONS = [
+    ("Live rules", {}),
+    ("No entries before 9:45", {"entry_from": 585}),
+    ("No entries while SPY is down 0.35%+ (orders cancelled)", {"spy_gate": 0.35}),
+    ("Both: entries from 9:45, S&P gate 0.35%", {"entry_from": 585, "spy_gate": 0.35}),
+    ("Size on the stop distance plus a 1% gap allowance", {"gap_pct": 1.0}),
+    ("Size on the stop distance plus a 2% gap allowance", {"gap_pct": 2.0}),
+    ("No entry within 0.3 ATR of its stop", {"min_stop_atr": 0.3}),
+    ("No entry within 0.45 ATR of its stop", {"min_stop_atr": 0.45}),
+    ("No entry while down 1.0+ ATR on the day", {"max_drop_atr": 1.0}),
+    ("No entry while down 1.5+ ATR on the day", {"max_drop_atr": 1.5}),
+    ("Entries only 0.25+ ATR under the prior close", {"min_dip_atr": 0.25}),
+    ("Gap through the stop: sell at 9:55 if still under", {"gap_stop": "wait"}),
+]
+# The real book's rules, roughly (real.py: DAY limits at support tested 3+ times with R:R 2.5+, 3 positions, no run
+# buys; its 5-session filter and 1 crypto-linked cap are not modelled), with and without the S&P gate and 9:45 start.
+_RB = {"runs": "off", "min_strength": 3, "min_rr": 2.5, "slots": 3}
+REALBOOK = [
+    ("Real-book rules, no S&P gate, limits from the open", dict(_RB)),
+    ("Real-book rules + S&P gate 0.35% (live real book)", {**_RB, "spy_gate": 0.35}),
+    ("Real-book rules + entries from 9:45", {**_RB, "entry_from": 585}),
+    ("Real-book rules + S&P gate + entries from 9:45", {**_RB, "spy_gate": 0.35, "entry_from": 585}),
+    ("Real-book rules + 1% gap allowance", {**_RB, "gap_pct": 1.0}),
+    ("Real-book rules + S&P gate + 9:45 + 1% gap allowance", {**_RB, "spy_gate": 0.35, "entry_from": 585, "gap_pct": 1.0}),
 ]
 
 
@@ -304,8 +342,30 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
             """25% of equity; with risk_pct, no more than that % of equity lost at the stop."""
             usd = eq * SIZE
             if o["risk_pct"] and entry > stop:
-                usd = min(usd, eq * o["risk_pct"] / 100 / ((entry - stop) / entry))
+                usd = min(usd, eq * o["risk_pct"] / 100 / ((entry - stop) / entry + o["gap_pct"] / 100))
             return usd
+
+        def spy_chg(m):
+            """SPY against its prior close at the end of bar m (the last bar at or before it)."""
+            if not spy_prev or not spy:
+                return None
+            ks = [k for k in spy if k <= m]
+            return (spy[max(ks)] / spy_prev - 1) * 100 if ks else None
+
+        def entry_ok(s, px, r, m):
+            """The Oct 7 lesson filters (all off in the live rules)."""
+            a_ = r["atr"]
+            if o["min_stop_atr"] and px - r["stop"] < o["min_stop_atr"] * a_:
+                return False
+            if o["max_drop_atr"] and (prev[s] - px) / a_ > o["max_drop_atr"]:
+                return False
+            if o["min_dip_atr"] and (prev[s] - px) / a_ < o["min_dip_atr"]:
+                return False
+            if o["spy_gate"]:
+                c = spy_chg(m)
+                if c is not None and c <= -o["spy_gate"]:
+                    return False
+            return True
 
         def ctx(s, px, rr, r, status, m):
             first = bars[s].get(570)
@@ -328,7 +388,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
 
         # 8:40: resting DAY buy limits for the free slots
         if o["limit"] != "none" and radar:
-            slots = SLOTS - len(book.pos)
+            slots = o["slots"] - len(book.pos)
             crypto = sum(1 for t in book.pos if t in lv.CRYPTO_LINKED)
             cands = []
             for s, r in radar.items():
@@ -337,8 +397,10 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 lim = round(r["S"] if o["limit"] == "support" else r["Z"], 2 if r["S"] >= 1 else 4)
                 if (prev[s] / lim - 1) * 100 > NEAR or lim <= r["stop"]:
                     continue
+                if o["min_stop_atr"] and lim - r["stop"] < o["min_stop_atr"] * r["atr"]:
+                    continue
                 rr = (r["target"] - lim) / (lim - r["stop"])
-                if rr >= 1.5:
+                if rr >= o["min_rr"] and r["strength"] >= o["min_strength"]:
                     cands.append((rr, s, lim))
             for rr, s, lim in sorted(cands, reverse=True):
                 if slots <= 0:
@@ -387,9 +449,14 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 if not b or b[3] > x["limit"] - TICK or m < o["entry_from"]:
                     continue
                 px = b[1] if b[1] <= x["limit"] - TICK else x["limit"]
+                r = radar[s]
+                if not entry_ok(s, px, r, m):
+                    gated = o["spy_gate"] and (spy_chg(m) or 0) <= -o["spy_gate"]
+                    if gated or (o["max_drop_atr"] and (prev[s] - px) / r["atr"] > o["max_drop_atr"]):
+                        book.orders.remove(x)  # cancelled, as live: the S&P gate or a drop past the cap
+                    continue
                 book.orders.remove(x)
                 book.filled += 1
-                r = radar[s]
                 book.buy(s, px, x["usd"], day, n, m, "limit", ctx(s, px, x["rr"], r, "limit", m))
                 book.pos[s]["lo"] = min(px, b[3])
                 if b[3] <= r["stop"]:  # the same bar went through the stop: the cautious reading sells it there
@@ -407,6 +474,23 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                         book.sell(s, base * (1 - sb.slip(base)), day, m, "neutral", settle[day])
                     elif m == last_bar:
                         book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "close", settle[day])
+                    continue
+                if p.get("gap_wait"):
+                    p["hi"], p["lo"] = max(p["hi"], b[2]), min(p["lo"], b[3])
+                    if m >= (590 if step == 5 else 570):
+                        if b[4] <= p["stop"]:
+                            book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "stop", settle[day])
+                        else:
+                            p["gap_wait"] = False
+                    continue
+                if (b[3] <= p["stop"] and o["gap_stop"] == "wait" and m == 570 and b[1] < p["stop"]
+                        and p["day"] != day):
+                    p["gap_wait"], p["lo"] = True, min(p["lo"], b[3])
+                    if step != 5:  # hourly: decide at the first bar's close
+                        if b[4] <= p["stop"]:
+                            book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "stop", settle[day])
+                        else:
+                            p["gap_wait"] = False
                     continue
                 if b[3] <= p["stop"]:
                     base = b[1] if b[1] < p["stop"] else p["stop"]
@@ -427,9 +511,11 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 b = bars.get(s, {}).get(m)
                 if b and book.pos[s]["exit_rule"] == "plan" and b[4] >= book.pos[s]["target"]:
                     book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "target", settle[day])
+            if o["spy_gate"] and (spy_chg(m) or 0) <= -o["spy_gate"]:
+                book.orders = []  # the S&P gate cancels open buy limits at a run
             if o["runs"] == "off" or not radar or m + step > o["entry_until"] or m + step <= o["entry_from"]:
                 continue
-            slots = SLOTS - len(book.pos) - len(book.orders)
+            slots = o["slots"] - len(book.pos) - len(book.orders)
             taken = set(book.pos) | {x["ticker"] for x in book.orders}
             crypto = sum(1 for t in taken if t in lv.CRYPTO_LINKED)
             cands = []
@@ -442,6 +528,8 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                     continue
                 rr = (r["target"] - px) / (px - r["stop"])
                 if not (px <= r["Z"] or day_low[s] <= r["Z"]) or rr < 1.5:
+                    continue
+                if not entry_ok(s, px, r, m):
                     continue
                 dip = (px - prev[s]) / r["atr"]
                 cands.append(((dip, -rr) if o["rank"] == "dip" else (-rr, dip), s, px, rr,
@@ -665,7 +753,8 @@ def main() -> int:
     ap.add_argument("--step", type=int, default=1, help="with --windows: sessions between window ends")
     ap.add_argument("--analyze", action="store_true", help="trade returns by entry context")
     ap.add_argument("--grid", action="store_true")
-    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets"], default="rules",
+    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets", "lessons", "realbook"],
+                    default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
                     help="size each position so the stop loses at most this % of equity (0: 25%% of equity)")
@@ -689,6 +778,10 @@ def main() -> int:
         GRID = EXITS
     if a.set == "targets":
         GRID = TARGETS
+    if a.set == "lessons":
+        GRID = LESSONS
+    if a.set == "realbook":
+        GRID = REALBOOK
     if a.grid and a.windows:
         return windows(data, a)
     if a.grid:

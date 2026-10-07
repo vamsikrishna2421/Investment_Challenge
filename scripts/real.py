@@ -10,7 +10,7 @@ private dashboard's snapshot (.cache/snapshot_real.json, collection snapshots_re
 goes into the public repo or site.
 
   python scripts/real.py run [--skip A,B]      # sync with account.json, then the actions to take, in order
-  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit --qty Q --price P
+  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit|stop_exit --qty Q --price P
                                 [--stop S --target T --why "..."]      # after each order placed
   python scripts/real.py record cancel --id ID [--why "..."]           # after each order cancelled
   python scripts/real.py record note --title "..." --body "..."        # a private journal entry
@@ -24,11 +24,13 @@ Rules (RUNBOOK 2e), stricter than the paper book because the money is real:
            crypto-linked at most 1 and only while the bitcoin gate is open, higher R:R first. No new orders while
            SPY is down 0.35%+ on the day, and open buy limits are cancelled then (trade_clues: fills on weak S&P
            days were stopped out more often).
-  size     whole shares; at most 25% of the account value, cut so the stop loses at most 1.5% of it, at most
+  size     whole shares; at most 25% of the account value, cut so the stop plus a gap allowance (levels.GAP_PCT,
+           1% of the price: gapped stops fill under their price) loses at most 1.5% of it, at most
            $300, never more than the cash (no margin borrowing).
   limits   3 positions plus open buy orders; no new orders after a $30 loss on the day; none at all below $900
            account value (Vamsi is told).
-  exits    a GTC stop-market sell at the plan stop right after a fill; at a run with the price at or above the
+  exits    a GTC stop-market sell at the plan stop right after a fill (when the price is already at or under the
+           stop, Robinhood rejects the stop: sell with a limit 0.5% under the bid, kind stop_exit); at a run with the price at or above the
            target (the sell-zone bottom), cancel the stop and sell with a limit at the bid. On the challenge's
            last day (Wed Nov 4) no new orders after 14:55, and at 15:40 everything is sold unless Vamsi says
            otherwise.
@@ -65,6 +67,8 @@ SNAPSHOT = ROOT / ".cache" / "snapshot_real.json"
 START_VALUE, START_UTC = 1000.0, "2026-10-06T13:30:00Z"
 MAX_POS, MIN_STRENGTH, MIN_RR, MAX_USD, NEAR = 3, 3, 2.5, 300.0, 8.0
 DAY_LOSS, KILL_VALUE, MAX_CRYPTO, SPY_MIN, MAX_RET5 = 30.0, 900.0, 1, -0.35, 0.43
+# Tested and rejected (Oct 7): placing the real book's buys only from 9:45 instead of before the open lost in all four
+# replay samples (research/replay/*-realbook.md): support limits filled on gap-down opens often catch the day's low.
 OPEN_STATES = {"new", "queued", "confirmed", "unconfirmed", "partially_filled"}
 # Odds that a buy limit k ATR under the price fills by the close, by the check time (ET minutes), from 61 radar
 # candidates' hourly bars over ~2 years (Oct 6, research/backtests/fill-odds-2026-10-06.md): all checks, and checks
@@ -163,14 +167,14 @@ def sync(s: dict, a: dict) -> list[str]:
             note(s, "trade", f"Bought {filled:g} {o['symbol']} at {avg:.4g}",
                  f"Buy limit {rec['price']} filled: {filled:g} shares at {avg:.4g} (${filled * avg:.2f}). Stop "
                  f"{rec['stop']}, target {rec['target']}. {rec.get('why', '')}", [o["symbol"]])
-        if rec["kind"] in ("stop", "exit") and o["state"] == "filled" and avg:
+        if rec["kind"] in ("stop", "exit", "stop_exit") and o["state"] == "filled" and avg:
             p = s["plans"].pop(o["symbol"], None)
             if p:
                 pnl = (avg - p["entry"]) * filled
                 s["closed"].append({**p, "exit": avg, "exit_qty": filled, "closed": o.get("last_transaction_at") or pfm.iso(now),
-                                    "why_exit": "stop" if rec["kind"] == "stop" else "target", "pnl": round(pnl, 2),
+                                    "why_exit": "target" if rec["kind"] == "exit" else "stop", "pnl": round(pnl, 2),
                                     "ret_pct": round((avg / p["entry"] - 1) * 100, 2)})
-                note(s, "review", f"Sold {filled:g} {o['symbol']} at {avg:.4g} ({'stop' if rec['kind'] == 'stop' else 'target'})",
+                note(s, "review", f"Sold {filled:g} {o['symbol']} at {avg:.4g} ({'target' if rec['kind'] == 'exit' else 'stop'})",
                      f"Entry {p['entry']:.4g}, exit {avg:.4g}: {pnl:+.2f} ({(avg / p['entry'] - 1) * 100:+.2f}%). "
                      f"Plan: stop {p['stop']}, target {p['target']}. {p.get('why', '')}", [o["symbol"]])
     for sym in held:
@@ -230,7 +234,8 @@ def odds_of(sym: str, px: float | None, limit: float, radar: dict, q: dict, minu
     if not r or not r.get("atr") or px is None:
         return None
     k = max(0.0, (px - limit) / r["atr"])
-    up = bool(qq.get("prev_close")) and px >= qq["prev_close"] + 0.4 * r["atr"]
+    ref = pfm.ref_close(qq)
+    up = bool(ref) and px >= ref + 0.4 * r["atr"]
     return fill_odds(k, minute, up), k
 
 
@@ -241,7 +246,8 @@ def entry_action(x: dict, qty: int, extra: str = "") -> dict:
             "why": (f"radar support {x['limit']} tested {x['strength']}x, stop {x['stop']}, sell zone from "
                     f"{x['target']}, R:R {x['rr']}; {x['dist']:+.1f}% above support at {x['price']:.4g}; "
                     f"{x['ret5']:+.2f} ATR over 5 sessions; ${qty * x['limit']:.2f} risks "
-                    f"${qty * (x['limit'] - x['stop']):.2f}{extra}")}
+                    f"${qty * (x['limit'] - x['stop']):.2f} at the stop, "
+                    f"${qty * (x['limit'] - x['stop'] + x['limit'] * lv.GAP_PCT / 100):.2f} with a {lv.GAP_PCT:g}% gap{extra}")}
 
 
 def entry_candidates(s: dict, a: dict, skip: set[str]) -> tuple[list[dict], list[str]]:
@@ -279,7 +285,8 @@ def cmd_run(a_) -> int:
     day_pnl = value - s["day"]["start_value"]
     spy = q.get("SPY") or {}
     spy_px = price_of(spy)
-    spy_day = (spy_px / spy["prev_close"] - 1) * 100 if spy_px and spy.get("prev_close") else None
+    spy_ref = pfm.ref_close(spy)
+    spy_day = (spy_px / spy_ref - 1) * 100 if spy_px and spy_ref else None
     end = pfm.parse_ts(pfm.load_config()["end_utc"]).astimezone(pfm.ET)
     final_day = et.date() == end.date()
     print(f"real book {masked()} {pfm.iso(now)}: value ${value:.2f}, cash ${cash:.2f}, day {day_pnl:+.2f}, "
@@ -299,6 +306,15 @@ def cmd_run(a_) -> int:
             acts.append({"do": "place", "kind": "exit", "symbol": sym, "side": "sell", "type": "limit",
                          "limit_price": f"{tick(bid):g}" if bid else None, "quantity": f"{p['qty']:g}", "time_in_force": "gfd",
                          "why": (f"final liquidation at 15:40" if liquidate else f"{px:.4g} reached the target {p['target']}")})
+        elif sym not in stops and px is not None and px <= p["stop"]:
+            # Oct 7 lesson: Robinhood cancels a sell stop priced above the market at once, so a fill that lands at or
+            # under its stop (a gap through support) is sold now with a marketable limit 0.5% under the bid
+            lim = tick(min(bid or px, px) * 0.995)
+            acts.append({"do": "place", "kind": "stop_exit", "symbol": sym, "side": "sell", "type": "limit",
+                         "limit_price": f"{lim:g}", "quantity": f"{p['qty']:g}", "time_in_force": "gfd",
+                         "why": (f"{px:.4g} is at or under the plan stop {p['stop']} with no stop order resting (a sell "
+                                 f"stop above the market is rejected): sell now, limit {lim:g}; if the live quote is "
+                                 f"back above {p['stop']}, place the stop instead")})
         elif sym not in stops:
             acts.append({"do": "place", "kind": "stop", "symbol": sym, "side": "sell", "type": "stop_market",
                          "stop_price": f"{p['stop']:g}", "quantity": f"{p['qty']:g}", "time_in_force": "gtc",
@@ -361,8 +377,7 @@ def cmd_run(a_) -> int:
                 break
             if x["crypto"] and (crypto >= MAX_CRYPTO or not gate["ok"]):
                 continue
-            usd = min(value * lv.MAX_SIZE_PCT / 100, value * lv.RISK_PCT / 100 / ((x["limit"] - x["stop"]) / x["limit"]),
-                      MAX_USD, free)
+            usd = min(value * lv.size_pct(x["limit"], x["stop"]) / 100, MAX_USD, free)
             qty = math.floor(usd / x["limit"])
             if qty < 1:
                 print(f"    {x['symbol']}: ${usd:.2f} buys no whole share at {x['limit']}")
@@ -386,8 +401,7 @@ def cmd_run(a_) -> int:
             if pick is None:
                 print(f"  KEEP {o['symbol']}: {p_o:.0%} fill odds, but no waiting name has {SWAP_TO:.0%}+")
                 continue
-            usd = min(value * lv.MAX_SIZE_PCT / 100,
-                      value * lv.RISK_PCT / 100 / ((pick["limit"] - pick["stop"]) / pick["limit"]), MAX_USD, free + res)
+            usd = min(value * lv.size_pct(pick["limit"], pick["stop"]) / 100, MAX_USD, free + res)
             qty = math.floor(usd / pick["limit"])
             if qty < 1:
                 continue
@@ -415,7 +429,8 @@ def cmd_record(a_) -> int:
         s["orders"][a_.id] = rec
         if a_.kind == "stop" and rec["symbol"] in s["plans"]:
             s["plans"][rec["symbol"]]["stop_order_id"] = a_.id
-        verb = {"entry": "Buy limit", "manual": "Buy limit (Vamsi's order)", "stop": "Stop order", "exit": "Sell"}[a_.kind]
+        verb = {"entry": "Buy limit", "manual": "Buy limit (Vamsi's order)", "stop": "Stop order", "exit": "Sell",
+                "stop_exit": "Sell at the stop"}[a_.kind]
         note(s, "trade", f"{verb} placed: {rec['symbol']} {a_.qty:g} at {a_.price}",
              f"{verb} {rec['symbol']} {a_.qty:g} at {a_.price}" + (f", stop {a_.stop}, target {a_.target}" if a_.kind in ("entry", "manual") else "")
              + f". {a_.why}", [rec["symbol"]])

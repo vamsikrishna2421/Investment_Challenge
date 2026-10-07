@@ -433,6 +433,18 @@
         "CIFR",
         "HUT"
       ]
+    },
+    {
+      "id": "J0036",
+      "ts": "2026-10-07T14:38:40Z",
+      "kind": "research",
+      "title": "Oct 7 lessons tested: 1% gap allowance adopted, 9:45 entries and four other rules rejected",
+      "body": "Vamsi asked (Wed Oct 7, about 10:30 AM) for the day's lessons to be evaluated and applied at once, without waiting for approval. Seven candidate rules came out of this morning's stops; each was replayed against the live rules before anything changed (research/backtests/lessons-2026-10-07.md; reports in research/replay/*-lessons.md and *-realbook.md). Adoption test (RUNBOOK 2d): beat the live rules on the mean and the worst window of the 33 separate hourly 22-session windows without losing on the 5-minute windows.\n\nAdopted now:\n- Size on the stop distance plus a 1% gap allowance (levels.GAP_PCT). Half the replay's stops gapped through at the open and filled on average 1.06% under their price. Hourly windows: mean +3.1% against +2.6%, worst -24.2% against -25.4%; 5-minute windows: mean +5.2% against +4.8%. levels.py check and orders.py plan print the new size (a stop 10% under the entry now gets 13.6% of equity instead of 15%).\n- Mechanical fixes: pre-market moves are now measured from the last close (Yahoo's previousClose is two sessions back before the open: TEM showed -15.9% \"pre-market\" on a -2.2% night); a real-book position whose price is already under its stop is sold with a limit instead of a stop order the broker would reject.\n\nRejected after the test: entries only from 9:45 (worse in every real-book sample: support limits filled on gap-down opens often catch the low of the day); no entry within 0.3-0.45 ATR of its stop; no entry while down 1.0 or 1.5+ ATR on the day; selling a gapped stop at 9:55 instead of the open. Watch list: entries only 0.25+ ATR under the prior close (best over the last 60 sessions, mean +8.2% against +4.8% and 27 of 30 windows ahead of the S&P 500, but worse over 2.8 years: hourly-window mean +1.6% against +2.6%). The S&P gate stays out of the paper book (it cut the paper rules' returns in all four samples).\n\nSelf-review: the 9:45 rule was proposed from one trade and turned out to be the worst change tested. RUNBOOK 2a already says one trade changes nothing; this morning's proposals broke that rule and the replay caught it. Proposals now come with the test, not after it.",
+      "tickers": [
+        "POET",
+        "UMAC",
+        "TEM"
+      ]
     }
   ]
 }

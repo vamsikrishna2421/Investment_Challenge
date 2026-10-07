@@ -197,9 +197,10 @@ python3 scripts/levels.py build --save     # 16:20 post-close and the Sunday rev
   an auditor or accounting problem. Sector-wide moves, analyst notes and recap headlines do not cancel an entry:
   a stock that falls too far on minor news is the dip Vamsi wants to buy (Oct 5). Buy only with settled cash, every day: a stock bought with unsettled proceeds can't be
   sold before T+1, which would block its stop (and the 15:40 liquidation on the final day).
-* Size: at most 4 radar positions, each 25% of equity (about $250), cut so that its stop loses at most 1.5% of
-  equity: `levels.py check` and `orders.py plan` print the size (a stop 10% under the entry gets 15%; from Oct 6,
-  2d). Less when settled cash is short. At
+* Size: at most 4 radar positions, each 25% of equity (about $250), cut so that its stop plus a 1% gap allowance
+  loses at most 1.5% of equity: `levels.py check` and `orders.py plan` print the size (a stop 10% under the entry
+  gets 13.6%; from Oct 6, 2d; the gap allowance from Oct 7: gapped stops fill under their price). Less when
+  settled cash is short. At
   most 2 of them crypto-linked (`CRYPTO_LINKED` in `scripts/levels.py`: 13 of the first radar's 25 names move
   with bitcoin or ether, so four of them would be one bet; `check` tags them `[crypto]`). When more
   names trigger than slots or cash, take the deepest dip first: the price's distance below the prior close in
@@ -339,6 +340,17 @@ python3 scripts/replay.py --grid --set stops|times|sizing ...                   
   (hourly windows: means -0.1% to +3.1% against +3.4%; +3 ATR the closest, worst window -18.3% against -20.9%).
 * Rule for future changes: a new rule trades only after it beats the live rules on the mean and the worst window
   of the separate hourly 22-session windows without losing on the 5-minute windows. One window proves nothing.
+* Lessons of Oct 7 tested the same day (`--set lessons` for the paper rules, `--set realbook` for an approximation
+  of the real book's rules; `research/backtests/lessons-2026-10-07.md`). Adopted: size on the stop distance plus a
+  1% gap allowance (half the replay's stops gapped through at the open and filled on average 1.06% under their
+  price; it beat the live sizing on the hourly windows' mean and worst window for both rule sets without losing on
+  the 5-minute windows). Rejected under the rule above: entries only from 9:45 (worse in all four real-book samples:
+  support limits filled on gap-down opens often catch the day's low), no entry within 0.3-0.45 ATR of the stop,
+  no entry while down 1.0 or 1.5+ ATR on the day, entries only 0.25+ ATR under the prior close (the best over the
+  last 60 sessions, mean +8.2% against +4.8%, but worse over 2.8 years), and selling a gapped stop at 9:55 instead
+  of the open. The S&P gate stays in the real book (better in three of four samples, smaller worst windows) and
+  stays out of the paper book (it cut the paper rules' returns in all four, since their run entries buy the
+  bounce on red days).
 
 ## 2e. Real book: Robinhood agentic account (Vamsi, Tue Oct 6)
 
@@ -353,7 +365,7 @@ to trade it without asking (Oct 6). Every weekday run, right after `wires.py` (t
    the actions in order: stops and exits first, then cancels, then entries.
 3. Each action: `review_equity_order` (an alert that blocks the order, such as a halt or buying power: skip it and
    say so), then `place_equity_order` (a fresh `ref_id`, `market_hours` regular_hours) or `cancel_equity_order`;
-   then `python3 scripts/real.py record order --id ID --symbol X --kind entry|stop|exit --qty Q --price P
+   then `python3 scripts/real.py record order --id ID --symbol X --kind entry|stop|exit|stop_exit --qty Q --price P
    [--stop S --target T --why "..."]` or `real.py record cancel --id ID --why "..."`.
 
 Rules (`scripts/real.py`; stricter than the paper book because the money is real):
@@ -366,12 +378,15 @@ Rules (`scripts/real.py`; stricter than the paper book because the money is real
   15% (from its distance to the limit in ATR and the time of day; `research/backtests/fill-odds-2026-10-06.md`)
   is cancelled for the best waiting name with 30%+ odds that passes every entry rule; with none, it stays and is
   watched. `real.py run` prints each order's odds and lists the swap (cancel, then the new buy).
-* Size: whole shares; at most 25% of the account value, cut so the stop loses at most 1.5% of it, at most $300 an
-  order, never more than the cash.
+* Size: whole shares; at most 25% of the account value, cut so the stop plus a 1% gap allowance loses at most 1.5%
+  of it (Oct 7, 2d), at most $300 an order, never more than the cash.
 * Limits: 3 positions plus open buy orders; no new orders after a $30 loss on the day; none below $900 account
   value (tell Vamsi).
 * Exits: a GTC stop-market sell at the plan stop right after a fill; at a run with the price at or above the
-  target (the sell-zone bottom), cancel the stop and sell with a limit at the bid. Final day (Wed Nov 4): no new
+  target (the sell-zone bottom), cancel the stop and sell with a limit at the bid. When the price is already at
+  or under the plan stop and no stop rests (a fill that gapped through support), Robinhood cancels a sell stop
+  priced above the market at once (Oct 7), so `real.py run` lists a `stop_exit`: sell with a limit 0.5% under the
+  bid; if the live quote at the review is back above the stop, place the stop instead. Final day (Wed Nov 4): no new
   orders after 14:55; everything sold at the 15:40 run.
 * Vamsi's own orders (`real.py record order --kind manual`, e.g. CRSP 10 at 51 GTC, Oct 6): placed as he says, even
   past the size and risk caps; a fill gets its stop like any entry. The swap rule, the S&P gate and the trading

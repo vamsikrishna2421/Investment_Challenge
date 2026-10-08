@@ -612,6 +612,16 @@
       "tickers": [
         "SMCI"
       ]
+    },
+    {
+      "id": "J0049",
+      "ts": "2026-10-08T21:13:07Z",
+      "kind": "note",
+      "title": "PCVX offering priced at $64.00: the skip ends",
+      "body": "Vaxcyte's final prospectus supplements (424B5, filed Oct 8) price the stock offering at $64.00 a share: 7,412,500 shares plus pre-funded warrants for 400,000 shares ($500M gross, $60.64 a share to the company after the underwriting discount; a 30-day option on 1,171,875 more shares), alongside $500M of 1.50% convertible senior notes due 2032. The offering has priced, so the skip in place since Oct 6 (no orders until it priced) ends from the Oct 9 runs. PCVX closed at 65.02, 1.6% above the offering price and 12.5% above its radar buy zone (56.22-57.79), so no order is near.",
+      "tickers": [
+        "PCVX"
+      ]
     }
   ]
 }

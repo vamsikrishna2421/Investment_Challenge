@@ -1,5 +1,5 @@
 {
-  "strategy": "Fri Oct 9: holding SMCI (5.762 at 41.90) to its target 50.76 or stop 40.63. CIFR, HUT and APLD stopped Oct 8. $227.21 settles Oct 9 (the APLD sale): cash for one resting limit at support, non-crypto first while the bitcoin gate is shut: APLD 23.55, NNE 15.05, HIMS 27.12, ASTS 56.68 (BMNR 22.65, CRCL 77.02 if the gate opens). Radar 28 names. PCVX skipped until its offering prices. New buys: 25% of equity, cut so a stop plus a 1% gap allowance loses at most 1.5% of equity; no orders in halted or BROKEN names. Clue scan at 8:40 AM.",
+  "strategy": "Fri Oct 9: holding SMCI (5.762 at 41.90) to its target 50.76 or stop 40.63. CIFR, HUT and APLD stopped Oct 8. $227.21 settles Oct 9 (the APLD sale): cash for one resting limit at support, non-crypto first while the bitcoin gate is shut: APLD 23.55, NNE 15.05, HIMS 27.12, ASTS 56.68 (BMNR 22.65, CRCL 77.02 if the gate opens). Radar 28 names. PCVX's offering priced at $64.00 (final prospectus Oct 8), so it is no longer skipped. New buys: 25% of equity, cut so a stop plus a 1% gap allowance loses at most 1.5% of equity; no orders in halted or BROKEN names. Clue scan at 8:40 AM.",
   "focus": [
     "SPY",
     "QQQ",

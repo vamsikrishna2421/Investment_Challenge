@@ -565,6 +565,43 @@
         "HUT",
         "APLD"
       ]
+    },
+    {
+      "id": "J0046",
+      "ts": "2026-10-08T20:22:00Z",
+      "kind": "research",
+      "title": "Mover post-mortem 2026-10-08: no big up-moves",
+      "body": "Big moves today (at least one daily range, ATR) among the radar and its candidates, with the clues each showed at the prior close and why the routines did not catch it (clues.py postmortem; method in the script docstring).\nDown: CRWV -7.8%, HIMX -5.9%, HUT -10.9%, ORCL -5.5%, RIOT -9.2%, IREN -7.7%, AXTI -10.2%, BSP -7.5%, OKLO -6.1%, ALMU -7.5%, NBIS -7.3%, CLSK -7.7%, HIVE -6.9%, SMCI -4.8% (held).\nBase rate today: 0 of 25 names with 2+ clues (or a breakout watch) moved up 1.0+ ATR; 0 of 42 without did. One session is an anecdote; the 5-year clue backtest decides which clues count.",
+      "tickers": [
+        "CRWV",
+        "HIMX",
+        "HUT",
+        "ORCL",
+        "RIOT",
+        "IREN",
+        "AXTI",
+        "BSP",
+        "OKLO",
+        "ALMU",
+        "NBIS",
+        "CLSK"
+      ]
+    },
+    {
+      "id": "J0047",
+      "ts": "2026-10-08T20:24:59Z",
+      "kind": "review",
+      "title": "Day review Thu Oct 8: -$28.43 (-2.9%), equity $949.98; CIFR, HUT and APLD stopped, SMCI bought at support",
+      "body": "P&L: equity $949.98 at the close, -$28.43 on the day (-2.9%), -$50.02 (-5.00%) since the $1,000 start; S&P 500 +0.62% and Nasdaq-100 -0.19% over the same days, Russell 2000 -1.33%. Progress to $2,000: 47.5%; the target needs +110.5% in the 19 sessions left (Oct 9 to Nov 4).\n\nTrades: three stops and two resting buys filled, every closed position reviewed (J0040, J0042, J0044).\n- CIFR: bought Oct 5 at 15.06 (stop 14.11), stopped 14.0818 at the 9:30 open (T0008), -$16.29. It opened under its stop as bitcoin fell.\n- HUT: bought Oct 5 at 86.38 (stop 83.85), stopped 83.8081 at 10:00 (T0009), -$7.47.\n- APLD: resting limit at support filled 23.55 at 9:38 (T0007, stop 22.63, target 28.66); stopped 22.6149 at 13:27 (T0011), -$9.41. Its support broke intraday (low 22.62) and the stock closed back in its zone at 23.68.\n- SMCI: resting limit at support filled 41.90 at 13:26 (T0010, stop 40.63, target 50.76); closed 42.79 (+$5.13, +2.1%). Held overnight; no news against it after the close (wires, 3h).\n\nMarket: S&P -0.42%, Nasdaq-100 -1.34%; bitcoin -1.9% to 81.7k (-4.8% over 3 days), under its 20-day average, so the bitcoin gate stayed shut. Crypto miners and AI-infrastructure names fell together: 14 of 67 candidates moved 1+ ATR down, none up (J0046).\n\nStrategy review (J0045): 13 changes tested in 33 replay windows. The paper rules stay as they are; the real book adds an overnight sleeve (RUNBOOK 2e).\n\nMovers: the 15%+ scan found HAE +17.5% (CSL supply deal update; ATR 2.98% < 4%), PROF +21.7% and BYRN +16.8% (under $2M a day), CABO +16.4% (refinancing; $8.4M a day) and PCRX +44.4% (Viatris cash takeover, capped at the deal price): none joins the candidates. The follow-up on earlier scans ran.\n\nRadar rebuilt from today's closes: 28 names (research/radar/2026-10-08.md). Dropped: the crypto miners (CIFR, WULF, MARA, RIOT, CLSK, CORZ, HIVE), CRWV, OKLO, SMR, LUNR, ONDS, POET, AXTI and BSP, among others (no tested support below the price, or R:R under 1.5). In the buy zone at the close: ASTS 56.56 (56.68-57.90, stop 54.25, sell 64.08), NNE 15.29 (15.05-15.33, stop 14.51, sell 17.01), APLD 23.68 (23.55-24.01, stop 22.64, sell 28.67). Near: HIMS 28.08 (zone top 27.63). UMAC 21.43 reached its sell zone (not held).\n\nNext session (Fri Oct 9): $227.21 from the APLD sale settles (T+1); three slots free, cash for one order. The 8:40 run places a resting limit at support with orders.py plan --place, non-crypto first while the bitcoin gate is shut: APLD 23.55 (stop 22.64, target 28.67, R:R 5.6), NNE 15.05 (stop 14.51, target 17.01, R:R 3.6), HIMS 27.12 (stop 26.09, target 30.63, R:R 3.4), ASTS 56.68 (stop 54.25, target 64.08, R:R 3.0); BMNR 22.65 and CRCL 77.02 only if the gate opens. SMCI holds to 50.76 or 40.63. PCVX stays skipped until its offering prices.",
+      "tickers": [
+        "CIFR",
+        "HUT",
+        "APLD",
+        "SMCI",
+        "ASTS",
+        "NNE",
+        "HIMS"
+      ]
     }
   ]
 }

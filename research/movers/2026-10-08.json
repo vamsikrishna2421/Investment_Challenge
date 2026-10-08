@@ -1,0 +1,508 @@
+{
+ "generated_at": "2026-10-08T20:22:33Z",
+ "date": "2026-10-08",
+ "min_move": 15.0,
+ "losers": false,
+ "min_mcap_m": 30.0,
+ "skipped_small": [
+  "NMCO-RI",
+  "FLYE",
+  "JZ",
+  "AIXI",
+  "QNME",
+  "OLB",
+  "GRAN",
+  "RDHL",
+  "XELB",
+  "CIIT",
+  "MEDS",
+  "SHPH",
+  "BCAT-RI",
+  "GRDX",
+  "PARA"
+ ],
+ "skipped_noisy": [
+  "SAIQ"
+ ],
+ "rows": [
+  {
+   "symbol": "PROF",
+   "name": "Profound Medical Corp.",
+   "price": 6.91,
+   "change_pct": 21.65,
+   "volume": 2947596,
+   "market_cap": 252493776,
+   "exchange": "NCM",
+   "sector": "Healthcare",
+   "industry": "Medical Devices",
+   "enterprise_value": 176614128,
+   "revenue_ttm": 19086000,
+   "revenue_growth": 0.123,
+   "gross_margin": 0.71786004,
+   "profit_margin": -1.7156,
+   "cash": 38271000,
+   "debt": 7380000,
+   "shares_out": 36540343,
+   "float_shares": 35503106,
+   "short_pct_float": 0.048699997,
+   "avg_volume": 124798,
+   "high_52w": 8.95,
+   "low_52w": 4.8,
+   "target_mean": 11.14,
+   "rating": "none",
+   "analysts": 5,
+   "ev_to_revenue": 9.254,
+   "forward_pe": -11.7517,
+   "rel_volume": 23.6,
+   "off_52w_high_pct": -22.8,
+   "target_upside_pct": 61.2,
+   "news": [
+    {
+     "title": "Let's take a look at the stocks that are in motion in today's session. - ChartMill",
+     "published": "Thu, 08 Oct 2026 16:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "12 Health Care Stocks Moving In Thursday's Pre-Market Session - Benzinga",
+     "published": "Thu, 08 Oct 2026 12:05:45 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Warren Johnson: The Professor of Pro Stock \u2014 Legacy, Career Records, and His Enduring Influence on Drag Racing - Competition Plus",
+     "published": "Thu, 08 Oct 2026 15:59:35 GMT",
+     "source": "Competition Plus",
+     "via": "google"
+    },
+    {
+     "title": "Profound Medical (PROF) Surges 17.1% Pre-Market Amid Broader Mar - GuruFocus",
+     "published": "Thu, 08 Oct 2026 11:03:44 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "Profound Medical stock surges 20% on raised Q3 revenue outlook - Yahoo Finance UK",
+     "published": "Wed, 07 Oct 2026 22:04:10 GMT",
+     "source": "Yahoo Finance UK",
+     "via": "google"
+    },
+    {
+     "title": "Revenue is expected to nearly quadruple from Q2 at Profound Medical. - Stock Titan",
+     "published": "Wed, 07 Oct 2026 20:15:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-07",
+     "items": [
+      "2.02",
+      "9.01"
+     ],
+     "events": [
+      "results"
+     ],
+     "desc": "FORM 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1628808/000117184326006499/f8k_100726.htm"
+    }
+   ],
+   "vol_1y": 68.3,
+   "jump_sigma": 4.6,
+   "spike_days_1y": 1,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 20.3,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 6
+  },
+  {
+   "symbol": "HAE",
+   "name": "Haemonetics Corporation",
+   "price": 119.47,
+   "change_pct": 17.46,
+   "volume": 2764914,
+   "market_cap": 5435532800,
+   "exchange": "NYQ",
+   "sector": "Healthcare",
+   "industry": "Medical Devices",
+   "enterprise_value": 5577145856,
+   "revenue_ttm": 1352013056,
+   "revenue_growth": 0.056,
+   "gross_margin": 0.59331,
+   "profit_margin": 0.07122,
+   "cash": 224516992,
+   "debt": 1174157952,
+   "shares_out": 45497051,
+   "float_shares": 44886936,
+   "short_pct_float": 0.0881,
+   "avg_volume": 678940,
+   "high_52w": 120.72,
+   "low_52w": 48.17,
+   "target_mean": 111.5,
+   "rating": "buy",
+   "analysts": 10,
+   "ev_to_revenue": 4.125,
+   "forward_pe": 20.679674,
+   "rel_volume": 4.1,
+   "off_52w_high_pct": -1.0,
+   "target_upside_pct": -6.7,
+   "news": [
+    {
+     "title": "HAE, PCRX Stocks Hit Multi-Year Highs Amid Broader Market Selloff \u2013 What\u2019s Driving The Momentum Today? - Yahoo Finance",
+     "published": "Thu, 08 Oct 2026 17:48:21 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "Haemonetics (HAE) Stock Climbs After Citi Ups Price Target - www.timothysykes.com",
+     "published": "Thu, 08 Oct 2026 19:02:00 GMT",
+     "source": "www.timothysykes.com",
+     "via": "google"
+    },
+    {
+     "title": "Haemonetics Stock Hits 52-Week High - Here's Why - Benzinga",
+     "published": "Thu, 08 Oct 2026 17:04:42 GMT",
+     "source": "Benzinga",
+     "via": "google"
+    },
+    {
+     "title": "Haemonetics (HAE) Shares Skyrocket, What You Need To Know - TradingView",
+     "published": "Thu, 08 Oct 2026 14:35:48 GMT",
+     "source": "TradingView",
+     "via": "google"
+    },
+    {
+     "title": "Haemonetics jumps after strong Q4 results and fiscal 2027 outlook - Quiver Quantitative",
+     "published": "Thu, 08 Oct 2026 17:35:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Haemonetics Stock Climbs As Citi Hikes Price Target On CSL Upside - StocksToTrade",
+     "published": "Thu, 08 Oct 2026 19:03:00 GMT",
+     "source": "StocksToTrade",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-08",
+     "items": [
+      "7.01"
+     ],
+     "events": [
+      "Reg FD disclosure"
+     ],
+     "desc": "8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/313143/000031314326000138/hae-20261008.htm"
+    }
+   ],
+   "vol_1y": 45.9,
+   "jump_sigma": 5.6,
+   "spike_days_1y": 2,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -3.5,
+   "tags": [
+    "analyst",
+    "earnings-guidance"
+   ],
+   "score": 6
+  },
+  {
+   "symbol": "BYRN",
+   "name": "Byrna Technologies, Inc.",
+   "price": 4.73,
+   "change_pct": 16.79,
+   "volume": 2716220,
+   "market_cap": 110704488,
+   "exchange": "NCM",
+   "sector": "Industrials",
+   "industry": "Aerospace & Defense",
+   "enterprise_value": 83517088,
+   "revenue_ttm": 108861000,
+   "revenue_growth": -0.425,
+   "gross_margin": 0.52513003,
+   "profit_margin": -0.033889998,
+   "cash": 10438000,
+   "debt": 2047000,
+   "shares_out": 23404754,
+   "float_shares": 17483415,
+   "short_pct_float": 0.088999994,
+   "avg_volume": 650934,
+   "high_52w": 30.62,
+   "low_52w": 3.17,
+   "target_mean": 6.83333,
+   "rating": "none",
+   "analysts": 3,
+   "ev_to_revenue": 0.767,
+   "forward_pe": -21.5,
+   "rel_volume": 4.2,
+   "off_52w_high_pct": -84.6,
+   "target_upside_pct": 44.5,
+   "news": [
+    {
+     "title": "Byrna Technologies Inc. (BYRN) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Wed, 07 Oct 2026 18:22:41 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Byrna Technologies (NASDAQ:BYRN) Falls as Q3 Revenue Miss Overshadows Narrower Loss - ChartMill",
+     "published": "Thu, 08 Oct 2026 13:20:15 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "Revenue nearly halved as Byrna went from $2.2 million profit to a $2.9 million loss. - Stock Titan",
+     "published": "Thu, 08 Oct 2026 12:20:26 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Byrna Reports $15.3 Million Q3 Revenue and $2.9 Million Net Loss - Quiver Quantitative",
+     "published": "Thu, 08 Oct 2026 12:15:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "BYRNA TECHNOLOGIES Q3 2026 Earnings Preview: Recent $BYRN Insider Trading, Hedge Fund Activity, and More - Quiver Quantitative",
+     "published": "Tue, 06 Oct 2026 21:05:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Byrna (NASDAQ:BYRN) Reports Sales Below Analyst Estimates In Q3 2026 Earnings, Stock Drops - StockStory",
+     "published": "Thu, 08 Oct 2026 13:22:35 GMT",
+     "source": "StockStory",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "8-K",
+     "date": "2026-10-08",
+     "items": [
+      "2.02",
+      "9.01"
+     ],
+     "events": [
+      "results"
+     ],
+     "desc": "FORM 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1354866/000143774926032354/byrn20261007_8k.htm"
+    },
+    {
+     "form": "10-Q",
+     "date": "2026-10-08",
+     "items": [],
+     "events": [],
+     "desc": "FORM 10-Q",
+     "url": "https://www.sec.gov/Archives/edgar/data/1354866/000143774926032353/byrn20260831_10q.htm"
+    }
+   ],
+   "vol_1y": 87.1,
+   "jump_sigma": 2.8,
+   "spike_days_1y": 4,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -0.0,
+   "tags": [
+    "earnings-guidance"
+   ],
+   "score": 5
+  },
+  {
+   "symbol": "PCRX",
+   "name": "Pacira BioSciences, Inc.",
+   "price": 36.39,
+   "change_pct": 44.4,
+   "volume": 28867111,
+   "market_cap": 1450574080,
+   "exchange": "NMS",
+   "shares_out": 39861886,
+   "high_52w": 36.4,
+   "low_52w": 18.8,
+   "forward_pe": 10.520625,
+   "off_52w_high_pct": -0.0,
+   "news": [
+    {
+     "title": "HAE, PCRX Stocks Hit Multi-Year Highs Amid Broader Market Selloff \u2013 What\u2019s Driving The Momentum Today? - Yahoo Finance",
+     "published": "Thu, 08 Oct 2026 17:48:21 GMT",
+     "source": "Yahoo Finance",
+     "via": "google"
+    },
+    {
+     "title": "2 Stocks Drawing Bearish Options Activity Today - Schaeffer's Investment Research",
+     "published": "Thu, 08 Oct 2026 15:23:00 GMT",
+     "source": "Schaeffer's Investment Research",
+     "via": "google"
+    },
+    {
+     "title": "Traders are paying attention to the gapping stocks in Thursday's session. - ChartMill",
+     "published": "Thu, 08 Oct 2026 14:30:00 GMT",
+     "source": "ChartMill",
+     "via": "google"
+    },
+    {
+     "title": "A $1.65 billion deal would put two non-opioid pain medicines under Viatris. - Stock Titan",
+     "published": "Thu, 08 Oct 2026 11:45:00 GMT",
+     "source": "Stock Titan",
+     "via": "google"
+    },
+    {
+     "title": "Pacira BioSciences Jumps After Viatris Agrees to Buy Company in $1.65 Billion Cash Deal - Quiver Quantitative",
+     "published": "Thu, 08 Oct 2026 14:50:00 GMT",
+     "source": "Quiver Quantitative",
+     "via": "google"
+    },
+    {
+     "title": "Pacira BioSciences Inc. (PCRX) Stock Price | Live Quotes & Charts | NASDAQ - Timothy Sykes",
+     "published": "Thu, 08 Oct 2026 19:36:27 GMT",
+     "source": "Timothy Sykes",
+     "via": "google"
+    }
+   ],
+   "filings": [
+    {
+     "form": "144",
+     "date": "2026-10-08",
+     "items": [],
+     "events": [],
+     "desc": "",
+     "url": "https://www.sec.gov/Archives/edgar/data/1396814/000195917326007312/xsl144X01/primary_doc.xml"
+    },
+    {
+     "form": "SC14D9C",
+     "date": "2026-10-08",
+     "items": [],
+     "events": [],
+     "desc": "SC14D9C",
+     "url": "https://www.sec.gov/Archives/edgar/data/1396814/000110465926114706/tm2627240d1_sc14d9c.htm"
+    },
+    {
+     "form": "8-K",
+     "date": "2026-10-08",
+     "items": [
+      "1.01",
+      "7.01",
+      "9.01"
+     ],
+     "events": [
+      "material agreement",
+      "Reg FD disclosure"
+     ],
+     "desc": "FORM 8-K",
+     "url": "https://www.sec.gov/Archives/edgar/data/1396814/000110465926114571/tm2627240d2_8k.htm"
+    },
+    {
+     "form": "SC TO-C",
+     "date": "2026-10-08",
+     "items": [],
+     "events": [],
+     "desc": "SC TO-C",
+     "url": "https://www.sec.gov/Archives/edgar/data/1396814/000114036126039025/ef20083514_sctoc.htm"
+    }
+   ],
+   "vol_1y": 37.8,
+   "jump_sigma": 15.4,
+   "spike_days_1y": 0,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": -11.3,
+   "tags": [
+    "takeover-target",
+    "contract-order"
+   ],
+   "score": 2
+  },
+  {
+   "symbol": "CABO",
+   "name": "Cable One, Inc.",
+   "price": 15.38,
+   "change_pct": 16.43,
+   "volume": 2580567,
+   "market_cap": 87264968,
+   "exchange": "NYQ",
+   "sector": "Communication Services",
+   "industry": "Telecom Services",
+   "enterprise_value": 2963444480,
+   "revenue_ttm": 1441633024,
+   "revenue_growth": -0.084,
+   "gross_margin": 0.73467004,
+   "profit_margin": -0.72827005,
+   "cash": 181852992,
+   "debt": 3070344960,
+   "shares_out": 5673925,
+   "float_shares": 4469975,
+   "short_pct_float": 0.19219999,
+   "avg_volume": 324060,
+   "high_52w": 172.06,
+   "low_52w": 9.9,
+   "target_mean": 44.25,
+   "rating": "hold",
+   "analysts": 4,
+   "ev_to_revenue": 2.056,
+   "forward_pe": 1.0577717,
+   "rel_volume": 8.0,
+   "off_52w_high_pct": -91.1,
+   "target_upside_pct": 187.7,
+   "news": [
+    {
+     "title": "Cable One, Inc. (CABO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+     "published": "Tue, 06 Oct 2026 13:53:37 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    },
+    {
+     "title": "Cable One (CABO) Shares Surge 12% on Nearing $1.25 Billion Debt Refinancing Deal - GuruFocus",
+     "published": "Thu, 08 Oct 2026 19:16:27 GMT",
+     "source": "GuruFocus",
+     "via": "google"
+    },
+    {
+     "title": "Two sailors rescued after boat capsizes in Cape Cod - NBC Boston",
+     "published": "Thu, 08 Oct 2026 19:22:29 GMT",
+     "source": "NBC Boston",
+     "via": "google"
+    },
+    {
+     "title": "Cable One, Inc. (NYSE:CABO) Stock Has Consensus Price Target of $80.00 - MarketBeat",
+     "published": "Tue, 06 Oct 2026 08:16:24 GMT",
+     "source": "MarketBeat",
+     "via": "google"
+    },
+    {
+     "title": "DoubleLine CAPE\u00ae and Fortune 500 Strategies to Diversify Stock Exposure in a Concentrated Market - AOL.com",
+     "published": "Thu, 08 Oct 2026 13:31:42 GMT",
+     "source": "AOL.com",
+     "via": "google"
+    },
+    {
+     "title": "Fervo Energy (FRVO) Stock May Stay Rich After Cape Station First Power - Yahoo! Finance Canada",
+     "published": "Thu, 08 Oct 2026 14:08:02 GMT",
+     "source": "Yahoo! Finance Canada",
+     "via": "google"
+    }
+   ],
+   "filings": [],
+   "vol_1y": 100.5,
+   "jump_sigma": 2.4,
+   "spike_days_1y": 7,
+   "history_days": 249,
+   "noisy": false,
+   "shares_change_1y_pct": 0.8,
+   "tags": [
+    "refinancing",
+    "analyst"
+   ],
+   "score": 1
+  }
+ ]
+}

@@ -134,14 +134,39 @@ def price_of(q: dict | None) -> float | None:
     return pfm.mark(q)[0] if q else None
 
 
+def last_close(q: dict, today: dt.date) -> float | None:
+    """The last regular-session close: before today's session Yahoo's price is that close (its previousClose is the
+    one before), from the open on previousClose is."""
+    try:
+        if q.get("price") and q.get("time") and pfm.et_date(pfm.parse_ts(q["time"])) < today:
+            return float(q["price"])
+    except (TypeError, ValueError):
+        pass
+    return q.get("prev_close")
+
+
+def close_value(a: dict, q: dict, today: dt.date) -> float:
+    """The account's value at the last close: cash plus each holding at its last close. The day's P&L (and the $30
+    day loss) counts from here, overnight gap included; the first reading of a day is at 7:10, pre-market (Oct 8 it
+    was already $15 under the close). Falls back to the current value when a holding has no quote."""
+    total = float(a["cash"])
+    for p in a["positions"]:
+        qty = float(p["quantity"])
+        ref = last_close(q.get(p["symbol"]) or {}, today) if qty > 0 else 0.0
+        if ref is None:
+            return float(a["total_value"])
+        total += qty * ref
+    return round(total, 2)
+
+
 def sync(s: dict, a: dict) -> list[str]:
     """Fills of recorded buy orders open plans; fills of recorded sells close them. Returns warnings."""
     warn = []
     now = now_utc()
     today = pfm.et_date(now).isoformat()
-    if s["day"].get("date") != today:
-        s["day"] = {"date": today, "start_value": a["total_value"]}
     q = quotes()
+    if s["day"].get("date") != today:
+        s["day"] = {"date": today, "start_value": close_value(a, q, pfm.et_date(now))}
     pt = {"t": a.get("asof") or pfm.iso(now), "value": a["total_value"],
           "SPY": price_of(q.get("SPY")), "QQQ": price_of(q.get("QQQ"))}
     if not s["history"] or s["history"][-1]["t"][:16] != pt["t"][:16]:

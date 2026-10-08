@@ -382,8 +382,9 @@ Rules (`scripts/real.py`; stricter than the paper book because the money is real
   watched. `real.py run` prints each order's odds and lists the swap (cancel, then the new buy).
 * Size: whole shares; at most 25% of the account value, cut so the stop plus a 1% gap allowance loses at most 1.5%
   of it (Oct 7, 2d), at most $300 an order, never more than the cash.
-* Limits: 3 positions plus open buy orders; no new orders after a $30 loss on the day; none below $900 account
-  value (tell Vamsi).
+* Limits: 3 positions plus open buy orders; no new orders after a $30 loss on the day (counted from the last close,
+  overnight gap included: until Oct 8 it counted from the 7:10 pre-market reading); none below $900 account value
+  (tell Vamsi).
 * Exits: a GTC stop-market sell at the plan stop right after a fill; at a run with the price at or above the
   target (the sell-zone bottom), cancel the stop and sell with a limit at the bid. When the price is already at
   or under the plan stop and no stop rests (a fill that gapped through support), Robinhood cancels a sell stop

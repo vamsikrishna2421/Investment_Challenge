@@ -602,6 +602,16 @@
         "NNE",
         "HIMS"
       ]
+    },
+    {
+      "id": "J0048",
+      "ts": "2026-10-08T20:42:08Z",
+      "kind": "note",
+      "title": "SMCI 8-K after the close: board change, not material; SMCI holds",
+      "body": "Supermicro's 8-K of Oct 8 (Item 5.02): Shesha Krishnapura, former CTO of Intel IT and an Intel Fellow, joins the board as an independent director on Oct 9; Judy Lin retires from the board the same day, 'not the result of any disagreement with the Company'. Governance housekeeping, not an offering or material negative company news (RUNBOOK 2a), so the position holds: 5.762 at 41.90, closed 42.83 (+0.1% after hours), stop 40.63, target 50.76.",
+      "tickers": [
+        "SMCI"
+      ]
     }
   ]
 }

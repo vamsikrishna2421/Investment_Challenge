@@ -230,6 +230,82 @@
         "cash_account": true,
         "asset": "stock"
       }
+    },
+    {
+      "id": "T0007",
+      "type": "BUY",
+      "ts": "2026-10-08T13:38:00Z",
+      "ticker": "APLD",
+      "label": "APLD",
+      "asset": "stock",
+      "name": "Applied Digital Corporation",
+      "qty": 10.0467,
+      "multiplier": 1,
+      "price": 23.55,
+      "quote_price": 23.55,
+      "quote_time": "2026-10-08T13:38:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 0.0,
+      "gross": 236.6,
+      "fees": 0.0,
+      "net_cash": -236.6,
+      "settle_date": "2026-10-09",
+      "rationale": "Resting buy limit O0002 filled: radar support 23.55 (stop 22.6262, sell zone from 28.6603, R:R 5.51); placed +0.5% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "plan": {
+        "stop": 22.6262,
+        "target": 28.6603
+      },
+      "compliance": {
+        "session": "regular",
+        "order": "O0002",
+        "order_type": "limit",
+        "limit": 23.55,
+        "gap_fill": false,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true
+      }
+    },
+    {
+      "id": "T0008",
+      "type": "SELL",
+      "ts": "2026-10-08T13:30:00Z",
+      "ticker": "CIFR",
+      "label": "CIFR",
+      "asset": "stock",
+      "name": "Cipher Digital Inc.",
+      "qty": 16.5979,
+      "multiplier": 1,
+      "price": 14.0818,
+      "quote_price": 14.11,
+      "quote_time": "2026-10-08T13:30:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 20.0,
+      "gross": 233.73,
+      "fees": 0.02,
+      "net_cash": 233.71,
+      "settle_date": "2026-10-09",
+      "rationale": "Resting stop 14.11 triggered at 09:30 ET (traded through)",
+      "tags": [
+        "radar",
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "order_type": "stop",
+        "stop": 14.11,
+        "day_trade": false,
+        "good_faith_ok": true,
+        "cash_account": true,
+        "asset": "stock"
+      }
     }
   ]
 }

@@ -16,7 +16,8 @@
         "resting"
       ],
       "placed": "2026-10-08T12:43:00Z",
-      "status": "open"
+      "status": "open",
+      "checked_through": "2026-10-08T13:41:00Z"
     },
     {
       "id": "O0002",
@@ -34,11 +35,19 @@
         "resting"
       ],
       "placed": "2026-10-08T12:43:00Z",
-      "status": "open"
+      "status": "filled",
+      "checked_through": "2026-10-08T13:41:00Z",
+      "closed": "2026-10-08T13:38:00Z",
+      "fill": {
+        "txn": "T0007",
+        "price": 23.55,
+        "qty": 10.0467,
+        "ts": "2026-10-08T13:38:00Z"
+      }
     }
   ],
   "stops_checked": {
-    "CIFR": "2026-10-07T20:00:00Z",
-    "HUT": "2026-10-07T20:00:00Z"
+    "HUT": "2026-10-08T13:41:00Z",
+    "APLD": "2026-10-08T13:41:00Z"
   }
 }

@@ -500,6 +500,26 @@
         "HOOD",
         "PATH"
       ]
+    },
+    {
+      "id": "J0040",
+      "ts": "2026-10-08T13:42:28Z",
+      "kind": "review",
+      "title": "Trade review: CIFR stopped at 14.0818 (T0008), -$16.29; traded with bitcoin, never near the sell zone",
+      "body": "Fill: T0008 sold 16.5979 CIFR @ 14.0818 at 9:30 ET (resting stop 14.11 traded through in the first minute; the open was 14.21, 20 bps slippage). Result -$16.29 (-6.5%) after fees.\n\nEntry (T0003, Mon Oct 5 9:56): 15.0621 inside the 14.87-15.26 buy zone after the miners' opening drop, no company news; stop 14.11 (6.3% under the entry), target 17.89 (+18.8%), entry R:R 3.1; crypto slot 2 of 2.\n\nWhile held: best 15.78 on Tue Oct 6 (+4.8%, 17% of the way to the target); worst before today 14.47 on Wed Oct 7 (-3.9%), when bitcoin fell 2.6% and closed under its 20-day average. A 10% holder (Bitfury) transferred 1.84M shares under a contract after the price fell below its floor (Oct 7 filing): a holder's settlement, not a company offering. Today it opened 14.21 with bitcoin -1.1% (-4.0% over 3 days) and the S&P 500 -0.3%, traded through the stop at once and made 13.78 by 9:45 (2.3% under the stop).\n\nWhat it says: both crypto-linked buys of Oct 5 (HUT, CIFR) have traded with bitcoin since, and CIFR never got a quarter of the way to its target; the bitcoin gate (2c) now keeps such buys out while bitcoin is under its 20-day average. One trade changes nothing: it goes into the crypto-versus-non-crypto tally the replay keeps. The stop did its job: the price kept falling past it.",
+      "tickers": [
+        "CIFR"
+      ]
+    },
+    {
+      "id": "J0041",
+      "ts": "2026-10-08T13:42:28Z",
+      "kind": "trade",
+      "title": "Buy filled: APLD 10.0467 @ 23.55 (T0007), resting limit at support; stop 22.63, target 28.66",
+      "body": "Fill: T0007 bought 10.0467 APLD @ 23.55 at 9:38 ET for $236.60 (resting DAY limit O0002 at radar support, placed at 8:43). It opened at 24.36 (+2.3%, the results reaction) and fell to 23.42 by 9:45, 0.6% under the limit.\n\nPlan: stop 22.6262 (3.9% under the entry; resting stop, filled by orders.py fill), target 28.6603 at the bottom of the sell zone (+21.7%), R:R 5.5. Size 25% of equity (the stop plus a 1% gap allowance risks 1.2% of equity).\n\nContext: fiscal Q1 2027 results came out after Wednesday's close (8-K); results are not a reason to skip a dip (2, news-dip test). The S&P 500 -0.3% and the Nasdaq-100 -0.5% at the fill.",
+      "tickers": [
+        "APLD"
+      ]
     }
   ]
 }

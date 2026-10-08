@@ -1,5 +1,42 @@
 {
-  "orders": [],
+  "orders": [
+    {
+      "id": "O0001",
+      "side": "buy",
+      "type": "limit",
+      "tif": "day",
+      "ticker": "SMCI",
+      "limit": 41.9,
+      "usd": 241.43,
+      "stop": 40.6281,
+      "target": 50.762,
+      "why": "radar support 41.9 (stop 40.6281, sell zone from 50.762, R:R 6.94); placed +5.7% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "placed": "2026-10-08T12:43:00Z",
+      "status": "open"
+    },
+    {
+      "id": "O0002",
+      "side": "buy",
+      "type": "limit",
+      "tif": "day",
+      "ticker": "APLD",
+      "limit": 23.55,
+      "usd": 236.6,
+      "stop": 22.6262,
+      "target": 28.6603,
+      "why": "radar support 23.55 (stop 22.6262, sell zone from 28.6603, R:R 5.51); placed +0.5% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "placed": "2026-10-08T12:43:00Z",
+      "status": "open"
+    }
+  ],
   "stops_checked": {
     "CIFR": "2026-10-07T20:00:00Z",
     "HUT": "2026-10-07T20:00:00Z"

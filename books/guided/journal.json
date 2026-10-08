@@ -476,6 +476,30 @@
         "CORZ",
         "RIOT"
       ]
+    },
+    {
+      "id": "J0039",
+      "ts": "2026-10-08T12:44:01Z",
+      "kind": "plan",
+      "title": "Day plan Thu Oct 8: resting buys at SMCI 41.90 and APLD 23.55; bitcoin gate shut; CIFR 0.6% above its stop pre-market",
+      "body": "Pre-market 8:40 ET. Equity $966.89 on pre-market prices ($11.52 under Wednesday's close of $978.41). SPY 774.13 (-0.4%), QQQ -0.6%. $478.03 of cash settled this morning: two slots free.\n\nHoldings before the open (gap against the Oct 7 close; stop / target):\n- CIFR 14.20 (-2.5%); stop 14.11, target 17.89 (0.6% above its stop)\n- HUT 87.26 (-2.3%); stop 83.85, target 100.77\n\nBitcoin 82,310, -1.2% on the day and -4.1% over 3 days, under its 20-day average (84,180): the bitcoin gate stays shut, so crypto-linked names get no orders today.\n\nResting orders placed (orders.py plan --place --skip PCVX; DAY buy limits at support, higher R:R first, 2c):\n- O0001 SMCI 41.90 for $241.43; stop 40.63, sell from 50.76, R:R 6.94; pre-market 44.31, 5.7% (1.13 ATR) above the limit\n- O0002 APLD 23.55 for $236.60; stop 22.63, sell from 28.66, R:R 5.51; pre-market 23.66, 0.5% above the limit\nBoth orders reserve all $478.03 of settled cash and take the two free slots (2 positions plus 2 open orders, 2a), so no market buys at runs today unless an order is cancelled.\n\nRadar names in their buy zones (deepest dip against the prior close first, the order they would be bought in at runs if a slot frees; zone, stop):\n1. POET 7.17 (-3.3%, -0.54 ATR); zone 7.17-7.31, stop 6.91, sell from 8.30\n2. RIOT 18.07 (-2.5%); zone 18.20-18.61, stop 17.38 [crypto, gate shut]\n3. ONDS 7.07 (-1.7%); zone 7.11-7.22, stop 6.88\n4. LUNR 14.12 (-2.0%); zone 13.97-14.29, stop 13.33\n5. CORZ 15.70 (-1.5%); zone 15.71-15.98, stop 15.17 [crypto, gate shut]\n6. GPUS 0.157 (-1.8%); zone 0.160-0.164, stop 0.153\n7. BTDR 10.21 (-1.8%); zone 10.13-10.38, stop 9.63 [crypto, gate shut]\n8. HIVE 2.71 (-1.5%); zone 2.71-2.77, stop 2.60 [crypto, gate shut]\n9. MARA 10.19 (-1.6%); zone 10.41-10.65, stop 9.93 [crypto, gate shut]\n10. UMAC 21.68 (-0.9%); zone 21.82-22.30, stop 20.86\n11. APLD 23.71 (-0.4%); zone 23.55-24.02, stop 22.63 (resting order above)\nNear: LEU 146.00, CRCL 79.96, CRWV 86.83, AXTI 77.06, NNE 15.85, ASTS 59.16, BSP 39.01 (-5.0% pre-market, zone 37.11-37.89). None broken or halted.\n\nWires (16 hours): no offering or negative company news on holdings or radar names. APLD reported fiscal Q1 2027 results after Wednesday's close (8-K); it traded up to +4.4% after hours and is back at -0.4% pre-market. Results do not cancel an entry (news-dip test, 2: dips on results recovered best). HUT set the date of its third-quarter results. In CIFR, a 10% holder transferred 1.84M shares under a contract after the price fell below its floor: a holder's settlement, not a company offering, so CIFR is held to its stop. PCVX stays skipped until its offering prices.\n\nClue scan (alerts for Vamsi, not radar buys):\n- Bounce setups: NBIS (candidate; support 229.6 tested 6 times, coil, higher low; -1.9% pre-market), CRWV (radar, near its zone; coil, accumulation, higher low; support 83.97 x3, resistance 92.96 x7; -1.8%), GRAL (radar; coil, accumulation, higher low; -1.8%).\n- Breakout watch: HOOD (resistance 111.1 tested 4 times, 0.3 ATR above; coil 0.73) and PATH (resistance 13.31 x3; coil 0.74).\n- Pre-market moves of 0.5+ ATR: BSP -5.0%, SBET -3.4%, POET -3.3%, SMTC -2.9%, HIMX -2.7%, SOFI -1.9%.\n\nPlan: hold CIFR and HUT to their targets or stops (resting stops, filled by orders.py fill at the minute they trade). The two resting buys stand all day; a fill gets its stop and target from the order. No run entries while the four slots are taken.",
+      "tickers": [
+        "CIFR",
+        "HUT",
+        "SMCI",
+        "APLD",
+        "POET",
+        "RIOT",
+        "ONDS",
+        "LUNR",
+        "UMAC",
+        "BSP",
+        "NBIS",
+        "CRWV",
+        "GRAL",
+        "HOOD",
+        "PATH"
+      ]
     }
   ]
 }

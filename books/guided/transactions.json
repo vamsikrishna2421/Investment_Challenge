@@ -342,6 +342,82 @@
         "cash_account": true,
         "asset": "stock"
       }
+    },
+    {
+      "id": "T0010",
+      "type": "BUY",
+      "ts": "2026-10-08T17:26:00Z",
+      "ticker": "SMCI",
+      "label": "SMCI",
+      "asset": "stock",
+      "name": "Super Micro Computer, Inc.",
+      "qty": 5.762,
+      "multiplier": 1,
+      "price": 41.9,
+      "quote_price": 41.9,
+      "quote_time": "2026-10-08T17:26:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 0.0,
+      "gross": 241.43,
+      "fees": 0.0,
+      "net_cash": -241.43,
+      "settle_date": "2026-10-09",
+      "rationale": "Resting buy limit O0001 filled: radar support 41.9 (stop 40.6281, sell zone from 50.762, R:R 6.94); placed +5.7% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "plan": {
+        "stop": 40.6281,
+        "target": 50.762
+      },
+      "compliance": {
+        "session": "regular",
+        "order": "O0001",
+        "order_type": "limit",
+        "limit": 41.9,
+        "gap_fill": false,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true
+      }
+    },
+    {
+      "id": "T0011",
+      "type": "SELL",
+      "ts": "2026-10-08T17:27:00Z",
+      "ticker": "APLD",
+      "label": "APLD",
+      "asset": "stock",
+      "name": "Applied Digital Corporation",
+      "qty": 10.0467,
+      "multiplier": 1,
+      "price": 22.6149,
+      "quote_price": 22.6262,
+      "quote_time": "2026-10-08T17:27:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 5.0,
+      "gross": 227.21,
+      "fees": 0.02,
+      "net_cash": 227.19,
+      "settle_date": "2026-10-09",
+      "rationale": "Resting stop 22.6262 triggered at 13:27 ET (traded through)",
+      "tags": [
+        "radar",
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "order_type": "stop",
+        "stop": 22.6262,
+        "day_trade": true,
+        "good_faith_ok": true,
+        "cash_account": true,
+        "asset": "stock"
+      }
     }
   ]
 }

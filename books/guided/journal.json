@@ -531,6 +531,26 @@
         "HUT",
         "POET"
       ]
+    },
+    {
+      "id": "J0043",
+      "ts": "2026-10-08T17:34:49Z",
+      "kind": "trade",
+      "title": "Buy filled: SMCI 5.762 @ 41.90 (T0010), resting limit at support; stop 40.63, target 50.76",
+      "body": "Fill: T0010 bought 5.762 SMCI @ 41.90 at 13:26 ET for $241.43 (resting DAY limit O0001 at radar support, placed at 8:43, when the pre-market price was 44.31). SMCI made 44.01 at 10:25 and then slid with the AI-infrastructure group to 41.88 at 13:25.\n\nPlan: stop 40.6281 (3.0% under the entry; resting stop, filled by orders.py fill), target 50.762 at the bottom of the sell zone (+21.1%), R:R 6.9. Size 25% of equity (the stop plus a 1% gap allowance risks 1.0% of equity).\n\nContext: SMCI -6.3% on the day (-1.25 ATR) with 25 of 67 radar and candidate names down 1+ ATR; the S&P 500 about -0.7% and bitcoin -3.0% at the fill. No company news (wires). It is the book's only position: APLD stopped one minute later.",
+      "tickers": [
+        "SMCI"
+      ]
+    },
+    {
+      "id": "J0044",
+      "ts": "2026-10-08T17:34:49Z",
+      "kind": "review",
+      "title": "Trade review: APLD stopped at 22.6149 (T0011), -$9.41; bought at support on its results day, fell with the AI-infrastructure group",
+      "body": "Fill: T0011 sold 10.0467 APLD @ 22.6149 at 13:27 ET (resting stop 22.6262 traded through; 5 bps slippage). Result -$9.41 (-4.0%) after fees, held the same day (a day trade in the cash account, allowed: it was bought with settled cash).\n\nEntry (T0007, today 9:38): 23.55 at radar support (resting limit), after its fiscal Q1 results lifted the open to 24.36; stop 22.6262 (3.9% under the entry, about 0.6 ATR), target 28.66, R:R 5.5.\n\nWhile held: it never got back to the open. It slid all day with the AI-infrastructure and bitcoin-miner group (CRWV through its stop, NBIS -6.8%, IREN -8%, bitcoin -3%) and reached the stop at 13:27, the day's low 22.625 at 13:25. No company news after the results.\n\nWhat it says: the stop sat 0.6 ATR under the entry, inside a normal day's range for this stock: the limit-order backtest (2c) found such stops hit within 3 sessions 62% of the time, and today the whole group fell together, so the support did not hold. This is the fifth stop of the week in the paper book (POET, UMAC, CIFR, HUT, APLD: no winners) and the real book had five today. The strategy review of Oct 8 (journal note, research/backtests/lab-*) tests what to change.",
+      "tickers": [
+        "APLD"
+      ]
     }
   ]
 }

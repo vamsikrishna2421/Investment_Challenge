@@ -520,6 +520,17 @@
       "tickers": [
         "APLD"
       ]
+    },
+    {
+      "id": "J0042",
+      "ts": "2026-10-08T14:13:20Z",
+      "kind": "review",
+      "title": "Trade review: HUT stopped at 83.8081 (T0009), -$7.47; +8.6% the next day, then back to the stop",
+      "body": "Fill: T0009 sold 2.894 HUT @ 83.8081 at 10:00 ET (resting stop 83.85 traded through; 5 bps slippage). Result -$7.47 (-3.0%) after fees.\n\nEntry (T0002, Mon Oct 5 9:56): 86.3832 after a 4% opening drop with the bitcoin miners, below the 87.99-90.07 buy zone; no company news; stop 83.85 (2.9% under the entry), target 100.77 (+16.7%), entry R:R 5.8; crypto slot 1 of 2.\n\nWhile held: best 93.79 at Tuesday's open (+8.6%, about half way to the target); worst before today 85.50 on Monday right after the entry. It closed Wednesday at 89.37. Today it opened 87.26 with bitcoin -1.6% (-4.4% over 3 days) and the miners lower (RIOT -6.3%, MARA through its stop), made 82.99 between 10:00 and 10:30 and was 83.92 at 10:11. Its only release: the date of its third-quarter results (Oct 8). No offering or other company news.\n\nWhat it says: the second radar trade this week that ran about +8% the next day and then fell back to its stop (POET, J0033: +8.3%, half way to the target, then stopped). Two trades are not a rule, but they are the same pattern twice: a test for the replay (2d), at the post-close review today: a partial sale or a stop raised to the entry once a position is +1 ATR, against the live rules (hold to the target or the stop).",
+      "tickers": [
+        "HUT",
+        "POET"
+      ]
     }
   ]
 }

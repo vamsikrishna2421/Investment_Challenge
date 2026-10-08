@@ -306,6 +306,42 @@
         "cash_account": true,
         "asset": "stock"
       }
+    },
+    {
+      "id": "T0009",
+      "type": "SELL",
+      "ts": "2026-10-08T14:00:00Z",
+      "ticker": "HUT",
+      "label": "HUT",
+      "asset": "stock",
+      "name": "Hut 8 Corp.",
+      "qty": 2.894,
+      "multiplier": 1,
+      "price": 83.8081,
+      "quote_price": 83.85,
+      "quote_time": "2026-10-08T14:00:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 5.0,
+      "gross": 242.54,
+      "fees": 0.02,
+      "net_cash": 242.52,
+      "settle_date": "2026-10-09",
+      "rationale": "Resting stop 83.85 triggered at 10:00 ET (traded through)",
+      "tags": [
+        "radar",
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "order_type": "stop",
+        "stop": 83.85,
+        "day_trade": false,
+        "good_faith_ok": true,
+        "cash_account": true,
+        "asset": "stock"
+      }
     }
   ]
 }

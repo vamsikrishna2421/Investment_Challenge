@@ -551,6 +551,20 @@
       "tickers": [
         "APLD"
       ]
+    },
+    {
+      "id": "J0045",
+      "ts": "2026-10-08T17:42:52Z",
+      "kind": "note",
+      "title": "Strategy review Oct 8: what lost, 13 changes tested, paper rules unchanged",
+      "body": "Vamsi asked for the strategies to evolve. What lost: the paper book's five closed trades this week were all stopped (POET, UMAC, CIFR, HUT, APLD), every one a high-beta name from one corner of the market (crypto miners, AI infrastructure, speculative tech), with stops about 0.6 ATR under the entry, inside a normal day's range. On Oct 8 that group fell together (25 of 67 names down 1+ ATR, bitcoin -3%), and supports do not hold in a group sell-off.\n\nNew lab (scripts/strategy_lab.py, 33 separate 22-session windows since Nov 2023): buy-and-hold of the eligible candidates averaged +7.7% a window, the radar under the live rules +4.5%: the radar's timing has added nothing to the names' own drift. Over 5 years the candidates' whole return came overnight (close to open +0.20% a night, open to close -0.02%), and a close 1.5+ ATR under the prior close rebounded +0.53% overnight after costs (58% up). Momentum rotation was far more volatile (worst window -51%). Nothing doubled $1,000 in any window.\n\nTested against the live rules on the RUNBOOK 2d test (mean and worst of the hourly windows, and the 5-minute windows): a breadth gate (no entries while the radar's median name is down 0.3-0.75 ATR), no entry on a stock-specific drop while SPY is up, entries only in the last half hour, stops 1.0-2.0 ATR under support sized on the stop, a trend switch (entries only while the candidates' index or QQQ is over its 10- or 20-day average), and selling half at +1 or +1.5 ATR. None beat the live paper rules on both tests; the trend switch lost 6-7% a window over the last 60 sessions. A night sleeve (2 slots, buy at 15:55 the names down 1.5+ ATR closing in the lowest quarter of the range, sell at the open) improved the hourly windows (mean +4.8% vs +4.5%, worst -19.2% vs -21.9%) but lost 0.4 points on the 5-minute windows, so the paper rules stay as they are.\n\nReport: research/backtests/evolve-2026-10-08.md. Next: the Sunday review re-runs the windows with this week's sessions, the night sleeve included.",
+      "tickers": [
+        "POET",
+        "UMAC",
+        "CIFR",
+        "HUT",
+        "APLD"
+      ]
     }
   ]
 }

@@ -351,6 +351,16 @@ python3 scripts/replay.py --grid --set stops|times|sizing ...                   
   of the open. The S&P gate stays in the real book (better in three of four samples, smaller worst windows) and
   stays out of the paper book (it cut the paper rules' returns in all four, since their run entries buy the
   bounce on red days).
+* Strategy review of Oct 8 (Vamsi: evolve the strategies; `research/backtests/evolve-2026-10-08.md`, the lab in
+  `scripts/strategy_lab.py`, replay sets `evolve`, `evolve_real`, `close`, `night`, `night_real`, `stops2`, `regime`,
+  `partial`). Buy-and-hold of the eligible candidates averaged +7.7% a 22-session window over the same 33 windows
+  (the radar: +4.5%): the radar's timing has added nothing to the names' own drift. Adopted: the real book's night
+  sleeve (2e). Tested and rejected under the rule above: a breadth gate (no entries while the radar's median name is
+  down 0.3, 0.5 or 0.75+ ATR), no entry 1+ ATR down while SPY is up, entries only in the last half hour, stops 1.0,
+  1.5 or 2.0 ATR under support sized on the stop (much smaller worst windows, lower means), radar entries only while
+  the candidates' index or QQQ is over its 10- or 20-day average (-6 to -11% a window over the last 60 sessions),
+  and selling half at +1 or +1.5 ATR, with or without the rest's stop at the entry. The night sleeve stays out of
+  the paper book (better hourly windows, worse 5-minute windows).
 
 ## 2e. Real book: Robinhood agentic account (Vamsi, Tue Oct 6)
 
@@ -365,8 +375,8 @@ to trade it without asking (Oct 6). Every weekday run, right after `wires.py` (t
    the actions in order: stops and exits first, then cancels, then entries.
 3. Each action: `review_equity_order` (an alert that blocks the order, such as a halt or buying power: skip it and
    say so), then `place_equity_order` (a fresh `ref_id`, `market_hours` regular_hours) or `cancel_equity_order`;
-   then `python3 scripts/real.py record order --id ID --symbol X --kind entry|stop|exit|stop_exit --qty Q --price P
-   [--stop S --target T --why "..."]` or `real.py record cancel --id ID --why "..."`.
+   then `python3 scripts/real.py record order --id ID --symbol X --kind entry|stop|exit|stop_exit|night|night_exit
+   --qty Q --price P [--stop S --target T --why "..."]` or `real.py record cancel --id ID --why "..."`.
 
 Rules (`scripts/real.py`; stricter than the paper book because the money is real):
 * Entries: DAY buy limits at support (the bottom of the buy zone) for radar names with support tested 3+ times,
@@ -391,6 +401,18 @@ Rules (`scripts/real.py`; stricter than the paper book because the money is real
   priced above the market at once (Oct 7), so `real.py run` lists a `stop_exit`: sell with a limit 0.5% under the
   bid; if the live quote at the review is back above the stop, place the stop instead. Final day (Wed Nov 4): no new
   orders after 14:55; everything sold at the 15:40 run.
+* Night sleeve (Oct 8, the strategy review: `research/backtests/evolve-2026-10-08.md`): at the 15:55 run, buy up to 2
+  candidates down 1.5+ ATR from the prior close that trade in the lowest quarter of the day's range (the radar's ATR
+  and dollar-volume filters, no zero-volume session in the last 5, no offering or material news, deepest drop
+  first), 25% of the account value each in whole shares, with a marketable limit 0.5% over the price (kind
+  `night`); sell at the next open (kind `night_exit`: a market sell placed at the 9:25 run, or at the first run
+  after). No stop order. The S&P gate, the $30 day loss and the 15:30 cutoff do not apply to it (the tested rule
+  had none: its buys come on sell-off days); it does not count against the 3 radar slots; not on the final day,
+  not below $900, not while paused. Why: over 5 years the candidates' return came overnight (close to open +0.20% a
+  night, open to close -0.02%), and a close 1.5+ ATR down rebounded +0.53% overnight after costs (58% up). Added to
+  the real book's rules it beat them on the 33 hourly windows (mean +2.9% against +1.8%, worst -8.0% against -10.6%)
+  and on the 5-minute windows (mean -0.7% against -1.5%); in the paper book it lost on the 5-minute windows, so the
+  paper rules do not have it.
 * Vamsi's own orders (`real.py record order --kind manual`, e.g. CRSP 10 at 51 GTC, Oct 6): placed as he says, even
   past the size and risk caps; a fill gets its stop like any entry. The swap rule, the S&P gate and the trading
   hours never cancel them; the $900 floor, the $30 day loss, the final day and company news (`--skip`) do.

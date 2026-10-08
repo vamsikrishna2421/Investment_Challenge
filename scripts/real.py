@@ -10,8 +10,8 @@ private dashboard's snapshot (.cache/snapshot_real.json, collection snapshots_re
 goes into the public repo or site.
 
   python scripts/real.py run [--skip A,B]      # sync with account.json, then the actions to take, in order
-  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit|stop_exit --qty Q --price P
-                                [--stop S --target T --why "..."]      # after each order placed
+  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit|stop_exit|night|night_exit
+                                --qty Q --price P [--stop S --target T --why "..."]      # after each order placed
   python scripts/real.py record cancel --id ID [--why "..."]           # after each order cancelled
   python scripts/real.py record note --title "..." --body "..."        # a private journal entry
   python scripts/real.py record pause --until YYYY-MM-DD --why "..."    # no new entries of its own (Vamsi); --off resumes
@@ -34,6 +34,13 @@ Rules (RUNBOOK 2e), stricter than the paper book because the money is real:
            target (the sell-zone bottom), cancel the stop and sell with a limit at the bid. On the challenge's
            last day (Wed Nov 4) no new orders after 14:55, and at 15:40 everything is sold unless Vamsi says
            otherwise.
+  night    (Oct 8, replay `--set night_real`: the one change of the day's strategy review that beat the live rules on
+           the mean and the worst of the 33 hourly windows and on the 5-minute windows) at the 15:55 run, buy up to 2
+           candidates down 1.5+ ATR from the prior close that trade in the lowest quarter of the day's range (the
+           radar's ATR and dollar-volume filters, not HALTED, no offering or material news, deepest drop first),
+           25% of the account value each, with a marketable limit; sell at the next open (a market sell placed at the
+           9:25 run, or at the first run after). No stop order; the S&P gate, the $30 day loss and the 15:30 cutoff
+           do not apply (the tested rule had none); not on the final day, not below $900, not while paused.
 Day-trade rules: FINRA replaced the pattern-day-trader rule with intraday margin standards on June 4, 2026, and
 Robinhood's help page says its margin accounts no longer have day-trade limits; the account is limited margin
 and never borrows. review_equity_order shows any alert before each order.
@@ -83,6 +90,8 @@ ODDS_UP = {570: (1, .73, .49, .31, .19, .11, .06, .02), 630: (1, .61, .31, .14, 
 # Vamsi, Oct 6: an open buy very unlikely to fill (odds under SWAP_BELOW) is cancelled for a waiting name that likely
 # will (SWAP_TO or better), from 9:45 to 15:00; with no such name it stays and is watched.
 SWAP_BELOW, SWAP_TO, SWAP_WINDOW = 0.15, 0.30, (9 * 60 + 45, 15 * 60)
+# The night sleeve (Oct 8): buys at the 15:55 run, sold at the next open
+NIGHT_Z, NIGHT_LOW, NIGHT_SLOTS, NIGHT_SIZE, NIGHT_BUY = 1.5, 0.25, 2, 0.25, (15 * 60 + 45, 15 * 60 + 59)
 RULES = ("Real money, Robinhood agentic account (Vamsi, Oct 6): DAY buy limits at tested support (3+ touches, R:R 2.5+), "
          "skipping names up over the prior 5 sessions and weak S&P days; whole shares, at most 1.5% of the account "
          "lost at a stop and $300 an order; 3 positions; no new orders after a $30 losing day or below $900; a stop "
@@ -183,23 +192,25 @@ def sync(s: dict, a: dict) -> list[str]:
         rec["state"] = o["state"]
         filled = float(o.get("cumulative_quantity") or 0)
         avg = float(o["average_price"]) if o.get("average_price") else None
-        if rec["kind"] in ("entry", "manual") and o["state"] in ("filled", "partially_filled", "cancelled") and filled > 0 and avg:
+        if rec["kind"] in ("entry", "manual", "night") and o["state"] in ("filled", "partially_filled", "cancelled") and filled > 0 and avg:
             p = s["plans"].setdefault(o["symbol"], {"symbol": o["symbol"], "qty": 0.0, "entry": avg, "stop": rec["stop"],
                                                    "target": rec["target"], "why": rec.get("why", ""),
                                                    "opened": o.get("last_transaction_at") or pfm.iso(now),
-                                                   "stop_order_id": None})
+                                                   "stop_order_id": None, "night": rec["kind"] == "night"})
             p["qty"], p["entry"] = filled, avg
-            note(s, "trade", f"Bought {filled:g} {o['symbol']} at {avg:.4g}",
-                 f"Buy limit {rec['price']} filled: {filled:g} shares at {avg:.4g} (${filled * avg:.2f}). Stop "
-                 f"{rec['stop']}, target {rec['target']}. {rec.get('why', '')}", [o["symbol"]])
-        if rec["kind"] in ("stop", "exit", "stop_exit") and o["state"] == "filled" and avg:
+            note(s, "trade", f"Bought {filled:g} {o['symbol']} at {avg:.4g}" + (" (night sleeve)" if p["night"] else ""),
+                 f"Buy limit {rec['price']} filled: {filled:g} shares at {avg:.4g} (${filled * avg:.2f}). "
+                 + ("Sold at the next open; no stop order. " if p["night"] else f"Stop {rec['stop']}, target {rec['target']}. ")
+                 + rec.get("why", ""), [o["symbol"]])
+        if rec["kind"] in ("stop", "exit", "stop_exit", "night_exit") and o["state"] == "filled" and avg:
             p = s["plans"].pop(o["symbol"], None)
+            why_x = {"exit": "target", "night_exit": "night"}.get(rec["kind"], "stop")
             if p:
                 pnl = (avg - p["entry"]) * filled
                 s["closed"].append({**p, "exit": avg, "exit_qty": filled, "closed": o.get("last_transaction_at") or pfm.iso(now),
-                                    "why_exit": "target" if rec["kind"] == "exit" else "stop", "pnl": round(pnl, 2),
+                                    "why_exit": why_x, "pnl": round(pnl, 2),
                                     "ret_pct": round((avg / p["entry"] - 1) * 100, 2)})
-                note(s, "review", f"Sold {filled:g} {o['symbol']} at {avg:.4g} ({'target' if rec['kind'] == 'exit' else 'stop'})",
+                note(s, "review", f"Sold {filled:g} {o['symbol']} at {avg:.4g} ({why_x})",
                      f"Entry {p['entry']:.4g}, exit {avg:.4g}: {pnl:+.2f} ({(avg / p['entry'] - 1) * 100:+.2f}%). "
                      f"Plan: stop {p['stop']}, target {p['target']}. {p.get('why', '')}", [o["symbol"]])
     for sym in held:
@@ -311,6 +322,33 @@ def entry_candidates(s: dict, a: dict, skip: set[str]) -> tuple[list[dict], list
     return rows, why_not
 
 
+def night_candidates(skip: set[str], taken: set[str]) -> list[dict]:
+    """The night sleeve's buys: candidates passing the radar's ATR and dollar-volume filters (no zero-volume session in
+    the last 5), down NIGHT_Z+ ATR from the prior close and trading in the lowest NIGHT_LOW of the day's range, deepest
+    first (replay.py's night sleeve, Oct 8)."""
+    import clues  # noqa: PLC0415
+    from concurrent.futures import ThreadPoolExecutor  # noqa: PLC0415
+    with ThreadPoolExecutor(12) as ex:
+        rows = [r for r in ex.map(clues.load, [(t, False) for t in lv.CANDIDATES if t not in skip | taken]) if r]
+    out = []
+    for r in rows:
+        prior = r.get("prior_rows") or []
+        if len(prior) < 21 or not r.get("last") or not r.get("atr") or not r.get("prev_close"):
+            continue
+        dv = sum(x["c"] * x["v"] for x in prior[-20:]) / 20
+        if r["atr_pct"] < lv.MIN_ATR_PCT or dv < lv.MIN_DOLLAR_VOL or any(x["v"] == 0 for x in prior[-5:]):
+            continue
+        px, hi, lo = r["last"], r.get("day_high"), r.get("day_low")
+        z = (px - r["prev_close"]) / r["atr"]
+        if z > -NIGHT_Z or not hi or not lo or hi <= lo:
+            continue
+        pos = (px - lo) / (hi - lo)
+        if pos < NIGHT_LOW:
+            out.append({"symbol": r["ticker"], "price": px, "z": round(z, 2), "pos": round(pos, 2),
+                        "chg": round((px / r["prev_close"] - 1) * 100, 2), "crypto": r["ticker"] in lv.CRYPTO_LINKED})
+    return sorted(out, key=lambda x: x["z"])
+
+
 def cmd_run(a_) -> int:
     s, a = load_state(), load_account()
     warn = sync(s, a)
@@ -333,7 +371,16 @@ def cmd_run(a_) -> int:
     acts = []
     stops = {o["symbol"]: o for o in open_orders(a, "sell") if o["type"] in ("stop_market", "stop") or o.get("stop_price")}
     liquidate = final_day and et.hour * 60 + et.minute >= 15 * 60 + 40
+    sells_open = {o["symbol"] for o in open_orders(a, "sell")}
     for sym, p in s["plans"].items():
+        if p.get("night"):
+            opened = pfm.et_date(pfm.parse_ts(p["opened"]))
+            if (opened < et.date() and et.hour * 60 + et.minute >= 9 * 60 + 20) or liquidate:
+                if sym not in sells_open:
+                    acts.append({"do": "place", "kind": "night_exit", "symbol": sym, "side": "sell", "type": "market",
+                                 "quantity": f"{p['qty']:g}", "time_in_force": "gfd",
+                                 "why": f"night sleeve: bought at {p['entry']:.4g} on {opened}, sold at the open"})
+            continue
         px = price_of(q.get(sym))
         bid = (q.get(sym) or {}).get("bid") or (px * 0.998 if px else None)
         if liquidate or (px is not None and px >= p["target"]):
@@ -385,9 +432,11 @@ def cmd_run(a_) -> int:
     rows, why_not = entry_candidates(s, a, skip)
     gate = od.btc_gate()
     held = buys + manual
-    slots = MAX_POS - len(s["plans"]) - len(held)
-    crypto = sum(1 for t in list(s["plans"]) + [o["symbol"] for o in held] if t in lv.CRYPTO_LINKED)
-    free = cash - sum(float(o.get("price") or 0) * float(o.get("quantity") or 0) for o in held)
+    night_buys = open_orders(a, "buy", "night", s)
+    radar_plans = [t for t, p in s["plans"].items() if not p.get("night")]
+    slots = MAX_POS - len(radar_plans) - len(held)
+    crypto = sum(1 for t in radar_plans + [o["symbol"] for o in held] if t in lv.CRYPTO_LINKED)
+    free = cash - sum(float(o.get("price") or 0) * float(o.get("quantity") or 0) for o in held + night_buys)
     print(f"  {gate['why']}")
     print(f"  {slots} free slots, ${free:.2f} cash after open buy orders; candidates (support {MIN_STRENGTH}+ touches, "
           f"R:R {MIN_RR}+, within {NEAR:.0f}% of support, not up {MAX_RET5} ATR over 5 sessions):")
@@ -449,6 +498,39 @@ def cmd_run(a_) -> int:
             pool.remove(pick)
             free += res - qty * pick["limit"]
             crypto = c_after + pick["crypto"]
+    if minute >= 15 * 60 + 30 and pfm.is_business_day(et.date()):
+        night_open = [t for t, p in s["plans"].items() if p.get("night")]
+        free_n = NIGHT_SLOTS - len(night_open) - len(night_buys)
+        no_night = ("the final day: no night buys" if final_day else
+                    f"account value ${value:.2f} under ${KILL_VALUE:.0f}" if value < KILL_VALUE else
+                    f"paused through {pause['until']}" if pause.get("until") and et.date().isoformat() <= pause["until"] else
+                    None)
+        taken = set(s["plans"]) | {o["symbol"] for o in open_orders(a, "buy")} | {x["symbol"] for x in acts if x.get("side") == "buy"}
+        cands = night_candidates(skip, taken)
+        window = NIGHT_BUY[0] <= minute <= NIGHT_BUY[1]
+        print(f"  night sleeve: {free_n} free of {NIGHT_SLOTS}; {'buying now' if window and not no_night else no_night or 'buys at the 15:55 run'};"
+              f" candidates down {NIGHT_Z}+ ATR in the lowest {NIGHT_LOW:.0%} of the day's range:"
+              + ("" if cands else " none"))
+        for c in cands[:6]:
+            print(f"    {c['symbol']:6} {c['price']:>9.4g} {c['chg']:+.1f}% ({c['z']:+.2f} ATR), {c['pos']:.0%} of the day's range"
+                  f"{' [crypto]' if c['crypto'] else ''}")
+        cash_n = free - sum(float(x.get("limit_price") or 0) * float(x["quantity"]) for x in acts
+                            if x.get("side") == "buy" and x.get("do") == "place")
+        if window and not no_night:
+            for c in cands:
+                if free_n <= 0:
+                    break
+                lim = tick(c["price"] * 1.005)
+                qty = math.floor(min(value * NIGHT_SIZE, cash_n) / lim)
+                if qty < 1:
+                    continue
+                acts.append({"do": "place", "kind": "night", "symbol": c["symbol"], "side": "buy", "type": "limit",
+                             "limit_price": f"{lim:g}", "quantity": str(qty), "time_in_force": "gfd", "stop": None,
+                             "target": None,
+                             "why": (f"night sleeve: {c['chg']:+.1f}% ({c['z']:+.2f} ATR) at {c['price']:.4g}, "
+                                     f"{c['pos']:.0%} of the day's range; marketable limit {lim:g}; sold at the next open")})
+                free_n -= 1
+                cash_n -= qty * lim
     save_state(s)
     print(f"ACTIONS ({len(acts)}): review_equity_order, then place_equity_order (market_hours regular_hours, a fresh "
           f"ref_id each), then record each one with real.py record")
@@ -466,7 +548,8 @@ def cmd_record(a_) -> int:
         if a_.kind == "stop" and rec["symbol"] in s["plans"]:
             s["plans"][rec["symbol"]]["stop_order_id"] = a_.id
         verb = {"entry": "Buy limit", "manual": "Buy limit (Vamsi's order)", "stop": "Stop order", "exit": "Sell",
-                "stop_exit": "Sell at the stop"}[a_.kind]
+                "stop_exit": "Sell at the stop", "night": "Buy limit (night sleeve)",
+                "night_exit": "Sell at the open (night sleeve)"}[a_.kind]
         note(s, "trade", f"{verb} placed: {rec['symbol']} {a_.qty:g} at {a_.price}",
              f"{verb} {rec['symbol']} {a_.qty:g} at {a_.price}" + (f", stop {a_.stop}, target {a_.target}" if a_.kind in ("entry", "manual") else "")
              + f". {a_.why}", [rec["symbol"]])
@@ -514,7 +597,7 @@ def cmd_snapshot(a_) -> int:
     unreal = sum(p["unrealized_pnl"] for p in positions)
     trades = []
     for oid, o in sorted(s["orders"].items(), key=lambda kv: kv[1]["placed"]):
-        trades.append({"id": oid[:8], "type": "BUY" if o["kind"] == "entry" else "SELL", "ts": o["placed"],
+        trades.append({"id": oid[:8], "type": "BUY" if o["kind"] in ("entry", "manual", "night") else "SELL", "ts": o["placed"],
                        "ticker": o["symbol"], "qty": o["qty"], "price": o["price"], "state": o.get("state"),
                        "rationale": o.get("why", ""), "plan": {"stop": o.get("stop"), "target": o.get("target")}})
     hist = s["history"] or [{"t": START_UTC, "value": START_VALUE}]

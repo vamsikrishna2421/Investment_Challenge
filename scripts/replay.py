@@ -58,7 +58,9 @@ DEFAULTS = {"limit": "support", "stop_atr": 0.6, "btc_gate": "on", "rank": "dip"
             "entry": "radar", "limit_until": 960, "tested_only": "off", "entry_until": 960, "entry_from": 0, "risk_pct": lv.RISK_PCT,
             "protect": "none", "protect_at": 1.0, "protect_trail": 1.0, "target_atr": 0.0, "target_first": "off",
             "gap_pct": 0.0, "min_stop_atr": 0.0, "max_drop_atr": 0.0, "min_dip_atr": 0.0, "spy_gate": 0.0,
-            "gap_stop": "open", "min_strength": 0, "min_rr": 1.5, "slots": SLOTS}
+            "gap_stop": "open", "min_strength": 0, "min_rr": 1.5, "slots": SLOTS, "breadth": 0.0, "rel_gate": 0.0,
+            "night_z": 0.0, "night_low": "off", "night_slots": 2, "night_size": 0.25, "night_only": "off",
+            "regime": "off", "partial_at": 0.0, "partial_frac": 0.5, "partial_be": "off"}
 GRID = [
     ("Live rules: limits at support, stop 0.6 ATR under it", {}),
     ("Limits at the zone top", {"limit": "top"}),
@@ -151,6 +153,82 @@ REALBOOK = [
     ("Real-book rules + S&P gate + entries from 9:45", {**_RB, "spy_gate": 0.35, "entry_from": 585}),
     ("Real-book rules + 1% gap allowance", {**_RB, "gap_pct": 1.0}),
     ("Real-book rules + S&P gate + 9:45 + 1% gap allowance", {**_RB, "spy_gate": 0.35, "entry_from": 585, "gap_pct": 1.0}),
+]
+
+# Oct 8 (four real-book stops in one sector sell-off; Vamsi: evolve the strategies): each variant changes one thing.
+#   breadth   no limit fills or run buys while the radar's median name is down this many ATR from its prior close
+#             (a sector sell-off, when supports fail together); open buy limits are cancelled then
+#   rel_gate  no entry in a name down this many ATR while SPY is up on the day (a stock-specific drop: the daily study
+#             found those kept falling the next day)
+#   entry_from 930 with no resting limits: entries only at the runs of the last half hour (15:40 and 15:55 on
+#             5-minute bars, the 16:00 close on hourly bars): own the overnight move, skip the intraday one
+_LIVE = {"gap_pct": 1.0}
+EVOLVE = [
+    ("Live paper rules (1% gap allowance)", dict(_LIVE)),
+    ("Breadth gate: radar median down 0.3+ ATR", {**_LIVE, "breadth": 0.3}),
+    ("Breadth gate: radar median down 0.5+ ATR", {**_LIVE, "breadth": 0.5}),
+    ("Breadth gate: radar median down 0.75+ ATR", {**_LIVE, "breadth": 0.75}),
+    ("No entry 1+ ATR down while SPY is up", {**_LIVE, "rel_gate": 1.0}),
+    ("Entries only in the last half hour (no resting limits)", {**_LIVE, "limit": "none", "entry_from": 930, "entry_until": 1000}),
+    ("Last half hour + breadth gate 0.5", {**_LIVE, "limit": "none", "entry_from": 930, "entry_until": 1000, "breadth": 0.5}),
+]
+_RBL = {**_RB, "spy_gate": 0.35, "gap_pct": 1.0}
+EVOLVE_REAL = [
+    ("Live real-book rules (S&P gate, 1% gap allowance)", dict(_RBL)),
+    ("Real book + breadth gate 0.3", {**_RBL, "breadth": 0.3}),
+    ("Real book + breadth gate 0.5", {**_RBL, "breadth": 0.5}),
+    ("Real book + breadth gate 0.75", {**_RBL, "breadth": 0.75}),
+    ("Real book + no entry 1+ ATR down while SPY is up", {**_RBL, "rel_gate": 1.0}),
+    ("Real book, run buys in the last half hour instead of limits", {**_RBL, "runs": "on", "limit": "none", "entry_from": 930, "entry_until": 1000}),
+    ("Real book, last half hour + breadth gate 0.5", {**_RBL, "runs": "on", "limit": "none", "entry_from": 930, "entry_until": 1000, "breadth": 0.5}),
+]
+
+# The night sleeve (Oct 8, strategy_lab.py: the candidates' return comes overnight, and a close 1.5+ ATR under the
+# prior close rebounded +0.5% a night after costs): buys at the last run, sells at the next open, cash permitting.
+NIGHT = [
+    ("Live paper rules (1% gap allowance)", dict(_LIVE)),
+    ("+ night sleeve: 2 slots, down 1.5+ ATR at the close, sold at the open", {**_LIVE, "night_z": 1.5}),
+    ("+ night sleeve, closing in the lowest quarter of the range", {**_LIVE, "night_z": 1.5, "night_low": "on"}),
+    ("+ night sleeve, 4 slots", {**_LIVE, "night_z": 1.5, "night_slots": 4}),
+    ("Night only: 4 slots, no radar", {**_LIVE, "night_only": "on", "night_z": 1.5, "night_slots": 4}),
+    ("Night only, lowest quarter, 4 slots", {**_LIVE, "night_only": "on", "night_z": 1.5, "night_slots": 4, "night_low": "on"}),
+]
+NIGHT_REAL = [
+    ("Live real-book rules (S&P gate, 1% gap allowance)", dict(_RBL)),
+    ("Real book + night sleeve: 2 slots", {**_RBL, "night_z": 1.5}),
+    ("Real book + night sleeve, lowest quarter", {**_RBL, "night_z": 1.5, "night_low": "on"}),
+    ("Real book: night only, 3 slots", {**_RBL, "night_only": "on", "night_z": 1.5, "night_slots": 3}),
+]
+
+CLOSE = [EVOLVE[0], EVOLVE[5], EVOLVE[6], EVOLVE_REAL[0], EVOLVE_REAL[5], EVOLVE_REAL[6]]
+
+# Stops retested under the live sizing (Oct 8): a wider stop gets a smaller position (1.5% of equity at risk plus the
+# 1% gap allowance), so the dollars at risk stay the same; the Oct 5 stop test sized every position at 25%.
+STOPS2 = [(f"Stop {x} ATR under support{' (live)' if x == 0.6 else ''}", {**_LIVE, "stop_atr": x}) for x in (0.6, 1.0, 1.5, 2.0)]
+STOPS2 += [(f"Real book, stop {x} ATR under support{' (live)' if x == 0.6 else ''}", {**_RBL, "stop_atr": x}) for x in (0.6, 1.0, 1.5, 2.0)]
+
+# A regime switch (Oct 8): no new radar entries (positions still managed) while the group is in a short-term downtrend
+REGIME = [
+    ("Live paper rules (1% gap allowance)", dict(_LIVE)),
+    ("Radar only while the candidates' index is over its 10-day average", {**_LIVE, "regime": "univ10"}),
+    ("Radar only while the candidates' index is over its 20-day average", {**_LIVE, "regime": "univ20"}),
+    ("Radar only while QQQ is over its 20-day average", {**_LIVE, "regime": "qqq20"}),
+    ("Live real-book rules (S&P gate, 1% gap allowance)", dict(_RBL)),
+    ("Real book, only while the candidates' index is over its 10-day", {**_RBL, "regime": "univ10"}),
+    ("Real book, only while the candidates' index is over its 20-day", {**_RBL, "regime": "univ20"}),
+    ("Real book + night sleeve (lowest quarter), radar only over the 10-day", {**_RBL, "regime": "univ10", "night_z": 1.5, "night_low": "on"}),
+]
+
+# Partial take-profit (Oct 8, task from J0042: POET and HUT ran about +8% the next day, then fell back to their stops)
+PARTIAL = [
+    ("Live paper rules (1% gap allowance)", dict(_LIVE)),
+    ("Sell half at +1 ATR, the rest to the target or the stop", {**_LIVE, "partial_at": 1.0}),
+    ("Sell half at +1.5 ATR", {**_LIVE, "partial_at": 1.5}),
+    ("Sell half at +1 ATR, the rest's stop to the entry", {**_LIVE, "partial_at": 1.0, "partial_be": "on"}),
+    ("Live real-book rules (S&P gate, 1% gap allowance)", dict(_RBL)),
+    ("Real book, sell half at +1 ATR", {**_RBL, "partial_at": 1.0}),
+    ("Real book, sell half at +1.5 ATR", {**_RBL, "partial_at": 1.5}),
+    ("Real book, half at +1 ATR, the rest's stop to the entry", {**_RBL, "partial_at": 1.0, "partial_be": "on"}),
 ]
 
 
@@ -261,6 +339,42 @@ def _radar_for(data: dict, idx: dict, names: list[str], day: str, stop_atr: floa
     return radar, elig
 
 
+_REGIME: dict = {}
+
+
+def regime_ok(data: dict, idx: dict, day: str, how: str) -> bool:
+    """The group's trend at the prior close: univN = an equal-weight index of the candidates (daily returns averaged)
+    at or above its N-session average; qqq20 = QQQ at or above its 20-session average."""
+    if how == "off":
+        return True
+    key = (id(data), how)
+    if key not in _REGIME:
+        if how.startswith("univ"):
+            rets: dict[str, list] = {}
+            for s_, rows in data["daily"].items():
+                if s_ in ("SPY", "QQQ"):
+                    continue
+                for a_, b_ in zip(rows, rows[1:]):
+                    if a_["c"] > 0 and abs(b_["c"] / a_["c"] - 1) < 0.6:
+                        rets.setdefault(et_day(b_["t"]), []).append(b_["c"] / a_["c"] - 1)
+            lvl, ser = 1.0, []
+            for d_ in sorted(rets):
+                lvl *= 1 + sum(rets[d_]) / len(rets[d_])
+                ser.append((d_, lvl))
+        else:
+            ser = [(et_day(r["t"]), r["c"]) for r in data["daily"]["QQQ"]]
+        n_ = int(how[4:]) if how.startswith("univ") else 20
+        ok = {}
+        for i in range(n_, len(ser)):
+            sma = sum(v for _, v in ser[i - n_ + 1:i + 1]) / n_
+            ok[ser[i][0]] = ser[i][1] >= sma
+        days_ = [d_ for d_, _ in ser]
+        _REGIME[key] = (ok, days_)
+    ok, days_ = _REGIME[key]
+    prior = [d_ for d_ in days_ if d_ < day]
+    return ok.get(prior[-1], True) if prior else True
+
+
 class Book:
     def __init__(self, cash: float, cfg: dict):
         self.cash, self.cfg = cash, cfg
@@ -282,6 +396,23 @@ class Book:
         self.cash -= qty * px
         self.pos[tk] = {"qty": qty, "entry": px, "day": day, "n": n, "minute": minute, "kind": kind, "hi": px,
                         "lo": px, **ctx}
+
+    def sell_part(self, tk, frac, px, day, minute, settle):
+        """Sell frac of a position (a partial take-profit); the rest keeps its plan."""
+        p = self.pos[tk]
+        q = p["qty"] * frac
+        gross = q * px
+        fees = pfm.sell_fees(q, gross, self.cfg)
+        self.cash += gross - fees
+        self.pending.append((settle, gross - fees))
+        self.trades.append({**{k: v for k, v in p.items() if k not in ("qty", "hi", "lo", "n")}, "ticker": tk,
+                            "exit": round(px, 4), "exit_day": day, "exit_minute": minute, "why": "partial",
+                            "ret_pct": round(((gross - fees) / (q * p["entry"]) - 1) * 100, 2),
+                            "pnl": round(gross - fees - q * p["entry"], 2),
+                            "best_atr": round((p["hi"] - p["entry"]) / p["atr"], 2),
+                            "worst_atr": round((p["lo"] - p["entry"]) / p["atr"], 2)})
+        p["qty"] -= q
+        p["partial_done"] = True
 
     def sell(self, tk, px, day, minute, why, settle):
         p = self.pos.pop(tk)
@@ -322,7 +453,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
         book.stopped_today = set()
         gate = btc_gate(data, day) if o["btc_gate"] == "on" else {"ok": True, "d1": None, "d3": None}
         radar, elig = radar_for(data, idx, names, day, o["stop_atr"])
-        if o["entry"] == "gap":
+        if o["entry"] == "gap" or o["night_only"] == "on" or not regime_ok(data, idx, day, o["regime"]):
             radar = {}
         bars, prev, close = {}, {}, {}
         for s in set(radar) | set(elig) | set(book.pos):
@@ -365,7 +496,18 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 c = spy_chg(m)
                 if c is not None and c <= -o["spy_gate"]:
                     return False
+            if o["breadth"] and breadth_shut(m):
+                return False
+            if o["rel_gate"] and (prev[s] - px) / a_ >= o["rel_gate"] and (spy_chg(m) or 0) > 0:
+                return False
             return True
+
+        def breadth_shut(m) -> bool:
+            """The breadth gate: the radar's median name down `breadth` ATR or more from its prior close. A fill inside
+            bar m sees the prices at the end of the bar before (no look-ahead); a run at the end of bar m sees bar m."""
+            px_ = last_px if m in runs_at and seen_bar.get("m") == m else known_px
+            v = sorted((px_[s] - prev[s]) / r["atr"] for s, r in radar.items() if s in px_)
+            return len(v) >= 5 and v[len(v) // 2] <= -o["breadth"]
 
         def ctx(s, px, rr, r, status, m):
             first = bars[s].get(570)
@@ -436,13 +578,21 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                      "exit_rule": "day"}
                 book.buy(s, fill, usd, day, n, 570, "gap", ctx(s, fill, 0, r, "gap", 570))
         day_low = {s: 1e18 for s in bars}
+        day_high = {s: -1e18 for s in bars}
+        last_px: dict[str, float] = {}
+        known_px: dict[str, float] = {}
+        seen_bar: dict[str, int] = {}
         for m in range(570, 960, step):
             if book.orders and m >= min(o["limit_until"], o["entry_until"]):
                 book.orders = []  # cancel the unfilled resting buys
+            known_px = dict(last_px)
+            seen_bar["m"] = -1
             for s, bs in bars.items():
                 b = bs.get(m)
                 if b:
                     day_low[s] = min(day_low[s], b[3])
+                    day_high[s] = max(day_high[s], b[2])
+                    last_px[s] = b[4]
             for x in list(book.orders):  # resting buy limits
                 s = x["ticker"]
                 b = bars[s].get(m)
@@ -451,7 +601,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 px = b[1] if b[1] <= x["limit"] - TICK else x["limit"]
                 r = radar[s]
                 if not entry_ok(s, px, r, m):
-                    gated = o["spy_gate"] and (spy_chg(m) or 0) <= -o["spy_gate"]
+                    gated = (o["spy_gate"] and (spy_chg(m) or 0) <= -o["spy_gate"]) or (o["breadth"] and breadth_shut(m))
                     if gated or (o["max_drop_atr"] and (prev[s] - px) / r["atr"] > o["max_drop_atr"]):
                         book.orders.remove(x)  # cancelled, as live: the S&P gate or a drop past the cap
                     continue
@@ -466,6 +616,11 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 p = book.pos[s]
                 b = bars.get(s, {}).get(m)
                 if not b or (p["day"] == day and p["minute"] == m and p["kind"] != "gap"):
+                    continue
+                if p["exit_rule"] == "night":  # bought at the last run: sold at the next session's first trade
+                    if p["day"] != day:
+                        p["hi"], p["lo"] = max(p["hi"], b[1]), min(p["lo"], b[1])
+                        book.sell(s, b[1] * (1 - sb.slip(b[1])), day, m, "open", settle[day])
                     continue
                 if p["exit_rule"] == "day":
                     p["hi"], p["lo"] = max(p["hi"], b[2]), min(p["lo"], b[3])
@@ -499,6 +654,12 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                               settle[day])
                     continue
                 p["hi"], p["lo"] = max(p["hi"], b[2]), min(p["lo"], b[3])
+                lvl_ = p["entry"] + o["partial_at"] * p["atr"]
+                if o["partial_at"] and not p.get("partial_done") and p["exit_rule"] == "plan" and b[2] >= lvl_:
+                    base = max(lvl_, b[1])
+                    book.sell_part(s, o["partial_frac"], base * (1 - sb.slip(base)), day, m, settle[day])
+                    if o["partial_be"] == "on":
+                        p["stop"] = max(p["stop"], p["entry"])
                 if o["protect"] != "none" and p["hi"] - p["entry"] >= o["protect_at"] * p["atr"]:
                     new = p["entry"] if o["protect"] == "be" else p["hi"] - o["protect_trail"] * p["atr"]
                     if new > p["stop"]:
@@ -511,8 +672,35 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 b = bars.get(s, {}).get(m)
                 if b and book.pos[s]["exit_rule"] == "plan" and b[4] >= book.pos[s]["target"]:
                     book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "target", settle[day])
-            if o["spy_gate"] and (spy_chg(m) or 0) <= -o["spy_gate"]:
-                book.orders = []  # the S&P gate cancels open buy limits at a run
+            seen_bar["m"] = m  # from here on (the run at the end of bar m) the gate sees bar m
+            if (o["spy_gate"] and (spy_chg(m) or 0) <= -o["spy_gate"]) or (o["breadth"] and breadth_shut(m)):
+                book.orders = []  # the S&P gate (or the breadth gate) cancels open buy limits at a run
+            if o["night_z"] and m == max(runs_at):
+                # the night sleeve: at the last run, the eligible names down night_z+ ATR (optionally closing in the
+                # lowest quarter of the day's range), deepest first, for the next session's open
+                cands = []
+                for s_, a_ in elig.items():
+                    b = bars.get(s_, {}).get(m)
+                    if not b or s_ in book.pos or s_ in book.stopped_today:
+                        continue
+                    z = (b[4] - prev[s_]) / a_
+                    rng = day_high[s_] - day_low[s_]
+                    if z > -o["night_z"] or (o["night_low"] == "on" and rng > 0 and (b[4] - day_low[s_]) / rng >= 0.25):
+                        continue
+                    cands.append((z, s_, b[4]))
+                free_n = o["night_slots"] - sum(1 for q in book.pos.values() if q["exit_rule"] == "night")
+                eq_now = book.cash + sum(q["qty"] * last_px.get(t, q["entry"]) for t, q in book.pos.items())
+                for z, s_, px in sorted(cands):
+                    if free_n <= 0:
+                        break
+                    usd = min(eq_now * o["night_size"], book.free_cash(day))
+                    if usd < 25:
+                        break
+                    fill = px * (1 + sb.slip(px))
+                    r_ = {"stop": 0.0, "target": 1e18, "atr": elig[s_], "crypto": s_ in lv.CRYPTO_LINKED, "strength": 0,
+                          "exit_rule": "night"}
+                    book.buy(s_, fill, usd, day, n, m, "night", ctx(s_, fill, 0, r_, "night", m))
+                    free_n -= 1
             if o["runs"] == "off" or not radar or m + step > o["entry_until"] or m + step <= o["entry_from"]:
                 continue
             slots = o["slots"] - len(book.pos) - len(book.orders)
@@ -586,7 +774,7 @@ def summarize(res: dict) -> dict:
             "profit_factor": round(gw / gl, 2) if gl else None, "max_drawdown_pct": round(mdd * 100, 2),
             "realized": round(sum(t["pnl"] for t in tr), 2),
             "unrealized": round(final - res["start"] - sum(t["pnl"] for t in tr), 2),
-            "by_exit": {w: n for w in ("target", "stop", "time", "neutral", "close")
+            "by_exit": {w: n for w in ("target", "stop", "time", "neutral", "close", "open", "partial")
                         if (n := sum(1 for t in tr if t["why"] == w))},
             "fill_rate": (f"{res['orders_filled']}/{res['orders_placed']}" if res["orders_placed"] else None)}
 
@@ -753,7 +941,8 @@ def main() -> int:
     ap.add_argument("--step", type=int, default=1, help="with --windows: sessions between window ends")
     ap.add_argument("--analyze", action="store_true", help="trade returns by entry context")
     ap.add_argument("--grid", action="store_true")
-    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets", "lessons", "realbook"],
+    ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets", "lessons", "realbook",
+                                      "evolve", "evolve_real", "night", "night_real", "close", "stops2", "regime", "partial"],
                     default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
@@ -782,6 +971,22 @@ def main() -> int:
         GRID = LESSONS
     if a.set == "realbook":
         GRID = REALBOOK
+    if a.set == "evolve":
+        GRID = EVOLVE
+    if a.set == "evolve_real":
+        GRID = EVOLVE_REAL
+    if a.set == "close":
+        GRID = CLOSE
+    if a.set == "stops2":
+        GRID = STOPS2
+    if a.set == "regime":
+        GRID = REGIME
+    if a.set == "partial":
+        GRID = PARTIAL
+    if a.set == "night":
+        GRID = NIGHT
+    if a.set == "night_real":
+        GRID = NIGHT_REAL
     if a.grid and a.windows:
         return windows(data, a)
     if a.grid:
@@ -817,7 +1022,7 @@ def main() -> int:
             (out / f"{stem}.json").write_text(json.dumps(out_json, indent=1) + "\n")
             print("saved", (out / f"{stem}.md").relative_to(ROOT))
         return 0
-    o = {k: getattr(a, k) for k in DEFAULTS}
+    o = {k: getattr(a, k, v) for k, v in DEFAULTS.items()}
     res = replay(data, a.days, o, a.cash, a.end, a.bars)
     s = summarize(res)
     if a.analyze:

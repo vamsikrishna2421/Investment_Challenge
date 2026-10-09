@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-08T23:43:50Z",
- "session": "post",
+ "generated_at": "2026-10-09T00:59:24Z",
+ "session": "closed",
  "quotes": {
   "AEHR": {
    "price": 87.21,
@@ -12,14 +12,14 @@
    "name": "Aehr Test Systems",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 87.0,
-   "ext_time": "2026-10-08T23:42:34Z",
+   "ext_price": 87.21,
+   "ext_time": "2026-10-08T23:56:59Z",
    "ext_volume": 0,
    "ext_high": 88.09,
    "ext_low": 87.0,
    "source": "yahoo-v8-chart",
    "change_pct": -2.417,
-   "ext_change_pct": -0.241
+   "ext_change_pct": 0.0
   },
   "AFRM": {
    "price": 77.15,
@@ -31,14 +31,14 @@
    "name": "Affirm Holdings, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 77.18,
-   "ext_time": "2026-10-08T23:38:26Z",
+   "ext_price": 77.5,
+   "ext_time": "2026-10-08T23:51:51Z",
    "ext_volume": 0,
-   "ext_high": 77.3,
+   "ext_high": 77.5,
    "ext_low": 76.75,
    "source": "yahoo-v8-chart",
    "change_pct": 2.443,
-   "ext_change_pct": 0.039
+   "ext_change_pct": 0.454
   },
   "APLD": {
    "price": 23.85,
@@ -51,7 +51,7 @@
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
    "ext_price": 23.7,
-   "ext_time": "2026-10-08T23:43:24Z",
+   "ext_time": "2026-10-08T23:59:51Z",
    "ext_volume": 1935,
    "ext_high": 23.86,
    "ext_low": 23.6,
@@ -69,14 +69,14 @@
    "name": "AST SpaceMobile, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 54.8768,
-   "ext_time": "2026-10-08T23:43:45Z",
+   "ext_price": 54.7169,
+   "ext_time": "2026-10-08T23:59:59Z",
    "ext_volume": 0,
    "ext_high": 57.51,
    "ext_low": 54.18,
    "source": "yahoo-v8-chart",
    "change_pct": -6.134,
-   "ext_change_pct": -3.607
+   "ext_change_pct": -3.887
   },
   "AXTI": {
    "price": 71.66,
@@ -88,14 +88,14 @@
    "name": "AXT Inc",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 72.22,
-   "ext_time": "2026-10-08T23:41:37Z",
+   "ext_price": 72.33,
+   "ext_time": "2026-10-08T23:59:45Z",
    "ext_volume": 0,
    "ext_high": 72.84,
    "ext_low": 71.66,
    "source": "yahoo-v8-chart",
    "change_pct": -10.189,
-   "ext_change_pct": 0.781
+   "ext_change_pct": 0.935
   },
   "BMNR": {
    "price": 24.04,
@@ -107,14 +107,14 @@
    "name": "BitMine Immersion Technologies,",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 24.1193,
-   "ext_time": "2026-10-08T23:38:50Z",
+   "ext_price": 24.028,
+   "ext_time": "2026-10-08T23:59:25Z",
    "ext_volume": 2818193,
-   "ext_high": 24.16,
-   "ext_low": 23.87,
+   "ext_high": 24.1,
+   "ext_low": 24.0,
    "source": "yahoo-v8-chart",
    "change_pct": -2.514,
-   "ext_change_pct": 0.33
+   "ext_change_pct": -0.05
   },
   "BTBT": {
    "price": 1.36,
@@ -126,22 +126,22 @@
    "name": "Bit Digital, Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 1.37,
-   "ext_time": "2026-10-08T23:32:34Z",
+   "ext_price": 1.3615,
+   "ext_time": "2026-10-08T23:58:19Z",
    "ext_volume": 0,
    "ext_high": 1.37,
    "ext_low": 1.36,
    "source": "yahoo-v8-chart",
    "change_pct": -6.849,
-   "ext_change_pct": 0.735
+   "ext_change_pct": 0.11
   },
   "BTC-USD": {
-   "price": 81746.84,
-   "time": "2026-10-08T23:43:39Z",
-   "prev_close": 83275.52,
-   "day_high": 83427.12,
-   "day_low": 80464.05,
-   "volume": 46312435712,
+   "price": 81742.14,
+   "time": "2026-10-09T00:59:19Z",
+   "prev_close": 81690.49,
+   "day_high": 81820.54,
+   "day_low": 81669.52,
+   "volume": 46235697152,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -151,7 +151,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": -1.836
+   "change_pct": 0.063
   },
   "BTDR": {
    "price": 9.72,
@@ -163,14 +163,14 @@
    "name": "Bitdeer Technologies Group",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 9.74,
-   "ext_time": "2026-10-08T23:43:24Z",
+   "ext_price": 9.8,
+   "ext_time": "2026-10-08T23:59:13Z",
    "ext_volume": 523887,
    "ext_high": 9.94,
    "ext_low": 9.72,
    "source": "yahoo-v8-chart",
    "change_pct": -6.538,
-   "ext_change_pct": 0.206
+   "ext_change_pct": 0.823
   },
   "BULL": {
    "price": 5.95,
@@ -182,14 +182,14 @@
    "name": "Webull Corporation",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 5.95,
-   "ext_time": "2026-10-08T23:43:45Z",
+   "ext_price": 5.94,
+   "ext_time": "2026-10-08T23:59:55Z",
    "ext_volume": 0,
    "ext_high": 5.95,
    "ext_low": 5.9,
    "source": "yahoo-v8-chart",
    "change_pct": 1.019,
-   "ext_change_pct": 0.0
+   "ext_change_pct": -0.168
   },
   "CIFR": {
    "price": 13.5,
@@ -201,14 +201,14 @@
    "name": "Cipher Digital Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 13.57,
-   "ext_time": "2026-10-08T23:42:16Z",
+   "ext_price": 13.54,
+   "ext_time": "2026-10-08T23:59:28Z",
    "ext_volume": 0,
    "ext_high": 13.6,
    "ext_low": 13.455,
    "source": "yahoo-v8-chart",
    "change_pct": -7.28,
-   "ext_change_pct": 0.519
+   "ext_change_pct": 0.296
   },
   "COIN": {
    "price": 172.0,
@@ -220,14 +220,14 @@
    "name": "Coinbase Global, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 173.53,
-   "ext_time": "2026-10-08T23:36:52Z",
-   "ext_volume": 2189522,
+   "ext_price": 173.0,
+   "ext_time": "2026-10-08T23:59:39Z",
+   "ext_volume": 2180091,
    "ext_high": 173.73,
    "ext_low": 171.5985,
    "source": "yahoo-v8-chart",
    "change_pct": -3.614,
-   "ext_change_pct": 0.89
+   "ext_change_pct": 0.581
   },
   "CORZ": {
    "price": 15.36,
@@ -239,14 +239,14 @@
    "name": "Core Scientific, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 15.48,
-   "ext_time": "2026-10-08T22:52:46Z",
+   "ext_price": 15.6056,
+   "ext_time": "2026-10-08T23:56:28Z",
    "ext_volume": 0,
-   "ext_high": 15.48,
+   "ext_high": 15.6056,
    "ext_low": 15.231,
    "source": "yahoo-v8-chart",
    "change_pct": -3.639,
-   "ext_change_pct": 0.781
+   "ext_change_pct": 1.599
   },
   "CRCL": {
    "price": 80.84,
@@ -258,14 +258,14 @@
    "name": "Circle Internet Group, Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 81.0686,
-   "ext_time": "2026-10-08T23:42:21Z",
+   "ext_price": 81.0,
+   "ext_time": "2026-10-08T23:59:56Z",
    "ext_volume": 1603312,
-   "ext_high": 81.249,
-   "ext_low": 80.38,
+   "ext_high": 81.092,
+   "ext_low": 80.84,
    "source": "yahoo-v8-chart",
    "change_pct": 0.0,
-   "ext_change_pct": 0.283
+   "ext_change_pct": 0.198
   },
   "CRSP": {
    "price": 50.44,
@@ -296,14 +296,14 @@
    "name": "CoreWeave, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 81.9097,
-   "ext_time": "2026-10-08T23:43:40Z",
+   "ext_price": 81.85,
+   "ext_time": "2026-10-08T23:59:38Z",
    "ext_volume": 0,
    "ext_high": 82.25,
    "ext_low": 81.45,
    "source": "yahoo-v8-chart",
    "change_pct": -7.767,
-   "ext_change_pct": 0.404
+   "ext_change_pct": 0.331
   },
   "DELL": {
    "price": 574.55,
@@ -315,14 +315,14 @@
    "name": "Dell Technologies Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 574.49,
-   "ext_time": "2026-10-08T23:35:08Z",
+   "ext_price": 574.8,
+   "ext_time": "2026-10-08T23:59:44Z",
    "ext_volume": 307390,
-   "ext_high": 576.12,
-   "ext_low": 574.49,
+   "ext_high": 574.8,
+   "ext_low": 574.12,
    "source": "yahoo-v8-chart",
    "change_pct": -0.762,
-   "ext_change_pct": -0.01
+   "ext_change_pct": 0.044
   },
   "DNA": {
    "price": 11.34,
@@ -372,20 +372,20 @@
    "name": "Hyperscale Data, Inc.",
    "exchange": "NYSE American",
    "instrument": "EQUITY",
-   "ext_price": 0.1564,
-   "ext_time": "2026-10-08T23:39:45Z",
+   "ext_price": 0.1571,
+   "ext_time": "2026-10-08T23:59:46Z",
    "ext_volume": 617629,
-   "ext_high": 0.1592,
-   "ext_low": 0.1555,
+   "ext_high": 0.1572,
+   "ext_low": 0.155,
    "source": "yahoo-v8-chart",
    "change_pct": -2.376,
-   "ext_change_pct": 0.192
+   "ext_change_pct": 0.641
   },
   "GRAL": {
    "price": 132.61,
    "time": "2026-10-08T20:00:00Z",
    "prev_close": 132.9,
-   "day_high": 134.545,
+   "day_high": 134.555,
    "day_low": 127.46,
    "volume": 1312042,
    "name": "GRAIL, Inc.",
@@ -393,7 +393,7 @@
    "instrument": "EQUITY",
    "ext_price": 134.4916,
    "ext_time": "2026-10-08T20:13:35Z",
-   "ext_volume": 106859,
+   "ext_volume": 104940,
    "ext_high": 134.4916,
    "ext_low": 132.61,
    "source": "yahoo-v8-chart",
@@ -410,14 +410,14 @@
    "name": "Hims & Hers Health, Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 28.1,
-   "ext_time": "2026-10-08T23:43:09Z",
+   "ext_price": 28.13,
+   "ext_time": "2026-10-08T23:54:03Z",
    "ext_volume": 2519656,
-   "ext_high": 28.14,
-   "ext_low": 27.99,
+   "ext_high": 28.13,
+   "ext_low": 28.06,
    "source": "yahoo-v8-chart",
    "change_pct": -5.01,
-   "ext_change_pct": 0.143
+   "ext_change_pct": 0.249
   },
   "HIVE": {
    "price": 2.56,
@@ -429,14 +429,14 @@
    "name": "HIVE Digital Technologies Ltd",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 2.5885,
-   "ext_time": "2026-10-08T23:41:40Z",
+   "ext_price": 2.58,
+   "ext_time": "2026-10-08T23:59:49Z",
    "ext_volume": 10815,
    "ext_high": 2.62,
    "ext_low": 2.56,
    "source": "yahoo-v8-chart",
    "change_pct": -6.909,
-   "ext_change_pct": 1.113
+   "ext_change_pct": 0.781
   },
   "HOOD": {
    "price": 107.01,
@@ -448,14 +448,14 @@
    "name": "Robinhood Markets, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 107.131,
-   "ext_time": "2026-10-08T23:43:41Z",
+   "ext_price": 106.9387,
+   "ext_time": "2026-10-08T23:57:45Z",
    "ext_volume": 0,
    "ext_high": 107.33,
    "ext_low": 106.28,
    "source": "yahoo-v8-chart",
    "change_pct": -2.283,
-   "ext_change_pct": 0.113
+   "ext_change_pct": -0.067
   },
   "HUT": {
    "price": 79.59,
@@ -467,14 +467,14 @@
    "name": "Hut 8 Corp.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 80.0728,
-   "ext_time": "2026-10-08T23:41:24Z",
-   "ext_volume": 353728,
+   "ext_price": 80.21,
+   "ext_time": "2026-10-08T23:46:53Z",
+   "ext_volume": 337532,
    "ext_high": 81.0,
    "ext_low": 79.51,
    "source": "yahoo-v8-chart",
    "change_pct": -10.873,
-   "ext_change_pct": 0.607
+   "ext_change_pct": 0.779
   },
   "IREN": {
    "price": 35.71,
@@ -486,33 +486,33 @@
    "name": "IREN LIMITED",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 36.1,
-   "ext_time": "2026-10-08T23:42:23Z",
+   "ext_price": 35.93,
+   "ext_time": "2026-10-08T23:59:40Z",
    "ext_volume": 19139,
    "ext_high": 36.45,
    "ext_low": 35.71,
    "source": "yahoo-v8-chart",
    "change_pct": -7.702,
-   "ext_change_pct": 1.092
+   "ext_change_pct": 0.616
   },
   "IWM": {
    "price": 277.57,
    "time": "2026-10-08T20:00:00Z",
    "prev_close": 277.7,
-   "day_high": 277.83,
+   "day_high": 277.81,
    "day_low": 274.52,
    "volume": 35598983,
    "name": "iShares Russell 2000 Index Fund",
    "exchange": "NYSEArca",
    "instrument": "ETF",
-   "ext_price": 277.95,
-   "ext_time": "2026-10-08T23:40:53Z",
+   "ext_price": 277.9999,
+   "ext_time": "2026-10-08T23:58:49Z",
    "ext_volume": 854776,
-   "ext_high": 278.04,
+   "ext_high": 278.0,
    "ext_low": 277.57,
    "source": "yahoo-v8-chart",
    "change_pct": -0.047,
-   "ext_change_pct": 0.137
+   "ext_change_pct": 0.155
   },
   "LUNR": {
    "price": 13.7,
@@ -525,7 +525,7 @@
    "exchange": "NasdaqGM",
    "instrument": "EQUITY",
    "ext_price": 13.72,
-   "ext_time": "2026-10-08T23:41:51Z",
+   "ext_time": "2026-10-08T23:59:12Z",
    "ext_volume": 2612,
    "ext_high": 13.76,
    "ext_low": 13.7,
@@ -543,14 +543,14 @@
    "name": "MARA Holdings, Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 9.9185,
-   "ext_time": "2026-10-08T23:42:58Z",
+   "ext_price": 9.9,
+   "ext_time": "2026-10-08T23:59:30Z",
    "ext_volume": 1064316,
    "ext_high": 9.94,
-   "ext_low": 9.9,
+   "ext_low": 9.89,
    "source": "yahoo-v8-chart",
    "change_pct": -4.344,
-   "ext_change_pct": 0.086
+   "ext_change_pct": -0.101
   },
   "NBIS": {
    "price": 219.71,
@@ -562,14 +562,14 @@
    "name": "Nebius Group N.V.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 221.46,
-   "ext_time": "2026-10-08T23:43:08Z",
+   "ext_price": 220.9,
+   "ext_time": "2026-10-08T23:59:57Z",
    "ext_volume": 1293066,
    "ext_high": 222.74,
    "ext_low": 219.71,
    "source": "yahoo-v8-chart",
    "change_pct": -7.354,
-   "ext_change_pct": 0.797
+   "ext_change_pct": 0.542
   },
   "NNE": {
    "price": 15.26,
@@ -581,14 +581,14 @@
    "name": "Nano Nuclear Energy Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 15.28,
-   "ext_time": "2026-10-08T22:50:00Z",
+   "ext_price": 15.285,
+   "ext_time": "2026-10-08T23:33:58Z",
    "ext_volume": 0,
    "ext_high": 15.3,
    "ext_low": 15.02,
    "source": "yahoo-v8-chart",
    "change_pct": -4.685,
-   "ext_change_pct": 0.131
+   "ext_change_pct": 0.164
   },
   "ONDS": {
    "price": 6.85,
@@ -600,14 +600,14 @@
    "name": "Ondas Inc",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 6.91,
-   "ext_time": "2026-10-08T23:43:12Z",
+   "ext_price": 6.8742,
+   "ext_time": "2026-10-08T23:59:46Z",
    "ext_volume": 6176864,
    "ext_high": 6.91,
    "ext_low": 6.85,
    "source": "yahoo-v8-chart",
    "change_pct": -4.729,
-   "ext_change_pct": 0.876
+   "ext_change_pct": 0.353
   },
   "PCVX": {
    "price": 65.015,
@@ -638,14 +638,14 @@
    "name": "POET Technologies Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 7.03,
-   "ext_time": "2026-10-08T23:42:40Z",
+   "ext_price": 7.0425,
+   "ext_time": "2026-10-08T23:59:36Z",
    "ext_volume": 660244,
    "ext_high": 7.09,
    "ext_low": 7.01,
    "source": "yahoo-v8-chart",
    "change_pct": -5.057,
-   "ext_change_pct": -0.142
+   "ext_change_pct": 0.036
   },
   "QQQ": {
    "price": 747.58,
@@ -657,14 +657,14 @@
    "name": "Invesco QQQ Trust, Series 1",
    "exchange": "NasdaqGM",
    "instrument": "ETF",
-   "ext_price": 748.14,
-   "ext_time": "2026-10-08T23:43:41Z",
+   "ext_price": 747.75,
+   "ext_time": "2026-10-08T23:59:58Z",
    "ext_volume": 3834674,
    "ext_high": 749.8,
-   "ext_low": 747.58,
+   "ext_low": 747.46,
    "source": "yahoo-v8-chart",
    "change_pct": -1.34,
-   "ext_change_pct": 0.075
+   "ext_change_pct": 0.023
   },
   "QUBT": {
    "price": 7.45,
@@ -676,14 +676,14 @@
    "name": "Quantum Computing Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 7.48,
-   "ext_time": "2026-10-08T23:42:04Z",
+   "ext_price": 7.47,
+   "ext_time": "2026-10-08T23:59:42Z",
    "ext_volume": 378400,
    "ext_high": 7.49,
    "ext_low": 7.44,
    "source": "yahoo-v8-chart",
    "change_pct": -2.231,
-   "ext_change_pct": 0.403
+   "ext_change_pct": 0.268
   },
   "RCAT": {
    "price": 5.91,
@@ -695,27 +695,27 @@
    "name": "Red Cat Holdings, Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 5.9384,
-   "ext_time": "2026-10-08T23:42:40Z",
-   "ext_volume": 1505051,
+   "ext_price": 5.9398,
+   "ext_time": "2026-10-08T23:56:11Z",
+   "ext_volume": 493347,
    "ext_high": 5.9494,
    "ext_low": 5.9001,
    "source": "yahoo-v8-chart",
    "change_pct": -3.902,
-   "ext_change_pct": 0.481
+   "ext_change_pct": 0.504
   },
   "RIOT": {
    "price": 16.84,
    "time": "2026-10-08T20:00:00Z",
    "prev_close": 18.54,
    "day_high": 18.2,
-   "day_low": 16.36,
+   "day_low": 16.355,
    "volume": 30571756,
    "name": "Riot Platforms, Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
    "ext_price": 16.93,
-   "ext_time": "2026-10-08T23:42:04Z",
+   "ext_time": "2026-10-08T23:58:53Z",
    "ext_volume": 1329682,
    "ext_high": 17.0,
    "ext_low": 16.835,
@@ -728,19 +728,19 @@
    "time": "2026-10-08T20:00:00Z",
    "prev_close": 71.92,
    "day_high": 71.65,
-   "day_low": 67.71,
+   "day_low": 67.72,
    "volume": 22892581,
    "name": "Rocket Lab Corporation",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 68.53,
-   "ext_time": "2026-10-08T23:42:49Z",
+   "ext_price": 68.4991,
+   "ext_time": "2026-10-08T23:59:53Z",
    "ext_volume": 1070675,
    "ext_high": 68.82,
    "ext_low": 68.38,
    "source": "yahoo-v8-chart",
    "change_pct": -4.894,
-   "ext_change_pct": 0.19
+   "ext_change_pct": 0.145
   },
   "RXRX": {
    "price": 3.95,
@@ -752,14 +752,14 @@
    "name": "Recursion Pharmaceuticals, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 3.97,
-   "ext_time": "2026-10-08T23:42:52Z",
+   "ext_price": 3.94,
+   "ext_time": "2026-10-08T23:59:51Z",
    "ext_volume": 0,
    "ext_high": 3.97,
    "ext_low": 3.94,
    "source": "yahoo-v8-chart",
    "change_pct": -7.494,
-   "ext_change_pct": 0.506
+   "ext_change_pct": -0.253
   },
   "SBET": {
    "price": 8.81,
@@ -771,14 +771,14 @@
    "name": "SharpLink, Inc.",
    "exchange": "NasdaqCM",
    "instrument": "EQUITY",
-   "ext_price": 8.8594,
-   "ext_time": "2026-10-08T23:41:58Z",
+   "ext_price": 8.86,
+   "ext_time": "2026-10-08T23:44:24Z",
    "ext_volume": 391308,
    "ext_high": 8.88,
    "ext_low": 8.7937,
    "source": "yahoo-v8-chart",
    "change_pct": -1.564,
-   "ext_change_pct": 0.561
+   "ext_change_pct": 0.568
   },
   "SMCI": {
    "price": 42.77,
@@ -790,14 +790,14 @@
    "name": "Super Micro Computer, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 42.8,
-   "ext_time": "2026-10-08T23:40:20Z",
+   "ext_price": 42.7838,
+   "ext_time": "2026-10-08T23:57:15Z",
    "ext_volume": 118004,
    "ext_high": 43.0,
    "ext_low": 42.66,
    "source": "yahoo-v8-chart",
    "change_pct": -4.829,
-   "ext_change_pct": 0.07
+   "ext_change_pct": 0.032
   },
   "SMR": {
    "price": 7.32,
@@ -810,10 +810,10 @@
    "exchange": "NYSE",
    "instrument": "EQUITY",
    "ext_price": 7.32,
-   "ext_time": "2026-10-08T23:43:37Z",
+   "ext_time": "2026-10-08T23:59:36Z",
    "ext_volume": 6256965,
-   "ext_high": 7.36,
-   "ext_low": 7.28,
+   "ext_high": 7.3254,
+   "ext_low": 7.3,
    "source": "yahoo-v8-chart",
    "change_pct": -4.563,
    "ext_change_pct": 0.0
@@ -828,14 +828,14 @@
    "name": "Semtech Corporation",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 188.0,
-   "ext_time": "2026-10-08T23:09:22Z",
-   "ext_volume": 253963,
+   "ext_price": 187.0,
+   "ext_time": "2026-10-08T23:55:10Z",
+   "ext_volume": 246696,
    "ext_high": 189.42,
-   "ext_low": 187.49,
+   "ext_low": 187.0,
    "source": "yahoo-v8-chart",
    "change_pct": -3.246,
-   "ext_change_pct": 0.272
+   "ext_change_pct": -0.261
   },
   "SPY": {
    "price": 773.93,
@@ -847,14 +847,14 @@
    "name": "State Street SPDR S&P 500 ETF T",
    "exchange": "NYSEArca",
    "instrument": "ETF",
-   "ext_price": 774.39,
-   "ext_time": "2026-10-08T23:43:39Z",
+   "ext_price": 774.4599,
+   "ext_time": "2026-10-08T23:59:33Z",
    "ext_volume": 5722200,
-   "ext_high": 775.0,
-   "ext_low": 773.7661,
+   "ext_high": 774.46,
+   "ext_low": 773.88,
    "source": "yahoo-v8-chart",
    "change_pct": -0.423,
-   "ext_change_pct": 0.059
+   "ext_change_pct": 0.068
   },
   "STNE": {
    "price": 11.6,
@@ -885,14 +885,14 @@
    "name": "Tempus AI, Inc.",
    "exchange": "NasdaqGS",
    "instrument": "EQUITY",
-   "ext_price": 69.25,
-   "ext_time": "2026-10-08T23:37:36Z",
-   "ext_volume": 556801,
+   "ext_price": 69.24,
+   "ext_time": "2026-10-08T23:59:18Z",
+   "ext_volume": 552990,
    "ext_high": 69.48,
    "ext_low": 69.0,
    "source": "yahoo-v8-chart",
    "change_pct": -1.521,
-   "ext_change_pct": -0.043
+   "ext_change_pct": -0.058
   },
   "UMAC": {
    "price": 21.39,
@@ -904,16 +904,16 @@
    "name": "Unusual Machines, Inc.",
    "exchange": "NYSE American",
    "instrument": "EQUITY",
-   "ext_price": 21.5,
-   "ext_time": "2026-10-08T23:41:13Z",
+   "ext_price": 21.3807,
+   "ext_time": "2026-10-08T23:50:53Z",
    "ext_volume": 50695,
-   "ext_high": 21.5,
-   "ext_low": 21.3727,
+   "ext_high": 21.39,
+   "ext_low": 21.3807,
    "source": "yahoo-v8-chart",
    "change_pct": -2.239,
-   "ext_change_pct": 0.514
+   "ext_change_pct": -0.043
   }
  },
  "errors": {},
- "fetch_seconds": 1.7
+ "fetch_seconds": 1.8
 }

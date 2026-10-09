@@ -1,5 +1,5 @@
 {
-  "strategy": "Fri Oct 9: holding SMCI (5.762 at 41.90) to its target 50.76 or stop 40.63. Resting DAY buy limits at support: APLD 23.55, NNE 15.05, HIMS 27.12 ($703.42 settled cash, all reserved; four slots full). ASTS under its zone after the SpaceX spectrum news (no slot); BMNR 22.65 and CRCL 77.02 only if the bitcoin gate opens. Radar 28 names. PCVX's offering priced at $64.00 (final prospectus Oct 8), so it is no longer skipped. New buys: 25% of equity, cut so a stop plus a 1% gap allowance loses at most 1.5% of equity; no orders in halted or BROKEN names. Clue scan at 8:40 AM.",
+  "strategy": "Mon Oct 12: holding SMCI (5.762 at 41.90; target 50.76, stop 40.63), APLD (10.1551 at 23.46; 28.67, 22.64) and NNE (15.8299 at 15.05; 17.01, 14.51). One slot free, $226.94 settled: the 8:40 run places one resting buy limit at support (orders.py plan: STNE 11.60 first, then RXRX 4.11, AEHR 79.96, SMTC 174.27, AFRM 80.37; BMNR 22.94 and COIN 175.00 only if the bitcoin gate opens). Radar 31 names (NVAX added). SMCI reports Nov 3 after the close (tentative). New buys: 25% of equity, cut so a stop plus a 1% gap allowance loses at most 1.5% of equity; no orders in halted or BROKEN names. Clue scan at 8:40 AM.",
   "focus": [
     "SPY",
     "QQQ",

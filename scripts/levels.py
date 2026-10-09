@@ -59,6 +59,9 @@ CANDIDATES = [
     # Added Wed Oct 7 from the day's 15%+ movers that pass the filters (an app-software maker, ATR 6.3%); XRPN
     # passed too but is a shell company awaiting its merger, priced by the deal rather than by its levels.
     "BSP",
+    # Added Fri Oct 9 from the day's 15%+ movers that pass the filters (a vaccine maker, ATR 7.9%, support tested
+    # 23 times); WFF passed too but jumped 6x in one session, so its levels are not established yet.
+    "NVAX",
 ]
 MUST_KEEP = {"GPUS", "IREN", "BTDR"}
 # Names that trade mostly on bitcoin or ether (miners, hosts that still mine, treasuries, exchanges):

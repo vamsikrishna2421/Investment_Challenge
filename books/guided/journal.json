@@ -660,6 +660,39 @@
       "tickers": [
         "NNE"
       ]
+    },
+    {
+      "id": "J0053",
+      "ts": "2026-10-09T20:21:52Z",
+      "kind": "research",
+      "title": "Mover post-mortem 2026-10-09: HIMS +10%, STNE +7%, SNAP +6%, PCVX +10%, AFRM +5%",
+      "body": "Big moves today (at least one daily range, ATR) among the radar and its candidates, with the clues each showed at the prior close and why the routines did not catch it (clues.py postmortem; method in the script docstring).\nHIMS +10.2% (1.7 ATR): clues at the prior close none (score 0); on the radar; low 28.31 stayed above the buy zone top 27.63, so no entry.\nSTNE +7.4% (1.5 ATR): clues at the prior close ACC HL (score 2); on the radar; low 11.63 stayed above the buy zone top 10.78, so no entry.\nSNAP +6.3% (1.5 ATR): clues at the prior close COIL ACC HL (score 3); candidate, not on the radar: R:R 1.42 < 1.5.\nPCVX +9.8% (1.2 ATR): clues at the prior close ACC HL (score 2); on the radar; low 64.78 stayed above the buy zone top 57.79, so no entry.\nAFRM +4.6% (1.1 ATR): clues at the prior close ACC HL (score 2); candidate, not on the radar: R:R 1.21 < 1.5.\nRXRX +10.4% (1.1 ATR): clues at the prior close HL RES (score 1); on the radar; low 3.89 stayed above the buy zone top 3.365, so no entry.\nORCL +4.6% (1.1 ATR): clues at the prior close HL RES (score 1); candidate, not on the radar: R:R 0.87 < 1.5.\nDown: ASTS -10.5%.\nBase rate today: 4 of 11 names with 2+ clues (or a breakout watch) moved up 1.0+ ATR; 3 of 56 without did. One session is an anecdote; the 5-year clue backtest decides which clues count.",
+      "tickers": [
+        "HIMS",
+        "STNE",
+        "SNAP",
+        "PCVX",
+        "AFRM",
+        "RXRX",
+        "ORCL",
+        "ASTS"
+      ]
+    },
+    {
+      "id": "J0054",
+      "ts": "2026-10-09T20:27:59Z",
+      "kind": "review",
+      "title": "Day review Fri Oct 9: +$1.38, equity $951.24; APLD and NNE bought at support, HIMS ran 10% without filling",
+      "body": "P&L: equity $951.24 at the close, +$1.38 on the day (+0.1%), -$48.76 (-4.88%) since the $1,000 start; S&P 500 +1.17%, Nasdaq-100 +0.23% and Russell 2000 -0.88% over the same days. Progress to $2,000: 47.6%; the target needs +110.3% in the 18 sessions left (Oct 12 to Nov 4), 4.2% a session.\n\nTrades: two resting buys filled in the first two minutes; nothing closed (J0051, J0052).\n- APLD: limit 23.55 filled 23.46 at 9:31 (T0012, gap fill; stop 22.64, target 28.67). It made 22.77 by 9:41, 0.13 over the stop, and closed 23.61 (+$1.48, +0.6%).\n- NNE: limit 15.05 filled at 9:32 (T0013; stop 14.51, target 17.01); closed 15.39 (+$5.38, +2.3%).\n- HIMS: limit 27.12 (O0005) expired unfilled. The day's low was 28.31, 4.2% over the limit and 2.5% over the zone top (27.63); it closed 30.92 (+10.2%, 1.7 ATR), inside its sell zone (30.56-31.11). A support entry cannot catch a name that never comes back to support, and HIMS showed no clues at the prior close (J0053), so no rule would have bought it.\n- SMCI held: 41.82 (-2.1% on the day; entry 41.90, stop 40.63, target 50.76). Its fiscal Q1 results are due Nov 3 after the close (tentative date), the day before the challenge ends.\n\nMarket: S&P 500 +0.60%, Nasdaq-100 +0.49%. Bitcoin 82.3k (+0.9% on the day, -3.8% over 3 days) stayed under its 20-day average (84.2k), so the bitcoin gate stayed shut. Vaccine makers rallied (MRNA +14.2%, NVAX +15.8%, PCVX +9.8%); telecoms fell (TMUS -13.3%, T -9.8%, VZ -8.7%), and ASTS -10.5%.\n\nMovers (J0053): seven radar names and candidates rose 1+ ATR: HIMS +10.2% (1.7 ATR, no clues), STNE +7.4% (1.5 ATR, ACC HL), SNAP +6.3% (1.5 ATR, COIL ACC HL), PCVX +9.8% (1.2 ATR, ACC HL), RXRX +10.4% (1.1 ATR, HL RES), AFRM +4.6% (1.1 ATR, ACC HL) and ORCL +4.6% (1.1 ATR, HL RES). Missed because HIMS, STNE, PCVX and RXRX never came back to their buy zones, and SNAP (R:R 1.42), AFRM (1.21) and ORCL (0.87) were not on the radar. SNAP was in the 8:40 clue scan as a bounce setup (an alert, not a radar buy). Base rate today: 4 of 11 names with 2+ clues rose 1+ ATR, 3 of 56 without; one session decides nothing. Down: ASTS -10.5% (-1.47 ATR).\n\n15%+ movers scan: NVAX +15.8% joins the candidates (a biotech rally, no company news; ATR 7.9%, support 9.46-9.77 holding 23 swings, 30% under the close, R:R 3.6). WFF +499.5% passed the filters but stays out: a 6x one-session jump with repeated volatility halts has no established levels. QSI +25.4% ($12.1M a day < $15M), KLRA +16.1% (no tested support; its IPO lock-up ends Oct 14), CCI +15.6% (ATR 3.14% < 4%), FSLY +15.9% and PDSB +35.3% (R:R 0.99) and QETA (a halted shell) fail the filters.\n\nRadar rebuilt from today's closes: 31 names (research/radar/2026-10-09.md). New: AFRM, IONQ, OKLO, LEU, MSTR, NVAX. Dropped: ASTS (no tested support under the price after its fall; R:R 1.34), GLXY (R:R 0.49) and HUT (R:R 0.82). In the buy zone at the close: APLD 23.61 (held) and AFRM 80.77 (80.37-81.34, stop 78.43, sell 85.82). Near: NNE 15.39 (held), AEHR 84.75 (zone top 82.49), RXRX 4.32 (zone top 4.22), COIN 179.94 and BMNR 24.04 (crypto-linked, gate shut). In the sell zone, not held: HIMS 30.88 and GPUS. No offering or material filing after the close on the held names (wires, 3h; no new 8-K for NNE since Oct 2 or for AFRM this month).\n\nNext session (Mon Oct 12): $226.94 settled cash, one slot free (SMCI, APLD, NNE held). orders.py plan ranks STNE 11.60 first (stop 11.23, target 15.55, R:R 10.9; 7.8% under the close), then RXRX 4.11, AEHR 79.96, SMTC 174.27 and AFRM 80.37; BMNR 22.94 and COIN 175.00 only if the bitcoin gate opens. The 8:40 run re-ranks on pre-market prices and places one resting limit (orders.py plan --place). Held: SMCI to 50.76 or 40.63, APLD to 28.67 or 22.64, NNE to 17.01 or 14.51.",
+      "tickers": [
+        "APLD",
+        "NNE",
+        "HIMS",
+        "SMCI",
+        "NVAX",
+        "AFRM",
+        "STNE"
+      ]
     }
   ]
 }

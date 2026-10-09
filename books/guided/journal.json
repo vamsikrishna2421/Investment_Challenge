@@ -622,6 +622,24 @@
       "tickers": [
         "PCVX"
       ]
+    },
+    {
+      "id": "J0050",
+      "ts": "2026-10-09T12:44:18Z",
+      "kind": "plan",
+      "title": "Day plan Fri Oct 9: resting buys at APLD 23.55, NNE 15.05, HIMS 27.12; $703.42 settled (J0047 corrected)",
+      "body": "Pre-market at 8:43: S&P 500 futures proxy SPY 776.5 (+0.3%), QQQ 752.7 (+0.7%); bitcoin 83.0k (+1.6%), still under its 20-day average (84.2k), so crypto-linked dips stay blocked. Equity $952.97.\n\nCorrection to J0047: settled cash today is $703.42, not $227.21. The CIFR, HUT and APLD sales of Oct 8 all settle on Oct 9 (T+1), so there is cash for three orders, not one.\n\nHeld: SMCI 5.762 at 41.90, 43.34 pre-market (+1.3%), stop 40.63, target 50.76. The Oct 8 board-change 8-K (J0048) changes nothing.\n\nResting buy limits placed (DAY orders, orders.py plan --place, each sized from its stop with the 1% gap allowance; no offering or material news on any of them in the 16-hour wires):\n- O0003 APLD 23.55 for $238.24: pre-market 23.85 (+0.0%), zone 23.55-24.01, stop 22.64, target 28.67, R:R 5.6.\n- O0004 NNE 15.05 for $238.24: pre-market 15.46 (+1.3%), zone 15.05-15.33, stop 14.51, target 17.01, R:R 3.6.\n- O0005 HIMS 27.12 for $226.94: pre-market 28.49 (+1.5%), zone 27.12-27.63, stop 26.09, target 30.63, R:R 3.4.\nAll settled cash is reserved and SMCI plus the three orders fill the four slots, so no market buys at runs unless an order is cancelled. In that case the run order (levels.py check, deepest dip first) is ASTS, then APLD.\n\nASTS: 54.71 pre-market (-3.9%), under its zone (56.68-57.90) and 0.9% above its stop (54.25). The headlines are about competitors (SpaceX's low-band spectrum deal, a mixed FCC agenda), not company news, so ASTS stays eligible, but it has no slot. BMNR 22.65 and CRCL 77.02 wait for the bitcoin gate. PCVX is no longer skipped (its offering priced at $64.00, J0049) and sits 12% above its zone.\n\nClue scan (alerts for Vamsi, not radar buys): bounce setups BSP 38.01 (SUP ACC HL; left the radar on R:R 1.35), SMCI (held) and SNAP 5.86 (COIL ACC HL); breakout watch PATH 13.25 under resistance 13.31 (coil 0.73); pre-market moves BULL +4.7%, GLXY +4.6% (in its sell zone) and ASTS -3.9%.",
+      "tickers": [
+        "SMCI",
+        "APLD",
+        "NNE",
+        "HIMS",
+        "ASTS",
+        "PCVX",
+        "BSP",
+        "SNAP",
+        "PATH"
+      ]
     }
   ]
 }

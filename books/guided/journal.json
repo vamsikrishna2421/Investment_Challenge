@@ -640,6 +640,26 @@
         "SNAP",
         "PATH"
       ]
+    },
+    {
+      "id": "J0051",
+      "ts": "2026-10-09T13:42:55Z",
+      "kind": "trade",
+      "title": "Buy filled: APLD 10.1551 @ 23.46 (T0012), resting limit at support; stop 22.64, target 28.67",
+      "body": "Fill: T0012 bought 10.1551 APLD @ 23.46 at 9:31 ET for $238.24 (resting DAY limit O0003 at radar support 23.55, placed at 8:43 when the pre-market price was 23.85). The first minute traded under the limit, so the fill took the bar's price (gap fill). APLD then made 22.77 and stood at 23.11 at 9:41.\n\nPlan: stop 22.6409 (3.5% under the entry; resting stop, filled by orders.py fill), target 28.6677 at the bottom of the sell zone (+22.2%), R:R 6.4. Size 25% of equity; the stop risks $8.32 (0.9% of equity).\n\nContext: the second entry at this support in two days. The Oct 8 buy at 23.55 was stopped at 22.61 the same afternoon (J0044); the stock then closed back in its zone (23.85) and the rebuilt radar kept the support (5 touches). The S&P 500 was +0.3% at the fill; no company news (wires).",
+      "tickers": [
+        "APLD"
+      ]
+    },
+    {
+      "id": "J0052",
+      "ts": "2026-10-09T13:42:55Z",
+      "kind": "trade",
+      "title": "Buy filled: NNE 15.8299 @ 15.05 (T0013), resting limit at support; stop 14.51, target 17.01",
+      "body": "Fill: T0013 bought 15.8299 NNE @ 15.05 at 9:32 ET for $238.24 (resting DAY limit O0004 at radar support 15.05, placed at 8:43 when the pre-market price was 15.46). NNE made 14.93 and stood at 15.10 at 9:41.\n\nPlan: stop 14.5077 (3.6% under the entry; resting stop, filled by orders.py fill), target 17.0128 at the bottom of the sell zone (+13.0%), R:R 3.6. Size 25% of equity; the stop risks $8.58 (0.9% of equity).\n\nContext: a nuclear name, which spreads the book beyond the AI-infrastructure group that SMCI and APLD belong to. The S&P 500 was +0.3% at the fill; no company news (wires). The third resting order, HIMS 27.12 (O0005), is still open.",
+      "tickers": [
+        "NNE"
+      ]
     }
   ]
 }

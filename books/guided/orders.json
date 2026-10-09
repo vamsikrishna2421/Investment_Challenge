@@ -68,7 +68,15 @@
         "resting"
       ],
       "placed": "2026-10-09T12:43:52Z",
-      "status": "open"
+      "status": "filled",
+      "checked_through": "2026-10-09T13:41:00Z",
+      "closed": "2026-10-09T13:31:00Z",
+      "fill": {
+        "txn": "T0012",
+        "price": 23.46,
+        "qty": 10.1551,
+        "ts": "2026-10-09T13:31:00Z"
+      }
     },
     {
       "id": "O0004",
@@ -86,7 +94,15 @@
         "resting"
       ],
       "placed": "2026-10-09T12:43:52Z",
-      "status": "open"
+      "status": "filled",
+      "checked_through": "2026-10-09T13:40:00Z",
+      "closed": "2026-10-09T13:32:00Z",
+      "fill": {
+        "txn": "T0013",
+        "price": 15.05,
+        "qty": 15.8299,
+        "ts": "2026-10-09T13:32:00Z"
+      }
     },
     {
       "id": "O0005",
@@ -104,10 +120,13 @@
         "resting"
       ],
       "placed": "2026-10-09T12:43:52Z",
-      "status": "open"
+      "status": "open",
+      "checked_through": "2026-10-09T13:41:00Z"
     }
   ],
   "stops_checked": {
-    "SMCI": "2026-10-08T20:00:00Z"
+    "SMCI": "2026-10-09T13:41:00Z",
+    "APLD": "2026-10-09T13:41:00Z",
+    "NNE": "2026-10-09T13:40:00Z"
   }
 }

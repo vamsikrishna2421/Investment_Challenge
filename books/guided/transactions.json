@@ -418,6 +418,86 @@
         "cash_account": true,
         "asset": "stock"
       }
+    },
+    {
+      "id": "T0012",
+      "type": "BUY",
+      "ts": "2026-10-09T13:31:00Z",
+      "ticker": "APLD",
+      "label": "APLD",
+      "asset": "stock",
+      "name": "Applied Digital Corporation",
+      "qty": 10.1551,
+      "multiplier": 1,
+      "price": 23.46,
+      "quote_price": 23.55,
+      "quote_time": "2026-10-09T13:31:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 0.0,
+      "gross": 238.24,
+      "fees": 0.0,
+      "net_cash": -238.24,
+      "settle_date": "2026-10-12",
+      "rationale": "Resting buy limit O0003 filled: radar support 23.55 (stop 22.6409, sell zone from 28.6677, R:R 5.61); placed +1.3% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "plan": {
+        "stop": 22.6409,
+        "target": 28.6677
+      },
+      "compliance": {
+        "session": "regular",
+        "order": "O0003",
+        "order_type": "limit",
+        "limit": 23.55,
+        "gap_fill": true,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true
+      }
+    },
+    {
+      "id": "T0013",
+      "type": "BUY",
+      "ts": "2026-10-09T13:32:00Z",
+      "ticker": "NNE",
+      "label": "NNE",
+      "asset": "stock",
+      "name": "Nano Nuclear Energy Inc.",
+      "qty": 15.8299,
+      "multiplier": 1,
+      "price": 15.05,
+      "quote_price": 15.05,
+      "quote_time": "2026-10-09T13:32:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 0.0,
+      "gross": 238.24,
+      "fees": 0.0,
+      "net_cash": -238.24,
+      "settle_date": "2026-10-12",
+      "rationale": "Resting buy limit O0004 filled: radar support 15.05 (stop 14.5077, sell zone from 17.0128, R:R 3.59); placed +2.7% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "plan": {
+        "stop": 14.5077,
+        "target": 17.0128
+      },
+      "compliance": {
+        "session": "regular",
+        "order": "O0004",
+        "order_type": "limit",
+        "limit": 15.05,
+        "gap_fill": false,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": true
+      }
     }
   ]
 }

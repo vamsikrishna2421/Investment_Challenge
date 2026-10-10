@@ -13,7 +13,9 @@ Measured for each signal and for the baseline (every bar of the same names, boug
     holding both counts as the stop (the share of such trades is reported).
 Returns % after trade.py-style slippage on market fills (the entry, stops, closes) and gross; means +/- 95% clustered
 by date. The first and second half of the dates are reported apart: an edge has to show in both.
-  python scripts/candle_backtest.py [--tickers A,B] [--save]
+--daily: the same patterns on daily candles over 5 years (the textbooks' timeframe), bought at the next day's open and
+sold at that day's close, 3 sessions later or 5 sessions later (no scalp).
+  python scripts/candle_backtest.py [--tickers A,B | --large-caps] [--daily] [--save]
 """
 from __future__ import annotations
 
@@ -41,6 +43,12 @@ BULL = ("hammer", "bullish engulfing", "piercing line", "morning star", "bullish
         "big green bar")
 BEAR = ("shooting star", "bearish engulfing", "dark cloud cover", "evening star", "three black crows", "big red bar")
 MEASURES = ("1h", "close", "next", "s_tight", "s_low", "s_nostop")
+# Oct 10 (Vamsi: "maybe these patterns only work on large caps?"): the 60 largest US stocks by market value, plus the two
+# index funds.
+LARGE = ["SPY", "QQQ", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "AVGO", "TSLA", "BRK-B", "JPM", "LLY", "V", "UNH",
+         "XOM", "MA", "JNJ", "PG", "HD", "COST", "ABBV", "WMT", "NFLX", "CRM", "BAC", "ORCL", "KO", "CVX", "MRK", "AMD",
+         "PEP", "ADBE", "TMO", "LIN", "ACN", "MCD", "CSCO", "ABT", "WFC", "DIS", "INTU", "IBM", "QCOM", "TXN", "GE", "CAT",
+         "AMGN", "VZ", "PFE", "NOW", "ISRG", "PM", "UBER", "SPGI", "RTX", "GS", "HON", "NEE", "T", "LOW", "BKNG"]
 LABELS = {"1h": "next hour", "close": "to the close", "next": "next close", "s_tight": "+0.5%/-0.5%",
           "s_low": "+0.5%/pattern low", "s_nostop": "+0.5%/no stop"}
 
@@ -175,9 +183,10 @@ def run(sym: str, h1: dict, m5: dict) -> tuple[dict, list]:
     return sig_rows, base
 
 
-def summarize(rows: list[dict], split: str | None = None) -> dict:
+def summarize(rows: list[dict], split: str | None = None, measures: tuple = MEASURES,
+              halves: tuple = ("1h_g", "close_g")) -> dict:
     out = {"n": len(rows)}
-    for m in MEASURES:
+    for m in measures:
         for sfx in ("", "_g"):
             xs = [(r["date"], r[m + sfx]) for r in rows if r.get(m + sfx) is not None]
             if not xs:
@@ -193,7 +202,7 @@ def summarize(rows: list[dict], split: str | None = None) -> dict:
                 out[m + sfx]["both"] = round(100 * hows.count("both") / k, 1)
     if split:
         out["halves"] = {}
-        for m in ("1h_g", "close_g"):
+        for m in halves:
             ma = [(r["date"], r[m]) for r in rows if r["date"] < split and r.get(m) is not None]
             mz = [(r["date"], r[m]) for r in rows if r["date"] >= split and r.get(m) is not None]
             out["halves"][m] = [round(cb.clustered(ma)[0], 3) if ma else None,
@@ -204,7 +213,7 @@ def summarize(rows: list[dict], split: str | None = None) -> dict:
 def report(res: dict) -> str:
     base = res["baseline"]
     lines = [f"# Hourly candlestick patterns, {res['asof']}", "",
-             f"{res['names']} radar candidates, hourly bars {res['first']} to {res['last']} ({res['sessions']} sessions); "
+             f"{res['names']} {res['universe']}, hourly bars {res['first']} to {res['last']} ({res['sessions']} sessions); "
              f"method in the `scripts/candle_backtest.py` docstring. 'net' is after slippage on market fills (entry, "
              f"stops, closes; 5 bps a side at $20+, 20 at $5-20, 50 under $5), 'gross' before any cost; means % "
              f"± 95% clustered by date. 'up' is the share of trades that rose (gross). Edge = signal minus baseline "
@@ -250,12 +259,106 @@ def report(res: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+DAILY = ("d1", "d3", "d5")
+
+
+def run_daily(rows: list[dict]) -> tuple[dict, list]:
+    """The same signals on daily candles: bought at the next day's open, sold at its close, 3 or 5 sessions later."""
+    b = [(dt.datetime.fromtimestamp(r["t"], dt.timezone.utc).astimezone(pfm.ET).date().isoformat(), 0,
+          r["o"], r["h"], r["l"], r["c"]) for r in rows]
+    sig_rows: dict[str, list] = defaultdict(list)
+    base: list = []
+    for i in range(14, len(b) - 5):
+        e = b[i + 1][2]
+        if e <= 0:
+            continue
+        avg = sum(abs(b[k][5] - b[k][2]) for k in range(i - 10, i)) / 10
+        row = {"date": b[i][0]}
+        for net in (True, False):
+            sfx = "" if net else "_g"
+            for m, k in (("d1", 1), ("d3", 3), ("d5", 5)):
+                row[m + sfx] = ret(e, b[i + k][5], net)
+        base.append(row)
+        for s_ in signals(b, i, avg):
+            sig_rows[s_].append(row)
+    return sig_rows, base
+
+
+def report_daily(res: dict) -> str:
+    base = res["baseline"]
+    lines = [f"# Daily candlestick patterns, {res['asof']}", "",
+             f"{res['names']} {res['universe']}, daily bars {res['first']} to {res['last']} ({res['sessions']} sessions); "
+             f"method in the `scripts/candle_backtest.py` docstring (--daily). Bought at the next day's open; 'net' "
+             f"after slippage (5 bps a side at $20+, 20 at $5-20, 50 under $5), 'gross' before costs; means % ± 95% "
+             f"clustered by date. 'up' is the share that rose by the day's close (gross). Edge = signal minus baseline "
+             f"(gross), also for each half of the dates (split {res['split']}).", "",
+             "| signal | n | per day | that day net | gross | up | 3 days gross | 5 days net | gross | edge 1 day | "
+             "edge 1 day by half | edge 5 days | edge 5 days by half |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+
+    def cell(s, m):
+        x = s.get(m)
+        return f"{x['mean']:+.2f} ± {x['ci']:.2f}" if x and x.get("ci") is not None else "-"
+
+    def edge(s, m):
+        x, y = s.get(m), base.get(m)
+        return f"{x['mean'] - y['mean']:+.2f}" if x and y else "-"
+
+    def halves(s, m):
+        hs, hb = s.get("halves", {}).get(m), base.get("halves", {}).get(m)
+        if not hs or not hb or None in hs or None in hb:
+            return "-"
+        return f"{hs[0] - hb[0]:+.2f} / {hs[1] - hb[1]:+.2f}"
+
+    for name, s in [("baseline (every day)", base)] + [(k, res["signals"][k]) for k in BULL + BEAR
+                                                       if k in res["signals"]]:
+        up = s.get("d1_g", {}).get("pos")
+        lines.append(f"| {name} | {s['n']} | {s['n'] / res['sessions']:.1f} | {cell(s, 'd1')} | {cell(s, 'd1_g')} | "
+                     f"{up:.0f}% | {cell(s, 'd3_g')} | {cell(s, 'd5')} | {cell(s, 'd5_g')} | {edge(s, 'd1_g')} | "
+                     f"{halves(s, 'd1_g')} | {edge(s, 'd5_g')} | {halves(s, 'd5_g')} |")
+    lines += ["", "## Reading", ""] + res.get("reading", [])
+    return "\n".join(lines) + "\n"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--tickers", help="comma list (default: the radar candidates)")
+    ap.add_argument("--large-caps", action="store_true", help="the 60 largest US stocks plus SPY and QQQ")
+    ap.add_argument("--daily", action="store_true", help="daily candles over 5 years instead of hourly")
     ap.add_argument("--save", action="store_true")
     a = ap.parse_args()
-    syms = [t.strip().upper() for t in a.tickers.split(",")] if a.tickers else list(lv.CANDIDATES)
+    syms = [t.strip().upper() for t in a.tickers.split(",")] if a.tickers else LARGE if a.large_caps \
+        else list(lv.CANDIDATES)
+    universe = "large caps (60 largest US stocks, SPY, QQQ)" if a.large_caps and not a.tickers else \
+        "names" if a.tickers else "radar candidates"
+    if a.daily:
+        with ThreadPoolExecutor(6) as ex:
+            daily = dict(zip(syms, ex.map(lambda t: sb.daily(t, "5y"), syms)))
+        sig_d: dict[str, list] = defaultdict(list)
+        base_d: list = []
+        for sym, rows in daily.items():
+            if not rows or len(rows) < 60:
+                print(f"  {sym}: no daily bars", file=sys.stderr)
+                continue
+            s_, bs = run_daily(rows)
+            for k, v in s_.items():
+                sig_d[k].extend(v)
+            base_d.extend(bs)
+        ds = sorted({r["date"] for r in base_d})
+        split = ds[len(ds) // 2]
+        res = {"asof": dt.date.today().isoformat(), "universe": universe,
+               "names": sum(1 for r in daily.values() if r and len(r) >= 60), "first": ds[0], "last": ds[-1],
+               "sessions": len(ds), "split": split,
+               "baseline": summarize(base_d, split, DAILY, ("d1_g", "d5_g")),
+               "signals": {k: summarize(v, split, DAILY, ("d1_g", "d5_g")) for k, v in sig_d.items()}}
+        text = report_daily(res)
+        print(text)
+        if a.save:
+            out = ROOT / "research" / "backtests" / f"candles-daily-{res['asof']}{'-large' if a.large_caps else ''}"
+            out.with_suffix(".json").write_text(json.dumps(res, indent=2) + "\n")
+            out.with_suffix(".md").write_text(text)
+            print(f"saved {out.with_suffix('.md').relative_to(ROOT)}")
+        return 0
     with ThreadPoolExecutor(6) as ex:
         data = dict(ex.map(load, syms))
     sig: dict[str, list] = defaultdict(list)
@@ -274,14 +377,15 @@ def main() -> int:
         fine.update(m5)
     ds = sorted(dates)
     split = ds[len(ds) // 2]
-    res = {"asof": dt.date.today().isoformat(), "names": sum(1 for h, _ in data.values() if h), "first": ds[0],
+    res = {"asof": dt.date.today().isoformat(), "universe": universe,
+           "names": sum(1 for h, _ in data.values() if h), "first": ds[0],
            "last": ds[-1], "sessions": len(ds), "split": split, "m5_first": min(fine) if fine else None,
            "m5_sessions": len(fine), "baseline": summarize(base, split),
            "signals": {k: summarize(v, split) for k, v in sig.items()}}
     text = report(res)
     print(text)
     if a.save:
-        out = ROOT / "research" / "backtests" / f"candles-{res['asof']}"
+        out = ROOT / "research" / "backtests" / f"candles-{res['asof']}{'-large' if a.large_caps else ''}"
         out.with_suffix(".json").write_text(json.dumps(res, indent=2) + "\n")
         out.with_suffix(".md").write_text(text)
         print(f"saved {out.with_suffix('.md').relative_to(ROOT)}")

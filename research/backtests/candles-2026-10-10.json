@@ -1,0 +1,1443 @@
+{
+  "asof": "2026-10-10",
+  "names": 63,
+  "first": "2023-11-10",
+  "last": "2026-10-09",
+  "sessions": 730,
+  "split": "2025-04-29",
+  "m5_first": "2026-07-17",
+  "m5_sessions": 60,
+  "baseline": {
+    "n": 252644,
+    "1h": {
+      "mean": -0.369,
+      "ci": 0.025,
+      "pos": 36.4,
+      "n": 252644
+    },
+    "1h_g": {
+      "mean": 0.004,
+      "ci": 0.025,
+      "pos": 48.4,
+      "n": 252644
+    },
+    "close": {
+      "mean": -0.358,
+      "ci": 0.08,
+      "pos": 39.9,
+      "n": 252644
+    },
+    "close_g": {
+      "mean": 0.016,
+      "ci": 0.08,
+      "pos": 48.3,
+      "n": 252644
+    },
+    "next": {
+      "mean": -0.009,
+      "ci": 0.254,
+      "pos": 45.7,
+      "n": 252266
+    },
+    "next_g": {
+      "mean": 0.366,
+      "ci": 0.255,
+      "pos": 48.7,
+      "n": 252266
+    },
+    "s_tight": {
+      "mean": -0.328,
+      "ci": 0.026,
+      "pos": 38.3,
+      "n": 22642,
+      "target": 40.2,
+      "stop": 56.2,
+      "both": 0.8
+    },
+    "s_tight_g": {
+      "mean": -0.077,
+      "ci": 0.023,
+      "pos": 42.0,
+      "n": 22642,
+      "target": 40.2,
+      "stop": 56.2,
+      "both": 0.8
+    },
+    "s_nostop": {
+      "mean": -0.324,
+      "ci": 0.086,
+      "pos": 60.3,
+      "n": 22642,
+      "target": 63.3,
+      "stop": 0.0,
+      "both": 0.0
+    },
+    "s_nostop_g": {
+      "mean": -0.108,
+      "ci": 0.082,
+      "pos": 67.6,
+      "n": 22642,
+      "target": 63.3,
+      "stop": 0.0,
+      "both": 0.0
+    },
+    "halves": {
+      "1h_g": [
+        0.011,
+        -0.002
+      ],
+      "close_g": [
+        0.038,
+        -0.004
+      ]
+    }
+  },
+  "signals": {
+    "bullish engulfing": {
+      "n": 7327,
+      "1h": {
+        "mean": -0.406,
+        "ci": 0.063,
+        "pos": 35.1,
+        "n": 7327
+      },
+      "1h_g": {
+        "mean": -0.035,
+        "ci": 0.063,
+        "pos": 47.1,
+        "n": 7327
+      },
+      "close": {
+        "mean": -0.376,
+        "ci": 0.108,
+        "pos": 39.0,
+        "n": 7327
+      },
+      "close_g": {
+        "mean": -0.006,
+        "ci": 0.108,
+        "pos": 47.8,
+        "n": 7327
+      },
+      "next": {
+        "mean": -0.207,
+        "ci": 0.324,
+        "pos": 45.9,
+        "n": 7313
+      },
+      "next_g": {
+        "mean": 0.165,
+        "ci": 0.325,
+        "pos": 49.2,
+        "n": 7313
+      },
+      "s_tight": {
+        "mean": -0.359,
+        "ci": 0.059,
+        "pos": 36.1,
+        "n": 742,
+        "target": 37.6,
+        "stop": 57.3,
+        "both": 2.2
+      },
+      "s_tight_g": {
+        "mean": -0.097,
+        "ci": 0.052,
+        "pos": 40.4,
+        "n": 742,
+        "target": 37.6,
+        "stop": 57.3,
+        "both": 2.2
+      },
+      "s_low": {
+        "mean": -0.474,
+        "ci": 0.143,
+        "pos": 53.5,
+        "n": 742,
+        "target": 55.7,
+        "stop": 22.1,
+        "both": 0.1
+      },
+      "s_low_g": {
+        "mean": -0.238,
+        "ci": 0.138,
+        "pos": 61.1,
+        "n": 742,
+        "target": 55.7,
+        "stop": 22.1,
+        "both": 0.1
+      },
+      "s_nostop": {
+        "mean": -0.467,
+        "ci": 0.16,
+        "pos": 55.7,
+        "n": 742,
+        "target": 57.8,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.235,
+        "ci": 0.156,
+        "pos": 64.6,
+        "n": 742,
+        "target": 57.8,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          -0.046,
+          -0.026
+        ],
+        "close_g": [
+          -0.017,
+          0.004
+        ]
+      }
+    },
+    "shooting star": {
+      "n": 3939,
+      "1h": {
+        "mean": -0.387,
+        "ci": 0.07,
+        "pos": 37.8,
+        "n": 3939
+      },
+      "1h_g": {
+        "mean": 0.006,
+        "ci": 0.07,
+        "pos": 50.6,
+        "n": 3939
+      },
+      "close": {
+        "mean": -0.388,
+        "ci": 0.125,
+        "pos": 40.1,
+        "n": 3939
+      },
+      "close_g": {
+        "mean": 0.006,
+        "ci": 0.125,
+        "pos": 48.9,
+        "n": 3939
+      },
+      "next": {
+        "mean": 0.253,
+        "ci": 0.493,
+        "pos": 46.4,
+        "n": 3926
+      },
+      "next_g": {
+        "mean": 0.649,
+        "ci": 0.495,
+        "pos": 49.7,
+        "n": 3926
+      },
+      "s_tight": {
+        "mean": -0.234,
+        "ci": 0.077,
+        "pos": 43.7,
+        "n": 311,
+        "target": 45.7,
+        "stop": 48.6,
+        "both": 1.3
+      },
+      "s_tight_g": {
+        "mean": -0.011,
+        "ci": 0.07,
+        "pos": 48.9,
+        "n": 311,
+        "target": 45.7,
+        "stop": 48.6,
+        "both": 1.3
+      },
+      "s_low": {
+        "mean": -0.28,
+        "ci": 0.074,
+        "pos": 28.0,
+        "n": 293,
+        "target": 29.7,
+        "stop": 69.6,
+        "both": 2.4
+      },
+      "s_low_g": {
+        "mean": -0.04,
+        "ci": 0.07,
+        "pos": 30.0,
+        "n": 293,
+        "target": 29.7,
+        "stop": 69.6,
+        "both": 2.4
+      },
+      "s_nostop": {
+        "mean": -0.213,
+        "ci": 0.134,
+        "pos": 63.7,
+        "n": 311,
+        "target": 66.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.02,
+        "ci": 0.127,
+        "pos": 70.1,
+        "n": 311,
+        "target": 66.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.021,
+          -0.008
+        ],
+        "close_g": [
+          0.017,
+          -0.004
+        ]
+      }
+    },
+    "bearish engulfing": {
+      "n": 7514,
+      "1h": {
+        "mean": -0.378,
+        "ci": 0.052,
+        "pos": 36.9,
+        "n": 7514
+      },
+      "1h_g": {
+        "mean": -0.005,
+        "ci": 0.052,
+        "pos": 49.7,
+        "n": 7514
+      },
+      "close": {
+        "mean": -0.408,
+        "ci": 0.113,
+        "pos": 39.9,
+        "n": 7514
+      },
+      "close_g": {
+        "mean": -0.035,
+        "ci": 0.114,
+        "pos": 48.9,
+        "n": 7514
+      },
+      "next": {
+        "mean": 0.02,
+        "ci": 0.329,
+        "pos": 45.1,
+        "n": 7496
+      },
+      "next_g": {
+        "mean": 0.395,
+        "ci": 0.33,
+        "pos": 48.1,
+        "n": 7496
+      },
+      "s_tight": {
+        "mean": -0.273,
+        "ci": 0.063,
+        "pos": 43.3,
+        "n": 623,
+        "target": 44.9,
+        "stop": 51.4,
+        "both": 0.6
+      },
+      "s_tight_g": {
+        "mean": -0.029,
+        "ci": 0.052,
+        "pos": 47.0,
+        "n": 623,
+        "target": 44.9,
+        "stop": 51.4,
+        "both": 0.6
+      },
+      "s_low": {
+        "mean": -0.292,
+        "ci": 0.06,
+        "pos": 38.6,
+        "n": 598,
+        "target": 39.6,
+        "stop": 57.5,
+        "both": 0.7
+      },
+      "s_low_g": {
+        "mean": -0.043,
+        "ci": 0.05,
+        "pos": 40.8,
+        "n": 598,
+        "target": 39.6,
+        "stop": 57.5,
+        "both": 0.7
+      },
+      "s_nostop": {
+        "mean": -0.245,
+        "ci": 0.092,
+        "pos": 61.2,
+        "n": 623,
+        "target": 63.4,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.029,
+        "ci": 0.085,
+        "pos": 68.4,
+        "n": 623,
+        "target": 63.4,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.006,
+          -0.015
+        ],
+        "close_g": [
+          0.009,
+          -0.07
+        ]
+      }
+    },
+    "dark cloud cover": {
+      "n": 1840,
+      "1h": {
+        "mean": -0.289,
+        "ci": 0.084,
+        "pos": 39.7,
+        "n": 1840
+      },
+      "1h_g": {
+        "mean": 0.079,
+        "ci": 0.084,
+        "pos": 51.8,
+        "n": 1840
+      },
+      "close": {
+        "mean": -0.239,
+        "ci": 0.158,
+        "pos": 42.0,
+        "n": 1840
+      },
+      "close_g": {
+        "mean": 0.128,
+        "ci": 0.158,
+        "pos": 50.4,
+        "n": 1840
+      },
+      "next": {
+        "mean": 0.231,
+        "ci": 0.435,
+        "pos": 46.4,
+        "n": 1838
+      },
+      "next_g": {
+        "mean": 0.601,
+        "ci": 0.437,
+        "pos": 50.1,
+        "n": 1838
+      },
+      "s_tight": {
+        "mean": -0.187,
+        "ci": 0.094,
+        "pos": 49.6,
+        "n": 133,
+        "target": 51.9,
+        "stop": 46.6,
+        "both": 0.0
+      },
+      "s_tight_g": {
+        "mean": 0.026,
+        "ci": 0.076,
+        "pos": 51.9,
+        "n": 133,
+        "target": 51.9,
+        "stop": 46.6,
+        "both": 0.0
+      },
+      "s_low": {
+        "mean": -0.234,
+        "ci": 0.141,
+        "pos": 58.6,
+        "n": 133,
+        "target": 60.9,
+        "stop": 31.6,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": -0.035,
+        "ci": 0.127,
+        "pos": 60.9,
+        "n": 133,
+        "target": 60.9,
+        "stop": 31.6,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.18,
+        "ci": 0.181,
+        "pos": 67.7,
+        "n": 133,
+        "target": 69.9,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": 0.009,
+        "ci": 0.166,
+        "pos": 70.7,
+        "n": 133,
+        "target": 69.9,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.113,
+          0.051
+        ],
+        "close_g": [
+          0.24,
+          0.033
+        ]
+      }
+    },
+    "big red bar": {
+      "n": 9431,
+      "1h": {
+        "mean": -0.315,
+        "ci": 0.101,
+        "pos": 40.2,
+        "n": 9431
+      },
+      "1h_g": {
+        "mean": 0.073,
+        "ci": 0.102,
+        "pos": 51.0,
+        "n": 9431
+      },
+      "close": {
+        "mean": -0.381,
+        "ci": 0.184,
+        "pos": 42.1,
+        "n": 9431
+      },
+      "close_g": {
+        "mean": 0.007,
+        "ci": 0.185,
+        "pos": 49.3,
+        "n": 9431
+      },
+      "next": {
+        "mean": 0.029,
+        "ci": 0.402,
+        "pos": 45.8,
+        "n": 9425
+      },
+      "next_g": {
+        "mean": 0.418,
+        "ci": 0.405,
+        "pos": 48.8,
+        "n": 9425
+      },
+      "s_tight": {
+        "mean": -0.252,
+        "ci": 0.077,
+        "pos": 45.4,
+        "n": 707,
+        "target": 48.5,
+        "stop": 49.8,
+        "both": 1.1
+      },
+      "s_tight_g": {
+        "mean": -0.0,
+        "ci": 0.066,
+        "pos": 49.2,
+        "n": 707,
+        "target": 48.5,
+        "stop": 49.8,
+        "both": 1.1
+      },
+      "s_low": {
+        "mean": -0.295,
+        "ci": 0.046,
+        "pos": 25.6,
+        "n": 640,
+        "target": 26.6,
+        "stop": 73.4,
+        "both": 3.9
+      },
+      "s_low_g": {
+        "mean": -0.018,
+        "ci": 0.036,
+        "pos": 26.6,
+        "n": 640,
+        "target": 26.6,
+        "stop": 73.4,
+        "both": 3.9
+      },
+      "s_nostop": {
+        "mean": -0.153,
+        "ci": 0.106,
+        "pos": 70.3,
+        "n": 707,
+        "target": 75.7,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": 0.054,
+        "ci": 0.098,
+        "pos": 78.1,
+        "n": 707,
+        "target": 75.7,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.083,
+          0.063
+        ],
+        "close_g": [
+          0.025,
+          -0.01
+        ]
+      }
+    },
+    "hammer": {
+      "n": 3748,
+      "1h": {
+        "mean": -0.416,
+        "ci": 0.066,
+        "pos": 33.9,
+        "n": 3748
+      },
+      "1h_g": {
+        "mean": -0.014,
+        "ci": 0.064,
+        "pos": 45.5,
+        "n": 3748
+      },
+      "close": {
+        "mean": -0.497,
+        "ci": 0.135,
+        "pos": 37.1,
+        "n": 3748
+      },
+      "close_g": {
+        "mean": -0.095,
+        "ci": 0.134,
+        "pos": 45.3,
+        "n": 3748
+      },
+      "next": {
+        "mean": -0.11,
+        "ci": 0.581,
+        "pos": 43.5,
+        "n": 3747
+      },
+      "next_g": {
+        "mean": 0.294,
+        "ci": 0.584,
+        "pos": 46.7,
+        "n": 3747
+      },
+      "s_tight": {
+        "mean": -0.312,
+        "ci": 0.08,
+        "pos": 40.3,
+        "n": 293,
+        "target": 42.3,
+        "stop": 54.9,
+        "both": 0.3
+      },
+      "s_tight_g": {
+        "mean": -0.065,
+        "ci": 0.059,
+        "pos": 44.0,
+        "n": 293,
+        "target": 42.3,
+        "stop": 54.9,
+        "both": 0.3
+      },
+      "s_low": {
+        "mean": -0.409,
+        "ci": 0.179,
+        "pos": 53.2,
+        "n": 293,
+        "target": 56.0,
+        "stop": 32.1,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": -0.182,
+        "ci": 0.156,
+        "pos": 60.4,
+        "n": 293,
+        "target": 56.0,
+        "stop": 32.1,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.459,
+        "ci": 0.194,
+        "pos": 57.3,
+        "n": 293,
+        "target": 60.8,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.244,
+        "ci": 0.177,
+        "pos": 65.9,
+        "n": 293,
+        "target": 60.8,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          -0.035,
+          0.005
+        ],
+        "close_g": [
+          -0.213,
+          0.017
+        ]
+      }
+    },
+    "big green bar": {
+      "n": 8867,
+      "1h": {
+        "mean": -0.409,
+        "ci": 0.075,
+        "pos": 37.1,
+        "n": 8867
+      },
+      "1h_g": {
+        "mean": -0.037,
+        "ci": 0.075,
+        "pos": 46.2,
+        "n": 8867
+      },
+      "close": {
+        "mean": -0.32,
+        "ci": 0.142,
+        "pos": 41.5,
+        "n": 8867
+      },
+      "close_g": {
+        "mean": 0.052,
+        "ci": 0.142,
+        "pos": 48.1,
+        "n": 8867
+      },
+      "next": {
+        "mean": 0.138,
+        "ci": 0.387,
+        "pos": 46.6,
+        "n": 8857
+      },
+      "next_g": {
+        "mean": 0.512,
+        "ci": 0.388,
+        "pos": 49.0,
+        "n": 8857
+      },
+      "s_tight": {
+        "mean": -0.386,
+        "ci": 0.057,
+        "pos": 33.1,
+        "n": 866,
+        "target": 35.5,
+        "stop": 63.6,
+        "both": 3.7
+      },
+      "s_tight_g": {
+        "mean": -0.141,
+        "ci": 0.047,
+        "pos": 35.9,
+        "n": 866,
+        "target": 35.5,
+        "stop": 63.6,
+        "both": 3.7
+      },
+      "s_low": {
+        "mean": -0.391,
+        "ci": 0.159,
+        "pos": 63.5,
+        "n": 866,
+        "target": 67.8,
+        "stop": 9.9,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": -0.196,
+        "ci": 0.152,
+        "pos": 70.0,
+        "n": 866,
+        "target": 67.8,
+        "stop": 9.9,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.386,
+        "ci": 0.164,
+        "pos": 63.5,
+        "n": 866,
+        "target": 67.8,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.191,
+        "ci": 0.157,
+        "pos": 70.1,
+        "n": 866,
+        "target": 67.8,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.014,
+          -0.086
+        ],
+        "close_g": [
+          0.09,
+          0.016
+        ]
+      }
+    },
+    "bullish harami": {
+      "n": 3868,
+      "1h": {
+        "mean": -0.428,
+        "ci": 0.077,
+        "pos": 33.6,
+        "n": 3868
+      },
+      "1h_g": {
+        "mean": -0.037,
+        "ci": 0.076,
+        "pos": 46.2,
+        "n": 3868
+      },
+      "close": {
+        "mean": -0.436,
+        "ci": 0.14,
+        "pos": 38.5,
+        "n": 3868
+      },
+      "close_g": {
+        "mean": -0.045,
+        "ci": 0.14,
+        "pos": 47.2,
+        "n": 3868
+      },
+      "next": {
+        "mean": -0.25,
+        "ci": 0.389,
+        "pos": 44.7,
+        "n": 3864
+      },
+      "next_g": {
+        "mean": 0.142,
+        "ci": 0.39,
+        "pos": 48.1,
+        "n": 3864
+      },
+      "s_tight": {
+        "mean": -0.4,
+        "ci": 0.081,
+        "pos": 35.1,
+        "n": 359,
+        "target": 35.7,
+        "stop": 61.3,
+        "both": 0.0
+      },
+      "s_tight_g": {
+        "mean": -0.126,
+        "ci": 0.068,
+        "pos": 37.9,
+        "n": 359,
+        "target": 35.7,
+        "stop": 61.3,
+        "both": 0.0
+      },
+      "s_low": {
+        "mean": -0.385,
+        "ci": 0.127,
+        "pos": 49.6,
+        "n": 359,
+        "target": 51.0,
+        "stop": 38.4,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": -0.137,
+        "ci": 0.114,
+        "pos": 54.3,
+        "n": 359,
+        "target": 51.0,
+        "stop": 38.4,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.383,
+        "ci": 0.182,
+        "pos": 58.5,
+        "n": 359,
+        "target": 60.7,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.154,
+        "ci": 0.17,
+        "pos": 65.5,
+        "n": 359,
+        "target": 60.7,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          -0.105,
+          0.023
+        ],
+        "close_g": [
+          -0.15,
+          0.047
+        ]
+      }
+    },
+    "morning star": {
+      "n": 1130,
+      "1h": {
+        "mean": -0.378,
+        "ci": 0.146,
+        "pos": 35.6,
+        "n": 1130
+      },
+      "1h_g": {
+        "mean": 0.014,
+        "ci": 0.144,
+        "pos": 47.7,
+        "n": 1130
+      },
+      "close": {
+        "mean": -0.176,
+        "ci": 0.29,
+        "pos": 40.4,
+        "n": 1130
+      },
+      "close_g": {
+        "mean": 0.216,
+        "ci": 0.287,
+        "pos": 48.3,
+        "n": 1130
+      },
+      "next": {
+        "mean": -0.198,
+        "ci": 0.545,
+        "pos": 45.7,
+        "n": 1129
+      },
+      "next_g": {
+        "mean": 0.194,
+        "ci": 0.546,
+        "pos": 48.6,
+        "n": 1129
+      },
+      "s_tight": {
+        "mean": -0.423,
+        "ci": 0.143,
+        "pos": 31.2,
+        "n": 80,
+        "target": 33.8,
+        "stop": 63.8,
+        "both": 5.0
+      },
+      "s_tight_g": {
+        "mean": -0.148,
+        "ci": 0.116,
+        "pos": 35.0,
+        "n": 80,
+        "target": 33.8,
+        "stop": 63.8,
+        "both": 5.0
+      },
+      "s_low": {
+        "mean": -0.393,
+        "ci": 0.302,
+        "pos": 56.2,
+        "n": 80,
+        "target": 60.0,
+        "stop": 13.8,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": -0.155,
+        "ci": 0.282,
+        "pos": 65.0,
+        "n": 80,
+        "target": 60.0,
+        "stop": 13.8,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.389,
+        "ci": 0.32,
+        "pos": 56.2,
+        "n": 80,
+        "target": 60.0,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.15,
+        "ci": 0.301,
+        "pos": 65.0,
+        "n": 80,
+        "target": 60.0,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          -0.109,
+          0.114
+        ],
+        "close_g": [
+          0.195,
+          0.234
+        ]
+      }
+    },
+    "piercing line": {
+      "n": 1690,
+      "1h": {
+        "mean": -0.327,
+        "ci": 0.1,
+        "pos": 36.7,
+        "n": 1690
+      },
+      "1h_g": {
+        "mean": 0.042,
+        "ci": 0.097,
+        "pos": 49.0,
+        "n": 1690
+      },
+      "close": {
+        "mean": -0.35,
+        "ci": 0.169,
+        "pos": 39.9,
+        "n": 1690
+      },
+      "close_g": {
+        "mean": 0.018,
+        "ci": 0.168,
+        "pos": 47.9,
+        "n": 1690
+      },
+      "next": {
+        "mean": 0.312,
+        "ci": 0.938,
+        "pos": 46.5,
+        "n": 1689
+      },
+      "next_g": {
+        "mean": 0.685,
+        "ci": 0.943,
+        "pos": 49.7,
+        "n": 1689
+      },
+      "s_tight": {
+        "mean": -0.358,
+        "ci": 0.118,
+        "pos": 35.3,
+        "n": 156,
+        "target": 36.5,
+        "stop": 60.9,
+        "both": 1.3
+      },
+      "s_tight_g": {
+        "mean": -0.106,
+        "ci": 0.108,
+        "pos": 39.1,
+        "n": 156,
+        "target": 36.5,
+        "stop": 60.9,
+        "both": 1.3
+      },
+      "s_low": {
+        "mean": -0.537,
+        "ci": 0.354,
+        "pos": 53.8,
+        "n": 156,
+        "target": 55.8,
+        "stop": 28.2,
+        "both": 0.6
+      },
+      "s_low_g": {
+        "mean": -0.312,
+        "ci": 0.334,
+        "pos": 58.3,
+        "n": 156,
+        "target": 55.8,
+        "stop": 28.2,
+        "both": 0.6
+      },
+      "s_nostop": {
+        "mean": -0.577,
+        "ci": 0.419,
+        "pos": 55.8,
+        "n": 156,
+        "target": 57.7,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.354,
+        "ci": 0.397,
+        "pos": 60.3,
+        "n": 156,
+        "target": 57.7,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.02,
+          0.06
+        ],
+        "close_g": [
+          0.039,
+          0.002
+        ]
+      }
+    },
+    "evening star": {
+      "n": 1056,
+      "1h": {
+        "mean": -0.302,
+        "ci": 0.124,
+        "pos": 37.5,
+        "n": 1056
+      },
+      "1h_g": {
+        "mean": 0.07,
+        "ci": 0.123,
+        "pos": 48.9,
+        "n": 1056
+      },
+      "close": {
+        "mean": -0.39,
+        "ci": 0.185,
+        "pos": 40.0,
+        "n": 1056
+      },
+      "close_g": {
+        "mean": -0.018,
+        "ci": 0.186,
+        "pos": 48.0,
+        "n": 1056
+      },
+      "next": {
+        "mean": -0.329,
+        "ci": 0.556,
+        "pos": 44.8,
+        "n": 1054
+      },
+      "next_g": {
+        "mean": 0.043,
+        "ci": 0.56,
+        "pos": 47.5,
+        "n": 1054
+      },
+      "s_tight": {
+        "mean": -0.316,
+        "ci": 0.163,
+        "pos": 36.7,
+        "n": 79,
+        "target": 40.5,
+        "stop": 55.7,
+        "both": 1.3
+      },
+      "s_tight_g": {
+        "mean": -0.075,
+        "ci": 0.125,
+        "pos": 43.0,
+        "n": 79,
+        "target": 40.5,
+        "stop": 55.7,
+        "both": 1.3
+      },
+      "s_low": {
+        "mean": -0.346,
+        "ci": 0.192,
+        "pos": 36.7,
+        "n": 79,
+        "target": 39.2,
+        "stop": 55.7,
+        "both": 1.3
+      },
+      "s_low_g": {
+        "mean": -0.096,
+        "ci": 0.158,
+        "pos": 40.5,
+        "n": 79,
+        "target": 39.2,
+        "stop": 55.7,
+        "both": 1.3
+      },
+      "s_nostop": {
+        "mean": -0.316,
+        "ci": 0.257,
+        "pos": 53.2,
+        "n": 79,
+        "target": 58.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.096,
+        "ci": 0.237,
+        "pos": 62.0,
+        "n": 79,
+        "target": 58.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.016,
+          0.124
+        ],
+        "close_g": [
+          -0.015,
+          -0.022
+        ]
+      }
+    },
+    "three black crows": {
+      "n": 727,
+      "1h": {
+        "mean": -0.317,
+        "ci": 0.12,
+        "pos": 39.5,
+        "n": 727
+      },
+      "1h_g": {
+        "mean": 0.108,
+        "ci": 0.12,
+        "pos": 52.7,
+        "n": 727
+      },
+      "close": {
+        "mean": -0.235,
+        "ci": 0.221,
+        "pos": 41.3,
+        "n": 727
+      },
+      "close_g": {
+        "mean": 0.189,
+        "ci": 0.219,
+        "pos": 52.7,
+        "n": 727
+      },
+      "next": {
+        "mean": 0.775,
+        "ci": 1.002,
+        "pos": 51.2,
+        "n": 727
+      },
+      "next_g": {
+        "mean": 1.204,
+        "ci": 0.998,
+        "pos": 55.4,
+        "n": 727
+      },
+      "s_tight": {
+        "mean": -0.266,
+        "ci": 0.176,
+        "pos": 44.0,
+        "n": 50,
+        "target": 50.0,
+        "stop": 44.0,
+        "both": 0.0
+      },
+      "s_tight_g": {
+        "mean": 0.042,
+        "ci": 0.137,
+        "pos": 52.0,
+        "n": 50,
+        "target": 50.0,
+        "stop": 44.0,
+        "both": 0.0
+      },
+      "s_low": {
+        "mean": -0.293,
+        "ci": 0.172,
+        "pos": 33.3,
+        "n": 42,
+        "target": 35.7,
+        "stop": 64.3,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": 0.041,
+        "ci": 0.11,
+        "pos": 35.7,
+        "n": 42,
+        "target": 35.7,
+        "stop": 64.3,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.136,
+        "ci": 0.311,
+        "pos": 60.0,
+        "n": 50,
+        "target": 70.0,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": 0.129,
+        "ci": 0.298,
+        "pos": 78.0,
+        "n": 50,
+        "target": 70.0,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          0.114,
+          0.101
+        ],
+        "close_g": [
+          0.078,
+          0.3
+        ]
+      }
+    },
+    "three white soldiers": {
+      "n": 627,
+      "1h": {
+        "mean": -0.443,
+        "ci": 0.148,
+        "pos": 35.7,
+        "n": 627
+      },
+      "1h_g": {
+        "mean": -0.062,
+        "ci": 0.143,
+        "pos": 47.4,
+        "n": 627
+      },
+      "close": {
+        "mean": -0.499,
+        "ci": 0.209,
+        "pos": 38.0,
+        "n": 627
+      },
+      "close_g": {
+        "mean": -0.118,
+        "ci": 0.208,
+        "pos": 45.6,
+        "n": 627
+      },
+      "next": {
+        "mean": 0.166,
+        "ci": 0.726,
+        "pos": 47.2,
+        "n": 627
+      },
+      "next_g": {
+        "mean": 0.551,
+        "ci": 0.733,
+        "pos": 49.3,
+        "n": 627
+      },
+      "s_tight": {
+        "mean": -0.506,
+        "ci": 0.207,
+        "pos": 29.5,
+        "n": 44,
+        "target": 29.5,
+        "stop": 65.9,
+        "both": 6.8
+      },
+      "s_tight_g": {
+        "mean": -0.188,
+        "ci": 0.124,
+        "pos": 31.8,
+        "n": 44,
+        "target": 29.5,
+        "stop": 65.9,
+        "both": 6.8
+      },
+      "s_low": {
+        "mean": -0.252,
+        "ci": 0.315,
+        "pos": 63.6,
+        "n": 44,
+        "target": 68.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_low_g": {
+        "mean": -0.0,
+        "ci": 0.266,
+        "pos": 72.7,
+        "n": 44,
+        "target": 68.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop": {
+        "mean": -0.252,
+        "ci": 0.315,
+        "pos": 63.6,
+        "n": 44,
+        "target": 68.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "s_nostop_g": {
+        "mean": -0.0,
+        "ci": 0.266,
+        "pos": 72.7,
+        "n": 44,
+        "target": 68.2,
+        "stop": 0.0,
+        "both": 0.0
+      },
+      "halves": {
+        "1h_g": [
+          -0.107,
+          -0.014
+        ],
+        "close_g": [
+          -0.13,
+          -0.105
+        ]
+      }
+    }
+  },
+  "reading": [
+    "- Patterns are common: 0.9 to 12.9 a day across the 63 names, so one shows up somewhere every day. Frequency is not the problem.",
+    "- None tells the next hour: gross means sit within 0.11% of the baseline (+0.00%, 48% up) while these names move 1-2% an hour. Bullish patterns ran slightly below the baseline (hammer -0.02, bullish engulfing -0.04, three white soldiers -0.07) and bearish ones slightly above (three black crows +0.10 in both halves, big red bar +0.07 in both, dark cloud cover +0.07): a small bounce after weakness, the opposite of the textbook reading, and no bigger than the round trip's cost (0.10% at $20+, 0.40% at $5-20).",
+    "- The +0.5% scalp: on 5-minute bars the baseline reaches +0.5% first 40% of the time and -0.5% 56% (a limit sale needs a trade a cent through it, a stop triggers on touch): -0.08% a trade before costs, -0.33% after. No bullish pattern does better (30-42% target hits). Without a stop the target is hit 58-68% of the time, but the misses run to the close and the average is -0.25% to -0.58% after costs: a high hit rate with a losing average.",
+    "- Scale: the $2,000 target needs +110% in the 18 sessions left, 4.2% of the whole account a session. +0.5% on a 25% position adds 0.125% to the account; even all-in, 0.5% a day compounds to +9.4% by Nov 4.",
+    "- Verdict: no rule change. The one effect that shows, a bounce after weakness, is what the night sleeve (RUNBOOK 2e) trades on a daily scale, where the move is large enough to beat the costs."
+  ]
+}

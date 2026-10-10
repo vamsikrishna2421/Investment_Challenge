@@ -361,6 +361,13 @@ python3 scripts/replay.py --grid --set stops|times|sizing ...                   
   the candidates' index or QQQ is over its 10- or 20-day average (-6 to -11% a window over the last 60 sessions),
   and selling half at +1 or +1.5 ATR, with or without the rest's stop at the entry. The night sleeve stays out of
   the paper book (better hourly windows, worse 5-minute windows).
+* Oct 10 (Vamsi: candle patterns, and how people use AI in trading; `research/ai-in-trading-2026-10-10.md`): 13
+  candlestick patterns on hourly bars (radar names and the 60 largest stocks, 730 sessions) and daily bars (5 years)
+  did no better than random entries, and a +0.5% scalp lost before costs (`research/backtests/candles-2026-10-10*.md`).
+  Radar names' earnings drops of 1+ ATR rebounded +3.8% in 5 sessions over 5 years but +1.5% since April 2024
+  (`research/backtests/earnings-drift-2026-10-10*.md`); as a sleeve beside the live rules (`--set earnings`,
+  `earnings_real`) no variant beat them on the hourly windows' mean and worst window without losing on the 5-minute
+  windows. Not adopted.
 
 ## 2e. Real book: Robinhood agentic account (Vamsi, Tue Oct 6)
 

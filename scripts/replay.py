@@ -60,7 +60,8 @@ DEFAULTS = {"limit": "support", "stop_atr": 0.6, "btc_gate": "on", "rank": "dip"
             "gap_pct": 0.0, "min_stop_atr": 0.0, "max_drop_atr": 0.0, "min_dip_atr": 0.0, "spy_gate": 0.0,
             "gap_stop": "open", "min_strength": 0, "min_rr": 1.5, "slots": SLOTS, "breadth": 0.0, "rel_gate": 0.0,
             "night_z": 0.0, "night_low": "off", "night_slots": 2, "night_size": 0.25, "night_only": "off",
-            "regime": "off", "partial_at": 0.0, "partial_frac": 0.5, "partial_be": "off"}
+            "regime": "off", "partial_at": 0.0, "partial_frac": 0.5, "partial_be": "off",
+            "earn_z": 0.0, "earn_slots": 2, "earn_size": 0.25, "earn_hold": 5, "earn_stop": 1.0}
 GRID = [
     ("Live rules: limits at support, stop 0.6 ATR under it", {}),
     ("Limits at the zone top", {"limit": "top"}),
@@ -231,6 +232,27 @@ PARTIAL = [
     ("Real book, half at +1 ATR, the rest's stop to the entry", {**_RBL, "partial_at": 1.0, "partial_be": "on"}),
 ]
 
+# The earnings-dip sleeve (Oct 10, earnings_drift_backtest.py: over 5 years the candidates' closes 1+ ATR down on an
+# earnings reaction day rose 3.8% in the next 5 sessions against 0.6% for any close): at the last run of a reaction
+# day (8-K item 2.02 filed before that day's close, or after the prior close), buy the eligible names down earn_z+
+# ATR, deepest first, in earn_slots of their own (earn_size of equity each, cash permitting); a resting stop earn_stop
+# ATR under the entry (0: none), sold at the close earn_hold sessions later.
+_RBN = {**_RBL, "night_z": 1.5, "night_low": "on"}
+EARN = [
+    ("Live paper rules (1% gap allowance)", dict(_LIVE)),
+    ("+ earnings sleeve: down 1+ ATR on the reaction day, 5 sessions, stop 1 ATR", {**_LIVE, "earn_z": 1.0}),
+    ("+ earnings sleeve, no stop", {**_LIVE, "earn_z": 1.0, "earn_stop": 0.0}),
+    ("+ earnings sleeve, down 2+ ATR", {**_LIVE, "earn_z": 2.0}),
+    ("+ earnings sleeve, 3 sessions", {**_LIVE, "earn_z": 1.0, "earn_hold": 3}),
+    ("+ earnings sleeve, 10 sessions", {**_LIVE, "earn_z": 1.0, "earn_hold": 10}),
+]
+EARN_REAL = [
+    ("Live real-book rules (S&P gate, 1% gap allowance, night sleeve)", dict(_RBN)),
+    ("Real book + earnings sleeve: down 1+ ATR, 5 sessions, stop 1 ATR", {**_RBN, "earn_z": 1.0}),
+    ("Real book + earnings sleeve, no stop", {**_RBN, "earn_z": 1.0, "earn_stop": 0.0}),
+    ("Real book + earnings sleeve, down 2+ ATR", {**_RBN, "earn_z": 2.0}),
+]
+
 
 def by_day(r: dict) -> dict:
     """Regular-session bars per ET date: (minute of day at bar start, open, high, low, close)."""
@@ -282,6 +304,35 @@ def load_data(syms: list[str], refresh: bool) -> dict:
 
 def et_day(t: int) -> str:
     return dt.datetime.fromtimestamp(t, dt.timezone.utc).astimezone(pfm.ET).date().isoformat()
+
+
+def earnings_days(data: dict) -> dict[str, set[str]]:
+    """{name: earnings reaction days}: the session of each 8-K item 2.02 filing, or the next one when it was accepted
+    after 16:00 ET (earnings_drift_backtest.earnings_times; preliminary results within 5 sessions count once)."""
+    import earnings_drift_backtest as edb  # noqa: PLC0415
+    out: dict[str, set[str]] = {}
+    for s, rows in data["daily"].items():
+        if s in ("SPY", "QQQ", "BTC-USD") or not rows:
+            continue
+        days = [et_day(r["t"]) for r in rows]
+        try:
+            times = edb.earnings_times(s, days[0])
+        except Exception:  # noqa: BLE001
+            continue
+        got, last = set(), -99
+        for ts in times:
+            d = ts.date().isoformat()
+            k = next((i for i, x in enumerate(days) if x >= d), None)
+            if k is None:
+                continue
+            if ts.hour * 60 + ts.minute >= 960 and days[k] == d:
+                k += 1
+            if k - last <= 5 or k >= len(days):
+                continue
+            last = k
+            got.add(days[k])
+        out[s] = got
+    return out
 
 
 def hhmm(m: int) -> str:
@@ -666,6 +717,8 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                         p["stop"], p["protected"] = new, True
                 if o["max_hold"] and m == last_bar and n - p["n"] >= o["max_hold"] - 1:
                     book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "time", settle[day])
+                elif p["exit_rule"] == "earn" and m == last_bar and n - p["n"] >= o["earn_hold"]:
+                    book.sell(s, b[4] * (1 - sb.slip(b[4])), day, m, "time", settle[day])
             if m not in runs_at:
                 continue
             for s in list(book.pos):  # a run: targets first, then market buys for the free slots
@@ -701,6 +754,31 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                           "exit_rule": "night"}
                     book.buy(s_, fill, usd, day, n, m, "night", ctx(s_, fill, 0, r_, "night", m))
                     free_n -= 1
+            if o["earn_z"] and m == max(runs_at):
+                # the earnings-dip sleeve: names on their earnings reaction day, down earn_z+ ATR at the last run
+                cands = []
+                for s_, a_ in elig.items():
+                    if day not in data.get("earn", {}).get(s_, ()):
+                        continue
+                    b = bars.get(s_, {}).get(m)
+                    if not b or s_ in book.pos or s_ in book.stopped_today:
+                        continue
+                    z = (b[4] - prev[s_]) / a_
+                    if z <= -o["earn_z"]:
+                        cands.append((z, s_, b[4]))
+                free_e = o["earn_slots"] - sum(1 for q in book.pos.values() if q["exit_rule"] == "earn")
+                eq_now = book.cash + sum(q["qty"] * last_px.get(t, q["entry"]) for t, q in book.pos.items())
+                for z, s_, px in sorted(cands):
+                    if free_e <= 0:
+                        break
+                    usd = min(eq_now * o["earn_size"], book.free_cash(day))
+                    if usd < 25:
+                        break
+                    fill = px * (1 + sb.slip(px))
+                    r_ = {"stop": fill - o["earn_stop"] * elig[s_] if o["earn_stop"] else 0.0, "target": 1e18,
+                          "atr": elig[s_], "crypto": s_ in lv.CRYPTO_LINKED, "strength": 0, "exit_rule": "earn"}
+                    book.buy(s_, fill, usd, day, n, m, "earn", ctx(s_, fill, 0, r_, "earn", m))
+                    free_e -= 1
             if o["runs"] == "off" or not radar or m + step > o["entry_until"] or m + step <= o["entry_from"]:
                 continue
             slots = o["slots"] - len(book.pos) - len(book.orders)
@@ -942,7 +1020,8 @@ def main() -> int:
     ap.add_argument("--analyze", action="store_true", help="trade returns by entry context")
     ap.add_argument("--grid", action="store_true")
     ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets", "lessons", "realbook",
-                                      "evolve", "evolve_real", "night", "night_real", "close", "stops2", "regime", "partial"],
+                                      "evolve", "evolve_real", "night", "night_real", "close", "stops2", "regime", "partial",
+                                      "earnings", "earnings_real"],
                     default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
@@ -987,6 +1066,12 @@ def main() -> int:
         GRID = NIGHT
     if a.set == "night_real":
         GRID = NIGHT_REAL
+    if a.set == "earnings":
+        GRID = EARN
+    if a.set == "earnings_real":
+        GRID = EARN_REAL
+    if a.set.startswith("earnings"):
+        data["earn"] = earnings_days(data)
     if a.grid and a.windows:
         return windows(data, a)
     if a.grid:

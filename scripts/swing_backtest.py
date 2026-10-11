@@ -31,7 +31,8 @@ import portfolio as pfm  # noqa: E402
 ROOT = pfm.ROOT
 CACHE = ROOT / ".cache" / "kalshi_trades"
 SPREAD = 0.01
-PAIRS = [(0.30, 0.60), (0.20, 0.40), (0.30, 0.50), (0.40, 0.60), (0.10, 0.30), (0.20, 0.60)]
+# Oct 11: Vamsi's follow-up, buy under 15 cents and sell once it crosses 20
+PAIRS = [(0.30, 0.60), (0.20, 0.40), (0.30, 0.50), (0.40, 0.60), (0.10, 0.30), (0.20, 0.60), (0.15, 0.20), (0.15, 0.25)]
 
 
 def trades(m: dict) -> list[tuple[int, float]]:

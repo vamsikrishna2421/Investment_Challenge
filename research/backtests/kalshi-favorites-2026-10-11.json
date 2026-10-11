@@ -1,0 +1,235 @@
+{
+  "asof": "2026-10-11",
+  "start": "2026-08-12",
+  "end": "2026-10-11",
+  "series": [
+    "KXMLBGAME",
+    "KXNFLGAME",
+    "KXNCAAFGAME",
+    "KXWNBAGAME",
+    "KXMLSGAME",
+    "KXEPLGAME",
+    "KXUFCFIGHT",
+    "KXATPMATCH",
+    "KXWTAMATCH",
+    "KXHIGHNY",
+    "KXHIGHCHI",
+    "KXHIGHMIA",
+    "KXHIGHLAX",
+    "KXHIGHAUS",
+    "KXHIGHDEN",
+    "KXCPI",
+    "KXPAYROLLS",
+    "KXU3",
+    "KXFED",
+    "KXJOBLESSCLAIMS",
+    "KXBTCD",
+    "KXETHD",
+    "KXINX"
+  ],
+  "markets": 2737,
+  "with_candles": 2454,
+  "strategy": {
+    "all": {
+      "n": 764,
+      "win_rate": 86.1,
+      "avg_price": 0.895,
+      "breakeven": 91.1,
+      "gross": [
+        -3.75,
+        2.39
+      ],
+      "net": [
+        -5.5,
+        2.34
+      ],
+      "p168": 1.2655108891799259e-11,
+      "worst": -100.0
+    },
+    "groups": {
+      "sports": {
+        "n": 268,
+        "win_rate": 85.4,
+        "avg_price": 0.892,
+        "breakeven": 90.9,
+        "gross": [
+          -4.21,
+          4.32
+        ],
+        "net": [
+          -5.98,
+          4.24
+        ],
+        "p168": 3.355178547092116e-12,
+        "worst": -100.0
+      },
+      "weather": {
+        "n": 382,
+        "win_rate": 87.7,
+        "avg_price": 0.896,
+        "breakeven": 91.2,
+        "gross": [
+          -2.09,
+          3.24
+        ],
+        "net": [
+          -3.86,
+          3.18
+        ],
+        "p168": 2.6356188988733134e-10,
+        "worst": -100.0
+      },
+      "economic releases": {
+        "n": 26,
+        "win_rate": 88.5,
+        "avg_price": 0.892,
+        "breakeven": 90.9,
+        "gross": [
+          -0.9,
+          22.91
+        ],
+        "net": [
+          -2.73,
+          22.47
+        ],
+        "p168": 1.1343680655454049e-09,
+        "worst": -100.0
+      },
+      "crypto and index": {
+        "n": 88,
+        "win_rate": 80.7,
+        "avg_price": 0.9,
+        "breakeven": 91.6,
+        "gross": [
+          -10.39,
+          7.25
+        ],
+        "net": [
+          -11.98,
+          7.11
+        ],
+        "p168": 2.17928316320163e-16,
+        "worst": -100.0
+      }
+    }
+  },
+  "calibration": {
+    "0.50-0.60": {
+      "n": 461,
+      "win_rate": 54.7,
+      "avg_price": 0.551,
+      "breakeven": 57.8,
+      "gross": [
+        -0.2,
+        7.57
+      ],
+      "net": [
+        -4.95,
+        7.21
+      ],
+      "p168": 8.580950285169916e-45,
+      "worst": -100.0
+    },
+    "0.60-0.70": {
+      "n": 469,
+      "win_rate": 61.4,
+      "avg_price": 0.641,
+      "breakeven": 66.7,
+      "gross": [
+        -4.15,
+        7.27
+      ],
+      "net": [
+        -7.91,
+        6.99
+      ],
+      "p168": 2.63572664781896e-36,
+      "worst": -100.0
+    },
+    "0.70-0.80": {
+      "n": 517,
+      "win_rate": 69.2,
+      "avg_price": 0.75,
+      "breakeven": 77.3,
+      "gross": [
+        -7.65,
+        5.27
+      ],
+      "net": [
+        -10.42,
+        5.11
+      ],
+      "p168": 1.534395218193715e-27,
+      "worst": -100.0
+    },
+    "0.80-0.87": {
+      "n": 249,
+      "win_rate": 81.9,
+      "avg_price": 0.828,
+      "breakeven": 84.8,
+      "gross": [
+        -1.09,
+        5.89
+      ],
+      "net": [
+        -3.41,
+        5.75
+      ],
+      "p168": 2.860077592384613e-15,
+      "worst": -100.0
+    },
+    "0.87-0.92": {
+      "n": 173,
+      "win_rate": 87.3,
+      "avg_price": 0.89,
+      "breakeven": 90.7,
+      "gross": [
+        -2.03,
+        6.74
+      ],
+      "net": [
+        -3.84,
+        6.62
+      ],
+      "p168": 1.1922897753451383e-10,
+      "worst": -100.0
+    },
+    "0.92-0.97": {
+      "n": 196,
+      "win_rate": 92.9,
+      "avg_price": 0.94,
+      "breakeven": 95.4,
+      "gross": [
+        -1.24,
+        3.7
+      ],
+      "net": [
+        -2.68,
+        3.64
+      ],
+      "p168": 3.9171769797585205e-06,
+      "worst": -100.0
+    },
+    "0.97-1.00": {
+      "n": 389,
+      "win_rate": 99.2,
+      "avg_price": 0.985,
+      "breakeven": 99.6,
+      "gross": [
+        0.72,
+        0.88
+      ],
+      "net": [
+        -0.39,
+        0.86
+      ],
+      "p168": 0.2723542534171424,
+      "worst": -100.0
+    }
+  },
+  "reading": [
+    "- The 87-92 cent strategy lost: 764 trades in 60 days won 86.1% of the time against the 91.1% needed after fees; -3.8% a trade before fees and -5.5% after (\u00b1 2.3), negative in every group (crypto and index -12%). At an 86% win rate the chance of 168 straight wins is about 1 in 80 billion.",
+    "- Calibration: bought at the ask 24 hours before the close, favorites from 50 to 97 cents won slightly less often than their price; only 97-100 cents broke even before fees (+0.7%) and lost after them (-0.4%). The favorite-longshot bias Burgi, Deng and Whelan measured over 2021-2025 does not pay a buyer at the ask in this sample; their paper notes the bias is shrinking.",
+    "- Verdict: no trade. An edge would need a forecast better than the market's, proven on 30+ questions before any money (RUNBOOK 1g, forecasts.py)."
+  ]
+}

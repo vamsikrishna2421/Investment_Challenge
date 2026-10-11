@@ -1,0 +1,1273 @@
+{
+ "generated_at": "2026-10-11T23:07:12Z",
+ "asof": "2026-10-09",
+ "method": "swing highs and lows over the last 120 sessions (a bar whose low or high is the extreme of the\n3 bars on each side), clustered within half an ATR (min 1.5%) into zones. A level's strength is the\nnumber of swings in its zone; a support or resistance needs at least two (tested twice). Support is the\nnearest tested zone below the price (a zone within 0.1 ATR of the price counts when two of its swings are\nlows: the price is sitting on support), resistance the nearest tested zone more than 0.1 ATR above. The buy\nzone runs from support to support + 0.3 ATR, the sell zone from resistance - 0.3 ATR to resistance, and the stop sits\n0.6 ATR under support. Reward:risk = (sell-zone bottom - buy-zone top) / (buy-zone top - stop).\nThese are arithmetic on past prices, not forecasts.",
+ "names": [
+  {
+   "ticker": "GPUS",
+   "name": "Hyperscale Data, Inc.",
+   "exchange": "NYSE American",
+   "price": 0.16,
+   "asof": "2026-10-09",
+   "atr": 0.0107,
+   "atr_pct": 6.7,
+   "vol_1y": 156.6,
+   "dollar_vol_20d": 5811114,
+   "low_120": 0.15,
+   "high_120": 2.85,
+   "support": 0.16,
+   "support_strength": 5,
+   "support_2": 0.15,
+   "buy_zone": [
+    0.16,
+    0.1632
+   ],
+   "stop": 0.1536,
+   "resistance": 0.17,
+   "resistance_strength": 6,
+   "resistance_1": 0.17,
+   "sell_zone": [
+    0.1668,
+    0.17
+   ],
+   "vs_sma50_pct": -49.4,
+   "chg_120d_pct": -78.7,
+   "reward_risk": 0.37,
+   "halted": false,
+   "to_zone_pct": -1.97,
+   "upside_to_target_pct": 2.2,
+   "risk_to_stop_pct": 5.9,
+   "note": "$vol 5.8M < 15M; reward:risk 0.37 < 1.5"
+  },
+  {
+   "ticker": "BTDR",
+   "name": "Bitdeer Technologies Group",
+   "exchange": "NasdaqCM",
+   "price": 9.63,
+   "asof": "2026-10-09",
+   "atr": 0.7521,
+   "atr_pct": 7.81,
+   "vol_1y": 107.1,
+   "dollar_vol_20d": 110535614,
+   "low_120": 8.44,
+   "high_120": 20.72,
+   "support": 8.577,
+   "support_strength": 3,
+   "support_2": null,
+   "buy_zone": [
+    8.577,
+    8.8027
+   ],
+   "stop": 8.1257,
+   "resistance": 10.1286,
+   "resistance_strength": 3,
+   "resistance_1": 10.1286,
+   "sell_zone": [
+    9.903,
+    10.1286
+   ],
+   "vs_sma50_pct": -11.6,
+   "chg_120d_pct": -20.3,
+   "reward_risk": 1.63,
+   "halted": false,
+   "to_zone_pct": 9.4,
+   "upside_to_target_pct": 12.5,
+   "risk_to_stop_pct": 7.7,
+   "note": ""
+  },
+  {
+   "ticker": "IREN",
+   "name": "IREN Limited",
+   "exchange": "NasdaqGS",
+   "price": 35.19,
+   "asof": "2026-10-09",
+   "atr": 2.3654,
+   "atr_pct": 6.72,
+   "vol_1y": 105.9,
+   "dollar_vol_20d": 1582510277,
+   "low_120": 28.93,
+   "high_120": 70.707,
+   "support": 28.93,
+   "support_strength": 0,
+   "support_2": null,
+   "buy_zone": [
+    28.93,
+    29.6396
+   ],
+   "stop": 27.5108,
+   "resistance": 39.3998,
+   "resistance_strength": 2,
+   "resistance_1": 37.66,
+   "sell_zone": [
+    38.6902,
+    39.3998
+   ],
+   "vs_sma50_pct": -15.7,
+   "chg_120d_pct": -22.1,
+   "reward_risk": 4.25,
+   "halted": false,
+   "to_zone_pct": 18.73,
+   "upside_to_target_pct": 30.5,
+   "risk_to_stop_pct": 7.2,
+   "note": "no tested support below the price"
+  },
+  {
+   "ticker": "IONQ",
+   "name": "IonQ, Inc.",
+   "exchange": "NYSE",
+   "price": 39.89,
+   "asof": "2026-10-09",
+   "atr": 2.6578,
+   "atr_pct": 6.66,
+   "vol_1y": 91.3,
+   "dollar_vol_20d": 994477367,
+   "low_120": 31.81,
+   "high_120": 73.65,
+   "support": 39.5761,
+   "support_strength": 3,
+   "support_2": 36.9645,
+   "buy_zone": [
+    39.5761,
+    40.3735
+   ],
+   "stop": 37.9815,
+   "resistance": 45.0721,
+   "resistance_strength": 3,
+   "resistance_1": 45.0721,
+   "sell_zone": [
+    44.2748,
+    45.0721
+   ],
+   "vs_sma50_pct": -3.5,
+   "chg_120d_pct": -13.8,
+   "reward_risk": 1.63,
+   "halted": false,
+   "to_zone_pct": -1.2,
+   "upside_to_target_pct": 9.7,
+   "risk_to_stop_pct": 5.9,
+   "note": ""
+  },
+  {
+   "ticker": "AFRM",
+   "name": "Affirm Holdings, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 80.7,
+   "asof": "2026-10-09",
+   "atr": 3.2325,
+   "atr_pct": 4.01,
+   "vol_1y": 58.9,
+   "dollar_vol_20d": 291383378,
+   "low_120": 59.75,
+   "high_120": 90.44,
+   "support": 80.3693,
+   "support_strength": 3,
+   "support_2": 77.1,
+   "buy_zone": [
+    80.3693,
+    81.339
+   ],
+   "stop": 78.4298,
+   "resistance": 86.7853,
+   "resistance_strength": 2,
+   "resistance_1": 86.7853,
+   "sell_zone": [
+    85.8155,
+    86.7853
+   ],
+   "vs_sma50_pct": 9.4,
+   "chg_120d_pct": 24.9,
+   "reward_risk": 1.54,
+   "halted": false,
+   "to_zone_pct": -0.79,
+   "upside_to_target_pct": 5.5,
+   "risk_to_stop_pct": 3.6,
+   "note": ""
+  },
+  {
+   "ticker": "APLD",
+   "name": "Applied Digital Corporation",
+   "exchange": "NasdaqGS",
+   "price": 23.68,
+   "asof": "2026-10-09",
+   "atr": 1.5347,
+   "atr_pct": 6.48,
+   "vol_1y": 100.3,
+   "dollar_vol_20d": 544388692,
+   "low_120": 22.625,
+   "high_120": 50.725,
+   "support": 23.3798,
+   "support_strength": 6,
+   "support_2": null,
+   "buy_zone": [
+    23.3798,
+    23.8402
+   ],
+   "stop": 22.4589,
+   "resistance": 29.1239,
+   "resistance_strength": 2,
+   "resistance_1": 26.06,
+   "sell_zone": [
+    28.6635,
+    29.1239
+   ],
+   "vs_sma50_pct": -12.4,
+   "chg_120d_pct": -24.4,
+   "reward_risk": 3.49,
+   "halted": false,
+   "to_zone_pct": -0.67,
+   "upside_to_target_pct": 20.2,
+   "risk_to_stop_pct": 5.8,
+   "note": ""
+  },
+  {
+   "ticker": "OKLO",
+   "name": "Oklo Inc.",
+   "exchange": "NYSE",
+   "price": 34.7,
+   "asof": "2026-10-09",
+   "atr": 1.8024,
+   "atr_pct": 5.19,
+   "vol_1y": 94.8,
+   "dollar_vol_20d": 372059295,
+   "low_120": 33.7,
+   "high_120": 81.5,
+   "support": 34.0266,
+   "support_strength": 2,
+   "support_2": null,
+   "buy_zone": [
+    34.0266,
+    34.5674
+   ],
+   "stop": 32.9452,
+   "resistance": 39.4063,
+   "resistance_strength": 3,
+   "resistance_1": 36.61,
+   "sell_zone": [
+    38.8656,
+    39.4063
+   ],
+   "vs_sma50_pct": -13.7,
+   "chg_120d_pct": -44.6,
+   "reward_risk": 2.65,
+   "halted": false,
+   "to_zone_pct": 0.38,
+   "upside_to_target_pct": 12.4,
+   "risk_to_stop_pct": 4.7,
+   "note": ""
+  },
+  {
+   "ticker": "NNE",
+   "name": "NANO Nuclear Energy Inc.",
+   "exchange": "NasdaqCM",
+   "price": 15.34,
+   "asof": "2026-10-09",
+   "atr": 0.8382,
+   "atr_pct": 5.46,
+   "vol_1y": 91.5,
+   "dollar_vol_20d": 32890427,
+   "low_120": 14.71,
+   "high_120": 31.59,
+   "support": 14.9863,
+   "support_strength": 4,
+   "support_2": null,
+   "buy_zone": [
+    14.9863,
+    15.2378
+   ],
+   "stop": 14.4834,
+   "resistance": 16.9779,
+   "resistance_strength": 2,
+   "resistance_1": 16.9779,
+   "sell_zone": [
+    16.7264,
+    16.9779
+   ],
+   "vs_sma50_pct": -12.2,
+   "chg_120d_pct": -35.5,
+   "reward_risk": 1.97,
+   "halted": false,
+   "to_zone_pct": 0.67,
+   "upside_to_target_pct": 9.8,
+   "risk_to_stop_pct": 5.0,
+   "note": ""
+  },
+  {
+   "ticker": "COIN",
+   "name": "Coinbase Global, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 179.39,
+   "asof": "2026-10-09",
+   "atr": 9.525,
+   "atr_pct": 5.31,
+   "vol_1y": 71.5,
+   "dollar_vol_20d": 1893645696,
+   "low_120": 139.11,
+   "high_120": 222.35,
+   "support": 175.0045,
+   "support_strength": 11,
+   "support_2": 161.18,
+   "buy_zone": [
+    175.0045,
+    177.862
+   ],
+   "stop": 169.2895,
+   "resistance": 195.3198,
+   "resistance_strength": 5,
+   "resistance_1": 195.3198,
+   "sell_zone": [
+    192.4623,
+    195.3198
+   ],
+   "vs_sma50_pct": 2.8,
+   "chg_120d_pct": -8.5,
+   "reward_risk": 1.7,
+   "halted": false,
+   "to_zone_pct": 0.86,
+   "upside_to_target_pct": 8.2,
+   "risk_to_stop_pct": 4.8,
+   "note": ""
+  },
+  {
+   "ticker": "LEU",
+   "name": "Centrus Energy Corp.",
+   "exchange": "NYSE",
+   "price": 142.44,
+   "asof": "2026-10-09",
+   "atr": 7.4621,
+   "atr_pct": 5.24,
+   "vol_1y": 89.6,
+   "dollar_vol_20d": 110970982,
+   "low_120": 135.75,
+   "high_120": 235.0,
+   "support": 138.9321,
+   "support_strength": 5,
+   "support_2": null,
+   "buy_zone": [
+    138.9321,
+    141.1708
+   ],
+   "stop": 134.4549,
+   "resistance": 159.7485,
+   "resistance_strength": 6,
+   "resistance_1": 159.7485,
+   "sell_zone": [
+    157.5099,
+    159.7485
+   ],
+   "vs_sma50_pct": -14.5,
+   "chg_120d_pct": -25.6,
+   "reward_risk": 2.43,
+   "halted": false,
+   "to_zone_pct": 0.9,
+   "upside_to_target_pct": 11.6,
+   "risk_to_stop_pct": 4.8,
+   "note": ""
+  },
+  {
+   "ticker": "AEHR",
+   "name": "Aehr Test Systems, Inc.",
+   "exchange": "NasdaqCM",
+   "price": 84.64,
+   "asof": "2026-10-09",
+   "atr": 8.4471,
+   "atr_pct": 9.98,
+   "vol_1y": 122.1,
+   "dollar_vol_20d": 225200558,
+   "low_120": 63.32,
+   "high_120": 147.4,
+   "support": 79.9596,
+   "support_strength": 9,
+   "support_2": 63.5752,
+   "buy_zone": [
+    79.9596,
+    82.4938
+   ],
+   "stop": 74.8913,
+   "resistance": 101.6296,
+   "resistance_strength": 4,
+   "resistance_1": 101.6296,
+   "sell_zone": [
+    99.0955,
+    101.6296
+   ],
+   "vs_sma50_pct": -13.6,
+   "chg_120d_pct": -9.7,
+   "reward_risk": 2.18,
+   "halted": false,
+   "to_zone_pct": 2.6,
+   "upside_to_target_pct": 20.1,
+   "risk_to_stop_pct": 9.2,
+   "note": ""
+  },
+  {
+   "ticker": "BMNR",
+   "name": "Bitmine Immersion Technologies, Inc.",
+   "exchange": "NYSE",
+   "price": 24.03,
+   "asof": "2026-10-09",
+   "atr": 1.3964,
+   "atr_pct": 5.81,
+   "vol_1y": 90.3,
+   "dollar_vol_20d": 972217578,
+   "low_120": 12.8,
+   "high_120": 28.86,
+   "support": 22.9433,
+   "support_strength": 5,
+   "support_2": 20.1153,
+   "buy_zone": [
+    22.9433,
+    23.3623
+   ],
+   "stop": 22.1055,
+   "resistance": 26.8271,
+   "resistance_strength": 3,
+   "resistance_1": 26.8271,
+   "sell_zone": [
+    26.4082,
+    26.8271
+   ],
+   "vs_sma50_pct": 3.0,
+   "chg_120d_pct": 10.7,
+   "reward_risk": 2.42,
+   "halted": false,
+   "to_zone_pct": 2.86,
+   "upside_to_target_pct": 13.0,
+   "risk_to_stop_pct": 5.4,
+   "note": ""
+  },
+  {
+   "ticker": "RXRX",
+   "name": "Recursion Pharmaceuticals, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 4.36,
+   "asof": "2026-10-09",
+   "atr": 0.3975,
+   "atr_pct": 9.12,
+   "vol_1y": 73.7,
+   "dollar_vol_20d": 122489438,
+   "low_120": 2.77,
+   "high_120": 5.19,
+   "support": 4.1051,
+   "support_strength": 3,
+   "support_2": 3.2868,
+   "buy_zone": [
+    4.1051,
+    4.2243
+   ],
+   "stop": 3.8666,
+   "resistance": 5.19,
+   "resistance_strength": 1,
+   "resistance_1": 5.19,
+   "sell_zone": [
+    5.0708,
+    5.19
+   ],
+   "vs_sma50_pct": 22.6,
+   "chg_120d_pct": 22.5,
+   "reward_risk": 2.37,
+   "halted": false,
+   "to_zone_pct": 3.21,
+   "upside_to_target_pct": 20.0,
+   "risk_to_stop_pct": 8.5,
+   "note": ""
+  },
+  {
+   "ticker": "SMCI",
+   "name": "Super Micro Computer, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 41.86,
+   "asof": "2026-10-09",
+   "atr": 2.2107,
+   "atr_pct": 5.28,
+   "vol_1y": 94.7,
+   "dollar_vol_20d": 1496026400,
+   "low_120": 23.38,
+   "high_120": 51.4,
+   "support": 39.8288,
+   "support_strength": 3,
+   "support_2": 35.9429,
+   "buy_zone": [
+    39.8288,
+    40.4921
+   ],
+   "stop": 38.5024,
+   "resistance": 51.4,
+   "resistance_strength": 1,
+   "resistance_1": 43.76,
+   "sell_zone": [
+    50.7368,
+    51.4
+   ],
+   "vs_sma50_pct": 10.1,
+   "chg_120d_pct": 47.2,
+   "reward_risk": 5.15,
+   "halted": false,
+   "to_zone_pct": 3.38,
+   "upside_to_target_pct": 25.3,
+   "risk_to_stop_pct": 4.9,
+   "note": ""
+  },
+  {
+   "ticker": "MSTR",
+   "name": "Strategy Inc",
+   "exchange": "NasdaqGS",
+   "price": 154.34,
+   "asof": "2026-10-09",
+   "atr": 8.0607,
+   "atr_pct": 5.22,
+   "vol_1y": 80.3,
+   "dollar_vol_20d": 3498091239,
+   "low_120": 81.81,
+   "high_120": 197.0,
+   "support": 146.21,
+   "support_strength": 2,
+   "support_2": 138.2603,
+   "buy_zone": [
+    146.21,
+    148.6283
+   ],
+   "stop": 141.3736,
+   "resistance": 170.6711,
+   "resistance_strength": 2,
+   "resistance_1": 156.11,
+   "sell_zone": [
+    168.2529,
+    170.6711
+   ],
+   "vs_sma50_pct": 18.9,
+   "chg_120d_pct": -5.9,
+   "reward_risk": 2.71,
+   "halted": false,
+   "to_zone_pct": 3.84,
+   "upside_to_target_pct": 13.2,
+   "risk_to_stop_pct": 4.9,
+   "note": ""
+  },
+  {
+   "ticker": "SMTC",
+   "name": "Semtech Corporation",
+   "exchange": "NasdaqGS",
+   "price": 187.3,
+   "asof": "2026-10-09",
+   "atr": 10.8307,
+   "atr_pct": 5.78,
+   "vol_1y": 76.2,
+   "dollar_vol_20d": 596730943,
+   "low_120": 92.8,
+   "high_120": 201.99,
+   "support": 174.273,
+   "support_strength": 4,
+   "support_2": 162.56,
+   "buy_zone": [
+    174.273,
+    177.5222
+   ],
+   "stop": 167.7745,
+   "resistance": 201.99,
+   "resistance_strength": 1,
+   "resistance_1": 190.64,
+   "sell_zone": [
+    198.7408,
+    201.99
+   ],
+   "vs_sma50_pct": 21.9,
+   "chg_120d_pct": 81.0,
+   "reward_risk": 2.18,
+   "halted": false,
+   "to_zone_pct": 5.51,
+   "upside_to_target_pct": 12.0,
+   "risk_to_stop_pct": 5.5,
+   "note": ""
+  },
+  {
+   "ticker": "STNE",
+   "name": "StoneCo Ltd.",
+   "exchange": "NasdaqGS",
+   "price": 12.46,
+   "asof": "2026-10-09",
+   "atr": 0.6064,
+   "atr_pct": 4.87,
+   "vol_1y": 56.7,
+   "dollar_vol_20d": 69871641,
+   "low_120": 8.95,
+   "high_120": 15.73,
+   "support": 11.5986,
+   "support_strength": 9,
+   "support_2": 10.6085,
+   "buy_zone": [
+    11.5986,
+    11.7805
+   ],
+   "stop": 11.2347,
+   "resistance": 15.73,
+   "resistance_strength": 1,
+   "resistance_1": 15.73,
+   "sell_zone": [
+    15.5481,
+    15.73
+   ],
+   "vs_sma50_pct": 23.7,
+   "chg_120d_pct": -19.5,
+   "reward_risk": 6.9,
+   "halted": false,
+   "to_zone_pct": 5.77,
+   "upside_to_target_pct": 32.0,
+   "risk_to_stop_pct": 4.6,
+   "note": ""
+  },
+  {
+   "ticker": "HOOD",
+   "name": "Robinhood Markets, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 109.02,
+   "asof": "2026-10-09",
+   "atr": 4.8399,
+   "atr_pct": 4.44,
+   "vol_1y": 70.9,
+   "dollar_vol_20d": 2490589984,
+   "low_120": 69.93,
+   "high_120": 126.74,
+   "support": 100.9361,
+   "support_strength": 3,
+   "support_2": 93.3905,
+   "buy_zone": [
+    100.9361,
+    102.3881
+   ],
+   "stop": 98.0322,
+   "resistance": 111.1038,
+   "resistance_strength": 4,
+   "resistance_1": 111.1038,
+   "sell_zone": [
+    109.6519,
+    111.1038
+   ],
+   "vs_sma50_pct": 1.7,
+   "chg_120d_pct": 26.1,
+   "reward_risk": 1.67,
+   "halted": false,
+   "to_zone_pct": 6.48,
+   "upside_to_target_pct": 7.1,
+   "risk_to_stop_pct": 4.3,
+   "note": ""
+  },
+  {
+   "ticker": "SBET",
+   "name": "Sharplink, Inc.",
+   "exchange": "NasdaqCM",
+   "price": 8.59,
+   "asof": "2026-10-09",
+   "atr": 0.5236,
+   "atr_pct": 6.1,
+   "vol_1y": 77.7,
+   "dollar_vol_20d": 77526511,
+   "low_120": 4.46,
+   "high_120": 10.4,
+   "support": 7.8771,
+   "support_strength": 4,
+   "support_2": 6.88,
+   "buy_zone": [
+    7.8771,
+    8.0342
+   ],
+   "stop": 7.563,
+   "resistance": 10.3135,
+   "resistance_strength": 2,
+   "resistance_1": 9.06,
+   "sell_zone": [
+    10.1564,
+    10.3135
+   ],
+   "vs_sma50_pct": 5.1,
+   "chg_120d_pct": 16.7,
+   "reward_risk": 4.5,
+   "halted": false,
+   "to_zone_pct": 6.92,
+   "upside_to_target_pct": 26.4,
+   "risk_to_stop_pct": 5.9,
+   "note": ""
+  },
+  {
+   "ticker": "CRCL",
+   "name": "Circle Internet Group",
+   "exchange": "NYSE",
+   "price": 84.51,
+   "asof": "2026-10-09",
+   "atr": 4.902,
+   "atr_pct": 5.8,
+   "vol_1y": 94.6,
+   "dollar_vol_20d": 1189907012,
+   "low_120": 57.84,
+   "high_120": 140.0,
+   "support": 77.468,
+   "support_strength": 5,
+   "support_2": 72.7632,
+   "buy_zone": [
+    77.468,
+    78.9386
+   ],
+   "stop": 74.5268,
+   "resistance": 87.6866,
+   "resistance_strength": 4,
+   "resistance_1": 87.6866,
+   "sell_zone": [
+    86.216,
+    87.6866
+   ],
+   "vs_sma50_pct": 1.4,
+   "chg_120d_pct": -12.0,
+   "reward_risk": 1.65,
+   "halted": false,
+   "to_zone_pct": 7.06,
+   "upside_to_target_pct": 9.2,
+   "risk_to_stop_pct": 5.6,
+   "note": ""
+  },
+  {
+   "ticker": "NBIS",
+   "name": "Nebius Group N.V.",
+   "exchange": "NasdaqGS",
+   "price": 221.07,
+   "asof": "2026-10-09",
+   "atr": 15.1781,
+   "atr_pct": 6.87,
+   "vol_1y": 106.6,
+   "dollar_vol_20d": 3684720895,
+   "low_120": 132.7,
+   "high_120": 299.86,
+   "support": 198.7062,
+   "support_strength": 7,
+   "support_2": 181.621,
+   "buy_zone": [
+    198.7062,
+    203.2596
+   ],
+   "stop": 189.5993,
+   "resistance": 229.625,
+   "resistance_strength": 6,
+   "resistance_1": 229.625,
+   "sell_zone": [
+    225.0716,
+    229.625
+   ],
+   "vs_sma50_pct": -1.5,
+   "chg_120d_pct": 41.2,
+   "reward_risk": 1.6,
+   "halted": false,
+   "to_zone_pct": 8.76,
+   "upside_to_target_pct": 10.7,
+   "risk_to_stop_pct": 6.7,
+   "note": ""
+  },
+  {
+   "ticker": "RKLB",
+   "name": "Rocket Lab Corporation",
+   "exchange": "NasdaqGS",
+   "price": 68.21,
+   "asof": "2026-10-09",
+   "atr": 3.9153,
+   "atr_pct": 5.74,
+   "vol_1y": 91.6,
+   "dollar_vol_20d": 1503112190,
+   "low_120": 58.2,
+   "high_120": 151.0,
+   "support": 60.9724,
+   "support_strength": 2,
+   "support_2": 58.2,
+   "buy_zone": [
+    60.9724,
+    62.147
+   ],
+   "stop": 58.6232,
+   "resistance": 74.2563,
+   "resistance_strength": 3,
+   "resistance_1": 74.2563,
+   "sell_zone": [
+    73.0817,
+    74.2563
+   ],
+   "vs_sma50_pct": -3.3,
+   "chg_120d_pct": -21.3,
+   "reward_risk": 3.1,
+   "halted": false,
+   "to_zone_pct": 9.76,
+   "upside_to_target_pct": 17.6,
+   "risk_to_stop_pct": 5.7,
+   "note": ""
+  },
+  {
+   "ticker": "HIMS",
+   "name": "Hims & Hers Health, Inc.",
+   "exchange": "NYSE",
+   "price": 30.92,
+   "asof": "2026-10-09",
+   "atr": 1.8465,
+   "atr_pct": 5.97,
+   "vol_1y": 89.1,
+   "dollar_vol_20d": 300108839,
+   "low_120": 21.53,
+   "high_120": 39.05,
+   "support": 27.2067,
+   "support_strength": 5,
+   "support_2": 25.5001,
+   "buy_zone": [
+    27.2067,
+    27.7607
+   ],
+   "stop": 26.0988,
+   "resistance": 31.1096,
+   "resistance_strength": 9,
+   "resistance_1": 31.1096,
+   "sell_zone": [
+    30.5557,
+    31.1096
+   ],
+   "vs_sma50_pct": 5.0,
+   "chg_120d_pct": 3.9,
+   "reward_risk": 1.68,
+   "halted": false,
+   "to_zone_pct": 11.38,
+   "upside_to_target_pct": 10.1,
+   "risk_to_stop_pct": 6.0,
+   "note": ""
+  },
+  {
+   "ticker": "DELL",
+   "name": "Dell Technologies Inc.",
+   "exchange": "NYSE",
+   "price": 586.06,
+   "asof": "2026-10-09",
+   "atr": 25.2707,
+   "atr_pct": 4.31,
+   "vol_1y": 71.4,
+   "dollar_vol_20d": 4172198525,
+   "low_120": 200.84,
+   "high_120": 595.51,
+   "support": 517.9875,
+   "support_strength": 4,
+   "support_2": 485.7,
+   "buy_zone": [
+    517.9875,
+    525.5687
+   ],
+   "stop": 502.8251,
+   "resistance": 595.51,
+   "resistance_strength": 1,
+   "resistance_1": 595.51,
+   "sell_zone": [
+    587.9288,
+    595.51
+   ],
+   "vs_sma50_pct": 15.9,
+   "chg_120d_pct": 176.0,
+   "reward_risk": 2.74,
+   "halted": false,
+   "to_zone_pct": 11.51,
+   "upside_to_target_pct": 11.9,
+   "risk_to_stop_pct": 4.3,
+   "note": ""
+  },
+  {
+   "ticker": "BULL",
+   "name": "Webull Corporation",
+   "exchange": "NasdaqCM",
+   "price": 6.31,
+   "asof": "2026-10-09",
+   "atr": 0.4451,
+   "atr_pct": 7.05,
+   "vol_1y": 63.4,
+   "dollar_vol_20d": 121006965,
+   "low_120": 5.37,
+   "high_120": 10.19,
+   "support": 5.4549,
+   "support_strength": 2,
+   "support_2": null,
+   "buy_zone": [
+    5.4549,
+    5.5884
+   ],
+   "stop": 5.1878,
+   "resistance": 6.7224,
+   "resistance_strength": 8,
+   "resistance_1": 6.7224,
+   "sell_zone": [
+    6.5889,
+    6.7224
+   ],
+   "vs_sma50_pct": -21.7,
+   "chg_120d_pct": -10.1,
+   "reward_risk": 2.5,
+   "halted": false,
+   "to_zone_pct": 12.91,
+   "upside_to_target_pct": 17.9,
+   "risk_to_stop_pct": 7.2,
+   "note": ""
+  },
+  {
+   "ticker": "TEM",
+   "name": "Tempus AI, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 70.93,
+   "asof": "2026-10-09",
+   "atr": 5.8818,
+   "atr_pct": 8.29,
+   "vol_1y": 73.3,
+   "dollar_vol_20d": 610247189,
+   "low_120": 40.77,
+   "high_120": 89.09,
+   "support": 58.3988,
+   "support_strength": 9,
+   "support_2": 46.0803,
+   "buy_zone": [
+    58.3988,
+    60.1634
+   ],
+   "stop": 54.8698,
+   "resistance": 73.9341,
+   "resistance_strength": 2,
+   "resistance_1": 73.9341,
+   "sell_zone": [
+    72.1696,
+    73.9341
+   ],
+   "vs_sma50_pct": 8.1,
+   "chg_120d_pct": 28.6,
+   "reward_risk": 2.27,
+   "halted": false,
+   "to_zone_pct": 17.9,
+   "upside_to_target_pct": 20.0,
+   "risk_to_stop_pct": 8.8,
+   "note": ""
+  },
+  {
+   "ticker": "UMAC",
+   "name": "Unusual Machines, Inc.",
+   "exchange": "NYSE American",
+   "price": 20.83,
+   "asof": "2026-10-09",
+   "atr": 1.5502,
+   "atr_pct": 7.44,
+   "vol_1y": 128.2,
+   "dollar_vol_20d": 58336430,
+   "low_120": 12.945,
+   "high_120": 34.926,
+   "support": 17.1432,
+   "support_strength": 3,
+   "support_2": 15.78,
+   "buy_zone": [
+    17.1432,
+    17.6083
+   ],
+   "stop": 16.2131,
+   "resistance": 21.822,
+   "resistance_strength": 6,
+   "resistance_1": 21.822,
+   "sell_zone": [
+    21.3569,
+    21.822
+   ],
+   "vs_sma50_pct": -15.2,
+   "chg_120d_pct": 35.5,
+   "reward_risk": 2.69,
+   "halted": false,
+   "to_zone_pct": 18.3,
+   "upside_to_target_pct": 21.3,
+   "risk_to_stop_pct": 7.9,
+   "note": ""
+  },
+  {
+   "ticker": "PCVX",
+   "name": "Vaxcyte, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 71.38,
+   "asof": "2026-10-09",
+   "atr": 5.5739,
+   "atr_pct": 7.81,
+   "vol_1y": 53.0,
+   "dollar_vol_20d": 224818666,
+   "low_120": 45.3,
+   "high_120": 90.75,
+   "support": 56.6168,
+   "support_strength": 24,
+   "support_2": null,
+   "buy_zone": [
+    56.6168,
+    58.2889
+   ],
+   "stop": 53.2724,
+   "resistance": 90.75,
+   "resistance_strength": 1,
+   "resistance_1": 90.75,
+   "sell_zone": [
+    89.0778,
+    90.75
+   ],
+   "vs_sma50_pct": 19.1,
+   "chg_120d_pct": 17.9,
+   "reward_risk": 6.14,
+   "halted": false,
+   "to_zone_pct": 22.46,
+   "upside_to_target_pct": 52.8,
+   "risk_to_stop_pct": 8.6,
+   "note": ""
+  },
+  {
+   "ticker": "NVAX",
+   "name": "Novavax, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 12.75,
+   "asof": "2026-10-09",
+   "atr": 1.0129,
+   "atr_pct": 7.94,
+   "vol_1y": 67.5,
+   "dollar_vol_20d": 89364295,
+   "low_120": 7.15,
+   "high_120": 13.39,
+   "support": 9.463,
+   "support_strength": 23,
+   "support_2": 7.15,
+   "buy_zone": [
+    9.463,
+    9.7669
+   ],
+   "stop": 8.8553,
+   "resistance": 13.39,
+   "resistance_strength": 1,
+   "resistance_1": 13.39,
+   "sell_zone": [
+    13.0861,
+    13.39
+   ],
+   "vs_sma50_pct": 33.8,
+   "chg_120d_pct": 50.2,
+   "reward_risk": 3.64,
+   "halted": false,
+   "to_zone_pct": 30.54,
+   "upside_to_target_pct": 34.0,
+   "risk_to_stop_pct": 9.3,
+   "note": ""
+  },
+  {
+   "ticker": "DNA",
+   "name": "Ginkgo Bioworks Holdings, Inc.",
+   "exchange": "NYSE",
+   "price": 13.0,
+   "asof": "2026-10-09",
+   "atr": 1.8886,
+   "atr_pct": 14.53,
+   "vol_1y": 101.1,
+   "dollar_vol_20d": 41374797,
+   "low_120": 6.47,
+   "high_120": 18.22,
+   "support": 8.2361,
+   "support_strength": 20,
+   "support_2": null,
+   "buy_zone": [
+    8.2361,
+    8.8026
+   ],
+   "stop": 7.1029,
+   "resistance": 18.22,
+   "resistance_strength": 1,
+   "resistance_1": 18.22,
+   "sell_zone": [
+    17.6534,
+    18.22
+   ],
+   "vs_sma50_pct": 51.6,
+   "chg_120d_pct": 58.3,
+   "reward_risk": 5.21,
+   "halted": false,
+   "to_zone_pct": 47.68,
+   "upside_to_target_pct": 100.5,
+   "risk_to_stop_pct": 19.3,
+   "note": ""
+  },
+  {
+   "ticker": "GRAL",
+   "name": "GRAIL, Inc.",
+   "exchange": "NasdaqGS",
+   "price": 140.58,
+   "asof": "2026-10-09",
+   "atr": 12.0173,
+   "atr_pct": 8.55,
+   "vol_1y": 113.3,
+   "dollar_vol_20d": 187477498,
+   "low_120": 49.15,
+   "high_120": 166.475,
+   "support": 67.9961,
+   "support_strength": 22,
+   "support_2": null,
+   "buy_zone": [
+    67.9961,
+    71.6013
+   ],
+   "stop": 60.7857,
+   "resistance": 166.475,
+   "resistance_strength": 1,
+   "resistance_1": 166.475,
+   "sell_zone": [
+    162.8698,
+    166.475
+   ],
+   "vs_sma50_pct": 52.6,
+   "chg_120d_pct": 175.4,
+   "reward_risk": 8.44,
+   "halted": false,
+   "to_zone_pct": 96.34,
+   "upside_to_target_pct": 127.5,
+   "risk_to_stop_pct": 15.1,
+   "note": ""
+  }
+ ],
+ "dropped": [
+  {
+   "ticker": "CIFR",
+   "why": "no tested support below the price; reward:risk 1.37 < 1.5"
+  },
+  {
+   "ticker": "WULF",
+   "why": "no tested support below the price; reward:risk 1.05 < 1.5"
+  },
+  {
+   "ticker": "MARA",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "RIOT",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "CLSK",
+   "why": "no tested support below the price; reward:risk 0.36 < 1.5"
+  },
+  {
+   "ticker": "HUT",
+   "why": "reward:risk 0.82 < 1.5"
+  },
+  {
+   "ticker": "CORZ",
+   "why": "no tested support below the price; reward:risk 0.43 < 1.5"
+  },
+  {
+   "ticker": "HIVE",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "BTBT",
+   "why": "reward:risk 0.42 < 1.5"
+  },
+  {
+   "ticker": "GLXY",
+   "why": "reward:risk 0.49 < 1.5"
+  },
+  {
+   "ticker": "CRWV",
+   "why": "reward:risk 0.45 < 1.5"
+  },
+  {
+   "ticker": "SOUN",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "BBAI",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "RGTI",
+   "why": "reward:risk 0.77 < 1.5"
+  },
+  {
+   "ticker": "QBTS",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "QUBT",
+   "why": "reward:risk 0.74 < 1.5"
+  },
+  {
+   "ticker": "SMR",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "ASTS",
+   "why": "no tested support below the price; reward:risk 1.34 < 1.5"
+  },
+  {
+   "ticker": "LUNR",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "RCAT",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "ONDS",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "UPST",
+   "why": "no tested support below the price"
+  },
+  {
+   "ticker": "SOFI",
+   "why": "ATR 3.26% < 4.0%"
+  },
+  {
+   "ticker": "AXTI",
+   "why": "reward:risk 1.24 < 1.5"
+  },
+  {
+   "ticker": "POET",
+   "why": "reward:risk 1.39 < 1.5"
+  },
+  {
+   "ticker": "HIMX",
+   "why": "reward:risk 0.81 < 1.5"
+  },
+  {
+   "ticker": "ORCL",
+   "why": "reward:risk 1.24 < 1.5"
+  },
+  {
+   "ticker": "NOW",
+   "why": "ATR 3.75% < 4.0%"
+  },
+  {
+   "ticker": "PATH",
+   "why": "ATR 3.94% < 4.0%"
+  },
+  {
+   "ticker": "META",
+   "why": "ATR 3.06% < 4.0%"
+  },
+  {
+   "ticker": "SNAP",
+   "why": "reward:risk 0.73 < 1.5"
+  },
+  {
+   "ticker": "DUOL",
+   "why": "ATR 3.92% < 4.0%; reward:risk 1.29 < 1.5"
+  },
+  {
+   "ticker": "GRAB",
+   "why": "ATR 3.8% < 4.0%; reward:risk 1.33 < 1.5"
+  },
+  {
+   "ticker": "CRSP",
+   "why": "reward:risk 1.47 < 1.5"
+  },
+  {
+   "ticker": "BKKT",
+   "why": "$vol 11.6M < 15M; no tested support below the price; reward:risk -0.19 < 1.5"
+  },
+  {
+   "ticker": "ALMU",
+   "why": "$vol 8.6M < 15M; no tested support below the price; reward:risk 0.99 < 1.5"
+  },
+  {
+   "ticker": "BSP",
+   "why": "reward:risk 1.36 < 1.5"
+  }
+ ]
+}

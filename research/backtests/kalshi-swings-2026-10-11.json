@@ -1,0 +1,506 @@
+{
+  "asof": "2026-10-11",
+  "series": "KXATPMATCH,KXWTAMATCH",
+  "matches": 300,
+  "start": "2026-08-12",
+  "end": "2026-10-11",
+  "groups": {
+    "all matches": {
+      "0.30-0.60": {
+        "net": {
+          "n": 300,
+          "swing_pct": 39.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.257,
+          "ret": -22.01,
+          "ci": 10.78,
+          "fair": 42.8
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 39.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.257,
+          "ret": -5.24,
+          "ci": 13.12,
+          "fair": 42.8
+        }
+      },
+      "0.20-0.40": {
+        "net": {
+          "n": 300,
+          "swing_pct": 47.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.189,
+          "ret": -18.57,
+          "ci": 10.7,
+          "fair": 47.2
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 47.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.189,
+          "ret": 5.6,
+          "ci": 14.42,
+          "fair": 47.2
+        }
+      },
+      "0.30-0.50": {
+        "net": {
+          "n": 300,
+          "swing_pct": 51.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.257,
+          "ret": -15.63,
+          "ci": 10.21,
+          "fair": 51.3
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 51.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.257,
+          "ret": 4.0,
+          "ci": 12.87,
+          "fair": 51.3
+        }
+      },
+      "0.40-0.60": {
+        "net": {
+          "n": 300,
+          "swing_pct": 48.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.31,
+          "ret": -20.33,
+          "ci": 8.71,
+          "fair": 51.7
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 48.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.31,
+          "ret": -4.48,
+          "ci": 10.81,
+          "fair": 51.7
+        }
+      },
+      "0.10-0.30": {
+        "net": {
+          "n": 300,
+          "swing_pct": 32.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.098,
+          "ret": -27.62,
+          "ci": 12.13,
+          "fair": 32.5
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 32.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.098,
+          "ret": 4.51,
+          "ci": 17.6,
+          "fair": 32.5
+        }
+      },
+      "0.20-0.60": {
+        "net": {
+          "n": 300,
+          "swing_pct": 31.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.189,
+          "ret": -20.43,
+          "ci": 14.34,
+          "fair": 31.5
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 31.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.189,
+          "ret": -0.9,
+          "ci": 17.85,
+          "fair": 31.5
+        }
+      },
+      "0.15-0.20": {
+        "net": {
+          "n": 300,
+          "swing_pct": 69.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.139,
+          "ret": -22.59,
+          "ci": 8.68,
+          "fair": 69.7
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 69.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.139,
+          "ret": 11.99,
+          "ci": 14.65,
+          "fair": 69.7
+        }
+      },
+      "0.15-0.25": {
+        "net": {
+          "n": 300,
+          "swing_pct": 58.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.139,
+          "ret": -18.95,
+          "ci": 10.55,
+          "fair": 55.8
+        },
+        "gross": {
+          "n": 300,
+          "swing_pct": 58.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.139,
+          "ret": 15.1,
+          "ci": 17.57,
+          "fair": 55.8
+        }
+      }
+    },
+    "evenly matched (both opened 35-65 cents)": {
+      "0.30-0.60": {
+        "net": {
+          "n": 157,
+          "swing_pct": 48.4,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.285,
+          "ret": -12.69,
+          "ci": 15.05,
+          "fair": 47.5
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 48.4,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.285,
+          "ret": 4.48,
+          "ci": 18.02,
+          "fair": 47.5
+        }
+      },
+      "0.20-0.40": {
+        "net": {
+          "n": 157,
+          "swing_pct": 52.2,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.197,
+          "ret": -14.75,
+          "ci": 13.15,
+          "fair": 49.2
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 52.2,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.197,
+          "ret": 8.55,
+          "ci": 16.68,
+          "fair": 49.2
+        }
+      },
+      "0.30-0.50": {
+        "net": {
+          "n": 157,
+          "swing_pct": 60.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.285,
+          "ret": -9.77,
+          "ci": 12.8,
+          "fair": 57.1
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 60.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.285,
+          "ret": 9.45,
+          "ci": 15.55,
+          "fair": 57.1
+        }
+      },
+      "0.40-0.60": {
+        "net": {
+          "n": 157,
+          "swing_pct": 63.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.374,
+          "ret": -9.66,
+          "ci": 10.28,
+          "fair": 62.4
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 63.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.374,
+          "ret": 6.01,
+          "ci": 12.16,
+          "fair": 62.4
+        }
+      },
+      "0.10-0.30": {
+        "net": {
+          "n": 157,
+          "swing_pct": 33.8,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.097,
+          "ret": -26.39,
+          "ci": 15.98,
+          "fair": 32.4
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 33.8,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.097,
+          "ret": 5.58,
+          "ci": 22.92,
+          "fair": 32.4
+        }
+      },
+      "0.20-0.60": {
+        "net": {
+          "n": 157,
+          "swing_pct": 36.9,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.197,
+          "ret": -8.1,
+          "ci": 19.76,
+          "fair": 32.8
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 36.9,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.197,
+          "ret": 13.52,
+          "ci": 24.36,
+          "fair": 32.8
+        }
+      },
+      "0.15-0.20": {
+        "net": {
+          "n": 157,
+          "swing_pct": 70.1,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.141,
+          "ret": -24.69,
+          "ci": 10.6,
+          "fair": 70.7
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 70.1,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.141,
+          "ret": 9.33,
+          "ci": 18.48,
+          "fair": 70.7
+        }
+      },
+      "0.15-0.25": {
+        "net": {
+          "n": 157,
+          "swing_pct": 58.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.141,
+          "ret": -21.45,
+          "ci": 13.88,
+          "fair": 56.5
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 58.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.141,
+          "ret": 12.12,
+          "ci": 23.86,
+          "fair": 56.5
+        }
+      }
+    },
+    "clear favorite (opened outside 35-65 cents)": {
+      "0.30-0.60": {
+        "net": {
+          "n": 143,
+          "swing_pct": 30.1,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.225,
+          "ret": -32.24,
+          "ci": 14.44,
+          "fair": 37.6
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 30.1,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.225,
+          "ret": -15.9,
+          "ci": 18.55,
+          "fair": 37.6
+        }
+      },
+      "0.20-0.40": {
+        "net": {
+          "n": 143,
+          "swing_pct": 41.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.18,
+          "ret": -22.77,
+          "ci": 15.65,
+          "fair": 45.0
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 41.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.18,
+          "ret": 2.36,
+          "ci": 22.34,
+          "fair": 45.0
+        }
+      },
+      "0.30-0.50": {
+        "net": {
+          "n": 143,
+          "swing_pct": 42.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.225,
+          "ret": -22.06,
+          "ci": 12.82,
+          "fair": 45.1
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 42.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.225,
+          "ret": -1.99,
+          "ci": 16.89,
+          "fair": 45.1
+        }
+      },
+      "0.40-0.60": {
+        "net": {
+          "n": 143,
+          "swing_pct": 31.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.24,
+          "ret": -32.04,
+          "ci": 13.56,
+          "fair": 40.0
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 31.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.24,
+          "ret": -15.99,
+          "ci": 17.54,
+          "fair": 40.0
+        }
+      },
+      "0.10-0.30": {
+        "net": {
+          "n": 143,
+          "swing_pct": 31.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.098,
+          "ret": -28.98,
+          "ci": 15.83,
+          "fair": 32.6
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 31.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.098,
+          "ret": 3.33,
+          "ci": 23.98,
+          "fair": 32.6
+        }
+      },
+      "0.20-0.60": {
+        "net": {
+          "n": 143,
+          "swing_pct": 24.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.18,
+          "ret": -33.97,
+          "ci": 17.88,
+          "fair": 30.0
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 24.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.18,
+          "ret": -16.72,
+          "ci": 22.88,
+          "fair": 30.0
+        }
+      },
+      "0.15-0.20": {
+        "net": {
+          "n": 143,
+          "swing_pct": 68.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.137,
+          "ret": -20.28,
+          "ci": 12.37,
+          "fair": 68.6
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 68.5,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.137,
+          "ret": 14.91,
+          "ci": 19.35,
+          "fair": 68.6
+        }
+      },
+      "0.15-0.25": {
+        "net": {
+          "n": 143,
+          "swing_pct": 58.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.137,
+          "ret": -16.2,
+          "ci": 13.26,
+          "fair": 54.9
+        },
+        "gross": {
+          "n": 143,
+          "swing_pct": 58.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.137,
+          "ret": 18.37,
+          "ci": 20.29,
+          "fair": 54.9
+        }
+      }
+    }
+  },
+  "group_sizes": {
+    "all matches": 300,
+    "evenly matched (both opened 35-65 cents)": 157,
+    "clear favorite (opened outside 35-65 cents)": 143
+  },
+  "reading": [
+    "- Swings happen at the rate the price implies: across all 300 matches each rule reached its target within a few points of fair odds (bought at 30 cents, reached 60: 39.7% against 42.8% fair; Vamsi's under-15-to-20: 69.3% against 69.7%). Before costs every rule is a wash (-5% to +15%, inside \u00b111-18).",
+    "- After the spread, Robinhood's 1 cent and Kalshi's fee on both legs, every rule lost 16-28% of the first leg (under-15-to-20: -22.6% \u00b1 8.7).",
+    "- Evenly matched (157 matches, both opened 35-65 cents): comebacks a little more often than fair (30 to 60: 48.4% against 47.5%; 20 to 60: 36.9% against 32.8%), still -8% to -26% after costs. Clear favorites (143): the trailing player came back less often than priced (30 to 60: 30.1% against 37.6%), -16% to -34% after costs. Both differences sit inside the noise.",
+    "- Verdict: no trade. The price already holds the comeback odds; the costs of two legs decide the result."
+  ]
+}

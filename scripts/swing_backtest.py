@@ -107,17 +107,18 @@ def run_market(m: dict) -> dict | None:
     return out
 
 
-def stats(rows: list[dict], key: str) -> dict:
+def stats(rows: list[dict], key: str, target: float) -> dict:
     xs = [(r["date"], r[key]) for r in rows if key in r]
     if not xs:
         return {"n": 0}
+    fair = 100 * sum(min(1.0, x["buy"] / target) for _, x in xs) / len(xs)
     m, se = cb.clustered([(d, x["ret"]) for d, x in xs])
     swings = sum(x["swing"] for _, x in xs)
     held = [x for _, x in xs if not x["swing"]]
     return {"n": len(xs), "swing_pct": round(100 * swings / len(xs), 1),
             "held_won_pct": round(100 * sum(x["won"] for x in held) / len(held), 1) if held else None,
             "avg_buy": round(sum(x["buy"] for _, x in xs) / len(xs), 3),
-            "ret": round(100 * m, 2), "ci": round(196 * se, 2) if not math.isnan(se) else None}
+            "ret": round(100 * m, 2), "ci": round(196 * se, 2) if not math.isnan(se) else None, "fair": round(fair, 1)}
 
 
 def main() -> int:
@@ -148,15 +149,15 @@ def main() -> int:
     res = {"asof": dt.date.today().isoformat(), "series": a.series, "matches": len(rows),
            "start": dt.datetime.fromtimestamp(start, dt.timezone.utc).date().isoformat(),
            "end": dt.datetime.fromtimestamp(end, dt.timezone.utc).date().isoformat(),
-           "groups": {g: {f"{e:.2f}-{t:.2f}": {"net": stats(rs, f"{e:.2f}-{t:.2f}"),
-                                               "gross": stats(rs, f"{e:.2f}-{t:.2f}_g"),
-                                               "fair_swing_pct": round(100 * e / t, 1)} for e, t in PAIRS}
+           "groups": {g: {f"{e:.2f}-{t:.2f}": {"net": stats(rs, f"{e:.2f}-{t:.2f}", t),
+                                               "gross": stats(rs, f"{e:.2f}-{t:.2f}_g", t)} for e, t in PAIRS}
                       for g, rs in groups.items()},
            "group_sizes": {g: len(rs) for g, rs in groups.items()}}
     lines = [f"# In-match swing trading on Kalshi tennis, {res['asof']}", "",
              f"{res['matches']} settled ATP/WTA match markets with trade history, {res['start']} to {res['end']}; method in "
              f"the `scripts/swing_backtest.py` docstring. Returns per dollar of the first leg; ± 95% clustered by date. "
-             f"'Fair odds' is the share that would reach the target if prices were fair (entry / target)."]
+             f"'Fair odds' is the share that would reach the target if prices were fair: the actual entry price over the target, "
+             f"averaged (the first trade under the threshold is often well under it, after a jump)."]
     for g, pairs in res["groups"].items():
         lines += ["", f"## {g}: {res['group_sizes'][g]} matches", "",
                   "| buy at, sell at | matches entered | reached the target | fair odds | won when held | "
@@ -167,7 +168,7 @@ def main() -> int:
                 continue
             e, t = k.split("-")
             lines.append(f"| {float(e) * 100:.0f}c, {float(t) * 100:.0f}c | {n_['n']} | {gr['swing_pct']}% | "
-                         f"{v['fair_swing_pct']}% | {gr['held_won_pct']}% | {gr['ret']:+.1f}% ± {gr['ci'] or 0:.1f} | "
+                         f"{gr['fair']}% | {gr['held_won_pct']}% | {gr['ret']:+.1f}% ± {gr['ci'] or 0:.1f} | "
                          f"{n_['ret']:+.1f}% ± {n_['ci'] or 0:.1f} |")
     lines += ["", "## Reading", ""]
     text = "\n".join(lines) + "\n"

@@ -165,6 +165,46 @@
           "ci": 17.57,
           "fair": 55.8
         }
+      },
+      "0.35_0.40-0.45": {
+        "net": {
+          "n": 249,
+          "swing_pct": 80.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.376,
+          "ret": -15.29,
+          "ci": 4.24,
+          "fair": 83.5
+        },
+        "gross": {
+          "n": 249,
+          "swing_pct": 80.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.376,
+          "ret": 1.01,
+          "ci": 5.03,
+          "fair": 83.5
+        }
+      },
+      "0.35_0.40-0.50": {
+        "net": {
+          "n": 249,
+          "swing_pct": 74.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.376,
+          "ret": -14.86,
+          "ci": 5.0,
+          "fair": 75.2
+        },
+        "gross": {
+          "n": 249,
+          "swing_pct": 74.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.376,
+          "ret": 0.86,
+          "ci": 5.9,
+          "fair": 75.2
+        }
       }
     },
     "evenly matched (both opened 35-65 cents)": {
@@ -326,6 +366,46 @@
           "ret": 12.12,
           "ci": 23.86,
           "fair": 56.5
+        }
+      },
+      "0.35_0.40-0.45": {
+        "net": {
+          "n": 157,
+          "swing_pct": 84.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.386,
+          "ret": -13.23,
+          "ci": 6.09,
+          "fair": 85.8
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 84.7,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.386,
+          "ret": 3.24,
+          "ci": 7.24,
+          "fair": 85.8
+        }
+      },
+      "0.35_0.40-0.50": {
+        "net": {
+          "n": 157,
+          "swing_pct": 79.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.386,
+          "ret": -11.77,
+          "ci": 6.63,
+          "fair": 77.2
+        },
+        "gross": {
+          "n": 157,
+          "swing_pct": 79.0,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.386,
+          "ret": 4.33,
+          "ci": 7.84,
+          "fair": 77.2
         }
       }
     },
@@ -489,6 +569,46 @@
           "ci": 20.29,
           "fair": 54.9
         }
+      },
+      "0.35_0.40-0.45": {
+        "net": {
+          "n": 92,
+          "swing_pct": 73.9,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.359,
+          "ret": -18.79,
+          "ci": 8.22,
+          "fair": 79.7
+        },
+        "gross": {
+          "n": 92,
+          "swing_pct": 73.9,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.359,
+          "ret": -2.8,
+          "ci": 9.79,
+          "fair": 79.7
+        }
+      },
+      "0.35_0.40-0.50": {
+        "net": {
+          "n": 92,
+          "swing_pct": 66.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.359,
+          "ret": -20.13,
+          "ci": 9.48,
+          "fair": 71.7
+        },
+        "gross": {
+          "n": 92,
+          "swing_pct": 66.3,
+          "held_won_pct": 0.0,
+          "avg_buy": 0.359,
+          "ret": -5.07,
+          "ci": 11.22,
+          "fair": 71.7
+        }
       }
     }
   },
@@ -498,9 +618,9 @@
     "clear favorite (opened outside 35-65 cents)": 143
   },
   "reading": [
-    "- Swings happen at the rate the price implies: across all 300 matches each rule reached its target within a few points of fair odds (bought at 30 cents, reached 60: 39.7% against 42.8% fair; Vamsi's under-15-to-20: 69.3% against 69.7%). Before costs every rule is a wash (-5% to +15%, inside \u00b111-18).",
-    "- After the spread, Robinhood's 1 cent and Kalshi's fee on both legs, every rule lost 16-28% of the first leg (under-15-to-20: -22.6% \u00b1 8.7).",
-    "- Evenly matched (157 matches, both opened 35-65 cents): comebacks a little more often than fair (30 to 60: 48.4% against 47.5%; 20 to 60: 36.9% against 32.8%), still -8% to -26% after costs. Clear favorites (143): the trailing player came back less often than priced (30 to 60: 30.1% against 37.6%), -16% to -34% after costs. Both differences sit inside the noise.",
-    "- Verdict: no trade. The price already holds the comeback odds; the costs of two legs decide the result."
+    "- Swings happen at the rate the price implies: across all 300 matches each rule reached its exit within a few points of fair odds (bought at 30 cents, reached 60: 39.7% against 42.8% fair; under 15 to 20: 69.3% against 69.7%; inside 35-40 to 45: 80.7% against 83.5%). Before costs every rule is a wash.",
+    "- After the spread, Robinhood's 1 cent and Kalshi's fee on both legs (about 7 cents a round trip near 40 cents, 5 near 15), every rule lost: -15% to -28% of the stake (35-40 to 45: -15.3% \u00b1 4.2; 35-40 to 50: -14.9% \u00b1 5.0; under 15 to 20: -22.6% \u00b1 8.7).",
+    "- Evenly matched (157 matches, both opened 35-65 cents): comebacks a little more often than fair on some rules (35-40 to 50: 79.0% against 77.2%), still -8% to -26% after costs. Clear favorites (143): the trailing player came back less often than priced (30 to 60: 30.1% against 37.6%), -16% to -34% after costs. Both differences sit inside the noise.",
+    "- Verdict: no trade. The price already holds the comeback odds; no entry and exit pair beats a fair price before costs, and the costs of two legs make every pair lose."
   ]
 }

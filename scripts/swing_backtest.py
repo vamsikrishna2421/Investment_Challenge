@@ -34,8 +34,14 @@ import portfolio as pfm  # noqa: E402
 ROOT = pfm.ROOT
 CACHE = ROOT / ".cache" / "kalshi_trades"
 SPREAD = 0.01
-# Oct 11: Vamsi's follow-up, buy under 15 cents and sell once it crosses 20
-PAIRS = [(0.30, 0.60), (0.20, 0.40), (0.30, 0.50), (0.40, 0.60), (0.10, 0.30), (0.20, 0.60), (0.15, 0.20), (0.15, 0.25)]
+# Oct 11: Vamsi's follow-ups, buy under 15 cents and sell once it crosses 20; then buy inside 35-40 cents (close
+# contests) and sell at 45 or 50. Each rule is (lowest entry, highest entry, exit); 0 = any price at or under the high.
+PAIRS = [(0.0, 0.30, 0.60), (0.0, 0.20, 0.40), (0.0, 0.30, 0.50), (0.0, 0.40, 0.60), (0.0, 0.10, 0.30), (0.0, 0.20, 0.60),
+         (0.0, 0.15, 0.20), (0.0, 0.15, 0.25), (0.35, 0.40, 0.45), (0.35, 0.40, 0.50)]
+
+
+def rule_key(lo: float, hi: float, t: float) -> str:
+    return (f"{lo:.2f}_" if lo else "") + f"{hi:.2f}-{t:.2f}"
 
 
 def trades(m: dict) -> list[tuple[int, float]]:
@@ -67,13 +73,14 @@ def leg_cost(p: float, net: bool) -> float:
     return p + SPREAD + fb.fee(p + SPREAD) if net else p
 
 
-def simulate(path: list[tuple[int, float]], result: str, entry: float, target: float, net: bool) -> dict | None:
+def simulate(path: list[tuple[int, float]], result: str, entry: float, target: float, net: bool,
+             lo: float = 0.0) -> dict | None:
     side, k0, buy = None, None, None
     for k, (_, y) in enumerate(path):
-        if y <= entry:
+        if lo <= y <= entry:
             side, k0, buy = "yes", k, y
             break
-        if 1 - y <= entry:
+        if lo <= 1 - y <= entry:
             side, k0, buy = "no", k, 1 - y
             break
     if side is None:
@@ -99,11 +106,11 @@ def run_market(m: dict) -> dict | None:
     first = sorted(p for _, p in path[:30])
     out = {"ticker": m["ticker"], "date": day, "trades": len(path), "result": m["result"],
            "p0": first[len(first) // 2]}
-    for e, t in PAIRS:
+    for lo, e, t in PAIRS:
         for net in (True, False):
-            r = simulate(path, m["result"], e, t, net)
+            r = simulate(path, m["result"], e, t, net, lo)
             if r:
-                out[f"{e:.2f}-{t:.2f}{'' if net else '_g'}"] = r
+                out[rule_key(lo, e, t) + ("" if net else "_g")] = r
     return out
 
 
@@ -149,8 +156,8 @@ def main() -> int:
     res = {"asof": dt.date.today().isoformat(), "series": a.series, "matches": len(rows),
            "start": dt.datetime.fromtimestamp(start, dt.timezone.utc).date().isoformat(),
            "end": dt.datetime.fromtimestamp(end, dt.timezone.utc).date().isoformat(),
-           "groups": {g: {f"{e:.2f}-{t:.2f}": {"net": stats(rs, f"{e:.2f}-{t:.2f}", t),
-                                               "gross": stats(rs, f"{e:.2f}-{t:.2f}_g", t)} for e, t in PAIRS}
+           "groups": {g: {rule_key(lo, e, t): {"net": stats(rs, rule_key(lo, e, t), t),
+                                                "gross": stats(rs, rule_key(lo, e, t) + "_g", t)} for lo, e, t in PAIRS}
                       for g, rs in groups.items()},
            "group_sizes": {g: len(rs) for g, rs in groups.items()}}
     lines = [f"# In-match swing trading on Kalshi tennis, {res['asof']}", "",
@@ -166,8 +173,10 @@ def main() -> int:
             gr, n_ = v["gross"], v["net"]
             if not n_.get("n"):
                 continue
-            e, t = k.split("-")
-            lines.append(f"| {float(e) * 100:.0f}c, {float(t) * 100:.0f}c | {n_['n']} | {gr['swing_pct']}% | "
+            ent, t = k.split("-")
+            lo_, _, e = ent.rpartition("_")
+            label = (f"{float(lo_) * 100:.0f}-" if lo_ else "") + f"{float(e) * 100:.0f}c, {float(t) * 100:.0f}c"
+            lines.append(f"| {label} | {n_['n']} | {gr['swing_pct']}% | "
                          f"{gr['fair']}% | {gr['held_won_pct']}% | {gr['ret']:+.1f}% ± {gr['ci'] or 0:.1f} | "
                          f"{n_['ret']:+.1f}% ± {n_['ci'] or 0:.1f} |")
     lines += ["", "## Reading", ""]

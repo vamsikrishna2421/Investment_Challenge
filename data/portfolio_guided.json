@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-10T01:50:42Z",
+ "as_of": "2026-10-11T06:06:41Z",
  "session": "closed",
  "start_capital": 1000.0,
  "deposits": 1000.0,
@@ -14,7 +14,7 @@
  "goal_progress_pct": -4.98,
  "realized_pnl": -55.15,
  "unrealized_pnl": 5.33,
- "day_pnl": 0.32,
+ "day_pnl": -6.96,
  "fees_paid": 0.1,
  "positions": [
   {
@@ -34,7 +34,7 @@
    "market_value": 239.55,
    "unrealized_pnl": 1.31,
    "unrealized_pct": 0.55,
-   "day_pnl": 1.31,
+   "day_pnl": -2.65,
    "day_change_pct": -1.09,
    "price_source": "extended",
    "ext_price": 23.5893,
@@ -62,7 +62,7 @@
    "market_value": 243.13,
    "unrealized_pnl": 4.89,
    "unrealized_pct": 2.05,
-   "day_pnl": 4.89,
+   "day_pnl": 1.56,
    "day_change_pct": 0.65,
    "price_source": "extended",
    "ext_price": 15.3587,
@@ -104,7 +104,7 @@
  ],
  "counts": {
   "orders_total": 13,
-  "orders_today": 2,
+  "orders_today": 0,
   "day_trades_5d": 1,
   "day_trades_total": 1,
   "gfv": 0,

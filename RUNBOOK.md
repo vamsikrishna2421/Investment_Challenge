@@ -157,6 +157,10 @@ Forecast record (`scripts/forecasts.py`): for each scheduled release, write my o
 (claims, ADP, trend) before reading the market ladder, then log both with `add`; `resolve` after the release;
 `score` compares Brier scores. Nothing is traded on these forecasts unless mine beat the market's over 30+
 questions by more than costs.
+Tested Oct 11 on Kalshi's tennis and other settled markets (Vamsi's questions; `research/backtests/kalshi-*-2026-10-11.md`):
+buying 87-92 cent favorites, in-match swing exits, and betting a forecast's edge (Elo ratings from 55,000 settled
+matches, Elo blended with the price, the market's own calibration) at the ask or by limit order all lost after
+fees, in every competition from the ATP tour to ITF; the price beat the Elo forecast everywhere.
 
 ## 2. Decide
 

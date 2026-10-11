@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T06:21:09Z",
+ "generated_at": "2026-10-11T06:22:59Z",
  "session": "closed",
  "quotes": {
   "AEHR": {
@@ -137,11 +137,11 @@
   },
   "BTC-USD": {
    "price": 82957.99,
-   "time": "2026-10-11T06:21:01Z",
+   "time": "2026-10-11T06:22:51Z",
    "prev_close": 82911.77,
    "day_high": 83043.38,
    "day_low": 82744.375,
-   "volume": 11884180480,
+   "volume": 11877317632,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -1010,5 +1010,5 @@
   }
  },
  "errors": {},
- "fetch_seconds": 1.8
+ "fetch_seconds": 1.1
 }

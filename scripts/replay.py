@@ -246,6 +246,14 @@ EARN = [
     ("+ earnings sleeve, 3 sessions", {**_LIVE, "earn_z": 1.0, "earn_hold": 3}),
     ("+ earnings sleeve, 10 sessions", {**_LIVE, "earn_z": 1.0, "earn_hold": 10}),
 ]
+# Oct 11 (Vamsi: backtest the win rate of the strategies in use): the live rule sets and their parts
+SCORECARD = [
+    ("Paper book: live rules (radar, resting limits, 1% gap allowance)", dict(_LIVE)),
+    ("Real book: live rules (S&P gate, night sleeve)", dict(_RBN)),
+    ("Real book's radar part alone (no night sleeve)", dict(_RBL)),
+    ("Night sleeve alone (2 slots, down 1.5+ ATR in the lowest quarter, sold at the open)",
+     {**_RBL, "night_only": "on", "night_z": 1.5, "night_low": "on", "night_slots": 2}),
+]
 EARN_REAL = [
     ("Live real-book rules (S&P gate, 1% gap allowance, night sleeve)", dict(_RBN)),
     ("Real book + earnings sleeve: down 1+ ATR, 5 sessions, stop 1 ATR", {**_RBN, "earn_z": 1.0}),
@@ -1021,7 +1029,7 @@ def main() -> int:
     ap.add_argument("--grid", action="store_true")
     ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets", "lessons", "realbook",
                                       "evolve", "evolve_real", "night", "night_real", "close", "stops2", "regime", "partial",
-                                      "earnings", "earnings_real"],
+                                      "earnings", "earnings_real", "scorecard"],
                     default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
@@ -1066,6 +1074,8 @@ def main() -> int:
         GRID = NIGHT
     if a.set == "night_real":
         GRID = NIGHT_REAL
+    if a.set == "scorecard":
+        GRID = SCORECARD
     if a.set == "earnings":
         GRID = EARN
     if a.set == "earnings_real":

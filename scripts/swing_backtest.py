@@ -9,6 +9,9 @@ reaches 60 cents, buy the other player at 40 cents, so whoever wins pays $1 on 7
 Fees: Robinhood's 1 cent a contract on each leg plus Kalshi's taker fee 0.07 x p x (1 - p) on each leg; 'gross' is
 before fees and spread. Benchmark: if prices are fair, a player bought at E reaches T before losing with probability
 E/T (a fair price can't drift), which makes the strategy worth zero before costs.
+Split by the pre-match price (the median of the match market's first 30 trades, made before play): evenly
+matched when both players opened between 35 and 65 cents (Vamsi's follow-up: only close matches), a clear
+favorite otherwise.
 Returns per dollar of the first leg, means +/- 95% clustered by match date. Markets sampled evenly by close time,
 up to --per a series with some volume; trades cached in .cache/kalshi_trades.
   python scripts/swing_backtest.py [--days 60] [--per 200] [--series KXATPMATCH,KXWTAMATCH] [--save]
@@ -93,7 +96,9 @@ def run_market(m: dict) -> dict | None:
     if len(path) < 20:
         return None
     day = dt.datetime.fromtimestamp(fb.ts(m["close_time"]), dt.timezone.utc).date().isoformat()
-    out = {"ticker": m["ticker"], "date": day, "trades": len(path), "result": m["result"]}
+    first = sorted(p for _, p in path[:30])
+    out = {"ticker": m["ticker"], "date": day, "trades": len(path), "result": m["result"],
+           "p0": first[len(first) // 2]}
     for e, t in PAIRS:
         for net in (True, False):
             r = simulate(path, m["result"], e, t, net)
@@ -137,23 +142,33 @@ def main() -> int:
         print(f"  {s}: {len(ms)} matches settled, {len(ms[::step][:a.per])} sampled", file=sys.stderr)
     with ThreadPoolExecutor(8) as ex:
         rows = [r for r in ex.map(run_market, picks) if r]
+    groups = {"all matches": rows,
+              "evenly matched (both opened 35-65 cents)": [r for r in rows if 0.35 <= r["p0"] <= 0.65],
+              "clear favorite (opened outside 35-65 cents)": [r for r in rows if not 0.35 <= r["p0"] <= 0.65]}
     res = {"asof": dt.date.today().isoformat(), "series": a.series, "matches": len(rows),
            "start": dt.datetime.fromtimestamp(start, dt.timezone.utc).date().isoformat(),
            "end": dt.datetime.fromtimestamp(end, dt.timezone.utc).date().isoformat(),
-           "pairs": {f"{e:.2f}-{t:.2f}": {"net": stats(rows, f"{e:.2f}-{t:.2f}"), "gross": stats(rows, f"{e:.2f}-{t:.2f}_g"),
-                                          "fair_swing_pct": round(100 * e / t, 1)} for e, t in PAIRS}}
+           "groups": {g: {f"{e:.2f}-{t:.2f}": {"net": stats(rs, f"{e:.2f}-{t:.2f}"),
+                                               "gross": stats(rs, f"{e:.2f}-{t:.2f}_g"),
+                                               "fair_swing_pct": round(100 * e / t, 1)} for e, t in PAIRS}
+                      for g, rs in groups.items()},
+           "group_sizes": {g: len(rs) for g, rs in groups.items()}}
     lines = [f"# In-match swing trading on Kalshi tennis, {res['asof']}", "",
              f"{res['matches']} settled ATP/WTA match markets with trade history, {res['start']} to {res['end']}; method in "
-             f"the `scripts/swing_backtest.py` docstring. Returns per dollar of the first leg; ± 95% clustered by date.", "",
-             "| buy at, lock at | matches entered | swung to the target | fair-price odds of that | won when held | "
-             "return gross | return net (spread and fees) |", "|---|---|---|---|---|---|---|"]
-    for k, v in res["pairs"].items():
-        g, n_ = v["gross"], v["net"]
-        if not n_.get("n"):
-            continue
-        e, t = k.split("-")
-        lines.append(f"| {float(e) * 100:.0f}c, {float(t) * 100:.0f}c | {n_['n']} | {g['swing_pct']}% | {v['fair_swing_pct']}% | "
-                     f"{g['held_won_pct']}% | {g['ret']:+.1f}% ± {g['ci'] or 0:.1f} | {n_['ret']:+.1f}% ± {n_['ci'] or 0:.1f} |")
+             f"the `scripts/swing_backtest.py` docstring. Returns per dollar of the first leg; ± 95% clustered by date. "
+             f"'Fair odds' is the share that would reach the target if prices were fair (entry / target)."]
+    for g, pairs in res["groups"].items():
+        lines += ["", f"## {g}: {res['group_sizes'][g]} matches", "",
+                  "| buy at, sell at | matches entered | reached the target | fair odds | won when held | "
+                  "return gross | return net (spread and fees) |", "|---|---|---|---|---|---|---|"]
+        for k, v in pairs.items():
+            gr, n_ = v["gross"], v["net"]
+            if not n_.get("n"):
+                continue
+            e, t = k.split("-")
+            lines.append(f"| {float(e) * 100:.0f}c, {float(t) * 100:.0f}c | {n_['n']} | {gr['swing_pct']}% | "
+                         f"{v['fair_swing_pct']}% | {gr['held_won_pct']}% | {gr['ret']:+.1f}% ± {gr['ci'] or 0:.1f} | "
+                         f"{n_['ret']:+.1f}% ± {n_['ci'] or 0:.1f} |")
     lines += ["", "## Reading", ""]
     text = "\n".join(lines) + "\n"
     print(text)

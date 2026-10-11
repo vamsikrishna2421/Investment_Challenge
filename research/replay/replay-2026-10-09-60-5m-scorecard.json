@@ -1,0 +1,5552 @@
+[
+ {
+  "title": "Paper book: live rules (radar, resting limits, 1% gap allowance)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "on",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.0,
+   "gap_stop": "open",
+   "min_strength": 0,
+   "min_rr": 1.5,
+   "slots": 4,
+   "breadth": 0.0,
+   "rel_gate": 0.0,
+   "night_z": 0.0,
+   "night_low": "off",
+   "night_slots": 2,
+   "night_size": 0.25,
+   "night_only": "off",
+   "regime": "off",
+   "partial_at": 0.0,
+   "partial_frac": 0.5,
+   "partial_be": "off",
+   "earn_z": 0.0,
+   "earn_slots": 2,
+   "earn_size": 0.25,
+   "earn_hold": 5,
+   "earn_stop": 1.0
+  },
+  "summary": {
+   "final": 1072.27,
+   "ret_pct": 7.23,
+   "trades": 40,
+   "wins": 9,
+   "win_rate": 22.5,
+   "avg_win": 24.55,
+   "avg_loss": -5.0,
+   "avg_trade": 1.65,
+   "profit_factor": 1.17,
+   "max_drawdown_pct": -23.01,
+   "realized": 65.62,
+   "unrealized": 6.65,
+   "by_exit": {
+    "target": 9,
+    "stop": 31
+   },
+   "fill_rate": "13/16"
+  },
+  "lessons": [
+   "stopped the session it was bought: 4 trades, 0 won, average -3.23%, total $-34.72",
+   "stopped on a later session: 27 trades, 0 won, average -5.26%, total $-345.79",
+   "stopped at the open (gapped through the stop): 7 trades, 0 won, average -5.56%, total $-87.77",
+   "never rose 0.5 ATR above the entry: 17 trades, 0 won, average -4.75%, total $-195.49",
+   "crypto-linked: 9 trades, 1 won, average -2.59%, total $-77.25",
+   "bought on a dip of 0.5+ ATR (any time): 25 trades, 5 won, average +0.43%, total $+2.00",
+   "bought less than 0.25 ATR under the prior close: 9 trades, 2 won, average -1.35%, total $-47.38",
+   "resting limit fills: 11 trades, 2 won, average +4.19%, total $+42.90",
+   "run entries inside the buy zone: 21 trades, 4 won, average +0.23%, total $+23.80",
+   "run entries on a bounce (touched the zone, back above it): 8 trades, 3 won, average +1.90%, total $-1.08",
+   "support tested 3+ times: 30 trades, 8 won, average +2.17%, total $+73.20",
+   "support tested twice: 9 trades, 1 won, average +0.98%, total $+10.90",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 1 trade, 0 won, average -7.89%, total $-18.48"
+  ],
+  "sessions": [
+   "2026-07-17",
+   "2026-10-09",
+   60
+  ],
+  "equity": [
+   {
+    "day": "2026-07-17",
+    "equity": 1028.94,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "META",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1027.13,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "META",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1072.33,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "META",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 1061.21,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "META",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 1068.46,
+    "positions": [
+     "CRSP",
+     "DUOL",
+     "HIMX",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 1031.12,
+    "positions": [
+     "CRSP",
+     "DUOL",
+     "HIMX",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 1059.38,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "NBIS",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 1043.78,
+    "positions": [
+     "CRSP",
+     "DELL",
+     "HIMX",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 991.72,
+    "positions": [
+     "CRSP",
+     "DELL",
+     "HUT",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 1081.57,
+    "positions": [
+     "CRSP",
+     "DELL",
+     "UMAC",
+     "UPST"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 1089.34,
+    "positions": [
+     "CRSP",
+     "DELL",
+     "UMAC",
+     "UPST"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 1146.56,
+    "positions": [
+     "CRSP",
+     "DELL",
+     "HIMX",
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 1246.08,
+    "positions": [
+     "AXTI",
+     "CRSP",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 1244.66,
+    "positions": [
+     "AXTI",
+     "CRSP",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 1286.9,
+    "positions": [
+     "AXTI",
+     "CRSP",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 1377.44,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "MARA",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 1353.05,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "MARA",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1362.82,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "MARA",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1372.75,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "MARA",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1353.13,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1390.64,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "ONDS",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1369.86,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "POET",
+     "UPST"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 1310.97,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "POET",
+     "UPST"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 1357.85,
+    "positions": [
+     "HIMX",
+     "NBIS",
+     "POET",
+     "UPST"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 1308.52,
+    "positions": [
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1309.14,
+    "positions": [
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 1259.55,
+    "positions": [
+     "CRSP",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1282.66,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 1268.72,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1282.37,
+    "positions": [
+     "CRSP",
+     "HIMX",
+     "LUNR",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1254.01,
+    "positions": [
+     "COIN",
+     "CRSP",
+     "HIMX",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1271.64,
+    "positions": [
+     "COIN",
+     "CRSP",
+     "HIMX",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1233.28,
+    "positions": [
+     "COIN",
+     "CRSP",
+     "HIMX",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1228.13,
+    "positions": [
+     "COIN",
+     "CRSP",
+     "HIMX",
+     "SOUN"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1267.34,
+    "positions": [
+     "COIN",
+     "CRSP",
+     "GPUS",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1251.62,
+    "positions": [
+     "COIN",
+     "CRSP",
+     "GPUS",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1242.46,
+    "positions": [
+     "COIN",
+     "DUOL",
+     "GPUS",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1235.38,
+    "positions": [
+     "COIN",
+     "GPUS",
+     "HIMX",
+     "QBTS"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1210.69,
+    "positions": [
+     "COIN",
+     "GPUS",
+     "HIMX",
+     "QBTS"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1228.32,
+    "positions": [
+     "COIN",
+     "GPUS",
+     "HIMX",
+     "QBTS"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1244.23,
+    "positions": [
+     "COIN",
+     "GPUS",
+     "HIMX",
+     "SMCI"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1181.34,
+    "positions": [
+     "BULL",
+     "GPUS",
+     "HIMX",
+     "SMCI"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1159.81,
+    "positions": [
+     "DUOL",
+     "GPUS",
+     "HIMX",
+     "SMCI"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1189.68,
+    "positions": [
+     "DUOL",
+     "GPUS",
+     "HIMX",
+     "SMCI"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1174.17,
+    "positions": [
+     "DUOL",
+     "GPUS",
+     "HIMX",
+     "SMCI"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1227.68,
+    "positions": [
+     "DUOL",
+     "GPUS",
+     "HIMX",
+     "STNE"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1215.9,
+    "positions": [
+     "DUOL",
+     "GPUS",
+     "HIMX",
+     "STNE"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1186.16,
+    "positions": [
+     "DUOL",
+     "GPUS",
+     "HIMX",
+     "STNE"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1196.38,
+    "positions": [
+     "DUOL",
+     "HIMS",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1197.54,
+    "positions": [
+     "BTBT",
+     "CRCL",
+     "DUOL",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1166.2,
+    "positions": [
+     "AXTI",
+     "BTBT",
+     "CRCL",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1181.37,
+    "positions": [
+     "AXTI",
+     "CRCL",
+     "HIMX",
+     "IREN"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1166.94,
+    "positions": [
+     "AXTI",
+     "BTDR",
+     "HIMX",
+     "IREN"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1175.73,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "RIOT"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1199.23,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "PATH",
+     "RIOT"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1187.17,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "RIOT",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1179.14,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "RIOT",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-07",
+    "equity": 1144.16,
+    "positions": [
+     "AXTI",
+     "HIMX",
+     "SMR",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-08",
+    "equity": 1070.6,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-10-09",
+    "equity": 1072.27,
+    "positions": [
+     "APLD",
+     "HIMX",
+     "SMCI"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 631.3,
+    "day": "2026-07-17",
+    "minute": 650,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 613.8498999999999,
+    "target": 735.2745,
+    "atr": 29.085,
+    "rr": 5.96,
+    "spy_day": -0.71,
+    "prior5_atr": 1.14,
+    "dist_atr": 1.14,
+    "dip_atr": -1.14,
+    "gap_atr": -0.58,
+    "btc_d1": -0.88,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 26,
+    "exit_rule": "plan",
+    "ticker": "META",
+    "exit": 608.1058,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -3.68,
+    "pnl": -9.21,
+    "best_atr": 0.85,
+    "worst_atr": -0.87
+   },
+   {
+    "entry": 119.11952755737305,
+    "day": "2026-07-23",
+    "minute": 590,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 112.06172000000001,
+    "target": 134.2801,
+    "atr": 7.7463,
+    "rr": 2.17,
+    "spy_day": -0.87,
+    "prior5_atr": -1.51,
+    "dist_atr": 0.36,
+    "dip_atr": -0.05,
+    "gap_atr": 0.09,
+    "btc_d1": -0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "DUOL",
+    "exit": 134.2378,
+    "exit_day": "2026-07-27",
+    "exit_minute": 890,
+    "why": "target",
+    "ret_pct": 12.67,
+    "pnl": 14.41,
+    "best_atr": 1.97,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 185.9279242172241,
+    "day": "2026-07-27",
+    "minute": 890,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 166.95499999999998,
+    "target": 223.301,
+    "atr": 22.5035,
+    "rr": 1.98,
+    "spy_day": -0.05,
+    "prior5_atr": 0.45,
+    "dist_atr": 0.32,
+    "dip_atr": -0.08,
+    "gap_atr": 0.41,
+    "btc_d1": -0.46,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 10,
+    "exit_rule": "plan",
+    "ticker": "NBIS",
+    "exit": 166.8715,
+    "exit_day": "2026-07-28",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -10.26,
+    "pnl": -14.23,
+    "best_atr": 0.26,
+    "worst_atr": -0.85
+   },
+   {
+    "entry": 12.11,
+    "day": "2026-07-17",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.430779999999999,
+    "target": 15.7356,
+    "atr": 1.1307,
+    "rr": 5.34,
+    "spy_day": -1.29,
+    "prior5_atr": -2.49,
+    "dist_atr": 0.7,
+    "dip_atr": -0.7,
+    "gap_atr": -0.58,
+    "btc_d1": -0.88,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.4079,
+    "exit_day": "2026-07-29",
+    "exit_minute": 730,
+    "why": "stop",
+    "ret_pct": -5.81,
+    "pnl": -13.18,
+    "best_atr": 1.57,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 89.10452755737305,
+    "day": "2026-07-29",
+    "minute": 740,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 78.25718,
+    "target": 106.7999,
+    "atr": 10.2302,
+    "rr": 1.64,
+    "spy_day": -1.01,
+    "prior5_atr": -0.77,
+    "dist_atr": 1.64,
+    "dip_atr": -1.18,
+    "gap_atr": -0.11,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HUT",
+    "exit": 106.8166,
+    "exit_day": "2026-07-30",
+    "exit_minute": 710,
+    "why": "target",
+    "ret_pct": 19.86,
+    "pnl": 23.68,
+    "best_atr": 1.75,
+    "worst_atr": -0.19
+   },
+   {
+    "entry": 26.283135457992554,
+    "day": "2026-07-30",
+    "minute": 710,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 25.161299999999997,
+    "target": 29.2912,
+    "atr": 1.602,
+    "rr": 2.72,
+    "spy_day": 1.07,
+    "prior5_atr": -1.27,
+    "dist_atr": 0.3,
+    "dip_atr": -0.2,
+    "gap_atr": -0.06,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 8,
+    "exit_rule": "plan",
+    "ticker": "UPST",
+    "exit": 29.2853,
+    "exit_day": "2026-08-03",
+    "exit_minute": 710,
+    "why": "target",
+    "ret_pct": 11.41,
+    "pnl": 24.99,
+    "best_atr": 1.95,
+    "worst_atr": -0.05
+   },
+   {
+    "entry": 365.76778395080566,
+    "day": "2026-07-28",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 349.27004,
+    "target": 444.4426,
+    "atr": 31.5136,
+    "rr": 4.83,
+    "spy_day": -0.27,
+    "prior5_atr": 1.43,
+    "dist_atr": 1.86,
+    "dip_atr": -1.94,
+    "gap_atr": -0.82,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "DELL",
+    "exit": 459.4602,
+    "exit_day": "2026-08-04",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 25.61,
+    "pnl": 58.96,
+    "best_atr": 3.02,
+    "worst_atr": -0.22
+   },
+   {
+    "entry": 16.049999237060547,
+    "day": "2026-07-17",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.459959999999999,
+    "target": 25.7914,
+    "atr": 2.3589,
+    "rr": 6.28,
+    "spy_day": -1.29,
+    "prior5_atr": -1.73,
+    "dist_atr": -0.1,
+    "dip_atr": -0.25,
+    "gap_atr": -0.25,
+    "btc_d1": -0.88,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "UMAC",
+    "exit": 26.2169,
+    "exit_day": "2026-08-04",
+    "exit_minute": 770,
+    "why": "target",
+    "ret_pct": 63.33,
+    "pnl": 100.93,
+    "best_atr": 4.35,
+    "worst_atr": -0.11
+   },
+   {
+    "entry": 61.43570127868652,
+    "day": "2026-08-04",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 59.06652,
+    "target": 89.0855,
+    "atr": 8.9843,
+    "rr": 11.84,
+    "spy_day": 0.76,
+    "prior5_atr": 2.31,
+    "dist_atr": 0.47,
+    "dip_atr": -0.81,
+    "gap_atr": -0.47,
+    "btc_d1": 0.62,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "AXTI",
+    "exit": 89.2404,
+    "exit_day": "2026-08-07",
+    "exit_minute": 950,
+    "why": "target",
+    "ret_pct": 45.25,
+    "pnl": 110.37,
+    "best_atr": 3.12,
+    "worst_atr": -0.1
+   },
+   {
+    "entry": 10.025010114669799,
+    "day": "2026-08-07",
+    "minute": 950,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 9.32154,
+    "target": 12.1419,
+    "atr": 1.0286,
+    "rr": 3.13,
+    "spy_day": 0.56,
+    "prior5_atr": -1.14,
+    "dist_atr": 0.69,
+    "dip_atr": -0.61,
+    "gap_atr": 0.0,
+    "btc_d1": 1.11,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 8,
+    "exit_rule": "plan",
+    "ticker": "MARA",
+    "exit": 9.3029,
+    "exit_day": "2026-08-13",
+    "exit_minute": 655,
+    "why": "stop",
+    "ret_pct": -7.21,
+    "pnl": -17.78,
+    "best_atr": 0.24,
+    "worst_atr": -0.69
+   },
+   {
+    "entry": 9.193350191116332,
+    "day": "2026-08-13",
+    "minute": 665,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 8.53588,
+    "target": 11.28,
+    "atr": 0.6857,
+    "rr": 3.29,
+    "spy_day": 0.61,
+    "prior5_atr": 1.31,
+    "dist_atr": 1.2,
+    "dip_atr": -0.84,
+    "gap_atr": -1.15,
+    "btc_d1": 0.02,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "ONDS",
+    "exit": 8.5188,
+    "exit_day": "2026-08-17",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -7.35,
+    "pnl": -18.99,
+    "best_atr": 0.65,
+    "worst_atr": -0.98
+   },
+   {
+    "entry": 47.505001068115234,
+    "day": "2026-07-17",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 45.840579999999996,
+    "target": 58.5529,
+    "atr": 3.5247,
+    "rr": 5.0,
+    "spy_day": -1.29,
+    "prior5_atr": -2.2,
+    "dist_atr": 0.17,
+    "dip_atr": -0.3,
+    "gap_atr": -0.3,
+    "btc_d1": -0.88,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 11,
+    "exit_rule": "plan",
+    "ticker": "CRSP",
+    "exit": 59.0005,
+    "exit_day": "2026-08-19",
+    "exit_minute": 905,
+    "why": "target",
+    "ret_pct": 24.19,
+    "pnl": 60.48,
+    "best_atr": 3.28,
+    "worst_atr": -0.46
+   },
+   {
+    "entry": 219.1895418319702,
+    "day": "2026-08-19",
+    "minute": 905,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 213.55195999999998,
+    "target": 279.1923,
+    "atr": 27.2774,
+    "rr": 10.87,
+    "spy_day": 0.32,
+    "prior5_atr": 2.02,
+    "dist_atr": 0.68,
+    "dip_atr": -1.07,
+    "gap_atr": -0.59,
+    "btc_d1": -0.34,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "NBIS",
+    "exit": 213.4452,
+    "exit_day": "2026-08-20",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -2.63,
+    "pnl": -6.3,
+    "best_atr": 0.21,
+    "worst_atr": -0.24
+   },
+   {
+    "entry": 3.331575057506561,
+    "day": "2026-08-20",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 3.29776,
+    "target": 4.0141,
+    "atr": 0.1739,
+    "rr": 40.55,
+    "spy_day": -0.27,
+    "prior5_atr": 1.21,
+    "dist_atr": 0.56,
+    "dip_atr": -0.97,
+    "gap_atr": -0.58,
+    "btc_d1": 3.76,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RXRX",
+    "exit": 3.2813,
+    "exit_day": "2026-08-20",
+    "exit_minute": 605,
+    "why": "stop",
+    "ret_pct": -1.52,
+    "pnl": -4.72,
+    "best_atr": 0.0,
+    "worst_atr": -0.24
+   },
+   {
+    "entry": 29.734859313011167,
+    "day": "2026-08-17",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 28.433059999999998,
+    "target": 33.6715,
+    "atr": 1.7889,
+    "rr": 3.07,
+    "spy_day": -0.07,
+    "prior5_atr": -0.37,
+    "dist_atr": 0.52,
+    "dip_atr": -0.39,
+    "gap_atr": -0.04,
+    "btc_d1": 1.18,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 13,
+    "exit_rule": "plan",
+    "ticker": "UPST",
+    "exit": 28.4188,
+    "exit_day": "2026-08-20",
+    "exit_minute": 610,
+    "why": "stop",
+    "ret_pct": -4.43,
+    "pnl": -14.77,
+    "best_atr": 1.06,
+    "worst_atr": -0.74
+   },
+   {
+    "entry": 3.4,
+    "day": "2026-08-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 3.29068,
+    "target": 4.0106,
+    "atr": 0.1857,
+    "rr": 5.59,
+    "spy_day": -0.3,
+    "prior5_atr": 1.83,
+    "dist_atr": 0.53,
+    "dip_atr": -0.54,
+    "gap_atr": -0.48,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "RXRX",
+    "exit": 3.2742,
+    "exit_day": "2026-08-24",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -3.71,
+    "pnl": -12.14,
+    "best_atr": 0.0,
+    "worst_atr": -0.65
+   },
+   {
+    "entry": 36.2,
+    "day": "2026-08-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 34.66854,
+    "target": 50.6354,
+    "atr": 2.5486,
+    "rr": 9.43,
+    "spy_day": -0.3,
+    "prior5_atr": -1.02,
+    "dist_atr": 0.41,
+    "dip_atr": -0.41,
+    "gap_atr": -0.28,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "SMCI",
+    "exit": 34.6512,
+    "exit_day": "2026-08-24",
+    "exit_minute": 585,
+    "why": "stop",
+    "ret_pct": -4.28,
+    "pnl": -14.02,
+    "best_atr": 0.0,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -16.33,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.35,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -16.73,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 7.01,
+    "day": "2026-08-25",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 6.71306,
+    "target": 8.6373,
+    "atr": 0.4929,
+    "rr": 5.48,
+    "spy_day": 0.43,
+    "prior5_atr": -0.08,
+    "dist_atr": -0.02,
+    "dip_atr": 0.02,
+    "gap_atr": 0.1,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 24,
+    "exit_rule": "plan",
+    "ticker": "SOUN",
+    "exit": 6.6996,
+    "exit_day": "2026-09-03",
+    "exit_minute": 670,
+    "why": "stop",
+    "ret_pct": -4.43,
+    "pnl": -13.96,
+    "best_atr": 0.77,
+    "worst_atr": -0.63
+   },
+   {
+    "entry": 56.95846530532837,
+    "day": "2026-08-24",
+    "minute": 590,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 54.4657,
+    "target": 62.6633,
+    "atr": 2.6225,
+    "rr": 2.33,
+    "spy_day": -0.29,
+    "prior5_atr": 2.27,
+    "dist_atr": 1.32,
+    "dip_atr": -0.97,
+    "gap_atr": -0.34,
+    "btc_d1": 0.87,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "CRSP",
+    "exit": 54.3038,
+    "exit_day": "2026-09-08",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.67,
+    "pnl": -9.47,
+    "best_atr": 1.75,
+    "worst_atr": -1.59
+   },
+   {
+    "entry": 145.67280610656738,
+    "day": "2026-09-08",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 140.91352,
+    "target": 165.155,
+    "atr": 7.4168,
+    "rr": 4.17,
+    "spy_day": -0.37,
+    "prior5_atr": 1.01,
+    "dist_atr": 1.23,
+    "dip_atr": -1.18,
+    "gap_atr": -0.26,
+    "btc_d1": -0.9,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "DUOL",
+    "exit": 140.8431,
+    "exit_day": "2026-09-09",
+    "exit_minute": 615,
+    "why": "stop",
+    "ret_pct": -3.32,
+    "pnl": -10.39,
+    "best_atr": 0.37,
+    "worst_atr": -0.79
+   },
+   {
+    "entry": 16.998930152893067,
+    "day": "2026-09-09",
+    "minute": 620,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 16.40862,
+    "target": 21.7779,
+    "atr": 1.0783,
+    "rr": 8.65,
+    "spy_day": -0.45,
+    "prior5_atr": 0.44,
+    "dist_atr": 0.57,
+    "dip_atr": -0.62,
+    "gap_atr": -0.16,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "QBTS",
+    "exit": 16.0628,
+    "exit_day": "2026-09-14",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.52,
+    "pnl": -11.1,
+    "best_atr": 0.64,
+    "worst_atr": -0.85
+   },
+   {
+    "entry": 177.43868110656737,
+    "day": "2026-08-28",
+    "minute": 770,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 169.63508000000002,
+    "target": 209.6154,
+    "atr": 10.1407,
+    "rr": 4.18,
+    "spy_day": -0.15,
+    "prior5_atr": 1.81,
+    "dist_atr": 1.48,
+    "dip_atr": -1.31,
+    "gap_atr": -0.46,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 11,
+    "exit_rule": "plan",
+    "ticker": "COIN",
+    "exit": 169.5503,
+    "exit_day": "2026-09-15",
+    "exit_minute": 885,
+    "why": "stop",
+    "ret_pct": -4.45,
+    "pnl": -14.27,
+    "best_atr": 1.82,
+    "worst_atr": -0.92
+   },
+   {
+    "entry": 8.592250144958497,
+    "day": "2026-09-15",
+    "minute": 890,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 8.07066,
+    "target": 9.8026,
+    "atr": 0.5184,
+    "rr": 2.43,
+    "spy_day": -0.5,
+    "prior5_atr": -1.35,
+    "dist_atr": 1.27,
+    "dip_atr": -0.86,
+    "gap_atr": -0.35,
+    "btc_d1": -1.62,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "BULL",
+    "exit": 8.0545,
+    "exit_day": "2026-09-16",
+    "exit_minute": 655,
+    "why": "stop",
+    "ret_pct": -6.27,
+    "pnl": -14.06,
+    "best_atr": 0.23,
+    "worst_atr": -1.03
+   },
+   {
+    "entry": 37.428704847335815,
+    "day": "2026-09-14",
+    "minute": 590,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 35.215360000000004,
+    "target": 41.239,
+    "atr": 2.2214,
+    "rr": 1.74,
+    "spy_day": -0.54,
+    "prior5_atr": 1.0,
+    "dist_atr": 1.6,
+    "dip_atr": -1.2,
+    "gap_atr": -1.21,
+    "btc_d1": 1.17,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "SMCI",
+    "exit": 41.3343,
+    "exit_day": "2026-09-21",
+    "exit_minute": 620,
+    "why": "target",
+    "ret_pct": 10.43,
+    "pnl": 27.98,
+    "best_atr": 1.82,
+    "worst_atr": -0.93
+   },
+   {
+    "entry": 0.18100049391388892,
+    "day": "2026-09-03",
+    "minute": 680,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 0.16774,
+    "target": 0.4409,
+    "atr": 0.0371,
+    "rr": 21.1,
+    "spy_day": 0.9,
+    "prior5_atr": -4.58,
+    "dist_atr": 0.27,
+    "dip_atr": -0.51,
+    "gap_atr": 0.42,
+    "btc_d1": 0.79,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "plan",
+    "ticker": "GPUS",
+    "exit": 0.1669,
+    "exit_day": "2026-09-24",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -7.89,
+    "pnl": -18.48,
+    "best_atr": 0.74,
+    "worst_atr": -0.4
+   },
+   {
+    "entry": 9.584129579544067,
+    "day": "2026-09-21",
+    "minute": 620,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 9.17598,
+    "target": 10.4837,
+    "atr": 0.4157,
+    "rr": 2.36,
+    "spy_day": 0.96,
+    "prior5_atr": -1.37,
+    "dist_atr": 0.25,
+    "dip_atr": 0.13,
+    "gap_atr": 0.17,
+    "btc_d1": 4.59,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "STNE",
+    "exit": 9.1576,
+    "exit_day": "2026-09-24",
+    "exit_minute": 820,
+    "why": "stop",
+    "ret_pct": -4.46,
+    "pnl": -9.87,
+    "best_atr": 1.01,
+    "worst_atr": -0.98
+   },
+   {
+    "entry": 27.393689160346984,
+    "day": "2026-09-24",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 26.19376,
+    "target": 29.505,
+    "atr": 1.4099,
+    "rr": 1.79,
+    "spy_day": -0.38,
+    "prior5_atr": 0.28,
+    "dist_atr": 0.96,
+    "dip_atr": -0.71,
+    "gap_atr": -0.28,
+    "btc_d1": -1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMS",
+    "exit": 29.6452,
+    "exit_day": "2026-09-25",
+    "exit_minute": 725,
+    "why": "target",
+    "ret_pct": 8.21,
+    "pnl": 24.33,
+    "best_atr": 1.68,
+    "worst_atr": -0.01
+   },
+   {
+    "entry": 147.93893799591063,
+    "day": "2026-09-16",
+    "minute": 665,
+    "kind": "run",
+    "status": "bounce",
+    "stop": 140.62416,
+    "target": 165.0097,
+    "atr": 7.9009,
+    "rr": 2.37,
+    "spy_day": 0.46,
+    "prior5_atr": 0.95,
+    "dist_atr": 1.08,
+    "dip_atr": -0.76,
+    "gap_atr": -0.45,
+    "btc_d1": 0.75,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "DUOL",
+    "exit": 140.5538,
+    "exit_day": "2026-09-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.0,
+    "pnl": -14.76,
+    "best_atr": 0.64,
+    "worst_atr": -1.24
+   },
+   {
+    "entry": 1.75,
+    "day": "2026-09-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6793,
+    "target": 2.3549,
+    "atr": 0.117,
+    "rr": 8.56,
+    "spy_day": 0.3,
+    "prior5_atr": 2.22,
+    "dist_atr": 0.35,
+    "dip_atr": -0.34,
+    "gap_atr": 0.09,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.6709,
+    "exit_day": "2026-09-29",
+    "exit_minute": 725,
+    "why": "stop",
+    "ret_pct": -4.53,
+    "pnl": -13.56,
+    "best_atr": 0.38,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 88.71433316802978,
+    "day": "2026-09-25",
+    "minute": 725,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 82.90696,
+    "target": 99.6553,
+    "atr": 6.5734,
+    "rr": 1.91,
+    "spy_day": 0.56,
+    "prior5_atr": 1.2,
+    "dist_atr": 0.94,
+    "dip_atr": -0.65,
+    "gap_atr": -0.15,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "CRCL",
+    "exit": 82.8655,
+    "exit_day": "2026-09-30",
+    "exit_minute": 630,
+    "why": "stop",
+    "ret_pct": -6.61,
+    "pnl": -8.47,
+    "best_atr": 0.07,
+    "worst_atr": -0.9
+   },
+   {
+    "entry": 41.377577711105346,
+    "day": "2026-09-29",
+    "minute": 725,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 40.18626,
+    "target": 44.4577,
+    "atr": 2.5509,
+    "rr": 2.65,
+    "spy_day": -0.31,
+    "prior5_atr": -2.16,
+    "dist_atr": 0.0,
+    "dip_atr": -0.13,
+    "gap_atr": 0.32,
+    "btc_d1": 0.98,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "IREN",
+    "exit": 40.1662,
+    "exit_day": "2026-10-01",
+    "exit_minute": 580,
+    "why": "stop",
+    "ret_pct": -2.93,
+    "pnl": -8.56,
+    "best_atr": 0.4,
+    "worst_atr": -0.5
+   },
+   {
+    "entry": 10.716389694213866,
+    "day": "2026-09-30",
+    "minute": 635,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 10.2277,
+    "target": 11.7454,
+    "atr": 0.827,
+    "rr": 2.25,
+    "spy_day": 0.46,
+    "prior5_atr": -2.66,
+    "dist_atr": 0.21,
+    "dip_atr": -0.22,
+    "gap_atr": 0.34,
+    "btc_d1": 0.31,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "BTDR",
+    "exit": 10.2072,
+    "exit_day": "2026-10-01",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -4.76,
+    "pnl": -14.05,
+    "best_atr": 0.07,
+    "worst_atr": -0.7
+   },
+   {
+    "entry": 13.23,
+    "day": "2026-10-02",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 12.83438,
+    "target": 18.6324,
+    "atr": 0.6587,
+    "rr": 13.66,
+    "spy_day": 0.89,
+    "prior5_atr": 1.09,
+    "dist_atr": 0.14,
+    "dip_atr": -0.14,
+    "gap_atr": 0.14,
+    "btc_d1": 1.84,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "PATH",
+    "exit": 12.8087,
+    "exit_day": "2026-10-05",
+    "exit_minute": 660,
+    "why": "stop",
+    "ret_pct": -3.19,
+    "pnl": -9.38,
+    "best_atr": 0.14,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 19.669259159088135,
+    "day": "2026-10-01",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 18.38942,
+    "target": 21.7816,
+    "atr": 1.4188,
+    "rr": 1.73,
+    "spy_day": 0.15,
+    "prior5_atr": -3.2,
+    "dist_atr": 0.64,
+    "dip_atr": -0.34,
+    "gap_atr": 0.07,
+    "btc_d1": 0.39,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "RIOT",
+    "exit": 18.3526,
+    "exit_day": "2026-10-07",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.71,
+    "pnl": -8.06,
+    "best_atr": 1.0,
+    "worst_atr": -1.11
+   },
+   {
+    "entry": 14.7845101146698,
+    "day": "2026-10-05",
+    "minute": 665,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 13.928899999999999,
+    "target": 17.7663,
+    "atr": 0.965,
+    "rr": 3.65,
+    "spy_day": 0.36,
+    "prior5_atr": -0.26,
+    "dist_atr": 1.02,
+    "dip_atr": -0.73,
+    "gap_atr": 0.45,
+    "btc_d1": -0.33,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "WULF",
+    "exit": 13.901,
+    "exit_day": "2026-10-08",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.98,
+    "pnl": -16.18,
+    "best_atr": 0.41,
+    "worst_atr": -1.04
+   },
+   {
+    "entry": 84.10202755737305,
+    "day": "2026-10-08",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 81.27726,
+    "target": 91.6074,
+    "atr": 4.4959,
+    "rr": 2.71,
+    "spy_day": -0.3,
+    "prior5_atr": 0.3,
+    "dist_atr": 1.0,
+    "dip_atr": -0.97,
+    "gap_atr": -0.36,
+    "btc_d1": -1.02,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "CRWV",
+    "exit": 81.2366,
+    "exit_day": "2026-10-08",
+    "exit_minute": 765,
+    "why": "stop",
+    "ret_pct": -3.42,
+    "pnl": -3.84,
+    "best_atr": 0.38,
+    "worst_atr": -0.69
+   },
+   {
+    "entry": 7.544859538078308,
+    "day": "2026-10-07",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 7.266159999999999,
+    "target": 8.7677,
+    "atr": 0.5164,
+    "rr": 4.7,
+    "spy_day": -0.52,
+    "prior5_atr": 0.5,
+    "dist_atr": 0.86,
+    "dip_atr": -0.92,
+    "gap_atr": -0.56,
+    "btc_d1": -2.16,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "SMR",
+    "exit": 7.2516,
+    "exit_day": "2026-10-08",
+    "exit_minute": 770,
+    "why": "stop",
+    "ret_pct": -3.89,
+    "pnl": -11.08,
+    "best_atr": 0.27,
+    "worst_atr": -0.55
+   },
+   {
+    "entry": 74.10703469467163,
+    "day": "2026-09-28",
+    "minute": 590,
+    "kind": "run",
+    "status": "buy zone",
+    "stop": 71.03726,
+    "target": 89.3364,
+    "atr": 6.2779,
+    "rr": 5.03,
+    "spy_day": -0.4,
+    "prior5_atr": 1.42,
+    "dist_atr": 0.66,
+    "dip_atr": -0.77,
+    "gap_atr": -0.38,
+    "btc_d1": -1.66,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 2,
+    "exit_rule": "plan",
+    "ticker": "AXTI",
+    "exit": 71.0017,
+    "exit_day": "2026-10-08",
+    "exit_minute": 945,
+    "why": "stop",
+    "ret_pct": -4.2,
+    "pnl": -12.57,
+    "best_atr": 2.27,
+    "worst_atr": -0.49
+   }
+  ],
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.8156,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 13.3,
+    "ret_pct": 3.78
+   },
+   {
+    "ticker": "APLD",
+    "entry": 23.55,
+    "day": "2026-10-09",
+    "stop": 22.6409,
+    "target": 28.6677,
+    "last": 23.68,
+    "ret_pct": 0.55
+   },
+   {
+    "ticker": "SMCI",
+    "entry": 41.9,
+    "day": "2026-10-09",
+    "stop": 40.5858,
+    "target": 50.7409,
+    "last": 41.86,
+    "ret_pct": -0.1
+   }
+  ],
+  "bench": {
+   "SPY": 3.71,
+   "QQQ": 6.42
+  },
+  "start": 1000.0,
+  "orders_placed": 16,
+  "orders_filled": 13
+ },
+ {
+  "title": "Real book: live rules (S&P gate, night sleeve)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3,
+   "breadth": 0.0,
+   "rel_gate": 0.0,
+   "night_z": 1.5,
+   "night_low": "on",
+   "night_slots": 2,
+   "night_size": 0.25,
+   "night_only": "off",
+   "regime": "off",
+   "partial_at": 0.0,
+   "partial_frac": 0.5,
+   "partial_be": "off",
+   "earn_z": 0.0,
+   "earn_slots": 2,
+   "earn_size": 0.25,
+   "earn_hold": 5,
+   "earn_stop": 1.0
+  },
+  "summary": {
+   "final": 1064.02,
+   "ret_pct": 6.4,
+   "trades": 31,
+   "wins": 13,
+   "win_rate": 41.9,
+   "avg_win": 6.02,
+   "avg_loss": -3.44,
+   "avg_trade": 0.53,
+   "profit_factor": 1.23,
+   "max_drawdown_pct": -8.88,
+   "realized": 36.74,
+   "unrealized": 27.28,
+   "by_exit": {
+    "target": 2,
+    "stop": 10,
+    "open": 19
+   },
+   "fill_rate": "14/62"
+  },
+  "lessons": [
+   "stopped the session it was bought: 3 trades, 0 won, average -3.45%, total $-26.67",
+   "stopped on a later session: 7 trades, 0 won, average -5.19%, total $-91.50",
+   "stopped at the open (gapped through the stop): 4 trades, 0 won, average -5.00%, total $-51.07",
+   "never rose 0.5 ATR above the entry: 24 trades, 9 won, average -1.14%, total $-68.92",
+   "crypto-linked: 8 trades, 5 won, average +3.72%, total $+70.69",
+   "bought at the open after a gap down of 0.5+ ATR: 1 trade, 0 won, average -4.42%, total $-10.96",
+   "bought on a dip of 0.5+ ATR (any time): 23 trades, 11 won, average +0.00%, total $-0.84",
+   "bought less than 0.25 ATR under the prior close: 5 trades, 2 won, average +5.83%, total $+69.69",
+   "resting limit fills: 12 trades, 2 won, average -0.19%, total $-9.61",
+   "support tested 3+ times: 12 trades, 2 won, average -0.19%, total $-9.61",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 19 trades, 11 won, average +0.98%, total $+46.35"
+  ],
+  "sessions": [
+   "2026-07-17",
+   "2026-10-09",
+   60
+  ],
+  "equity": [
+   {
+    "day": "2026-07-17",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 992.37,
+    "positions": [
+     "PATH",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 989.34,
+    "positions": []
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 984.82,
+    "positions": [
+     "HIMS",
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 992.2,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 967.8,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 968.15,
+    "positions": [
+     "ONDS",
+     "RIOT"
+    ]
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 1010.38,
+    "positions": [
+     "AFRM"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 1004.35,
+    "positions": [
+     "AFRM"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 1033.61,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 1071.39,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 1052.71,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET",
+     "SNAP"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 1061.71,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 1086.6,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 1074.87,
+    "positions": [
+     "AFRM",
+     "BTDR",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1099.33,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1098.86,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1108.19,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1140.97,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1125.86,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 1071.48,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET",
+     "SMTC"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 1073.83,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 1055.87,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1064.6,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 1039.65,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1052.35,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 1041.64,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR",
+     "SNAP"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1050.89,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1060.45,
+    "positions": [
+     "HIMX",
+     "IREN"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1064.07,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1057.61,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1070.84,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1099.96,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1094.4,
+    "positions": [
+     "HIMX",
+     "MARA",
+     "PATH"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1115.29,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1107.01,
+    "positions": [
+     "HIMX",
+     "MARA",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1084.14,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1119.03,
+    "positions": [
+     "HIMX",
+     "SMR"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1084.82,
+    "positions": [
+     "HIMX",
+     "SMTC"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1080.94,
+    "positions": [
+     "CRCL",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1074.15,
+    "positions": [
+     "BULL",
+     "HIMX",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1106.06,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1113.35,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1125.63,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1127.71,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1116.38,
+    "positions": [
+     "HIMX",
+     "RXRX"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1109.39,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1117.64,
+    "positions": [
+     "BTBT",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1094.97,
+    "positions": [
+     "BTBT",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1096.4,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1100.49,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1110.2,
+    "positions": [
+     "HIMX",
+     "UMAC",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1143.14,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1118.92,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1126.2,
+    "positions": [
+     "HIMX",
+     "TEM",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-07",
+    "equity": 1092.26,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-08",
+    "equity": 1056.53,
+    "positions": [
+     "HIMX",
+     "HUT"
+    ]
+   },
+   {
+    "day": "2026-10-09",
+    "equity": 1064.02,
+    "positions": [
+     "APLD",
+     "HIMX"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": -0.12,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -14.68,
+    "best_atr": 0.25,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 10.576110305786132,
+    "day": "2026-07-22",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.7225,
+    "rr": 0,
+    "spy_day": -0.06,
+    "prior5_atr": 0.14,
+    "dist_atr": 0.0,
+    "dip_atr": -2.03,
+    "gap_atr": -0.03,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "PATH",
+    "exit": 10.7485,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.62,
+    "pnl": 4.01,
+    "best_atr": 0.27,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 29.18000030517578,
+    "day": "2026-07-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 28.6244,
+    "target": 37.6653,
+    "atr": 2.4745,
+    "rr": 5.09,
+    "spy_day": 0.15,
+    "prior5_atr": 1.39,
+    "dist_atr": -0.09,
+    "dip_atr": -0.29,
+    "gap_atr": -0.29,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 28.6101,
+    "exit_day": "2026-07-24",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -1.96,
+    "pnl": -4.85,
+    "best_atr": 0.0,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 28.21410076332092,
+    "day": "2026-07-24",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 2.4296,
+    "rr": 0,
+    "spy_day": 0.04,
+    "prior5_atr": -0.39,
+    "dist_atr": 0.0,
+    "dip_atr": -1.86,
+    "gap_atr": 0.3,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "HIMS",
+    "exit": 28.7156,
+    "exit_day": "2026-07-27",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.77,
+    "pnl": 4.36,
+    "best_atr": 0.21,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 94.37,
+    "day": "2026-07-24",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.57806000000001,
+    "target": 117.8402,
+    "atr": 6.3214,
+    "rr": 6.19,
+    "spy_day": 0.02,
+    "prior5_atr": -0.7,
+    "dist_atr": 1.14,
+    "dip_atr": -1.14,
+    "gap_atr": -0.28,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.5328,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.07,
+    "pnl": -10.08,
+    "best_atr": 0.8,
+    "worst_atr": -0.72
+   },
+   {
+    "entry": 12.069999694824219,
+    "day": "2026-07-28",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.13,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -10.96,
+    "best_atr": 0.11,
+    "worst_atr": -0.58
+   },
+   {
+    "entry": 6.793560210227966,
+    "day": "2026-07-29",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.6079,
+    "rr": 0,
+    "spy_day": -1.35,
+    "prior5_atr": 0.33,
+    "dist_atr": 0.0,
+    "dip_atr": -1.75,
+    "gap_atr": -0.1,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "ONDS",
+    "exit": 6.996,
+    "exit_day": "2026-07-30",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 2.97,
+    "pnl": 7.19,
+    "best_atr": 0.36,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 18.231389694213867,
+    "day": "2026-07-29",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.751,
+    "rr": 0,
+    "spy_day": -1.35,
+    "prior5_atr": -0.14,
+    "dist_atr": 0.0,
+    "dip_atr": -1.72,
+    "gap_atr": -0.13,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "RIOT",
+    "exit": 20.02,
+    "exit_day": "2026-07-30",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 9.8,
+    "pnl": 23.72,
+    "best_atr": 1.03,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 5.3456700382232665,
+    "day": "2026-08-05",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.2469,
+    "rr": 0,
+    "spy_day": 0.02,
+    "prior5_atr": 4.13,
+    "dist_atr": 0.0,
+    "dip_atr": -1.8,
+    "gap_atr": -0.36,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SNAP",
+    "exit": 5.1896,
+    "exit_day": "2026-08-06",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -2.93,
+    "pnl": -7.39,
+    "best_atr": 0.0,
+    "worst_atr": -0.59
+   },
+   {
+    "entry": 8.852670038223266,
+    "day": "2026-08-10",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.2781,
+    "rr": 0,
+    "spy_day": -0.11,
+    "prior5_atr": 0.28,
+    "dist_atr": 0.0,
+    "dip_atr": -1.59,
+    "gap_atr": 0.19,
+    "btc_d1": 0.35,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "BTDR",
+    "exit": 9.2115,
+    "exit_day": "2026-08-11",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 4.05,
+    "pnl": 9.92,
+    "best_atr": 0.3,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 135.67780561065672,
+    "day": "2026-08-18",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 10.8814,
+    "rr": 0,
+    "spy_day": -0.68,
+    "prior5_atr": 2.11,
+    "dist_atr": 0.0,
+    "dip_atr": -1.7,
+    "gap_atr": -0.75,
+    "btc_d1": -0.34,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SMTC",
+    "exit": 135.4123,
+    "exit_day": "2026-08-19",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.2,
+    "pnl": -0.52,
+    "best_atr": 0.0,
+    "worst_atr": -0.02
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -14.04,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 5.470920038223267,
+    "day": "2026-08-26",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.2599,
+    "rr": 0,
+    "spy_day": 0.04,
+    "prior5_atr": 3.12,
+    "dist_atr": 0.0,
+    "dip_atr": -1.73,
+    "gap_atr": 0.19,
+    "btc_d1": -0.12,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SNAP",
+    "exit": 5.4191,
+    "exit_day": "2026-08-27",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.95,
+    "pnl": -2.49,
+    "best_atr": 0.0,
+    "worst_atr": -0.16
+   },
+   {
+    "entry": 69.88,
+    "day": "2026-07-30",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 67.85221999999999,
+    "target": 85.7701,
+    "atr": 3.3838,
+    "rr": 7.84,
+    "spy_day": 0.81,
+    "prior5_atr": -1.12,
+    "dist_atr": 0.07,
+    "dip_atr": -0.07,
+    "gap_atr": 0.24,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "AFRM",
+    "exit": 85.8471,
+    "exit_day": "2026-08-28",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 22.84,
+    "pnl": 55.28,
+    "best_atr": 6.08,
+    "worst_atr": -0.01
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.35,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -13.81,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 35.19759030532837,
+    "day": "2026-08-28",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 3.2607,
+    "rr": 0,
+    "spy_day": -0.23,
+    "prior5_atr": -0.63,
+    "dist_atr": 0.0,
+    "dip_atr": -1.64,
+    "gap_atr": -0.9,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "IREN",
+    "exit": 35.7122,
+    "exit_day": "2026-08-31",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.45,
+    "pnl": 3.85,
+    "best_atr": 0.16,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 15.240420038223267,
+    "day": "2026-09-04",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.7581,
+    "rr": 0,
+    "spy_day": -0.36,
+    "prior5_atr": -0.15,
+    "dist_atr": 0.0,
+    "dip_atr": -3.93,
+    "gap_atr": -2.61,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "PATH",
+    "exit": 15.1297,
+    "exit_day": "2026-09-08",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.73,
+    "pnl": -2.01,
+    "best_atr": 0.0,
+    "worst_atr": -0.11
+   },
+   {
+    "entry": 15.630000114440918,
+    "day": "2026-09-09",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.24,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.18,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.09,
+    "pnl": -14.2,
+    "best_atr": 0.3,
+    "worst_atr": -0.77
+   },
+   {
+    "entry": 10.010000228881836,
+    "day": "2026-09-02",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 9.67514,
+    "target": 12.1601,
+    "atr": 0.9321,
+    "rr": 3.48,
+    "spy_day": 0.08,
+    "prior5_atr": -1.72,
+    "dist_atr": -0.0,
+    "dip_atr": -0.24,
+    "gap_atr": -0.24,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "MARA",
+    "exit": 12.1706,
+    "exit_day": "2026-09-11",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 21.58,
+    "pnl": 53.28,
+    "best_atr": 2.55,
+    "worst_atr": -0.02
+   },
+   {
+    "entry": 8.722409923553467,
+    "day": "2026-09-11",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.6911,
+    "rr": 0,
+    "spy_day": 0.9,
+    "prior5_atr": 0.94,
+    "dist_atr": 0.0,
+    "dip_atr": -2.15,
+    "gap_atr": -0.8,
+    "btc_d1": 0.58,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SMR",
+    "exit": 8.2934,
+    "exit_day": "2026-09-14",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -4.93,
+    "pnl": -12.03,
+    "best_atr": 0.0,
+    "worst_atr": -0.6
+   },
+   {
+    "entry": 148.02897933197022,
+    "day": "2026-09-14",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 10.5936,
+    "rr": 0,
+    "spy_day": -0.4,
+    "prior5_atr": 3.01,
+    "dist_atr": 0.0,
+    "dip_atr": -1.81,
+    "gap_atr": -1.15,
+    "btc_d1": 1.17,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SMTC",
+    "exit": 149.4253,
+    "exit_day": "2026-09-15",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 0.94,
+    "pnl": 2.55,
+    "best_atr": 0.14,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 86.39818085861205,
+    "day": "2026-09-15",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 7.0993,
+    "rr": 0,
+    "spy_day": -0.51,
+    "prior5_atr": -0.65,
+    "dist_atr": 0.0,
+    "dip_atr": -1.55,
+    "gap_atr": -0.72,
+    "btc_d1": -1.62,
+    "btc_ok": false,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "CRCL",
+    "exit": 85.6721,
+    "exit_day": "2026-09-16",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.85,
+    "pnl": -2.29,
+    "best_atr": 0.0,
+    "worst_atr": -0.1
+   },
+   {
+    "entry": 7.7003699426651,
+    "day": "2026-09-16",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.5137,
+    "rr": 0,
+    "spy_day": -0.44,
+    "prior5_atr": -1.77,
+    "dist_atr": 0.0,
+    "dip_atr": -1.87,
+    "gap_atr": -0.29,
+    "btc_d1": 0.75,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "BULL",
+    "exit": 7.9341,
+    "exit_day": "2026-09-17",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 3.03,
+    "pnl": 8.12,
+    "best_atr": 0.49,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 7.119210019111633,
+    "day": "2026-09-16",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.4686,
+    "rr": 0,
+    "spy_day": -0.44,
+    "prior5_atr": -1.56,
+    "dist_atr": 0.0,
+    "dip_atr": -1.8,
+    "gap_atr": -0.05,
+    "btc_d1": 0.75,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "RCAT",
+    "exit": 7.3752,
+    "exit_day": "2026-09-17",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 3.59,
+    "pnl": 9.61,
+    "best_atr": 0.58,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 3.7318664896488185,
+    "day": "2026-09-23",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.2239,
+    "rr": 0,
+    "spy_day": -0.85,
+    "prior5_atr": 3.62,
+    "dist_atr": 0.0,
+    "dip_atr": -1.42,
+    "gap_atr": -0.09,
+    "btc_d1": -0.62,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "RXRX",
+    "exit": 3.6517,
+    "exit_day": "2026-09-24",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -2.16,
+    "pnl": -6.04,
+    "best_atr": 0.0,
+    "worst_atr": -0.28
+   },
+   {
+    "entry": 1.75,
+    "day": "2026-09-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6793,
+    "target": 2.3549,
+    "atr": 0.117,
+    "rr": 8.56,
+    "spy_day": 0.3,
+    "prior5_atr": 2.22,
+    "dist_atr": 0.35,
+    "dip_atr": -0.34,
+    "gap_atr": 0.09,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.6709,
+    "exit_day": "2026-09-29",
+    "exit_minute": 725,
+    "why": "stop",
+    "ret_pct": -4.53,
+    "pnl": -12.58,
+    "best_atr": 0.38,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 21.800794775962828,
+    "day": "2026-10-01",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.5349,
+    "rr": 0,
+    "spy_day": 0.25,
+    "prior5_atr": 1.17,
+    "dist_atr": 0.0,
+    "dip_atr": -1.75,
+    "gap_atr": 0.14,
+    "btc_d1": 0.39,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "UMAC",
+    "exit": 22.2189,
+    "exit_day": "2026-10-02",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.91,
+    "pnl": 5.3,
+    "best_atr": 0.28,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 71.70583316802978,
+    "day": "2026-10-06",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 5.5138,
+    "rr": 0,
+    "spy_day": 0.55,
+    "prior5_atr": -0.28,
+    "dist_atr": 0.0,
+    "dip_atr": -2.15,
+    "gap_atr": 0.26,
+    "btc_d1": 0.52,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "TEM",
+    "exit": 69.905,
+    "exit_day": "2026-10-07",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -2.52,
+    "pnl": -6.41,
+    "best_atr": 0.0,
+    "worst_atr": -0.32
+   },
+   {
+    "entry": 14.55,
+    "day": "2026-09-30",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 13.93596,
+    "target": 17.7637,
+    "atr": 1.0229,
+    "rr": 5.23,
+    "spy_day": 0.32,
+    "prior5_atr": -2.19,
+    "dist_atr": 0.53,
+    "dip_atr": -0.53,
+    "gap_atr": 0.18,
+    "btc_d1": 0.31,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "WULF",
+    "exit": 13.9081,
+    "exit_day": "2026-10-08",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -12.11,
+    "best_atr": 1.65,
+    "worst_atr": -0.75
+   },
+   {
+    "entry": 23.55,
+    "day": "2026-10-08",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 22.62612,
+    "target": 28.6603,
+    "atr": 1.5453,
+    "rr": 5.53,
+    "spy_day": -0.29,
+    "prior5_atr": -0.36,
+    "dist_atr": 0.17,
+    "dip_atr": -0.17,
+    "gap_atr": 0.35,
+    "btc_d1": -1.02,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 22.6148,
+    "exit_day": "2026-10-08",
+    "exit_minute": 805,
+    "why": "stop",
+    "ret_pct": -3.98,
+    "pnl": -10.86,
+    "best_atr": 0.15,
+    "worst_atr": -0.6
+   },
+   {
+    "entry": 79.05950664138794,
+    "day": "2026-10-08",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 6.5941,
+    "rr": 0,
+    "spy_day": -0.49,
+    "prior5_atr": 0.49,
+    "dist_atr": 0.0,
+    "dip_atr": -1.55,
+    "gap_atr": -0.31,
+    "btc_d1": -1.02,
+    "btc_ok": false,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "HUT",
+    "exit": 81.2094,
+    "exit_day": "2026-10-09",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 2.71,
+    "pnl": 6.9,
+    "best_atr": 0.33,
+    "worst_atr": 0.0
+   }
+  ],
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.06,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 13.3,
+    "ret_pct": 10.28
+   },
+   {
+    "ticker": "APLD",
+    "entry": 23.55,
+    "day": "2026-10-09",
+    "stop": 22.6409,
+    "target": 28.6677,
+    "last": 23.68,
+    "ret_pct": 0.55
+   }
+  ],
+  "bench": {
+   "SPY": 3.71,
+   "QQQ": 6.42
+  },
+  "start": 1000.0,
+  "orders_placed": 62,
+  "orders_filled": 14
+ },
+ {
+  "title": "Real book's radar part alone (no night sleeve)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3,
+   "breadth": 0.0,
+   "rel_gate": 0.0,
+   "night_z": 0.0,
+   "night_low": "off",
+   "night_slots": 2,
+   "night_size": 0.25,
+   "night_only": "off",
+   "regime": "off",
+   "partial_at": 0.0,
+   "partial_frac": 0.5,
+   "partial_be": "off",
+   "earn_z": 0.0,
+   "earn_slots": 2,
+   "earn_size": 0.25,
+   "earn_hold": 5,
+   "earn_stop": 1.0
+  },
+  "summary": {
+   "final": 1012.04,
+   "ret_pct": 1.2,
+   "trades": 13,
+   "wins": 2,
+   "win_rate": 15.4,
+   "avg_win": 22.21,
+   "avg_loss": -4.43,
+   "avg_trade": -0.34,
+   "profit_factor": 0.88,
+   "max_drawdown_pct": -8.87,
+   "realized": -14.04,
+   "unrealized": 26.08,
+   "by_exit": {
+    "target": 2,
+    "stop": 11
+   },
+   "fill_rate": "15/77"
+  },
+  "lessons": [
+   "stopped the session it was bought: 4 trades, 0 won, average -3.12%, total $-31.16",
+   "stopped on a later session: 7 trades, 0 won, average -5.19%, total $-88.53",
+   "stopped at the open (gapped through the stop): 4 trades, 0 won, average -5.00%, total $-49.88",
+   "never rose 0.5 ATR above the entry: 8 trades, 0 won, average -4.34%, total $-84.64",
+   "crypto-linked: 3 trades, 1 won, average +4.21%, total $+27.25",
+   "bought at the open after a gap down of 0.5+ ATR: 2 trades, 0 won, average -3.26%, total $-15.93",
+   "bought on a dip of 0.5+ ATR (any time): 5 trades, 0 won, average -4.11%, total $-50.98",
+   "bought less than 0.25 ATR under the prior close: 5 trades, 2 won, average +5.83%, total $+68.48",
+   "resting limit fills: 13 trades, 2 won, average -0.34%, total $-14.04",
+   "support tested 3+ times: 13 trades, 2 won, average -0.34%, total $-14.04"
+  ],
+  "sessions": [
+   "2026-07-17",
+   "2026-10-09",
+   60
+  ],
+  "equity": [
+   {
+    "day": "2026-07-17",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 989.47,
+    "positions": [
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 985.32,
+    "positions": []
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 981.9,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 983.83,
+    "positions": [
+     "HOOD"
+    ]
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 959.58,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 959.58,
+    "positions": []
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 966.09,
+    "positions": [
+     "AFRM"
+    ]
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 960.12,
+    "positions": [
+     "AFRM"
+    ]
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 988.59,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 1025.0,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 1007.9,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 1022.64,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 1046.28,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 1039.27,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1049.14,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1048.3,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1057.82,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1089.17,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1074.25,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 1022.93,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 1025.33,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 1007.88,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1016.47,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "POET"
+    ]
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 992.58,
+    "positions": [
+     "AFRM",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1004.85,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 996.76,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1005.79,
+    "positions": [
+     "AFRM",
+     "HIMX",
+     "LUNR"
+    ]
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1014.14,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1015.73,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1009.56,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1022.19,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1049.99,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1045.55,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1066.56,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1058.64,
+    "positions": [
+     "HIMX",
+     "MARA",
+     "RGTI"
+    ]
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1036.79,
+    "positions": [
+     "HIMX",
+     "MARA"
+    ]
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1073.12,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1050.63,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1043.07,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1039.68,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1052.02,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1058.99,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1070.73,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1072.72,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1064.16,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1060.98,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1068.86,
+    "positions": [
+     "BTBT",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1047.19,
+    "positions": [
+     "BTBT",
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1048.55,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1052.46,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1062.01,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1088.18,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1065.02,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1071.05,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-07",
+    "equity": 1045.65,
+    "positions": [
+     "HIMX",
+     "WULF"
+    ]
+   },
+   {
+    "day": "2026-10-08",
+    "equity": 1009.85,
+    "positions": [
+     "HIMX"
+    ]
+   },
+   {
+    "day": "2026-10-09",
+    "equity": 1012.04,
+    "positions": [
+     "APLD",
+     "HIMX"
+    ]
+   }
+  ],
+  "trades": [
+   {
+    "entry": 8.02,
+    "day": "2026-07-22",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.573059999999999,
+    "target": 11.4333,
+    "atr": 0.7464,
+    "rr": 7.64,
+    "spy_day": -0.12,
+    "prior5_atr": -0.59,
+    "dist_atr": 0.47,
+    "dip_atr": -0.47,
+    "gap_atr": -0.44,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.505,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -6.43,
+    "pnl": -14.68,
+    "best_atr": 0.25,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 29.18000030517578,
+    "day": "2026-07-24",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 28.6244,
+    "target": 37.6653,
+    "atr": 2.4745,
+    "rr": 5.09,
+    "spy_day": 0.15,
+    "prior5_atr": 1.39,
+    "dist_atr": -0.09,
+    "dip_atr": -0.29,
+    "gap_atr": -0.29,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 9,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 28.6101,
+    "exit_day": "2026-07-24",
+    "exit_minute": 575,
+    "why": "stop",
+    "ret_pct": -1.96,
+    "pnl": -4.83,
+    "best_atr": 0.0,
+    "worst_atr": -0.25
+   },
+   {
+    "entry": 94.37,
+    "day": "2026-07-24",
+    "minute": 630,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 90.57806000000001,
+    "target": 117.8402,
+    "atr": 6.3214,
+    "rr": 6.19,
+    "spy_day": 0.02,
+    "prior5_atr": -0.7,
+    "dist_atr": 1.14,
+    "dip_atr": -1.14,
+    "gap_atr": -0.28,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "HOOD",
+    "exit": 90.5328,
+    "exit_day": "2026-07-28",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.07,
+    "pnl": -10.04,
+    "best_atr": 0.8,
+    "worst_atr": -0.72
+   },
+   {
+    "entry": 12.069999694824219,
+    "day": "2026-07-28",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 11.56056,
+    "target": 15.8044,
+    "atr": 0.9014,
+    "rr": 6.87,
+    "spy_day": -0.13,
+    "prior5_atr": 0.04,
+    "dist_atr": 0.7,
+    "dip_atr": -0.73,
+    "gap_atr": -0.73,
+    "btc_d1": -0.49,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "HIMX",
+    "exit": 11.5374,
+    "exit_day": "2026-07-28",
+    "exit_minute": 595,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -10.87,
+    "best_atr": 0.11,
+    "worst_atr": -0.58
+   },
+   {
+    "entry": 110.52999877929688,
+    "day": "2026-07-30",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 108.26006,
+    "target": 137.2176,
+    "atr": 6.6079,
+    "rr": 6.31,
+    "spy_day": 0.82,
+    "prior5_atr": 3.07,
+    "dist_atr": 0.53,
+    "dip_atr": -0.79,
+    "gap_atr": -0.79,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 6,
+    "exit_rule": "plan",
+    "ticker": "NOW",
+    "exit": 108.2059,
+    "exit_day": "2026-07-30",
+    "exit_minute": 590,
+    "why": "stop",
+    "ret_pct": -2.11,
+    "pnl": -5.06,
+    "best_atr": 0.1,
+    "worst_atr": -0.37
+   },
+   {
+    "entry": 8.15,
+    "day": "2026-08-05",
+    "minute": 945,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 7.7139,
+    "target": 11.4381,
+    "atr": 0.73,
+    "rr": 7.54,
+    "spy_day": 0.02,
+    "prior5_atr": 2.48,
+    "dist_atr": 0.57,
+    "dip_atr": -0.58,
+    "gap_atr": -0.46,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "POET",
+    "exit": 7.6985,
+    "exit_day": "2026-08-24",
+    "exit_minute": 600,
+    "why": "stop",
+    "ret_pct": -5.55,
+    "pnl": -13.43,
+    "best_atr": 2.53,
+    "worst_atr": -0.64
+   },
+   {
+    "entry": 69.88,
+    "day": "2026-07-30",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 67.85221999999999,
+    "target": 85.7701,
+    "atr": 3.3838,
+    "rr": 7.84,
+    "spy_day": 0.81,
+    "prior5_atr": -1.12,
+    "dist_atr": 0.07,
+    "dip_atr": -0.07,
+    "gap_atr": 0.24,
+    "btc_d1": 1.24,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "AFRM",
+    "exit": 85.8471,
+    "exit_day": "2026-08-28",
+    "exit_minute": 590,
+    "why": "target",
+    "ret_pct": 22.84,
+    "pnl": 54.79,
+    "best_atr": 6.08,
+    "worst_atr": -0.01
+   },
+   {
+    "entry": 16.29,
+    "day": "2026-08-25",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.308739999999998,
+    "target": 21.801,
+    "atr": 1.6356,
+    "rr": 5.62,
+    "spy_day": 0.35,
+    "prior5_atr": -2.27,
+    "dist_atr": 0.23,
+    "dip_atr": -0.23,
+    "gap_atr": 0.19,
+    "btc_d1": 0.2,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 3,
+    "exit_rule": "plan",
+    "ticker": "LUNR",
+    "exit": 15.2781,
+    "exit_day": "2026-08-28",
+    "exit_minute": 760,
+    "why": "stop",
+    "ret_pct": -6.22,
+    "pnl": -13.19,
+    "best_atr": 0.28,
+    "worst_atr": -0.62
+   },
+   {
+    "entry": 15.630000114440918,
+    "day": "2026-09-09",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 15.15818,
+    "target": 27.6199,
+    "atr": 1.0182,
+    "rr": 19.37,
+    "spy_day": -0.24,
+    "prior5_atr": 0.15,
+    "dist_atr": 0.04,
+    "dip_atr": -0.18,
+    "gap_atr": -0.18,
+    "btc_d1": 1.09,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 7,
+    "exit_rule": "plan",
+    "ticker": "RGTI",
+    "exit": 14.8353,
+    "exit_day": "2026-09-10",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -5.09,
+    "pnl": -13.58,
+    "best_atr": 0.3,
+    "worst_atr": -0.77
+   },
+   {
+    "entry": 10.010000228881836,
+    "day": "2026-09-02",
+    "minute": 570,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 9.67514,
+    "target": 12.1601,
+    "atr": 0.9321,
+    "rr": 3.48,
+    "spy_day": 0.08,
+    "prior5_atr": -1.72,
+    "dist_atr": -0.0,
+    "dip_atr": -0.24,
+    "gap_atr": -0.24,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "MARA",
+    "exit": 12.1706,
+    "exit_day": "2026-09-11",
+    "exit_minute": 605,
+    "why": "target",
+    "ret_pct": 21.58,
+    "pnl": 50.86,
+    "best_atr": 2.55,
+    "worst_atr": -0.02
+   },
+   {
+    "entry": 1.75,
+    "day": "2026-09-25",
+    "minute": 585,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 1.6793,
+    "target": 2.3549,
+    "atr": 0.117,
+    "rr": 8.56,
+    "spy_day": 0.3,
+    "prior5_atr": 2.22,
+    "dist_atr": 0.35,
+    "dip_atr": -0.34,
+    "gap_atr": 0.09,
+    "btc_d1": 0.22,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "BTBT",
+    "exit": 1.6709,
+    "exit_day": "2026-09-29",
+    "exit_minute": 725,
+    "why": "stop",
+    "ret_pct": -4.53,
+    "pnl": -12.03,
+    "best_atr": 0.38,
+    "worst_atr": -0.68
+   },
+   {
+    "entry": 14.55,
+    "day": "2026-09-30",
+    "minute": 580,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 13.93596,
+    "target": 17.7637,
+    "atr": 1.0229,
+    "rr": 5.23,
+    "spy_day": 0.32,
+    "prior5_atr": -2.19,
+    "dist_atr": 0.53,
+    "dip_atr": -0.53,
+    "gap_atr": 0.18,
+    "btc_d1": 0.31,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 4,
+    "exit_rule": "plan",
+    "ticker": "WULF",
+    "exit": 13.9081,
+    "exit_day": "2026-10-08",
+    "exit_minute": 570,
+    "why": "stop",
+    "ret_pct": -4.42,
+    "pnl": -11.58,
+    "best_atr": 1.65,
+    "worst_atr": -0.75
+   },
+   {
+    "entry": 23.55,
+    "day": "2026-10-08",
+    "minute": 575,
+    "kind": "limit",
+    "status": "limit",
+    "stop": 22.62612,
+    "target": 28.6603,
+    "atr": 1.5453,
+    "rr": 5.53,
+    "spy_day": -0.29,
+    "prior5_atr": -0.36,
+    "dist_atr": 0.17,
+    "dip_atr": -0.17,
+    "gap_atr": 0.35,
+    "btc_d1": -1.02,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 5,
+    "exit_rule": "plan",
+    "ticker": "APLD",
+    "exit": 22.6148,
+    "exit_day": "2026-10-08",
+    "exit_minute": 805,
+    "why": "stop",
+    "ret_pct": -3.98,
+    "pnl": -10.4,
+    "best_atr": 0.15,
+    "worst_atr": -0.6
+   }
+  ],
+  "open": [
+   {
+    "ticker": "HIMX",
+    "entry": 12.06,
+    "day": "2026-08-03",
+    "stop": 11.5739,
+    "target": 15.811,
+    "last": 13.3,
+    "ret_pct": 10.28
+   },
+   {
+    "ticker": "APLD",
+    "entry": 23.55,
+    "day": "2026-10-09",
+    "stop": 22.6409,
+    "target": 28.6677,
+    "last": 23.68,
+    "ret_pct": 0.55
+   }
+  ],
+  "bench": {
+   "SPY": 3.71,
+   "QQQ": 6.42
+  },
+  "start": 1000.0,
+  "orders_placed": 77,
+  "orders_filled": 15
+ },
+ {
+  "title": "Night sleeve alone (2 slots, down 1.5+ ATR in the lowest quarter, sold at the open)",
+  "options": {
+   "limit": "support",
+   "stop_atr": 0.6,
+   "btc_gate": "on",
+   "rank": "dip",
+   "runs": "off",
+   "max_hold": 0,
+   "entry": "radar",
+   "limit_until": 960,
+   "tested_only": "off",
+   "entry_until": 960,
+   "entry_from": 0,
+   "risk_pct": 1.5,
+   "protect": "none",
+   "protect_at": 1.0,
+   "protect_trail": 1.0,
+   "target_atr": 0.0,
+   "target_first": "off",
+   "gap_pct": 1.0,
+   "min_stop_atr": 0.0,
+   "max_drop_atr": 0.0,
+   "min_dip_atr": 0.0,
+   "spy_gate": 0.35,
+   "gap_stop": "open",
+   "min_strength": 3,
+   "min_rr": 2.5,
+   "slots": 3,
+   "breadth": 0.0,
+   "rel_gate": 0.0,
+   "night_z": 1.5,
+   "night_low": "on",
+   "night_slots": 2,
+   "night_size": 0.25,
+   "night_only": "on",
+   "regime": "off",
+   "partial_at": 0.0,
+   "partial_frac": 0.5,
+   "partial_be": "off",
+   "earn_z": 0.0,
+   "earn_slots": 2,
+   "earn_size": 0.25,
+   "earn_hold": 5,
+   "earn_stop": 1.0
+  },
+  "summary": {
+   "final": 1041.3,
+   "ret_pct": 4.13,
+   "trades": 24,
+   "wins": 14,
+   "win_rate": 58.3,
+   "avg_win": 2.72,
+   "avg_loss": -2.14,
+   "avg_trade": 0.69,
+   "profit_factor": 1.74,
+   "max_drawdown_pct": -1.99,
+   "realized": 41.3,
+   "unrealized": -0.0,
+   "by_exit": {
+    "open": 24
+   },
+   "fill_rate": null
+  },
+  "lessons": [
+   "never rose 0.5 ATR above the entry: 22 trades, 12 won, average +0.15%, total $+7.16",
+   "crypto-linked: 5 trades, 4 won, average +3.43%, total $+43.97",
+   "bought on a dip of 0.5+ ATR (any time): 24 trades, 14 won, average +0.69%, total $+41.30",
+   "radar keeps (GPUS, IREN, BTDR) without a tested support: 24 trades, 14 won, average +0.69%, total $+41.30"
+  ],
+  "sessions": [
+   "2026-07-17",
+   "2026-10-09",
+   60
+  ],
+  "equity": [
+   {
+    "day": "2026-07-17",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-20",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-21",
+    "equity": 1000.0,
+    "positions": []
+   },
+   {
+    "day": "2026-07-22",
+    "equity": 1002.93,
+    "positions": [
+     "PATH"
+    ]
+   },
+   {
+    "day": "2026-07-23",
+    "equity": 1004.05,
+    "positions": []
+   },
+   {
+    "day": "2026-07-24",
+    "equity": 1002.62,
+    "positions": [
+     "CRWV",
+     "HIMS"
+    ]
+   },
+   {
+    "day": "2026-07-27",
+    "equity": 1014.39,
+    "positions": []
+   },
+   {
+    "day": "2026-07-28",
+    "equity": 1014.39,
+    "positions": []
+   },
+   {
+    "day": "2026-07-29",
+    "equity": 1014.76,
+    "positions": [
+     "ONDS",
+     "RIOT"
+    ]
+   },
+   {
+    "day": "2026-07-30",
+    "equity": 1046.79,
+    "positions": []
+   },
+   {
+    "day": "2026-07-31",
+    "equity": 1046.79,
+    "positions": []
+   },
+   {
+    "day": "2026-08-03",
+    "equity": 1046.79,
+    "positions": []
+   },
+   {
+    "day": "2026-08-04",
+    "equity": 1046.79,
+    "positions": []
+   },
+   {
+    "day": "2026-08-05",
+    "equity": 1046.02,
+    "positions": [
+     "SNAP"
+    ]
+   },
+   {
+    "day": "2026-08-06",
+    "equity": 1039.13,
+    "positions": []
+   },
+   {
+    "day": "2026-08-07",
+    "equity": 1039.13,
+    "positions": []
+   },
+   {
+    "day": "2026-08-10",
+    "equity": 1034.5,
+    "positions": [
+     "BTDR"
+    ]
+   },
+   {
+    "day": "2026-08-11",
+    "equity": 1049.64,
+    "positions": []
+   },
+   {
+    "day": "2026-08-12",
+    "equity": 1049.64,
+    "positions": []
+   },
+   {
+    "day": "2026-08-13",
+    "equity": 1049.64,
+    "positions": []
+   },
+   {
+    "day": "2026-08-14",
+    "equity": 1049.64,
+    "positions": []
+   },
+   {
+    "day": "2026-08-17",
+    "equity": 1049.64,
+    "positions": []
+   },
+   {
+    "day": "2026-08-18",
+    "equity": 1049.62,
+    "positions": [
+     "AEHR",
+     "SMTC"
+    ]
+   },
+   {
+    "day": "2026-08-19",
+    "equity": 1050.63,
+    "positions": []
+   },
+   {
+    "day": "2026-08-20",
+    "equity": 1050.63,
+    "positions": []
+   },
+   {
+    "day": "2026-08-21",
+    "equity": 1050.63,
+    "positions": []
+   },
+   {
+    "day": "2026-08-24",
+    "equity": 1050.63,
+    "positions": []
+   },
+   {
+    "day": "2026-08-25",
+    "equity": 1050.63,
+    "positions": []
+   },
+   {
+    "day": "2026-08-26",
+    "equity": 1048.18,
+    "positions": [
+     "SNAP"
+    ]
+   },
+   {
+    "day": "2026-08-27",
+    "equity": 1048.12,
+    "positions": []
+   },
+   {
+    "day": "2026-08-28",
+    "equity": 1049.86,
+    "positions": [
+     "IREN",
+     "LEU"
+    ]
+   },
+   {
+    "day": "2026-08-31",
+    "equity": 1049.4,
+    "positions": []
+   },
+   {
+    "day": "2026-09-01",
+    "equity": 1049.4,
+    "positions": []
+   },
+   {
+    "day": "2026-09-02",
+    "equity": 1049.4,
+    "positions": []
+   },
+   {
+    "day": "2026-09-03",
+    "equity": 1049.4,
+    "positions": []
+   },
+   {
+    "day": "2026-09-04",
+    "equity": 1048.54,
+    "positions": [
+     "PATH"
+    ]
+   },
+   {
+    "day": "2026-09-08",
+    "equity": 1047.48,
+    "positions": []
+   },
+   {
+    "day": "2026-09-09",
+    "equity": 1047.48,
+    "positions": []
+   },
+   {
+    "day": "2026-09-10",
+    "equity": 1047.48,
+    "positions": []
+   },
+   {
+    "day": "2026-09-11",
+    "equity": 1044.1,
+    "positions": [
+     "SMR"
+    ]
+   },
+   {
+    "day": "2026-09-14",
+    "equity": 1032.87,
+    "positions": [
+     "SMTC"
+    ]
+   },
+   {
+    "day": "2026-09-15",
+    "equity": 1036.7,
+    "positions": [
+     "CRCL"
+    ]
+   },
+   {
+    "day": "2026-09-16",
+    "equity": 1033.57,
+    "positions": [
+     "BULL",
+     "RCAT"
+    ]
+   },
+   {
+    "day": "2026-09-17",
+    "equity": 1051.91,
+    "positions": []
+   },
+   {
+    "day": "2026-09-18",
+    "equity": 1051.91,
+    "positions": []
+   },
+   {
+    "day": "2026-09-21",
+    "equity": 1051.91,
+    "positions": []
+   },
+   {
+    "day": "2026-09-22",
+    "equity": 1051.91,
+    "positions": []
+   },
+   {
+    "day": "2026-09-23",
+    "equity": 1049.67,
+    "positions": [
+     "RXRX"
+    ]
+   },
+   {
+    "day": "2026-09-24",
+    "equity": 1046.23,
+    "positions": []
+   },
+   {
+    "day": "2026-09-25",
+    "equity": 1046.23,
+    "positions": []
+   },
+   {
+    "day": "2026-09-28",
+    "equity": 1046.23,
+    "positions": []
+   },
+   {
+    "day": "2026-09-29",
+    "equity": 1046.23,
+    "positions": []
+   },
+   {
+    "day": "2026-09-30",
+    "equity": 1046.23,
+    "positions": []
+   },
+   {
+    "day": "2026-10-01",
+    "equity": 1045.98,
+    "positions": [
+     "UMAC"
+    ]
+   },
+   {
+    "day": "2026-10-02",
+    "equity": 1051.23,
+    "positions": []
+   },
+   {
+    "day": "2026-10-05",
+    "equity": 1051.23,
+    "positions": []
+   },
+   {
+    "day": "2026-10-06",
+    "equity": 1051.92,
+    "positions": [
+     "DNA",
+     "TEM"
+    ]
+   },
+   {
+    "day": "2026-10-07",
+    "equity": 1030.98,
+    "positions": []
+   },
+   {
+    "day": "2026-10-08",
+    "equity": 1032.5,
+    "positions": [
+     "CRWV",
+     "HUT"
+    ]
+   },
+   {
+    "day": "2026-10-09",
+    "equity": 1041.3,
+    "positions": []
+   }
+  ],
+  "trades": [
+   {
+    "entry": 10.576110305786132,
+    "day": "2026-07-22",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.7225,
+    "rr": 0,
+    "spy_day": -0.06,
+    "prior5_atr": 0.14,
+    "dist_atr": 0.0,
+    "dip_atr": -2.03,
+    "gap_atr": -0.03,
+    "btc_d1": -0.8,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "PATH",
+    "exit": 10.7485,
+    "exit_day": "2026-07-23",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.62,
+    "pnl": 4.05,
+    "best_atr": 0.27,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 28.21410076332092,
+    "day": "2026-07-24",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 2.4296,
+    "rr": 0,
+    "spy_day": 0.04,
+    "prior5_atr": -0.39,
+    "dist_atr": 0.0,
+    "dip_atr": -1.86,
+    "gap_atr": 0.3,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "HIMS",
+    "exit": 28.7156,
+    "exit_day": "2026-07-27",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.77,
+    "pnl": 4.44,
+    "best_atr": 0.21,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 71.97597244262695,
+    "day": "2026-07-24",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 5.9941,
+    "rr": 0,
+    "spy_day": 0.04,
+    "prior5_atr": 1.37,
+    "dist_atr": 0.0,
+    "dip_atr": -1.52,
+    "gap_atr": -0.28,
+    "btc_d1": -0.03,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "CRWV",
+    "exit": 73.6731,
+    "exit_day": "2026-07-27",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 2.35,
+    "pnl": 5.9,
+    "best_atr": 0.29,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 6.793560210227966,
+    "day": "2026-07-29",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.6079,
+    "rr": 0,
+    "spy_day": -1.35,
+    "prior5_atr": 0.33,
+    "dist_atr": 0.0,
+    "dip_atr": -1.75,
+    "gap_atr": -0.1,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "ONDS",
+    "exit": 6.996,
+    "exit_day": "2026-07-30",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 2.97,
+    "pnl": 7.54,
+    "best_atr": 0.36,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 18.231389694213867,
+    "day": "2026-07-29",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.751,
+    "rr": 0,
+    "spy_day": -1.35,
+    "prior5_atr": -0.14,
+    "dist_atr": 0.0,
+    "dip_atr": -1.72,
+    "gap_atr": -0.13,
+    "btc_d1": 0.89,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "RIOT",
+    "exit": 20.02,
+    "exit_day": "2026-07-30",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 9.8,
+    "pnl": 24.86,
+    "best_atr": 1.03,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 5.3456700382232665,
+    "day": "2026-08-05",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.2469,
+    "rr": 0,
+    "spy_day": 0.02,
+    "prior5_atr": 4.13,
+    "dist_atr": 0.0,
+    "dip_atr": -1.8,
+    "gap_atr": -0.36,
+    "btc_d1": -0.06,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SNAP",
+    "exit": 5.1896,
+    "exit_day": "2026-08-06",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -2.93,
+    "pnl": -7.66,
+    "best_atr": 0.0,
+    "worst_atr": -0.59
+   },
+   {
+    "entry": 8.852670038223266,
+    "day": "2026-08-10",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.2781,
+    "rr": 0,
+    "spy_day": -0.11,
+    "prior5_atr": 0.28,
+    "dist_atr": 0.0,
+    "dip_atr": -1.59,
+    "gap_atr": 0.19,
+    "btc_d1": 0.35,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "BTDR",
+    "exit": 9.2115,
+    "exit_day": "2026-08-11",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 4.05,
+    "pnl": 10.51,
+    "best_atr": 0.3,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 135.67780561065672,
+    "day": "2026-08-18",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 10.8814,
+    "rr": 0,
+    "spy_day": -0.68,
+    "prior5_atr": 2.11,
+    "dist_atr": 0.0,
+    "dip_atr": -1.7,
+    "gap_atr": -0.75,
+    "btc_d1": -0.34,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SMTC",
+    "exit": 135.4123,
+    "exit_day": "2026-08-19",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.2,
+    "pnl": -0.53,
+    "best_atr": 0.0,
+    "worst_atr": -0.02
+   },
+   {
+    "entry": 122.85639566802978,
+    "day": "2026-08-18",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 14.1007,
+    "rr": 0,
+    "spy_day": -0.68,
+    "prior5_atr": 2.79,
+    "dist_atr": 0.0,
+    "dip_atr": -1.61,
+    "gap_atr": -0.69,
+    "btc_d1": -0.34,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "AEHR",
+    "exit": 123.5782,
+    "exit_day": "2026-08-19",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 0.58,
+    "pnl": 1.52,
+    "best_atr": 0.06,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 5.470920038223267,
+    "day": "2026-08-26",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.2599,
+    "rr": 0,
+    "spy_day": 0.04,
+    "prior5_atr": 3.12,
+    "dist_atr": 0.0,
+    "dip_atr": -1.73,
+    "gap_atr": 0.19,
+    "btc_d1": -0.12,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SNAP",
+    "exit": 5.4191,
+    "exit_day": "2026-08-27",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.95,
+    "pnl": -2.51,
+    "best_atr": 0.0,
+    "worst_atr": -0.16
+   },
+   {
+    "entry": 35.19759030532837,
+    "day": "2026-08-28",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 3.2607,
+    "rr": 0,
+    "spy_day": -0.23,
+    "prior5_atr": -0.63,
+    "dist_atr": 0.0,
+    "dip_atr": -1.64,
+    "gap_atr": -0.9,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "IREN",
+    "exit": 35.7122,
+    "exit_day": "2026-08-31",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.45,
+    "pnl": 3.81,
+    "best_atr": 0.16,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 175.87788828277587,
+    "day": "2026-08-28",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 11.9593,
+    "rr": 0,
+    "spy_day": -0.23,
+    "prior5_atr": 1.56,
+    "dist_atr": 0.0,
+    "dip_atr": -1.58,
+    "gap_atr": -0.11,
+    "btc_d1": -0.81,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "LEU",
+    "exit": 174.1929,
+    "exit_day": "2026-08-31",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.97,
+    "pnl": -2.53,
+    "best_atr": 0.0,
+    "worst_atr": -0.13
+   },
+   {
+    "entry": 15.240420038223267,
+    "day": "2026-09-04",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.7581,
+    "rr": 0,
+    "spy_day": -0.36,
+    "prior5_atr": -0.15,
+    "dist_atr": 0.0,
+    "dip_atr": -3.93,
+    "gap_atr": -2.61,
+    "btc_d1": -0.06,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "PATH",
+    "exit": 15.1297,
+    "exit_day": "2026-09-08",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.73,
+    "pnl": -1.93,
+    "best_atr": 0.0,
+    "worst_atr": -0.11
+   },
+   {
+    "entry": 8.722409923553467,
+    "day": "2026-09-11",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.6911,
+    "rr": 0,
+    "spy_day": 0.9,
+    "prior5_atr": 0.94,
+    "dist_atr": 0.0,
+    "dip_atr": -2.15,
+    "gap_atr": -0.8,
+    "btc_d1": 0.58,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SMR",
+    "exit": 8.2934,
+    "exit_day": "2026-09-14",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -4.93,
+    "pnl": -12.9,
+    "best_atr": 0.0,
+    "worst_atr": -0.6
+   },
+   {
+    "entry": 148.02897933197022,
+    "day": "2026-09-14",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 10.5936,
+    "rr": 0,
+    "spy_day": -0.4,
+    "prior5_atr": 3.01,
+    "dist_atr": 0.0,
+    "dip_atr": -1.81,
+    "gap_atr": -1.15,
+    "btc_d1": 1.17,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "SMTC",
+    "exit": 149.4253,
+    "exit_day": "2026-09-15",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 0.94,
+    "pnl": 2.42,
+    "best_atr": 0.14,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 86.39818085861205,
+    "day": "2026-09-15",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 7.0993,
+    "rr": 0,
+    "spy_day": -0.51,
+    "prior5_atr": -0.65,
+    "dist_atr": 0.0,
+    "dip_atr": -1.55,
+    "gap_atr": -0.72,
+    "btc_d1": -1.62,
+    "btc_ok": false,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "CRCL",
+    "exit": 85.6721,
+    "exit_day": "2026-09-16",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -0.85,
+    "pnl": -2.2,
+    "best_atr": 0.0,
+    "worst_atr": -0.1
+   },
+   {
+    "entry": 7.7003699426651,
+    "day": "2026-09-16",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.5137,
+    "rr": 0,
+    "spy_day": -0.44,
+    "prior5_atr": -1.77,
+    "dist_atr": 0.0,
+    "dip_atr": -1.87,
+    "gap_atr": -0.29,
+    "btc_d1": 0.75,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "BULL",
+    "exit": 7.9341,
+    "exit_day": "2026-09-17",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 3.03,
+    "pnl": 7.83,
+    "best_atr": 0.49,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 7.119210019111633,
+    "day": "2026-09-16",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.4686,
+    "rr": 0,
+    "spy_day": -0.44,
+    "prior5_atr": -1.56,
+    "dist_atr": 0.0,
+    "dip_atr": -1.8,
+    "gap_atr": -0.05,
+    "btc_d1": 0.75,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "RCAT",
+    "exit": 7.3752,
+    "exit_day": "2026-09-17",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 3.59,
+    "pnl": 9.28,
+    "best_atr": 0.58,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 3.7318664896488185,
+    "day": "2026-09-23",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 0.2239,
+    "rr": 0,
+    "spy_day": -0.85,
+    "prior5_atr": 3.62,
+    "dist_atr": 0.0,
+    "dip_atr": -1.42,
+    "gap_atr": -0.09,
+    "btc_d1": -0.62,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "RXRX",
+    "exit": 3.6517,
+    "exit_day": "2026-09-24",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -2.16,
+    "pnl": -5.68,
+    "best_atr": 0.0,
+    "worst_atr": -0.28
+   },
+   {
+    "entry": 21.800794775962828,
+    "day": "2026-10-01",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.5349,
+    "rr": 0,
+    "spy_day": 0.25,
+    "prior5_atr": 1.17,
+    "dist_atr": 0.0,
+    "dip_atr": -1.75,
+    "gap_atr": 0.14,
+    "btc_d1": 0.39,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "UMAC",
+    "exit": 22.2189,
+    "exit_day": "2026-10-02",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.91,
+    "pnl": 5.0,
+    "best_atr": 0.28,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 71.70583316802978,
+    "day": "2026-10-06",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 5.5138,
+    "rr": 0,
+    "spy_day": 0.55,
+    "prior5_atr": -0.28,
+    "dist_atr": 0.0,
+    "dip_atr": -2.15,
+    "gap_atr": 0.26,
+    "btc_d1": 0.52,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "TEM",
+    "exit": 69.905,
+    "exit_day": "2026-10-07",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -2.52,
+    "pnl": -6.62,
+    "best_atr": 0.0,
+    "worst_atr": -0.32
+   },
+   {
+    "entry": 12.424799617767334,
+    "day": "2026-10-06",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 1.2941,
+    "rr": 0,
+    "spy_day": 0.55,
+    "prior5_atr": 3.49,
+    "dist_atr": 0.0,
+    "dip_atr": -1.97,
+    "gap_atr": 0.08,
+    "btc_d1": 0.52,
+    "btc_ok": true,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "DNA",
+    "exit": 11.7814,
+    "exit_day": "2026-10-07",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": -5.19,
+    "pnl": -13.63,
+    "best_atr": 0.0,
+    "worst_atr": -0.48
+   },
+   {
+    "entry": 79.05950664138794,
+    "day": "2026-10-08",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 6.5941,
+    "rr": 0,
+    "spy_day": -0.49,
+    "prior5_atr": 0.49,
+    "dist_atr": 0.0,
+    "dip_atr": -1.55,
+    "gap_atr": -0.31,
+    "btc_d1": -1.02,
+    "btc_ok": false,
+    "crypto": true,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "HUT",
+    "exit": 81.2094,
+    "exit_day": "2026-10-09",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 2.71,
+    "pnl": 6.99,
+    "best_atr": 0.33,
+    "worst_atr": 0.0
+   },
+   {
+    "entry": 81.64580585861205,
+    "day": "2026-10-08",
+    "minute": 950,
+    "kind": "night",
+    "status": "night",
+    "stop": 0.0,
+    "target": 1e+18,
+    "atr": 4.4959,
+    "rr": 0,
+    "spy_day": -0.49,
+    "prior5_atr": 0.3,
+    "dist_atr": 0.0,
+    "dip_atr": -1.51,
+    "gap_atr": -0.36,
+    "btc_d1": -1.02,
+    "btc_ok": false,
+    "crypto": false,
+    "strength": 0,
+    "exit_rule": "night",
+    "ticker": "CRWV",
+    "exit": 82.7086,
+    "exit_day": "2026-10-09",
+    "exit_minute": 570,
+    "why": "open",
+    "ret_pct": 1.29,
+    "pnl": 3.34,
+    "best_atr": 0.25,
+    "worst_atr": 0.0
+   }
+  ],
+  "open": [],
+  "bench": {
+   "SPY": 3.71,
+   "QQQ": 6.42
+  },
+  "start": 1000.0,
+  "orders_placed": 0,
+  "orders_filled": 0
+ }
+]

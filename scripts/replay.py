@@ -34,6 +34,7 @@ Caveats: today's candidate list (selection bias: these names are popular now), a
 from __future__ import annotations
 
 import argparse
+import bisect
 import datetime as dt
 import json
 import pickle
@@ -61,7 +62,9 @@ DEFAULTS = {"limit": "support", "stop_atr": 0.6, "btc_gate": "on", "rank": "dip"
             "gap_stop": "open", "min_strength": 0, "min_rr": 1.5, "slots": SLOTS, "breadth": 0.0, "rel_gate": 0.0,
             "night_z": 0.0, "night_low": "off", "night_slots": 2, "night_size": 0.25, "night_only": "off",
             "regime": "off", "partial_at": 0.0, "partial_frac": 0.5, "partial_be": "off",
-            "earn_z": 0.0, "earn_slots": 2, "earn_size": 0.25, "earn_hold": 5, "earn_stop": 1.0}
+            "earn_z": 0.0, "earn_slots": 2, "earn_size": 0.25, "earn_hold": 5, "earn_stop": 1.0,
+            "size": SIZE, "max_crypto": MAX_CRYPTO, "narrow": "off", "narrow_by": "name", "narrow_look": 252,
+            "narrow_min": 2, "narrow_rule": "mean"}
 GRID = [
     ("Live rules: limits at support, stop 0.6 ATR under it", {}),
     ("Limits at the zone top", {"limit": "top"}),
@@ -262,6 +265,31 @@ EARN_REAL = [
 ]
 
 
+# Oct 11 (Vamsi: narrow the strategy to where its predictions work best): each live rule set limited to the names
+# (or themes, GROUPS) whose signals worked in the shadow record (every signal of the same rules). Hindsight uses the
+# whole record, the future included, as a list picked after a backtest would; walk-forward uses only the trades
+# closed before each session.
+_N = {"narrow": "wf"}
+NARROW = [
+    ("Paper book: live rules", dict(_LIVE)),
+    ("Paper, hindsight: names with a positive average trade over the whole record", {**_LIVE, "narrow": "hind"}),
+    ("Paper, walk-forward: names with a positive average over the prior 252 sessions", {**_LIVE, **_N}),
+    ("Paper, walk-forward: names with a positive average over the prior 126 sessions", {**_LIVE, **_N, "narrow_look": 126}),
+    ("Paper, walk-forward: names winning at least as often as the rules overall (252 sessions, 3+ trades)",
+     {**_LIVE, **_N, "narrow_rule": "acc", "narrow_min": 3}),
+    ("Paper, walk-forward: the 10 best names of the prior 252 sessions", {**_LIVE, **_N, "narrow_rule": "top10"}),
+    ("Paper, walk-forward: themes with a positive average over the prior 252 sessions", {**_LIVE, **_N, "narrow_by": "group"}),
+    ("Real book: live rules", dict(_RBN)),
+    ("Real, hindsight: names with a positive average trade over the whole record", {**_RBN, "narrow": "hind"}),
+    ("Real, walk-forward: names with a positive average over the prior 252 sessions", {**_RBN, **_N}),
+    ("Real, walk-forward: names with a positive average over the prior 126 sessions", {**_RBN, **_N, "narrow_look": 126}),
+    ("Real, walk-forward: names winning at least as often as the rules overall (252 sessions, 3+ trades)",
+     {**_RBN, **_N, "narrow_rule": "acc", "narrow_min": 3}),
+    ("Real, walk-forward: the 10 best names of the prior 252 sessions", {**_RBN, **_N, "narrow_rule": "top10"}),
+    ("Real, walk-forward: themes with a positive average over the prior 252 sessions", {**_RBN, **_N, "narrow_by": "group"}),
+]
+
+
 def by_day(r: dict) -> dict:
     """Regular-session bars per ET date: (minute of day at bar start, open, high, low, close)."""
     q = ((r.get("indicators") or {}).get("quote") or [{}])[0]
@@ -398,6 +426,69 @@ def _radar_for(data: dict, idx: dict, names: list[str], day: str, stop_atr: floa
     return radar, elig
 
 
+# Oct 11 (Vamsi: narrow the strategy to where its predictions work best, to raise the accuracy). Themes of the
+# candidate list, for narrowing by group instead of by name.
+GROUPS = {
+    "bitcoin miners and AI hosts": ["GPUS", "IREN", "BTDR", "CIFR", "WULF", "MARA", "RIOT", "CLSK", "HUT", "CORZ", "BITF",
+                                    "HIVE", "APLD", "BTBT", "GLXY"],
+    "AI compute and software": ["NBIS", "CRWV", "SMCI", "SOUN", "BBAI"],
+    "quantum": ["IONQ", "RGTI", "QBTS", "QUBT"],
+    "nuclear": ["OKLO", "SMR", "NNE", "LEU"],
+    "space and drones": ["RKLB", "ASTS", "LUNR", "RCAT", "ONDS", "UMAC"],
+    "crypto platforms and brokers": ["COIN", "MSTR", "HOOD", "BMNR", "SBET", "CRCL", "BKKT", "BULL"],
+    "fintech": ["AFRM", "UPST", "SOFI", "STNE"],
+    "health and biotech": ["HIMS", "TEM", "CRSP", "RXRX", "DNA", "PCVX", "GRAL", "NVAX"],
+    "semis and hardware": ["AXTI", "SMTC", "POET", "AEHR", "HIMX", "DELL", "ALMU"],
+    "software and internet": ["ORCL", "NOW", "PATH", "META", "SNAP", "DUOL", "GRAB", "BSP"],
+}
+GROUP_OF = {s: g for g, ss in GROUPS.items() for s in ss}
+_SHADOW: dict = {}
+_ALLOWED: dict = {}
+
+
+def shadow(data: dict, o: dict) -> list[dict]:
+    """Every signal of rule set o as a book with room for all of them would have traded it (50 slots of 2%, no cap
+    on crypto names, $100,000 so fees round to nothing), over all the hourly sessions: the record the narrowing
+    reads. A trade's return does not depend on its size, so this is each signal's own outcome."""
+    base = {**o, "narrow": "off", "slots": 50, "size": 0.02, "max_crypto": 50, "night_slots": 50, "night_size": 0.02,
+            "earn_slots": 50, "earn_size": 0.02}
+    key = (id(data), tuple(sorted((k, str(v)) for k, v in base.items() if not k.startswith("narrow"))))
+    if key not in _SHADOW:
+        _SHADOW[key] = replay(data, len(data["1h"]["SPY"]), base, 100000.0, None, "1h")["trades"]
+    return _SHADOW[key]
+
+
+def allowed(data: dict, o: dict, day: str, kinds: tuple) -> set:
+    """The names rule set o may trade on `day` under its narrowing: from the shadow record, the trades of these kinds
+    closed before `day` within the last narrow_look sessions (narrow=wf, walk-forward), or every trade of the
+    record, the future included (narrow=hind: a list picked after the fact), pooled by name or by group;
+    narrow_rule mean = a positive average trade, acc = a win rate at or above the rules' own over the same trades,
+    top10 = the 10 best averages; narrow_min closed trades at least."""
+    tr = shadow(data, o)
+    key = (id(tr), o["narrow"], o["narrow_by"], o["narrow_look"], o["narrow_min"], o["narrow_rule"], kinds,
+           day if o["narrow"] == "wf" else "")
+    if key in _ALLOWED:
+        return _ALLOWED[key]
+    days = sorted(data["1h"]["SPY"])
+    since = days[max(0, bisect.bisect_left(days, day) - o["narrow_look"])]
+    use = [t for t in tr if t["kind"] in kinds and (o["narrow"] == "hind" or since <= t["exit_day"] < day)]
+    unit = (lambda s: GROUP_OF.get(s, s)) if o["narrow_by"] == "group" else (lambda s: s)
+    rec: dict[str, list[float]] = {}
+    for t in use:
+        rec.setdefault(unit(t["ticker"]), []).append(t["ret_pct"])
+    rec = {u: v for u, v in rec.items() if len(v) >= o["narrow_min"]}
+    if o["narrow_rule"] == "acc":
+        base = sum(t["ret_pct"] > 0 for t in use) / len(use) if use else 1.0
+        good = {u for u, v in rec.items() if sum(x > 0 for x in v) / len(v) >= base}
+    elif o["narrow_rule"] == "top10":
+        good = {u for u, v in sorted(rec.items(), key=lambda kv: -sum(kv[1]) / len(kv[1]))[:10] if sum(v) > 0}
+    else:
+        good = {u for u, v in rec.items() if sum(v) / len(v) > 0}
+    out = {s for s in data["daily"] if unit(s) in good}
+    _ALLOWED[key] = out
+    return out
+
+
 _REGIME: dict = {}
 
 
@@ -514,6 +605,11 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
         radar, elig = radar_for(data, idx, names, day, o["stop_atr"])
         if o["entry"] == "gap" or o["night_only"] == "on" or not regime_ok(data, idx, day, o["regime"]):
             radar = {}
+        ok_night = None
+        if o["narrow"] != "off":  # only the names (or groups) where the same rules' signals have worked
+            ok_radar = allowed(data, o, day, ("limit", "run"))
+            ok_night = allowed(data, o, day, ("night",))
+            radar = {s: r for s, r in radar.items() if s in ok_radar}
         bars, prev, close = {}, {}, {}
         for s in set(radar) | set(elig) | set(book.pos):
             i = idx[s].get(day)
@@ -530,7 +626,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
 
         def size(eq, entry, stop):
             """25% of equity; with risk_pct, no more than that % of equity lost at the stop."""
-            usd = eq * SIZE
+            usd = eq * o["size"]
             if o["risk_pct"] and entry > stop:
                 usd = min(usd, eq * o["risk_pct"] / 100 / ((entry - stop) / entry + o["gap_pct"] / 100))
             return usd
@@ -606,7 +702,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
             for rr, s, lim in sorted(cands, reverse=True):
                 if slots <= 0:
                     break
-                if radar[s]["crypto"] and (crypto >= MAX_CRYPTO or not gate["ok"]):
+                if radar[s]["crypto"] and (crypto >= o["max_crypto"] or not gate["ok"]):
                     continue
                 usd = min(size(eq_prev, lim, radar[s]["stop"]), book.free_cash(day))
                 if usd < 25:
@@ -742,7 +838,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
                 cands = []
                 for s_, a_ in elig.items():
                     b = bars.get(s_, {}).get(m)
-                    if not b or s_ in book.pos or s_ in book.stopped_today:
+                    if not b or s_ in book.pos or s_ in book.stopped_today or (ok_night is not None and s_ not in ok_night):
                         continue
                     z = (b[4] - prev[s_]) / a_
                     rng = day_high[s_] - day_low[s_]
@@ -811,7 +907,7 @@ def replay(data: dict, days: int, o: dict, cash: float = 1000.0, end: str | None
             for _, s, px, rr, status in sorted(cands):
                 if slots <= 0:
                     break
-                if radar[s]["crypto"] and (crypto >= MAX_CRYPTO or not gate["ok"]):
+                if radar[s]["crypto"] and (crypto >= o["max_crypto"] or not gate["ok"]):
                     continue
                 usd = min(size(eq_prev, px, radar[s]["stop"]), book.free_cash(day))
                 if usd < 25:
@@ -1029,7 +1125,7 @@ def main() -> int:
     ap.add_argument("--grid", action="store_true")
     ap.add_argument("--set", choices=["rules", "stops", "times", "sizing", "exits", "targets", "lessons", "realbook",
                                       "evolve", "evolve_real", "night", "night_real", "close", "stops2", "regime", "partial",
-                                      "earnings", "earnings_real", "scorecard"],
+                                      "earnings", "earnings_real", "scorecard", "narrow"],
                     default="rules",
                     help="with --grid: which variants")
     ap.add_argument("--risk-pct", type=float, default=DEFAULTS["risk_pct"],
@@ -1076,6 +1172,8 @@ def main() -> int:
         GRID = NIGHT_REAL
     if a.set == "scorecard":
         GRID = SCORECARD
+    if a.set == "narrow":
+        GRID = NARROW
     if a.set == "earnings":
         GRID = EARN
     if a.set == "earnings_real":

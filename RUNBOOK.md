@@ -368,6 +368,14 @@ python3 scripts/replay.py --grid --set stops|times|sizing ...                   
   (`research/backtests/earnings-drift-2026-10-10*.md`); as a sleeve beside the live rules (`--set earnings`,
   `earnings_real`) no variant beat them on the hourly windows' mean and worst window without losing on the 5-minute
   windows. Not adopted.
+* Oct 11 (Vamsi: narrow the strategy to where its predictions work best; `--set narrow`, `scripts/narrow_test.py`,
+  `research/replay/narrow-2026-10-09.md`): each rule set limited to the names or themes whose own signals had
+  worked, from a shadow record of every signal. Picked with hindsight the names lift the paper rules from +84% to
+  +118% and the real-book rules from +54% to +329% over 2.8 years; picked walk-forward (only trades closed before
+  the session), 9 of 10 versions made less than the unfiltered rules, and the one that made more (paper, names with
+  a positive average over the prior year) had a lower mean over the 33 hourly windows. Past success per name did not
+  predict the next trade (allowed names did worse than excluded ones in 13 of 15 comparisons; early-late rank
+  correlation 0.17, -0.04, 0.03), nor did a past win rate. Not adopted.
 
 ## 2e. Real book: Robinhood agentic account (Vamsi, Tue Oct 6)
 

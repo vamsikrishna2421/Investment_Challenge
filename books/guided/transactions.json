@@ -534,6 +534,110 @@
         "cash_account": true,
         "asset": "stock"
       }
+    },
+    {
+      "id": "T0015",
+      "type": "SELL",
+      "ts": "2026-10-12T14:00:20Z",
+      "ticker": "APLD",
+      "label": "APLD",
+      "asset": "stock",
+      "name": "Applied Digital Corporation",
+      "qty": 10.1551,
+      "multiplier": 1,
+      "price": 23.3333,
+      "quote_price": 23.345,
+      "quote_time": "2026-10-12T14:00:16Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 5.0,
+      "gross": 236.95,
+      "fees": 0.02,
+      "net_cash": 236.93,
+      "settle_date": "2026-10-13",
+      "rationale": "Vamsi: exit all trades, buy GPUS with all the money, stop trading",
+      "tags": [
+        "vamsi",
+        "exit"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 4,
+        "cash_account": true,
+        "asset": "stock",
+        "day_trade": false,
+        "good_faith_ok": true
+      }
+    },
+    {
+      "id": "T0016",
+      "type": "SELL",
+      "ts": "2026-10-12T14:00:20Z",
+      "ticker": "NNE",
+      "label": "NNE",
+      "asset": "stock",
+      "name": "Nano Nuclear Energy Inc.",
+      "qty": 15.8299,
+      "multiplier": 1,
+      "price": 14.6856,
+      "quote_price": 14.715,
+      "quote_time": "2026-10-12T14:00:15Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 20.0,
+      "gross": 232.47,
+      "fees": 0.02,
+      "net_cash": 232.45,
+      "settle_date": "2026-10-13",
+      "rationale": "Vamsi: exit all trades, buy GPUS with all the money, stop trading",
+      "tags": [
+        "vamsi",
+        "exit"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 5,
+        "cash_account": true,
+        "asset": "stock",
+        "day_trade": false,
+        "good_faith_ok": true
+      }
+    },
+    {
+      "id": "T0017",
+      "type": "BUY",
+      "ts": "2026-10-12T14:00:46Z",
+      "ticker": "GPUS",
+      "label": "GPUS",
+      "asset": "stock",
+      "name": "Hyperscale Data, Inc.",
+      "qty": 5784.5579,
+      "multiplier": 1,
+      "price": 0.1606,
+      "quote_price": 0.1598,
+      "quote_time": "2026-10-12T14:00:06Z",
+      "session": "regular",
+      "quote_source": "yahoo-v8-chart",
+      "slippage_bps": 50.0,
+      "gross": 929.0,
+      "fees": 0.0,
+      "net_cash": -929.0,
+      "settle_date": "2026-10-13",
+      "rationale": "Vamsi: exit all trades, buy GPUS with all the money, stop trading",
+      "tags": [
+        "vamsi"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "quote_age_sec": 40,
+        "cash_account": true,
+        "asset": "stock",
+        "funded_with_settled_cash": false,
+        "position_weight_pct": 99.9
+      }
     }
   ]
 }

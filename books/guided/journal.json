@@ -808,6 +808,32 @@
       "tickers": [
         "SMCI"
       ]
+    },
+    {
+      "id": "J0066",
+      "ts": "2026-10-12T14:07:22Z",
+      "kind": "plan",
+      "title": "Vamsi: exit all trades, buy GPUS with all the money, stop trading",
+      "body": "Vamsi, Mon Oct 12 at 10:00 AM ET: exit all trades, put all the money into GPUS (Hyperscale Data) and stop trading. This replaces the radar instruction (2a) and the run to the Nov 4 close: sell both holdings, cancel the resting STNE buy limit (O0006), buy GPUS with all the cash, set no stop or target (he set none and said to stop trading, so the section 2 exit rules no longer apply), and place no further orders. All scheduled Challenge routines are disabled; nothing is liquidated at the Nov 4 close unless he asks.",
+      "tickers": [
+        "GPUS",
+        "APLD",
+        "NNE",
+        "STNE"
+      ]
+    },
+    {
+      "id": "J0067",
+      "ts": "2026-10-12T14:07:22Z",
+      "kind": "trade",
+      "title": "Sold APLD and NNE, bought 5,784.56 GPUS at 0.1606; trading stopped",
+      "body": "Per Vamsi's 10:00 instruction: cancelled the STNE buy limit 11.60 (O0006). Sold APLD 10.1551 at 23.3333 (T0015; bought at 23.46) and NNE 15.8299 at 14.6856 (T0016; bought at 15.05). Bought GPUS 5,784.5579 at 0.1606 (T0017), $929.0 of the $930.3 proceeds. The book is 100% GPUS with $1.28 cash: equity $925.65, -7.43% from $1,000 (realized -$69.72). Risk now: one sub-$1 stock (radar: support 0.16, resistance 0.17, ATR 6.7% of the price, so a typical day moves the book about $62), no stop. No more trades in this book.",
+      "tickers": [
+        "GPUS",
+        "APLD",
+        "NNE",
+        "STNE"
+      ]
     }
   ]
 }

@@ -140,8 +140,10 @@
         "resting"
       ],
       "placed": "2026-10-12T12:44:10Z",
-      "status": "open",
-      "checked_through": "2026-10-12T13:42:00Z"
+      "status": "cancelled",
+      "checked_through": "2026-10-12T13:42:00Z",
+      "closed": "2026-10-12T14:00:20Z",
+      "note": "Vamsi: exit all trades, buy GPUS with all the money, stop trading (Oct 12, 10:00)"
     }
   ],
   "stops_checked": {

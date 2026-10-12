@@ -10,11 +10,12 @@ private dashboard's snapshot (.cache/snapshot_real.json, collection snapshots_re
 goes into the public repo or site.
 
   python scripts/real.py run [--skip A,B]      # sync with account.json, then the actions to take, in order
-  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit|stop_exit|night|night_exit
+  python scripts/real.py record order --id ID --symbol X --kind entry|manual|stop|exit|stop_exit|night|night_exit|liquidate
                                 --qty Q --price P [--stop S --target T --why "..."]      # after each order placed
   python scripts/real.py record cancel --id ID [--why "..."]           # after each order cancelled
   python scripts/real.py record note --title "..." --body "..."        # a private journal entry
   python scripts/real.py record pause --until YYYY-MM-DD --why "..."    # no new entries of its own (Vamsi); --off resumes
+  python scripts/real.py record halt --why "..."                       # no orders of any kind (Vamsi); --off resumes
   python scripts/real.py snapshot | status
 
 Rules (RUNBOOK 2e), stricter than the paper book because the money is real:
@@ -197,14 +198,18 @@ def sync(s: dict, a: dict) -> list[str]:
                                                    "target": rec["target"], "why": rec.get("why", ""),
                                                    "opened": o.get("last_transaction_at") or pfm.iso(now),
                                                    "stop_order_id": None, "night": rec["kind"] == "night"})
-            p["qty"], p["entry"] = filled, avg
+            fills = p.setdefault("fills", {})  # several buy orders in one name add up to one plan
+            fills[o["id"]] = [filled, avg]
+            p["qty"] = sum(f[0] for f in fills.values())
+            p["entry"] = sum(f[0] * f[1] for f in fills.values()) / p["qty"]
             note(s, "trade", f"Bought {filled:g} {o['symbol']} at {avg:.4g}" + (" (night sleeve)" if p["night"] else ""),
                  f"Buy limit {rec['price']} filled: {filled:g} shares at {avg:.4g} (${filled * avg:.2f}). "
-                 + ("Sold at the next open; no stop order. " if p["night"] else f"Stop {rec['stop']}, target {rec['target']}. ")
+                 + ("Sold at the next open; no stop order. " if p["night"] else
+                    f"Stop {rec['stop']}, target {rec['target']}. " if rec["stop"] else "No stop, no target. ")
                  + rec.get("why", ""), [o["symbol"]])
-        if rec["kind"] in ("stop", "exit", "stop_exit", "night_exit") and o["state"] == "filled" and avg:
+        if rec["kind"] in ("stop", "exit", "stop_exit", "night_exit", "liquidate") and o["state"] == "filled" and avg:
             p = s["plans"].pop(o["symbol"], None)
-            why_x = {"exit": "target", "night_exit": "night"}.get(rec["kind"], "stop")
+            why_x = {"exit": "target", "night_exit": "night", "liquidate": "liquidated"}.get(rec["kind"], "stop")
             if p:
                 pnl = (avg - p["entry"]) * filled
                 s["closed"].append({**p, "exit": avg, "exit_qty": filled, "closed": o.get("last_transaction_at") or pfm.iso(now),
@@ -368,6 +373,12 @@ def cmd_run(a_) -> int:
           f"real book {masked()} {pfm.iso(now)}: value ${value:.2f}, cash ${cash:.2f}, day {day_pnl:+.2f}")
     for w in warn:
         print("  WARNING", w)
+    if s.get("halt"):
+        save_state(s)
+        print(f"  TRADING STOPPED since {s['halt']['at'][:16]}: {s['halt']['why'].rstrip('.')}. No orders of any kind; "
+              f"undo only on Vamsi's word with real.py record halt --off")
+        print("ACTIONS (0)")
+        return 0
     acts = []
     stops = {o["symbol"]: o for o in open_orders(a, "sell") if o["type"] in ("stop_market", "stop") or o.get("stop_price")}
     liquidate = final_day and et.hour * 60 + et.minute >= 15 * 60 + 40
@@ -549,7 +560,7 @@ def cmd_record(a_) -> int:
             s["plans"][rec["symbol"]]["stop_order_id"] = a_.id
         verb = {"entry": "Buy limit", "manual": "Buy limit (Vamsi's order)", "stop": "Stop order", "exit": "Sell",
                 "stop_exit": "Sell at the stop", "night": "Buy limit (night sleeve)",
-                "night_exit": "Sell at the open (night sleeve)"}[a_.kind]
+                "night_exit": "Sell at the open (night sleeve)", "liquidate": "Sell (liquidation)"}[a_.kind]
         note(s, "trade", f"{verb} placed: {rec['symbol']} {a_.qty:g} at {a_.price}",
              f"{verb} {rec['symbol']} {a_.qty:g} at {a_.price}" + (f", stop {a_.stop}, target {a_.target}" if a_.kind in ("entry", "manual") else "")
              + f". {a_.why}", [rec["symbol"]])
@@ -560,6 +571,13 @@ def cmd_record(a_) -> int:
         else:
             s["pause"] = {"until": a_.until, "why": a_.why}
             note(s, "plan", f"Entries paused through {a_.until}", a_.why)
+    elif a_.what == "halt":
+        if a_.off:
+            s.pop("halt", None)
+            note(s, "plan", "Trading resumed", a_.why or "Vamsi resumed trading.")
+        else:
+            s["halt"] = {"at": pfm.iso(now_utc()), "why": a_.why}
+            note(s, "plan", "Trading stopped", a_.why)
     elif a_.what == "cancel":
         rec = s["orders"].get(a_.id)
         if rec:
@@ -645,7 +663,7 @@ def main() -> int:
     r = sub.add_parser("run")
     r.add_argument("--skip", default="")
     rec = sub.add_parser("record")
-    rec.add_argument("what", choices=["order", "cancel", "note", "pause"])
+    rec.add_argument("what", choices=["order", "cancel", "note", "pause", "halt"])
     rec.add_argument("--until", default="")
     rec.add_argument("--off", action="store_true")
     rec.add_argument("--id", default="")

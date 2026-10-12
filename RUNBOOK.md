@@ -11,6 +11,11 @@ stops and exits he sets; where he sets none, the section 2 exit rules apply. No 
 His current instruction is the support/resistance radar (section 2a).
 It ends at the Wed Nov 4, 2026, 4:00 PM ET close with a $2,000 target (Vamsi extended the original Mon Oct 5
 end by 30 days on Oct 5).
+**TRADING STOPPED Mon Oct 12, 10:00 AM ET (Vamsi: "Exit all trades. Buy gpus with all the money and stop
+trading").** Both books sold everything and put all their cash into GPUS, held with no stop or target. No orders of
+any kind in either book (no exits, stops, entries or Nov 4 liquidation) until Vamsi says otherwise; the scheduled
+Challenge routines are disabled, and the real book is halted (`real.py record halt`; `real.py run` returns no
+actions; `--off` only on his word). The sections below describe how the books traded before the stop.
 The H-1B and Unrestricted books were dropped on Sat Oct 3 on Vamsi's instruction, before any round 2 trade:
 `archive/round1/` (Sep 28 - Oct 2 records) and `archive/round2-dropped/`.
 Real book (from Tue Oct 6): Vamsi's Robinhood account nicknamed Agentic, $1,000 of real money, which the agent

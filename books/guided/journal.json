@@ -781,6 +781,23 @@
         "LEU",
         "AEHR"
       ]
+    },
+    {
+      "id": "J0064",
+      "ts": "2026-10-12T12:44:48Z",
+      "kind": "plan",
+      "title": "Mon Oct 12 day plan: STNE limit 11.60 resting; book full while it rests; IONQ, LEU, OKLO, AFRM in their zones",
+      "body": "8:40 run. Overnight and pre-market wires (16 hours): no offering, guidance, halt or material news on the holdings or the radar names. Bitcoin 82,726 (-1.1% on the day) under its 20-day average of 84,227: crypto-linked entries stay blocked. Nasdaq-100 a little lower before the open.\nHoldings before the open (last / stop / sell zone): APLD 23.28 (-1.7%) / 22.6409 / 28.6677; NNE 15.20 (-0.9%) / 14.5077 / 17.0128; SMCI 41.12 (-1.8%) / 40.6281 / 50.762.\nResting order placed (orders.py plan --place): O0006 DAY buy limit STNE 11.60 at support, $226.94 (stop 11.2347, sell from 15.5481, R:R 10.85); STNE 12.50 before the open (-0.5%), 7.8% above the limit.\nRadar names in the buy zone before the open (pre-market, gap against Friday's close; zone / stop / sell zone): IONQ 38.61 (-3.2%, -0.47 ATR; 39.58-40.37 / 37.98 / 44.27-45.07), LEU 141.00 (-1.0%; 138.93-141.17 / 134.45 / 157.51-159.75), OKLO 34.36 (-1.0%; 34.03-34.57 / 32.95 / 38.87-39.41), AFRM 80.55 (-0.2%; 80.37-81.34 / 78.43 / 85.82-86.79), GPUS 0.1591 (+1.4%; R:R 1.4, under the 1.5 minimum). Near: AEHR 83.36, RXRX 4.30, SMTC 182.34; COIN blocked by the bitcoin gate.\nRun entries from 9:55 would go in the order IONQ, LEU, OKLO, AFRM (deepest dip first, then R:R), but the book is full while the STNE order rests (3 positions plus 1 open order = 4); a run buy needs the order to expire or fill and a slot to open, or a position to exit.\nClue scan (alerts for Vamsi, not radar buys): bounce setups PATH 13.48 (score 4: support 13.31 tested 3 times, coiling, accumulation, higher lows; +0.8% pre-market) and AFRM (score 3); breakout watch BKKT (resistance 6.958 tested 8 times; +1.6% pre-market; crypto), CRWV (83.97; -2.1%), HOOD (111.1; -0.1%). Pre-market moves of 0.5+ ATR: ONDS +4.2%, SNAP +3.9%, IREN +3.7% (radar, crypto, far above its zone), NOW +2.4%, SOFI -1.9%.",
+      "tickers": [
+        "STNE",
+        "IONQ",
+        "LEU",
+        "OKLO",
+        "AFRM",
+        "APLD",
+        "NNE",
+        "SMCI"
+      ]
     }
   ]
 }

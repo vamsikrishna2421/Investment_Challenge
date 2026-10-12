@@ -123,6 +123,24 @@
       "status": "expired",
       "checked_through": "2026-10-09T20:00:00Z",
       "closed": "2026-10-09T20:11:59Z"
+    },
+    {
+      "id": "O0006",
+      "side": "buy",
+      "type": "limit",
+      "tif": "day",
+      "ticker": "STNE",
+      "limit": 11.6,
+      "usd": 226.94,
+      "stop": 11.2347,
+      "target": 15.5481,
+      "why": "radar support 11.6 (stop 11.2347, sell zone from 15.5481, R:R 10.85); placed +7.8% above it",
+      "tags": [
+        "radar",
+        "resting"
+      ],
+      "placed": "2026-10-12T12:44:10Z",
+      "status": "open"
     }
   ],
   "stops_checked": {

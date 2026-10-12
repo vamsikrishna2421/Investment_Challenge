@@ -498,6 +498,42 @@
         "asset": "stock",
         "funded_with_settled_cash": true
       }
+    },
+    {
+      "id": "T0014",
+      "type": "SELL",
+      "ts": "2026-10-12T13:31:00Z",
+      "ticker": "SMCI",
+      "label": "SMCI",
+      "asset": "stock",
+      "name": "Super Micro Computer, Inc.",
+      "qty": 5.762,
+      "multiplier": 1,
+      "price": 40.6078,
+      "quote_price": 40.6281,
+      "quote_time": "2026-10-12T13:31:00Z",
+      "session": "regular",
+      "quote_source": "yahoo-1m-bars",
+      "slippage_bps": 5.0,
+      "gross": 233.98,
+      "fees": 0.02,
+      "net_cash": 233.96,
+      "settle_date": "2026-10-13",
+      "rationale": "Resting stop 40.6281 triggered at 09:31 ET (traded through)",
+      "tags": [
+        "radar",
+        "stop"
+      ],
+      "plan": {},
+      "compliance": {
+        "session": "regular",
+        "order_type": "stop",
+        "stop": 40.6281,
+        "day_trade": false,
+        "good_faith_ok": true,
+        "cash_account": true,
+        "asset": "stock"
+      }
     }
   ]
 }

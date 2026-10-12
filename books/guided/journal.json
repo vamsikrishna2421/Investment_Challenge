@@ -798,6 +798,16 @@
         "NNE",
         "SMCI"
       ]
+    },
+    {
+      "id": "J0065",
+      "ts": "2026-10-12T13:43:51Z",
+      "kind": "trade",
+      "title": "SMCI stopped at 40.61 at the open (-3.1%): the plan stop sat above Friday's lower support",
+      "body": "Stop filled: SMCI 5.762 sold at 40.6078 at 9:31 (stop 40.6281; T0014), bought Oct 8 at 41.90 from a resting limit at the radar's support of that day. Result -3.1%, -$7.47 with fees.\nWhat happened: SMCI opened lower with the Nasdaq-100 (-4.1% by 9:42, low 39.68) and went through the stop in the first minute. The position's stop came from the Oct 8 radar (support 41.90); Friday's rebuild had found the tested support lower, at 39.83-40.49 (stop 38.50), so the plan stop sat just above today's support zone, and the price fell into that zone after the stop sold. Positions keep their plan stops by rule (2a: moving a stop down widens the loss; never tested as a rule), so this is a note, not a change.\nAfter the stop: 2 positions (APLD, NNE) plus the STNE resting order; the SMCI proceeds settle tomorrow, so no settled cash is free for a run buy today.",
+      "tickers": [
+        "SMCI"
+      ]
     }
   ]
 }

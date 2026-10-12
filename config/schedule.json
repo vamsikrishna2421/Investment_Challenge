@@ -1,5 +1,6 @@
 {
-  "cadence": "Every 15 minutes in the regular session, every 30 minutes 7 AM-8 PM ET; crypto checks weeknights 11:10 PM and weekends every 4 hours when the book holds crypto.",
+  "stopped": "Trading stopped Mon Oct 12, 10:00 AM ET, on Vamsi's instruction: everything sold and all the money put into GPUS, held with no stop or target. No further orders or scheduled updates.",
+  "cadence": "None: the scheduled routines were disabled when trading stopped on Oct 12 (before: every 15 minutes in the regular session, every 30 minutes 7 AM-8 PM ET).",
   "routine_times_et": [
     "07:10",
     "08:10",
@@ -51,5 +52,6 @@
     "news_55": "trig_01G5MNNzPwiUKjEkA9nwgtEk",
     "crypto_weeknights": "trig_018dVj2nr9no5RTGVj3nMm17",
     "crypto_weekend": "trig_01QWjsXLymKDrx6sFQH7ZeGY"
-  }
+  },
+  "routines_disabled": "2026-10-12T14:00Z"
 }

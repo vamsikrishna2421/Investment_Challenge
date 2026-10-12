@@ -207,8 +207,9 @@ def main() -> int:
         "levels": levels,
         "strategy": watch.get("strategy", ""),
         "orders": resting_orders(book),
-        "schedule": {"next_update": next_update(now, sched), "cadence": sched.get("cadence", "")},
-        "note": a.note,
+        "schedule": {"next_update": None if sched.get("stopped") else next_update(now, sched),
+                     "cadence": sched.get("cadence", "")},
+        "note": a.note or sched.get("stopped", ""),
     }
     out = Path(a.out) if a.out else cache / pfm.BOOKS[book]["snapshot"]
     out.write_text(json.dumps(snap, separators=(",", ":")))

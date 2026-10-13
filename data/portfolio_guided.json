@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-13T19:19:07Z",
+ "as_of": "2026-10-13T19:42:41Z",
  "session": "regular",
  "start_capital": 1000.0,
  "deposits": 1000.0,
@@ -39,7 +39,7 @@
    "price_source": "regular",
    "ext_price": null,
    "ext_change_pct": null,
-   "quote_time": "2026-10-13T19:18:58Z",
+   "quote_time": "2026-10-13T19:42:35Z",
    "stale_quote": false,
    "opened": "2026-10-12T14:00:46Z",
    "sell_locked_until": null,

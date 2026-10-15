@@ -1,707 +1,857 @@
 {
- "generated_at": "2026-10-15T17:03:19Z",
+ "generated_at": "2026-10-15T19:04:11Z",
  "session": "regular",
  "new_headlines": [
   {
    "about": "$CIFR",
-   "title": "Cipher Digital Stock Drops as AI Buildout Debt Concerns Persist - Benzinga",
-   "source": "Benzinga",
-   "published": "Thu, 15 Oct 2026 16:14:26 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQzJQd3JkQVVUYU0yY1Rva19vUllGYWFSMmxBanYxeEFmem8yLTlMUjhFUkt6YXF3V01yTzBCUklFT0x3NUptWnk0NDdLRTBPaV94UTNOcGxhODlySVpvbVNTOTVSVzBZQldWVXhBR3B1a2xOWURCLXZ3dVN4TWhCLUg4MWprVjNhT3E4b3AzbldQa0VjN1p3Ym1aOEZKRk5mYUNBUjJ0bktwVE4yR3FLSFJpVy1MelRpMEhLMVJxSDMxZw?oc=5"
+   "title": "Wells Fargo keeps Cipher at Overweight, says zero-coupon convert is not zero cost",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:59:50 +0000",
+   "link": "https://blockspace.media/insight/cipher-barber-lake-cost-overruns/?.tsrc=rss"
   },
   {
    "about": "$CIFR",
-   "title": "Cipher Mining (NASDAQ:CIFR) Shares Down 9.3% - Time to Sell? - MarketBeat",
-   "source": "MarketBeat",
-   "published": "Thu, 15 Oct 2026 16:45:23 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYm5xUzRmSThVTU1TQVFQVUs3bG5oNmhNdnZocWxTbGt4eXFxMGFpTTl0ZGFld0FDcUVLX1JvYnBTUFNNbTlNb2xMMGhmSVF1cV9iQTZEd0oxM0EybEVtaXZONUFZZnpTTFBZM2d6WVJLLU1oZjF4X293UEMzNDZWMlJpSUswbE1qbExfaTFmeHVheUVxMzhfTm1jbHNadXV4OUR3QlVib2RjSEhMUFlYdllXUQ?oc=5"
+   "title": "WULF Stock Set For Biggest Weekly Loss Of 2026, Morgan Stanley Says Shares Are \u2018Mispriced\u2019 - TradingView",
+   "source": "TradingView",
+   "published": "Thu, 15 Oct 2026 16:45:09 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdU9NUm1paEd2WlNiWXRiMDRZR1cxazMtUmVreXN6WG1oOFBjV0Z1V1N2RlBvNHVIQTFlNHVMYWQ3b3UteTUxRjAySE9nSnBzQXdkYllnS0pzUE5PMGxuMkN5aEo1MmFvVkxFMURSTktuVm8xZERrVlFvNm9MVkFZal82cVFWNVNVcFpZS204ZUVqXzRGRXpoZ3Z1U01EOFdpMXkwQ2pEQmYzS0tROGNmX0wzVFl0ck5EWFlxM2J0bk84SGc4LUtnZ3hPV2oycnFKOUgzeVgxQkQ3Unh2T2NQTndn?oc=5"
   },
   {
-   "about": "$APLD",
-   "title": "Applied Digital (APLD) Stock Looks Fully Priced On Current Sales",
+   "about": "$POET",
+   "title": "POET Technologies Could Be Sitting on a Much Bigger Opportunity Than Investors Realize",
    "source": null,
-   "published": "Thu, 15 Oct 2026 16:15:18 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/applied-digital-apld-stock-looks-161518047.html?.tsrc=rss"
-  },
-  {
-   "about": "$APLD",
-   "title": "Applied Digital (APLD) Stock Looks Fully Priced On Current Sales - Yahoo Finance",
-   "source": "Yahoo Finance",
-   "published": "Thu, 15 Oct 2026 16:15:18 GMT",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdy1JTmVVemNwcW1SbWpZWk9HZmhyWmhERFkxNGdpNk96MnlkYk1LNTRyZjJpV09vUmNzb2pzUlVheURCaElHMnA5QUlRRTNOa3NpdWduSnhocm5uMEtROTZ4bllFYUlFOUgzV2pnVVo2bFM0UkVFaFBFNV85OURKMWV5OVZfSXpKOTU2aDh5dVJod2ZJa0YybmhvQ3o1QQ?oc=5"
-  },
-  {
-   "about": "$APLD",
-   "title": "39,350 shares are withheld for taxes as Applied Digital (APLD) CEO\u2019s stock award vests. - Stock Titan",
-   "source": "Stock Titan",
-   "published": "Tue, 13 Oct 2026 21:28:41 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcmo0UjA3WlNKSWZCenRrell5emJqZHppTHFJMTcyTzg3OFVlcjZHWHlKUlhMVVRtbE1ScVI3eXVNTHFOZTFlN2V6Vkw2OXpuNVBvUU10SV9mOW1NQUNJbXdBa3ZSX1RWS2I3bkhrUWd3cjlfNlU0QjEtTlEtU1pMQXZRNXFKUExJc0xPVDVLR3V2MDNzQm02NHJpQmNOMDI4Q3l2R0s0SFBENFIzek5iU2J6d0M?oc=5"
+   "published": "Thu, 15 Oct 2026 17:30:09 +0000",
+   "link": "https://247wallst.com/investing/2026/10/15/poet-technologies-could-be-sitting-on-a-much-bigger-opportunity-than-investors-realize/?.tsrc=rss"
   },
   {
    "about": "$POET",
-   "title": "Stocktwits Wall Street Wrap: Analysts Turn Bullish On Palantir, Marvell And Cava As Nike Faces Downgrade - Stocktwits",
+   "title": "POET Technologies Could Be Sitting on a Much Bigger Opportunity Than Investors Realize - 24/7 Wall St.",
+   "source": "24/7 Wall St.",
+   "published": "Thu, 15 Oct 2026 17:30:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPYWZMR0lBZWtiX3RndE53b3MzYWFWck1QSkY1NlVNX1F1RmtseUVHN2VHWkhySGkzTW95UmV4NlU2aVl6ZmF4aFkwQ0Y4U3FCMnNfYVFTSWVDUTNFZW44b0w0cVc2Z2ZPV09LZ1dxeFdYTVpnY0VITENhSGtOekNPR1Rjb1ZINTJ0akJvQ1N2anJQNk9tZVE5UlFaU1ZOcXRuYXl1TldjNzhob0RoRHBDNjdZY3BMeXlKd3lzVVc5UUF4blhLYkM5YTNR?oc=5"
+  },
+  {
+   "about": "$POET",
+   "title": "SPCX Stock Is Down Nearly 40% From Its Peak \u2014 Why UBS Sees 54% Upside Ahead Of SpaceX\u2019s Starship Flight - Stocktwits",
    "source": "Stocktwits",
-   "published": "Thu, 15 Oct 2026 04:47:17 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQZmk2SjJqWFBYNThsTzNPc3lJZUdXbFNhekFvRTRLWVVmeUdkSU5penRJbDFpTWdubEhEWWNmSU9TOU9nRWVRYS1taTZvU3lkd0E5bDVKcTJzUk0xNl8xN2thSnBTQ0FkeWlfOHJSVE5XZkRKYzAyQmVpUlFiSTUyQUdndW84N2piZjkzQVNoU0dYQ2J1QTJOMFBQTkEtQU84bTloZVY1V09DMk1pNmdKYzRXLWRadFhEMkx3QVJpcERkbDVUOFktTWxzSnlRNzVsMFFjeDlRdGFNc3hFbEROclRwSnZudHMtLVg3LXZHVURITUd3QlA0dV9B?oc=5"
-  },
-  {
-   "about": "$POET",
-   "title": "TSMC breaks records once again driven by the AI boom - XTB.com",
-   "source": "XTB.com",
-   "published": "Thu, 15 Oct 2026 06:33:26 GMT",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZW5qSWZ2NlByVS0tN1RZcEJCb3ByeUktWVhONGtOMHIzQkRWQ1dEVlEtdmxjSkZRVTZPTFlaQk1LZTNLTUktWXRQSExOZXZPR0ZlajAwTEdIcEh3UEZRX1pOc2h4Y1NKVHdKWWw1enE1OGktX0tqSER4ZWhIMFhZRFR4TkRsMnlGVkp5VGZFQXB5WUlFNGlNeDVXWnJ5NVdXQTYxblMwRHVvcEZ1X1E?oc=5"
+   "published": "Thu, 15 Oct 2026 07:42:37 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQLU1NVTE3Z3o5QWs5UndKN3hvNnhUdUpUM2JSOGNWRmtsOU9QZXBla3hvWEw1cE9GN1RvdGpYVmlfdTZ1UTNJSHk0cFpRS202b2pmZnkzeHV0aHY0TzN4Zjl3YVFXeGtfNHlkbWtpZWpEcHdBMkVKRU1sZXBKVER1eTNXVnN2ZWJhYVRnbXR5ZzNPWE1yMVpXbHZpMUVyV0JZZjhIUEw4VWd5M3F1bmlTYktTZjZMZzF6M00wTmFFZzZSN3cyenNaOFViSGUyNnkwdW5mN2lkX256bmZfUjVvTmRRbzJiYmJHMFluSlBMOVhkdVN1cFN4cHNxZGFtaE5MelZ4X3BPWW4?oc=5"
   },
   {
    "about": "$HUT",
-   "title": "Trending Industry Today: Hut 8 Leads Losses In Crypto Treasury Stocks - Moomoo",
-   "source": "Moomoo",
-   "published": "Wed, 14 Oct 2026 14:21:03 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeGdJZlZJNDdxWFVQay0wbnRFWmlKTUVHdkxhWnYwQzVIdEdKSmZqRUdlMVA3WlMwRjBESEFBd21EX2t4Vi1KbFZfYk1QLU1DUnBNU0E5TXh3NmJPWThVSUpnNUZGc0NIRjlHVnNvNDFhcVBqNWtWdmpIV0ozNEpRS0lhSEZyVHpvTXExT0hManV1WWE1Y2xaOWE1cWZrSVRQWmdyVTVPWTM?oc=5"
+   "title": "CoreWeave Reverses Up As Wall Street Analysts Rush To Defend AI Stock.",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:41:52 +0000",
+   "link": "https://finance.yahoo.com/m/e7396a5f-59db-30ad-b0ed-49dbca81119f/coreweave-reverses-up-as-wall.html?.tsrc=rss"
   },
   {
-   "about": "$NNE",
-   "title": "NNE Stock Heads For Best Month In 2026: So Why Is Wall Street Slashing Price Targets? - Stocktwits",
-   "source": "Stocktwits",
-   "published": "Wed, 14 Oct 2026 21:20:43 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPY3FYWGJ1ZzRjY0R6dmRZR2lmcUJiZnFiT2ozQ2FiaTI5ZEdoNkh5UXpqQ0tqMmRUV1ZzNFFEMHJxNGZCYW9wbHhha0ZlOHZ2VzY1bkNNeWM5RzBlYWtmY2F1bjkzR0U3WTYtNGVyZmFRaldYcFIwX3VaTVJOMDFTYjQwV1VrSjEzOEN5d0E5X0hiUFlXYVBzdTc2ZXpHVU5BbFp3ekluTUxPUDhkRlRDRUhtMWZrVkhvaXFxMmo1aW1OZmRQcnRXTUVBN1B2UzBsYmJnWGxLbWpERFJMbGRNMw?oc=5"
+   "about": "$HUT",
+   "title": "Debt-Laden Neocloud Stocks Are Collapsing as Inflation Comes in Hot",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 11:30:02 +0000",
+   "link": "https://www.barchart.com/story/news/7835506/debt-laden-neocloud-stocks-are-collapsing-as-inflation-comes-in-hot?.tsrc=rss"
   },
   {
-   "about": "$NNE",
-   "title": "Anne Hathaway Shares 3 Favourite Desserts In New York & Where To Get Them - Curly Tales",
-   "source": "Curly Tales",
-   "published": "Thu, 15 Oct 2026 06:10:29 GMT",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGZ4X0xQS2VjSS1RWHBGSlBIWi1CZlc4em40V24xWk5XVkFHSU9XZWE1dC1MelBVTV9OWS15VzFaU2t2aXNZdkZ1Rk5GbVZYVG1WM2I5aEpCTTV5RWF5cVdtSWc5V1h1dTh5Rnh4Z1pUWmhnVXAtQjllbXFNSml1VVBjU1lNZGluN1pGRFhoSGJVM0hXMVo3YXFEWmExTTYwaW9GT05sdTBJV21v0gGyAUFVX3lxTE1VY1pUb09td1lLWlpzSS10eHI1emVJaXV6akxyRVNOOVNVeG5sYjFGbkhnXzFNSFJhRnpYd1hDMGVMUC1BQm5QS0k4U3N6MHFlZ3dBcUhNcXRKa3J3cHJQSllPUW9vWDdGNG9mT2x6VV9PaEhHUW1IUnJ0NXhJNkh2UFE3Nkk0dGdSQzVFYklqR19xanFZNDN0alJib0FEUVJhWFJOWHRHZHp6bC1ETV84V0E?oc=5"
-  },
-  {
-   "about": "$NNE",
-   "title": "Normandeau, Koop share plans for RM Ste. Anne Ward 1 - SteinbachOnline",
-   "source": "SteinbachOnline",
-   "published": "Thu, 15 Oct 2026 16:55:09 GMT",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTnV6VDBLYWRhS2hwVFhtM0JYR1RNNThoaUU5T2ZYRnlrQnJ1Y2M1N3hnbHMySGxEZzU5QmJfeER0T1pBVXFpVGZIMEkySXk3RTdWb0RIY1RIY29KamRlcnBxdGZsMDVWWFNzVUdqU1J6Q3FDSXRoSGplRllEaEFYVERMMzFaTnRQa1JEUnhyZkY?oc=5"
-  },
-  {
-   "about": "$GPUS",
-   "title": "Nvidia stock: Zesty launches tool to cut excess GPU buying - Techi",
-   "source": "Techi",
-   "published": "Thu, 15 Oct 2026 15:52:08 GMT",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sZkN6Wm5IN1Z6VmJxMkZXYjl1MmZZVUM2REFNY2hDbUxTUkp2d19ENUZUNmpMbVMxbWtGaG51N0FMVjVhRTFtT21JNDVrMnZLUEdfRC1XQjFCVXVkRDJSWFA5QzZEVDIxYXFtaA?oc=5"
-  },
-  {
-   "about": "$GPUS",
-   "title": "IREN Expands Liquid Cooling Across AI Data Centers: Can Returns Rise? - TradingView",
+   "about": "$HUT",
+   "title": "WULF Stock Set For Biggest Weekly Loss Of 2026, Morgan Stanley Says Shares Are \u2018Mispriced\u2019 - TradingView",
    "source": "TradingView",
-   "published": "Thu, 15 Oct 2026 12:48:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMGYycFFqd1NXX2xPTnJIWmIxSDNoVUhhU3BPMEx5Z0xXTEVVRUdUVFJRUk5RZlFOOG5oR3hraG5Zb0Z0emY0bkRKTEpQODhaVnJ1NHNxZnhVVjNWY2ZBSU42dWhaZWd3UktQVWlSRFFldDNHb21HLUFZT3BmMkM3eVZFLV9RVzAtaE9VdF9Xbzh0RE9HWTE2OGlFT2xTZnc3UkwzR0FMMVN2aHpBaU50dGladlNXLXRtS3d2UjNjUnU?oc=5"
+   "published": "Thu, 15 Oct 2026 16:45:09 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdU9NUm1paEd2WlNiWXRiMDRZR1cxazMtUmVreXN6WG1oOFBjV0Z1V1N2RlBvNHVIQTFlNHVMYWQ3b3UteTUxRjAySE9nSnBzQXdkYllnS0pzUE5PMGxuMkN5aEo1MmFvVkxFMURSTktuVm8xZERrVlFvNm9MVkFZal82cVFWNVNVcFpZS204ZUVqXzRGRXpoZ3Z1U01EOFdpMXkwQ2pEQmYzS0tROGNmX0wzVFl0ck5EWFlxM2J0bk84SGc4LUtnZ3hPV2oycnFKOUgzeVgxQkQ3Unh2T2NQTndn?oc=5"
+  },
+  {
+   "about": "$HUT",
+   "title": "Hut 8 (NASDAQ:HUT) Sees Large Volume Increase - Here's What Happened - MarketBeat",
+   "source": "MarketBeat",
+   "published": "Thu, 15 Oct 2026 17:44:20 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS0g1MlZvX2k0UU03M1FlRGFJcjUxckItUkdjSnF5Q2UyWlZSSUc3dEkyeHdQMjJiRGNMRnlGdHpWX1VZZEhfMFF6MTFZdTQ3UDZTWDJqcGpKRzVER2ZFdFhHMVRuS1FVQ1hOUGFEMzRhclNZMnV5a0dVWk0tNUl2a2tseFVBMHFLUjYtVUE0ZUp0Yk9TSVlWVDh0NHlESlhYTXJUZDBpeVk0UzM2ajlDb3hSV0NwTVNoaFlBM3lYRl8?oc=5"
   },
   {
    "about": "$GPUS",
-   "title": "User Says He \u201cBegged\u201d For One RTX 5090 As Micro Center Pulled All RTX 5090s From Shelves; Lists The GPU As \u201cNot Carried\u201d - Wccftech",
-   "source": "Wccftech",
-   "published": "Thu, 15 Oct 2026 11:44:29 GMT",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0SUc1cGxsVzRiN0FXd050eVhaMXdCdjJNdDNGWl9wN0RRZEVQWVBzdjFNNk0zVmZHalJEQ0xHZVVvSjJ0YUN5OFZlNy1FLUhadkc3RHE5aHZHbUltT2pLZC1lOVM5VEc1QlJ3MHRKWdIBdEFVX3lxTFBrRkJEbWlERHExQ1RrWlhVcnRBRDB1d0E3WVNOcGtpV1ZiYjVCWmkzT2Job0kySlBYQXIyQ3g0ZkpVM3F5OXRMZXFBZUl1YTl2UHhUTHdYVlJ3V2M5WXkzVnRRdVc4WXlPOFV3WXRWeXhCeUtm?oc=5"
+   "title": "Hyperscale Data Stock Surges Beyond Bitcoin Mining Growth - Benzinga",
+   "source": "Benzinga",
+   "published": "Thu, 15 Oct 2026 17:27:54 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPR0UyQXVFR2V2SEFpUWk3d1loVTdvWkZJSjk0bnZROGlYajBnQVRvbXBvY0hQNjFlWkV3dzgzT0h3dkhqeXQ2WUtvbmRGQ2N4Y1czNUVXcmd0QUJrc19ta0dEYURNd1lObDNwbU5wUHhfZ1VOSWZhZU15bThWQUxuLVpYS3ZFWkdQUE5IU2tMdkxmS3Y3YTFKNmFwTFpfMEJKR09KOVhORHBnelUwRVJ5VnBic3FYb3VNVkE?oc=5"
+  },
+  {
+   "about": "$GPUS",
+   "title": "Nvidia RTX 5090 disappears from Micro Center amid rumors of a production halt \u2014 retailer flags flagship as 'Not Carried' as stock mysteriously vanishes - Tom's Hardware",
+   "source": "Tom's Hardware",
+   "published": "Thu, 15 Oct 2026 15:37:41 GMT",
+   "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNY1NQUEdyNndVajlUbDJnX3lZd3BNaHFpOFV6Nm00RkFxellpOGl0ZVlVSkdRRVhWdWg0V1BnWVo1RWFoZ2U3alFwaXViZVliUVBsY3puNFJoYkpKaHh6TEJ0cl9YbFYwR1hYLURDdldHZVZBTlFDbU0wSW13aDhmb25fV0NEc0FrUnNZcE96TUN3cFk2WU1aZFZBYl9aMV84Q2U0dnBIeU5XZFNQNnp2MEpCT1B3SlRoYncwaVZCb3l2X20zMUF0WjlDa0ZOaEtEaFNSRUZUZk0yYm5oQm9mN3M4bl9FWDlncWdRZTd1bE5CMllpaUZCbVYzYTJJS2l3LVJGQndrSWVGckFMWk9HTUg0SmdnQlBGUVVYYzQ5Z0I?oc=5"
   },
   {
    "about": "$UMAC",
-   "title": "LHX Stock Looks To Snap Losses: L3Harris Wins Space Force Deal For Missile Tracking Satellites - Stocktwits",
+   "title": "SKHY Stock Gives Back Some Of Its 27% Pop From Tuesday \u2013 Wall Street Rolls Out Another Leveraged Bet On The Stock - Stocktwits",
    "source": "Stocktwits",
-   "published": "Wed, 14 Oct 2026 22:29:17 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOLThSMlVnTlJWSGt3enZ5STYwZmpadDJGTXI3RXBHTDVBQUZrZVFFM29nUGU5SjJ2bHBOYi03dWR2U2p2SXNfM0VnR1ZLVURMTmJqZzl5bExxX2RELXVBbmxZbU8yT09odXhXWld6R0NjUVJUSmhFbTZweFRxSUJlSlEyYk8zM1d6c3M4VWNVenhfbVFlZEZmZWNHV1dtRXdaMnBBZk9TcnZfN28yYXJ0YUpzZDM5dm9JT0cwZHRWdHN0dXVZT2dLal9Mb3NVT2dKY2JLdFF0Nk5LdVRlSDdXU2FabjJSTDdyRnZMT3Ezbw?oc=5"
+   "published": "Thu, 15 Oct 2026 07:40:16 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYkQyNXlIZEUzWlh0amhUNWFnSG96ZVZvSF9tR3gyb2k1OXNLUVdmWFBRWkRNeXRONlJqbnFDc3lwdHlhY0ZhZXVpc01zenZqMGl3UnRWc2QyamtiSEVkSVduMEQ5T0I4U2d5SDd1c1FFTTNoeVdkXzVvaVhfbEhkeXk0cGJCS05KSUJGYVBpYXEwc1AwWmt0dlJpd21wTmh0RmZEM0ljcFlGU1VxUVlpblZaZk1aVjV4?oc=5"
   },
   {
    "about": "$RGC",
-   "title": "Is Regencell Bioscience Holdings (RGC) Fully Priced After Its Annual Loss Deepened?",
+   "title": "12 Health Care Stocks Moving In Thursday's Intraday Session - Benzinga",
+   "source": "Benzinga",
+   "published": "Thu, 15 Oct 2026 17:05:51 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRjZ5QjVuMVhXNUk0M2VlX1oySEl4eDAzWkZRTUhXbVVkQnE1VEpJZG5yd0EtTFZwRnVBWFYtTzZwTW1uV29DOXlBQkhROTJNX19RaUczTmk3U1BJUk4xLWlrT3E5Vkp1WTdUa0cyalF4Rzc2TEYwUHJrOWFhbWx6UzhKb3ZHRTI5YzJpcV9hOU1od3NJVlNmRHBDN1JOQ2RpMWhKbnZ4bXRPN2c5QllUUThRN2ZEVVA4?oc=5"
+  },
+  {
+   "about": "$SPY",
+   "title": "Starwood Property Trust (STWD) Earnings Fell 95%. Is the Stock Still Cheap?",
    "source": null,
-   "published": "Thu, 08 Oct 2026 14:13:09 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/regencell-bioscience-holdings-rgc-fully-141309180.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:18:08 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/starwood-property-trust-stwd-earnings-181808410.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Auditor Change Puts Regencell Bioscience Governance And Cash Runway In Focus",
+   "about": "$SPY",
+   "title": "Rithm Capital (RITM) Trades at 0.76 Times Book Value. Should You Buy It?",
    "source": null,
-   "published": "Mon, 27 Apr 2026 10:07:26 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/auditor-change-puts-regencell-bioscience-100726177.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:16:46 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/rithm-capital-ritm-trades-0-181646521.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Relevant Gold South Pass VTEM Survey Defines Multi-Kilometre Structural Corridors with High Priority Drill Targets",
+   "about": "$SPY",
+   "title": "Dynex Capital (DX) Trades at 4 Times Last Year\u2019s Earnings and 8 Times Next Year\u2019s. Which is Right?",
    "source": null,
-   "published": "Thu, 18 Jun 2026 10:30:00 +0000",
-   "link": "https://finance.yahoo.com/markets/commodities/articles/relevant-gold-south-pass-vtem-103000689.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:16:34 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/dynex-capital-dx-trades-4-181634841.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Taiwan Semiconductor Upgraded, Eli Lilly Downgraded: Updated Rankings on Top Blue-Chip Stocks",
+   "about": "$SPY",
+   "title": "Essent Group (ESNT): Good Investment or Just a Cheap One?",
    "source": null,
-   "published": "Mon, 20 Apr 2026 19:25:44 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-upgraded-eli-lilly-192544131.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:15:55 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/essent-group-esnt-good-investment-181555122.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Relevant Gold Completes Strategic Financing; Embarks on Largest Drilling Program in Company History",
+   "about": "$SPY",
+   "title": "Is UWM Holdings (UWMC) the Most Expensive Cheap Stock in Mortgage Lending?",
    "source": null,
-   "published": "Mon, 13 Apr 2026 21:15:00 +0000",
-   "link": "https://finance.yahoo.com/markets/commodities/articles/relevant-gold-completes-strategic-financing-211500133.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:15:39 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/uwm-holdings-uwmc-most-expensive-181539674.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Relevant Gold Launches Fully Funded 2026 Drill Program and Receives Five-Year BLM Expanded Exploration Permit at Bradley Peak",
+   "about": "$SPY",
+   "title": "Annaly Capital (NLY) Borrows $7 for Every $1 of Equity. What Does That Buy?",
    "source": null,
-   "published": "Thu, 09 Jul 2026 10:30:00 +0000",
-   "link": "https://finance.yahoo.com/markets/commodities/articles/relevant-gold-launches-fully-funded-103000180.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:15:25 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/annaly-capital-nly-borrows-7-181525249.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Here's Why I Wouldn't Touch Regencell Bioscience With a 10\u2011Foot Pole Right Now",
+   "about": "$SPY",
+   "title": "MGIC Investment (MTG) Earns 80% Margins on Falling Revenue. Is the Stock Cheap Enough?",
    "source": null,
-   "published": "Sat, 07 Mar 2026 02:35:00 +0000",
-   "link": "https://www.fool.com/investing/2026/03/06/heres-why-i-wouldnt-touch-regencell-bioscience-wit/?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:14:44 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/mgic-investment-mtg-earns-80-181444068.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "A Look At Regencell Bioscience Holdings (RGC) Valuation After Department Of Justice Investigation News",
+   "about": "$SPY",
+   "title": "AGNC Investment (AGNC) Is the Most Expensive Mortgage REIT on Book Value. Why?",
    "source": null,
-   "published": "Fri, 06 Mar 2026 13:11:29 +0000",
-   "link": "https://finance.yahoo.com/news/look-regencell-bioscience-holdings-rgc-131129308.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 18:14:24 +0000",
+   "link": "https://finance.yahoo.com/real-estate/articles/agnc-investment-agnc-most-expensive-181424299.html?.tsrc=rss"
   },
   {
-   "about": "$RGC",
-   "title": "Has Regencell Bioscience Holdings (RGC) Run Too Far Ahead Following Its Widening Loss? - Simply Wall Street",
-   "source": "Simply Wall Street",
-   "published": "Thu, 15 Oct 2026 13:46:31 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPN3hYaVY3V3NSdmtWSFJrMFBGRFl3aHdWUUQ2S3hTWmZTZUMzNl94aDJIYnpxUkI5Z05iMmJPRmNVT3VuWEhVbU1EdkF2MmxCZGFxYlBCRDZpeVNWd1g0cE9RODlnNFdPdWtuQWg1a2t2MVdzUUYzU1lhdmVNZUtIWWpfSDhzT1ZicmdxTFNIUWx4MGZmaGVmSXE1TUJITFpJQzY5SW5maWUwX0ZlY2FONkFSSEhabmpyRm1TSEZwTDBqSFBXb2JlVWE2RlYweDNSMHRSWGFES0tUdkFxa2xScDhJeVZ6X3FYcTBDMEFXUmE1N3F60gH6AUFVX3lxTE9CSWgwZTFzblpOa3lscGNzdzhka0tPNXR2bExPdFM4b3VIZzFPLWd6cUc0cHR4RlE4XzB3eVlZME5iRVZmdEp4VmI0Z3lLUVFYMlpzOFptYV9HS1NZdVBNVHRVdzBVQ2wxLVZ4azZtaXdLdEdBZlkzcDBoZmpaTjU4OGh1RDFXUzhrd3pkZ0tCUFNkQTNkNXVxekRaTGFhWXhyNHdFQ1I2N3J6V0NCY1B3OGx0U0hQcEJ0VE9EdmJNQXdoZVJPbHNXNVBUTy1OMjF3TXhKQkExSkNWZnNQNk91YjdkMm1oWHAzMGwtaWlSbFNNa1BOeDY2Q1E?oc=5"
+   "about": "$SPY",
+   "title": "Equal-Weight S&P 500 Hits Record Low Versus the Index - Opening Bell Daily",
+   "source": "Opening Bell Daily",
+   "published": "Thu, 15 Oct 2026 17:43:09 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUEVfVlcySWZpMjZ3am9yeFhuSDg5NlF2TGREWjZxamQ3aUttSGdic1dHTk1ENlp6RElSMzFyMXNhTDctbE02MzZQb1YxbnpOQTNwY0R5ckVCWTEzVVBpMW9jNnJJLUItMF9DNTBDVVVtNHM3dVVOdWZJUDc3dHFhSHZqdk5CR0VmY1VKZkpHNUZBTTA?oc=5"
   },
   {
-   "about": "$RGC",
-   "title": "RGC Oct 2026 10.000 call (RGC261016C00010000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+   "about": "$SPY",
+   "title": "SPY Oct 2026 799.000 call (SPY261021C00799000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
    "source": "Yahoo! Finance Canada",
-   "published": "Wed, 14 Oct 2026 18:58:53 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jQ2otaVFLcDEyOUhha2JSUjlWc05sVGt4bHJEalFrTlBOVDIwNFBaMTRrZFczNGlJLTFQODZSaFVvYWRtRlNDWGlkODFyU2thM3F2N2hsbTVsNXFMZWNfRGZuTWo?oc=5"
-  },
-  {
-   "about": "$RGC",
-   "title": "12 Health Care Stocks Moving In Tuesday's Intraday Session - Benzinga",
-   "source": "Benzinga",
-   "published": "Tue, 13 Oct 2026 17:06:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWXROQ2I3dnhuWWNuay1MT0x0VGlqa2lYcVFqUWR0ZGJxZGZMb21NNFM1NExsMEJQcVdvWEFvc0N6VWpEYnBKYmlxc0pwUHdJZTMxRGRQRlRET2ZsU3hha25NWnRORlFyZWFBamdUOVRzOFI4TVdiWTcwdTlCd2M5NmQ3TjUyYTFRZmJjT2xQZ3FQTFBkNFNrRkZzb0xfZUNfZk42UDFQeGpWcWpCb0I4QWFXOHZqVm8?oc=5"
-  },
-  {
-   "about": "$RGC",
-   "title": "RGC Resources declares dividend: RGC Resources stock yields 4.00 percent - ad-hoc-news.de",
-   "source": "ad-hoc-news.de",
-   "published": "Wed, 14 Oct 2026 01:55:59 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMDNZLWt1NXp5MldFTHF4RXZNX2piUXpHOVlqdnNvMUxETWRhT0dCQ1V6R01sVFFkbVYxUjVvQm5FdVlMX1RIZllYSTBlcDdfOHE0SXRiS3JkaVM1cVpJYVFTU0cwb1k4YlJtRU5VOEN3SW5ZWXd2aTdXS2pVbUhoZjNpYTRtak5pSFAxMkZMZzJ2anZSVXpjekhhaC1lbVFhamVCWTBkcVd3bktUZ0JVbHJ0QldTa2RlQ0d5algzQWdLcWZQZ0IwUk5R?oc=5"
-  },
-  {
-   "about": "$RGC",
-   "title": "Liquidity Mapping Around (RGCO) Price Events - Stock Traders Daily",
-   "source": "Stock Traders Daily",
-   "published": "Tue, 13 Oct 2026 22:32:01 GMT",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcTJ4U01fSUExYWhlcHZhMlFHcjN2akNoUTVEUGl6c1J0YVlfdjVwa3ktWVhNZUNIT3dSbmc4Y2JUcXV5U2t0WndHbFdjekJzX0lHZ0RuTDFCelhVOExwbXRPR2xVN1Z5TjVrVHMxS0FkTW9ZTm1zZmxXMDN4a2E0eWVnODltVGlSVkdlX1RXeHNQQ1QwYUlndnAxb2YxeUZrWTJnMEtWOHliR1dPU2NQSDBpVjJXVzBkanV1R2d3Yw?oc=5"
-  },
-  {
-   "about": "$RGC",
-   "title": "Bending Spoons, Liquidia, Verastem And Other Big Stocks Moving Higher On Wednesday - Benzinga",
-   "source": "Benzinga",
-   "published": "Wed, 14 Oct 2026 14:02:33 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWlRJYzJXTEFnWWVPOVpibFU2SmRIX2g3U0Y4QmpER3RCSTRiSFg2R29sQ0pVSXREV19yRm5lOXZ1ZXJKeDdNdFgteERjNmxxenNJWElJZXVKd29RMVJRVzZyeUxaLWY3RWNFelA2UFhVaEMtMTNuWFpGVHMzcUZma1lVajF5NjFiYmtVLXhHZGVibXhZUE85S0RNVUZBZ19WYmpPQW11Ukh0d2xVa0lrY0psQVhZMnRJZUhsd2dyQWd2NlE3XzlxdWF6Q1kxZl9NVU9GeUVGSW8?oc=5"
-  },
-  {
-   "about": "$RGC",
-   "title": "US Midday Movers: RGC Surges 16% as ManpowerGroup and Vicor Tumble - Business Upturn",
-   "source": "Business Upturn",
-   "published": "Thu, 15 Oct 2026 16:25:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSUZZVzVwLXBiMm1yMzJqenRLZDRaNzNTSGFiUGFnUmFCWmgtRnJidWNJZEp1OEJfdWZiM0lRSjRvQ214cEdXWktLLWh2SlNvaVlMbUFha3hiWFZmTHRGRzBjNXlVUnN5c2I5NkVpWUhiSkZtVHJwX1RsSU9BdlJIQnFJNUJXdUFiZWR3SG94ZG9MMVZhN1NsZGcxdjU0MWhrYWY5WFdZU2JKb2h4R3NHbjhUWQ?oc=5"
-  },
-  {
-   "about": "$RGC",
-   "title": "Newport RFC\u2019s unbeaten start ends with RGC 1404 - South Wales Argus",
-   "source": "South Wales Argus",
-   "published": "Tue, 13 Oct 2026 22:30:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNUlRWG5NeHJnblFCczJ5ZE91YmJTNHVNa1VLekZxVjVrTkd3cTM5QU9iQWZxalEtOVA4NDZMNi1JNmpLQkxvOHNmUlR6enlEdzJoREw3OUc2UFRtWUo3enFRYzNWY01HXzFTR0k0MXlzdy1KMHNxQnhYWFlUelpDX0dlMXpVSVZTLUZYNXktT0FER0xZUExmMGtXVjF5WG9ablE?oc=5"
-  },
-  {
-   "about": "$SMCI",
-   "title": "Why Is SMCI Stock Falling on Thursday? - Benzinga",
-   "source": "Benzinga",
-   "published": "Thu, 15 Oct 2026 16:01:07 GMT",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMHpZUmNmdUh3VXgtS0ZnQlcxV2dZMlB2UjNCUGlfeVRDMjk0VzVBVHZSNEZrMlR4anJhZ2dITWxkX29TeTBkRkltVlQ4U2RvUlpLRDE1WjRSbHk2ZE54dDVyQkM5N1JYUG92bjFQV2t4bDdXb01JdFNjXzJkaFlpaFdZMWtkM05hVWJIUFBFeWF0M1dqWjhoMFhUSzlIUjQ?oc=5"
-  },
-  {
-   "about": "$SMCI",
-   "title": "Super Micro Computer (SMCI) Appoints Mark Long as CFO; Shares Dr - GuruFocus",
-   "source": "GuruFocus",
-   "published": "Thu, 15 Oct 2026 15:03:37 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeGMzdzZSQU56MldqUTFmRHY2TjlVdHc1RkI2ZG95d25XRGRwWkwyMGxLaHFzdm9abFZ6dFRBejlXcjBBSjVYTUR0akJQelUxMEREd05kYkQtaXhBNzRmb3lfem9iTFNBdXB6a2xMVmdjTzFtblBRV1FBUGh0OUVrczA4ZjN2Zk9DVmZyNTZYMTZiQ25ReVoybkREdmNNTUkyT29GVG1rNVIxdw?oc=5"
-  },
-  {
-   "about": "$SMCI",
-   "title": "Super Micro, Applied Digital, Benchmark, Planet Labs, and Ingram Micro Shares Are Falling, What You Need To Know - StockStory",
-   "source": "StockStory",
-   "published": "Wed, 14 Oct 2026 17:37:03 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNLVdXbFMtSktWeGFocTVGRzRFQkRaQjJIVWk3ZnJCT2puNlN6Mlp5VDZEVWxNVjlkTEhZYW1tdC11S2F3R2IyWGROVmxNVWpyS3JfYS1HN190NmJTNnVkWHlqZmF4cjdIbmNONUF0dUY1OFhrQXJjY3BCQWozMjZFUk5MZE51RjY3MUl4bU1vUWdVV29zMjYwdnJLNmxmNUt3eEFkX01sTTFPYmQwS2RiZVFuM2VIYzUyUTNKSl9mdHFRSGltYlpGMGxxOWVkMkJUYy1kVlptYWxMMEExSThMVHN4aG9ySVlRWnJIdmVPWUd5MEdydzUxUG5rcEpCZw?oc=5"
+   "published": "Thu, 15 Oct 2026 15:06:17 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBob1YwNTJ2ZDRxRE9zQ3RtLXNHTDZWblRXVTdVaHlnbzRjSzdmaUkyZUx3U1hjQjQ1V21mRFNEc2hnWjA2WVdQWWt5Z2V3bVFBTUZpZTREVXNSMF80ZDN2OGxVZTM?oc=5"
   },
   {
    "about": "$SPY",
-   "title": "Simply Put, Palantir Remains a Valuation Trap",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 16:45:41 +0000",
-   "link": "https://247wallst.com/investing/2026/10/15/simply-put-palantir-remains-a-valuation-trap/?.tsrc=rss"
-  },
-  {
-   "about": "$SPY",
-   "title": "Skydance Rebounds 5% as Warrant Adjustment Selloff Fades; Netflix Rises 3%, Disney Advances 2%",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 16:01:43 +0000",
-   "link": "https://247wallst.com/investing/2026/10/15/skydance-rebounds-5-as-warrant-adjustment-selloff-fades-netflix-rises-3-disney-advances-2/?.tsrc=rss"
-  },
-  {
-   "about": "$SPY",
-   "title": "Opendoor and Zillow Surge 7% as Long-Term Rates Retreat; Compass Climbs 6%",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:51:48 +0000",
-   "link": "https://247wallst.com/investing/2026/10/15/opendoor-and-zillow-surge-7-as-long-term-rates-retreat-compass-climbs-6/?.tsrc=rss"
-  },
-  {
-   "about": "$SPY",
-   "title": "Quantum Computing Stocks Rebound After Dilution Scare: IonQ and Rigetti Climb 3%, D-Wave Advances 2%",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:46:59 +0000",
-   "link": "https://247wallst.com/investing/2026/10/15/quantum-computing-stocks-rebound-after-dilution-scare-ionq-and-rigetti-climb-3-d-wave-advances-2/?.tsrc=rss"
-  },
-  {
-   "about": "$SPY",
-   "title": "Elliott Wave Top: The End Of The 2022\u20132026 Bull Market (NYSEARCA:SPY) - Seeking Alpha",
-   "source": "Seeking Alpha",
-   "published": "Thu, 15 Oct 2026 09:31:43 GMT",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWEdxemtRT25jSV80bUl3cE9QaXFCZkpJbURhWDQwLWlZaFNVQmVSSzh0WDhBaFN2UzhFSFRrcVZwdndobU9mUlhqT2dwZk1kLUpucTduSF81XzZYTEd3YVgxc1oteWh2NGxuYzRQVFpoNXZJb3VEVWQtalplQ1JHTGFNMkw5NlJuTDBhVkMxYy1yelFnTTV1Q1R3?oc=5"
-  },
-  {
-   "about": "$SPY",
-   "title": "SPY Oct 2026 764.000 call (SPY261019C00764000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+   "title": "SPY Oct 2026 793.000 call (SPY261019C00793000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
    "source": "Yahoo! Finance Canada",
-   "published": "Thu, 15 Oct 2026 12:30:22 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1WTnVKYlQxam5zd2ljVkd3b3pwaThlcWZ0NWxvdHdpc1hraF9YSjZHbTZsenhLX296SGp0eHIwS2Q4WlpTX1ZkMDNpZVhKcmRnRkV4VGFOenlKMEpzNHJqdUcxdG4?oc=5"
+   "published": "Thu, 15 Oct 2026 14:05:02 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5taGRKeDZJdXV4WWY0dGRkdl9kQ2NtUDE2WG40akdsUHdhbTVUVVk3QV9FSWVrcGYxZWhCNTQ3bzc1b3FCWFZwVUo1eGtya0cyZTB3VWRTOEU3OXc0UnpxRUw2NS0?oc=5"
   },
   {
    "about": "$SPY",
-   "title": "SPY Oct 2026 763.000 put (SPY261023P00763000) stock price, news, quote and history - Yahoo Finance UK",
-   "source": "Yahoo Finance UK",
-   "published": "Thu, 15 Oct 2026 03:00:44 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBXZVRyVm1zd1IyU1dFVVdaWXR2dEU4OXRTMUtSd3BxNjFoNkVqekwtXy1uMDQ1eTkzOEw0U004NERueVRJaDc1bjd5V25sSjBGN0FsS2tvREZhUW9yOV9lYmxCU1g?oc=5"
+   "title": "SPY Jan 2029 465.000 call (SPY290119C00465000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Thu, 15 Oct 2026 14:00:17 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xdVNSMTRQZXhoVW5ob0NES0RIb0ZvTXRYdng2WDM5UkswX0dKN1ZWY0thdDQ5c05ESlYxSXZjYmZWVURVSnR5NUZ3TzZlWUcwTE5WZUFtczVsU1BibXZHT2tGckk?oc=5"
+  },
+  {
+   "about": "$SPY",
+   "title": "SPY Nov 2026 749.000 call (SPY261127C00749000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Thu, 15 Oct 2026 12:34:05 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fVklqX0tweEtXQnR0UVdLZ1hGbV9hZHZCLW5QeGlQbXEzeGZ6dzZGSW1rMi1aWmJidFZsa1RNM2hMQzRxeVNHN212aWxGbWFPdDFSSU1BY0tqUW5vVFd4aEp1M2s?oc=5"
+  },
+  {
+   "about": "$SPY",
+   "title": "SPY Oct 2026 735.000 call (SPY261019C00735000) Interactive Stock Chart - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Thu, 15 Oct 2026 15:39:52 GMT",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tLUozVXIxc2RHUWdFVXg1a3lxeG1EYVM1a0xLZUtKN3FuUkxmZzIwUHlkdXhXZXNvdlBWdU5fUVpDS3VKa1JVWTQydm03MUJkZ2p3a2ZrWVRLMkN1QkVPeWg3OFpWUmV2d1VrVw?oc=5"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "Sector Update: Financial Stocks Advance in Afternoon Trading",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:50:18 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-advance-afternoon-175018660.html?.tsrc=rss"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "Citi Stands Behind 2 Crypto Stocks as Its Top Picks for the Rest of 2026",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:30:00 +0000",
+   "link": "https://finance.yahoo.com/markets/crypto/articles/citi-stands-behind-2-crypto-173000818.html?.tsrc=rss"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "What The PNC Financial Services Group (PNC) Said on Its Q3 Earnings Call",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:02:24 +0000",
+   "link": "https://www.marketbeat.com/instant-alerts/transcript-what-the-pnc-financial-services-group-pnc-said-on-its-q3-earnings-call-2026-10-15/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "XRP Just Lost $1.35. How Low Can It Go?",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:00:52 +0000",
+   "link": "https://247wallst.com/investing/cryptocurrency/2026/10/15/xrp-just-lost-1-35-how-low-can-it-go/?.tsrc=rss"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "Centel USD (CNT40578-USD) Latest Stock News & Headlines - Yahoo Finance - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Thu, 15 Oct 2026 07:04:33 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5mLURiMnVuSGd5dFZQWXEtVXlxRDVLOUNLOXVuZGhDM3BXSnp3LUZ6enI3Q2ZLb1czYnAwampDbVdHX2pBUl92M0F0OWxMb1RVWlJCM1ZfWUN3T0s1NllBTXBJbw?oc=5"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "DRESSdio USD (DRESS-USD) Latest Stock News & Headlines - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Thu, 15 Oct 2026 09:13:10 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QaWFCaHRkVDJpV3RTc0FKbWJpNDhtRDI4eVAtaDdVS292Qm1Nbld6LXB2QVlUWG4tZjFpVy12WGNSZGxhNFhzNTQ3ME9nRnpWcWx0X0toeHpsQ0J2NGJJ?oc=5"
+  },
+  {
+   "about": "$BTC-USD",
+   "title": "Eli Lilly Tokenized Stock (Robinhood) USD (LLY40720-USD) Latest Stock News & Headlines - Yahoo Finance - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Wed, 14 Oct 2026 19:37:36 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9WRFoyTmxDTUJvUTNQR0lGQnp0VENCMFpFY3Z3UzA3OWd5NDgyWDR2cnpqVFQ2SExWekU2OUpjNGtnX1dHcFlmN05EejlvQ0w3R0dXR3dBZzQ2U2Y2N1E1WHIzdw?oc=5"
   },
   {
    "about": "$QQQ",
-   "title": "Can You Buy Stocks With Crypto? Bybit Adds 1,000 US Stocks, but Not Every Version Gives You the Shares",
+   "title": "Exchange-Traded Funds Higher, US Equities Mixed After Midday",
    "source": null,
-   "published": "Thu, 15 Oct 2026 16:30:43 +0000",
-   "link": "https://247wallst.com/investing/cryptocurrency/2026/10/15/can-you-buy-stocks-with-crypto-bybit-adds-1000-us-stocks-but-not-every-version-gives-you-the-shares/?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 17:12:51 +0000",
+   "link": "https://finance.yahoo.com/markets/articles/exchange-traded-funds-higher-us-171251323.html?.tsrc=rss"
   },
   {
    "about": "$QQQ",
-   "title": "QQQ is down 0.5% today, on LRCX stock price movement - Quiver Quantitative",
+   "title": "Meta Just Climbed 12% in a Month: Take Profits, or Hold On for the Ride?",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 18:24:41 +0000",
+   "link": "https://247wallst.com/investing/2026/10/15/meta-just-climbed-12-in-a-month-take-profits-or-hold-on-for-the-ride/?.tsrc=rss"
+  },
+  {
+   "about": "$QQQ",
+   "title": "ServiceNow Climbs 5% After Denying Decagon Acquisition Interest; Salesforce Rises 4%, Palantir Dips",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 16:58:00 +0000",
+   "link": "https://247wallst.com/investing/2026/10/15/servicenow-climbs-5-after-denying-decagon-acquisition-interest-salesforce-rises-4-palantir-dips/?.tsrc=rss"
+  },
+  {
+   "about": "$QQQ",
+   "title": "Michael Burry's 'Red October' Warning: Why QQQ, SMH Could Face More Pain - Invesco QQQ Trust, Series 1 (N - Benzinga",
+   "source": "Benzinga",
+   "published": "Thu, 15 Oct 2026 18:04:31 GMT",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWXRSWUF5eWVDNzd1VzJ6WE5GbjE4RWpGYWZadGkwVWZwOExBLXBiSV8wZDBYSE9DTFJ3a1FOaS05RGxuRlhvWm5lVkpIZjBQbFZmQ2Mya1RCVGlYY3k1bGd6Y3F6OFBoX0pEcE81QkpLNTY3QmRzQ2lCUF9JRkl2QTJuYWZSOEdZVVBIN2pTeHd4eG9rRjZlTmxaaVBTSV9JcVVUWmJB?oc=5"
+  },
+  {
+   "about": "$REAL",
+   "title": "Why The RealReal Stock Popped on Thursday",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:18:32 +0000",
+   "link": "https://www.fool.com/investing/2026/10/15/why-the-realreal-stock-popped-on-thursday/?.tsrc=rss"
+  },
+  {
+   "about": "$REAL",
+   "title": "Why The RealReal Stock Popped on Thursday - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Thu, 15 Oct 2026 17:18:32 GMT",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWkM1WHZmZGVWN0lWY21WUGZvR2hDVmxONUVVMWZWTkYyekFNb0dqX29FMFdRUEpaZkRldkR0YktzODlWY2kxcC13dzcycmE1UzVMeWZnOGFRMHJnNUs4YXBHR1BoRzJ5RUh5dnVSSFFxVm1naUdrdXJUeHRvMFE3aTctdkliZXBzd0doRTk3MEQ0WTlQSDVXNzJZRTFGUFNC?oc=5"
+  },
+  {
+   "about": "$RXRX",
+   "title": "RXRX Stock Heads For Its Best Day In Over A Year \u2013 What\u2019s Driving The Rally Today?",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 17:59:15 +0000",
+   "link": "https://stocktwits.com/news-articles/markets/equity/rxrx-stock-heads-for-its-best-day-in-over-a-year-what-s-driving-the-rally-today/cZxhcH4RBrX?.tsrc=rss"
+  },
+  {
+   "about": "$RXRX",
+   "title": "RXRX Stock Heads For Its Best Day In Over A Year \u2013 What\u2019s Driving The Rally Today? - Stocktwits",
+   "source": "Stocktwits",
+   "published": "Thu, 15 Oct 2026 18:05:57 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPR0hiVmpIendvU3BIYmpHRGRLSnlSNEZKcUtPbGpMSUdsbEZualpwbjdRQ3l3Q0hyTzZZdXVmcFBfSlZ3OE5TWmlGTkNoZUxWbHUwRGM1cmd0YVFydnNVaVlGYjNwQlNtWHFDdE9zNlRYVHQ3NTFDVWFReHVoWThSQnd2aXlGaWIyWWQxQ0JJTkgwcVo4a2J3UDEwa0JNS0VtNzB3MXZKX3dUTlF6c09nUHJOM1ZDTXJXRDQzV2tiWHZBNVlndUFqZjBBVWNWNFhLREhRajJTYkdaZE0?oc=5"
+  },
+  {
+   "about": "$RXRX",
+   "title": "RXRX Stock Draws ARK Buying As AI Deals Deepen - StocksToTrade",
+   "source": "StocksToTrade",
+   "published": "Thu, 15 Oct 2026 16:34:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS1oyNndPTy1hZ09CZndRTmJ0cmhpRWxlLTNBOVhSSEhZNW8wd2x2QVByNzFSOUNwMEw1OXJoRURiRldhWG5UUFQ1OE5FaHNrZm5ha3lYbjc5TlduekIyVHhVRUVIX2gyVzBWcnptQUZtNC1DZHlwMWRubEh6dlFDeFVGLVVmZGJXNGc?oc=5"
+  },
+  {
+   "about": "$RXRX",
+   "title": "Recursion Pharmaceuticals Jumps After Sanofi Milestone, Clinical Updates, and $200 Million Financing - Quiver Quantitative",
    "source": "Quiver Quantitative",
-   "published": "Thu, 15 Oct 2026 16:15:00 GMT",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTzF6UmUyUHd0ZUoxYmdMUjBwYWk3VkgzRVpneUlpN2Mxd2swbW5SMGNSblBYTFR6dFZEMkg5M3NNUXlmbjAzb2V3S0ZHZHBtUUZjNGdnU2J3U3k4YjFJNDVxdjhJSmtLTDgzYVNiUUtOazJmaDBlZDk5QlNwMXJIaDRzbk1CeWx1MV9sM0hZUWNVR0E?oc=5"
+   "published": "Thu, 15 Oct 2026 17:35:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTUhMY0pvMDNYSEExR3BTclBFVUNxVW5vdDFESUduOTR3aF9mcHFfRERjRURFa0ZvSEJ4MFUtUWxhcFNocm5CZzJrOU1yZXlzbUlKSGthOWhuLWFhQ3loTmZWWGpEclExc2d4MTZYZXVnbGpwTXlFcEJENWlmRlBkZDVfYUgwWWlfUjhIaXFUR0F0R08zN2R3QXllaDFtSTBucVFOa25SVnJaYThjMFB6M3p1SndIX0duZjR2bkRNUmR3M202RmpRVWtuVTNWWGJoRTlweWZB?oc=5"
   },
   {
-   "about": "$QQQ",
-   "title": "QQQ Oct 2026 737.000 call (QQQ261015C00737000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+   "about": "$RXRX",
+   "title": "Recursion Pharmaceuticals: Sanofi News And Fundraising Sum Up Flawed Bull Thesis (RXRX) - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Thu, 15 Oct 2026 18:51:47 GMT",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkZ6UWJ6SDFrekNMWUpTRDFZWDJFSjRYNkhWdVY5c09KMHFLNXVpQjhXZXRDcDFQUTVERk9faDlDRF82cjJUMUxXWlMzWHlwUVdFN3lzMV9zd2lkMHlXWlhOSXZsXzEyZHZxendiNFRuTmZ0cENZSXF2Tl9RUEZlZjRUMGVmd08xWVpCOW9vMHFhdkNjNEtfRWY0MzJ0TEJ6ckF4TTlOeTQzZEVyZ2c?oc=5"
+  },
+  {
+   "about": "$UWMC",
+   "title": "Is UWM Holdings (UWMC) the Most Expensive Cheap Stock in Mortgage Lending?",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 18:15:39 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/uwm-holdings-uwmc-most-expensive-181539674.html?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "What Do The UWM Holdings (UWMC) Lawsuits Mean For Investors?",
+   "source": null,
+   "published": "Thu, 24 Sep 2026 18:12:56 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/uwm-holdings-uwmc-lawsuits-mean-181256552.html?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "UWM Holdings (UWMC) Stock Looks Fully Priced As Shares Fell 79%",
+   "source": null,
+   "published": "Thu, 24 Sep 2026 15:11:57 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/uwm-holdings-uwmc-stock-looks-151157262.html?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "UWM Holdings Corporation Announces Terms of Previously Announced Rights Offering for 200 million shares of Class A Common Stock",
+   "source": null,
+   "published": "Tue, 22 Sep 2026 20:01:00 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/uwm-holdings-corporation-announces-terms-200100253.html?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "Why UWM Holdings Stock Dived by 20% Last Month",
+   "source": null,
+   "published": "Mon, 07 Sep 2026 22:51:26 +0000",
+   "link": "https://www.fool.com/investing/2026/09/07/why-uwm-holdings-stock-dived-by-20-last-month/?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "UWM Suspended Its Dividend and Raised $2.05 Billion From Oaktree After a $451.9 Million Quarterly Loss",
+   "source": null,
+   "published": "Thu, 20 Aug 2026 02:35:00 +0000",
+   "link": "https://www.fool.com/investing/2026/08/19/uwm-suspended-its-dividend-and-raised-205-billion/?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "Stock Market Today, Oct. 13: Rate Pressures and Analyst Downgrades Weigh on Rocket Companies",
+   "source": null,
+   "published": "Tue, 13 Oct 2026 21:55:32 +0000",
+   "link": "https://www.fool.com/coverage/stock-market-today/2026/10/13/stock-market-today-oct-13-rate-pressures-and-analyst-downgrades-weigh-on-rocket-companies/?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "FICO Is Cutting 15% of Its Workforce After Losing More Than Half Its Value",
+   "source": null,
+   "published": "Wed, 07 Oct 2026 12:54:26 +0000",
+   "link": "https://247wallst.com/investing/2026/10/07/fico-is-cutting-15-of-its-workforce-after-losing-more-than-half-its-value/?.tsrc=rss"
+  },
+  {
+   "about": "$UWMC",
+   "title": "Is UWM Holdings (UWMC) the Most Expensive Cheap Stock in Mortgage Lending? - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Thu, 15 Oct 2026 18:15:39 GMT",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNblp2NVZCQV9DZ2xjMmxaVHMzelNicVhoN29FSDFxUU5ocHdBbzdJMGdMMWpUNmFfQS1Wc3JNOThxc3RHV3dKMUl5SFJYUnEzZWpnVFhCal9rbmNEZHppbEdhajJOVVVQNHpEQ1gyTlNMbFBMeUFvdldtRnZwdjhlbXhOV1cwVzJpOHRxXzJxSzRQMnd1eXBEUWJxSG91QQ?oc=5"
+  },
+  {
+   "about": "$UWMC",
+   "title": "UWMC Oct 2026 3.000 call (UWMC261016C00003000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
    "source": "Yahoo! Finance Canada",
-   "published": "Thu, 15 Oct 2026 16:57:13 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWVHd6dUtKMGludlNSQ29wM1hzMHp2MGwwbFQ0SF9jRUJ0SS1xY1EyNWJJeHFRY2R3U2FWdlBfdlM2MXdsa0xHNVZNREVhbUkyY2JvSEU0bFRkRzRPODZQekdnTEI?oc=5"
+   "published": "Thu, 15 Oct 2026 05:27:01 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8zZDRiS3RzNk5ZY2tfQzUteWNwYlEzTTdNX2dEdERuS0ZzOWFWQmJyYUdrX0xKZklNYkFuNEI5N2czQkttdUN1WVBlV21Pc0JERGhvS05uZ1ZwX3BPNlZHNGtGM1poZw?oc=5"
   },
   {
-   "about": "$QQQ",
-   "title": "QQQ Oct 2026 739.000 call (QQQ261015C00739000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Thu, 15 Oct 2026 14:39:36 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NcDBZRk43cWJwNnQxYUNXM0htRjd1WTUteTk4ckYxal92TjV1ckkwVTJSU3RiWlZxUGhsSVRZaVNfUEtnZk1RRUNxMklnZGphSW5sYk11d1RwbTVjMFBDTXljdXQ?oc=5"
+   "about": "$UWMC",
+   "title": "Problems at Dream Finders Homes ($DFH) - Hunterbrook",
+   "source": "Hunterbrook",
+   "published": "Thu, 15 Oct 2026 14:36:31 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnWmNqeFdPam5zR09XTncxOS1GMTNORnlJWWxveGY1RWVXOE92RldyaDhFLTRaNUR3aGt0RFFpRUNKUTVwMmppS0xnRTI1LVlwdmFlcnk0eVU3YW8?oc=5"
   },
   {
-   "about": "$QQQ",
-   "title": "44,153 Shares in Invesco QQQ $QQQ Acquired by Sanders Morris Harris LLC - MarketBeat",
+   "about": "$UWMC",
+   "title": "Problems at Dream Finders Homes (DFH) - Substack",
+   "source": "Substack",
+   "published": "Thu, 15 Oct 2026 14:30:15 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE85bnE2by1mX05sNTNJYUxxX25NRkYxeXk4WWFFNWtqNDd4NE1OMXc0N1BiSGNlTDhBRnFTdkl0YklNMGVtTHc3VEZPODVJeDNuZUxETDhVekdNS3A1NXNrVmcyUGtmMm84aFBXWXpaMHdfNUpLVlc5Z25R?oc=5"
+  },
+  {
+   "about": "$UWMC",
+   "title": "Rocket Cos. Inc. stock underperforms Wednesday when compared to competitors - MarketWatch",
+   "source": "MarketWatch",
+   "published": "Wed, 14 Oct 2026 21:29:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdXB5WlpoallJYzdHVUFFUllLRmU3ZXVKcmhfOTZxaWVlN0Rfc3JqNE00cUw1ZnU1TDMtc3czMjJtVHBNbThNYU1rM2NObHV3bmQ2NEllN25XQ28xeDNMX1dUbG8xYUxZa1hjU0dEYkhJc3VMdHRXS0Z4NVQtYlRncm9Mc2hCbkE3OXdINXV4Q19DY3R5bi1KTDlMNVBwQldPOXFPbTV4aEh1OXRTcnFHYmlONTJsU05sQzRtOV90QTZ0eDNrZ0paYWkxN3BmUVhtdXFFWjVubmg0X2VvWldhM1dtTDZMdw?oc=5"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix (ENVX) Stock Fair Value Moves Lower After Analyst Target Cuts",
+   "source": null,
+   "published": "Thu, 15 Oct 2026 01:15:28 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/enovix-envx-stock-fair-value-011528377.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix stock surges on 100,000-unit drone battery order",
+   "source": null,
+   "published": "Wed, 14 Oct 2026 12:46:56 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/enovix-stock-surges-100-000-124656511.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix Receives 100,000-Battery Drone Order",
+   "source": null,
+   "published": "Tue, 13 Oct 2026 20:58:00 +0000",
+   "link": "https://finance.yahoo.com/technology/articles/enovix-receives-100-000-battery-205800632.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix Q3 Revenue Rises 38% to $11 Million, Exceeding Guidance as Defence Demand Grows",
+   "source": null,
+   "published": "Mon, 12 Oct 2026 12:35:34 +0000",
+   "link": "https://investorshub.advfn.com/market-news/article/37878/enovix-q3-revenue-rises-38-to-11-million-exceeding-guidance-as-defence-demand-grows?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Q3\u201926 Revenue $11.0 Million Up 38% Year/Year",
+   "source": null,
+   "published": "Mon, 12 Oct 2026 11:30:00 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/q3-26-revenue-11-0-113000019.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix\u2019s TAA-Compliant Battery Manufacturing Strengthens Position with U.S. Defense Supply Chain",
+   "source": null,
+   "published": "Tue, 01 Sep 2026 23:09:00 +0000",
+   "link": "https://finance.yahoo.com/technology/articles/enovix-taa-compliant-battery-manufacturing-230900467.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix (ENVX) Plans to Double Drone Battery Capacity. Is a $183M Pipeline Enough to Justify the Expansion?",
+   "source": null,
+   "published": "Tue, 25 Aug 2026 20:13:38 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/enovix-envx-plans-double-drone-201338874.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "What Does Enovix (ENVX) Leadership Turnover And Korea Expansion Mean Now?",
+   "source": null,
+   "published": "Fri, 21 Aug 2026 08:11:00 +0000",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/does-enovix-envx-leadership-turnover-081100612.html?.tsrc=rss"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix Corporation (ENVX) Stock Price, News, Quote & History - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Thu, 15 Oct 2026 02:01:38 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iRWZfdW5tMzVZZWVUVUEzQ2NYYkNtYTk1VG85d0pyVEFERnVpZWlEM1RfZG5TRVBxT2p5azN5MlBrcmlLdXpqZ2dnTjB6Zw?oc=5"
+  },
+  {
+   "about": "$ENVX",
+   "title": "symbol__ Stock Quote Price and Forecast - CNN",
+   "source": "CNN",
+   "published": "Wed, 14 Oct 2026 15:31:59 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5RY1R6a1p2bTZlN085LWlMM1l5OVJGSjh2UG5NbHF4SHFxa0JGd2luc091WG9rcGo2NFlsd0Y4Umw0V3JYU1pMNjAzODEwUXdn?oc=5"
+  },
+  {
+   "about": "$ENVX",
+   "title": "Enovix's 100,000-Battery Drone Order Sets Up a Test of Its Production Plans - MarketBeat",
    "source": "MarketBeat",
-   "published": "Thu, 15 Oct 2026 08:32:29 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZWJZeGlveEdYeEJiUXJlVEJ4SU94T0dBUVc5V0xDR3Y4c0V5Yko2Y1Q5ZW9HbFh0bVAzSUF4cGNJMVlOWjk5OVZ2QTBCcGVWR1pkcUZXQllYTjNsWUlKTVJFZW93bHh2WmNReldvYlV1RTVNQjl3ZWY2Sl95YlNEOFNYdlRWQzlIUGVWOGxLTFNnLWVyR0ZOQ3h6S1pKUHp1SU1KMnNoTUtrTTlnMk5IZVlkSlVIUFRKcFQyR2w3SWloNFRydXdLMDdR?oc=5"
+   "published": "Thu, 15 Oct 2026 17:58:29 GMT",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbW1WWk50MVhHQXhuMGpnMkhzTmFEdDhpLUg5SW0tTzJMb1dBY3Y4LWVBUVdBajRGN0gzUEF0N3RYdEJqejhTS1FfRWRmYTB5NGRtbjBsWXNIZXNBd2piT3FzQjJ1U19DOXNwUTFtTkV5QVNYX202NEJ0aUJ4U21DaGZncWNzaUc1T2w2V1dRZTc1NzVaM2JCQk44Q0xoY2YzMDRmLVFUaWw3UzRoRExDbQ?oc=5"
   },
   {
-   "about": "$QQQ",
-   "title": "QQQ Oct 2026 742.000 call (QQQ261015C00742000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Thu, 15 Oct 2026 14:39:38 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qVmxZT1ozVWR5WDJSOXhaZnlvVl9aOENNODk1dHBUMWVpNElvNnI4OTd5bWhHZ05hSWRNMndiX29mb2tlc1NfUkxpaWpkRGZpRFM0ME5GMHlfZGx0SVZmWGRocHA?oc=5"
+   "about": "$ENVX",
+   "title": "Biggest stock movers Wednesday: DELL, LQDA, ENVX and more (BAC:NYSE) - Seeking Alpha",
+   "source": "Seeking Alpha",
+   "published": "Wed, 14 Oct 2026 08:57:50 GMT",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN3dCbk5DX3BIaGJ3THNCbzZzbENMX09xNzdOX1pPTDUwWTFNLUxxNnF0anpDZlp6QkZ2YU5NMVo4cXhQNURld3U1Zm10bmpCUk5BcjZpOUhPZDhCZ3FBMklvVmZvc3NqOTN4LTluWFlORE5teGptNWJJOEQ5eHVBbEZsTXFzTmoyZzl0d1lXOE5vMWhfUnhJ?oc=5"
   },
   {
-   "about": "$BTC-USD",
-   "title": "Stock Market Today: Dow Strengthens, Nasdaq Contains Losses; eBay Surges 5% (Live Coverage)",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 16:35:41 +0000",
-   "link": "https://finance.yahoo.com/m/27f9f9ee-5b06-3a78-a91a-ddc2a33bd2d2/stock-market-today%3A-dow.html?.tsrc=rss"
+   "about": "$ENVX",
+   "title": "Enovix (ENVX) Stock Fair Value Moves Lower After Analyst Target Cuts - Yahoo Finance",
+   "source": "Yahoo Finance",
+   "published": "Thu, 15 Oct 2026 01:15:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSTNTT3BOV0t2YUl5RHNxeWdBdTMtNGhydXA5Q2t5MzJkWk1NTTNVNTNrYTQzZFdQcXF5Zng4R3BKdTNfN3FsbkNkYkdOR051SjBYOVBBRks1Zm5EUF8teEtXb3d5YnFfQUVGemNWMmNnS0RFQVpWSm42VERWN3owUzRfNnZ2VDVwclFUWWtDOE1NOEdwbGRYZw?oc=5"
   },
   {
-   "about": "$BTC-USD",
-   "title": "Can You Buy Stocks With Crypto? Bybit Adds 1,000 US Stocks, but Not Every Version Gives You the Shares",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 16:30:43 +0000",
-   "link": "https://247wallst.com/investing/cryptocurrency/2026/10/15/can-you-buy-stocks-with-crypto-bybit-adds-1000-us-stocks-but-not-every-version-gives-you-the-shares/?.tsrc=rss"
+   "about": "$ENVX",
+   "title": "Enovix Corporation (ENVX) Stock Is Trending After Hours: Here's Why - TradingView",
+   "source": "TradingView",
+   "published": "Wed, 14 Oct 2026 03:57:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMmV3amdHYi1sOGtQLWt5eFQwcHY4UUNmVUFLdUFUbWI2aTlyNDJ2QmZFNk50YTZfcXpuZi1uaTJQakdxWmhQdW9Qa0Y4MGxCV0hWYzh2Vzg3bjg3MGU1bGZlUldaRUFqNE5ZbDkzQzRQLWd5S3JfcjJEMjhzMkh1Q2dYdUN4OFlETzVpeGRGdzRqQ1dHZW9hRFJpU0dHbWZIc05OaWRqcFEzOFlENzd6S2hQaUtFTC1tWTEzUFh6QUY?oc=5"
   },
   {
-   "about": "$BTC-USD",
-   "title": "Better Buy for the AI Boom: Bittensor or Bitcoin?",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 16:00:19 +0000",
-   "link": "https://247wallst.com/investing/cryptocurrency/2026/10/15/better-buy-for-the-ai-boom-bittensor-or-bitcoin/?.tsrc=rss"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "TeraWulf Stock Keeps Falling, but Morgan Stanley Sees 463% Upside",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:57:00 +0000",
-   "link": "https://finance.yahoo.com/m/df042861-a0fa-3db2-9157-6559fe2d6881/terawulf-stock-keeps-falling%2C.html?.tsrc=rss"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "Larry Fink warns data center halt would cause recession",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:53:16 +0000",
-   "link": "http://videos.coindesk.com/previews/ROWIn5Qy?.tsrc=rss"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "Bitcoin Whipsaws as Crypto Liquidations Near $1 Billion",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:20:41 +0000",
-   "link": "https://decrypt.co/381044/bitcoin-whipsaws-crypto-liquidations-near-1-billion?.tsrc=rss"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "Canadians Sent $2.36 Billion Of Crypto Overseas In Year\u2019s First Half",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:01:00 +0000",
-   "link": "https://www.cryptoprowl.com/releases/canadians-sent-236-billion-of-crypto-overseas-in-years-first-half-7326?.tsrc=rss"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "This Crypto Has the Easiest Path to 10X by 2030",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 14:56:14 +0000",
-   "link": "https://247wallst.com/investing/cryptocurrency/2026/10/15/this-crypto-has-the-easiest-path-to-10x-by-2030/?.tsrc=rss"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "BTC USD Bitfinex Advanced Chart - Investing.com",
-   "source": "Investing.com",
-   "published": "Thu, 15 Oct 2026 13:29:07 GMT",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GdUZ0LURsQ1dzaC1oMDVjdTNWSm5rWUpJRm5QdGNNRjdMT3l4ZzdlUkhVVkxRYU9yM2I2WTlNZGtHUmh2R0pVSmIwTFJsdmM1Tllyay05TEZHY3FoUUdzWlZjbktPYlNLVndoeXpSMFc?oc=5"
-  },
-  {
-   "about": "$BTC-USD",
-   "title": "Justice for HeeHaw USD (HEEHAW-USD) Latest Stock News & Headlines - Yahoo! Finance Canada",
-   "source": "Yahoo! Finance Canada",
-   "published": "Wed, 14 Oct 2026 06:45:29 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QU1hLblllQnkzMWltUkxGQlJpNFlhSlljU3lndU9aa1hpdGFJajlwT3NndENvSXN3eHRZZUlIbTV5S2FERW1maWdrMUw0b2tId0lyV0hjckJxWjA5S20zUg?oc=5"
-  },
-  {
-   "about": "$OPK",
-   "title": "Labcorp outlays up to $872m to acquire BioReference\u2019s laboratory assets",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 16:11:26 +0000",
-   "link": "https://www.medicaldevice-network.com/news/labcorp-outlays-up-872m-to-acquire-bioreference-laboratory-assets/?.tsrc=rss"
-  },
-  {
-   "about": "$OPK",
-   "title": "Labcorp to buy BioReference assets for up to $872M",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 15:18:59 +0000",
-   "link": "https://www.medtechdive.com/news/labcorp-to-buy-bioreference-assets-for-up-to-872m/833116/?.tsrc=rss"
-  },
-  {
-   "about": "$OPK",
-   "title": "Doximity Deepens U.S. News Alliance to Improve Patient Access to Care",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 14:45:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/doximity-deepens-u-news-alliance-144500626.html?.tsrc=rss"
-  },
-  {
-   "about": "$OPK",
-   "title": "OPKO Health (NASDAQ:OPK) Shares Gap Up - What's Next? - MarketBeat",
-   "source": "MarketBeat",
-   "published": "Thu, 15 Oct 2026 15:19:48 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUE9Rb1JndEZVLVk2N1NqZTlSTnNQQmUtU2ZoRDNBbDNRVHU4ZFFEdzBsTnRiNHk5bnhYRVN4Z2JjakFOMTJkdGU1bnZ1N3E1czJxbEM2RVNxZTZkMGk1eVdwZW5PX3o4QVRRVnBDeXgwUmtrVy1HQ0gwcVo5SWp4TmliSy1iV2R0WF9lc3hGZ2pyd3J5MmtMSGQwdHhmdXNEaEt2emVsV3VmbFE?oc=5"
-  },
-  {
-   "about": "$OPK",
-   "title": "Why Is Opko Health Stock Gaining Thursday? - OPKO Health (NASDAQ:OPK), Labcorp Holdings (NYSE:LH) - Benzinga",
+   "about": "$ENVX",
+   "title": "Enovix Shares Jump 11.55% After 100,000-Unit Drone Battery Order - Enovix (NASDAQ:ENVX) - Benzinga",
    "source": "Benzinga",
-   "published": "Thu, 15 Oct 2026 15:41:34 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPckQ5Sk5vbVowcXJlU1pmY2NYVERSU0JWbzJRQWdub0dOUmpfamV2aHVDZkZSbEdWbDc1eEI4ejNLSUNfVi0zS1ZLYklEQ3d5MU51NHhycW1nb1FWSVM4dUNyWk8ya2dma1dzZ0l5eEZVdl90bHI2QnVsYXRVS0M3MHBPZkdYVzh6cEpzTmdYR3RkNzJOSWxhekJkcTRTNXdiRnVVemVvd2xyQQ?oc=5"
+   "published": "Wed, 14 Oct 2026 03:57:53 GMT",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSEp2M09xUDVxZGx4RlEyRHZRVC16dUNPVTA5ZVZaXzJZVFV5clNlNUZCNkg1MG1YdGF0ck5lOGpXVmhKTzNiMnBGYTM3TTFaWXZJN0RIa1V5YlRfT0REMmRBMFlERHExVGFVNDczVlJoNTJwckcxS0pLY05xVDJLZ2VKNXpobEFtVThtTG9UT29BVDV2RHMtTXo3aw?oc=5"
   },
   {
-   "about": "$KRMN",
-   "title": "Karman Holdings (KRMN) Stock Sees Fair Value Edges Lower As Analysts Trim Multiples",
+   "about": "$ENVX",
+   "title": "At $2.50 each, 936 and 3,359 Enovix (ENVX) shares were withheld for its legal chief\u2019s taxes. - Stock Titan",
+   "source": "Stock Titan",
+   "published": "Tue, 13 Oct 2026 23:00:34 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcEFhOWtXeHdWRFBsbk05S2xIS2l4MFRMS0RTYUJzSElYdHBWYTJEdFlQUWxWbW1MTEo3NzRQa2ZYVUVaRnZKdTFXR0dwNXpNdWpUb05rZlFvZ3JHTkFybWJmRlpFa2VUV3VIQ3Z3MUhtRUxzb2lOdHBRTENFVmJDVmVvWEYxVUdsSms0QnJrY1BKaHF6eF9hVU1jcVdNbDg4ZkVUN2ljUVo?oc=5"
+  },
+  {
+   "about": "$APPN",
+   "title": "nCino, Appian, Autodesk, The Trade Desk, and AppLovin Stocks Trade Up, What You Need To Know - The Chronicle-Journal",
+   "source": "The Chronicle-Journal",
+   "published": "Thu, 15 Oct 2026 18:35:00 GMT",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaHZHazBRaEhSS05jWFRfR3lfcnVxRXRkSklVakd5X3lkbUxWeUtkZGN1RlJoYjgyekFXSC01OXBlSGJsdjZ2VVlybE9NYWVISUFoU19KRnNucHRxN3VpSVkyTzF3aXg1NWFDMVpGa3FzRU5MNWR6c21OMXJXaTNwR0pHaS1jQ3dWSG1uVkdvTll6Sm5LaUh0UC1rTVJGR1lHZnBjd040TEMtNHVYSGtJOTg3SmhpcUUyeG5ISkxjUFhLRkx6TW9LQkdyREFuZDNVTExIOGFudktpTm85dzViNkcxMVVtNDVQenpEODkzQ3poLXQ3RWF1dS1FdGoyNVE?oc=5"
+  },
+  {
+   "about": "$APPN",
+   "title": "Arista Networks, Lam Research among market cap stock movers on Thursday - Investing.com Australia",
+   "source": "Investing.com Australia",
+   "published": "Thu, 15 Oct 2026 18:10:27 GMT",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOG9vYWRtMG5iXzRnOG9KXzh4UG9NX2NhZHZpdTZWVGVJM29NdmhWZktEU0M4cjR2ZGpNRnlTTi1hN0N6ZjdKUEFvX19Rdm9sbDhid2FGWmYyTTI2dEZRdTRVV2pEM3o1QnFwNUFEYVVaVjYwME8zQXJnZ3lSRGtsTGtidWt3UEpvV20xOUVmLVViaXhMeFhlczlrQmRqV3lYNHNISE9TWmJWTXA1YTloM3RZSlRvdEd2WEN0ZElNbGVkNFEtQXB6LTJEdw?oc=5"
+  },
+  {
+   "about": "$APPN",
+   "title": "Appian Corporation (APPN) Options Chain - Yahoo! Finance Canada",
+   "source": "Yahoo! Finance Canada",
+   "published": "Thu, 15 Oct 2026 09:19:32 GMT",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONElFWGF4Q01WeTNaWVhxeTJVYVA3ZmpWNXBCdk9OQ0Z4LUdfcHVKQjJ2eVhZejIwak1laktiM0xSTU43aUxqV1IwX2FrQUN2Ny1wMGtVN0dmT1B2S0lsaVdEdFZEckRxUjllUUQ5ODNsaXRCSzliUk9BQURUUTFlSjJ5TjVYemg0QnlVc29Gbm1RUQ?oc=5"
+  },
+  {
+   "about": "$OPEN",
+   "title": "OPEN Stock Slumps Below $2 For The First Time In Over A Year: Opendoor CEO Defends Homeownership \u2014 \u2018Home Is Not Just a Financial Asset\u2019",
    "source": null,
-   "published": "Mon, 12 Oct 2026 23:23:30 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/karman-holdings-krmn-stock-sees-232330842.html?.tsrc=rss"
+   "published": "Thu, 15 Oct 2026 08:53:12 +0000",
+   "link": "https://stocktwits.com/news-articles/markets/equity/open-stock-slumps-below-2-for-the-first-time-in-over-a-year-opendoor-ceo-defends-homeownership-home-is-not-just-a-financial-asset/cZxWYBHRBAj?.tsrc=rss"
   },
   {
-   "about": "$KRMN",
-   "title": "David Stinnett Purchases 27,000 Karman Holdings Shares for $1 Million. Is the Defense Contractor Now a Buy?",
+   "about": "$OPEN",
+   "title": "Why Did RKT, OPEN, SMR Stocks Plunge To 52-Week Lows Today?",
    "source": null,
-   "published": "Tue, 29 Sep 2026 22:07:01 +0000",
-   "link": "https://www.fool.com/coverage/filings/2026/09/29/david-stinnett-purchases-27-000-karman-holdings-shares-for-usd1-million-is-the-defense-contractor-now-a-buy/?.tsrc=rss"
+   "published": "Tue, 13 Oct 2026 03:18:30 +0000",
+   "link": "https://stocktwits.com/news-articles/markets/equity/why-did-rkt-open-smr-stocks-plunge-to-52-week-lows-today/cZxB2cERB8x?.tsrc=rss"
   },
   {
-   "about": "$KRMN",
-   "title": "Karman Moves to Counter Bearish Concerns Ahead of Q3 'Clearing Event,' RBC Says",
+   "about": "$OPEN",
+   "title": "Opendoor Has Lost a Half of Its Value in 2026. Is It Time to Buy?",
    "source": null,
-   "published": "Mon, 28 Sep 2026 15:30:39 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/karman-moves-counter-bearish-concerns-153039264.html?.tsrc=rss"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Karman Holdings (KRMN) Stock Could Trade At A 26% Premium To Cash Flow",
-   "source": null,
-   "published": "Fri, 25 Sep 2026 13:12:52 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/karman-holdings-krmn-stock-could-131252712.html?.tsrc=rss"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Karman Holdings (KRMN) Jumped, What Is Behind The Move?",
-   "source": null,
-   "published": "Fri, 25 Sep 2026 05:11:25 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/karman-holdings-krmn-jumped-behind-051125318.html?.tsrc=rss"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Analysts Warn the Entire Space Trade Is Sitting in Neutral Waiting on One Rocket",
-   "source": null,
-   "published": "Thu, 24 Sep 2026 16:22:31 +0000",
-   "link": "https://247wallst.com/investing/2026/09/24/analysts-warn-the-entire-space-trade-is-sitting-in-neutral-waiting-on-one-rocket/?.tsrc=rss"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Karman Space & Defense Completes Walker Acquisition, Establishing a Platform for Growth in European Defense Market",
-   "source": null,
-   "published": "Tue, 01 Sep 2026 12:30:00 +0000",
-   "link": "https://finance.yahoo.com/technology/articles/karman-space-defense-completes-walker-123000461.html?.tsrc=rss"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Karman Space & Defense to Participate in Upcoming Investor Conferences",
-   "source": null,
-   "published": "Mon, 31 Aug 2026 22:03:00 +0000",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/karman-space-defense-participate-upcoming-220300283.html?.tsrc=rss"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Karman Holdings (KRMN) Reported Record Quarterly Revenue And Backlog - Simply Wall Street",
-   "source": "Simply Wall Street",
-   "published": "Wed, 14 Oct 2026 17:52:45 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaC02RkpIZkV2QS1BY3JkaERjemRPLXNqMm5TcHkzM1dJZFExNzJiaS1PcEc4Qmhha3JZYzdFOU9Hcy02U0NOMGlhNmluenNFR3NXYUxRRGd2QnlIVG5hclJsajVnRG5pUmZEdzJoUVdMRG1qejkxTDd5TlZlWDREZnhlZEJONThBSkc2RGNUVGhXWW51UktrSUg1NHRIaXRuZjFKMTVkNVRUY0ZlclNqTVBhR0gtcmhQSFYxQURkalVWTkxxU2dzbTJsaE5KVEx2VGNj0gHYAUFVX3lxTE5IVENfSW00QjZuZzZkX1BGN1RYVHpKNFprQTRJdVZ4bXZEZWMtS2JpemlBUFRfOWxYa3p3bFA4MGUtbGY5eU5XUk9RTlpjeGlxMjRpMl81QWxVV0E2aElUOTBkNnBpSjdVMEZacW9VWW5xUkRiN2NyUlpjWldSaHBIWF9oYkp6WDlXMnVmcXVtbHhoMTYzQVRDaTFwcHdSQWt3bWN3YXVmY1hnWndWOGRBZkJkb2w3b21YUFpUbV8tWTJYU1l4ZnhPeTdGN1MwY1pKMnI2UU9idg?oc=5"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Midday Stock Roundup: loanDepot Shares Continue Falling - Orange County Business Journal",
-   "source": "Orange County Business Journal",
-   "published": "Wed, 14 Oct 2026 17:00:20 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5MRWF1QTNvcHlfaTdMYWtkVzhhQUdwb2sxRzJVR1BqclBrRTNGZFV0ZHk5Y01iUk5Md2s2NWpJaUhXN1p4aXp6TGFaWm4zTE9DeDNzTHcta0lHdDJpWXdINi15NA?oc=5"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Bouvel Investment Partners LLC Purchases 56,786 Shares of Karman Holdings Inc. $KRMN - MarketBeat",
-   "source": "MarketBeat",
-   "published": "Tue, 13 Oct 2026 23:21:38 GMT",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbVBETlF3cjk0eUVPa3U5cW1Ra000MUE2WXR2Yk9va0taRjFWSkE4Ukt4V01iRTBibnNaUkZxN0tzdEdZYTY0WmxIT2FoMWZxTTVIZDNHMi1BaV9ka0h4OW05TUpLeG90SVZsbEd1dlhwZU1wd29QRlNLWk1nc1NQaFFfV29UVzJ3WHF5U0MwdjhxSi1qR1ZoSzB5QU9oS3hRMlFUVGJCV0JQaklyUEtfZXVTZm9zT19XTGhtdkJRN2Ytd3NPaVJLTS11X1VnS1g3YUU5S2RVVFNhUQ?oc=5"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Karman Sees Unusually Large Options Volume (NYSE:KRMN) - MarketBeat",
-   "source": "MarketBeat",
-   "published": "Tue, 13 Oct 2026 19:45:17 GMT",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON3NkUGRCbkt3NFBKRUYyX1AwSUEzV2NxMk9lOWQ1QU1UUWppdHpTT2VQQi1UODRmdzhacUd2akVSLWhlNS1hdlNIYTNxNy02ZEZZWE1zeENRdUxqNldOM0NJMzlyTm1YNWIxeVpfaG5NYzRXbHJhYzh2TTllSUJXWWlCUWlMR0ozTUdzS0tzbGJsa3poMHlFSHRmb2JWZExxOEd5LUJ5blBDSXZBTmNzTHVrUGI?oc=5"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Top Growth Stocks With Strong Insider Confidence For October 2026 - Simply Wall Street",
-   "source": "Simply Wall Street",
-   "published": "Tue, 13 Oct 2026 17:19:34 GMT",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRUdKNzBRVVJCWklhX2N2a01ELXh6VEwtRGFMMlJ3YXdCRW9LbEJuWW9pVlpJWkl1OUtMSlFkMFU0TmRlWnpXZzdRY3BkUHl5Tlh4cDMyOWJ6dVdqU2lNVUJiVzgyR3lBbkpxRFNqcmg5ZTQzcm1JT21yQ25JVjhmaEw3RUtDUHRUcjZqQ2llT2RqZElHLXQxRVhWUWlMc0F6dUR6LUlycWUtVHQ0cTRMT2dwSUJDQ1JoYnV0aU5Pd2FGZEc5MkQ5eHF1WdIBywFBVV95cUxQRUdKNzBRVVJCWklhX2N2a01ELXh6VEwtRGFMMlJ3YXdCRW9LbEJuWW9pVlpJWkl1OUtMSlFkMFU0TmRlWnpXZzdRY3BkUHl5Tlh4cDMyOWJ6dVdqU2lNVUJiVzgyR3lBbkpxRFNqcmg5ZTQzcm1JT21yQ25JVjhmaEw3RUtDUHRUcjZqQ2llT2RqZElHLXQxRVhWUWlMc0F6dUR6LUlycWUtVHQ0cTRMT2dwSUJDQ1JoYnV0aU5Pd2FGZEc5MkQ5eHF1WQ?oc=5"
-  },
-  {
-   "about": "$KRMN",
-   "title": "Oversold Karman Holdings Surges Back on Backlog Buzz - TipRanks",
-   "source": "TipRanks",
-   "published": "Thu, 15 Oct 2026 15:34:06 GMT",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVFhveW84MVV1azVBTl93TFd5TVNOdXd4Tm1Id0Exd2RlVWJESmIxSVhCc3NuVFpFODN4dEtlb3JkUTBsRmV1T1lKaFgwZlJicVpvNHU1T3pvM004c1FtZ1lKTk81dS0xZ0dPelpRRi1HeDVrdHVtX25jVURVa2Q5a2swek5MbWlFbldpdlptMGhhekY3OHc?oc=5"
-  },
-  {
-   "about": "$RXRX",
-   "title": "Recursion Announces Sanofi Options Potential First-in-Class Immunology Development Candidate from Their Collaboration",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 12:45:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/recursion-announces-sanofi-options-potential-124500030.html?.tsrc=rss"
-  },
-  {
-   "about": "$RXRX",
-   "title": "Recursion Announces Pricing of $200 Million Underwritten Offering of Class A Common Stock",
-   "source": null,
-   "published": "Thu, 15 Oct 2026 12:30:00 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/recursion-announces-pricing-200-million-123000732.html?.tsrc=rss"
-  },
-  {
-   "about": "$RXRX",
-   "title": "Recursion Pharmaceuticals (RXRX) Registers a Bigger Fall Than the Market: Important Facts to Note",
-   "source": null,
-   "published": "Mon, 12 Oct 2026 20:50:04 +0000",
-   "link": "https://finance.yahoo.com/healthcare/articles/recursion-pharmaceuticals-rxrx-registers-bigger-205004289.html?.tsrc=rss"
-  },
-  {
-   "about": "$RXRX",
-   "title": "What Could Go Wrong With Recursion Pharmaceuticals Stock?",
-   "source": null,
-   "published": "Thu, 08 Oct 2026 23:58:14 +0000",
-   "link": "https://www.trefis.com/articles/617924/what-could-go-wrong-with-recursion-pharmaceuticals-stock/2026-10-08?.tsrc=rss"
+   "published": "Fri, 09 Oct 2026 16:27:00 +0000",
+   "link": "https://www.fool.com/investing/2026/10/09/opendoor-has-lost-a-half-of-its-value-in-2026-is-i/?.tsrc=rss"
   }
  ],
  "movers": [
   {
-   "symbol": "BBCI",
-   "name": "Bradbury Capital Inc.",
-   "price": 3.755,
-   "change_pct": 42.235,
+   "symbol": "HAIN",
+   "name": "The Hain Celestial Group, Inc.",
+   "price": 0.3037,
+   "change_pct": -47.311,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 17977885,
+   "volume": 6879714,
+   "held": false
+  },
+  {
+   "symbol": "SPRC",
+   "name": "SciSparc Ltd.",
+   "price": 1.93,
+   "change_pct": -46.685,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 33807254,
    "held": false
   },
   {
    "symbol": "FMC",
    "name": "FMC Corporation",
-   "price": 5.495,
-   "change_pct": -32.077,
+   "price": 5.56,
+   "change_pct": -31.273,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 19035550,
+   "volume": 25615858,
    "held": false
   },
   {
    "symbol": "RGC",
    "name": "Regencell Bioscience Holdings L",
-   "price": 10.54,
-   "change_pct": 29.963,
+   "price": 9.94,
+   "change_pct": 22.565,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 787638,
+   "volume": 1744435,
+   "held": false
+  },
+  {
+   "symbol": "AMOD",
+   "name": "Alpha Modus Holdings, Inc.",
+   "price": 1.7,
+   "change_pct": 22.302,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 22011771,
+   "held": false
+  },
+  {
+   "symbol": "BBCI",
+   "name": "Bradbury Capital Inc.",
+   "price": 3.17,
+   "change_pct": 20.076,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 19248753,
    "held": false
   },
   {
    "symbol": "MAN",
    "name": "ManpowerGroup",
-   "price": 43.335,
-   "change_pct": -16.599,
+   "price": 43.69,
+   "change_pct": -15.916,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 1821835,
-   "held": false
-  },
-  {
-   "symbol": "SMTC",
-   "name": "Semtech Corporation",
-   "price": 133.795,
-   "change_pct": -16.514,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 4706331,
-   "held": false
-  },
-  {
-   "symbol": "OPK",
-   "name": "Opko Health, Inc.",
-   "price": 1.59,
-   "change_pct": 16.058,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 44807584,
-   "held": false
-  },
-  {
-   "symbol": "RXRX",
-   "name": "Recursion Pharmaceuticals, Inc.",
-   "price": 4.31,
-   "change_pct": 15.241,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 43050145,
-   "held": false
-  },
-  {
-   "symbol": "VICR",
-   "name": "Vicor Corporation",
-   "price": 209.735,
-   "change_pct": -14.516,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 1136872,
+   "volume": 2455381,
    "held": false
   },
   {
    "symbol": "REAL",
    "name": "The RealReal, Inc.",
-   "price": 10.245,
-   "change_pct": 12.582,
+   "price": 10.51,
+   "change_pct": 15.495,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 2692606,
+   "volume": 4175248,
    "held": false
   },
   {
-   "symbol": "RKLB",
-   "name": "Rocket Lab Corporation",
-   "price": 52.549,
-   "change_pct": -11.205,
+   "symbol": "OPK",
+   "name": "Opko Health, Inc.",
+   "price": 1.56,
+   "change_pct": 13.869,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 33054597,
+   "volume": 51762873,
    "held": false
   },
   {
-   "symbol": "KRMN",
-   "name": "Karman Holdings Inc.",
-   "price": 33.425,
-   "change_pct": 10.899,
+   "symbol": "VICR",
+   "name": "Vicor Corporation",
+   "price": 214.33,
+   "change_pct": -12.643,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 2454356,
+   "volume": 1357618,
+   "held": false
+  },
+  {
+   "symbol": "RXRX",
+   "name": "Recursion Pharmaceuticals, Inc.",
+   "price": 4.21,
+   "change_pct": 12.567,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 51546822,
+   "held": false
+  },
+  {
+   "symbol": "OPEN",
+   "name": "Opendoor Technologies Inc",
+   "price": 2.24,
+   "change_pct": 12.563,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 44123715,
+   "held": false
+  },
+  {
+   "symbol": "UWMC",
+   "name": "UWM Holdings Corporation",
+   "price": 1.135,
+   "change_pct": 12.376,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 15399543,
+   "held": false
+  },
+  {
+   "symbol": "ENVX",
+   "name": "Enovix Corporation",
+   "price": 2.71,
+   "change_pct": 11.066,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 8799732,
    "held": false
   },
   {
    "symbol": "APPN",
    "name": "Appian Corporation",
-   "price": 42.58,
-   "change_pct": 10.741,
+   "price": 42.67,
+   "change_pct": 10.975,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 657875,
+   "volume": 793242,
+   "held": false
+  },
+  {
+   "symbol": "AQST",
+   "name": "Aquestive Therapeutics, Inc.",
+   "price": 4.115,
+   "change_pct": -10.738,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 4130150,
+   "held": false
+  },
+  {
+   "symbol": "SMTC",
+   "name": "Semtech Corporation",
+   "price": 143.2,
+   "change_pct": -10.645,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 7975883,
+   "held": false
+  },
+  {
+   "symbol": "KRMN",
+   "name": "Karman Holdings Inc.",
+   "price": 33.32,
+   "change_pct": 10.551,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 3155441,
+   "held": false
+  },
+  {
+   "symbol": "Z",
+   "name": "Zillow Group, Inc.",
+   "price": 31.26,
+   "change_pct": 10.342,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 3939722,
+   "held": false
+  },
+  {
+   "symbol": "ZG",
+   "name": "Zillow Group, Inc.",
+   "price": 32.27,
+   "change_pct": 10.249,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 854378,
+   "held": false
+  },
+  {
+   "symbol": "ERIC",
+   "name": "Ericsson",
+   "price": 10.56,
+   "change_pct": 10.23,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 33715131,
+   "held": false
+  },
+  {
+   "symbol": "KD",
+   "name": "Kyndryl Holdings, Inc.",
+   "price": 12.995,
+   "change_pct": 10.221,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 3072882,
+   "held": false
+  },
+  {
+   "symbol": "DVLT",
+   "name": "Datavault AI Inc.",
+   "price": 0.1378,
+   "change_pct": 9.801,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 28480848,
+   "held": false
+  },
+  {
+   "symbol": "GPUS",
+   "name": "Hyperscale Data, Inc.",
+   "price": 0.147,
+   "change_pct": 9.701,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 45486216,
+   "held": true
+  },
+  {
+   "symbol": "CAPR",
+   "name": "Capricor Therapeutics, Inc.",
+   "price": 7.215,
+   "change_pct": 9.484,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 2287433,
+   "held": false
+  },
+  {
+   "symbol": "VYX",
+   "name": "NCR Voyix Corporation",
+   "price": 7.515,
+   "change_pct": 9.23,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 1754154,
+   "held": false
+  },
+  {
+   "symbol": "BBWI",
+   "name": "Bath & Body Works, Inc.",
+   "price": 20.69,
+   "change_pct": 9.182,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 7869246,
+   "held": false
+  },
+  {
+   "symbol": "TRU",
+   "name": "TransUnion",
+   "price": 73.025,
+   "change_pct": 9.09,
+   "ext_price": null,
+   "ext_change_pct": null,
+   "volume": 2411448,
    "held": false
   },
   {
    "symbol": "AXTI",
    "name": "AXT Inc",
-   "price": 55.23,
-   "change_pct": -10.326,
+   "price": 56.02,
+   "change_pct": -9.044,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 9195908,
-   "held": false
-  },
-  {
-   "symbol": "CLVT",
-   "name": "Clarivate Plc",
-   "price": 1.765,
-   "change_pct": 9.627,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 2059305,
+   "volume": 11394529,
    "held": false
   },
   {
@@ -711,157 +861,7 @@
    "change_pct": 9.004,
    "ext_price": null,
    "ext_change_pct": null,
-   "volume": 4805024,
-   "held": false
-  },
-  {
-   "symbol": "GPUS",
-   "name": "Hyperscale Data, Inc.",
-   "price": 0.146,
-   "change_pct": 8.955,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 39019697,
-   "held": true
-  },
-  {
-   "symbol": "Z",
-   "name": "Zillow Group, Inc.",
-   "price": 30.84,
-   "change_pct": 8.86,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 2682604,
-   "held": false
-  },
-  {
-   "symbol": "ZG",
-   "name": "Zillow Group, Inc.",
-   "price": 31.84,
-   "change_pct": 8.78,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 561555,
-   "held": false
-  },
-  {
-   "symbol": "DELL",
-   "name": "Dell Technologies Inc.",
-   "price": 463.643,
-   "change_pct": -8.719,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 9627399,
-   "held": false
-  },
-  {
-   "symbol": "TRU",
-   "name": "TransUnion",
-   "price": 72.77,
-   "change_pct": 8.709,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 1385923,
-   "held": false
-  },
-  {
-   "symbol": "ARQT",
-   "name": "Arcutis Biotherapeutics, Inc.",
-   "price": 28.7,
-   "change_pct": 8.671,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 1704120,
-   "held": false
-  },
-  {
-   "symbol": "OPEN",
-   "name": "Opendoor Technologies Inc",
-   "price": 2.16,
-   "change_pct": 8.543,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 30759129,
-   "held": false
-  },
-  {
-   "symbol": "PAG",
-   "name": "Penske Automotive Group, Inc.",
-   "price": 211.3,
-   "change_pct": 8.476,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 2171606,
-   "held": false
-  },
-  {
-   "symbol": "ERIC",
-   "name": "Ericsson",
-   "price": 10.37,
-   "change_pct": 8.246,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 25540309,
-   "held": false
-  },
-  {
-   "symbol": "SFIX",
-   "name": "Stitch Fix, Inc.",
-   "price": 2.585,
-   "change_pct": 8.159,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 1218877,
-   "held": false
-  },
-  {
-   "symbol": "AEHR",
-   "name": "Aehr Test Systems",
-   "price": 65.75,
-   "change_pct": -8.029,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 2547321,
-   "held": false
-  },
-  {
-   "symbol": "ETSY",
-   "name": "Etsy, Inc.",
-   "price": 89.46,
-   "change_pct": 7.874,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 2861228,
-   "held": false
-  },
-  {
-   "symbol": "KD",
-   "name": "Kyndryl Holdings, Inc.",
-   "price": 12.715,
-   "change_pct": 7.846,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 1810467,
-   "held": false
-  },
-  {
-   "symbol": "POOL",
-   "name": "Pool Corporation",
-   "price": 170.48,
-   "change_pct": 7.817,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 653701,
-   "held": false
-  },
-  {
-   "symbol": "MNDY",
-   "name": "monday.com Ltd.",
-   "price": 94.235,
-   "change_pct": 7.734,
-   "ext_price": null,
-   "ext_change_pct": null,
-   "volume": 804348,
+   "volume": 6979740,
    "held": false
   }
  ],
@@ -870,19 +870,9 @@
    "symbol": "RGC",
    "source": "day_gainers",
    "name": "Regencell Bioscience Holdings L",
-   "price": 10.54,
-   "change_pct": 29.963015,
-   "volume": 787614,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "KRMN",
-   "source": "day_gainers",
-   "name": "Karman Holdings Inc.",
-   "price": 33.43,
-   "change_pct": 10.9157295,
-   "volume": 2453629,
+   "price": 9.94,
+   "change_pct": 22.564735,
+   "volume": 1744435,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -890,9 +880,19 @@
    "symbol": "APPN",
    "source": "day_gainers",
    "name": "Appian Corporation",
-   "price": 42.58,
-   "change_pct": 10.741225,
-   "volume": 657875,
+   "price": 42.67,
+   "change_pct": 10.9752865,
+   "volume": 793242,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "KRMN",
+   "source": "day_gainers",
+   "name": "Karman Holdings Inc.",
+   "price": 33.32,
+   "change_pct": 10.550764,
+   "volume": 3154012,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -900,9 +900,9 @@
    "symbol": "Z",
    "source": "day_gainers",
    "name": "Zillow Group, Inc.",
-   "price": 30.84,
-   "change_pct": 8.859867,
-   "volume": 2682581,
+   "price": 31.26,
+   "change_pct": 10.3405695,
+   "volume": 3939722,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -910,39 +910,9 @@
    "symbol": "ZG",
    "source": "day_gainers",
    "name": "Zillow Group, Inc.",
-   "price": 31.84,
-   "change_pct": 8.78032,
-   "volume": 561542,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "TRU",
-   "source": "day_gainers",
-   "name": "TransUnion",
-   "price": 72.77,
-   "change_pct": 8.709283,
-   "volume": 1385923,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "ARQT",
-   "source": "day_gainers",
-   "name": "Arcutis Biotherapeutics, Inc.",
-   "price": 28.7,
-   "change_pct": 8.670961,
-   "volume": 1704120,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "PAG",
-   "source": "day_gainers",
-   "name": "Penske Automotive Group, Inc.",
-   "price": 211.3,
-   "change_pct": 8.4758,
-   "volume": 2171606,
+   "price": 32.27,
+   "change_pct": 10.249402,
+   "volume": 854376,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -950,19 +920,9 @@
    "symbol": "ERIC",
    "source": "day_gainers",
    "name": "Ericsson",
-   "price": 10.37,
-   "change_pct": 8.246346,
-   "volume": 25540309,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "ETSY",
-   "source": "day_gainers",
-   "name": "Etsy, Inc.",
-   "price": 89.46,
-   "change_pct": 7.8722105,
-   "volume": 2861225,
+   "price": 10.56,
+   "change_pct": 10.22965,
+   "volume": 33714970,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -970,29 +930,59 @@
    "symbol": "KD",
    "source": "day_gainers",
    "name": "Kyndryl Holdings, Inc.",
-   "price": 12.715,
-   "change_pct": 7.845633,
-   "volume": 1810419,
+   "price": 12.995,
+   "change_pct": 10.220525,
+   "volume": 3072874,
    "pre_change_pct": null,
    "post_change_pct": null
   },
   {
-   "symbol": "POOL",
+   "symbol": "BBWI",
    "source": "day_gainers",
-   "name": "Pool Corporation",
-   "price": 170.48,
-   "change_pct": 7.8168483,
-   "volume": 653651,
+   "name": "Bath & Body Works, Inc.",
+   "price": 20.6901,
+   "change_pct": 9.182579,
+   "volume": 7869246,
    "pre_change_pct": null,
    "post_change_pct": null
   },
   {
-   "symbol": "OPK",
-   "source": "small_cap_gainers",
-   "name": "Opko Health, Inc.",
-   "price": 1.58,
-   "change_pct": 15.217394,
-   "volume": 44806959,
+   "symbol": "TRU",
+   "source": "day_gainers",
+   "name": "TransUnion",
+   "price": 73.025,
+   "change_pct": 9.090228,
+   "volume": 2411407,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "ARQT",
+   "source": "day_gainers",
+   "name": "Arcutis Biotherapeutics, Inc.",
+   "price": 28.775,
+   "change_pct": 8.95494,
+   "volume": 2404396,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "PAG",
+   "source": "day_gainers",
+   "name": "Penske Automotive Group, Inc.",
+   "price": 211.789,
+   "change_pct": 8.726839,
+   "volume": 2673121,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "COMP",
+   "source": "day_gainers",
+   "name": "Compass, Inc.",
+   "price": 9.515,
+   "change_pct": 8.618723,
+   "volume": 11474672,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1000,19 +990,49 @@
    "symbol": "REAL",
    "source": "small_cap_gainers",
    "name": "The RealReal, Inc.",
-   "price": 10.245,
-   "change_pct": 12.582412,
-   "volume": 2692606,
+   "price": 10.51,
+   "change_pct": 15.494503,
+   "volume": 4175188,
    "pre_change_pct": null,
    "post_change_pct": null
   },
   {
-   "symbol": "CLVT",
+   "symbol": "UWMC",
    "source": "small_cap_gainers",
-   "name": "Clarivate Plc",
-   "price": 1.765,
-   "change_pct": 9.627327,
-   "volume": 2059256,
+   "name": "UWM Holdings Corporation",
+   "price": 1.135,
+   "change_pct": 12.376238,
+   "volume": 15398963,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "ENVX",
+   "source": "small_cap_gainers",
+   "name": "Enovix Corporation",
+   "price": 2.71,
+   "change_pct": 11.065573,
+   "volume": 8799732,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "CAPR",
+   "source": "small_cap_gainers",
+   "name": "Capricor Therapeutics, Inc.",
+   "price": 7.215,
+   "change_pct": 9.476876,
+   "volume": 2287433,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "VYX",
+   "source": "small_cap_gainers",
+   "name": "NCR Voyix Corporation",
+   "price": 7.515,
+   "change_pct": 9.229648,
+   "volume": 1754154,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1022,17 +1042,17 @@
    "name": "Arbor Realty Trust",
    "price": 2.845,
    "change_pct": 9.003837,
-   "volume": 4803612,
+   "volume": 6979740,
    "pre_change_pct": null,
    "post_change_pct": null
   },
   {
-   "symbol": "SFIX",
+   "symbol": "CLVT",
    "source": "small_cap_gainers",
-   "name": "Stitch Fix, Inc.",
-   "price": 2.585,
-   "change_pct": 8.158992,
-   "volume": 1218977,
+   "name": "Clarivate Plc",
+   "price": 1.75,
+   "change_pct": 8.695651,
+   "volume": 2930643,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1040,9 +1060,19 @@
    "symbol": "LAC",
    "source": "small_cap_gainers",
    "name": "Lithium Americas Corp.",
-   "price": 2.23,
-   "change_pct": 7.7294726,
-   "volume": 10863628,
+   "price": 2.245,
+   "change_pct": 8.454104,
+   "volume": 13126622,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "NXH",
+   "source": "small_cap_gainers",
+   "name": "Neighborhood Intelligence, Inc.",
+   "price": 1.735,
+   "change_pct": 7.098766,
+   "volume": 3017197,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1050,49 +1080,9 @@
    "symbol": "TSHA",
    "source": "small_cap_gainers",
    "name": "Taysha Gene Therapies, Inc.",
-   "price": 3.775,
-   "change_pct": 7.549861,
-   "volume": 1998377,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "UWMC",
-   "source": "small_cap_gainers",
-   "name": "UWM Holdings Corporation",
-   "price": 1.085,
-   "change_pct": 7.4257474,
-   "volume": 7409720,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "SVC",
-   "source": "small_cap_gainers",
-   "name": "Service Properties Trust",
-   "price": 6.28,
-   "change_pct": 7.350433,
-   "volume": 1529262,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "CAPR",
-   "source": "small_cap_gainers",
-   "name": "Capricor Therapeutics, Inc.",
-   "price": 7.07,
-   "change_pct": 7.283763,
-   "volume": 1602182,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "MBC",
-   "source": "small_cap_gainers",
-   "name": "MasterBrand, Inc.",
-   "price": 6.905,
-   "change_pct": 6.8885474,
-   "volume": 1063933,
+   "price": 3.755,
+   "change_pct": 6.98006,
+   "volume": 2911067,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1100,9 +1090,19 @@
    "symbol": "CTMX",
    "source": "small_cap_gainers",
    "name": "CytomX Therapeutics, Inc.",
-   "price": 2.38,
-   "change_pct": 6.7264614,
-   "volume": 1066574,
+   "price": 2.385,
+   "change_pct": 6.950671,
+   "volume": 1794302,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "CCCC",
+   "source": "small_cap_gainers",
+   "name": "C4 Therapeutics, Inc.",
+   "price": 2.79,
+   "change_pct": 6.896555,
+   "volume": 1751998,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1110,19 +1110,9 @@
    "symbol": "RXRX",
    "source": "most_actives",
    "name": "Recursion Pharmaceuticals, Inc.",
-   "price": 4.31,
-   "change_pct": 15.24064,
-   "volume": 43045045,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "RKLB",
-   "source": "most_actives",
-   "name": "Rocket Lab Corporation",
-   "price": 52.54,
-   "change_pct": -11.220006,
-   "volume": 33054432,
+   "price": 4.21,
+   "change_pct": 12.566846,
+   "volume": 51546621,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1130,9 +1120,29 @@
    "symbol": "OPEN",
    "source": "most_actives",
    "name": "Opendoor Technologies Inc",
-   "price": 2.16,
-   "change_pct": 8.549162,
-   "volume": 30758872,
+   "price": 2.235,
+   "change_pct": 12.311552,
+   "volume": 44122615,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "WULF",
+   "source": "most_actives",
+   "name": "TeraWulf Inc.",
+   "price": 12.495,
+   "change_pct": 8.277428,
+   "volume": 86833310,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "RKLB",
+   "source": "most_actives",
+   "name": "Rocket Lab Corporation",
+   "price": 54.3726,
+   "change_pct": -8.123352,
+   "volume": 39255785,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1140,29 +1150,9 @@
    "symbol": "DNN",
    "source": "most_actives",
    "name": "Denison Mines Corp",
-   "price": 2.31,
-   "change_pct": 6.944759,
-   "volume": 28731367,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "IREN",
-   "source": "most_actives",
-   "name": "IREN LIMITED",
-   "price": 28.595,
-   "change_pct": -6.4299746,
-   "volume": 71540803,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "VG",
-   "source": "most_actives",
-   "name": "Venture Global, Inc.",
-   "price": 12.475,
-   "change_pct": -5.9909573,
-   "volume": 21362398,
+   "price": 2.335,
+   "change_pct": 8.10185,
+   "volume": 33904473,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1170,29 +1160,9 @@
    "symbol": "NKE",
    "source": "most_actives",
    "name": "Nike, Inc.",
-   "price": 37.335,
-   "change_pct": 5.764562,
-   "volume": 25932780,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "APLD",
-   "source": "most_actives",
-   "name": "Applied Digital Corporation",
-   "price": 19.275,
-   "change_pct": -5.166057,
-   "volume": 21795615,
-   "pre_change_pct": null,
-   "post_change_pct": null
-  },
-  {
-   "symbol": "SMCI",
-   "source": "most_actives",
-   "name": "Super Micro Computer, Inc.",
-   "price": 33.945,
-   "change_pct": -5.128561,
-   "volume": 23985168,
+   "price": 37.53,
+   "change_pct": 6.3172793,
+   "volume": 33491891,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1200,19 +1170,49 @@
    "symbol": "IONQ",
    "source": "most_actives",
    "name": "IonQ, Inc.",
-   "price": 33.01,
-   "change_pct": 5.0604653,
-   "volume": 31838934,
+   "price": 33.295,
+   "change_pct": 5.9675307,
+   "volume": 37826386,
    "pre_change_pct": null,
    "post_change_pct": null
   },
   {
-   "symbol": "INTC",
+   "symbol": "VG",
    "source": "most_actives",
-   "name": "Intel Corporation",
-   "price": 93.78,
-   "change_pct": -4.423159,
-   "volume": 86733186,
+   "name": "Venture Global, Inc.",
+   "price": 12.525,
+   "change_pct": -5.6141734,
+   "volume": 26718764,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "SOFI",
+   "source": "most_actives",
+   "name": "SoFi Technologies, Inc.",
+   "price": 14.945,
+   "change_pct": 5.0984483,
+   "volume": 47026113,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "RKT",
+   "source": "most_actives",
+   "name": "Rocket Companies, Inc.",
+   "price": 11.065,
+   "change_pct": 5.0831337,
+   "volume": 35283199,
+   "pre_change_pct": null,
+   "post_change_pct": null
+  },
+  {
+   "symbol": "BMNR",
+   "source": "most_actives",
+   "name": "BitMine Immersion Technologies,",
+   "price": 23.31,
+   "change_pct": 4.7640424,
+   "volume": 34583258,
    "pre_change_pct": null,
    "post_change_pct": null
   },
@@ -1221,7 +1221,15 @@
    "source": "trending"
   },
   {
+   "symbol": "V",
+   "source": "trending"
+  },
+  {
    "symbol": "TSM",
+   "source": "trending"
+  },
+  {
+   "symbol": "SMTC",
    "source": "trending"
   },
   {
@@ -1229,15 +1237,7 @@
    "source": "trending"
   },
   {
-   "symbol": "SCHW",
-   "source": "trending"
-  },
-  {
-   "symbol": "NOW",
-   "source": "trending"
-  },
-  {
-   "symbol": "MRNA",
+   "symbol": "AMOD",
    "source": "trending"
   },
   {
@@ -1253,15 +1253,27 @@
    "source": "trending"
   },
   {
-   "symbol": "MU",
+   "symbol": "OPK",
    "source": "trending"
   },
   {
-   "symbol": "CAVA",
+   "symbol": "AXON",
    "source": "trending"
   },
   {
-   "symbol": "ELF",
+   "symbol": "DVLT",
+   "source": "trending"
+  },
+  {
+   "symbol": "NOW",
+   "source": "trending"
+  },
+  {
+   "symbol": "SPRC",
+   "source": "trending"
+  },
+  {
+   "symbol": "SCHW",
    "source": "trending"
   },
   {
@@ -1269,15 +1281,19 @@
    "source": "trending"
   },
   {
-   "symbol": "VICR",
+   "symbol": "AQST",
    "source": "trending"
   },
   {
-   "symbol": "FIG",
+   "symbol": "ELF",
    "source": "trending"
   },
   {
-   "symbol": "MNDY",
+   "symbol": "HAIN",
+   "source": "trending"
+  },
+  {
+   "symbol": "CRCL",
    "source": "trending"
   },
   {
@@ -1285,7 +1301,7 @@
    "source": "trending"
   },
   {
-   "symbol": "TTD",
+   "symbol": "VICR",
    "source": "trending"
   }
  ]

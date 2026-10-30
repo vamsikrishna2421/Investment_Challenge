@@ -405,3 +405,4 @@
 {"t": "2026-10-29T23:00:17Z", "session": "post", "equity": 1098.61, "cash": 1.28, "invested": 1097.33, "SPY": 764.01, "QQQ": 702.88, "IWM": 283.76}
 {"t": "2026-10-30T00:37:35Z", "session": "closed", "equity": 1094.56, "cash": 1.28, "invested": 1093.28, "SPY": 764.73, "QQQ": 704.3, "IWM": 283.83}
 {"t": "2026-10-30T01:19:36Z", "session": "closed", "equity": 1094.56, "cash": 1.28, "invested": 1093.28, "SPY": 764.73, "QQQ": 704.3, "IWM": 283.83}
+{"t": "2026-10-30T16:37:48Z", "session": "regular", "equity": 944.74, "cash": 1.28, "invested": 943.46, "SPY": 757.331, "QQQ": 692.17, "IWM": 279.18}

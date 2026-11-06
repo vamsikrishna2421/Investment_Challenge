@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T01:02:22Z",
+ "generated_at": "2026-11-06T01:23:02Z",
  "session": "closed",
  "quotes": {
   "AEHR": {
@@ -136,12 +136,12 @@
    "ext_change_pct": 1.997
   },
   "BTC-USD": {
-   "price": 76173.48,
-   "time": "2026-11-06T01:02:18Z",
+   "price": 75917.47,
+   "time": "2026-11-06T01:22:56Z",
    "prev_close": 75982.81,
    "day_high": 76282.4,
    "day_low": 75982.81,
-   "volume": 48645545984,
+   "volume": 48461938688,
    "name": "Bitcoin USD",
    "exchange": "CCC",
    "instrument": "CRYPTOCURRENCY",
@@ -151,7 +151,7 @@
    "ext_high": null,
    "ext_low": null,
    "source": "yahoo-v8-chart",
-   "change_pct": 0.251
+   "change_pct": -0.086
   },
   "BTDR": {
    "price": 5.31,
@@ -258,14 +258,14 @@
    "name": "Circle Internet Group, Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 68.89,
-   "ext_time": "2026-11-06T00:58:05Z",
+   "ext_price": 68.85,
+   "ext_time": "2026-11-06T00:59:27Z",
    "ext_volume": 1304082,
    "ext_high": 71.0688,
    "ext_low": 67.04,
    "source": "yahoo-v8-chart",
    "change_pct": -8.723,
-   "ext_change_pct": -0.849
+   "ext_change_pct": -0.907
   },
   "CRSP": {
    "price": 48.56,
@@ -486,14 +486,14 @@
    "name": "IonQ, Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 27.73,
-   "ext_time": "2026-11-06T00:58:30Z",
+   "ext_price": 27.7,
+   "ext_time": "2026-11-06T00:59:23Z",
    "ext_volume": 2302421,
    "ext_high": 28.78,
    "ext_low": 26.43,
    "source": "yahoo-v8-chart",
    "change_pct": -10.528,
-   "ext_change_pct": 4.919
+   "ext_change_pct": 4.805
   },
   "IREN": {
    "price": 18.03,
@@ -524,14 +524,14 @@
    "name": "iShares Russell 2000 Index Fund",
    "exchange": "NYSEArca",
    "instrument": "ETF",
-   "ext_price": 271.25,
-   "ext_time": "2026-11-06T00:57:12Z",
+   "ext_price": 271.21,
+   "ext_time": "2026-11-06T00:59:37Z",
    "ext_volume": 1471546,
    "ext_high": 283.9427,
    "ext_low": 269.0,
    "source": "yahoo-v8-chart",
    "change_pct": -4.591,
-   "ext_change_pct": 0.1
+   "ext_change_pct": 0.085
   },
   "LEU": {
    "price": 89.03,
@@ -676,14 +676,14 @@
    "name": "Oklo Inc.",
    "exchange": "NYSE",
    "instrument": "EQUITY",
-   "ext_price": 19.6345,
-   "ext_time": "2026-11-06T00:57:42Z",
+   "ext_price": 19.6,
+   "ext_time": "2026-11-06T00:59:45Z",
    "ext_volume": 1591058,
    "ext_high": 19.8,
    "ext_low": 18.9116,
    "source": "yahoo-v8-chart",
    "change_pct": -13.201,
-   "ext_change_pct": 2.263
+   "ext_change_pct": 2.083
   },
   "ONDS": {
    "price": 4.52,
@@ -999,16 +999,16 @@
    "name": "Unusual Machines, Inc.",
    "exchange": "NYSE American",
    "instrument": "EQUITY",
-   "ext_price": 10.6,
-   "ext_time": "2026-11-06T00:53:19Z",
+   "ext_price": 10.51,
+   "ext_time": "2026-11-06T00:57:48Z",
    "ext_volume": 127466,
    "ext_high": 11.0535,
    "ext_low": 9.7,
    "source": "yahoo-v8-chart",
    "change_pct": -17.575,
-   "ext_change_pct": -1.304
+   "ext_change_pct": -2.142
   }
  },
  "errors": {},
- "fetch_seconds": 0.7
+ "fetch_seconds": 0.6
 }
